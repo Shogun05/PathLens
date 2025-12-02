@@ -1,0 +1,40 @@
+# Tunable parameters for PathLens starter pipeline
+place: "Bangalore, India"
+network_type: "walk"
+walking_speed_kmph: 4.8
+
+amenity_weights:
+  school: 1.0
+  hospital: 2.0
+  pharmacy: 1.5
+  supermarket: 2.0
+  bus_station: 1.0
+  park: 0.8
+
+composite_weights:
+  alpha: 0.25
+  beta: 0.4
+  gamma: 0.2
+  delta: 0.15
+
+equity_thresholds:
+  school: 800 # meters
+  hospital: 1000
+  pharmacy: 600
+  supermarket: 800
+  bus_station: 600
+  park: 700
+
+h3:
+  resolution: 8
+
+centrality:
+  enabled: true
+  sample_k: 150
+  compute_betweenness: true
+  compute_closeness: false
+  seed: 42
+
+amenity_distance_cutoff_m: 1200
+
+circuity_sample_k: 120
