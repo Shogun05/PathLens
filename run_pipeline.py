@@ -45,7 +45,8 @@ def main():
         print("   This may take a long time!\n")
     
     script_dir = Path(__file__).parent
-    project_dir = script_dir.parent
+    project_dir = script_dir  # run_pipeline.py is at project root
+    pipeline_dir = project_dir / "pipeline"
     data_dir = project_dir / "data"
     raw_dir = data_dir / "raw"
     processed_dir = data_dir / "processed"
@@ -68,7 +69,7 @@ def main():
             if args.force and pois_path.exists():
                 print("\n🔄 Force mode: Re-converting POIs...")
             run_command(
-                [python_exe, str(script_dir / "convert_amenities_to_geojson.py")],
+                [python_exe, str(pipeline_dir / "convert_amenities_to_geojson.py")],
                 "Converting amenities to GeoJSON"
             )
     
@@ -90,7 +91,7 @@ def main():
         run_command(
             [
                 python_exe,
-                str(script_dir / "data_collection.py"),
+                str(pipeline_dir / "data_collection.py"),
                 "--place", args.place,
                 "--out-dir", str(raw_dir)
             ],
@@ -116,7 +117,7 @@ def main():
             # Build command with only files that exist
             cmd = [
                 python_exe,
-                str(script_dir / "graph_build.py"),
+                str(pipeline_dir / "graph_build.py"),
                 "--graph-path", str(raw_dir / "graph.graphml"),
                 "--pois-path", str(raw_dir / "pois.geojson"),
                 "--out-dir", str(processed_dir)
@@ -152,7 +153,7 @@ def main():
             run_command(
                 [
                     python_exe,
-                    str(script_dir / "scoring.py"),
+                    str(pipeline_dir / "scoring.py"),
                     "--graph-path", str(processed_dir / "graph.graphml"),
                     "--poi-mapping", str(processed_dir / "poi_node_mapping.parquet"),
                     "--pois-path", str(raw_dir / "pois.geojson"),
@@ -175,7 +176,7 @@ def main():
             run_command(
                 [
                     python_exe,
-                    str(script_dir / "visualize.py"),
+                    str(pipeline_dir / "visualize.py"),
                     "--graph-path", str(processed_dir / "graph.graphml"),
                     "--pois-path", str(raw_dir / "pois.geojson"),
                     "--nodes-path", str(analysis_dir / "nodes_with_scores.parquet"),

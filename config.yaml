@@ -35,6 +35,6 @@ centrality:
   compute_closeness: false
   seed: 42
 
-amenity_distance_cutoff_m: 1200
+amenity_distance_cutoff_m: null  # null = no cutoff, compute all distances
 
 circuity_sample_k: 120
