@@ -1,0 +1,62 @@
+{
+  "area_name": "Chowdeshwari Nagar",
+  "osm_id": 19883336,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 5,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1794150253,
+      "lat": 12.9945246,
+      "lon": 77.5043269,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sollapuradamma Temple",
+        "name:kn": "ಸೊಲ್ಲಾಪುರದಮ್ಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240244514,
+      "lat": 12.9990055,
+      "lon": 77.5251143,
+      "tags": {
+        "amenity": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8442476343,
+      "lat": 12.9993269,
+      "lon": 77.5251746,
+      "tags": {
+        "name": "Family Provision Store",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "way",
+      "id": 412935364,
+      "center": {
+        "lat": 12.9988695,
+        "lon": 77.5267772
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420077,
+      "center": {
+        "lat": 12.9929933,
+        "lon": 77.5090794
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

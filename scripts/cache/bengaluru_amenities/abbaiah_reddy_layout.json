@@ -1,0 +1,2778 @@
+{
+  "area_name": "Abbaiah Reddy Layout",
+  "osm_id": 12210283198,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 220,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 986732874,
+      "lat": 12.985118,
+      "lon": 77.679021,
+      "tags": {
+        "amenity": "school",
+        "name": "Mother Montessori House of Children Pre-school"
+      }
+    },
+    {
+      "type": "node",
+      "id": 986744078,
+      "lat": 12.972735,
+      "lon": 77.678774,
+      "tags": {
+        "addr:street": "GM Palya Main Road",
+        "name": "Heritage Fresh",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 986744079,
+      "lat": 12.973597,
+      "lon": 77.678189,
+      "tags": {
+        "addr:street": "Kaggadasspura Main Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Ruchi Restaurant",
+        "name:kn": "ರುಚಿ ರೆಸ್ಟೋರೆಂಟ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 986744080,
+      "lat": 12.977267,
+      "lon": 77.679729,
+      "tags": {
+        "amenity": "school",
+        "name": "LR International School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 986744081,
+      "lat": 12.981538,
+      "lon": 77.680174,
+      "tags": {
+        "addr:street": "Kaggadasspura Main Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1078179963,
+      "lat": 12.9842579,
+      "lon": 77.6793484,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shaneeswara Temple",
+        "name:kn": "ಶನೀಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1078183839,
+      "lat": 12.9854324,
+      "lon": 77.6791217,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Bakers Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465574767,
+      "lat": 12.9717678,
+      "lon": 77.6811933,
+      "tags": {
+        "addr:street": "Ramesh nagar road",
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1675527565,
+      "lat": 12.9762388,
+      "lon": 77.6738244,
+      "tags": {
+        "addr:postcode": "560075",
+        "addr:street": "Mallesh Palaya 5th Main",
+        "name": "Super Market",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1675528607,
+      "lat": 12.9746026,
+      "lon": 77.6731914,
+      "tags": {
+        "amenity": "atm",
+        "name": "DCB",
+        "operator": "DCB"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1776312874,
+      "lat": 12.9736082,
+      "lon": 77.6743886,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housename": "Burma Supermarket",
+        "addr:housenumber": "116",
+        "addr:postcode": "560075",
+        "addr:street": "Malleshpalya Main Road",
+        "alt_name": "Burma Super Market",
+        "name": "Burma Supernarket",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+91-80-25340194",
+        "shop": "supermarket",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1870996161,
+      "lat": 12.9721506,
+      "lon": 77.6799287,
+      "tags": {
+        "name": "Fair Choice Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2204197989,
+      "lat": 12.9845904,
+      "lon": 77.6748205,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "fee": "no",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3174395519,
+      "lat": 12.97193,
+      "lon": 77.68042,
+      "tags": {
+        "name": "Vinayaka Bharat Gas",
+        "operator": "Bharat Gas",
+        "shop": "kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3202584504,
+      "lat": 12.9781291,
+      "lon": 77.6755345,
+      "tags": {
+        "name": "Yousuf Fish Stall",
+        "shop": "seafood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3202584686,
+      "lat": 12.9780265,
+      "lon": 77.6754957,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560093",
+        "addr:street": "19th Cross, Kaggadasapura",
+        "name": "Fresh Reach",
+        "opening_hours": "07:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3359236276,
+      "lat": 12.9784519,
+      "lon": 77.6754752,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Kamaldeep Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3655587612,
+      "lat": 12.9785172,
+      "lon": 77.6795909,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "drive_through": "yes",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4067004487,
+      "lat": 12.9765781,
+      "lon": 77.6738208,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4067004488,
+      "lat": 12.9744681,
+      "lon": 77.673175,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕ್",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4163019490,
+      "lat": 12.9733693,
+      "lon": 77.675399,
+      "tags": {
+        "addr:street": "Malleshpalya Main Road",
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4163019889,
+      "lat": 12.9733649,
+      "lon": 77.6754389,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2022-03-27",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4163019989,
+      "lat": 12.9733622,
+      "lon": 77.6753236,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4163020089,
+      "lat": 12.9830395,
+      "lon": 77.6805944,
+      "tags": {
+        "addr:street": "Kaggadasspura Main Road",
+        "amenity": "clinic",
+        "name": "Smile Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4227025142,
+      "lat": 12.9791313,
+      "lon": 77.6796562,
+      "tags": {
+        "addr:postcode": "560093",
+        "amenity": "bank",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್",
+        "opening_hours": "24/7",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4235494001,
+      "lat": 12.9852284,
+      "lon": 77.6740857,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Garden City Polyclinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4235519191,
+      "lat": 12.9850377,
+      "lon": 77.6741395,
+      "tags": {
+        "addr:street": "Kaggadasspura Main Road",
+        "name": "Little Boss",
+        "shop": "toys"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4250298694,
+      "lat": 12.9794006,
+      "lon": 77.6803999,
+      "tags": {
+        "amenity": "doctors",
+        "name": "Toothzone Dental Studio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4391388393,
+      "lat": 12.9843887,
+      "lon": 77.6761893,
+      "tags": {
+        "name": "Ganpati Sweets",
+        "name:en": "Ganpati Sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4391425090,
+      "lat": 12.9849585,
+      "lon": 77.6744639,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Bachpan",
+        "name:en": "Bachpan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4417324544,
+      "lat": 12.9718453,
+      "lon": 77.6815943,
+      "tags": {
+        "name": "Tasty Bites",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4437493193,
+      "lat": 12.9847048,
+      "lon": 77.6756194,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Federal Bank",
+        "brand:wikidata": "Q2044983",
+        "operator": "Federal Bank",
+        "operator:wikidata": "Q2044983"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4437534089,
+      "lat": 12.9846784,
+      "lon": 77.6757499,
+      "tags": {
+        "brand": "Reliance Digital",
+        "brand:wikidata": "Q7311012",
+        "name": "Reliance Digital",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446309284,
+      "lat": 12.9720229,
+      "lon": 77.6803767,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "1",
+        "addr:postcode": "560037",
+        "addr:street": "Survey Number 158,MarathHalli Post, Vignana Nagar Main Road, Ramaiahreddy Colony, Malleshpalya, Basavanagar, Karnataka",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Medicure Pharma",
+        "phone": "+9196638 70322"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448104221,
+      "lat": 12.9818585,
+      "lon": 77.677679,
+      "tags": {
+        "addr:city": "Bengalore",
+        "addr:postcode": "560093",
+        "addr:street": "24h Cross Road, Aishwarya Lake View Residency, Kaggadasapura",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Ayushman Panchakarma Therapy Centre",
+        "phone": "080 4093 7668",
+        "source": "http://yellowpages.sulekha.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4452040591,
+      "lat": 12.9845261,
+      "lon": 77.6757799,
+      "tags": {
+        "brand": "Kanti Sweets",
+        "name": "Kanti Sweets",
+        "name:en": "Kanti sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489734178,
+      "lat": 12.9782924,
+      "lon": 77.6815156,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "7",
+        "addr:postcode": "560037",
+        "addr:street": "6A Cross Road, Ramaswamy Palya, Vignana Nagar",
+        "leisure": "sports_centre",
+        "name": "Anson Sports",
+        "phone": "098729 93957",
+        "website": "https://www.ansonsports.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489804407,
+      "lat": 12.9831187,
+      "lon": 77.6804448,
+      "tags": {
+        "addr:city": "Bengaluru,",
+        "addr:housenumber": "No. 211",
+        "addr:postcode": "560093",
+        "addr:street": ", Kushal's Corner, 2nd floor, Kaggadasapura Main Road, Ram Nagar post, Abbaiah Reddy Layout, Kaggadasapura, Karnataka",
+        "leisure": "sports_centre",
+        "name": "Sutra Fitness",
+        "opening_hours": "6:00-20:00",
+        "phone": "072593 00400",
+        "sport": "gymnasium"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489842892,
+      "lat": 12.9757537,
+      "lon": 77.6762462,
+      "tags": {
+        "addr:city": "BANGALORE",
+        "addr:postcode": "560093",
+        "addr:street": "58, 8th Cross, Kaggadasapura Main Rd, C.V. Raman Nagar, Aishwarya Lake View Residency, Kaggadasapura, Bengaluru, Karnataka 560093",
+        "name": "Bharath Cycle Shop",
+        "shop": "sports",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4490329538,
+      "lat": 12.9720474,
+      "lon": 77.6798609,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560037",
+        "addr:street": "Kempanna Rd, Vignan Nagar, BTM Dollars Scheme, Basavanagar, Bengaluru,",
+        "leisure": "sports_centre",
+        "name": "Orange Fitness",
+        "opening_hours": "6:00-20:00",
+        "phone": "9611779439",
+        "sport": "gymnasium",
+        "website": "https://orangetheoryfitness.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4490332758,
+      "lat": 12.976618,
+      "lon": 77.6730321,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "143",
+        "addr:postcode": "560075",
+        "addr:street": "5th Main Road, 6th Cross, Malleshpalya, Bhadrappa Layout, Malleshpalya, Kaggadasapura, Bengaluru,",
+        "leisure": "sports_centre",
+        "name": "Bangalore Games and Fitness Institute",
+        "opening_hours": "6:00-21:00",
+        "phone": "8041706896",
+        "sport": "gymnasium"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4490378112,
+      "lat": 12.9754949,
+      "lon": 77.6791114,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "364",
+        "addr:postcode": "560075",
+        "addr:street": "Aswath Lakshmi Mansion, 16 Main, 35th Cross, Above Canara Bank, 4th Block East,, 4th T Block East, Pattabhirama Nagar, Jayanagara Jaya Nagar",
+        "leisure": "sports_centre",
+        "name": "Euro Fitness Center",
+        "opening_hours": "5:30-22:30",
+        "phone": "8041210990",
+        "sport": "gymnasium",
+        "website": "talwalkars.net",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4554870090,
+      "lat": 12.9848825,
+      "lon": 77.6752109,
+      "tags": {
+        "name": "Family Footwear",
+        "name:en": "Family Footwear",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4554885389,
+      "lat": 12.9847649,
+      "lon": 77.6750195,
+      "tags": {
+        "name": "Bala ji collection",
+        "name:en": "Bala ji  collection",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563708889,
+      "lat": 12.9849883,
+      "lon": 77.6743396,
+      "tags": {
+        "name": "Plaza cleaners",
+        "name:en": "Plaza cleaners",
+        "shop": "dry_cleaning"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4594342490,
+      "lat": 12.9851301,
+      "lon": 77.6740156,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Softy station",
+        "name:en": "Softy station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4595863990,
+      "lat": 12.9816192,
+      "lon": 77.6799498,
+      "tags": {
+        "brand": "Patanjali Ayurved",
+        "brand:wikidata": "Q19856023",
+        "name": "Patanjali Store",
+        "name:en": "Patanjali store",
+        "name:kn": "ಪತಾಂಜಲಿ",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4595863991,
+      "lat": 12.9817362,
+      "lon": 77.6801865,
+      "tags": {
+        "name": "Amar hardware",
+        "name:en": "Amar hardware",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4690537789,
+      "lat": 12.9817167,
+      "lon": 77.6800412,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "SRR Arcade, C.V. Raman Nagar, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Comfort Multispeciality Hospital",
+        "name:en": "Comfort multispeciality hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4690543990,
+      "lat": 12.9816919,
+      "lon": 77.6799027,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Vidyaratnam oeshadhalaya",
+        "name:en": "Vidyaratnam oeshadhalaya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4690543991,
+      "lat": 12.9822287,
+      "lon": 77.6802297,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Northern Flavours Chaat",
+        "name:en": "Northern Flavours Chaat"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4691723393,
+      "lat": 12.9831524,
+      "lon": 77.6803756,
+      "tags": {
+        "name": "Bhagas",
+        "name:en": "Bhagas",
+        "shop": "wine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4691723493,
+      "lat": 12.9832075,
+      "lon": 77.6802595,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karur Vysya Bank",
+        "brand:wikidata": "Q6373724",
+        "operator": "Karur Vysya Bank",
+        "operator:wikidata": "Q6373724"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4788332523,
+      "lat": 12.9845566,
+      "lon": 77.6757323,
+      "tags": {
+        "brand": "Peter England",
+        "brand:wikidata": "Q19573665",
+        "clothes": "men",
+        "name": "Peter England",
+        "name:en": "Peter England",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4838623026,
+      "lat": 12.9816838,
+      "lon": 77.6748633,
+      "tags": {
+        "name": "SLS computers & Hardware",
+        "name:en": "SLS computers & Hardware",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4915951424,
+      "lat": 12.9845206,
+      "lon": 77.6760104,
+      "tags": {
+        "brand": "Lenskart",
+        "brand:wikidata": "Q17068753",
+        "name": "Lenskart.com",
+        "name:en": "Lenskart.com",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4915951521,
+      "lat": 12.9846134,
+      "lon": 77.6760139,
+      "tags": {
+        "name": "Best Vision Care",
+        "name:en": "Best Vision Care",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4915951525,
+      "lat": 12.984642,
+      "lon": 77.6760274,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Aadhar Enrollment Center",
+        "name:en": "Aadhar Enrollment Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6095249002,
+      "lat": 12.9793569,
+      "lon": 77.6803249,
+      "tags": {
+        "name": "Iyengar Bakery and Sweets",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6095252355,
+      "lat": 12.9793392,
+      "lon": 77.6795278,
+      "tags": {
+        "name": "Land of cake",
+        "shop": "bakery",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6162779589,
+      "lat": 12.974343,
+      "lon": 77.6750273,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Ayon International Pre School",
+        "operator": "Private"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6162779590,
+      "lat": 12.9740567,
+      "lon": 77.6752488,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Kids Castle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6497594127,
+      "lat": 12.9718326,
+      "lon": 77.6798268,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;arabic;grill",
+        "name": "Chai Darbar",
+        "name:en": "Chai Darbar",
+        "opening_hours": "Mo-Su 07:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722363,
+      "lat": 12.9736557,
+      "lon": 77.682091,
+      "tags": {
+        "name": "Shabari Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722365,
+      "lat": 12.9747548,
+      "lon": 77.6788946,
+      "tags": {
+        "name": "KC Das",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722366,
+      "lat": 12.9747264,
+      "lon": 77.6788898,
+      "tags": {
+        "name": "Meenakshi Creations",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722367,
+      "lat": 12.9747854,
+      "lon": 77.6786161,
+      "tags": {
+        "name": "Gayathri Sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722368,
+      "lat": 12.9745565,
+      "lon": 77.67873,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722369,
+      "lat": 12.9733672,
+      "lon": 77.6783788,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Biriyani Zone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722371,
+      "lat": 12.9747312,
+      "lon": 77.6788559,
+      "tags": {
+        "name": "GVS Fashions",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722372,
+      "lat": 12.9750214,
+      "lon": 77.6790278,
+      "tags": {
+        "name": "Kishore Stationery",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722373,
+      "lat": 12.9748468,
+      "lon": 77.6789407,
+      "tags": {
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722375,
+      "lat": 12.9753006,
+      "lon": 77.6790823,
+      "tags": {
+        "amenity": "internet_cafe",
+        "name": "Mousehunt Cyber Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722376,
+      "lat": 12.9762509,
+      "lon": 77.679399,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6771722377,
+      "lat": 12.9748177,
+      "lon": 77.6831756,
+      "tags": {
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944143695,
+      "lat": 12.9825937,
+      "lon": 77.6814736,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "21st Cross Kaggadasapura Main Road C V Raman Nagar",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sree Lakshmi Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944578931,
+      "lat": 12.9840786,
+      "lon": 77.6781324,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "# 20, 1st Floor, 17 Th A Cross, Kaggadasapura Main Road C. V. Raman Nagar",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Shakthikrupa Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7051951386,
+      "lat": 12.9722597,
+      "lon": 77.6795798,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Federal Bank",
+        "brand:wikidata": "Q2044983",
+        "cash_in": "yes",
+        "name": "Federal Bank",
+        "opening_hours": "24/7",
+        "operator": "Federal Bank",
+        "operator:wikidata": "Q2044983"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7120241070,
+      "lat": 12.9722044,
+      "lon": 77.6797193,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "arabic;grill;regional",
+        "indoor_seating": "yes",
+        "name": "Kabab Souq",
+        "opening_hours": "11:00-23:00",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140639867,
+      "lat": 12.9721688,
+      "lon": 77.6806504,
+      "tags": {
+        "addr:floor": "3",
+        "leisure": "fitness_centre",
+        "name": "Onyx Gym",
+        "sport": "boxing;kickboxing;bodybuilding"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140640697,
+      "lat": 12.9721818,
+      "lon": 77.680519,
+      "tags": {
+        "name": "Well Done Salon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140653795,
+      "lat": 12.9721106,
+      "lon": 77.6807544,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cow Bar - Milk Shakes",
+        "opening_hours": "10:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140653796,
+      "lat": 12.9721622,
+      "lon": 77.6807678,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "arab;grill",
+        "name": "Darbar Express",
+        "opening_hours": "15:00-23:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140653801,
+      "lat": 12.9721779,
+      "lon": 77.6807872,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Venus MultiSpeciality Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140659384,
+      "lat": 12.9726157,
+      "lon": 77.6792208,
+      "tags": {
+        "brand": "Zudio",
+        "brand:wikidata": "Q123375926",
+        "name": "Zudio",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140666410,
+      "lat": 12.9721564,
+      "lon": 77.6798786,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian;arabic;grill;chinese",
+        "name": "Moriz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140667285,
+      "lat": 12.9726301,
+      "lon": 77.6791685,
+      "tags": {
+        "leisure": "fitness_centre",
+        "name": "Super Gym"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140667290,
+      "lat": 12.9724524,
+      "lon": 77.6796741,
+      "tags": {
+        "name": "Airtel Store",
+        "shop": "telecommunication"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140667291,
+      "lat": 12.9725503,
+      "lon": 77.679253,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Grill Hut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140680686,
+      "lat": 12.9719525,
+      "lon": 77.6797237,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Treat Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7147351711,
+      "lat": 12.9706074,
+      "lon": 77.6818092,
+      "tags": {
+        "name": "Kanti's Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7147351712,
+      "lat": 12.9705826,
+      "lon": 77.6818132,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Mani's Dum Biryani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7147351713,
+      "lat": 12.9717261,
+      "lon": 77.6813586,
+      "tags": {
+        "amenity": "atm",
+        "brand": "South Indian Bank",
+        "brand:wikidata": "Q2044973",
+        "cash_in": "no",
+        "name": "South Indian Bank",
+        "name:kn": "ಸೌತ್ ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್",
+        "operator": "South Indian Bank",
+        "operator:wikidata": "Q2044973"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7147351714,
+      "lat": 12.9722188,
+      "lon": 77.680745,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "name": "HDFC Bank",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7147997049,
+      "lat": 12.9718146,
+      "lon": 77.6797048,
+      "tags": {
+        "name": "Perl Designer Boutique",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7164719474,
+      "lat": 12.971915,
+      "lon": 77.6798372,
+      "tags": {
+        "name": "Sri Krishna Enterprises",
+        "shop": "gift"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7164719475,
+      "lat": 12.971553,
+      "lon": 77.6803025,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Venad Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178885284,
+      "lat": 12.9721126,
+      "lon": 77.6800077,
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Milan Pharma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905228,
+      "lat": 12.9722676,
+      "lon": 77.680003,
+      "tags": {
+        "name": "Sweets Land Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905229,
+      "lat": 12.9723865,
+      "lon": 77.6799446,
+      "tags": {
+        "name": "Balaji Fashions Textiles",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905230,
+      "lat": 12.9724283,
+      "lon": 77.6799487,
+      "tags": {
+        "name": "Mahalakshmi Fancy",
+        "shop": "fashion_accessories"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905231,
+      "lat": 12.9724616,
+      "lon": 77.679956,
+      "tags": {
+        "name": "Tanman Boutique",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905232,
+      "lat": 12.9728145,
+      "lon": 77.6800056,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "name": "Shake it Off - Thickshakes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905233,
+      "lat": 12.9727714,
+      "lon": 77.6799963,
+      "tags": {
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "Smiley Dental Care"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905234,
+      "lat": 12.9732347,
+      "lon": 77.6800995,
+      "tags": {
+        "name": "Choice Fruits and Vegetables",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905236,
+      "lat": 12.9735759,
+      "lon": 77.6802355,
+      "tags": {
+        "male": "yes",
+        "name": "Welldone Salon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905238,
+      "lat": 12.9740805,
+      "lon": 77.6787512,
+      "tags": {
+        "addr:floor": "2",
+        "leisure": "fitness_centre",
+        "name": "Strut Fitness"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905239,
+      "lat": 12.9740191,
+      "lon": 77.6789162,
+      "tags": {
+        "name": "Nova Fish Market",
+        "shop": "seafood",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178905240,
+      "lat": 12.9739747,
+      "lon": 77.6787485,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Malabar Hotel",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178929285,
+      "lat": 12.9720936,
+      "lon": 77.6801123,
+      "tags": {
+        "name": "Sri Devi Stores",
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178929286,
+      "lat": 12.9720721,
+      "lon": 77.6801874,
+      "tags": {
+        "name": "Kamakshi Jwellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178929291,
+      "lat": 12.9720636,
+      "lon": 77.6802471,
+      "tags": {
+        "name": "Vegetable Shop",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178929292,
+      "lat": 12.9720276,
+      "lon": 77.6803329,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "food": "no",
+        "name": "Sri Gajanana Fruit Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178929293,
+      "lat": 12.9720322,
+      "lon": 77.680349,
+      "tags": {
+        "name": "SLV Iyengar Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178929298,
+      "lat": 12.9719414,
+      "lon": 77.6805656,
+      "tags": {
+        "name": "Tyre Marks BridgeStone",
+        "shop": "tyres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178929299,
+      "lat": 12.9724119,
+      "lon": 77.6800338,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Iyer Idly"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178988356,
+      "lat": 12.9744158,
+      "lon": 77.6804352,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Angel Mess"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178998641,
+      "lat": 12.973198,
+      "lon": 77.6801887,
+      "tags": {
+        "name": "Fresh Catch Fish Stall",
+        "shop": "seafood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178998642,
+      "lat": 12.972759,
+      "lon": 77.680127,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Kid's Castle Preschool"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178998643,
+      "lat": 12.9726143,
+      "lon": 77.6800831,
+      "tags": {
+        "name": "Rich wel Salon and spa for women",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7179305175,
+      "lat": 12.9725016,
+      "lon": 77.6787035,
+      "tags": {
+        "name": "Cake Dilim Pastry",
+        "shop": "pastry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7180709051,
+      "lat": 12.9721831,
+      "lon": 77.6797745,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "name": "Juice Souq"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7193452650,
+      "lat": 12.9760046,
+      "lon": 77.6791397,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Five Star Chicken",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "name": "Five Star Chicken",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7193521013,
+      "lat": 12.9722265,
+      "lon": 77.68077,
+      "tags": {
+        "addr:street": "Vignan Nagar",
+        "amenity": "bank",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "brand:wikipedia": "en:HDFC Bank",
+        "name": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7466913101,
+      "lat": 12.9734284,
+      "lon": 77.6752338,
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Ramdev Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7466913102,
+      "lat": 12.9728506,
+      "lon": 77.6778275,
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Patanjali Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7466913103,
+      "lat": 12.973691,
+      "lon": 77.6801517,
+      "tags": {
+        "name": "Home Choice",
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7466913106,
+      "lat": 12.974727,
+      "lon": 77.6788678,
+      "tags": {
+        "amenity": "language_school"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7476145133,
+      "lat": 12.9747067,
+      "lon": 77.6757118,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "amenity": "place_of_worship",
+        "name": "Srinivasa Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131813,
+      "lat": 12.9733933,
+      "lon": 77.6783833,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura Main Road, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560075",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Lotus Medical Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131814,
+      "lat": 12.9807257,
+      "lon": 77.6823734,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Nagappareddy Layout, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Little Flower Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131829,
+      "lat": 12.985028,
+      "lon": 77.674772,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura Main Road, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Aashraya ENT Healthcare",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131834,
+      "lat": 12.9731172,
+      "lon": 77.6767223,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "BEML Main Road, Malleshpalya, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Apple Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131841,
+      "lat": 12.9722387,
+      "lon": 77.6804922,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Namjoshi Road, Vignan Nagar, Bengaluru",
+        "addr:postcode": "560037",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Cure Multi Speciality Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131848,
+      "lat": 12.9734759,
+      "lon": 77.6785861,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Tippasandra, Bengaluru",
+        "addr:postcode": "560075",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "Kiyara Dental Multispeciality Clinic",
+        "source": "Local Knowledge",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131849,
+      "lat": 12.972726,
+      "lon": 77.6801239,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Doddanekundi, Basavanagara, Bengaluru",
+        "addr:postcode": "560037",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Priya Health Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131852,
+      "lat": 12.981425,
+      "lon": 77.679958,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura Main Road, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Sri Vinayaka Dental Concern's",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131860,
+      "lat": 12.9847338,
+      "lon": 77.675016,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura Main Road, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Tvacha Skin and Cosmetology Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131864,
+      "lat": 12.9850931,
+      "lon": 77.6748005,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Varsova Layout, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Shishu clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131872,
+      "lat": 12.9842776,
+      "lon": 77.6780225,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "80 Feet Road, HRBR Layout, Kalyan Nagar, Bengaluru",
+        "addr:state": "Karnataka",
+        "amenity": "doctors",
+        "name": "Dr. Ravi Ramachandra",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131877,
+      "lat": 12.9850241,
+      "lon": 77.6754474,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura Main Road, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Deepam Eye Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131879,
+      "lat": 12.982096,
+      "lon": 77.680148,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura Main Road, Abbaiah Reddy Layout, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560037",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Perfect Smile Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131891,
+      "lat": 12.9807085,
+      "lon": 77.680126,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura, 27th Cross Road, C V Raman Nagar, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Dr. Pranjali Srivastava's Clinic",
+        "source": "Local Knowledge",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131892,
+      "lat": 12.973637,
+      "lon": 77.675186,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Malleshpalya, New Tippasandra, Bengaluru",
+        "addr:postcode": "560075",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Medihope Super Specialty Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131906,
+      "lat": 12.9820666,
+      "lon": 77.680139,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kaggadasapura Main Road, C V Raman Nagar, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sparkle Tooth Care Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131913,
+      "lat": 12.9807404,
+      "lon": 77.680094,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Thimma Reddy Lane, Kaggadasapura Main Road, Layout, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Grihi's Diabetes Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131918,
+      "lat": 12.9841083,
+      "lon": 77.6744171,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "C V Raman Nagar, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Winter Mist Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131924,
+      "lat": 12.9724717,
+      "lon": 77.6797057,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vignan Nagar, Doddanekkundi, Bengaluru",
+        "addr:postcode": "560075",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Ashwin Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131926,
+      "lat": 12.9742126,
+      "lon": 77.678669,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vignan Nagar, Malleshpalya, Doddanekkundi, Bengaluru",
+        "addr:postcode": "560037",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Easwari Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131930,
+      "lat": 12.9851886,
+      "lon": 77.676051,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kagadasapura Main Road, C V Raman Nagar, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Spectrum Physio Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131936,
+      "lat": 12.9851914,
+      "lon": 77.6762954,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "C V Raman Nagar, Kaggadasapura, Bengaluru",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "amenity": "doctors",
+        "name": "Dr. Ruchi Gupta",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187963512,
+      "lat": 12.9717162,
+      "lon": 77.6813888,
+      "tags": {
+        "addr:full": "P.O, DO.NO.31/39, MONITHA MANSION, VIGNAN NAGAR MAIN ROAD THIPPASANDRA, MARATHAHALLY, Sector B, Ramaiahreddy Colony, New Tippasandra, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "South Indian Bank",
+        "brand:wikidata": "Q2044973",
+        "name": "South Indian Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188018394,
+      "lat": 12.9831754,
+      "lon": 77.6803283,
+      "tags": {
+        "addr:full": "Abbaiah Reddy Layout, Kaggadasapura, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Smiles Dental Care ECHS Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10741197864,
+      "lat": 12.9717424,
+      "lon": 77.6809351,
+      "tags": {
+        "name": "My grocer",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11035678505,
+      "lat": 12.9726175,
+      "lon": 77.6780593,
+      "tags": {
+        "addr:street": "Malleshpalya Main Road",
+        "name": "Poorvika",
+        "name:kn": "ಪೂರ್ವಿಕ",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11149315613,
+      "lat": 12.9785893,
+      "lon": 77.6754889,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "shawarma;rolls;biriyani",
+        "diet:non-vegetarian": "yes",
+        "name": "Kabab Souq"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11149339761,
+      "lat": 12.9789613,
+      "lon": 77.6754519,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "south_indian;dosa;idly;regional",
+        "diet:vegetarian": "yes",
+        "name": "Kannan Cafe",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11149339762,
+      "lat": 12.9787475,
+      "lon": 77.6755457,
+      "tags": {
+        "name": "Repeat Liqours",
+        "shop": "store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11149339763,
+      "lat": 12.9772353,
+      "lon": 77.6747329,
+      "tags": {
+        "name": "Eden Fresh",
+        "shop": "vegetables",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11199831337,
+      "lat": 12.9739312,
+      "lon": 77.6736939,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "48",
+        "addr:postcode": "560075",
+        "addr:street": "7th Main Road",
+        "amenity": "library",
+        "contact:facebook": "thinkboxlibrary",
+        "contact:instagram": "thinkboxblore",
+        "email": "ethinkbox@gmail.com",
+        "name": "ThinkBox Children's Library",
+        "phone": "+91 9742849955",
+        "website": "https://thinkbox.co.in/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12014458196,
+      "lat": 12.9810194,
+      "lon": 77.679839,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:street": "Kaggadasapura Main Road",
+        "name": "Mataji General Store",
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12014473674,
+      "lat": 12.9812196,
+      "lon": 77.6800194,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:street": "Kaggadasapura Main Road",
+        "amenity": "pharmacy",
+        "name": "Mataji Medical Store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12014494001,
+      "lat": 12.984713,
+      "lon": 77.6793123,
+      "tags": {
+        "addr:street": "DRDO Phase 2 Main Road",
+        "name": "Nandani Milk Shop",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12165307692,
+      "lat": 12.9797469,
+      "lon": 77.6808891,
+      "tags": {
+        "check_date": "2024-09-07",
+        "name": "Thatha Tea",
+        "shop": "tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12541241515,
+      "lat": 12.9789825,
+      "lon": 77.6757301,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560093",
+        "addr:street": "Kaggadasapura, 6th Cross post, Balaji Layout, C V Raman Nagar",
+        "name": "Top In Town",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13070823030,
+      "lat": 12.9726226,
+      "lon": 77.6775871,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13251268817,
+      "lat": 12.9769205,
+      "lon": 77.673297,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13251268818,
+      "lat": 12.9769298,
+      "lon": 77.6735807,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314210261,
+      "center": {
+        "lat": 12.9790506,
+        "lon": 77.6739877
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "name": "NCFE School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347017336,
+      "center": {
+        "lat": 12.9740919,
+        "lon": 77.6840408
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Shri Shri Ravishankar Vidya Mandir"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347017466,
+      "center": {
+        "lat": 12.9712543,
+        "lon": 77.6820908
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "brand:wikipedia": "en:Royal Dutch Shell",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:unleaded": "yes",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್",
+        "opening_hours": "24/7",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347133741,
+      "center": {
+        "lat": 12.9734254,
+        "lon": 77.6802563
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Welldone Women Salon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347133987,
+      "center": {
+        "lat": 12.9720928,
+        "lon": 77.6814964
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Faith AG Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350158339,
+      "center": {
+        "lat": 12.9792874,
+        "lon": 77.6892526
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 352795275,
+      "center": {
+        "lat": 12.9728019,
+        "lon": 77.6783947
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "8",
+        "addr:postcode": "560037",
+        "addr:street": "Namjoshi Rd, Vignan Nagar, LBS Nagar, Kaggadasapura",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Ramdev Hi-Fashion",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362927674,
+      "center": {
+        "lat": 12.9760106,
+        "lon": 77.6840346
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Virla Children's Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 415124236,
+      "center": {
+        "lat": 12.9726274,
+        "lon": 77.6777335
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Vignananagar Bus Station",
+        "name:kn": "ವಿಜ್ಞಾನನಗರ ಬಸ್ ನಿಲ್ದಾಣ",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 415125446,
+      "center": {
+        "lat": 12.9774258,
+        "lon": 77.6713351
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Global City International School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 658040989,
+      "center": {
+        "lat": 12.9764955,
+        "lon": 77.6751122
+      },
+      "tags": {
+        "amenity": "school",
+        "building": "school",
+        "name": "Chaitanya E-Techno Scool",
+        "operator": "Private"
+      }
+    },
+    {
+      "type": "way",
+      "id": 764335938,
+      "center": {
+        "lat": 12.971897,
+        "lon": 77.6807587
+      },
+      "tags": {
+        "amenity": "bar",
+        "amenity_1": "restaurant",
+        "building": "yes",
+        "name": "Mourya Bar & Restaurant",
+        "opening_hours": "08:00-00:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770675799,
+      "center": {
+        "lat": 12.9793867,
+        "lon": 77.6770862
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Acti Sports Arena",
+        "sport": "badminton"
+      }
+    },
+    {
+      "type": "way",
+      "id": 799452941,
+      "center": {
+        "lat": 12.9712431,
+        "lon": 77.6822495
+      },
+      "tags": {
+        "brand": "Shell Select",
+        "brand:wikidata": "Q124359752",
+        "brand:wikipedia": "en:Royal Dutch Shell",
+        "building": "yes",
+        "name": "Shell Select",
+        "opening_hours": "24/7",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "way",
+      "id": 810219948,
+      "center": {
+        "lat": 12.9726438,
+        "lon": 77.6818101
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Dazzle Car Care",
+        "service:vehicle:body_repair": "yes",
+        "service:vehicle:car_repair": "yes",
+        "service:vehicle:detailing": "yes",
+        "service:vehicle:oil_change": "yes",
+        "service:vehicle:painting": "yes",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 888606697,
+      "center": {
+        "lat": 12.9861829,
+        "lon": 77.6813141
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 888606698,
+      "center": {
+        "lat": 12.9861444,
+        "lon": 77.6811587
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054384478,
+      "center": {
+        "lat": 12.9763384,
+        "lon": 77.6728844
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sishu Griha Junior School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1225130420,
+      "center": {
+        "lat": 12.9736427,
+        "lon": 77.6859585
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1225132353,
+      "center": {
+        "lat": 12.9794972,
+        "lon": 77.6829234
+      },
+      "tags": {
+        "amenity": "crematorium",
+        "landuse": "cemetery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1252262802,
+      "center": {
+        "lat": 12.9804358,
+        "lon": 77.6763889
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1252262807,
+      "center": {
+        "lat": 12.9814109,
+        "lon": 77.6743372
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1299038391,
+      "center": {
+        "lat": 12.9812208,
+        "lon": 77.6859362
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Geetanjali Vidyalaya",
+        "name:kn": "ಗೀತಾಂಜಲಿ ವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1319396469,
+      "center": {
+        "lat": 12.9782314,
+        "lon": 77.6795336
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "compressed_air": "yes",
+        "name": "HP Petrol Bunk",
+        "name:kn": "ಹಿಂದುಸ್ತಾನ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "official_name": "Hindustan Petroleum",
+        "operator": "HP",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1320017857,
+      "center": {
+        "lat": 12.9779038,
+        "lon": 77.6782886
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1320017879,
+      "center": {
+        "lat": 12.9777913,
+        "lon": 77.6790776
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363975877,
+      "center": {
+        "lat": 12.982326,
+        "lon": 77.6729649
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363975879,
+      "center": {
+        "lat": 12.9803321,
+        "lon": 77.6714056
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Atal Bihari Vajpayee Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363975904,
+      "center": {
+        "lat": 12.9769543,
+        "lon": 77.6725405
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "SAI Cricket Academy",
+        "sport": "cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443878742,
+      "center": {
+        "lat": 12.9738858,
+        "lon": 77.6855381
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443878743,
+      "center": {
+        "lat": 12.97347,
+        "lon": 77.6861977
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443878744,
+      "center": {
+        "lat": 12.9734058,
+        "lon": 77.6863724
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443894895,
+      "center": {
+        "lat": 12.9734409,
+        "lon": 77.6778471
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Hayagriva Girls' School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443925831,
+      "center": {
+        "lat": 12.9760078,
+        "lon": 77.6794218
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443942873,
+      "center": {
+        "lat": 12.970701,
+        "lon": 77.682283
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sri Chaitanya Future Pathways Global School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443942969,
+      "center": {
+        "lat": 12.9777444,
+        "lon": 77.6812117
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443942970,
+      "center": {
+        "lat": 12.9777363,
+        "lon": 77.6813317
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444109296,
+      "center": {
+        "lat": 12.9768828,
+        "lon": 77.6737751
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444109298,
+      "center": {
+        "lat": 12.9775221,
+        "lon": 77.6724957
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Jalakanteshwara Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444109352,
+      "center": {
+        "lat": 12.9763507,
+        "lon": 77.6728482
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444260395,
+      "center": {
+        "lat": 12.9794635,
+        "lon": 77.6775507
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444447489,
+      "center": {
+        "lat": 12.9778841,
+        "lon": 77.6849608
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444469674,
+      "center": {
+        "lat": 12.9851394,
+        "lon": 77.6868513
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444469684,
+      "center": {
+        "lat": 12.9787378,
+        "lon": 77.6895431
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444469712,
+      "center": {
+        "lat": 12.9814897,
+        "lon": 77.6859865
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445950447,
+      "center": {
+        "lat": 12.9825771,
+        "lon": 77.6771255
+      },
+      "tags": {
+        "addr:city": "Bengalore",
+        "addr:postcode": "560093",
+        "addr:street": "19th Cross, Kaggadasapura",
+        "amenity": "school",
+        "building:levels": "2",
+        "landuse": "education",
+        "name": "Government Primary School",
+        "name:kn": "ಸರ್ಕಾರಿ ಪ್ರಾಥಮಿಕ ಶಾಲೆ",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445950450,
+      "center": {
+        "lat": 12.9827645,
+        "lon": 77.6771541
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Om Sakthi Temple",
+        "name:kn": "ಓಂ ಶಕ್ತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445950468,
+      "center": {
+        "lat": 12.9826642,
+        "lon": 77.6783382
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445950679,
+      "center": {
+        "lat": 12.9816626,
+        "lon": 77.678271
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445950806,
+      "center": {
+        "lat": 12.9841107,
+        "lon": 77.677254
+      },
+      "tags": {
+        "addr:street": "Kaggadasspura Main Road",
+        "amenity": "school",
+        "name": "Saraswati Vidya Mandir",
+        "name:kn": "ಸರಸ್ವತಿ ವಿದ್ಯ ಮಂದಿರ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1446434696,
+      "center": {
+        "lat": 12.9825795,
+        "lon": 77.6724319
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1447172802,
+      "center": {
+        "lat": 12.9794379,
+        "lon": 77.6742159
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    }
+  ]
+}

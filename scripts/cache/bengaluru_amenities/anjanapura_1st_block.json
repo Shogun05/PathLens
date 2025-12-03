@@ -1,0 +1,1236 @@
+{
+  "area_name": "Anjanapura 1st Block",
+  "osm_id": 13245148765,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 88,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 10311192462,
+      "lat": 12.8571946,
+      "lon": 77.540965,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370638,
+      "lat": 12.8568366,
+      "lon": 77.5417326,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "check_date": "2023-10-13",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "internet_access": "no",
+        "name": "Apollo Pharmacy",
+        "panoramax": "1952291c-3e44-461e-90e0-4385b18c8fdc",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:qr_code": "yes",
+        "payment:upi": "yes",
+        "payment:visa": "yes",
+        "phone": "+91 90361 19292",
+        "source": "survey",
+        "website": "https://www.apollopharmacy.in/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370639,
+      "lat": 12.8568948,
+      "lon": 77.5417454,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "air_conditioning": "yes",
+        "brand": "Adishwar Supermarket",
+        "check_date": "2024-10-18",
+        "currency:INR": "yes",
+        "diet:gluten_free": "limited",
+        "diet:sugar_free": "limited",
+        "dog": "no",
+        "internet_access": "no",
+        "name": "Adishwar Convenience Store",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "panoramax": "de9ac477-2317-4ab7-bcc3-d5bb2c149bc2",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:qr_code": "yes",
+        "payment:upi": "yes",
+        "phone": "+91 88610 07304",
+        "second_hand": "no",
+        "shop": "convenience",
+        "source": "survey",
+        "stroller": "no",
+        "toilets": "no",
+        "toilets:wheelchair": "no",
+        "website": "https://www.adishwaremart.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370640,
+      "lat": 12.8567838,
+      "lon": 77.541725,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "air_conditioning": "no",
+        "amenity": "clinic",
+        "check_date": "2023-10-13",
+        "healthcare": "clinic",
+        "internet_access": "no",
+        "name": "Apollo Clinic",
+        "name:kn": "ಅಪೊಲೊ ಕ್ಲಿನಿಕ್",
+        "operator": "Apollo Hospitals",
+        "operator:type": "private",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+91 80 4172 3865",
+        "source": "survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370684,
+      "lat": 12.8569364,
+      "lon": 77.5407065,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311371477,
+      "lat": 12.8565107,
+      "lon": 77.540272,
+      "tags": {
+        "access": "private",
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "wooden brown",
+        "material": "wood",
+        "seats": "3",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10538729869,
+      "lat": 12.8591588,
+      "lon": 77.5422795,
+      "tags": {
+        "addr:postcode": "560062",
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "cash_in": "no",
+        "check_date": "2024-10-18",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "opening_hours": "24/7",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549",
+        "source": "survey",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10649468955,
+      "lat": 12.8601889,
+      "lon": 77.5422879,
+      "tags": {
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Resort Road, Mallasandra",
+        "air_conditioning": "no",
+        "amenity": "fast_food",
+        "capacity": "7",
+        "check_date": "2025-09-02",
+        "cuisine": "burger;regional",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Stop N Joy",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10680740309,
+      "lat": 12.8601722,
+      "lon": 77.5422854,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Mallasandra, Karnataka",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "DP Speciality Dental Clinic",
+        "opening_hours": "Mo-Sa 10:00-14:00+,16:00-18:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801926245,
+      "lat": 12.8641,
+      "lon": 77.5434658,
+      "tags": {
+        "addr:postcode": "560062",
+        "check_date": "2025-01-19",
+        "covered": "yes",
+        "lit": "yes",
+        "name": "Dr Bright Laundary",
+        "shop": "laundry",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10826187893,
+      "lat": 12.8602534,
+      "lon": 77.5423015,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "male": "yes",
+        "name": "Noob Saloon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10885718096,
+      "lat": 12.859147,
+      "lon": 77.5421747,
+      "tags": {
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Resort Road, Mallasandra, Bangalore",
+        "amenity": "restaurant",
+        "name": "Pan Platters"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10893490097,
+      "lat": 12.8608459,
+      "lon": 77.5426559,
+      "tags": {
+        "addr:street": "Holiday Village Inn Road, Mallasandra, Bangalore",
+        "brand": "Pericorp",
+        "description": "Unisex Saloon, Massage & Spa",
+        "dog": "no",
+        "email": "imagineco@gmail.com",
+        "internet_access": "no",
+        "name": "Salon Perimeter",
+        "name:ta": "பெரிமீட்டர்",
+        "opening_hours": "Mo 10:00-20:00; We-Su 10:00-20:00",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "yes",
+        "phone": "+91 86183 29463",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11048987729,
+      "lat": 12.8602333,
+      "lon": 77.5422604,
+      "tags": {
+        "addr:postcode": "560062",
+        "check_date": "2023-10-13",
+        "internet_access": "no",
+        "name": "Student Xerox",
+        "shop": "copyshop",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11048988082,
+      "lat": 12.8571582,
+      "lon": 77.5410096,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11048990363,
+      "lat": 12.8603077,
+      "lon": 77.5423118,
+      "tags": {
+        "addr:street": "JP Hive complex, Holiday Village Resort Road, Mallasandra, Bangalore",
+        "name": "Palak Vegetable Shop",
+        "phone": "8317349903",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11049002210,
+      "lat": 12.8571576,
+      "lon": 77.5410138,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11178768417,
+      "lat": 12.8606762,
+      "lon": 77.5427075,
+      "tags": {
+        "addr:street": "Vaibhava Sumukha Enclave Phase -1, Holiday Village Resort Road, Off Kanakapura Road, Mallasandra, Bengaluru",
+        "amenity": "school",
+        "name": "Cohesion Montessori"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245791922,
+      "lat": 12.8621213,
+      "lon": 77.5430328,
+      "tags": {
+        "name": "Sharadha's Spa & Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245842785,
+      "lat": 12.8619892,
+      "lon": 77.5430244,
+      "tags": {
+        "name": "Dhanalakshmi Electricals & Power Tools",
+        "shop": "electrical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245854559,
+      "lat": 12.8620659,
+      "lon": 77.5430178,
+      "tags": {
+        "amenity": "clinic",
+        "description": "Dr Nisha Tiwary, MBBS, Family Physician",
+        "healthcare": "clinic",
+        "name": "Bruhati Clinic",
+        "name:ta": "ப்ருஹாத்தி க்ளினிக்"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245866001,
+      "lat": 12.862565,
+      "lon": 77.5430321,
+      "tags": {
+        "name": "UR Wash Laundry",
+        "phone": "6364576666",
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245879104,
+      "lat": 12.8616583,
+      "lon": 77.5429349,
+      "tags": {
+        "addr:postcode": "560062",
+        "air_conditioning": "no",
+        "check_date": "2023-10-13",
+        "currency:INR": "yes",
+        "internet_access": "no",
+        "name": "Sashi Two Wheeler Mechanic",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245914595,
+      "lat": 12.8625995,
+      "lon": 77.5430349,
+      "tags": {
+        "addr:postcode": "560062",
+        "air_conditioning": "no",
+        "check_date": "2023-10-13",
+        "currency:INR": "yes",
+        "internet_access": "no",
+        "name": "Nandhini Milk Parlour",
+        "name:ta": "நந்தினி பாலகம்",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245922502,
+      "lat": 12.8622143,
+      "lon": 77.5430185,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Kartikeya Medicals",
+        "name:ta": "கார்த்திகேயா மருந்தகம்"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245927018,
+      "lat": 12.8624194,
+      "lon": 77.5431285,
+      "tags": {
+        "name": "KM Motors",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245933594,
+      "lat": 12.861409,
+      "lon": 77.5429037,
+      "tags": {
+        "name": "Bushra Men's Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11621292898,
+      "lat": 12.8570072,
+      "lon": 77.5399821,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11621601191,
+      "lat": 12.8583169,
+      "lon": 77.5404962,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009676402,
+      "lat": 12.8607509,
+      "lon": 77.5426303,
+      "tags": {
+        "amenity": "fast_food",
+        "description": "Small Momos shop outside Market Fresh",
+        "name": "Darjeeling Hot Momos",
+        "opening_hours": "Mo-Fr 17:00-21:00",
+        "phone": "8927878252"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12168616852,
+      "lat": 12.8574286,
+      "lon": 77.5408487,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12174981770,
+      "lat": 12.8580786,
+      "lon": 77.538959,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175221620,
+      "lat": 12.8567499,
+      "lon": 77.5399564,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175221621,
+      "lat": 12.8567552,
+      "lon": 77.5399585,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175221623,
+      "lat": 12.8567047,
+      "lon": 77.540115,
+      "tags": {
+        "amenity": "bench",
+        "armrest": "yes",
+        "backrest": "yes",
+        "colour": "brown",
+        "direction": "204",
+        "material": "wood",
+        "seats:separated": "no",
+        "survey:date": "2025-03-05"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175277914,
+      "lat": 12.8565256,
+      "lon": 77.5402802,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12180378247,
+      "lat": 12.8609974,
+      "lon": 77.5426762,
+      "tags": {
+        "addr:street": "Holiday Village Road",
+        "name": "Hasiru Halli Thotta",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199192074,
+      "lat": 12.8573348,
+      "lon": 77.5409094,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199205161,
+      "lat": 12.8580095,
+      "lon": 77.5394039,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199206508,
+      "lat": 12.8571411,
+      "lon": 77.5410794,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199213846,
+      "lat": 12.8573216,
+      "lon": 77.5409007,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199244880,
+      "lat": 12.8571163,
+      "lon": 77.5410426,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199258517,
+      "lat": 12.8580046,
+      "lon": 77.5399676,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199258518,
+      "lat": 12.8580336,
+      "lon": 77.53997,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199281529,
+      "lat": 12.8565419,
+      "lon": 77.5402252,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199283645,
+      "lat": 12.8564689,
+      "lon": 77.5398592,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199284910,
+      "lat": 12.8571175,
+      "lon": 77.5410525,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199288191,
+      "lat": 12.8580534,
+      "lon": 77.5399701,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12230826895,
+      "lat": 12.8663372,
+      "lon": 77.54525,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Mallasandra",
+        "amenity": "clinic",
+        "name": "Dixit Skin & Ortho Care",
+        "phone": "+91 74830 75957"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12749347575,
+      "lat": 12.8609396,
+      "lon": 77.5426752,
+      "tags": {
+        "addr:street": "Holiday Village Road, off Kanakapura Road",
+        "name": "Magique Family Saloon",
+        "phone": "7975285129",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12778644461,
+      "lat": 12.8559909,
+      "lon": 77.5550903,
+      "tags": {
+        "addr:city": "Anjanapura",
+        "addr:district": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "80 Feet Road",
+        "amenity": "events_venue",
+        "name": "KBL Saarang",
+        "website": "https://kblsaarang.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12969563454,
+      "lat": 12.8536199,
+      "lon": 77.5449277,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12969563456,
+      "lat": 12.8535062,
+      "lon": 77.544461,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985609357,
+      "lat": 12.8599685,
+      "lon": 77.5423745,
+      "tags": {
+        "addr:housenumber": "15/5",
+        "amenity": "cafe",
+        "name": "Malgudi Parampare Cafe",
+        "phone": "8660959583"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985621322,
+      "lat": 12.8600351,
+      "lon": 77.5424122,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "cafe",
+        "name": "Authentic Bengaluru Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985629180,
+      "lat": 12.8600356,
+      "lon": 77.5424839,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "restaurant",
+        "name": "Paarus Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985645907,
+      "lat": 12.8599702,
+      "lon": 77.5424744,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "restaurant",
+        "name": "Cuisinova"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985648248,
+      "lat": 12.8600349,
+      "lon": 77.5424564,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "fast_food",
+        "name": "Dash of Delish"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985651797,
+      "lat": 12.859971,
+      "lon": 77.5424112,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "name": "Bunny Bakers",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13115663809,
+      "lat": 12.8600364,
+      "lon": 77.5423748,
+      "tags": {
+        "name": "New Mangalore Store",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13322028762,
+      "lat": 12.8592606,
+      "lon": 77.5421659,
+      "tags": {
+        "access": "customers",
+        "addr:city": "Mallasandra",
+        "addr:district": "Bangalore",
+        "addr:postcode": "560109",
+        "addr:street": "Holiday Village Road",
+        "charge": "3500 INR",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "name": "Machaxi PlayMax - Holiday Village Road",
+        "opening_hours": "Mo-Su 06:00-22:30",
+        "operator": "Machaxi",
+        "operator:type": "private",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:upi": "yes",
+        "sport": "badminton;swimming;cricket;soccer",
+        "website": "https://machaxi.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1118558815,
+      "center": {
+        "lat": 12.8566054,
+        "lon": 77.5407411
+      },
+      "tags": {
+        "access": "private",
+        "hoops": "2",
+        "leisure": "pitch",
+        "lit": "yes",
+        "name": "Multipurpose Court",
+        "sport": "basketball",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127816679,
+      "center": {
+        "lat": 12.8563688,
+        "lon": 77.540572
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829720,
+      "center": {
+        "lat": 12.856799,
+        "lon": 77.5417999
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829721,
+      "center": {
+        "lat": 12.8572353,
+        "lon": 77.5410217
+      },
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829722,
+      "center": {
+        "lat": 12.8574888,
+        "lon": 77.5400332
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "lit": "yes",
+        "location": "outdoor",
+        "name": "GE Swimming Pool",
+        "swimming_pool": "outdoor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829726,
+      "center": {
+        "lat": 12.8573333,
+        "lon": 77.5410427
+      },
+      "tags": {
+        "access": "private",
+        "check_date": "2025-03-05",
+        "leisure": "playground",
+        "lit": "yes",
+        "max_age": "15",
+        "operator": "GEOA",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829727,
+      "center": {
+        "lat": 12.8578033,
+        "lon": 77.5405276
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829728,
+      "center": {
+        "lat": 12.8568473,
+        "lon": 77.5407665
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829729,
+      "center": {
+        "lat": 12.8565789,
+        "lon": 77.5406287
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829753,
+      "center": {
+        "lat": 12.8571014,
+        "lon": 77.5396339
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127832208,
+      "center": {
+        "lat": 12.8596845,
+        "lon": 77.5425536
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127832214,
+      "center": {
+        "lat": 12.8595501,
+        "lon": 77.5444674
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1128136281,
+      "center": {
+        "lat": 12.8566151,
+        "lon": 77.5403374
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "capacity": "6",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1144623862,
+      "center": {
+        "lat": 12.8608026,
+        "lon": 77.5427373
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "116",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "air_conditioning": "yes",
+        "building": "yes",
+        "check_date": "2023-10-13",
+        "currency:INR": "yes",
+        "diet:gluten_free": "limited",
+        "diet:lactose_free": "limited",
+        "diet:sugar_free": "limited",
+        "dog": "no",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Market Fresh",
+        "name:ta": "மார்க்கெட் ஃபெரெஷ்",
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:qr_code": "yes",
+        "payment:upi": "yes",
+        "phone": "+91 88615 53742",
+        "shop": "supermarket",
+        "stroller": "yes",
+        "toilets": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963327,
+      "center": {
+        "lat": 12.8634456,
+        "lon": 77.5439231
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1249855418,
+      "center": {
+        "lat": 12.867768,
+        "lon": 77.5430689
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "Resort",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "leisure": "resort",
+        "name": "Holiday Village",
+        "name:ta": "ஹாலிடே வில்லேஜ்",
+        "operator": "Bhindra Resorts"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1250177472,
+      "center": {
+        "lat": 12.856581,
+        "lon": 77.5404362
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "capacity": "12",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315363481,
+      "center": {
+        "lat": 12.8565972,
+        "lon": 77.540859
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "lit": "yes",
+        "sport": "cricket_nets;cricket",
+        "surface": "artificial_turf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315363488,
+      "center": {
+        "lat": 12.8569902,
+        "lon": 77.5398249
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315366128,
+      "center": {
+        "lat": 12.8576766,
+        "lon": 77.541505
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315366129,
+      "center": {
+        "lat": 12.857566,
+        "lon": 77.5415287
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315366130,
+      "center": {
+        "lat": 12.8567275,
+        "lon": 77.5412113
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316166352,
+      "center": {
+        "lat": 12.8584767,
+        "lon": 77.5407514
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1345407066,
+      "center": {
+        "lat": 12.8562512,
+        "lon": 77.5561694
+      },
+      "tags": {
+        "addr:city": "Anjanapura",
+        "addr:district": "Bengaluru",
+        "addr:housenumber": "5/9",
+        "addr:postcode": "560062",
+        "addr:street": "80 feet road, near Vajaragiri Estate",
+        "building": "sports_hall",
+        "charge": "225 INR",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "name": "Arise Badminton Academy",
+        "opening_hours": "Mo-Su 05:00-22:00",
+        "rental": "shoes;racket;",
+        "sport": "badminton",
+        "website": "https://siliconcitysportsacademy.com/arise-badminton/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1345407106,
+      "center": {
+        "lat": 12.8537351,
+        "lon": 77.5512086
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382317066,
+      "center": {
+        "lat": 12.8600211,
+        "lon": 77.5424613
+      },
+      "tags": {
+        "addr:city": "Mallasandra",
+        "addr:district": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Road",
+        "amenity": "food_court",
+        "building": "yes",
+        "check_date": "2025-04-29",
+        "name": "Tummy Town Food Court"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390725577,
+      "center": {
+        "lat": 12.8669351,
+        "lon": 77.5446663
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "R K gardens, BBMP Park"
+      }
+    }
+  ]
+}

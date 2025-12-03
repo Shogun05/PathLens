@@ -1,0 +1,35 @@
+{
+  "area_name": "Ganigarahalli",
+  "osm_id": 2893323815,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 2,
+  "amenities": [
+    {
+      "type": "way",
+      "id": 1419417181,
+      "center": {
+        "lat": 13.0914741,
+        "lon": 77.5170246
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1419417182,
+      "center": {
+        "lat": 13.0921959,
+        "lon": 77.5193136
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

@@ -1,0 +1,757 @@
+{
+  "area_name": "Manjunath Nagara",
+  "osm_id": 19884591,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 58,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1474819887,
+      "lat": 12.9955579,
+      "lon": 77.5503454,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ranganatha Swamy Temple",
+        "name:kn": "ರಂಗನಾಥಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1808814321,
+      "lat": 12.9972835,
+      "lon": 77.5465706,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "729",
+        "addr:postcode": "560086",
+        "addr:street": "Modi Hospital Main Road",
+        "alt_name": "Kentucky Fried Chicken",
+        "alt_name:en": "Kentucky Fried Chicken",
+        "alt_name:hi": "केंटुकी फ्राइड चिकन",
+        "alt_name:pa": "ਕੈਂਟੁਕੀ ਫ੍ਰਾਈਡ ਚਿਕਨ",
+        "alt_name:pnb": "کینٹکی فرائیڈ چکن",
+        "alt_name:ur": "کینٹکی فرائیڈ چکن",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:en": "KFC",
+        "brand:hi": "केएफसी",
+        "brand:pa": "ਕੇਐਫਸੀ",
+        "brand:pnb": "کے ایف سی",
+        "brand:ur": "کے ایف سی",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:wikipedia:pa": "ਕੇਐਫਸੀ",
+        "brand:wikipedia:ur": "کینٹکی فرائیڈ چکن",
+        "contact:phone": "080 42102114",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "name": "KFC",
+        "name:en": "KFC",
+        "name:hi": "केएफसी",
+        "name:pa": "ਕੇਐਫਸੀ",
+        "name:pnb": "کے ایف سی",
+        "name:ur": "کے ایف سی",
+        "opening_hours": "11:00-23:00",
+        "operator": "KFC",
+        "phone": "080 44844484",
+        "takeaway": "yes",
+        "website": "https://online.kfc.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2301063513,
+      "lat": 12.9975064,
+      "lon": 77.5499528,
+      "tags": {
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2301066273,
+      "lat": 12.9973524,
+      "lon": 77.5476248,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "725",
+        "addr:postcode": "560086",
+        "addr:street": "Modi Hospital Main Road",
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "delivery": "yes",
+        "level": "1",
+        "name": "Sea Route Restaurant",
+        "opening_hours": "11:30-15:30, 18:30-23:00",
+        "phone": "080 41222292",
+        "phone_1": "+91 9900166088"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4382905014,
+      "lat": 12.9973946,
+      "lon": 77.5485023,
+      "tags": {
+        "brand": "Reliance Fresh",
+        "brand:wikidata": "Q7311014",
+        "brand:wikipedia": "en:Reliance Fresh",
+        "name": "Reliance Fresh",
+        "name:kn": "ರಿಲಾಯನ್ಸ್ ಫ್ರೆಶ್",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4383592314,
+      "lat": 12.9974503,
+      "lon": 77.5496185,
+      "tags": {
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "name:kn": "ಬಾಟಾ",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4453499055,
+      "lat": 12.9974074,
+      "lon": 77.548344,
+      "tags": {
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4453499061,
+      "lat": 12.9970994,
+      "lon": 77.5484588,
+      "tags": {
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4477057221,
+      "lat": 12.9938105,
+      "lon": 77.5458656,
+      "tags": {
+        "amenity": "school",
+        "name": "Indian High School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4477083306,
+      "lat": 12.9973118,
+      "lon": 77.5469972,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "726",
+        "addr:postcode": "560086",
+        "addr:street": "Modi Hospital Main Road",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "delivery": "yes",
+        "name": "Chung's Chinese Corner",
+        "opening_hours": "12:00-15:00, 19:00-23:00",
+        "phone": "080 23104929",
+        "phone_1": "080 23207729",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4528688851,
+      "lat": 12.9974416,
+      "lon": 77.550126,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4586321862,
+      "lat": 12.9974969,
+      "lon": 77.5501201,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "1",
+        "addr:postcode": "560010",
+        "addr:street": "Modi Hospital Main Road",
+        "amenity": "fast_food",
+        "delivery": "yes",
+        "name": "Rolls Kitchen",
+        "opening_hours": "12:00-22:30",
+        "outdoor_seating": "no",
+        "phone": "+91 7022164745"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4596136692,
+      "lat": 12.9973268,
+      "lon": 77.5478423,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "706",
+        "addr:postcode": "560086",
+        "addr:street": "Modi Hospital Main Road",
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "brand:pa": "ਬਰਗਰ ਕਿੰਗ",
+        "brand:ur": "برگر کنگ",
+        "brand:wikidata": "Q177054",
+        "brand:wikipedia": "en:Burger King",
+        "brand:wikipedia:pa": "ਬਰਗਰ ਕਿੰਗ",
+        "brand:wikipedia:ur": "برگر کنگ",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "Burger King",
+        "name:kn": "ಬರ್ಗರ್ ಕಿಂಗ್",
+        "name:pa": "ਬਰਗਰ ਕਿੰਗ",
+        "name:ru": "Бургер Кинг",
+        "name:ur": "برگر کنگ",
+        "outdoor_seating": "no",
+        "phone": "080 33558000",
+        "takeaway": "yes",
+        "website": "https://burgerking.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4596136694,
+      "lat": 12.9973971,
+      "lon": 77.5480936,
+      "tags": {
+        "brand": "Liberty",
+        "brand:wikidata": "Q6541947",
+        "name": "Liberty Exclusive Showroom",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4975005037,
+      "lat": 12.9972696,
+      "lon": 77.548401,
+      "tags": {
+        "name": "Ram Medicals",
+        "shop": "medical_supply"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4975005038,
+      "lat": 12.9974316,
+      "lon": 77.5486505,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4975005039,
+      "lat": 12.9974264,
+      "lon": 77.5485995,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4975005040,
+      "lat": 12.9974496,
+      "lon": 77.5487141,
+      "tags": {
+        "name": "Geetha Medicals",
+        "shop": "medical_supply"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4975005041,
+      "lat": 12.9974748,
+      "lon": 77.5490415,
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "hindu",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5076861312,
+      "lat": 12.9974378,
+      "lon": 77.5497693,
+      "tags": {
+        "brand": "Liberty",
+        "brand:wikidata": "Q6541947",
+        "name": "Liberty Exclusive Showroom",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5091022367,
+      "lat": 12.9974809,
+      "lon": 77.5498277,
+      "tags": {
+        "name": "Prakash Electronics",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5157373777,
+      "lat": 12.9974787,
+      "lon": 77.5492772,
+      "tags": {
+        "name": "Khalandar Mutton Stall",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027874,
+      "lat": 12.9973521,
+      "lon": 77.5501349,
+      "tags": {
+        "name": "Mahaveer Hardware",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5227398203,
+      "lat": 12.997507,
+      "lon": 77.5500266,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Santhosh Bar & Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5232581129,
+      "lat": 12.9971748,
+      "lon": 77.5483724,
+      "tags": {
+        "name": "Saanvi Rice Traders",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5232581130,
+      "lat": 12.9974492,
+      "lon": 77.5488565,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Sree Ganesh Fruit Juice Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5277355067,
+      "lat": 12.9971501,
+      "lon": 77.5484803,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "name": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್",
+        "operator": "Corporation Bank",
+        "operator:wikidata": "Q2003387"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5277355068,
+      "lat": 12.9973648,
+      "lon": 77.5483946,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "Arun Ice Creams"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5277355072,
+      "lat": 12.9974567,
+      "lon": 77.5489079,
+      "tags": {
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5412616126,
+      "lat": 12.9973139,
+      "lon": 77.5462296,
+      "tags": {
+        "brand": "Ramraj Cotton",
+        "brand:wikidata": "Q119161281",
+        "clothes": "women;men;children",
+        "name": "Ramraj Cotton",
+        "operator": "Ramraj",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5611358756,
+      "lat": 12.9970708,
+      "lon": 77.5484424,
+      "tags": {
+        "name": "Tanishka Xerox Centre",
+        "service:print": "yes",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5922659263,
+      "lat": 12.9971721,
+      "lon": 77.5501728,
+      "tags": {
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5922659264,
+      "lat": 12.9970049,
+      "lon": 77.550213,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5922659265,
+      "lat": 12.9969748,
+      "lon": 77.5502077,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5922659271,
+      "lat": 12.994309,
+      "lon": 77.5508192,
+      "tags": {
+        "name": "Rostar Mottan Stall",
+        "note": "spelled as Mottan on board",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6487165552,
+      "lat": 12.9954423,
+      "lon": 77.5504727,
+      "tags": {
+        "name": "True Cars",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6508610153,
+      "lat": 12.9974487,
+      "lon": 77.5487521,
+      "tags": {
+        "name": "Sri Sai Mementos and Trophies",
+        "shop": "interior_decoration"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6508610154,
+      "lat": 12.9974496,
+      "lon": 77.5487807,
+      "tags": {
+        "name": "Vivek Steel Furnitures",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6533844583,
+      "lat": 12.997183,
+      "lon": 77.5484972,
+      "tags": {
+        "name": "SN Digital Xerox",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6546848155,
+      "lat": 12.9974452,
+      "lon": 77.5494057,
+      "tags": {
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6546848156,
+      "lat": 12.9973178,
+      "lon": 77.5477407,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housenumber": "772",
+        "addr:place": "Rajajinagar",
+        "addr:postcode": "560086",
+        "addr:street": "Modi Hospital Main Road",
+        "amenity": "events_venue",
+        "email": "info@theroyalhall.in",
+        "level": "3",
+        "name": "The Royal Hall",
+        "phone": "+91-9591123456",
+        "website": "http://theroyalhall.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6546848157,
+      "lat": 12.9973525,
+      "lon": 77.5475825,
+      "tags": {
+        "level": "0",
+        "name": "Eastern Super Market",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6546848158,
+      "lat": 12.9973198,
+      "lon": 77.547093,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "indian",
+        "name": "Raje Donne Biryani Manne"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6546848161,
+      "lat": 12.9974694,
+      "lon": 77.5491408,
+      "tags": {
+        "name": "The Nobel House",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6711246908,
+      "lat": 12.9973881,
+      "lon": 77.5501344,
+      "tags": {
+        "name": "Tattoo Planet",
+        "shop": "tattoo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7108906085,
+      "lat": 12.9973706,
+      "lon": 77.5474267,
+      "tags": {
+        "addr:housenumber": "724",
+        "addr:postcode": "560079",
+        "addr:street": "Modi Hospital Main Road",
+        "name": "Looking Good Furniture",
+        "phone": "41493203",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7215440253,
+      "lat": 12.997484,
+      "lon": 77.5498729,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "operator": "Karnataka Bank",
+        "operator:wikidata": "Q2042632"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257126384,
+      "lat": 12.9960502,
+      "lon": 77.5476876,
+      "tags": {
+        "amenity": "college",
+        "name": "Goutham College",
+        "website": "https://gouthamcollege.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7291611529,
+      "lat": 12.9974224,
+      "lon": 77.5491294,
+      "tags": {
+        "name": "Sri Gururaghavendra Jewellery Works",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8989622948,
+      "lat": 12.9974681,
+      "lon": 77.5491837,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Hasanamba Benne Dosa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9574153223,
+      "lat": 12.9974557,
+      "lon": 77.5448459,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Crepito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9574153224,
+      "lat": 12.9972309,
+      "lon": 77.5464432,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "description": "BBMP Public Toilet",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9870845395,
+      "lat": 12.9972198,
+      "lon": 77.5466269,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Dindigul Thalapakatti",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12487685586,
+      "lat": 12.9948911,
+      "lon": 77.5506484,
+      "tags": {
+        "name": "Malnad Coffee House",
+        "shop": "coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12512224863,
+      "lat": 12.9972963,
+      "lon": 77.5472693,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Taffy's Rooftop Pub and Kitchen"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346825827,
+      "center": {
+        "lat": 12.9972136,
+        "lon": 77.546778
+      },
+      "tags": {
+        "addr:street": "Modi Hospital Road",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346825888,
+      "center": {
+        "lat": 12.9972666,
+        "lon": 77.5479581
+      },
+      "tags": {
+        "building": "commercial",
+        "building:levels": "4",
+        "name": "Unlimited",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393083788,
+      "center": {
+        "lat": 12.997424,
+        "lon": 77.5446699
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    }
+  ]
+}

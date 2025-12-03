@@ -1,0 +1,528 @@
+{
+  "area_name": "Dharmagiri Ward",
+  "osm_id": 19884524,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 36,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 524070986,
+      "lat": 12.9181989,
+      "lon": 77.573292,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganapathi Temple",
+        "name:kn": "ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1671675592,
+      "lat": 12.9240468,
+      "lon": 77.5707766,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೋಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1741567711,
+      "lat": 12.9239653,
+      "lon": 77.5705721,
+      "tags": {
+        "amenity": "atm",
+        "operator": "ICICI Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1742857855,
+      "lat": 12.9216041,
+      "lon": 77.5713773,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "female": "yes",
+        "level": "0",
+        "male": "yes",
+        "toilets:handwashing": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2280258943,
+      "lat": 12.9216283,
+      "lon": 77.5701608,
+      "tags": {
+        "amenity": "bar",
+        "name": "Kadamba Bar",
+        "source": "Self",
+        "wifi": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3214475140,
+      "lat": 12.921883,
+      "lon": 77.5675933,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:district": "Bengaluru Urban",
+        "addr:postcode": "560070",
+        "addr:suburb": "Banashankari",
+        "alt_name": "BNMIT",
+        "amenity": "college",
+        "name": "BNM Institute of Technology",
+        "name:kn": "ಬಿ ಎನ್ ಎಮ್ ತಾಂತ್ರಿಕ ವಿದ್ಯಾಲಯ",
+        "phone": "08026711781",
+        "website": "https://www.bnmit.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445129105,
+      "lat": 12.9188109,
+      "lon": 77.5687298,
+      "tags": {
+        "addr:city": "Banashankari 2nd stage,Bangalore",
+        "addr:housenumber": "1890",
+        "addr:postcode": "560070",
+        "addr:street": "9th Main Road",
+        "amenity": "restaurant",
+        "cuisine": "indian;seafood;fine_dining",
+        "name": "Sea Spice",
+        "name:en": "Sea Spice",
+        "opening_hours": "11:00-23:00",
+        "phone": "080 49652675",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446352741,
+      "lat": 12.9216335,
+      "lon": 77.5702729,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "27",
+        "addr:postcode": "560070",
+        "addr:street": "27th Cross Road",
+        "amenity": "pub",
+        "name": "K27 - The Pub",
+        "opening_hours": "10:30-00:00,00:00-01:00",
+        "phone": "+91 9980097472"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545901090,
+      "lat": 12.9174899,
+      "lon": 77.5732745,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Karnataka Bank ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545906793,
+      "lat": 12.9174334,
+      "lon": 77.5732706,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;sandwich;tea;indian;coffee_shop",
+        "diet:vegetarian": "yes",
+        "name": "Shri Krishna Bhavan",
+        "name:en": "Shri Krishna Bhavan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4602142609,
+      "lat": 12.9236989,
+      "lon": 77.5734586,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "south_indian",
+        "name": "Aaradhya Food Line",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6082975898,
+      "lat": 12.9243668,
+      "lon": 77.5735086,
+      "tags": {
+        "name": "Durga Sweets and Condiments",
+        "payment:cash": "yes",
+        "shop": "tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938708338,
+      "lat": 12.9215013,
+      "lon": 77.5655432,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No 154, 17 Th Main, 29 Th Cross, Near Bnm Institution",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sri Krishna Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944231452,
+      "lat": 12.9241208,
+      "lon": 77.5711229,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "2232, 23Road Cross Bsic. 2nd State, Near National Co-Operative Bank",
+        "addr:postcode": "560004",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Meenakshi Ent Speciality Centre",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944507653,
+      "lat": 12.9207314,
+      "lon": 77.5736019,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#3/2, 27Th Cross, Banashankari 2nd Stage,Near Brigade Software Park",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Excel Care Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944507660,
+      "lat": 12.9242515,
+      "lon": 77.573217,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "2269, 22nd Cross K R Road, K.R.Road",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Dr. Vidyananda's Surgery and Dia Centre",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7031621332,
+      "lat": 12.9245891,
+      "lon": 77.5734439,
+      "tags": {
+        "description": "Our focus is on design innovation and promotion of handcrafted products made by skilled artisans using natural inputs which sustains and preserves the environment. We are dedicated towards preserving rich and vibrant traditional Indian art.",
+        "name": "Jute Cottage",
+        "shop": "gift",
+        "source": "survey;local knowledge;gps"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924715,
+      "lat": 12.9215119,
+      "lon": 77.5724702,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Banashankari, Bengaluru",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sevakshetra Hospital",
+        "name:kn": "ಸೇವಾಕ್ಷೇತ್ರ ಆಸ್ಪತ್ರೆ",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10242924680,
+      "lat": 12.918,
+      "lon": 77.57,
+      "tags": {
+        "amenity": "recycling",
+        "recycling_type": "centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12507070342,
+      "lat": 12.9175556,
+      "lon": 77.573158,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13110965593,
+      "lat": 12.9233931,
+      "lon": 77.5734142,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Coffee Chemistry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13110965649,
+      "lat": 12.9212407,
+      "lon": 77.5721232,
+      "tags": {
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 162332398,
+      "center": {
+        "lat": 12.9177649,
+        "lon": 77.572995
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Banashankari TTMC",
+        "name:kn": "ಬನಶಂಕರಿ ಟಿಟಿಎಮ್ಸಿ",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 173154283,
+      "center": {
+        "lat": 12.9175199,
+        "lon": 77.5729498
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "building": "transportation",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 307096915,
+      "center": {
+        "lat": 12.9238959,
+        "lon": 77.5705123
+      },
+      "tags": {
+        "addr:street": "9th Main",
+        "amenity": "bank",
+        "atm": "yes",
+        "building": "yes",
+        "name": "National Co-operative Bank"
+      }
+    },
+    {
+      "type": "way",
+      "id": 307097150,
+      "center": {
+        "lat": 12.9216723,
+        "lon": 77.5721649
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "B 70, 27Th Cross Banashankari 2nd Stage Banashankari",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "addr:street": "27th Cross",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Sevakshetra Hospital, Bengaluru Urban",
+        "name:kn": "ಸೇವಾಕ್ಷೇತ್ರ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 307097180,
+      "center": {
+        "lat": 12.9213243,
+        "lon": 77.5732821
+      },
+      "tags": {
+        "addr:street": "Krishna Rajendra Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "building": "yes",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 307097181,
+      "center": {
+        "lat": 12.92161,
+        "lon": 77.5699684
+      },
+      "tags": {
+        "addr:street": "9th Main",
+        "amenity": "bank",
+        "brand": "Indian Overseas Bank",
+        "brand:wikidata": "Q2003611",
+        "brand:wikipedia": "en:Indian Overseas Bank",
+        "building": "yes",
+        "name": "Indian Overseas Bank",
+        "name:en": "Indian Overseas Bank",
+        "name:kn": "ಐ ಓ ಬಿ",
+        "short_name": "IOB",
+        "website": "https://www.iob.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 307097302,
+      "center": {
+        "lat": 12.9199691,
+        "lon": 77.5691959
+      },
+      "tags": {
+        "addr:street": "9th Main",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315336702,
+      "center": {
+        "lat": 12.9217948,
+        "lon": 77.5681465
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "BNMIT Ground",
+        "sport": "multi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347079551,
+      "center": {
+        "lat": 12.9229257,
+        "lon": 77.573212
+      },
+      "tags": {
+        "amenity": "ice_cream",
+        "brand": "Corner House",
+        "brand:wikidata": "Q124374322",
+        "building": "yes",
+        "delivery": "yes",
+        "name": "Corner House",
+        "name:kn": "ಕಾರ್ನರ್ ಹೌಸ್",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347079961,
+      "center": {
+        "lat": 12.9213283,
+        "lon": 77.5710801
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "South_indian;North_Indian",
+        "name": "Krishna Grand Restaurant",
+        "opening_hours": "Mo-Sa 08:00-20:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217372151,
+      "center": {
+        "lat": 12.9176655,
+        "lon": 77.5647513
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1271217741,
+      "center": {
+        "lat": 12.9182648,
+        "lon": 77.5690556
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351828779,
+      "center": {
+        "lat": 12.9175488,
+        "lon": 77.5733678
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1389713769,
+      "center": {
+        "lat": 12.918034,
+        "lon": 77.5704365
+      },
+      "tags": {
+        "amenity": "crematorium"
+      }
+    }
+  ]
+}

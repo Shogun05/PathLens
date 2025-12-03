@@ -1,0 +1,659 @@
+{
+  "area_name": "Deepanjali Nagara",
+  "osm_id": 19883339,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 54,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1371765555,
+      "lat": 12.9473925,
+      "lon": 77.5337817,
+      "tags": {
+        "addr:street": "Mysore Road",
+        "name": "Hero Honda",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474854794,
+      "lat": 12.9519559,
+      "lon": 77.5368963,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shaneshwara Temple",
+        "name:kn": "ಶನೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474854801,
+      "lat": 12.947907,
+      "lon": 77.5327064,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "name": "Shell"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2234361363,
+      "lat": 12.9438068,
+      "lon": 77.542,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Near BDA PArk",
+        "addr:housenumber": "56",
+        "addr:postcode": "560085",
+        "addr:street": "6th Main Road",
+        "amenity": "school",
+        "cmt": "Genauigkeit: 35.0m",
+        "ele": "784.9001029906099",
+        "hdop": "8.75",
+        "name": "Jnana Deepthi English Primary and High School",
+        "sat": "7",
+        "time": "2013-02-26T10:03:51Z"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2484900084,
+      "lat": 12.9436624,
+      "lon": 77.5419997,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Near BDA Park",
+        "addr:housenumber": "63",
+        "addr:postcode": "560085",
+        "addr:street": "6th Main Road",
+        "amenity": "hospital",
+        "name": "Shalini Nursing & MAternity Home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5303068060,
+      "lat": 12.9433956,
+      "lon": 77.5424957,
+      "tags": {
+        "amenity": "post_office",
+        "level": "1",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6000091924,
+      "lat": 12.9460972,
+      "lon": 77.5304519,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6464656301,
+      "lat": 12.9528,
+      "lon": 77.536684,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Surya Pharmaceuticals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6464656302,
+      "lat": 12.9517689,
+      "lon": 77.5369579,
+      "tags": {
+        "male": "yes",
+        "name": "Shirdi Gents Beauty Parlour",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6621696645,
+      "lat": 12.9463745,
+      "lon": 77.5298582,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6621696646,
+      "lat": 12.9463671,
+      "lon": 77.530647,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6645712429,
+      "lat": 12.9464451,
+      "lon": 77.5298235,
+      "tags": {
+        "amenity": "bicycle_rental"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813417763,
+      "lat": 12.9465969,
+      "lon": 77.5299892,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813417764,
+      "lat": 12.9465799,
+      "lon": 77.5299453,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631476,
+      "lat": 12.9525597,
+      "lon": 77.5367215,
+      "tags": {
+        "access": "yes",
+        "amenity": "motorcycle_parking",
+        "name": "Metro Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536840,
+      "lat": 12.9527335,
+      "lon": 77.5367001,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Kiran Diagnostics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536841,
+      "lat": 12.9518775,
+      "lon": 77.5369187,
+      "tags": {
+        "name": "Mohan Fashions",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536842,
+      "lat": 12.9518186,
+      "lon": 77.5369361,
+      "tags": {
+        "amenity": "juice_bar",
+        "cuisine": "juice",
+        "name": "Gajanana Juice Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536844,
+      "lat": 12.9508515,
+      "lon": 77.5372955,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536845,
+      "lat": 12.9505875,
+      "lon": 77.5372794,
+      "tags": {
+        "name": "Venkateshwara Tea Stall",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536850,
+      "lat": 12.9477068,
+      "lon": 77.5346079,
+      "tags": {
+        "brand": "Honda",
+        "brand:wikidata": "Q9584",
+        "name": "Mahindra",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536851,
+      "lat": 12.9480519,
+      "lon": 77.5329047,
+      "tags": {
+        "brand": "Honda",
+        "brand:wikidata": "Q9584",
+        "name": "Mahindra",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536857,
+      "lat": 12.9475278,
+      "lon": 77.5317729,
+      "tags": {
+        "brand": "Hyundai",
+        "brand:wikidata": "Q55931",
+        "name": "Hyundai",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536858,
+      "lat": 12.9470768,
+      "lon": 77.5313598,
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7164440800,
+      "lat": 12.9530877,
+      "lon": 77.5365485,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Shree Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7164440807,
+      "lat": 12.9486204,
+      "lon": 77.5348721,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "operator": "Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7255803916,
+      "lat": 12.9470925,
+      "lon": 77.5329946,
+      "tags": {
+        "brand": "Toyota",
+        "brand:wikidata": "Q53268",
+        "name": "Toyota",
+        "operator": "Toyota",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11278723468,
+      "lat": 12.9364245,
+      "lon": 77.5349405,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "cuisine": "south_indian",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11278822036,
+      "lat": 12.9415978,
+      "lon": 77.5317487,
+      "tags": {
+        "amenity": "fast_food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11676244704,
+      "lat": 12.9435944,
+      "lon": 77.5375921,
+      "tags": {
+        "shop": "candles"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11969539775,
+      "lat": 12.9354729,
+      "lon": 77.5396693,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11969539776,
+      "lat": 12.9349266,
+      "lon": 77.5395164,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12895444268,
+      "lat": 12.9434518,
+      "lon": 77.5382765,
+      "tags": {
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13153345186,
+      "lat": 12.9478428,
+      "lon": 77.5367591,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13153345192,
+      "lat": 12.9471311,
+      "lon": 77.536344,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362892978,
+      "center": {
+        "lat": 12.9439233,
+        "lon": 77.5383902
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "New BDA Layout Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362893181,
+      "center": {
+        "lat": 12.9442292,
+        "lon": 77.5431919
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 545052921,
+      "center": {
+        "lat": 12.9465947,
+        "lon": 77.5289298
+      },
+      "tags": {
+        "amenity": "parking",
+        "fee": "yes",
+        "level": "0",
+        "name": "Mysore Road Metro Parking",
+        "operator": "BMRCL",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 690847999,
+      "center": {
+        "lat": 12.9457765,
+        "lon": 77.5304311
+      },
+      "tags": {
+        "amenity": "parking",
+        "bicycle_parking": "yes",
+        "motorcycle:parking": "yes",
+        "name": "Mysore Road Metro Parking",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "way",
+      "id": 690848003,
+      "center": {
+        "lat": 12.947006,
+        "lon": 77.5292654
+      },
+      "tags": {
+        "amenity": "motorcycle_parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 734148540,
+      "center": {
+        "lat": 12.9451699,
+        "lon": 77.5299597
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "community_centre": "events_venue",
+        "name": "MR Convention Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 768703816,
+      "center": {
+        "lat": 12.9478868,
+        "lon": 77.5360381
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 768703817,
+      "center": {
+        "lat": 12.9477444,
+        "lon": 77.5359025
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "location": "outdoor",
+        "name": "Pride Enchanta Swimming Pool",
+        "swimming_pool": "outdoor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157397996,
+      "center": {
+        "lat": 12.9381289,
+        "lon": 77.5379681
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Ramakrishna Seva Trust",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157397997,
+      "center": {
+        "lat": 12.9352391,
+        "lon": 77.5395846
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vidyanagara Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217250856,
+      "center": {
+        "lat": 12.9376715,
+        "lon": 77.5341687
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Go Gas",
+        "name": "Go Gas",
+        "operator": "Go Gas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217250869,
+      "center": {
+        "lat": 12.9442181,
+        "lon": 77.5303458
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Total",
+        "brand:wikidata": "Q154037",
+        "name": "Total Gas",
+        "operator": "Total Gas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1291004769,
+      "center": {
+        "lat": 12.9342175,
+        "lon": 77.539285
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "name": "Kalabhyraveshwara Service Station",
+        "operator": "Indian Oil Corporation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363986252,
+      "center": {
+        "lat": 12.9417285,
+        "lon": 77.5380163
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393102826,
+      "center": {
+        "lat": 12.9436858,
+        "lon": 77.5388157
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Nayara",
+        "brand:wikidata": "Q5399377",
+        "name": "Nayara"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430943442,
+      "center": {
+        "lat": 12.9474967,
+        "lon": 77.5362887
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430943443,
+      "center": {
+        "lat": 12.9479496,
+        "lon": 77.5358321
+      },
+      "tags": {
+        "access": "private",
+        "hoops": "1",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443180028,
+      "center": {
+        "lat": 12.94683,
+        "lon": 77.5326434
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443180035,
+      "center": {
+        "lat": 12.9441243,
+        "lon": 77.5295546
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "brand:wikipedia": "en:Hindustan Petroleum",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum"
+      }
+    }
+  ]
+}

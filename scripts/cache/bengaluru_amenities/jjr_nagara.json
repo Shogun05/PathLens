@@ -1,0 +1,352 @@
+{
+  "area_name": "JJR Nagara",
+  "osm_id": 19883268,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 29,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2487524464,
+      "lat": 12.9634823,
+      "lon": 77.5523641,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Goripalya",
+        "addr:street": "Hosahalli Main Road",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Ganesh Medicals & General Store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4101067196,
+      "lat": 12.9606146,
+      "lon": 77.5565401,
+      "tags": {
+        "addr:street": "Mysore Road",
+        "amenity": "place_of_worship",
+        "check_date": "2023-10-08",
+        "name": "Masjid e Khabristan",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4101097390,
+      "lat": 12.9569629,
+      "lon": 77.5491868,
+      "tags": {
+        "addr:street": "Mysore Road",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4101097789,
+      "lat": 12.962289,
+      "lon": 77.5537495,
+      "tags": {
+        "addr:housenumber": "1st cross",
+        "addr:street": "Hosahalli Main Road",
+        "amenity": "place_of_worship",
+        "building": "mosque",
+        "name:kn": "ಮಸೀದಿ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130913296,
+      "lat": 12.9597748,
+      "lon": 77.5548192,
+      "tags": {
+        "addr:street": "Mysore Road",
+        "amenity": "place_of_worship",
+        "name": "Mysore Road Eidgha"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130929491,
+      "lat": 12.9609947,
+      "lon": 77.5508936,
+      "tags": {
+        "addr:street": "vinayaka nagar",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Old Gudahalli",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130929494,
+      "lat": 12.9634545,
+      "lon": 77.5521836,
+      "tags": {
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130934092,
+      "lat": 12.9600503,
+      "lon": 77.5539163,
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "mosque",
+        "name:kn": "ಮಸೀದಿ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130934096,
+      "lat": 12.9644831,
+      "lon": 77.5550085,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130934097,
+      "lat": 12.96422,
+      "lon": 77.5548239,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130934098,
+      "lat": 12.9608368,
+      "lon": 77.5485824,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Bismillah Tea Hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130960289,
+      "lat": 12.9608675,
+      "lon": 77.5495476,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130960392,
+      "lat": 12.9618971,
+      "lon": 77.552098,
+      "tags": {
+        "amenity": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130960990,
+      "lat": 12.9634155,
+      "lon": 77.5520086,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Global Medical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130960993,
+      "lat": 12.9608471,
+      "lon": 77.5490504,
+      "tags": {
+        "name": "Ayenger Bakery",
+        "name:kn": "ಅಯ್ಯಂಗರ್",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130962590,
+      "lat": 12.9608525,
+      "lon": 77.5490077,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130962989,
+      "lat": 12.9612397,
+      "lon": 77.5508007,
+      "tags": {
+        "amenity": "drinking_water",
+        "name": "doctor water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130963390,
+      "lat": 12.9644446,
+      "lon": 77.5552913,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5242628721,
+      "lat": 12.9621245,
+      "lon": 77.5522069,
+      "tags": {
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5259394922,
+      "lat": 12.9634851,
+      "lon": 77.5529474,
+      "tags": {
+        "amenity": "school",
+        "name": "Jawahar School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248255456,
+      "lat": 12.9571796,
+      "lon": 77.5501655,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "check_date": "2023-10-08",
+        "name": "Union Bank of India",
+        "name:kn": "ಯೂನಿಯನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248255457,
+      "lat": 12.9571816,
+      "lon": 77.550277,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "check_date": "2023-10-08",
+        "operator": "Union Bank of India",
+        "operator:wikidata": "Q2004078"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248255458,
+      "lat": 12.9573596,
+      "lon": 77.5511498,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "check_date": "2024-01-25",
+        "name": "Bharat Petroleum",
+        "name:en": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "self_service": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248255459,
+      "lat": 12.9585509,
+      "lon": 77.5536366,
+      "tags": {
+        "amenity": "cinema",
+        "check_date": "2023-10-08",
+        "name": "Gopalan cinemas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248255460,
+      "lat": 12.9584119,
+      "lon": 77.5532961,
+      "tags": {
+        "brand": "DMart",
+        "brand:wikidata": "Q5203271",
+        "check_date": "2023-10-08",
+        "name": "DMart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12145536674,
+      "lat": 12.9572457,
+      "lon": 77.5509305,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 166584397,
+      "center": {
+        "lat": 12.9584995,
+        "lon": 77.5534667
+      },
+      "tags": {
+        "landuse": "retail",
+        "name": "Gopalan Mall",
+        "name:kn": "ಗೋಪಾಲನ್ ಮಾಲ್",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169817243,
+      "center": {
+        "lat": 12.964005,
+        "lon": 77.5542033
+      },
+      "tags": {
+        "amenity": "cinema"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1298716883,
+      "center": {
+        "lat": 12.9576256,
+        "lon": 77.5518773
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "check_date": "2022-11-25",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:petrol": "yes",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್",
+        "self_service": "no",
+        "source": "survey"
+      }
+    }
+  ]
+}

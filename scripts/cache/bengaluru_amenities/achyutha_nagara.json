@@ -1,0 +1,335 @@
+{
+  "area_name": "Achyutha Nagara",
+  "osm_id": 7339711384,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 26,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2141651425,
+      "lat": 13.0836164,
+      "lon": 77.4840457,
+      "tags": {
+        "amenity": "atm",
+        "fee": "no",
+        "operator": "Axis Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2891388271,
+      "lat": 13.0870819,
+      "lon": 77.4869265,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6807495853,
+      "lat": 13.0834749,
+      "lon": 77.4844983,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "name": "Bombay Dine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6807499268,
+      "lat": 13.0830578,
+      "lon": 77.4841522,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "coffee_shop",
+        "name": "Udupi Upara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9865467417,
+      "lat": 13.0836189,
+      "lon": 77.4841495,
+      "tags": {
+        "amenity": "college",
+        "name": "Acharya graduate studies"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12632035876,
+      "lat": 13.0963161,
+      "lon": 77.4857542,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "New Hallimane Dhaba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12844150101,
+      "lat": 13.0834891,
+      "lon": 77.4843629,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Punjab House",
+        "phone": "+918861898404"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133118477,
+      "center": {
+        "lat": 13.0857211,
+        "lon": 77.4829131
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Acharya Stadium",
+        "name:kn": "ಅಚಾರ್ಯ ಕ್ರೀಡಾಂಗಣ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133119265,
+      "center": {
+        "lat": 13.085625,
+        "lon": 77.4839206
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Basket Ball Court",
+        "name:kn": "ಬಾಸ್ಕೆಟ್ ಬಾಲ್ ಅಂಕಣ",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348106019,
+      "center": {
+        "lat": 13.0837049,
+        "lon": 77.4851239
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Cafe Kiara"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348106504,
+      "center": {
+        "lat": 13.0835717,
+        "lon": 77.4847812
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Foody's Cafe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348106526,
+      "center": {
+        "lat": 13.0832171,
+        "lon": 77.4847772
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "The Tea Company"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348159485,
+      "center": {
+        "lat": 13.0937944,
+        "lon": 77.4907575
+      },
+      "tags": {
+        "amenity": "police",
+        "name": "Soladevanahalli Police Station",
+        "name:kn": "ಸೋಲದೇವನಹಳ್ಳಿ ಆರಕ್ಷಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726077402,
+      "center": {
+        "lat": 13.0900966,
+        "lon": 77.4878425
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Jamiya Masjid",
+        "name:kn": "ಜಮ ಮಸೀದಿ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726102868,
+      "center": {
+        "lat": 13.0850089,
+        "lon": 77.4866264
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "commercial",
+        "name": "Kuttu's Cafe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726116152,
+      "center": {
+        "lat": 13.0903405,
+        "lon": 77.4864538
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Acharya Hostel Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726116278,
+      "center": {
+        "lat": 13.084842,
+        "lon": 77.4822727
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Acharya Cafe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726167692,
+      "center": {
+        "lat": 13.0926658,
+        "lon": 77.488434
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Anjaneya Temple",
+        "name:kn": "ಆಂಜನೇಯ ದೇವಸ್ಥಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726174143,
+      "center": {
+        "lat": 13.0900966,
+        "lon": 77.4878425
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Jama Masjid",
+        "name:kn": "ಜಾಮ ಮಸೀದಿ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726181242,
+      "center": {
+        "lat": 13.0846236,
+        "lon": 77.4838029
+      },
+      "tags": {
+        "amenity": "library",
+        "building": "college",
+        "name": "Central Library"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726181483,
+      "center": {
+        "lat": 13.085625,
+        "lon": 77.4839206
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Basket Ball Court",
+        "name:kn": "ಬಾಸ್ಕೆಟ್ ಬಾಲ್ ಅಂಕಣ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726182044,
+      "center": {
+        "lat": 13.0851185,
+        "lon": 77.4839238
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Football Ground",
+        "name:kn": "ಫುಟ್ಬಾಲ್ ಆಟದ ಮೈದಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726182948,
+      "center": {
+        "lat": 13.0903405,
+        "lon": 77.4864538
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Acharya Cottage Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726382077,
+      "center": {
+        "lat": 13.0892378,
+        "lon": 77.4863318
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Defyle Unisex Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785272536,
+      "center": {
+        "lat": 13.0856894,
+        "lon": 77.4824135
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560107",
+        "addr:street": "Acharya Dr Sarvepalli Radhakrishnan Road",
+        "amenity": "college",
+        "name": "Acharya Institute of Technology",
+        "operator": "Acharya Institutes",
+        "operator:type": "college"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281214291,
+      "center": {
+        "lat": 13.0833502,
+        "lon": 77.4800867
+      },
+      "tags": {
+        "amenity": "college"
+      }
+    }
+  ]
+}

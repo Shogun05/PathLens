@@ -1,0 +1,336 @@
+{
+  "area_name": "JP Nagar 9th Phase",
+  "osm_id": 10931504796,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 24,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2574007081,
+      "lat": 12.8694872,
+      "lon": 77.5655782,
+      "tags": {
+        "amenity": "bank",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447345728,
+      "lat": 12.8725257,
+      "lon": 77.5667017,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "3",
+        "addr:postcode": "560062",
+        "addr:street": ",shop No 3,sun Complex, Circle, Anjanapura post,&nbsp;J P, Avalahalii, JP Nagar 9th Phase, JP Nagar",
+        "name": "Sri Nidhi Medicals",
+        "phone": "+9198459 87349",
+        "shop": "medical_supply",
+        "source": "justdial"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6276405887,
+      "lat": 12.8620102,
+      "lon": 77.5641166,
+      "tags": {
+        "addr:place": "Anjanapura",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GHPS Anjanapura",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಆಂಜನಪುರ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9568556292,
+      "lat": 12.8730816,
+      "lon": 77.5666726,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Amruth Nagar Main Road",
+        "name": "Reliance SMART Point",
+        "operator": "Reliance",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:upi": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9568586470,
+      "lat": 12.873081,
+      "lon": 77.5666966,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Amruth Nagar Main Road",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Netmeds",
+        "operator": "Reliance",
+        "website": "https://www.netmeds.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9568597065,
+      "lat": 12.8731205,
+      "lon": 77.5666746,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Amruth Nagar Main Road",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "drive_through": "no",
+        "name": "Domino's",
+        "name:kn": "ಡಾಮಿನೋಸ್",
+        "takeaway": "yes",
+        "website": "https://pizzaonline.dominos.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9568796528,
+      "lat": 12.8726746,
+      "lon": 77.5663573,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Anjanapura 60 Feet Road",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Best Medical and General Store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12208562949,
+      "lat": 12.864281,
+      "lon": 77.5632472,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:instagram": "sas.ive",
+        "name": "Sasive",
+        "website": "https://sasive.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13131326933,
+      "lat": 12.8720023,
+      "lon": 77.5701117,
+      "tags": {
+        "name": "veggie's lover - Tea, vegetables & groceries",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13131326934,
+      "lat": 12.8715697,
+      "lon": 77.5696132,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tea & cigarette stall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 120108572,
+      "center": {
+        "lat": 12.8682046,
+        "lon": 77.5673977
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Gurukul School",
+        "name:kn": "ಗುರುಕುಲ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362883587,
+      "center": {
+        "lat": 12.8663897,
+        "lon": 77.5621456
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362883647,
+      "center": {
+        "lat": 12.8656444,
+        "lon": 77.5646091
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 710637794,
+      "center": {
+        "lat": 12.8739355,
+        "lon": 77.5595153
+      },
+      "tags": {
+        "amenity": "school",
+        "email": "info@mutha.edu.in",
+        "name": "The Mutha School",
+        "operator": "Mutha Foundation",
+        "operator:type": "private",
+        "phone": "+91 99450 27007",
+        "school:gender": "mixed",
+        "website": "https://mutha.edu.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 946132227,
+      "center": {
+        "lat": 12.8731231,
+        "lon": 77.5636683
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1039075120,
+      "center": {
+        "lat": 12.8727119,
+        "lon": 77.5658939
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Anjanapura 60 Feet Road",
+        "amenity": "community_centre",
+        "building": "yes",
+        "name": "TS Convention Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1176579508,
+      "center": {
+        "lat": 12.8719713,
+        "lon": 77.5560321
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1176579511,
+      "center": {
+        "lat": 12.8747508,
+        "lon": 77.5609211
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Avalahalli Masjid",
+        "name:kn": "ಅವಲಹಳ್ಳಿ ಮಸ್ಜಿದ್",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1176579513,
+      "center": {
+        "lat": 12.8758843,
+        "lon": 77.5615653
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Doddakalasandra Government High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1328835818,
+      "center": {
+        "lat": 12.8604359,
+        "lon": 77.5683769
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337361059,
+      "center": {
+        "lat": 12.8608957,
+        "lon": 77.559172
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1345637499,
+      "center": {
+        "lat": 12.8653922,
+        "lon": 77.5581326
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346117110,
+      "center": {
+        "lat": 12.863635,
+        "lon": 77.5620694
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1369160305,
+      "center": {
+        "lat": 12.8738534,
+        "lon": 77.5645733
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    }
+  ]
+}

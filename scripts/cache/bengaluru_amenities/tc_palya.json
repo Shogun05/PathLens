@@ -1,0 +1,865 @@
+{
+  "area_name": "TC Palya",
+  "osm_id": 12047214010,
+  "osm_type": "node",
+  "place_type": "suburb",
+  "amenity_count": 67,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1468617486,
+      "lat": 13.0200035,
+      "lon": 77.7088068,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Bhagini Residency",
+        "name:kn": "ಭಾಗಿನಿ ರೆಸಿಡೆನ್ಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1725212205,
+      "lat": 13.020102,
+      "lon": 77.7090994,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "name": "Bank of India",
+        "operator": "Bank of India",
+        "operator:wikidata": "Q2004439"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1725212210,
+      "lat": 13.0229634,
+      "lon": 77.7138587,
+      "tags": {
+        "amenity": "bar",
+        "name": "Bruice Bar & Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1725212213,
+      "lat": 13.0233955,
+      "lon": 77.7145913,
+      "tags": {
+        "amenity": "bar",
+        "name": "Manu Bar & Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2410746148,
+      "lat": 13.0209904,
+      "lon": 77.7029783,
+      "tags": {
+        "amenity": "atm",
+        "fee": "Visa",
+        "operator": "ICIC Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4239039512,
+      "lat": 13.0153735,
+      "lon": 77.709498,
+      "tags": {
+        "name": "New Luxury Furniture",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4239061089,
+      "lat": 13.0153898,
+      "lon": 77.7093102,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4239061289,
+      "lat": 13.0152695,
+      "lon": 77.7093221,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4422388399,
+      "lat": 13.0207661,
+      "lon": 77.7054808,
+      "tags": {
+        "addr:street": "Thambuchettypalya Main Road",
+        "amenity": "school",
+        "name": "Indus Valley School",
+        "name:en": "Indus Valley School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4422461693,
+      "lat": 13.0176379,
+      "lon": 77.7059323,
+      "tags": {
+        "addr:street": "Old Madras Road",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445183934,
+      "lat": 13.0158543,
+      "lon": 77.7033173,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "53",
+        "addr:postcode": "560049",
+        "addr:street": "Near Sathya Sai Lake Side Hospital, 3rd Main, Vinayaka Layout, Old Madras Road, Battarahalli, K.R. Puram, Vidya Nagar, Krishnarajapuram",
+        "amenity": "hospital",
+        "name": "Thyrocare",
+        "phone": "080 6568 0365"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489782307,
+      "lat": 13.020453,
+      "lon": 77.7090922,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "#29/32",
+        "addr:postcode": "560049",
+        "addr:street": "Venkatadri Complex, Above Cafe Coffee Day, Battarahalli, Old Madras Road, Bhadrappa Layout, Sannatammanahalli, Battarahalli",
+        "leisure": "sports_centre",
+        "level": "3",
+        "name": "Vigour Fitness",
+        "opening_hours": "06:00-22:00",
+        "phone": "9035002761",
+        "sport": "gymnastics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489830104,
+      "lat": 13.0201214,
+      "lon": 77.7091912,
+      "tags": {
+        "addr:city": "Bengaluru,",
+        "addr:housenumber": "#29/32",
+        "addr:postcode": "560049",
+        "addr:street": ", 3rd Floor, Venkatadri Complex, Above Cafe Coffee Day, Battarahalli, Old Madras Road, Sannatammanahalli, Battarahalli",
+        "leisure": "sports_centre",
+        "name": "Vigour Fitness",
+        "opening_hours": "6:00-10:00",
+        "phone": "090350 02761"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4689872196,
+      "lat": 13.0215807,
+      "lon": 77.7128053,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Road , Casross Opposite Tc Palya Bus Store Old Madars Road",
+        "addr:postcode": "560049",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sathya Sai Lake Side Ortho Hospital",
+        "name:en": "Satya Sai",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6503617087,
+      "lat": 13.0178258,
+      "lon": 77.7044122,
+      "tags": {
+        "name": "LJ Iyengars Cake Houss",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6503617088,
+      "lat": 13.0174363,
+      "lon": 77.7041678,
+      "tags": {
+        "name": "Royal Mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6504220490,
+      "lat": 13.017914,
+      "lon": 77.704419,
+      "tags": {
+        "name": "Dharani",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6504220491,
+      "lat": 13.0182895,
+      "lon": 77.7043733,
+      "tags": {
+        "name": "Choice Travel Centre",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6504220492,
+      "lat": 13.0188757,
+      "lon": 77.7043818,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Aditya Pharma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6504220586,
+      "lat": 13.0182543,
+      "lon": 77.7043821,
+      "tags": {
+        "name": "Sri Balaji New Fashion",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6504220587,
+      "lat": 13.0184585,
+      "lon": 77.7043667,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "SLV medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6504236686,
+      "lat": 13.0188169,
+      "lon": 77.7043872,
+      "tags": {
+        "name": "Brand Store",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6509057792,
+      "lat": 13.0187503,
+      "lon": 77.7043598,
+      "tags": {
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6849360686,
+      "lat": 13.0241609,
+      "lon": 77.7063349,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tibet Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6943228034,
+      "lat": 13.0241654,
+      "lon": 77.7012992,
+      "tags": {
+        "name": "Vallombrosa Cheese",
+        "operator": "Vallombrosan Benedictine Confederation",
+        "shop": "cheese"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131827,
+      "lat": 13.0227243,
+      "lon": 77.6967523,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Thambu Chetty Palya, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Vijaya Lakshmi Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131842,
+      "lat": 13.0219523,
+      "lon": 77.6994046,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Sunshine Layout, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Health Plus Multi Speciality Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131886,
+      "lat": 13.020731,
+      "lon": 77.70227,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Swiss Medic Health Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131927,
+      "lat": 13.02241,
+      "lon": 77.697152,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Thambu Chetty Palya, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Pooja Dental and Orthodontic Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8368056517,
+      "lat": 13.0234795,
+      "lon": 77.7060652,
+      "tags": {
+        "addr:housenumber": "9-10",
+        "addr:postcode": "560049",
+        "addr:street": "Kethiganur Main Road",
+        "name": "Akshay Bakery",
+        "name:en": "Akshay Bakery & Sweets",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "098454 51522",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013978944,
+      "lat": 13.0286575,
+      "lon": 77.7078921,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Indian Saga"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13062869379,
+      "lat": 13.0155071,
+      "lon": 77.702372,
+      "tags": {
+        "brand": "Cromā",
+        "brand:wikidata": "Q5187683",
+        "name": "Cromā",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13062869380,
+      "lat": 13.0153771,
+      "lon": 77.7021292,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Chai Point",
+        "brand:wikidata": "Q28173415",
+        "cuisine": "coffee_shop",
+        "name": "Chai Point",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13062869381,
+      "lat": 13.0152255,
+      "lon": 77.7018342,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13183384729,
+      "lat": 13.0180222,
+      "lon": 77.7091335,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13183384731,
+      "lat": 13.0179505,
+      "lon": 77.7091465,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13183384735,
+      "lat": 13.0189286,
+      "lon": 77.7088958,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13183384737,
+      "lat": 13.0188653,
+      "lon": 77.7089194,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "way",
+      "id": 137589946,
+      "center": {
+        "lat": 13.019398,
+        "lon": 77.7073728
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Purvi Multi-cuisine"
+      }
+    },
+    {
+      "type": "way",
+      "id": 160464124,
+      "center": {
+        "lat": 13.019561,
+        "lon": 77.7079007
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "building": "shelter",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡಿಯನ್ ಆಯಿಲ್"
+      }
+    },
+    {
+      "type": "way",
+      "id": 160470309,
+      "center": {
+        "lat": 13.0206562,
+        "lon": 77.7000103
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "St. Anthony Composite P. U. College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 160470314,
+      "center": {
+        "lat": 13.021206,
+        "lon": 77.7003049
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "St Anthony's Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 213366824,
+      "center": {
+        "lat": 13.0221621,
+        "lon": 77.7005991
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "St Anthony's Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239759555,
+      "center": {
+        "lat": 13.0249583,
+        "lon": 77.7151415
+      },
+      "tags": {
+        "addr:city": "K.R Puram",
+        "addr:street": "Old Madras Road",
+        "amenity": "college",
+        "name": "SJES College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347029097,
+      "center": {
+        "lat": 13.0198187,
+        "lon": 77.7097234
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Adyar Ananda Bhavan",
+        "brand:wikidata": "Q15178238",
+        "building": "yes",
+        "name": "Adyar Ananda Bhavan",
+        "name:kn": "ಆದ್ಯಾರ್ ಆನಂದ ಭವನ",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 472037832,
+      "center": {
+        "lat": 13.0188093,
+        "lon": 77.7035811
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 679185384,
+      "center": {
+        "lat": 13.0218135,
+        "lon": 77.7031995
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Kristu Jyoti College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104377,
+      "center": {
+        "lat": 13.0279503,
+        "lon": 77.699839
+      },
+      "tags": {
+        "amenity": "monastery",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "name": "Missionaries of the Sacred Heart",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104380,
+      "center": {
+        "lat": 13.0263197,
+        "lon": 77.6996501
+      },
+      "tags": {
+        "amenity": "monastery",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "name": "Vinaya Sadan",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104381,
+      "center": {
+        "lat": 13.0278409,
+        "lon": 77.7022098
+      },
+      "tags": {
+        "amenity": "monastery",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "name": "Ananda Sadan",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104382,
+      "center": {
+        "lat": 13.0205109,
+        "lon": 77.7007605
+      },
+      "tags": {
+        "amenity": "monastery",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "name": "St. Anne's Novititate",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104384,
+      "center": {
+        "lat": 13.0205206,
+        "lon": 77.7041678
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Visvadeep: Institute of Youth Ministry and Faith Education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104385,
+      "center": {
+        "lat": 13.025362,
+        "lon": 77.706808
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Garden City University"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104387,
+      "center": {
+        "lat": 13.026686,
+        "lon": 77.7030639
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Assisi School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104392,
+      "center": {
+        "lat": 13.0230732,
+        "lon": 77.7014597
+      },
+      "tags": {
+        "amenity": "monastery",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "name": "Jeevadhama",
+        "name:kn": "ಜೀವಧಾಮ",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104393,
+      "center": {
+        "lat": 13.0243038,
+        "lon": 77.7015016
+      },
+      "tags": {
+        "amenity": "monastery",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "name": "Gualbert Bhavan",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196104394,
+      "center": {
+        "lat": 13.0229356,
+        "lon": 77.7024819
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Don Bosco College",
+        "name:kn": "ಡಾನ್ ಬಾಸ್ಕೋ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339756838,
+      "center": {
+        "lat": 13.0231353,
+        "lon": 77.7089239
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1408201370,
+      "center": {
+        "lat": 13.0175958,
+        "lon": 77.7092081
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410389588,
+      "center": {
+        "lat": 13.0130342,
+        "lon": 77.7049303
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Garden City College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421484084,
+      "center": {
+        "lat": 13.0238557,
+        "lon": 77.6990607
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421738900,
+      "center": {
+        "lat": 13.0268301,
+        "lon": 77.7056797
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421738901,
+      "center": {
+        "lat": 13.02657,
+        "lon": 77.7056876
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421739089,
+      "center": {
+        "lat": 13.028984,
+        "lon": 77.7049604
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421739102,
+      "center": {
+        "lat": 13.0265005,
+        "lon": 77.7070029
+      },
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421739175,
+      "center": {
+        "lat": 13.0207585,
+        "lon": 77.7016687
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "K.R.Puram, Battarahalli, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Shanthinilaya Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1433581994,
+      "center": {
+        "lat": 13.0222082,
+        "lon": 77.7142207
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    }
+  ]
+}

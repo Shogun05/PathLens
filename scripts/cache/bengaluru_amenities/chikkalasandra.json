@@ -1,0 +1,78 @@
+{
+  "area_name": "Chikkalasandra",
+  "osm_id": 19883379,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 4,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 7579924702,
+      "lat": 12.9209147,
+      "lon": 77.5432594,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Banashankari, Bengaluru",
+        "addr:postcode": "560085",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Beta Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924761,
+      "lat": 12.9249909,
+      "lon": 77.5440968,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Banashankari, Bengaluru",
+        "addr:postcode": "560085",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Devi Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12462536465,
+      "lat": 12.9186803,
+      "lon": 77.5482356,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru South",
+        "addr:housenumber": "39",
+        "addr:postcode": "560061",
+        "addr:street": "5th A Main, 3rd Cross, Hanumagiri Layout, Chikkalsandra",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/profile.php?id=61567838247673",
+        "cuisine": "indian;punjabi;north_indian",
+        "delivery": "yes",
+        "description": "Dive into a culinary journey to Punjab from the heart of Chikkalsandra, Bengaluru, at Ambala Cantt - Cloud Kitchen. Experience the warmth of homemade Punjabi meals prepared with traditional recipes.",
+        "diet:vegetarian": "yes",
+        "email": "soniaventures28@gmail.com",
+        "level": "1",
+        "mobile": "+917892630802",
+        "name": "Ambala Cantt- Cloud Kitchen",
+        "opening_hours": "Sa-Su 12:00-23:30",
+        "payment:cash": "yes",
+        "payment:google_pay": "yes",
+        "start_date": "2024-11-02",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217350555,
+      "center": {
+        "lat": 12.9240672,
+        "lon": 77.5448218
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    }
+  ]
+}

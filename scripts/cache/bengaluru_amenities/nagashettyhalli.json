@@ -1,0 +1,846 @@
+{
+  "area_name": "Nagashettyhalli",
+  "osm_id": 19884555,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 65,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1464775456,
+      "lat": 13.0362481,
+      "lon": 77.5747038,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;indian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Atithi Satkaar",
+        "name:kn": "ಅತಿಥಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473169657,
+      "lat": 13.0383519,
+      "lon": 77.5742318,
+      "tags": {
+        "addr:postcode": "560094",
+        "addr:street": "Sanjaynagar Main Road",
+        "name": "Sri Krishna Bhavan Sweets",
+        "opening_hours": "PH,Mo-Su 07:00-22:00",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473172359,
+      "lat": 13.0370609,
+      "lon": 77.5744676,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473179094,
+      "lat": 13.0349108,
+      "lon": 77.5752718,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand:wikidata": "Q2003549",
+        "brand:wikipedia": "en:Axis Bank",
+        "check_date": "2024-06-03",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.axisbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473180303,
+      "lat": 13.0363059,
+      "lon": 77.5748837,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "name": "Citibank",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473180305,
+      "lat": 13.0363843,
+      "lon": 77.5748622,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473180307,
+      "lat": 13.0359923,
+      "lon": 77.5749695,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1929734613,
+      "lat": 13.0353701,
+      "lon": 77.5752731,
+      "tags": {
+        "amenity": "bank",
+        "atm": "no",
+        "name": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್",
+        "operator": "Karnataka Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1929739823,
+      "lat": 13.0364505,
+      "lon": 77.5745807,
+      "tags": {
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947504016,
+      "lat": 13.0377564,
+      "lon": 77.5744454,
+      "tags": {
+        "addr:district": "Bengaluru Rural",
+        "addr:full": "12, D Rajgopal Road, Next To Food World, Nagashettyhalli, Sanjaynagar",
+        "addr:postcode": "560091",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Mamta Hospital, Bengaluru Rural",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947504017,
+      "lat": 13.0360827,
+      "lon": 77.575065,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.2, Ngef Layout, Sanjaynagar Main Road",
+        "addr:postcode": "560094",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "S. J. Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257189486,
+      "lat": 13.0451003,
+      "lon": 77.5725706,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257189628,
+      "lat": 13.0441191,
+      "lon": 77.5721535,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257189629,
+      "lat": 13.0440708,
+      "lon": 77.5729179,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257728243,
+      "lat": 13.0359742,
+      "lon": 77.5734048,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257728266,
+      "lat": 13.0368849,
+      "lon": 77.5747217,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Brindavan Vaibhav"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7495014660,
+      "lat": 13.0378871,
+      "lon": 77.5743958,
+      "tags": {
+        "name": "EasyDay Supermarket Ltd.",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753140993,
+      "lat": 13.0363283,
+      "lon": 77.5747083,
+      "tags": {
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753140994,
+      "lat": 13.0361951,
+      "lon": 77.5750262,
+      "tags": {
+        "name": "Bata",
+        "name:kn": "ಬಾಟಾ",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753140995,
+      "lat": 13.0364459,
+      "lon": 77.5746654,
+      "tags": {
+        "name": "Poorvika",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753140996,
+      "lat": 13.0362055,
+      "lon": 77.5747083,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;indian",
+        "name": "Taste of Coast"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11362736269,
+      "lat": 13.0386087,
+      "lon": 77.5742563,
+      "tags": {
+        "addr:postcode": "560094",
+        "addr:street": "Sanjaynagar Main Road",
+        "amenity": "restaurant",
+        "cuisine": "chinese;indian",
+        "diet:vegetarian": "yes",
+        "name": "Udupi Garden",
+        "opening_hours": "PH,Mo-Su 06:00-23:00",
+        "phone": "094485 08089"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11371349956,
+      "lat": 13.037758,
+      "lon": 77.5744038,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "S. No. 6A",
+        "addr:postcode": "560094",
+        "addr:street": "Sanjaynagar Main Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Ltd",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "opening_hours": "Mo-Fr 09:30-15:00",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11371401649,
+      "lat": 13.0354243,
+      "lon": 77.5753543,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "24",
+        "addr:postcode": "560094",
+        "addr:street": "Sanjaynagar Main Road",
+        "leisure": "sports_hall",
+        "name": "Transform Fitness 2.0",
+        "opening_hours": "Mo-Sa 05:30-22:00; Su 08:00-13:00",
+        "phone": "08884655522",
+        "sport": "gy",
+        "unisex": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12291501759,
+      "lat": 13.0419418,
+      "lon": 77.5701673,
+      "tags": {
+        "amenity": "fast_food"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133877962,
+      "center": {
+        "lat": 13.0368911,
+        "lon": 77.5775794
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "68",
+        "addr:postcode": "560094",
+        "addr:street": "3rd Crs, Near Shastry Memorial Hall,, NGEF Layout, Postal Colony, Sanjaynaga",
+        "building": "yes",
+        "name": "Shopwell Supermarket",
+        "phone": "+91080 3296 6077",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 184923392,
+      "center": {
+        "lat": 13.0356871,
+        "lon": 77.574775
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "RMV Extension, 2nd stage,68/5",
+        "addr:postcode": "560094",
+        "addr:street": "Sanjaynagar Main Road, Near police station, Sanjayanagara",
+        "amenity": "cinema",
+        "building": "commercial",
+        "contact:phone": "08023411877",
+        "contact:website": "http://www.vaibhavtheatre.com/",
+        "name": "Vaibhav Theatre",
+        "name:kn": "ವೈಭವ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345918138,
+      "center": {
+        "lat": 13.0368479,
+        "lon": 77.5778353
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560094",
+        "addr:street": "60ft Road Sanjaynagar",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Siddhivinayaka Temple",
+        "name:kn": "ಸಿದ್ಧಿವಿನಾಯಕ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345918323,
+      "center": {
+        "lat": 13.036373,
+        "lon": 77.5768723
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560094",
+        "addr:street": "2nd Main Road, NGEF Layout, Postal Colony",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Raghavendra Swamy Mutt and Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346807969,
+      "center": {
+        "lat": 13.0377598,
+        "lon": 77.5749792
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "1",
+        "addr:postcode": "560094",
+        "addr:street": "1st Cross Road, Sachidanda Nagar, Raj Mahal Vilas 2nd Stage, Sanjaynagar",
+        "leisure": "park",
+        "name": "NGEF Park",
+        "opening_hours": "Mo-Su 06:00-08:00,16:30-20:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346807997,
+      "center": {
+        "lat": 13.0384308,
+        "lon": 77.5747683
+      },
+      "tags": {
+        "amenity": "post_office",
+        "building": "yes",
+        "name": "RMV 2nd Stage Post Office",
+        "opening_hours": "Mo-Fr 09:00-14:00; Sa 09:00-12:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363074109,
+      "center": {
+        "lat": 13.0451918,
+        "lon": 77.571772
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363121717,
+      "center": {
+        "lat": 13.0361307,
+        "lon": 77.5693741
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Dollar's Colony Park",
+        "official_name": "Soundarya Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467074943,
+      "center": {
+        "lat": 13.0444126,
+        "lon": 77.5738749
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467074945,
+      "center": {
+        "lat": 13.0442072,
+        "lon": 77.5737858
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467074947,
+      "center": {
+        "lat": 13.0440105,
+        "lon": 77.5737059
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 674383495,
+      "center": {
+        "lat": 13.0348663,
+        "lon": 77.5699823
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Shubhodaya Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638963,
+      "center": {
+        "lat": 13.045172,
+        "lon": 77.5718869
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638965,
+      "center": {
+        "lat": 13.0446547,
+        "lon": 77.5734852
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638966,
+      "center": {
+        "lat": 13.0444802,
+        "lon": 77.572234
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638969,
+      "center": {
+        "lat": 13.044628,
+        "lon": 77.572118
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638970,
+      "center": {
+        "lat": 13.0446692,
+        "lon": 77.5719594
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638971,
+      "center": {
+        "lat": 13.044789,
+        "lon": 77.5719826
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638976,
+      "center": {
+        "lat": 13.044582,
+        "lon": 77.5722532
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638977,
+      "center": {
+        "lat": 13.0447893,
+        "lon": 77.5717528
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638978,
+      "center": {
+        "lat": 13.044431,
+        "lon": 77.5726452
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638979,
+      "center": {
+        "lat": 13.044492,
+        "lon": 77.5724238
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638980,
+      "center": {
+        "lat": 13.0439527,
+        "lon": 77.5733428
+      },
+      "tags": {
+        "amenity": "amphitheatre",
+        "area": "yes",
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638982,
+      "center": {
+        "lat": 13.0443373,
+        "lon": 77.5715383
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777638997,
+      "center": {
+        "lat": 13.046028,
+        "lon": 77.5719841
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777690270,
+      "center": {
+        "lat": 13.0360414,
+        "lon": 77.5773286
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 794445339,
+      "center": {
+        "lat": 13.0350995,
+        "lon": 77.5744519
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1238793140,
+      "center": {
+        "lat": 13.0456711,
+        "lon": 77.5719998
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1284656988,
+      "center": {
+        "lat": 13.0368506,
+        "lon": 77.5744706
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1284656989,
+      "center": {
+        "lat": 13.0402384,
+        "lon": 77.5732183
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1326435525,
+      "center": {
+        "lat": 13.035843,
+        "lon": 77.5707539
+      },
+      "tags": {
+        "garden:type": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377977009,
+      "center": {
+        "lat": 13.0359857,
+        "lon": 77.5756743
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378387894,
+      "center": {
+        "lat": 13.0412853,
+        "lon": 77.5708399
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378566413,
+      "center": {
+        "lat": 13.039042,
+        "lon": 77.5749083
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "Beside Ramana Mahashree Heritage Centre",
+        "addr:postcode": "560094",
+        "addr:street": "4th Main Road",
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Gayathri Parishat and Sri Varasiddhi Vinayaka Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378923002,
+      "center": {
+        "lat": 13.0368248,
+        "lon": 77.5724644
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378923032,
+      "center": {
+        "lat": 13.0381346,
+        "lon": 77.5728031
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Rajamahal High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378923054,
+      "center": {
+        "lat": 13.0397539,
+        "lon": 77.5731622
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Akal Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378923057,
+      "center": {
+        "lat": 13.0387291,
+        "lon": 77.5748746
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "AECS Layout, 2nd Stage, Postal Colony, Sanjaynagar",
+        "addr:postcode": "560094",
+        "addr:street": "4th Main Road",
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "Ramana Maharshi Heritage Auditorium",
+        "official_name": "Ramana Maharshi Centre for Learning"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378923058,
+      "center": {
+        "lat": 13.0388245,
+        "lon": 77.5754737
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "SYA PU College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378923061,
+      "center": {
+        "lat": 13.038576,
+        "lon": 77.5760886
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "SM PU and Degree College"
+      }
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "area_name": "Vibhootipura",
+  "osm_id": 19884573,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 18,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1467254590,
+      "lat": 12.9548937,
+      "lon": 77.6872798,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Hanuman temple",
+        "name:kn": "ಹನುಮಂತ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3818420369,
+      "lat": 12.95223,
+      "lon": 77.6526779,
+      "tags": {
+        "amenity": "childcare",
+        "name": "Little Elly",
+        "operator": "Abhyuday Learning"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447009525,
+      "lat": 12.9530901,
+      "lon": 77.6746006,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560017",
+        "addr:street": "HAL airport area, HAL",
+        "amenity": "bank",
+        "name": "HDFC Standard Life Insurance Co. Ltd.",
+        "website": "https://www.hdfclife.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526741,
+      "lat": 12.9645871,
+      "lon": 77.6742181,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ramesh Nagar, Vimanapura, Bengaluru",
+        "addr:postcode": "560017",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Lifeline Polyclinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 41725061,
+      "center": {
+        "lat": 12.95715,
+        "lon": 77.6640427
+      },
+      "tags": {
+        "addr:street": "HAL Airport Road",
+        "amenity": "college",
+        "name": "Institute of Aerospace Medicine - IAM",
+        "operator": "Indian Air Force",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 135265530,
+      "center": {
+        "lat": 12.9598418,
+        "lon": 77.6702101
+      },
+      "tags": {
+        "barrier": "wall",
+        "leisure": "sports_centre",
+        "name": "HAL Sports Complex"
+      }
+    },
+    {
+      "type": "way",
+      "id": 143358491,
+      "center": {
+        "lat": 12.9626451,
+        "lon": 77.6815455
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Subramanya Swamy Temple",
+        "name:kn": "ಸುಬ್ರಮಣ್ಯ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 174662561,
+      "center": {
+        "lat": 12.9595493,
+        "lon": 77.6699985
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338518971,
+      "center": {
+        "lat": 12.9625796,
+        "lon": 77.6814519
+      },
+      "tags": {
+        "addr:city": "Banglore",
+        "addr:housenumber": "6",
+        "addr:postcode": "560037",
+        "addr:street": "Muruga Complex, Central Street,, Ramesh Nagar, opposite ADA",
+        "building": "yes",
+        "name": "Mayura bakery and Juice",
+        "operator": "Private",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 548812842,
+      "center": {
+        "lat": 12.9566705,
+        "lon": 77.6636703
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1092683244,
+      "center": {
+        "lat": 12.9497711,
+        "lon": 77.6883764
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1135874176,
+      "center": {
+        "lat": 12.9587934,
+        "lon": 77.6696309
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1213188983,
+      "center": {
+        "lat": 12.9596268,
+        "lon": 77.6690663
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1303541182,
+      "center": {
+        "lat": 12.9587718,
+        "lon": 77.6682977
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "name": "HAL Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1303541206,
+      "center": {
+        "lat": 12.958939,
+        "lon": 77.6719758
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1303542198,
+      "center": {
+        "lat": 12.9587834,
+        "lon": 77.6701118
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443516585,
+      "center": {
+        "lat": 12.9540323,
+        "lon": 77.6620382
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sophie Nursery Primary and High School",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1449384222,
+      "center": {
+        "lat": 12.9622393,
+        "lon": 77.6731491
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    }
+  ]
+}

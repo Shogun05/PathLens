@@ -1,0 +1,335 @@
+{
+  "area_name": "Kuvempu Nagar 1st Stage",
+  "osm_id": 10310634652,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 27,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1462235148,
+      "lat": 13.0694057,
+      "lon": 77.5451149,
+      "tags": {
+        "name": "Akshya Complex",
+        "shop": "supermarket",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463455966,
+      "lat": 13.069411,
+      "lon": 77.5450254,
+      "tags": {
+        "amenity": "post_office",
+        "atm": "yes",
+        "name": "Post Office",
+        "name:kn": "ಅಂಚೆ ಕಛೇರಿ",
+        "wheelchair": "no",
+        "wikidata": "Q35054",
+        "wikipedia": "en:Post office"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463790763,
+      "lat": 13.0730662,
+      "lon": 77.5463531,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463791267,
+      "lat": 13.0721909,
+      "lon": 77.5464364,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Air Force Theatre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1529386309,
+      "lat": 13.0730486,
+      "lon": 77.5413377,
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Kuvempunagar 2nd Stage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1529386386,
+      "lat": 13.0725786,
+      "lon": 77.5408777,
+      "tags": {
+        "name": "Padma Stores",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038473,
+      "lat": 13.070554,
+      "lon": 77.5388968,
+      "tags": {
+        "addr:full": "KVP Nagar, Jalahalli, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Government Hospital",
+        "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188057016,
+      "lat": 13.0721671,
+      "lon": 77.546269,
+      "tags": {
+        "addr:full": "Major Sandeep Unnikrishnan Rd, Govindayyanapalya, Jalahalli East, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "restaurant",
+        "name": "Chilli Shots Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12022141681,
+      "lat": 13.0655657,
+      "lon": 77.5336236,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 774649683,
+      "center": {
+        "lat": 13.0643976,
+        "lon": 77.5433696
+      },
+      "tags": {
+        "addr:city": "Jalahalli East, Bangalore",
+        "addr:housenumber": "Kendriya Vidyalaya No.2",
+        "addr:postcode": "560014",
+        "amenity": "school",
+        "branch": "No.2, Jalahalli East",
+        "brand": "Kendriya Vidyalaya",
+        "brand:wikidata": "Q1156653",
+        "grades": "0-12",
+        "name": "Kendriya Vidyalaya",
+        "name:kn": "ಕೇಂದ್ರೀಯ ವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127727182,
+      "center": {
+        "lat": 13.0735501,
+        "lon": 77.5333272
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "National Public School, Jalahalli",
+        "name:kn": "ರಾಷ್ಟ್ರೀಯ ಸಾರ್ವಜನಿಕ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648097,
+      "center": {
+        "lat": 13.0721359,
+        "lon": 77.5348099
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648098,
+      "center": {
+        "lat": 13.0727024,
+        "lon": 77.5340544
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648099,
+      "center": {
+        "lat": 13.072796,
+        "lon": 77.5337091
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648100,
+      "center": {
+        "lat": 13.0728596,
+        "lon": 77.5334866
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265440959,
+      "center": {
+        "lat": 13.0667062,
+        "lon": 77.5447319
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265440963,
+      "center": {
+        "lat": 13.0659366,
+        "lon": 77.546163
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265440973,
+      "center": {
+        "lat": 13.0667202,
+        "lon": 77.5462939
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584663,
+      "center": {
+        "lat": 13.073622,
+        "lon": 77.5334499
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584664,
+      "center": {
+        "lat": 13.0736416,
+        "lon": 77.5336276
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584665,
+      "center": {
+        "lat": 13.0734632,
+        "lon": 77.5341594
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584673,
+      "center": {
+        "lat": 13.0649412,
+        "lon": 77.5326224
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Ashoka College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584676,
+      "center": {
+        "lat": 13.0655317,
+        "lon": 77.5336314
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vishweshwaraiah Enclave Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584680,
+      "center": {
+        "lat": 13.06583,
+        "lon": 77.5358367
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878961,
+      "center": {
+        "lat": 13.0666597,
+        "lon": 77.5465266
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878970,
+      "center": {
+        "lat": 13.0712761,
+        "lon": 77.5481731
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878971,
+      "center": {
+        "lat": 13.0708357,
+        "lon": 77.5480203
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    }
+  ]
+}

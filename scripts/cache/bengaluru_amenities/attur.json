@@ -1,0 +1,948 @@
+{
+  "area_name": "Attur",
+  "osm_id": 19883278,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 77,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1463452754,
+      "lat": 13.0829889,
+      "lon": 77.5489026,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "M S Palya, Bharath Nagar,Hesaraghatta Main Road,Vidyaranyapura Post",
+        "addr:postcode": "560097",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Nagappa Hadli Hospital",
+        "name:kn": "ನಾಗಪ್ಪ ಹದ್ಲಿ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463453140,
+      "lat": 13.0827434,
+      "lon": 77.5484962,
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "name": "Maruti Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463786356,
+      "lat": 13.0823148,
+      "lon": 77.5483971,
+      "tags": {
+        "amenity": "atm",
+        "fee": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2337745749,
+      "lat": 13.0841934,
+      "lon": 77.5604445,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್ ಎಟಿಎಂ",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2344090204,
+      "lat": 13.0862742,
+      "lon": 77.5554523,
+      "tags": {
+        "amenity": "bar",
+        "name": "Raksha Bar and Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7220757408,
+      "lat": 13.0979031,
+      "lon": 77.5662138,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7220757433,
+      "lat": 13.0982036,
+      "lon": 77.5691333,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Axis Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496252,
+      "lat": 13.0820883,
+      "lon": 77.5486372,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Oyalo Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496253,
+      "lat": 13.0823012,
+      "lon": 77.5490677,
+      "tags": {
+        "name": "Sangeetha",
+        "name:kn": "ಸಂಗೀತ",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496270,
+      "lat": 13.0825154,
+      "lon": 77.550201,
+      "tags": {
+        "name": "Red Rose Furnitures",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496277,
+      "lat": 13.0864617,
+      "lon": 77.5557974,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496280,
+      "lat": 13.0932229,
+      "lon": 77.5602257,
+      "tags": {
+        "name": "Rashmi Wines",
+        "shop": "wine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7577248205,
+      "lat": 13.0882301,
+      "lon": 77.5560431,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "AMS Layout, Vidyaranyapura, Bengaluru",
+        "addr:postcode": "560097",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Sonal Dental Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7577248220,
+      "lat": 13.0847291,
+      "lon": 77.5522358,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Chikkabettahalli, Adityanagar, Vidyaranyapura, Bengaluru",
+        "addr:postcode": "560097",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sarwari Poly Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7577248238,
+      "lat": 13.084278,
+      "lon": 77.560395,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vidyaranyapura, Bengaluru",
+        "addr:postcode": "560097",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Nanda Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7577248239,
+      "lat": 13.0866852,
+      "lon": 77.5535728,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Abbasia Colony, Adityanagar, Vidyaranyapura, Bengaluru",
+        "addr:postcode": "560097",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Santhamma Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7577248248,
+      "lat": 13.087007,
+      "lon": 77.547943,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Adityanagar, Vidyaranyapura, Bengaluru",
+        "addr:postcode": "560097",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Floss and Gloss Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188056969,
+      "lat": 13.0845693,
+      "lon": 77.551989,
+      "tags": {
+        "addr:full": "9, Yelahanka Rd, Eshwari Layout C.B Halli, Mohammed Sab Palya, Vidyaranyapura, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "restaurant",
+        "name": "Bismillah Hotel",
+        "name:kn": "ಬಿಸ್ಮಿಲ್ಲಾ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11445409855,
+      "lat": 13.0982341,
+      "lon": 77.5705332,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11445466258,
+      "lat": 13.0894389,
+      "lon": 77.5560759,
+      "tags": {
+        "check_date": "2023-12-23",
+        "name": "Woodstock",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11496176804,
+      "lat": 13.0860793,
+      "lon": 77.5556803,
+      "tags": {
+        "check_date": "2024-01-07",
+        "name": "LJ Iyengar's Bakery and Sweets",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360082,
+      "lat": 13.0893231,
+      "lon": 77.5560025,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-05-25",
+        "healthcare": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360083,
+      "lat": 13.0926232,
+      "lon": 77.5595933,
+      "tags": {
+        "check_date": "2024-05-25",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360086,
+      "lat": 13.0978647,
+      "lon": 77.5634022,
+      "tags": {
+        "check_date": "2024-05-25",
+        "name": "Green City Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360087,
+      "lat": 13.0979485,
+      "lon": 77.5666617,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-05-25",
+        "healthcare": "pharmacy",
+        "name": "Sri Ramdev Chemist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360088,
+      "lat": 13.0979611,
+      "lon": 77.5669306,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-05-25",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360089,
+      "lat": 13.098072,
+      "lon": 77.567378,
+      "tags": {
+        "amenity": "hospital",
+        "check_date": "2024-05-25",
+        "healthcare": "hospital",
+        "name": "Esha Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360090,
+      "lat": 13.0980644,
+      "lon": 77.5678896,
+      "tags": {
+        "check_date": "2024-05-25",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932360091,
+      "lat": 13.0981977,
+      "lon": 77.5690055,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-05-25",
+        "healthcare": "pharmacy",
+        "name": "Organic Health Labs"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12079531421,
+      "lat": 13.0939492,
+      "lon": 77.5537234,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12412556329,
+      "lat": 13.0995211,
+      "lon": 77.5705185,
+      "tags": {
+        "amenity": "kindergarten",
+        "check_date": "2024-12-11",
+        "name": "Bright Kid Montessori House",
+        "operator:type": "private",
+        "phone": "+91 93425 33377",
+        "preschool": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12412564742,
+      "lat": 13.0983626,
+      "lon": 77.5708541,
+      "tags": {
+        "check_date": "2024-12-11",
+        "internet_access": "no",
+        "name": "Your Dream Garden",
+        "payment:account_cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "garden_centre",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12412564744,
+      "lat": 13.0982886,
+      "lon": 77.5694643,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-11",
+        "cuisine": "indian;chinese;juice;coffee_shop;regional;curry",
+        "diet:vegetarian": "yes",
+        "name": "Sri Udupi Food Hub",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12412564746,
+      "lat": 13.0982707,
+      "lon": 77.5693824,
+      "tags": {
+        "amenity": "pub",
+        "brewery": "various",
+        "check_date": "2024-12-11",
+        "name": "Quarter Adda Rooftop Pub",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "separated",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12584979212,
+      "lat": 13.105914,
+      "lon": 77.5678264,
+      "tags": {
+        "amenity": "clinic",
+        "name": "AnK Senior Citizen Healthcare Home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12584979235,
+      "lat": 13.1055509,
+      "lon": 77.5678968,
+      "tags": {
+        "amenity": "school",
+        "name": "Kallavar Public School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12584979236,
+      "lat": 13.1047985,
+      "lon": 77.56833,
+      "tags": {
+        "name": "Zoom Men's Salon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12584979237,
+      "lat": 13.1046627,
+      "lon": 77.5692675,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Subbu Tiffin Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12584979315,
+      "lat": 13.0982728,
+      "lon": 77.5696839,
+      "tags": {
+        "name": "Farm Fresh Bazaar",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12584979316,
+      "lat": 13.0980873,
+      "lon": 77.5676819,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Swaad Ki Dolchi",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12791348846,
+      "lat": 13.0940531,
+      "lon": 77.5604928,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801596787,
+      "lat": 13.0842726,
+      "lon": 77.5602567,
+      "tags": {
+        "amenity": "bank",
+        "brand": "IDBI Bank",
+        "brand:wikidata": "Q3633485",
+        "check_date": "2025-05-01",
+        "name": "IDBI Bank",
+        "short_name": "IDBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801596789,
+      "lat": 13.0846766,
+      "lon": 77.5595449,
+      "tags": {
+        "check_date": "2025-05-01",
+        "name": "Pooja Fancy Store",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801596790,
+      "lat": 13.0847183,
+      "lon": 77.5594839,
+      "tags": {
+        "check_date": "2025-05-01",
+        "name": "Pooja Provision Store",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801596791,
+      "lat": 13.0846273,
+      "lon": 77.5596326,
+      "tags": {
+        "check_date": "2025-05-01",
+        "name": "Mr. Chai",
+        "shop": "tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801690512,
+      "lat": 13.0854157,
+      "lon": 77.5586362,
+      "tags": {
+        "amenity": "bench",
+        "armrest": "yes",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801929992,
+      "lat": 13.0864514,
+      "lon": 77.5598448,
+      "tags": {
+        "amenity": "bench",
+        "armrest": "yes",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12955633201,
+      "lat": 13.1005968,
+      "lon": 77.5698876,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cafe Zero",
+        "phone": "+91 90196 92921"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13048161553,
+      "lat": 13.098727,
+      "lon": 77.5630402,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "ECI St. Peter's Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13048230843,
+      "lat": 13.0978883,
+      "lon": 77.563176,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "MedPlus",
+        "brand:wikidata": "Q65684234",
+        "healthcare": "pharmacy",
+        "name": "MedPlus",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13130332994,
+      "lat": 13.0954873,
+      "lon": 77.5614837,
+      "tags": {
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13130332995,
+      "lat": 13.0979018,
+      "lon": 77.5627738,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Shree Udupi Sagar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13130333014,
+      "lat": 13.0979149,
+      "lon": 77.5626759,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tirumala Dreams"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13130333015,
+      "lat": 13.0979528,
+      "lon": 77.5630662,
+      "tags": {
+        "name": "Royal Cycle World",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "way",
+      "id": 225648955,
+      "center": {
+        "lat": 13.0857283,
+        "lon": 77.5576518
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "The Regency Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 413529795,
+      "center": {
+        "lat": 13.0856703,
+        "lon": 77.5492593
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Shrada Vidyanikethan",
+        "name:kn": "ಶ್ರಧ್ಧ ವಿದ್ಯಾನಿಕೇತನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 413529796,
+      "center": {
+        "lat": 13.0848132,
+        "lon": 77.5490275
+      },
+      "tags": {
+        "amenity": "school",
+        "check_date": "2024-12-24",
+        "name": "National Public School, Vidyaranyapura"
+      }
+    },
+    {
+      "type": "way",
+      "id": 773577264,
+      "center": {
+        "lat": 13.0976735,
+        "lon": 77.5625421
+      },
+      "tags": {
+        "name": "True Value",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1181417684,
+      "center": {
+        "lat": 13.0902224,
+        "lon": 77.551656
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1264795218,
+      "center": {
+        "lat": 13.0906356,
+        "lon": 77.5579641
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Tawheed Masjid",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1271957619,
+      "center": {
+        "lat": 13.09805,
+        "lon": 77.5657615
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "check_date": "2023-12-23",
+        "landuse": "retail",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1283712422,
+      "center": {
+        "lat": 13.0893182,
+        "lon": 77.5569728
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Adhyayana PU College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1283712581,
+      "center": {
+        "lat": 13.0859255,
+        "lon": 77.5569202
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Oriental English High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1284165012,
+      "center": {
+        "lat": 13.0863318,
+        "lon": 77.5544798
+      },
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1284811024,
+      "center": {
+        "lat": 13.0978208,
+        "lon": 77.5637622
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "compressed_air": "yes",
+        "landuse": "retail",
+        "name": "Indian Oil",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304376969,
+      "center": {
+        "lat": 13.0937369,
+        "lon": 77.5547543
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Government Model Public School",
+        "name:kn": "ಸರ್ಕಾರಿ ಮಾದರಿ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304376984,
+      "center": {
+        "lat": 13.088207,
+        "lon": 77.5579572
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "name": "Nativity Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308259601,
+      "center": {
+        "lat": 13.0984736,
+        "lon": 77.5593038
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1326085064,
+      "center": {
+        "lat": 13.0885801,
+        "lon": 77.555551
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Jamia Masjid Chikkabettahalli",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1359580742,
+      "center": {
+        "lat": 13.1056977,
+        "lon": 77.5676809
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Indira Priyadarshini College of Law"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1359580746,
+      "center": {
+        "lat": 13.1004887,
+        "lon": 77.5659656
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "Ranganatha Swamy Kalyana Mantapa"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1380270901,
+      "center": {
+        "lat": 13.0946055,
+        "lon": 77.5464251
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382977679,
+      "center": {
+        "lat": 13.0944933,
+        "lon": 77.5465688
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383201474,
+      "center": {
+        "lat": 13.0887512,
+        "lon": 77.5573107
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Holy Faith Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214383,
+      "center": {
+        "lat": 13.0900784,
+        "lon": 77.5568458
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Dargah Hazrat Madar Shah Vali",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214587,
+      "center": {
+        "lat": 13.0928447,
+        "lon": 77.5606978
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214660,
+      "center": {
+        "lat": 13.0977549,
+        "lon": 77.5622434
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    }
+  ]
+}

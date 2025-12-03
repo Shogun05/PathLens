@@ -1,0 +1,101 @@
+{
+  "area_name": "Moodalapalya",
+  "osm_id": 19883370,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 6,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2509173759,
+      "lat": 12.9702784,
+      "lon": 77.5246208,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Moodapalya Circle",
+        "addr:street": "Nagarabhavi Road",
+        "amenity": "fuel",
+        "building": "yes",
+        "name": "Omkar Refill Station",
+        "operator": "Bharat Petroluem"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2509173775,
+      "lat": 12.9704823,
+      "lon": 77.5247496,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Moodapalya Circle",
+        "addr:street": "Nagarabhavi Road",
+        "name": "Yashhas Electronics",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5235970321,
+      "lat": 12.9708897,
+      "lon": 77.5229331,
+      "tags": {
+        "addr:housenumber": "#9",
+        "addr:postcode": "560072",
+        "addr:street": "tent road",
+        "email": "koolkraftbags@gmail.com",
+        "name": "K. K Bag's",
+        "name:en": "Kk bags all types of bags repairs and sale",
+        "name:hi": "Kk bags all types of bags repairs and sale",
+        "opening_hours": "Sa-Th 11:00-21:30; Fr 04:00-21:30",
+        "phone": "9845118351",
+        "shop": "variety_store",
+        "website": "http://www.facebook.com/kkbags"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572491984,
+      "lat": 12.972363,
+      "lon": 77.525125,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Govindaraja Nagar Ward, Mudalapalya, Vijayanagar, Bengaluru",
+        "addr:postcode": "560040",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Shifa Health Care Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526707,
+      "lat": 12.970893,
+      "lon": 77.5251332,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Huchappa Layout, Govindaraja Nagar Ward, Anubhav Nagar, Vijayanagar, Bengaluru",
+        "addr:postcode": "560040",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Asha ENT Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526769,
+      "lat": 12.9715355,
+      "lon": 77.524968,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Huchappa Layout, Govindaraja Nagar Ward, Mudalapalya, Vijayanagar, Bengaluru",
+        "addr:postcode": "560072",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Guru Shree Polyclinic",
+        "source": "Local Knowledge"
+      }
+    }
+  ]
+}

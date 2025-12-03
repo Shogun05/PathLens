@@ -1,0 +1,106 @@
+{
+  "area_name": "Nele Maheshwaramma Temple Ward",
+  "osm_id": 19884580,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 7,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2467791465,
+      "lat": 13.0490027,
+      "lon": 77.5079841,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Total Gas",
+        "name": "Total Gas Station",
+        "operator": "Total Gas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7202935849,
+      "lat": 13.049152,
+      "lon": 77.510442,
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "Nelamaheshwarinagar T DASARAHALLI",
+        "addr:postcode": "560057",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore North",
+        "amenity": "hospital",
+        "name": "NELAMAHESHWARI Government Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9844348527,
+      "lat": 13.0459476,
+      "lon": 77.5078257,
+      "tags": {
+        "amenity": "driving_school",
+        "name": "Maruthi Driving School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12017302525,
+      "lat": 13.0444229,
+      "lon": 77.510222,
+      "tags": {
+        "check_date": "2024-06-28",
+        "name": "Reliance Digital",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726342145,
+      "center": {
+        "lat": 13.048319,
+        "lon": 77.5080361
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.30 Hesaraghatta Road , T Dasarahalli",
+        "addr:postcode": "560057",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "building": "commercial",
+        "name": "Dr Ramachandra Hospital",
+        "name:kn": "ರಾಮಚಂದ್ರ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1150947118,
+      "center": {
+        "lat": 13.0553008,
+        "lon": 77.5104917
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Pipeline Park",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:type": "government",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281993748,
+      "center": {
+        "lat": 13.0452976,
+        "lon": 77.5087542
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    }
+  ]
+}

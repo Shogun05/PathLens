@@ -1,0 +1,836 @@
+{
+  "area_name": "VS Reddy Colony",
+  "osm_id": 11518167880,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 67,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1198183529,
+      "lat": 12.9968841,
+      "lon": 77.7612995,
+      "tags": {
+        "amenity": "atm",
+        "name": "Punjab National Bank ATM",
+        "operator": "Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1497217077,
+      "lat": 12.995384,
+      "lon": 77.7574684,
+      "tags": {
+        "amenity": "police",
+        "name": "Kadugodi Police Station",
+        "name:kn": "ಕಾಡುಗೋಡಿ ಆರಕ್ಷಕ ಟಾಣೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987147479,
+      "lat": 12.9964249,
+      "lon": 77.7649169,
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987147480,
+      "lat": 12.9964249,
+      "lon": 77.7649169,
+      "tags": {
+        "name": "P K Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987148047,
+      "lat": 12.9832377,
+      "lon": 77.7681618,
+      "tags": {
+        "amenity": "bank",
+        "name": "Manappuram Finance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987148050,
+      "lat": 12.9834239,
+      "lon": 77.7675566,
+      "tags": {
+        "amenity": "atm",
+        "name": "HDFC Bank ATM",
+        "name:kn": "ಎಚ್. ಡಿ. ಎಫ್. ಸಿ.."
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987148096,
+      "lat": 12.9835791,
+      "lon": 77.7689545,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "Coporation City Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987148102,
+      "lat": 12.983624,
+      "lon": 77.769089,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "New Uduppi Hotel",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4023090618,
+      "lat": 12.9832756,
+      "lon": 77.7682509,
+      "tags": {
+        "amenity": "cafe",
+        "internet_access": "no",
+        "name": "Chandana Bakery",
+        "opening_hours": "06:00-23:00",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445146526,
+      "lat": 12.9828174,
+      "lon": 77.7634471,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560037",
+        "addr:street": "3G Homes Crimson Layout, Kadugodi, Bengaluru",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Om Sai Punjabi Dhaba",
+        "opening_hours": "11:00-22:00",
+        "phone": "+91 9632689248",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446938197,
+      "lat": 12.9967611,
+      "lon": 77.7591252,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560067",
+        "addr:street": "Opposite Whitefield Railway Station, Kadugodi",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "New Life Hospital bangalore",
+        "phone": "080 4954 0540",
+        "source": "http://www.justdial.com/Bangalore/",
+        "website": "https://newlifehospital.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160549,
+      "lat": 12.9957425,
+      "lon": 77.7578469,
+      "tags": {
+        "access": "customers",
+        "amenity": "drinking_water",
+        "indoor": "yes",
+        "level": "1",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160550,
+      "lat": 12.9954341,
+      "lon": 77.7577583,
+      "tags": {
+        "access": "customers",
+        "amenity": "toilets",
+        "fee": "no",
+        "level": "1",
+        "male": "yes",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160551,
+      "lat": 12.9958157,
+      "lon": 77.757871,
+      "tags": {
+        "access": "customers",
+        "amenity": "toilets",
+        "fee": "no",
+        "female": "yes",
+        "level": "1",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160553,
+      "lat": 12.995834,
+      "lon": 77.7576041,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Veterinary Dispensary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160560,
+      "lat": 12.9965828,
+      "lon": 77.7615631,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160565,
+      "lat": 12.9961855,
+      "lon": 77.7611339,
+      "tags": {
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160616,
+      "lat": 12.9974433,
+      "lon": 77.7682807,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160627,
+      "lat": 12.9959869,
+      "lon": 77.7711023,
+      "tags": {
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135160640,
+      "lat": 12.9953322,
+      "lon": 77.7716455,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135161149,
+      "lat": 12.9948827,
+      "lon": 77.7592215,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135161150,
+      "lat": 12.9953218,
+      "lon": 77.7588111,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211526522,
+      "lat": 12.9954946,
+      "lon": 77.7599158,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13152655039,
+      "lat": 12.9960381,
+      "lon": 77.760664,
+      "tags": {
+        "level": "0",
+        "name": "Milk Stall Western Railway Bangalore Division",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13161243881,
+      "lat": 12.9962277,
+      "lon": 77.7606531,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13161243883,
+      "lat": 12.9964327,
+      "lon": 77.7615764,
+      "tags": {
+        "level": "0",
+        "shop": "ticket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13161243886,
+      "lat": 12.9962659,
+      "lon": 77.7606401,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "female": "yes",
+        "toilets:disposal": "flush",
+        "toilets:handwashing": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13161243892,
+      "lat": 12.996264,
+      "lon": 77.7606657,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "male": "yes",
+        "toilets:disposal": "flush",
+        "toilets:handwashing": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13161243893,
+      "lat": 12.9963127,
+      "lon": 77.7601258,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13335147238,
+      "lat": 12.9889452,
+      "lon": 77.7579463,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13335147239,
+      "lat": 12.9889944,
+      "lon": 77.7579689,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 130127246,
+      "center": {
+        "lat": 12.9957008,
+        "lon": 77.7585103
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "designation": "BMTC",
+        "name": "Kadugodi Bus Station",
+        "name:kn": "ಕಾಡುಗೋಡಿ",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 130127247,
+      "center": {
+        "lat": 12.9956989,
+        "lon": 77.7585204
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "building": "yes",
+        "bus": "yes",
+        "name": "Kadugodi Bus Station",
+        "name:kn": "ಕಾಡುಗೋಡಿ ಬಸ್ ನಿಲ್ದಾನ",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 130645776,
+      "center": {
+        "lat": 12.9983305,
+        "lon": 77.758957
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Brindavan Ashram",
+        "name:kn": "ಬೃಂದಾವನ ಆಶ್ರಮ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 130645780,
+      "center": {
+        "lat": 13.0012666,
+        "lon": 77.7595963
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Sri Sathya Sai Institute of Higher Learning"
+      }
+    },
+    {
+      "type": "way",
+      "id": 136492654,
+      "center": {
+        "lat": 12.9942469,
+        "lon": 77.7571802
+      },
+      "tags": {
+        "amenity": "police",
+        "building": "yes",
+        "name": "Whitefield Traffic Police Station",
+        "name:kn": "ಸಂಚಾರ ಪೊಲೀಸ್ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150593086,
+      "center": {
+        "lat": 12.9968035,
+        "lon": 77.7616172
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "name": "Whitefield Station Car Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 181469517,
+      "center": {
+        "lat": 12.9849166,
+        "lon": 77.7627604
+      },
+      "tags": {
+        "addr:full": "Near ITPB, Whitefield Bangalore -560 067",
+        "alt_name": "MVJ College of Engineering",
+        "amenity": "college",
+        "email": "contactmvjce@gmail.com",
+        "name": "M V Jayaram College of Engineering",
+        "phone": "+91 80 4299 1000",
+        "website": "https://mvjce.edu.in/",
+        "wikidata": "Q6719155",
+        "wikimedia_commons": "Category:MVJ College of Engineering",
+        "wikipedia": "en:MVJ College of Engineering"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346513415,
+      "center": {
+        "lat": 12.9977877,
+        "lon": 77.7640062
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 627116655,
+      "center": {
+        "lat": 12.9849083,
+        "lon": 77.76443
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083394758,
+      "center": {
+        "lat": 12.9955738,
+        "lon": 77.7594027
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1287904674,
+      "center": {
+        "lat": 12.9977903,
+        "lon": 77.7606679
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Kadugodi Park",
+        "name:kn": "ಕಾಡುಗೋಡಿ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1287904688,
+      "center": {
+        "lat": 12.9946174,
+        "lon": 77.7586699
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Ujjval World School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304106649,
+      "center": {
+        "lat": 12.9963482,
+        "lon": 77.7641548
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Haji Sir Ismail Sait Masjid",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1306213262,
+      "center": {
+        "lat": 12.9933131,
+        "lon": 77.7572503
+      },
+      "tags": {
+        "access": "no",
+        "garden:type": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307192672,
+      "center": {
+        "lat": 12.9964097,
+        "lon": 77.7622521
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307192711,
+      "center": {
+        "lat": 12.9972544,
+        "lon": 77.7635855
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Pragathi School and PU College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307192714,
+      "center": {
+        "lat": 12.9981809,
+        "lon": 77.7637804
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307192718,
+      "center": {
+        "lat": 12.9975788,
+        "lon": 77.7683279
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Kashi Vishweshwara Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307192728,
+      "center": {
+        "lat": 12.9965939,
+        "lon": 77.7675712
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1310982631,
+      "center": {
+        "lat": 12.9968323,
+        "lon": 77.7613639
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "motorcycle_parking",
+        "name": "Whitefield Station Bike Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1310982662,
+      "center": {
+        "lat": 12.9990224,
+        "lon": 77.7655944
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1310982753,
+      "center": {
+        "lat": 12.9959966,
+        "lon": 77.759408
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1310982759,
+      "center": {
+        "lat": 12.9948536,
+        "lon": 77.7594422
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351211094,
+      "center": {
+        "lat": 12.9845647,
+        "lon": 77.7600289
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351211095,
+      "center": {
+        "lat": 12.9845979,
+        "lon": 77.7607029
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430793406,
+      "center": {
+        "lat": 12.9960002,
+        "lon": 77.7610419
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "roof:colour": "green",
+        "roof:material": "metal",
+        "roof:shape": "butterfly",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430793407,
+      "center": {
+        "lat": 12.9960887,
+        "lon": 77.7604428
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "roof:colour": "blue",
+        "roof:material": "metal",
+        "roof:shape": "gabled",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873757,
+      "center": {
+        "lat": 12.9962952,
+        "lon": 77.7604547
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "roof:colour": "green",
+        "roof:shape": "gabled",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873759,
+      "center": {
+        "lat": 12.9963433,
+        "lon": 77.759956
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "building:material": "metal",
+        "roof:colour": "blue",
+        "roof:shape": "round",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1454051713,
+      "center": {
+        "lat": 12.9912132,
+        "lon": 77.7618205
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1454051718,
+      "center": {
+        "lat": 12.9889638,
+        "lon": 77.7566733
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1454051719,
+      "center": {
+        "lat": 12.9896501,
+        "lon": 77.758125
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1454051726,
+      "center": {
+        "lat": 12.9888848,
+        "lon": 77.7589183
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1454051736,
+      "center": {
+        "lat": 12.9905964,
+        "lon": 77.7559237
+      },
+      "tags": {
+        "amenity": "telephone",
+        "landuse": "commercial",
+        "operator": "BSNL",
+        "operator:wikidata": "Q278834"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1454095244,
+      "center": {
+        "lat": 12.9889457,
+        "lon": 77.757696
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1454095245,
+      "center": {
+        "lat": 12.9885497,
+        "lon": 77.7593787
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    }
+  ]
+}

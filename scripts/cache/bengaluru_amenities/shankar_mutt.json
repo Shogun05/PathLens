@@ -1,0 +1,201 @@
+{
+  "area_name": "Shankar Mutt",
+  "osm_id": 19883314,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 16,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1473930474,
+      "lat": 13.0004716,
+      "lon": 77.5346306,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4509817152,
+      "lat": 12.995573,
+      "lon": 77.5354215,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "ChanRe Rheumatology and Immunology Center and Research",
+        "name_1": "Chan re hospital",
+        "name_2": "Chanre hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962407,
+      "lat": 13.0000414,
+      "lon": 77.5330938,
+      "tags": {
+        "addr:full": "34, Pipeline Rd, KHBS Layout, Basaveshwar Nagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಎಸ್ ಬಿ ಐ",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187986355,
+      "lat": 13.0000365,
+      "lon": 77.5349821,
+      "tags": {
+        "addr:full": "1st Main Road, Kurubarahalli, 154-140, 1st Cross Rd, Rajkumar statue, KHBS Layout, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Manjunatha maternity clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240881804,
+      "lat": 13.0003344,
+      "lon": 77.5342458,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240881806,
+      "lat": 12.9998836,
+      "lon": 77.5315113,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10676078872,
+      "lat": 12.995097,
+      "lon": 77.5349191,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133946305,
+      "center": {
+        "lat": 13.0006134,
+        "lon": 77.534341
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133952209,
+      "center": {
+        "lat": 13.0002469,
+        "lon": 77.5328793
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133952210,
+      "center": {
+        "lat": 12.9999013,
+        "lon": 77.5313317
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 354497944,
+      "center": {
+        "lat": 12.9955667,
+        "lon": 77.5354224
+      },
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "ChanRe Rheumatology And Immunology Center And Research"
+      }
+    },
+    {
+      "type": "way",
+      "id": 412935372,
+      "center": {
+        "lat": 12.9976804,
+        "lon": 77.5357264
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Kurubarahalli Playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 412935376,
+      "center": {
+        "lat": 12.9994536,
+        "lon": 77.5294902
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 412935378,
+      "center": {
+        "lat": 12.9976869,
+        "lon": 77.5363178
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Kempegowda Park",
+        "name:etymology:wikidata": "Q6387049",
+        "name:kn": "ಕೆಂಪೆಗೌಡ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 454420712,
+      "center": {
+        "lat": 12.9963126,
+        "lon": 77.5345779
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1147338815,
+      "center": {
+        "lat": 12.9950965,
+        "lon": 77.5352933
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

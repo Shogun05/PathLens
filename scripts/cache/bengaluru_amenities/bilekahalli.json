@@ -1,0 +1,1244 @@
+{
+  "area_name": "Bilekahalli",
+  "osm_id": 19883271,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 82,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1474304635,
+      "lat": 12.9055718,
+      "lon": 77.6058341,
+      "tags": {
+        "addr:postcode": "560076",
+        "addr:street": "29th Main Road",
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "brand:wikipedia": "en:Café Coffee Day",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Cafe Coffee Day",
+        "name:en": "Caffe Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1595801457,
+      "lat": 12.9055748,
+      "lon": 77.6057437,
+      "tags": {
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "brand:wikipedia": "en:More (store)",
+        "name": "More",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2918827424,
+      "lat": 12.8976252,
+      "lon": 77.5994818,
+      "tags": {
+        "name": "Lathangi Ford Service Center",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3050185858,
+      "lat": 12.8983405,
+      "lon": 77.6001464,
+      "tags": {
+        "brand": "Mahindra",
+        "name": "Anant Cars",
+        "shop": "car",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3050185860,
+      "lat": 12.9023413,
+      "lon": 77.6014379,
+      "tags": {
+        "brand": "Maruti Suzuki",
+        "brand:wikidata": "Q963718",
+        "name": "Kalyani Motors",
+        "shop": "car",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3050185861,
+      "lat": 12.9025994,
+      "lon": 77.601482,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಮೈಸೂರು ಬ್ಯಾಂಕ್‌",
+        "short_name": "SBI",
+        "source": "survey",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4279239591,
+      "lat": 12.9034969,
+      "lon": 77.6037245,
+      "tags": {
+        "addr:street": "Ranka Colony Road",
+        "name": "Eden Fruits and Vegetables",
+        "shop": "greengrocer",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4322649489,
+      "lat": 12.896924,
+      "lon": 77.5997855,
+      "tags": {
+        "addr:street": "Bannerghatta Road",
+        "name": "Xiaomi MI Service Center",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445973784,
+      "lat": 12.9003193,
+      "lon": 77.6008061,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "2nd Cross Rd",
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Parimala Health Care",
+        "phone": "080 2658 3117"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447978869,
+      "lat": 12.9009278,
+      "lon": 77.5986641,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road, Near Kalyani Kala Mantap, Bilekahalli, 2nd Cross Rd,, Ram Shetty Nagar, Bilekahalli",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Parimala Health Care",
+        "phone": "080 2658 3117",
+        "source": "http://www.justdial.com/Bangalore/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4487963521,
+      "lat": 12.8974942,
+      "lon": 77.5998505,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "448",
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "brand": "Vishal Mega Mart",
+        "brand:wikidata": "Q126895037",
+        "name": "Vishal Mega Mart",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4558333190,
+      "lat": 12.8956232,
+      "lon": 77.6068313,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "ಕಾವೇರಮ್ಮ ದೇವಾಲಯ",
+        "name:en": "Kaveramma Devalaya",
+        "name:kn": "ಕಾವೇರಮ್ಮ ದೇವಾಲಯ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4794968170,
+      "lat": 12.8979762,
+      "lon": 77.6064023,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shaneeshwara Temple",
+        "name:kn": "ಶನೀಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4794981618,
+      "lat": 12.8979474,
+      "lon": 77.6079394,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "FAB ice cream"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4794989731,
+      "lat": 12.8998618,
+      "lon": 77.6085502,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Someshwara",
+        "name:kn": "ಸೋಮೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4794991961,
+      "lat": 12.8983322,
+      "lon": 77.6079663,
+      "tags": {
+        "name": "Poorna enterprises",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5017576821,
+      "lat": 12.899229,
+      "lon": 77.6026481,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kerala",
+        "name": "Elite Mess",
+        "name:en": "Elite Mess"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402224046,
+      "lat": 12.9077496,
+      "lon": 77.6008578,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "brand": "Spar",
+        "brand:wikidata": "Q610492",
+        "brand:wikipedia": "en:Spar (retailer)",
+        "check_date": "2025-08-26",
+        "name": "Spar",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "organic": "yes",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "shop": "supermarket",
+        "website": "https://www.sparindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402307944,
+      "lat": 12.8967748,
+      "lon": 77.5997314,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:pa": "ਸਬਵੇਅ",
+        "brand:ur": "سب وے",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "cuisine": "sandwich",
+        "drive_through": "no",
+        "name": "Subway",
+        "name:pa": "ਸਬਵੇਅ",
+        "name:ur": "سب وے",
+        "outdoor_seating": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402307945,
+      "lat": 12.9004703,
+      "lon": 77.6011552,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5995081003,
+      "lat": 12.8976051,
+      "lon": 77.5997,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian;sandwich",
+        "level": "2",
+        "microbrewery": "yes",
+        "name": "Yellow Submarine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6072807039,
+      "lat": 12.9015167,
+      "lon": 77.6008228,
+      "tags": {
+        "name": "Royal Oak Furnitures",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6079796527,
+      "lat": 12.9020805,
+      "lon": 77.6008605,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6298960985,
+      "lat": 12.9056713,
+      "lon": 77.6039543,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "South_Indian",
+        "diet:vegetarian": "yes",
+        "name": "Sattvik Udupi Uphar",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6298963689,
+      "lat": 12.9057066,
+      "lon": 77.6039088,
+      "tags": {
+        "name": "Chubby Cheeks",
+        "shop": "baby_goods"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6298964736,
+      "lat": 12.9055794,
+      "lon": 77.6052372,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "brand:wikipedia": "en:Café Coffee Day",
+        "cuisine": "coffee_shop",
+        "name": "Cafe Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6298973771,
+      "lat": 12.9035992,
+      "lon": 77.6019963,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Kalpavruksha",
+        "name:kn": "ಕಲ್ಪವೃಕ್ಷ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6312254292,
+      "lat": 12.9032477,
+      "lon": 77.6026985,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "name": "Indian Bank",
+        "name:kn": "ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್",
+        "operator": "Indian Bank",
+        "operator:wikidata": "Q2003789",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6347270755,
+      "lat": 12.8992326,
+      "lon": 77.6033285,
+      "tags": {
+        "addr:place": "Bilekalli",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Gnanaprakasham KHPS Bilekalli",
+        "name:kn": "ಜ್ಞಾನಪ್ರಕಾಶಂ ಕನ್ನಡ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬಿಳೇಕಳ್ಳಿ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6347274963,
+      "lat": 12.8998165,
+      "lon": 77.6083074,
+      "tags": {
+        "addr:place": "Bilekalli",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GHPS Bilekalli",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬಿಳೇಕಳ್ಳಿ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6422472320,
+      "lat": 12.902802,
+      "lon": 77.6049954,
+      "tags": {
+        "addr:place": "Bommanahalli",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Royal Convent HPS Bommana Hall",
+        "name:kn": "ರಾಯಲ್ ಕಾನ್ವೆಂಟ್ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬೊಮ್ಮನಹಳ್ಳಿ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6422515985,
+      "lat": 12.8966211,
+      "lon": 77.6075885,
+      "tags": {
+        "addr:place": "Bilekalli",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Dileep HPS Bilekalli",
+        "name:kn": "ದಿಲೀಪ್ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬಿಳೇಕಳ್ಳಿ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6422523984,
+      "lat": 12.8986518,
+      "lon": 77.6073698,
+      "tags": {
+        "addr:place": "Bilekalli",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Mgs Infant LPS Bilekalli",
+        "name:kn": "ಎಂ.ಜಿ.ಎಸ್ ಇನ್ಫಂಟ್ ಕಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬಿಳೇಕಳ್ಳಿ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6422529781,
+      "lat": 12.9008131,
+      "lon": 77.6088442,
+      "tags": {
+        "addr:place": "Bilekalli",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Shantinketan Trust Sch, Bilekalli",
+        "name:kn": "ಶಾಂತಿನಿಕೇತನ ಟ್ರಸ್ಟ್ ಶಾಲೆ ,ಬಿಳೇಕಳ್ಳಿ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6422554513,
+      "lat": 12.900731,
+      "lon": 77.6047963,
+      "tags": {
+        "addr:place": "Bilekalli",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Ankith HPS Bilekalli",
+        "name:kn": "ಅಂಕಿತ್ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬಿಳೇಕಳ್ಳಿ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939632965,
+      "lat": 12.8981742,
+      "lon": 77.6058662,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Bilekahalli, Bannerghatta Road",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Anand Clinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944507681,
+      "lat": 12.9004567,
+      "lon": 77.6005474,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "12/13, Bilekahalli, Bannerghatta Road",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Parimala Speciality Hospital",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "https://www.parimalahospital.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944577868,
+      "lat": 12.8990265,
+      "lon": 77.6055551,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "S.V.Arcade, Devarachikkana Halli Road, Off Bannerugatta Road, Iim Post",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Akshara Eye Hospital",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "http://dpal.kar.nic.in/Kanunu%20padakosha%20PDF%20Files/Recognised%20Hospitals.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7077982463,
+      "lat": 12.903696,
+      "lon": 77.6052868,
+      "tags": {
+        "brand": "Jaguar",
+        "brand:wikidata": "Q21170490",
+        "name": "Jaguar Service Centre",
+        "shop": "car_repair",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572669032,
+      "lat": 12.895426,
+      "lon": 77.607662,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vijaya Bank Layout, Bilekahalli, Bengaluru",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rajashri Grandhim Hospitals",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924728,
+      "lat": 12.9053197,
+      "lon": 77.6030568,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "BTM Layout, Bengaluru",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "name": "Dr. Revathi Prasad",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924759,
+      "lat": 12.905596,
+      "lon": 77.6047376,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "NS Palya, Bilekahalli, Bengaluru",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "All Smiles Dental Health Centre",
+        "source": "Local Knowledge",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7920648785,
+      "lat": 12.9043596,
+      "lon": 77.605245,
+      "tags": {
+        "addr:postcode": "560076",
+        "addr:street": "3rd main, 6th cross, main road, near café coffee day, NS Palya, Munivenkatppa Layout, Bilekahalli",
+        "amenity": "school",
+        "email": "communications.oisb@orchids.edu.in",
+        "name": "Orchids The International School, BTM",
+        "opening_hours": "Mo-Su 09:00-18:30",
+        "operator": "Orchids International School",
+        "phone": "9513731352",
+        "website": "https://www.orchidsinternationalschool.com/bangalore-branches/btm-2nd-stage/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8665724046,
+      "lat": 12.903349,
+      "lon": 77.6035837,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10032026860,
+      "lat": 12.9074857,
+      "lon": 77.6011683,
+      "tags": {
+        "amenity": "bar",
+        "contact:instagram": "meterbar.official",
+        "indoor_seating": "yes",
+        "name": "Meter Bar",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10146581118,
+      "lat": 12.9039898,
+      "lon": 77.6017961,
+      "tags": {
+        "name": "Pottery Shop",
+        "shop": "pottery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10302703775,
+      "lat": 12.9077667,
+      "lon": 77.6012689,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Popeyes",
+        "brand:wikidata": "Q1330910",
+        "brand:wikipedia": "en:Popeyes",
+        "check_date": "2025-08-26",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "indoor_seating": "yes",
+        "name": "Popeyes",
+        "official_name": "Popeyes Louisiana Kitchen",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "takeaway": "yes",
+        "website": "https://www.popeyes.in/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10855355394,
+      "lat": 12.9078534,
+      "lon": 77.601101,
+      "tags": {
+        "check_date": "2025-08-26",
+        "name": "Rare Rabbit",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10978033369,
+      "lat": 12.9078687,
+      "lon": 77.6009256,
+      "tags": {
+        "name": "Kindlife LiteStore",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11073320592,
+      "lat": 12.9039952,
+      "lon": 77.6018922,
+      "tags": {
+        "name": "Fashion factory",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11534777958,
+      "lat": 12.8979573,
+      "lon": 77.5997833,
+      "tags": {
+        "amenity": "bar",
+        "check_date": "2024-01-20",
+        "contact:instagram": "https://www.instagram.com/mykos.bangalore",
+        "name": "Mykos Craft Kitchen & Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11946809267,
+      "lat": 12.9070903,
+      "lon": 77.6038657,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "name": "UCO Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11946809268,
+      "lat": 12.9058817,
+      "lon": 77.6037517,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Chirag Global Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12053283215,
+      "lat": 12.9020591,
+      "lon": 77.6009246,
+      "tags": {
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "brand": "Malabar Gold and Diamonds",
+        "brand:wikidata": "Q60748883",
+        "name": "Malabar Gold and Diamonds",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12053283216,
+      "lat": 12.902148,
+      "lon": 77.6008642,
+      "tags": {
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12094546907,
+      "lat": 12.9079432,
+      "lon": 77.6013453,
+      "tags": {
+        "name": "Azorte",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13062869345,
+      "lat": 12.9075889,
+      "lon": 77.6012716,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "check_date": "2025-08-26",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13097020409,
+      "lat": 12.9079957,
+      "lon": 77.6011627,
+      "tags": {
+        "addr:floor": "4;5",
+        "air_conditioning": "yes",
+        "amenity": "cinema",
+        "brand": "PVR Cinemas",
+        "brand:short": "PVR",
+        "brand:wikidata": "Q3359908",
+        "check_date": "2025-08-26",
+        "level": "4;5",
+        "name": "PVR Cinemas",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13097020410,
+      "lat": 12.9080475,
+      "lon": 77.6009808,
+      "tags": {
+        "brand": "H&M",
+        "brand:wikidata": "Q188326",
+        "check_date": "2025-08-26",
+        "name": "H&M",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13097020411,
+      "lat": 12.9080993,
+      "lon": 77.6012587,
+      "tags": {
+        "brand": "Max",
+        "brand:wikidata": "Q24939079",
+        "check_date": "2025-08-26",
+        "name": "Max",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13097020412,
+      "lat": 12.9080953,
+      "lon": 77.6014897,
+      "tags": {
+        "brand": "Lifestyle",
+        "brand:wikidata": "Q6545496",
+        "check_date": "2025-08-26",
+        "name": "Lifestyle",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23003438,
+      "center": {
+        "lat": 12.8958685,
+        "lon": 77.6023239
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:street": "Bannerghatta Road",
+        "alt_name": "IIMB",
+        "amenity": "university",
+        "name": "Indian Institute of Management Bangalore",
+        "name:kn": "ಇಂಡಿಯನ್ ಇನ್‌ಸ್ಟಿಟುಟ್ ಆಫ್ ಮ್ಯಾನಜ್‌ಮೆಂಟ್ ಬೆಂಗಳೂರು",
+        "name:ml": "ഇന്ത്യൻ ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ് മാനേജ്‌മെന്റ്, ബാംഗ്ലൂർ",
+        "note": "IIMB was inaugrated in 1973, but finally moved to the current campus on Bannerghatta Road in 1983",
+        "short_name": "IIMB",
+        "start_date": "1983",
+        "website": "https://www.iimb.ac.in/",
+        "wikidata": "Q46021",
+        "wikipedia": "en:Indian Institute of Management Bangalore"
+      }
+    },
+    {
+      "type": "way",
+      "id": 44091445,
+      "center": {
+        "lat": 12.89632,
+        "lon": 77.5983495
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "154/11, Opp, I.I.M, Bannerghatta Road",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "addr:street": "Bannerghatta Road",
+        "amenity": "hospital",
+        "email": "customercarebangalore@apollohospitals.com",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "multi speciality",
+        "name": "Apollo Hospital",
+        "name:kn": "ಅಪೋಲೋ ಆಸ್ಪತ್ರೆ",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "www.apollohospitalsbangalore.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 121004115,
+      "center": {
+        "lat": 12.8998116,
+        "lon": 77.6000002
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "landuse": "commercial",
+        "name": "Kalyani Kalamandira",
+        "name:kn": "ಕಲ್ಯಾಣಿ ಕಲಾಮಂದಿರ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 243929433,
+      "center": {
+        "lat": 12.9077073,
+        "lon": 77.6011533
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "172/1 Srinivas Industrial Estate",
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "alt_name": "Vega City Mall",
+        "building": "commercial",
+        "building:levels": "6",
+        "email": "info@vegacitymall.com",
+        "name": "Nexus Vega City",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "payment:cards": "yes",
+        "payment:coins": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:mastercard": "yes",
+        "payment:notes": "yes",
+        "payment:visa": "yes",
+        "phone": "+91 80 67922333, +91 80 67922444",
+        "shop": "mall",
+        "toilets": "yes",
+        "website": "https://vegacitymall.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 285468209,
+      "center": {
+        "lat": 12.8935024,
+        "lon": 77.606787
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 285468215,
+      "center": {
+        "lat": 12.8948785,
+        "lon": 77.6062912
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347211323,
+      "center": {
+        "lat": 12.9016276,
+        "lon": 77.601844
+      },
+      "tags": {
+        "brand": "Maruti Suzuki",
+        "brand:wikidata": "Q963718",
+        "building": "yes",
+        "name": "Kalyani Motors",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348229715,
+      "center": {
+        "lat": 12.9052747,
+        "lon": 77.6031945
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "123, 7 Th Cross Dollas Colony,Billekhalli,Off Bannerghatta Road,Btm Stage Ii",
+        "addr:postcode": "560076",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "gynaecology",
+        "name": "Sakhi Hospital (A Unit Of Prasad Healthcare Services)",
+        "source": "OpenGovernmentData",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362888430,
+      "center": {
+        "lat": 12.9038268,
+        "lon": 77.6074431
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 525507038,
+      "center": {
+        "lat": 12.9036406,
+        "lon": 77.6022033
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "name": "7 Days",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "shop": "supermarket",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 525510292,
+      "center": {
+        "lat": 12.9043495,
+        "lon": 77.6027347
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "building": "yes",
+        "name": "Purva Heights Club House"
+      }
+    },
+    {
+      "type": "way",
+      "id": 646405277,
+      "center": {
+        "lat": 12.9016855,
+        "lon": 77.6003633
+      },
+      "tags": {
+        "building": "yes",
+        "leisure": "sports_centre",
+        "name": "Racketlon Sports Center",
+        "sport": "badminton"
+      }
+    },
+    {
+      "type": "way",
+      "id": 672625599,
+      "center": {
+        "lat": 12.9043488,
+        "lon": 77.6028963
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "lit": "no",
+        "location": "outdoor",
+        "name": "Purva Heights Swimming Pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 672645238,
+      "center": {
+        "lat": 12.9041942,
+        "lon": 77.6030319
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "lit": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 895115935,
+      "center": {
+        "lat": 12.9000244,
+        "lon": 77.6113234
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108932562,
+      "center": {
+        "lat": 12.9041571,
+        "lon": 77.6022068
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "operator": "Uru Valet Parking",
+        "operator:type": "private",
+        "parking": "surface",
+        "surface": "dirt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108934944,
+      "center": {
+        "lat": 12.9034004,
+        "lon": 77.6007617
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "178/1 & 178/2",
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "amenity": "hospital",
+        "beds": "77",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;gynaecology",
+        "name": "Rainbow Children's Hospital",
+        "operator": "Rainbow Hospitals",
+        "operator:type": "private",
+        "phone:mobile": "9355400341",
+        "website": "https://www.rainbowhospitals.in/our-centre/bengaluru/bannerghatta",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265794512,
+      "center": {
+        "lat": 12.9043647,
+        "lon": 77.6076156
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265794513,
+      "center": {
+        "lat": 12.9043553,
+        "lon": 77.6074787
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265794538,
+      "center": {
+        "lat": 12.9062571,
+        "lon": 77.6018225
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "landuse": "commercial",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265835948,
+      "center": {
+        "lat": 12.9095516,
+        "lon": 77.6137211
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Madiwala Lake Park"
+      }
+    }
+  ]
+}

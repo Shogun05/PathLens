@@ -1,0 +1,205 @@
+{
+  "area_name": "Further Extension",
+  "osm_id": 11594317104,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 14,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 7572526726,
+      "lat": 12.9631842,
+      "lon": 77.4958701,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Mallathahalli Lake Road, Mallathahalli, Bengaluru",
+        "addr:postcode": "560091",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Manjunatha Dental clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526764,
+      "lat": 12.963967,
+      "lon": 77.4973049,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vishweshwaraiah Layout, Annapurneshwari Nagar, Bengaluru",
+        "addr:postcode": "560056",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Abivrud Cancer Care & Research Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12087202259,
+      "lat": 12.9609896,
+      "lon": 77.4879289,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "drive_through": "no",
+        "name": "Canara Bank",
+        "opening_hours": "Mo-Sa 10:00-16:00",
+        "phone": "1800 1030",
+        "survey:date": "2024-08-01",
+        "website": "https://canarabank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12087229010,
+      "lat": 12.9606513,
+      "lon": 77.4880845,
+      "tags": {
+        "name": "All Season Market",
+        "opening_hours": "07:00-22:00",
+        "shop": "supermarket",
+        "survey:date": "2024-08-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12087229011,
+      "lat": 12.9580734,
+      "lon": 77.4875539,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Soda Factory",
+        "opening_hours": "Mo-Sa 11:30-01:00",
+        "phone": "+91 97394 77877",
+        "survey:date": "2024-08-01",
+        "website": "https://thesodafactory.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089402756,
+      "lat": 12.9683857,
+      "lon": 77.4818304,
+      "tags": {
+        "amenity": "college",
+        "name": "KLE Law College",
+        "survey:date": "2024-08-03",
+        "website": "https://www.klelawcollege.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192051393,
+      "center": {
+        "lat": 12.9711007,
+        "lon": 77.4996838
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350050412,
+      "center": {
+        "lat": 12.9593269,
+        "lon": 77.4859416
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241556749,
+      "center": {
+        "lat": 12.9654757,
+        "lon": 77.4948624
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Malathhalli Lake Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241556750,
+      "center": {
+        "lat": 12.9668482,
+        "lon": 77.4922562
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241557219,
+      "center": {
+        "lat": 12.9587423,
+        "lon": 77.4857919
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1360543560,
+      "center": {
+        "lat": 12.9744027,
+        "lon": 77.4876354
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428274267,
+      "center": {
+        "lat": 12.9642976,
+        "lon": 77.4843849
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "123",
+        "addr:postcode": "560091",
+        "addr:street": "RR Residency Layout",
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Doddamma Chickamma Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428274268,
+      "center": {
+        "lat": 12.9643667,
+        "lon": 77.4843286
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "120;121;122",
+        "addr:postcode": "560091",
+        "addr:street": "RR Residency Layout",
+        "leisure": "park",
+        "name": "RR Park",
+        "opening_hours": "Mo-Su 10:00-20:00"
+      }
+    }
+  ]
+}

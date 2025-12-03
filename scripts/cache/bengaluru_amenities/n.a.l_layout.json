@@ -1,0 +1,377 @@
+{
+  "area_name": "N.A.L Layout",
+  "osm_id": 19884551,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 28,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 922289018,
+      "lat": 12.924695,
+      "lon": 77.6012962,
+      "tags": {
+        "amenity": "Office Space",
+        "name": "Subramanya Arcade"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1669903424,
+      "lat": 12.9255356,
+      "lon": 77.6012383,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2638243343,
+      "lat": 12.9237751,
+      "lon": 77.5969146,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Chefmaster"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4254428890,
+      "lat": 12.9238477,
+      "lon": 77.5972198,
+      "tags": {
+        "addr:street": "East End Main Road",
+        "amenity": "money_transfer",
+        "brand": "Western Union",
+        "brand:wikidata": "Q861042",
+        "name": "Western Union"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4254482289,
+      "lat": 12.9239069,
+      "lon": 77.5969076,
+      "tags": {
+        "addr:street": "East End Main Road",
+        "name": "Parimala",
+        "name:kn": "ಪರಿಮಳ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445200414,
+      "lat": 12.927082,
+      "lon": 77.6034417,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "No.26/10",
+        "addr:postcode": "560029",
+        "addr:street": "Bismillanagar, BTM Layout 1st Stage",
+        "amenity": "clinic",
+        "name": "Kubra Maternity And Nursing Home",
+        "phone": "+9198444 56346"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4456801277,
+      "lat": 12.9240616,
+      "lon": 77.6021808,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Ambedkar Community Computer Center(AC3)",
+        "website": "https://slumdweller.wikispaces.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545893490,
+      "lat": 12.924386,
+      "lon": 77.6000893,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "name": "Union Bank of India",
+        "operator": "Union Bank of India",
+        "operator:wikidata": "Q2004078"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349232637,
+      "lat": 12.9242342,
+      "lon": 77.6041393,
+      "tags": {
+        "addr:place": "Gurappana Palya",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GUHPS New Gurappana Palya",
+        "name:kn": "ಸರ್ಕಾರಿ ಉರ್ದು ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಹೊಸ ಗುರಪ್ಪನಪಾಳ್ಯ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6945045472,
+      "lat": 12.9265324,
+      "lon": 77.6006922,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No 1 Uma Admiralty First Floor Bannerghatta Road",
+        "addr:postcode": "560029",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Dr Patil Fertility And Endoscopy Clinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7528069000,
+      "lat": 12.9279298,
+      "lon": 77.604767,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Anthony Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924705,
+      "lat": 12.9238004,
+      "lon": 77.6024467,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Bannerghatta Main Road, Bengaluru",
+        "addr:postcode": "560029",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Safa Health care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924708,
+      "lat": 12.9264311,
+      "lon": 77.6016717,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Bismillahnagar, BTM Layout, Bengaluru",
+        "addr:postcode": "560029",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Usha Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924743,
+      "lat": 12.9232355,
+      "lon": 77.6021539,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "BTM Layout, Bengaluru",
+        "addr:postcode": "560029",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Dr. Seema Sultana's Women's Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8559578719,
+      "lat": 12.9263406,
+      "lon": 77.6037971,
+      "tags": {
+        "addr:postcode": "560030",
+        "addr:street": "F cross, Bismillah Nagar , Bannerghatta Road, Bangalore",
+        "amenity": "school",
+        "name": "Lilly Rose English High School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10269214110,
+      "lat": 12.9236267,
+      "lon": 77.5936767,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pathyam Paakam",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11013472860,
+      "lat": 12.9244226,
+      "lon": 77.5973974,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Samudaya Bhavan",
+        "name:kn": "ಸಮುದಾಯ ಭವನ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11013472861,
+      "lat": 12.9243354,
+      "lon": 77.5973974,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Kaurmariyamma temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11013472862,
+      "lat": 12.924161,
+      "lon": 77.5971697,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Leaf pharma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11475762991,
+      "lat": 12.9265197,
+      "lon": 77.6006498,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12020097499,
+      "lat": 12.9241254,
+      "lon": 77.6043409,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560029",
+        "addr:street": "7th Cross Road",
+        "amenity": "place_of_worship",
+        "denomination": "sunni",
+        "name": "Masjid e Munawara",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347209599,
+      "center": {
+        "lat": 12.9259714,
+        "lon": 77.5987129
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560041",
+        "amenity": "community_centre",
+        "building": "yes",
+        "building:levels": "1",
+        "community_centre": "events_centre",
+        "name": "Kashmir Bhavan",
+        "name:kn": "ಕಾಶ್ಮೀರ ಭವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 581851110,
+      "center": {
+        "lat": 12.9251058,
+        "lon": 77.6010535
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "12",
+        "addr:postcode": "560029",
+        "addr:street": "Bannerghatta Road",
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "name": "Subramanya Swamy Temple",
+        "name:kn": "ಸುಬ್ರಮಣ್ಯ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 755819914,
+      "center": {
+        "lat": 12.9244961,
+        "lon": 77.5988297
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 755819915,
+      "center": {
+        "lat": 12.9251535,
+        "lon": 77.5989584
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 755819916,
+      "center": {
+        "lat": 12.9259469,
+        "lon": 77.5989654
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 755822416,
+      "center": {
+        "lat": 12.9260471,
+        "lon": 77.5981082
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1274548656,
+      "center": {
+        "lat": 12.9271233,
+        "lon": 77.6018707
+      },
+      "tags": {
+        "amenity": "college"
+      }
+    }
+  ]
+}

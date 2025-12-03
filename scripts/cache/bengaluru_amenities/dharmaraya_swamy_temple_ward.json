@@ -1,0 +1,1888 @@
+{
+  "area_name": "Dharmaraya Swamy Temple Ward",
+  "osm_id": 19883488,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 139,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 665871266,
+      "lat": 12.9641674,
+      "lon": 77.5819272,
+      "tags": {
+        "name": "Karnakata Hardware Store",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1389204316,
+      "lat": 12.9655848,
+      "lon": 77.584288,
+      "tags": {
+        "amenity": "parking",
+        "name": "Two-Wheeler Parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1389206600,
+      "lat": 12.965161,
+      "lon": 77.584016,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "S P Road",
+        "name": "Arihant Computers",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1389210293,
+      "lat": 12.9655798,
+      "lon": 77.5845651,
+      "tags": {
+        "addr:street": "Dharmaraya Temple Road",
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2023-06-11",
+        "network": "ICICI Bank",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1577582017,
+      "lat": 12.964223,
+      "lon": 77.5866456,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Kamat",
+        "name:kn": "ಕಾಮತ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1589557488,
+      "lat": 12.9647793,
+      "lon": 77.5836994,
+      "tags": {
+        "name": "Om Electronics",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1652785558,
+      "lat": 12.962625,
+      "lon": 77.5899443,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Mahabaleshwar Temple",
+        "name:kn": "ಮಹಾಬಲೇಶ್ವರ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1739362309,
+      "lat": 12.9656908,
+      "lon": 77.5860177,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1739362359,
+      "lat": 12.9658764,
+      "lon": 77.5860284,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Pai Vihar",
+        "name:kn": "ಪೈ ವಿಹಾರ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1739366972,
+      "lat": 12.9646442,
+      "lon": 77.5841683,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2120454693,
+      "lat": 12.9683042,
+      "lon": 77.5846472,
+      "tags": {
+        "addr:housename": "bnr mansion",
+        "addr:street": "jnguva street",
+        "amenity": "bar",
+        "name": "Bnr Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3237630469,
+      "lat": 12.9669535,
+      "lon": 77.5869415,
+      "tags": {
+        "amenity": "atm",
+        "name": "Bharatiya Mahila Bank",
+        "name:kn": "ಭಾರತೀಯ ಮಹಿಳಾ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3546180333,
+      "lat": 12.9629426,
+      "lon": 77.5875693,
+      "tags": {
+        "addr:street": "3rd Cross Road",
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3603007803,
+      "lat": 12.9632721,
+      "lon": 77.5856887,
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209374021,
+      "lat": 12.9663581,
+      "lon": 77.5845939,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209374023,
+      "lat": 12.9668651,
+      "lon": 77.5849748,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209379372,
+      "lat": 12.9660921,
+      "lon": 77.5845202,
+      "tags": {
+        "amenity": "place_of_worship",
+        "natural": "tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209454291,
+      "lat": 12.967911,
+      "lon": 77.5786751,
+      "tags": {
+        "level": "0",
+        "name": "Sri Kalki Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4308190209,
+      "lat": 12.965498,
+      "lon": 77.5839472,
+      "tags": {
+        "amenity": "events_venue",
+        "name": "Shree Prasanna gangadhareshwara samudaya bhavana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4411606494,
+      "lat": 12.9674392,
+      "lon": 77.5823999,
+      "tags": {
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4414944194,
+      "lat": 12.9650385,
+      "lon": 77.5838344,
+      "tags": {
+        "name": "Nextgen Technologies",
+        "name:en": "NEXTGEN TECHNOLOGIES",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446346449,
+      "lat": 12.9705436,
+      "lon": 77.5834769,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "5",
+        "addr:postcode": "560001",
+        "addr:street": "Nrupathunga Rd, RBI Colony, Sampangi Rama Nagar",
+        "amenity": "hospital",
+        "name": "St. Martha's Heart Centre",
+        "phone": "+9195380 43453",
+        "website": "locations.narayanahealth.org"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4562950692,
+      "lat": 12.9646857,
+      "lon": 77.5825373,
+      "tags": {
+        "addr:housenumber": "134-138, K K",
+        "addr:postcode": "560002",
+        "addr:street": "Sadar Patrappa Road",
+        "email": "jagadish@amarradio.com",
+        "name": "Amar Radio Corporation",
+        "name:en": "Amar Radio Corporation",
+        "opening_hours": "Mo-Sa 10:00-18:30",
+        "phone": "08046480000",
+        "shop": "electronics",
+        "website": "https://www.amarradio.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563000590,
+      "lat": 12.964736,
+      "lon": 77.5817243,
+      "tags": {
+        "addr:housenumber": "59/2",
+        "addr:postcode": "560002",
+        "addr:street": "Sadar Patrappa Road",
+        "email": "sabbasaco51@gmail.com",
+        "name": "S Abbas & Co",
+        "name:en": "S Abbas & Co",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "08022225569",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563018489,
+      "lat": 12.9650146,
+      "lon": 77.5816415,
+      "tags": {
+        "addr:housenumber": "21",
+        "addr:postcode": "560002",
+        "addr:street": "E V Lane, S P Road Cross,",
+        "name": "New Diamond Electro Control",
+        "name:en": "New Diamond Electro Control",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "9880667862",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563035990,
+      "lat": 12.9650947,
+      "lon": 77.5816049,
+      "tags": {
+        "addr:housenumber": "9/4",
+        "addr:postcode": "560002",
+        "addr:street": "E V Lane, S P Road Cross",
+        "name": "Jai Hind Agencies",
+        "name:en": "Jai Hind Agencies",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "9663167076",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563051090,
+      "lat": 12.964871,
+      "lon": 77.5811502,
+      "tags": {
+        "addr:housenumber": "56/2B",
+        "addr:postcode": "560002",
+        "addr:street": "G R Lane, S p road Cross",
+        "email": "ampowertools56@gmail.com",
+        "name": "A M Power Tools",
+        "name:en": "A M Power Tools",
+        "phone": "9164212461",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563052091,
+      "lat": 12.9647292,
+      "lon": 77.582038,
+      "tags": {
+        "addr:housenumber": "66/4",
+        "addr:postcode": "560002",
+        "addr:street": "Sadar Patrappa Road",
+        "email": "lakshmieleblr@yahoo.in",
+        "name": "Sri Lakshmi electronics",
+        "name:en": "Sri Lakshmi electronics",
+        "phone": "9341084842",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563100690,
+      "lat": 12.9646329,
+      "lon": 77.5819878,
+      "tags": {
+        "addr:housenumber": "139/7",
+        "addr:postcode": "560002",
+        "addr:street": "Sadar Patrappa Road",
+        "email": "vishalelectronicsblr@gmail.com",
+        "name": "Vishal electronics",
+        "name:en": "Vishal electronics",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "operator": "Prakash Chawla",
+        "phone": "9886717462",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563140390,
+      "lat": 12.9640976,
+      "lon": 77.5828518,
+      "tags": {
+        "addr:housenumber": "82/1",
+        "addr:postcode": "560002",
+        "addr:street": "S J P Road",
+        "email": "burhanipolymer@gmail.com",
+        "name": "Burhani Rubber & Polymer",
+        "name:en": "Burhani Rubber & Polymer",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "08041145417",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4563372290,
+      "lat": 12.9648421,
+      "lon": 77.5784145,
+      "tags": {
+        "addr:housenumber": "14",
+        "addr:postcode": "560002",
+        "addr:street": "MRR Lane",
+        "email": "hntc.maaz@gmail.com",
+        "name": "M M Trading Company",
+        "name:en": "M M Trading Company",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "9845004864",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4564567189,
+      "lat": 12.9643898,
+      "lon": 77.5797751,
+      "tags": {
+        "addr:housenumber": "33",
+        "addr:postcode": "560002",
+        "addr:street": "Silver Jubilee Park Road",
+        "email": "rtc5253@gmail.com",
+        "name": "Reliance tools centre",
+        "name:en": "Reliance tools centre",
+        "phone": "9342633632",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4564919889,
+      "lat": 12.964766,
+      "lon": 77.582137,
+      "tags": {
+        "addr:housenumber": "68",
+        "addr:postcode": "560002",
+        "addr:street": "Sadar Patrappa Road",
+        "name": "Bhandari electronics",
+        "name:en": "Bhandari electronics",
+        "phone": "32511101",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849094833,
+      "lat": 12.9647047,
+      "lon": 77.5864795,
+      "tags": {
+        "name": "Lenovo",
+        "name:en": "Lenovo",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849094834,
+      "lat": 12.9652861,
+      "lon": 77.5864103,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849108029,
+      "lat": 12.9648678,
+      "lon": 77.5866235,
+      "tags": {
+        "name": "Shakti silk rose",
+        "name:en": "Shakti silk rose",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4993784521,
+      "lat": 12.9616605,
+      "lon": 77.5891542,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Huq Building",
+        "name:en": "Huq Building"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5786021053,
+      "lat": 12.9646134,
+      "lon": 77.5824437,
+      "tags": {
+        "addr:housenumber": "68/1",
+        "addr:postcode": "560002",
+        "addr:street": "Sadar Patrappa Road",
+        "name": "Navdeep Electronics",
+        "opening_hours": "Mo-Sa 10:00-20:30; Su 10:00-15:00",
+        "operator": "Navin Jain",
+        "phone": "08041225559",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5983455178,
+      "lat": 12.9631282,
+      "lon": 77.5891892,
+      "tags": {
+        "amenity": "bank",
+        "check_date": "2024-03-02",
+        "name": "J&K Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6248981887,
+      "lat": 12.9611012,
+      "lon": 77.5887564,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "tea;chicken;noodles;coffee_shop;curry;indian;local",
+        "diet:vegetarian": "yes",
+        "name": "Vyshali Food Corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419070686,
+      "lat": 12.9678926,
+      "lon": 77.5787208,
+      "tags": {
+        "name": "Neelkamal sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939719899,
+      "lat": 12.9608027,
+      "lon": 77.5911717,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "26, 1st Main, 2nd Cross, Ckc Garden Off Mission Road",
+        "addr:postcode": "560027",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Phoenix Hospital, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6945020140,
+      "lat": 12.9685305,
+      "lon": 77.5843965,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No 37, Next To Ganesha Temple Near Cubbonpet Market Near Cubbonpet Market",
+        "addr:postcode": "560002",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Punarjyoti Eye Hospital, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7056166958,
+      "lat": 12.9645263,
+      "lon": 77.5826626,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560002",
+        "addr:street": "P. P. Lane",
+        "name": "Computer Mega Mart",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8463203311,
+      "lat": 12.9644404,
+      "lon": 77.5817458,
+      "tags": {
+        "description": "A large shop selling screw drivers, wire cutters, wire strippers, nippers, crimping tools, etc.",
+        "name": "Goodwill enterprises",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9140200243,
+      "lat": 12.9689448,
+      "lon": 77.5842382,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9140200244,
+      "lat": 12.9683717,
+      "lon": 77.5844461,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Chikkanna Tiffin Room",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9249667850,
+      "lat": 12.9650835,
+      "lon": 77.5806688,
+      "tags": {
+        "name": "Burhani Industrial suppliers",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9538783115,
+      "lat": 12.9650649,
+      "lon": 77.5806493,
+      "tags": {
+        "description": "masks, ropes, gloves, etc.",
+        "name": "Burhani industrial solutions",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9538903561,
+      "lat": 12.9646068,
+      "lon": 77.5839621,
+      "tags": {
+        "name": "Tab core computers",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9841611231,
+      "lat": 12.9642862,
+      "lon": 77.5834718,
+      "tags": {
+        "name": "Kaveri computers",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10015441345,
+      "lat": 12.964595,
+      "lon": 77.5822737,
+      "tags": {
+        "name": "Swastik Telecom",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10697561504,
+      "lat": 12.9633163,
+      "lon": 77.5889106,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10969398448,
+      "lat": 12.965565,
+      "lon": 77.5844677,
+      "tags": {
+        "amenity": "atm",
+        "cash_in": "no",
+        "check_date": "2023-06-11",
+        "network": "DCB Bank",
+        "operator": "DCB Bank",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11262546940,
+      "lat": 12.9648908,
+      "lon": 77.58184,
+      "tags": {
+        "name": "NSK Electronics",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11417001861,
+      "lat": 12.9637807,
+      "lon": 77.582047,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "check_date": "2023-12-14",
+        "fee": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11496819756,
+      "lat": 12.9644222,
+      "lon": 77.5822003,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "Bangalore Urban",
+        "addr:postcode": "560002",
+        "name": "The IT Gear",
+        "shop": "computer",
+        "website": "https://theitgear.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12133368719,
+      "lat": 12.96458,
+      "lon": 77.5860918,
+      "tags": {
+        "amenity": "post_box",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135035072,
+      "lat": 12.9647659,
+      "lon": 77.5865284,
+      "tags": {
+        "level": "0",
+        "name": "Sri Rajalakshmi Gold Palace",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135035073,
+      "lat": 12.9647406,
+      "lon": 77.5865522,
+      "tags": {
+        "level": "1",
+        "name": "Gemini International",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135138829,
+      "lat": 12.9634762,
+      "lon": 77.585227,
+      "tags": {
+        "amenity": "bench",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983648,
+      "lat": 12.9635197,
+      "lon": 77.5852417,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983649,
+      "lat": 12.9635649,
+      "lon": 77.5852581,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983650,
+      "lat": 12.9633215,
+      "lon": 77.5852136,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983651,
+      "lat": 12.9633058,
+      "lon": 77.5851945,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983652,
+      "lat": 12.9632909,
+      "lon": 77.5851773,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983653,
+      "lat": 12.9632716,
+      "lon": 77.585162,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983654,
+      "lat": 12.9632384,
+      "lon": 77.5851459,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135983693,
+      "lat": 12.9626393,
+      "lon": 77.5857113,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Ravindra Kalakshetra Canteen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135993230,
+      "lat": 12.9617443,
+      "lon": 77.5848647,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Nayana Auditorium"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12137671762,
+      "lat": 12.9659631,
+      "lon": 77.586509,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12137671763,
+      "lat": 12.9659629,
+      "lon": 77.586517,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12137671824,
+      "lat": 12.9650338,
+      "lon": 77.5868102,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402152,
+      "lat": 12.9657486,
+      "lon": 77.5778662,
+      "tags": {
+        "check_date": "2025-01-21",
+        "name": "pet accessories, chains, cages, locks, wires, hooks, screwdrivers",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402153,
+      "lat": 12.9656669,
+      "lon": 77.5780466,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "doorknobs, jet sprays, curtain holders, handles, convex mirrors",
+        "name": "A Mohammad Ibrahim and Co",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402154,
+      "lat": 12.9655928,
+      "lon": 77.5781766,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "construction and agriculture hardware: tools to lay out cement, big buckets, bags of cement, wooden sticks, shovels, ploughs, hammers",
+        "name": "V Con Trade Inc",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402155,
+      "lat": 12.9655617,
+      "lon": 77.578271,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "pipes, drilling of holes inside the pipes, wires",
+        "name": "Power Point",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402156,
+      "lat": 12.965571,
+      "lon": 77.5784321,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "valves, regulators, gauge, press, push fittings",
+        "name": "Trade Wings",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402157,
+      "lat": 12.9654225,
+      "lon": 77.5785573,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "bath ware",
+        "name": "JK Enterprises and Pipes",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402158,
+      "lat": 12.9653849,
+      "lon": 77.57865,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "plumbing lines, construction- opened in 1979",
+        "name": "Deen Hardware",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402159,
+      "lat": 12.9654268,
+      "lon": 77.5787874,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "nuts and bolts",
+        "name": "Kaveri Corner",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402160,
+      "lat": 12.965357,
+      "lon": 77.5788856,
+      "tags": {
+        "check_date": "2025-01-21",
+        "name": "Howrah Tube Centre",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402161,
+      "lat": 12.9648108,
+      "lon": 77.5807041,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "drilling borewell pipes",
+        "name": "SKS Enterprises",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402162,
+      "lat": 12.9647348,
+      "lon": 77.5817073,
+      "tags": {
+        "amenity": "fixme",
+        "check_date": "2025-01-21",
+        "fixme": "type",
+        "fixme:type": "Start",
+        "name": "INTERSECTION"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402163,
+      "lat": 12.9646234,
+      "lon": 77.5824537,
+      "tags": {
+        "check_date": "2025-01-21",
+        "description": "sells first hand electronics at lower than MRP, to both resellers and individual buys",
+        "name": "Sagar Computer World",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12538080968,
+      "lat": 12.9669795,
+      "lon": 77.5868791,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560002",
+        "addr:street": "Cubbon Pet Main Road, Halsurpete, Nagartapete",
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12698412006,
+      "lat": 12.964859,
+      "lon": 77.5837001,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "1st Floor, Ashok Tower, 88/1",
+        "addr:postcode": "560002",
+        "addr:street": "Sadar Patrappa Rd",
+        "air_conditioning": "yes",
+        "alt_name": "ibuypc",
+        "brand": "iBUYPC",
+        "contact:facebook": "https://www.facebook.com/ibuypc",
+        "currency:INR": "yes",
+        "description": "iBUYPC designs and delivers custom-built PCs and branded components for gamers, creators, and businesses. The company offers systems for individual users (B2C) and scalable configurations with bulk procurement for businesses (B2B).",
+        "email": "support@ibuypc.in",
+        "image": "https://ibuypc.in/cdn/shop/files/iBUYPC-brand-logo.png?v=1741330759",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "iBUYPC 5G",
+        "level": "1",
+        "mobile": "+919694699991",
+        "name": "iBUYPC",
+        "official_name": "IBUYPC",
+        "opening_hours": "Mo-Sa 10:30-20:30",
+        "operator": "Rudra Prosad Sen",
+        "payment:american_express": "yes",
+        "payment:apple_pay": "yes",
+        "payment:bank_transfer": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:diners_club": "yes",
+        "payment:discover_card": "yes",
+        "payment:google_pay": "yes",
+        "payment:imps": "yes",
+        "payment:jcb": "yes",
+        "payment:mastercard": "yes",
+        "payment:mastercard_contactless": "yes",
+        "payment:neft": "yes",
+        "payment:net_banking": "yes",
+        "payment:paytm": "yes",
+        "payment:phonepe": "yes",
+        "payment:upi": "yes",
+        "payment:upi_qr": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "phone": "+919694699991",
+        "ref:vatin": "29CCMPR7908C1Z5",
+        "shop": "computer",
+        "start_date": "2025-01-10",
+        "website": "https://ibuypc.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13327801914,
+      "lat": 12.964823,
+      "lon": 77.5840248,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "No.91, 2nd floor, Shop No, 222-223, Balaji Complex",
+        "addr:postcode": "560002",
+        "addr:street": "SP Road",
+        "alt_name": "pcbuildz",
+        "brand": "PCBuildz",
+        "contact:facebook": "https://facebook.com/PCBuildz/",
+        "currency:INR": "yes",
+        "description": "PCBuildz is a custom PC builder in Bangalore that designs and delivers systems and components for gamers, creators, and businesses. It offers custom systems for individual users (B2C) and scalable configurations with bulk procurement for businesses (B2B).",
+        "email": "support@pcbuildz.in",
+        "image": "https://cdn.shopify.com/s/files/1/0653/4060/4505/files/PCBuildz-Icon.png?v=1752500113",
+        "internet_access": "wlan",
+        "name": "PCBuildz (Nextgen IT Solutions) - Bangalore's Best Custom PC Shop for Gaming, Editing, 3D Animation & AI Workstation PC Build",
+        "opening_hours": "Mo-Sa 10:30-20:00",
+        "operator": "Govind Kumar Teja Ram",
+        "payment:american_express": "yes",
+        "payment:apple_pay": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:diners_club": "yes",
+        "payment:discover_card": "yes",
+        "payment:google_pay": "yes",
+        "payment:jcb": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:mastercard_contactless": "yes",
+        "payment:unionpay": "yes",
+        "payment:upi": "yes",
+        "payment:upi_qr": "yes",
+        "payment:visa": "yes",
+        "phone": "+91-9510-9510-19",
+        "shop": "computer",
+        "website": "https://pcbuildz.in/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23494412,
+      "center": {
+        "lat": 12.9638755,
+        "lon": 77.5805412
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Silver Jubilee Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36885141,
+      "center": {
+        "lat": 12.9640735,
+        "lon": 77.577792
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "KR Market Bus Terminus",
+        "name:kn": "ಕೃಷ್ಣರಾಜೇಂದ್ರ ಮಾರುಕಟ್ಟೆ",
+        "public_transport": "station",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36897682,
+      "center": {
+        "lat": 12.9636973,
+        "lon": 77.582866
+      },
+      "tags": {
+        "alt_name": "Sri Krishnarajendra Silver Subilee Park",
+        "leisure": "park",
+        "name": "Silver Jubilee Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38758706,
+      "center": {
+        "lat": 12.9641582,
+        "lon": 77.5873338
+      },
+      "tags": {
+        "alt_name": "United Mission High School",
+        "amenity": "college",
+        "name": "United Mission PUC and Degree College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131443354,
+      "center": {
+        "lat": 12.9626697,
+        "lon": 77.586985
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "19",
+        "addr:postcode": "560027",
+        "addr:street": "3rd Cross Road",
+        "amenity": "college",
+        "name": "Bishop Cotton's Women's Christian College",
+        "phone": "+91 080 22121898"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131487436,
+      "center": {
+        "lat": 12.9640121,
+        "lon": 77.57855
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "sunni",
+        "name": "Jamia Masjid",
+        "name:kn": "ಜಾಮ ಮಸೀದಿ",
+        "religion": "muslim",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138991405,
+      "center": {
+        "lat": 12.9612179,
+        "lon": 77.5904079
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560027",
+        "addr:street": "Mission Road (Kalinga Rao Road)",
+        "amenity": "college",
+        "name": "Government Pharmacy College",
+        "wikidata": "Q5589028",
+        "wikipedia": "en:Government Pharmacy College, Bangalore"
+      }
+    },
+    {
+      "type": "way",
+      "id": 143368253,
+      "center": {
+        "lat": 12.9643631,
+        "lon": 77.5853424
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560002",
+        "addr:street": "Silver Jubilee Park Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "building": "yes",
+        "building:levels": "6",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 148016869,
+      "center": {
+        "lat": 12.9622512,
+        "lon": 77.5851078
+      },
+      "tags": {
+        "addr:street": "Jayachamaraja Wodeyar Road",
+        "amenity": "theatre",
+        "building": "public",
+        "name": "Ravindra Kalakshetra",
+        "name:etymology:wikidata": "Q7241",
+        "name:kn": "ರವೀಂದ್ರ ಕಲಾಕ್ಷೇತ್ರ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 148016872,
+      "center": {
+        "lat": 12.963771,
+        "lon": 77.5857941
+      },
+      "tags": {
+        "amenity": "conference_centre",
+        "building": "yes",
+        "building:architecture": "neoclassicism",
+        "building:levels": "2",
+        "building:material": "stone",
+        "height": "10",
+        "heritage": "2",
+        "heritage:operator": "nmma",
+        "heritage:website": "https://nmma.nic.in/nmma/exploreBuiltState.do?state=29",
+        "name": "Sir Puttanna Chetty Town Hall",
+        "name:etymology:wikidata": "Q6323746",
+        "name:kn": "ಪುಟ್ಟಣ್ಣ ಚೆಟ್ಟಿ ನಗರಸಭೆ",
+        "ref:nmma": "KR20010330",
+        "start_date": "1935-09-11",
+        "wikidata": "Q4855080"
+      }
+    },
+    {
+      "type": "way",
+      "id": 152193875,
+      "center": {
+        "lat": 12.9626143,
+        "lon": 77.5896924
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 161984944,
+      "center": {
+        "lat": 12.9654636,
+        "lon": 77.5833357
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Dharmaraya Swamy Temple",
+        "name:kn": "ಧರ್ಮರಾಯ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wikidata": "Q2065042",
+        "wikimedia_commons": "Category:Dharmaraya Swamy Temple",
+        "wikipedia": "en:Dharmaraya Swamy Temple"
+      }
+    },
+    {
+      "type": "way",
+      "id": 161984945,
+      "center": {
+        "lat": 12.9643477,
+        "lon": 77.5845256
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Near Town Hall, Sjp Road , South",
+        "addr:postcode": "560002",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Dasappa Maternity Hospital",
+        "name:kn": "ದಾಸಪ್ಪ ತಿರುಮಲಮ್ಮ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208697526,
+      "center": {
+        "lat": 12.9626389,
+        "lon": 77.5899774
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Mahabaleshwara Temple",
+        "name:kn": "ಮಹಾಬಲೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208827398,
+      "center": {
+        "lat": 12.9665425,
+        "lon": 77.5870156
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560002",
+        "addr:street": "Cubbon Park Road, Opposite-BBMP Office, Cubbonpet,",
+        "amenity": "police",
+        "landuse": "commercial",
+        "name": "Halasuru Gate Traffic Police Station",
+        "phone": "080 2294 2660",
+        "website": "NA"
+      }
+    },
+    {
+      "type": "way",
+      "id": 328765451,
+      "center": {
+        "lat": 12.9640502,
+        "lon": 77.5781641
+      },
+      "tags": {
+        "amenity": "marketplace"
+      }
+    },
+    {
+      "type": "way",
+      "id": 328774402,
+      "center": {
+        "lat": 12.9670667,
+        "lon": 77.585611
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345892554,
+      "center": {
+        "lat": 12.9622681,
+        "lon": 77.5888874
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "CSI St. Peters Telugu Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345924045,
+      "center": {
+        "lat": 12.9595629,
+        "lon": 77.5877705
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "37",
+        "addr:postcode": "560027",
+        "addr:street": "Lalbagh Road",
+        "amenity": "arts_centre",
+        "building": "yes",
+        "name": "Shoonya - Centre for Art and Somatic Practices",
+        "website": "http://shoonyaspace.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346454054,
+      "center": {
+        "lat": 12.9674027,
+        "lon": 77.5837589
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "name": "Chikka Anamma Temple",
+        "name:kn": "ಚಿಕ್ಕ ಅನ್ನಮ್ಮ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346508060,
+      "center": {
+        "lat": 12.9661906,
+        "lon": 77.5851087
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Lourdes High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347077218,
+      "center": {
+        "lat": 12.9643472,
+        "lon": 77.5773741
+      },
+      "tags": {
+        "amenity": "toilets",
+        "building": "yes",
+        "fee": "yes",
+        "female": "yes",
+        "male": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347077620,
+      "center": {
+        "lat": 12.9645771,
+        "lon": 77.5771645
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "397",
+        "addr:postcode": "560002",
+        "addr:street": "Avenue Rd, City Market, Old Tharagupet, Dodpete, Nagarathpete",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "check_date": "2025-08-15",
+        "denomination": "sufi",
+        "name": "Dargha Hazrath Mir Bahadur Sha Al Maroof Syed Pacha Shaheed",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347078486,
+      "center": {
+        "lat": 12.9649849,
+        "lon": 77.5781544
+      },
+      "tags": {
+        "building": "yes",
+        "name": "R.K. Bathija & Co",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351342304,
+      "center": {
+        "lat": 12.9646079,
+        "lon": 77.5821566
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Electroface Connectors",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421114579,
+      "center": {
+        "lat": 12.9641474,
+        "lon": 77.5875533
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421114581,
+      "center": {
+        "lat": 12.966918,
+        "lon": 77.5854944
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Hazrat Hamid Shah Dargah",
+        "name:kn": "ಹಜ್ರತ್ ಹಮೀದ್ ಶಾ ದರ್ಗ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421114582,
+      "center": {
+        "lat": 12.9662043,
+        "lon": 77.585701
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Abbas Khan College",
+        "name:kn": "ಅಬ್ಬಾಸ್ ಖಾನ್ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421116824,
+      "center": {
+        "lat": 12.9660973,
+        "lon": 77.5845209
+      },
+      "tags": {
+        "amenity": "place_of_worship"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421132587,
+      "center": {
+        "lat": 12.9674719,
+        "lon": 77.5793311
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Chamundeshwari Temple",
+        "name:kn": "ಚಾಮುಂಡೇಶ್ವರಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421132591,
+      "center": {
+        "lat": 12.9674494,
+        "lon": 77.5793201
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1082449594,
+      "center": {
+        "lat": 12.9620358,
+        "lon": 77.5888834
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1082449597,
+      "center": {
+        "lat": 12.963063,
+        "lon": 77.5852852
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Canara Bank Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1186431416,
+      "center": {
+        "lat": 12.9622763,
+        "lon": 77.5885958
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231379305,
+      "center": {
+        "lat": 12.9702116,
+        "lon": 77.5841592
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231379306,
+      "center": {
+        "lat": 12.9705535,
+        "lon": 77.5839364
+      },
+      "tags": {
+        "hoops": "2",
+        "leisure": "pitch",
+        "sport": "basketball",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231379314,
+      "center": {
+        "lat": 12.9710887,
+        "lon": 77.5832686
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302418861,
+      "center": {
+        "lat": 12.9653345,
+        "lon": 77.5857148
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302418874,
+      "center": {
+        "lat": 12.9666047,
+        "lon": 77.585933
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311064537,
+      "center": {
+        "lat": 12.9620085,
+        "lon": 77.5854566
+      },
+      "tags": {
+        "amenity": "theatre",
+        "name": "Samsa Bayalu Ranga Mandira",
+        "theatre:type": "audi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311064544,
+      "center": {
+        "lat": 12.9615128,
+        "lon": 77.5856889
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311064545,
+      "center": {
+        "lat": 12.9617765,
+        "lon": 77.5844335
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311064546,
+      "center": {
+        "lat": 12.9616031,
+        "lon": 77.5847155
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311064547,
+      "center": {
+        "lat": 12.9623591,
+        "lon": 77.584866
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311251844,
+      "center": {
+        "lat": 12.9647904,
+        "lon": 77.5856322
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311251851,
+      "center": {
+        "lat": 12.9651459,
+        "lon": 77.5870284
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311251852,
+      "center": {
+        "lat": 12.9634265,
+        "lon": 77.5868185
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311251853,
+      "center": {
+        "lat": 12.9641667,
+        "lon": 77.5862478
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311251854,
+      "center": {
+        "lat": 12.9650787,
+        "lon": 77.5866015
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1311251855,
+      "center": {
+        "lat": 12.964725,
+        "lon": 77.586279
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1418860511,
+      "center": {
+        "lat": 12.9621435,
+        "lon": 77.5901163
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560027",
+        "addr:street": "Mission Road (Kalinga Rao Road)",
+        "amenity": "college",
+        "name": "Government Pharmacy College",
+        "wikidata": "Q5589028",
+        "wikipedia": "en:Government Pharmacy College, Bangalore"
+      }
+    }
+  ]
+}

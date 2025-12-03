@@ -1,0 +1,964 @@
+{
+  "area_name": "Ayyappanagara",
+  "osm_id": 2473283550,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 69,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1706585734,
+      "lat": 13.0042943,
+      "lon": 77.7122219,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "fuel:diesel": "yes",
+        "name": "Bharat Petroleum Pump",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1706618273,
+      "lat": 13.002416,
+      "lon": 77.7125734,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "fee": "no",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1706627968,
+      "lat": 13.0046542,
+      "lon": 77.7125955,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Muneshwara Temple",
+        "name:kn": "ಮುನೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2473280954,
+      "lat": 13.0053836,
+      "lon": 77.7019239,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Krishna Rukmini Temple K.R Puram",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446018021,
+      "lat": 13.0048396,
+      "lon": 77.7036425,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Devasandram Main Road Enterance, Krishnarajapuram",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "addr:street": "Devasandra Main Road, Krishnarajapuram",
+        "amenity": "hospital",
+        "name": "Maithri Nursing Home",
+        "phone": "+918025611928",
+        "source": "http://www.bangalorean.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938868536,
+      "lat": 13.0103817,
+      "lon": 77.7064115,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "01,17Th Cross, 2nd Stage, Near Gayathri Temple, Gayathri Layout, Basavanapura Main Pura Road, K.R. Pura",
+        "addr:postcode": "560034",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Shankar Nursing Home and Diagnostic Labratory",
+        "opening_hours": "PH,Mo-Su 07:00-22:00",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7213514092,
+      "lat": 13.004942,
+      "lon": 77.7035721,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Devasandram Main Road Enterance, Krishnarajapuram",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Maithri Nursing Home and Diagnostic centre",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131823,
+      "lat": 13.0031618,
+      "lon": 77.7059531,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Vicky Family Life",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131826,
+      "lat": 13.003328,
+      "lon": 77.712439,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Unique Smile Dental Care Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131830,
+      "lat": 13.002561,
+      "lon": 77.712519,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Surya Layout, Ayyappa Nagar, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Clove Dental",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131836,
+      "lat": 13.0045892,
+      "lon": 77.7083063,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Krishna Physiotherapy Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131855,
+      "lat": 13.0037255,
+      "lon": 77.7105179,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Bharat Piles & Fistula Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131856,
+      "lat": 13.010207,
+      "lon": 77.707804,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Basavanapura Main Road, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Tirumala Newborn Kids and Ortho Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131858,
+      "lat": 13.0044028,
+      "lon": 77.7094874,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Priyadarshini Layout, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sandhya Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131862,
+      "lat": 13.0041857,
+      "lon": 77.7097349,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "K R Puram, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "S.M.C. Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131870,
+      "lat": 13.0041888,
+      "lon": 77.7125929,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Krishna Poly Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131871,
+      "lat": 13.0044286,
+      "lon": 77.7102387,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Devasandra Main Road, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Dental Frames Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131875,
+      "lat": 13.00509,
+      "lon": 77.710878,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Sai Child Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131878,
+      "lat": 13.004699,
+      "lon": 77.704279,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kuvempu Layout, Hale Devasandra, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Shree Srinivasa Homeo Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131882,
+      "lat": 13.01064,
+      "lon": 77.710585,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Krishnarajapura, Bengaluru",
+        "addr:postcode": "560049",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Manjunatha Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131887,
+      "lat": 13.005267,
+      "lon": 77.70278,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Sallappa Layout, Vinayaka Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Physiotherapy Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131900,
+      "lat": 13.0045634,
+      "lon": 77.7046938,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Chikkadevasandra Main Road, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Bhargava Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131904,
+      "lat": 13.0042829,
+      "lon": 77.7120772,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Dr. Rao's Skin Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131915,
+      "lat": 13.005297,
+      "lon": 77.702884,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Thippaiah Complex, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Pavithralaya Care 32 Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131920,
+      "lat": 13.0031938,
+      "lon": 77.7128759,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Surya Layout, Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Kids Health Link",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131934,
+      "lat": 13.005255,
+      "lon": 77.703108,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Deepa Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131935,
+      "lat": 13.0042616,
+      "lon": 77.7114153,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Amrutha Healthcare",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131940,
+      "lat": 13.0044733,
+      "lon": 77.7082449,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Priyadarshini Layout, Ayyappa Nagar, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Manjunatha Clinic",
+        "source": "Local Knowledge",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9136927427,
+      "lat": 13.0102236,
+      "lon": 77.7063424,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date:opening_hours": "2022-07-20",
+        "name": "Rashi Medical Stores",
+        "opening_hours": "Mo-Su 07:00-10:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11412688468,
+      "lat": 13.004324,
+      "lon": 77.715452,
+      "tags": {
+        "addr:city": "bengalure",
+        "addr:housenumber": "12",
+        "addr:postcode": "560049",
+        "addr:street": "Kodigehalli Road",
+        "name": "Snnuggle Home Decor",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "8618188578",
+        "shop": "bedsheets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998955850,
+      "lat": 13.0045802,
+      "lon": 77.7167366,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Saptagiri Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998955851,
+      "lat": 13.0045882,
+      "lon": 77.7167045,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Saptagiri Health Care"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998955856,
+      "lat": 13.0045552,
+      "lon": 77.7165947,
+      "tags": {
+        "name": "Familiy Choice supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919955,
+      "lat": 13.0045711,
+      "lon": 77.7174766,
+      "tags": {
+        "check_date": "2025-07-20",
+        "name": "Reliance Smart",
+        "shop": "department_store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919956,
+      "lat": 13.004333,
+      "lon": 77.7173767,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-07-20",
+        "name": "Udupi Gokula"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919957,
+      "lat": 13.0045856,
+      "lon": 77.7175488,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "check_date": "2025-07-20",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919958,
+      "lat": 13.0045897,
+      "lon": 77.7176126,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "check_date": "2025-07-20",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919959,
+      "lat": 13.0046353,
+      "lon": 77.7174766,
+      "tags": {
+        "check_date": "2025-07-20",
+        "leisure": "fitness_centre",
+        "name": "Crunch Fitness"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919960,
+      "lat": 13.004567,
+      "lon": 77.7176657,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-07-20",
+        "cuisine": "coffee_shop",
+        "name": "The Coffee Brewery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919961,
+      "lat": 13.0045752,
+      "lon": 77.7177464,
+      "tags": {
+        "check_date": "2025-07-20",
+        "name": "Dry Fruits House",
+        "shop": "nuts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012919962,
+      "lat": 13.0045773,
+      "lon": 77.7173895,
+      "tags": {
+        "check_date": "2025-07-20",
+        "name": "Just Bake",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 102937348,
+      "center": {
+        "lat": 13.003633,
+        "lon": 77.7184473
+      },
+      "tags": {
+        "addr:city": "Ayyappanagar, Bangalore",
+        "addr:housenumber": "70/1",
+        "addr:postcode": "560036",
+        "addr:street": "Kodigehalli Main Road",
+        "amenity": "school",
+        "email": "brijesh.kumavat@diyaschool.com",
+        "name": "Diya Academy of Learning",
+        "phone": "+91-80-32953468;+919901451041",
+        "website": "https://diyaschool.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 153296849,
+      "center": {
+        "lat": 12.9989987,
+        "lon": 77.703552
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 158466991,
+      "center": {
+        "lat": 13.0065365,
+        "lon": 77.7172162
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Bethel Methodist Church",
+        "religion": "christian",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 158467187,
+      "center": {
+        "lat": 13.0043232,
+        "lon": 77.7124403
+      },
+      "tags": {
+        "addr:housename": "Family Choice",
+        "addr:postcode": "560036",
+        "addr:street": "Kodigehalli Road",
+        "name": "Family Choice",
+        "shop": "convenience",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 158469559,
+      "center": {
+        "lat": 13.0043983,
+        "lon": 77.7135469
+      },
+      "tags": {
+        "brand": "Maruti Suzuki",
+        "brand:wikidata": "Q963718",
+        "building": "garage",
+        "name": "Varun Motors",
+        "name:kn": "ಮಹಿಂದ್ರ",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 252086267,
+      "center": {
+        "lat": 13.0062625,
+        "lon": 77.704755
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Chaitanya School",
+        "name:kn": "ಚೈತಾಣ್ಯ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 263668180,
+      "center": {
+        "lat": 12.9990537,
+        "lon": 77.7019719
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "MLR Convention Center"
+      }
+    },
+    {
+      "type": "way",
+      "id": 283808758,
+      "center": {
+        "lat": 12.9989638,
+        "lon": 77.7030905
+      },
+      "tags": {
+        "addr:housenumber": "9",
+        "addr:postcode": "560048",
+        "addr:street": "4th Cross Road",
+        "amenity": "school",
+        "email": "tbswcommunication@brigadeschools.edu.in",
+        "name": "The Brigade School",
+        "name:en": "The Brigade School @ Mahadevapura",
+        "opening_hours": "Mo-Fr 08:30-17:00; Sa 08:30-14:00",
+        "phone": "+918041158829;+919108551684;+919108424914",
+        "website": "https://www.brigadeschools.edu.in/the-brigade-school-mahadevapura/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 283808767,
+      "center": {
+        "lat": 12.9990893,
+        "lon": 77.7030071
+      },
+      "tags": {
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346506903,
+      "center": {
+        "lat": 13.0105307,
+        "lon": 77.7046644
+      },
+      "tags": {
+        "amenity": "pharmacy",
+        "building": "yes",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmaceuticals",
+        "name:kn": "ಅಪೊಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346552942,
+      "center": {
+        "lat": 13.00883,
+        "lon": 77.7082791
+      },
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "Vijaya Bank Colony, Gokula Layout, Krishnarajapura, Bengaluru, Karnataka 560036",
+        "addr:postcode": "560036",
+        "addr:street": "Basavanapura Main Road",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Masjid-e-Mahmoodiya",
+        "name:kn": "ಮಸ್ಜಿೀದ್ ಎ ಮಹ್ಮೂದಿಯ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350798423,
+      "center": {
+        "lat": 13.0020899,
+        "lon": 77.7123234
+      },
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560036",
+        "addr:street": "Hoodi main road",
+        "amenity": "community_centre",
+        "building": "yes",
+        "name": "Krishna Community Hall",
+        "phone": "+91 89713 09953"
+      }
+    },
+    {
+      "type": "way",
+      "id": 502612760,
+      "center": {
+        "lat": 13.0072228,
+        "lon": 77.7092004
+      },
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "K.R Puram, Swathantra Nagar, Krishnarajapura, Gokula Layout, Krishnarajapura",
+        "addr:postcode": "560049",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Om Shakti Adiparashakthi Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 668040798,
+      "center": {
+        "lat": 12.9984702,
+        "lon": 77.7023641
+      },
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Mahadevapura Fire Station",
+        "name:kn": "ಮಹಾದೇವಪುರ ಅಗ್ನಿಶಾಮಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 679270115,
+      "center": {
+        "lat": 13.0073306,
+        "lon": 77.7029568
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 977873838,
+      "center": {
+        "lat": 13.0040836,
+        "lon": 77.7183586
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084458382,
+      "center": {
+        "lat": 12.9952634,
+        "lon": 77.7041843
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087017023,
+      "center": {
+        "lat": 12.9947997,
+        "lon": 77.7083922
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1123146976,
+      "center": {
+        "lat": 13.0003473,
+        "lon": 77.7166887
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Hoodi Lake Park",
+        "name:kn": "ಹೂಡಿ ಕೆರೆ ಉದ್ಯಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267728589,
+      "center": {
+        "lat": 12.9956446,
+        "lon": 77.7082507
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267728590,
+      "center": {
+        "lat": 12.9956363,
+        "lon": 77.7080804
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267728591,
+      "center": {
+        "lat": 12.995593,
+        "lon": 77.7077798
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267728592,
+      "center": {
+        "lat": 12.9969213,
+        "lon": 77.7029731
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429161307,
+      "center": {
+        "lat": 13.0102341,
+        "lon": 77.7113471
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429161308,
+      "center": {
+        "lat": 13.0102641,
+        "lon": 77.7118229
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429161313,
+      "center": {
+        "lat": 13.0096578,
+        "lon": 77.7151675
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "SEA College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429161354,
+      "center": {
+        "lat": 13.0085352,
+        "lon": 77.7055921
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Indus Valley College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429161430,
+      "center": {
+        "lat": 13.0089404,
+        "lon": 77.7052689
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Guntur Oxford School"
+      }
+    }
+  ]
+}

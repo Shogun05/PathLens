@@ -1,0 +1,573 @@
+{
+  "area_name": "Gangenahalli",
+  "osm_id": 19883352,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 44,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 850751623,
+      "lat": 13.0249229,
+      "lon": 77.5928698,
+      "tags": {
+        "amenity": "atm",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "name": "UCO Bank",
+        "operator": "UCO Bank",
+        "operator:wikidata": "Q2005310"
+      }
+    },
+    {
+      "type": "node",
+      "id": 850751693,
+      "lat": 13.0249491,
+      "lon": 77.5926439,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "name": "Citibank",
+        "name:kn": "ಸಿಟಿಬ್ಯಾಂಕ್",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1415907177,
+      "lat": 13.0236679,
+      "lon": 77.592064,
+      "tags": {
+        "brand": "Nilgiri's",
+        "brand:wikidata": "Q17079567",
+        "name": "Nilgiri's",
+        "name:kn": "ನೀಲ್ಗಿರೀಸ್",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474819115,
+      "lat": 13.0249236,
+      "lon": 77.5927811,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tiffin Centre",
+        "name:kn": "ಟಿಫಿನ್ ಸೆಂಟೆರ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474819329,
+      "lat": 13.0238887,
+      "lon": 77.5926095,
+      "tags": {
+        "name": "Titan Show room",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2458999135,
+      "lat": 13.0229372,
+      "lon": 77.5848295,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560032",
+        "addr:street": "Bellary Road",
+        "alt_name": "A2B",
+        "amenity": "restaurant",
+        "brand": "Adyar Ananda Bhavan",
+        "brand:wikidata": "Q15178238",
+        "cuisine": "regional",
+        "diet:vegetarian": "only",
+        "email": "info@aabsweets.com",
+        "name": "Adyar Ananda Bhavan",
+        "name:kn": "ಆದ್ಯಾರ್ ಆನಂದ ಭವನ",
+        "operator": "Adyar Ananda Bhavan",
+        "phone": "+91 80 4151 5454",
+        "smoking": "no",
+        "website": "https://aabsweets.com",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2911691002,
+      "lat": 13.0169921,
+      "lon": 77.5914678,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Empire Hotel",
+        "name:kn": "ಎಂಪೈರ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2911691005,
+      "lat": 13.0174262,
+      "lon": 77.5916716,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Kudla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2911691006,
+      "lat": 13.0168458,
+      "lon": 77.591398,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Adiga's",
+        "name:kn": "ಅಡಿಗಾಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3337863242,
+      "lat": 13.0230972,
+      "lon": 77.5848995,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "brand:wikipedia": "en:Corporation Bank",
+        "check_date": "2024-02-15",
+        "name": "Union Bank of India",
+        "name:en": "Union Bank of India",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4422272111,
+      "lat": 13.0222579,
+      "lon": 77.5922587,
+      "tags": {
+        "amenity": "bar",
+        "name": "Ujwal Bar and Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4422272113,
+      "lat": 13.0214967,
+      "lon": 77.5924037,
+      "tags": {
+        "name": "Food World",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488023121,
+      "lat": 13.0227583,
+      "lon": 77.5848341,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "37, 1stFloor",
+        "addr:postcode": "560032",
+        "addr:street": "Bellary Road, Naveen Complex Bellary, 1st Main Road, Ganganagar",
+        "name": "Kadamba Sports & Fitness",
+        "opening_hours": "10:00-21:00",
+        "phone": "080 2333 4422",
+        "shop": "sports"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4697843992,
+      "lat": 13.0169007,
+      "lon": 77.5907711,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:postcode": "560032",
+        "addr:street": "6th Main Krishnappa Block",
+        "name": "Agiledge process solutions Pvt Ltd",
+        "name:en": "Agiledge process solutions Pvt Ltd",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "080-23432343",
+        "shop": "computer",
+        "website": "https://www.agiledgesolutions.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4783350859,
+      "lat": 13.0169075,
+      "lon": 77.5844663,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4973060956,
+      "lat": 13.0224361,
+      "lon": 77.5847518,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel Emirates"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4973098283,
+      "lat": 13.0217462,
+      "lon": 77.584538,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Karnataka Kalyana Mantapa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5295212549,
+      "lat": 13.0219792,
+      "lon": 77.5846105,
+      "tags": {
+        "name": "TVS",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5295212551,
+      "lat": 13.0225676,
+      "lon": 77.5847474,
+      "tags": {
+        "name": "SM Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886594823,
+      "lat": 13.0228765,
+      "lon": 77.5848772,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "2, 10th Cross, Ganganagar, Bengaluru",
+        "addr:postcode": "560032",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9740330720",
+        "contact:phone": "8023431233",
+        "name": "Grace Blood Bank and Laboratory",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938948962,
+      "lat": 13.024837,
+      "lon": 77.592089,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "402, 2nd Cross Judges Colony Ganganagar",
+        "addr:postcode": "560032",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Lakshmi Hospital, Ganganagar",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257189835,
+      "lat": 13.0174156,
+      "lon": 77.5840574,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257189847,
+      "lat": 13.0228696,
+      "lon": 77.5848321,
+      "tags": {
+        "leisure": "fitness_centre",
+        "name": "Eon Fitness"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962263,
+      "lat": 13.0176903,
+      "lon": 77.5899085,
+      "tags": {
+        "addr:full": "No. 13, 5TH MAIN, GANGANAGAR, RT NAGAR, MLA Layout, Krishnappa Block, RT Nagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "name": "Dena Bank",
+        "name:kn": "ದೇನ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188057276,
+      "lat": 13.0203034,
+      "lon": 77.5923603,
+      "tags": {
+        "addr:full": "335, Ravindra Tagore Nagar Main Rd, Rahmath Nagar, RT Nagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Vishnu Garden Vegetarian Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9739831279,
+      "lat": 13.0221154,
+      "lon": 77.5847036,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Punjabi Rasoi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9826431267,
+      "lat": 13.0222937,
+      "lon": 77.5847256,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Punjabi Rasoi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10296638734,
+      "lat": 13.0191702,
+      "lon": 77.5852802,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:country": "IN",
+        "addr:hamlet": "Ganganagar",
+        "addr:housenumber": "8",
+        "addr:postcode": "560032",
+        "addr:street": "Bellary Road",
+        "amenity": "bar",
+        "contact:facebook": "CopitasBengaluru",
+        "contact:instagram": "copitasbengaluru",
+        "email": "copitas.bng@fourseasons.com",
+        "level": "21",
+        "name": "Copitas",
+        "opening_hours": "Tu-Su 17:00-01:00",
+        "phone": "96456 69697",
+        "website": "https://www.fourseasons.com/bengaluru/dining/lounges/copitas/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10302703777,
+      "lat": 13.0239133,
+      "lon": 77.5926268,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Popeyes",
+        "brand:wikidata": "Q1330910",
+        "brand:wikipedia": "en:Popeyes",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "name": "Popeyes",
+        "official_name": "Popeyes Louisiana Kitchen",
+        "takeaway": "yes",
+        "website": "https://www.popeyes.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11626785030,
+      "lat": 13.0192846,
+      "lon": 77.5851267,
+      "tags": {
+        "amenity": "pub",
+        "check_date": "2024-02-15",
+        "name": "Hopshaus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135686523,
+      "lat": 13.0188924,
+      "lon": 77.5840565,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12260570014,
+      "lat": 13.0177761,
+      "lon": 77.5917014,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Neravi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12862846469,
+      "lat": 13.0169602,
+      "lon": 77.5914291,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "Easy Bites by Empire",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013978946,
+      "lat": 13.0174696,
+      "lon": 77.591572,
+      "tags": {
+        "amenity": "bar",
+        "name": "Jalssa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155774221,
+      "lat": 13.0226528,
+      "lon": 77.5848532,
+      "tags": {
+        "brand": "Vespa",
+        "brand:wikidata": "Q217673",
+        "check_date": "2025-09-19",
+        "name": "Vespa",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155774222,
+      "lat": 13.0225276,
+      "lon": 77.5848255,
+      "tags": {
+        "brand": "Triumph",
+        "brand:wikidata": "Q1140383",
+        "check_date": "2025-09-19",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155774223,
+      "lat": 13.0207668,
+      "lon": 77.584449,
+      "tags": {
+        "check_date": "2025-09-19",
+        "name": "Jawa",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155774224,
+      "lat": 13.0203057,
+      "lon": 77.5842015,
+      "tags": {
+        "check_date": "2025-09-19",
+        "shop": "florist"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775184932,
+      "center": {
+        "lat": 13.019624,
+        "lon": 77.5856561
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775184933,
+      "center": {
+        "lat": 13.0204442,
+        "lon": 77.5858046
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775184934,
+      "center": {
+        "lat": 13.0196648,
+        "lon": 77.5855236
+      },
+      "tags": {
+        "access": "customers",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775184937,
+      "center": {
+        "lat": 13.0206624,
+        "lon": 77.5857778
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1343349411,
+      "center": {
+        "lat": 13.0211878,
+        "lon": 77.5844051
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "compressed_air": "yes",
+        "name": "Shell",
+        "opening_hours": "Mo-Su 06:00-23:00",
+        "operator": "Shell",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1386469070,
+      "center": {
+        "lat": 13.0185914,
+        "lon": 77.5919576
+      },
+      "tags": {
+        "amenity": "fuel",
+        "operator": "BP"
+      }
+    }
+  ]
+}

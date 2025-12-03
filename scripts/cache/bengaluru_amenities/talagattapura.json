@@ -1,0 +1,3482 @@
+{
+  "area_name": "Talagattapura",
+  "osm_id": 19884552,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 254,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 3037310855,
+      "lat": 12.8827229,
+      "lon": 77.5466715,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "28",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Aikya Healthcare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4352467328,
+      "lat": 12.8812854,
+      "lon": 77.5255154,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4457764089,
+      "lat": 12.8689461,
+      "lon": 77.5362854,
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "amenity": "police",
+        "name": "Thalaghattapura Police Station",
+        "name:en": "Thalaghattapura Police Station",
+        "name:kn": "ತಲಘಟ್ಟಪುರ ಆರಕ್ಷಕ ಠಾಣೆ",
+        "survey:date": "2023-09-09"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488483373,
+      "lat": 12.8789971,
+      "lon": 77.5456985,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "No.30",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "name": "Glam Spa",
+        "opening_hours": "08:00-21:30",
+        "phone": "+918028425558",
+        "shop": "beauty",
+        "website": "www.glamspa.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488489099,
+      "lat": 12.8809376,
+      "lon": 77.5456581,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "name": "Snip And Streak Unisex Parlour",
+        "opening_hours": "08:00-21:30",
+        "phone": "+918033532611",
+        "shop": "beauty",
+        "website": "snipandstreak.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488505897,
+      "lat": 12.8809769,
+      "lon": 77.5457562,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "no:25",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "name": "Good Look Herbal Beauty Parlour",
+        "opening_hours": "09:30-21:30",
+        "phone": "+91-80-33532828",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5808716753,
+      "lat": 12.8813457,
+      "lon": 77.5253913,
+      "tags": {
+        "amenity": "shelter"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5810244686,
+      "lat": 12.8813286,
+      "lon": 77.5252792,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6434094661,
+      "lat": 12.8519188,
+      "lon": 77.5304666,
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "local diety",
+        "name": "Vajramuneshwara Temple",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6434133481,
+      "lat": 12.86255,
+      "lon": 77.5315127,
+      "tags": {
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9178327801,
+      "lat": 12.8679234,
+      "lon": 77.5430553,
+      "tags": {
+        "amenity": "pub",
+        "name": "BLR Brewing Company"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311192462,
+      "lat": 12.8571946,
+      "lon": 77.540965,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370638,
+      "lat": 12.8568366,
+      "lon": 77.5417326,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "check_date": "2023-10-13",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "internet_access": "no",
+        "name": "Apollo Pharmacy",
+        "panoramax": "1952291c-3e44-461e-90e0-4385b18c8fdc",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:qr_code": "yes",
+        "payment:upi": "yes",
+        "payment:visa": "yes",
+        "phone": "+91 90361 19292",
+        "source": "survey",
+        "website": "https://www.apollopharmacy.in/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370639,
+      "lat": 12.8568948,
+      "lon": 77.5417454,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "air_conditioning": "yes",
+        "brand": "Adishwar Supermarket",
+        "check_date": "2024-10-18",
+        "currency:INR": "yes",
+        "diet:gluten_free": "limited",
+        "diet:sugar_free": "limited",
+        "dog": "no",
+        "internet_access": "no",
+        "name": "Adishwar Convenience Store",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "panoramax": "de9ac477-2317-4ab7-bcc3-d5bb2c149bc2",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:qr_code": "yes",
+        "payment:upi": "yes",
+        "phone": "+91 88610 07304",
+        "second_hand": "no",
+        "shop": "convenience",
+        "source": "survey",
+        "stroller": "no",
+        "toilets": "no",
+        "toilets:wheelchair": "no",
+        "website": "https://www.adishwaremart.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370640,
+      "lat": 12.8567838,
+      "lon": 77.541725,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "air_conditioning": "no",
+        "amenity": "clinic",
+        "check_date": "2023-10-13",
+        "healthcare": "clinic",
+        "internet_access": "no",
+        "name": "Apollo Clinic",
+        "name:kn": "ಅಪೊಲೊ ಕ್ಲಿನಿಕ್",
+        "operator": "Apollo Hospitals",
+        "operator:type": "private",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+91 80 4172 3865",
+        "source": "survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311370684,
+      "lat": 12.8569364,
+      "lon": 77.5407065,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10311371477,
+      "lat": 12.8565107,
+      "lon": 77.540272,
+      "tags": {
+        "access": "private",
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "wooden brown",
+        "material": "wood",
+        "seats": "3",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10538729869,
+      "lat": 12.8591588,
+      "lon": 77.5422795,
+      "tags": {
+        "addr:postcode": "560062",
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "cash_in": "no",
+        "check_date": "2024-10-18",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "opening_hours": "24/7",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549",
+        "source": "survey",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10620255012,
+      "lat": 12.8791863,
+      "lon": 77.5455794,
+      "tags": {
+        "addr:street": "Kanakapura Road, Doddakallasandra",
+        "name": "Bata Showroom",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10649468955,
+      "lat": 12.8601889,
+      "lon": 77.5422879,
+      "tags": {
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Resort Road, Mallasandra",
+        "air_conditioning": "no",
+        "amenity": "fast_food",
+        "capacity": "7",
+        "check_date": "2025-09-02",
+        "cuisine": "burger;regional",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Stop N Joy",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10680740309,
+      "lat": 12.8601722,
+      "lon": 77.5422854,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Mallasandra, Karnataka",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "DP Speciality Dental Clinic",
+        "opening_hours": "Mo-Sa 10:00-14:00+,16:00-18:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10797148835,
+      "lat": 12.8742316,
+      "lon": 77.5423765,
+      "tags": {
+        "description": "Puncture & other tyre related services",
+        "name": "M.M Tyres",
+        "shop": "tyres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801926245,
+      "lat": 12.8641,
+      "lon": 77.5434658,
+      "tags": {
+        "addr:postcode": "560062",
+        "check_date": "2025-01-19",
+        "covered": "yes",
+        "lit": "yes",
+        "name": "Dr Bright Laundary",
+        "shop": "laundry",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801954701,
+      "lat": 12.8736686,
+      "lon": 77.5426663,
+      "tags": {
+        "amenity": "drinking_water",
+        "name": "Pure Drinking Water Plant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801962481,
+      "lat": 12.8743401,
+      "lon": 77.5417687,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Mallasandra, Bangalore",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Mahadev Medicals",
+        "name:ta": "மஹாதேவ் மருந்தகம்"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801985095,
+      "lat": 12.8708103,
+      "lon": 77.5426386,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "amenity": "school",
+        "name": "Chethana Public School",
+        "name:ta": "சேத்தனா பப்ளிக் பள்ளி"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10826187893,
+      "lat": 12.8602534,
+      "lon": 77.5423015,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "male": "yes",
+        "name": "Noob Saloon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10858011185,
+      "lat": 12.8696102,
+      "lon": 77.5432087,
+      "tags": {
+        "addr:city": "Mallasandra",
+        "addr:district": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Road",
+        "amenity": "pharmacy",
+        "contact:phone": "+918884447299",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Life Care Medicals - 34",
+        "opening_hours": "Mo-Su 06:00-23:45",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10885718096,
+      "lat": 12.859147,
+      "lon": 77.5421747,
+      "tags": {
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Resort Road, Mallasandra, Bangalore",
+        "amenity": "restaurant",
+        "name": "Pan Platters"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10889877198,
+      "lat": 12.8826704,
+      "lon": 77.5466728,
+      "tags": {
+        "addr:city": "Doddakallasandra",
+        "addr:district": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Life Care Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10893490097,
+      "lat": 12.8608459,
+      "lon": 77.5426559,
+      "tags": {
+        "addr:street": "Holiday Village Inn Road, Mallasandra, Bangalore",
+        "brand": "Pericorp",
+        "description": "Unisex Saloon, Massage & Spa",
+        "dog": "no",
+        "email": "imagineco@gmail.com",
+        "internet_access": "no",
+        "name": "Salon Perimeter",
+        "name:ta": "பெரிமீட்டர்",
+        "opening_hours": "Mo 10:00-20:00; We-Su 10:00-20:00",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "yes",
+        "phone": "+91 86183 29463",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11048987729,
+      "lat": 12.8602333,
+      "lon": 77.5422604,
+      "tags": {
+        "addr:postcode": "560062",
+        "check_date": "2023-10-13",
+        "internet_access": "no",
+        "name": "Student Xerox",
+        "shop": "copyshop",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11048988082,
+      "lat": 12.8571582,
+      "lon": 77.5410096,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11048990363,
+      "lat": 12.8603077,
+      "lon": 77.5423118,
+      "tags": {
+        "addr:street": "JP Hive complex, Holiday Village Resort Road, Mallasandra, Bangalore",
+        "name": "Palak Vegetable Shop",
+        "phone": "8317349903",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11049002210,
+      "lat": 12.8571576,
+      "lon": 77.5410138,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11178309121,
+      "lat": 12.8657795,
+      "lon": 77.5392947,
+      "tags": {
+        "amenity": "bank",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2023-09-09",
+        "name": "ICICI Bank",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11178768417,
+      "lat": 12.8606762,
+      "lon": 77.5427075,
+      "tags": {
+        "addr:street": "Vaibhava Sumukha Enclave Phase -1, Holiday Village Resort Road, Off Kanakapura Road, Mallasandra, Bengaluru",
+        "amenity": "school",
+        "name": "Cohesion Montessori"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245791922,
+      "lat": 12.8621213,
+      "lon": 77.5430328,
+      "tags": {
+        "name": "Sharadha's Spa & Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245842785,
+      "lat": 12.8619892,
+      "lon": 77.5430244,
+      "tags": {
+        "name": "Dhanalakshmi Electricals & Power Tools",
+        "shop": "electrical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245854559,
+      "lat": 12.8620659,
+      "lon": 77.5430178,
+      "tags": {
+        "amenity": "clinic",
+        "description": "Dr Nisha Tiwary, MBBS, Family Physician",
+        "healthcare": "clinic",
+        "name": "Bruhati Clinic",
+        "name:ta": "ப்ருஹாத்தி க்ளினிக்"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245866001,
+      "lat": 12.862565,
+      "lon": 77.5430321,
+      "tags": {
+        "name": "UR Wash Laundry",
+        "phone": "6364576666",
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245879104,
+      "lat": 12.8616583,
+      "lon": 77.5429349,
+      "tags": {
+        "addr:postcode": "560062",
+        "air_conditioning": "no",
+        "check_date": "2023-10-13",
+        "currency:INR": "yes",
+        "internet_access": "no",
+        "name": "Sashi Two Wheeler Mechanic",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245914595,
+      "lat": 12.8625995,
+      "lon": 77.5430349,
+      "tags": {
+        "addr:postcode": "560062",
+        "air_conditioning": "no",
+        "check_date": "2023-10-13",
+        "currency:INR": "yes",
+        "internet_access": "no",
+        "name": "Nandhini Milk Parlour",
+        "name:ta": "நந்தினி பாலகம்",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245922502,
+      "lat": 12.8622143,
+      "lon": 77.5430185,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Kartikeya Medicals",
+        "name:ta": "கார்த்திகேயா மருந்தகம்"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245927018,
+      "lat": 12.8624194,
+      "lon": 77.5431285,
+      "tags": {
+        "name": "KM Motors",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245933594,
+      "lat": 12.861409,
+      "lon": 77.5429037,
+      "tags": {
+        "name": "Bushra Men's Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11299121541,
+      "lat": 12.8784742,
+      "lon": 77.5450234,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Zymus Hospitals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11299161929,
+      "lat": 12.8789245,
+      "lon": 77.5455065,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "Bangalore Urban",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Main Road",
+        "brand": "Mahindra",
+        "description": "Mahindra Car Showroom",
+        "name": "PPS Motors (Mahindra)",
+        "operator": "PPS Motors",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11310022173,
+      "lat": 12.8812676,
+      "lon": 77.545831,
+      "tags": {
+        "description": "Printout, Xerox, Lamination, Spiral Binding & Project Binding",
+        "name": "Nandhi Xerox Center",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11465490458,
+      "lat": 12.8609441,
+      "lon": 77.5293363,
+      "tags": {
+        "check_date": "2023-12-29",
+        "internet_access": "no",
+        "name": "Sri Durga Condiments",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "payment:paytm": "yes",
+        "payment:upi": "yes",
+        "shop": "convenience",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11465490459,
+      "lat": 12.860893,
+      "lon": 77.5293036,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-12-29",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "name": "Sri Udupi Cafe",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11465490461,
+      "lat": 12.8610503,
+      "lon": 77.529387,
+      "tags": {
+        "check_date": "2023-12-29",
+        "internet_access": "no",
+        "name": "KGN Bike Garage and Puncture Shop",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "payment:paytm": "yes",
+        "payment:upi": "yes",
+        "service:vehicle:batteries": "yes",
+        "service:vehicle:brakes": "yes",
+        "service:vehicle:repairs": "yes",
+        "service:vehicle:transmission": "yes",
+        "service:vehicle:tyres": "yes",
+        "service:vehicle:tyres_repair": "yes",
+        "service:vehicle:wheels": "yes",
+        "shop": "motorcycle_repair",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11465490462,
+      "lat": 12.8610769,
+      "lon": 77.5294007,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-12-29",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "name": "Hotel Sri Venkateshwar Prasanna",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11465490463,
+      "lat": 12.8611864,
+      "lon": 77.5294612,
+      "tags": {
+        "check_date": "2023-12-29",
+        "internet_access": "no",
+        "name": "Eswari Motors",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "payment:paytm": "yes",
+        "payment:upi": "yes",
+        "service:vehicle:batteries": "yes",
+        "service:vehicle:brakes": "yes",
+        "service:vehicle:collision_repair": "yes",
+        "service:vehicle:electrical": "yes",
+        "service:vehicle:repair": "yes",
+        "service:vehicle:servicing": "yes",
+        "service:vehicle:transmission": "yes",
+        "service:vehicle:tyres": "yes",
+        "service:vehicle:tyres_repair": "yes",
+        "shop": "motorcycle_repair",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11465490464,
+      "lat": 12.8613006,
+      "lon": 77.5294982,
+      "tags": {
+        "check_date": "2023-12-29",
+        "internet_access": "no",
+        "name": "Sri Vinayaka Enterprise (Nandini)",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "payment:paytm": "yes",
+        "payment:upi": "yes",
+        "shop": "convenience",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11465490467,
+      "lat": 12.8617543,
+      "lon": 77.5296774,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-12-29",
+        "cuisine": "indian",
+        "diet:non-vegetarian": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "name": "Gowdthi's Kitchen",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11619085867,
+      "lat": 12.8825682,
+      "lon": 77.5466598,
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "amenity": "restaurant",
+        "cuisine": "indian;regional;sandwich;tea",
+        "diet:vegetarian": "yes",
+        "name": "Namma Adigas (Veg)",
+        "name:ta": "நம்ம அடிகாஸ்",
+        "opening_hours": "Mo-Su 07:00-22:30",
+        "self_service": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11619096954,
+      "lat": 12.8823832,
+      "lon": 77.5466504,
+      "tags": {
+        "addr:street": "Kanakapura Road, Bangalore",
+        "amenity": "restaurant",
+        "name": "Anand Sweets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11621292898,
+      "lat": 12.8570072,
+      "lon": 77.5399821,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11621601191,
+      "lat": 12.8583169,
+      "lon": 77.5404962,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11881184341,
+      "lat": 12.871686,
+      "lon": 77.5425249,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Off. Kanakapura Road, Bengaluru - 62",
+        "description": "Car Wash, Ceramic Coating, Teflon Coating, PPF, Car Wax, Graphene Coating",
+        "name": "GE Vehicle Care",
+        "phone": "+919513909301",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11881272850,
+      "lat": 12.871679,
+      "lon": 77.5426749,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Off Kanakapura Road, Mallasandra, Bengaluru - 62",
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "yes",
+        "website": "https://www.apollopharmacy.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009649930,
+      "lat": 12.8695549,
+      "lon": 77.5432284,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Off Kanakapura Road, Mallasandra, Bengaluru",
+        "amenity": "dentist",
+        "description": "Dr Tharani",
+        "healthcare": "dentist",
+        "name": "Spring Dental Care",
+        "panoramax": "91e96232-bcac-4f07-9ccb-6ea899972d24",
+        "panoramax:0": "121ad2c6-9703-47b1-894d-738e27eaa14b",
+        "phone": "7892140084"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009675987,
+      "lat": 12.8695131,
+      "lon": 77.5432472,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Off Kanakapura Road, Mallasandra",
+        "name": "Bakers Delicious",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009676402,
+      "lat": 12.8607509,
+      "lon": 77.5426303,
+      "tags": {
+        "amenity": "fast_food",
+        "description": "Small Momos shop outside Market Fresh",
+        "name": "Darjeeling Hot Momos",
+        "opening_hours": "Mo-Fr 17:00-21:00",
+        "phone": "8927878252"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12168616852,
+      "lat": 12.8574286,
+      "lon": 77.5408487,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12174981770,
+      "lat": 12.8580786,
+      "lon": 77.538959,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175221620,
+      "lat": 12.8567499,
+      "lon": 77.5399564,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175221621,
+      "lat": 12.8567552,
+      "lon": 77.5399585,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175221623,
+      "lat": 12.8567047,
+      "lon": 77.540115,
+      "tags": {
+        "amenity": "bench",
+        "armrest": "yes",
+        "backrest": "yes",
+        "colour": "brown",
+        "direction": "204",
+        "material": "wood",
+        "seats:separated": "no",
+        "survey:date": "2025-03-05"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175277914,
+      "lat": 12.8565256,
+      "lon": 77.5402802,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12179793280,
+      "lat": 12.8694764,
+      "lon": 77.5432603,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Road",
+        "name": "Nandhini Dairy Store",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12180378247,
+      "lat": 12.8609974,
+      "lon": 77.5426762,
+      "tags": {
+        "addr:street": "Holiday Village Road",
+        "name": "Hasiru Halli Thotta",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199192074,
+      "lat": 12.8573348,
+      "lon": 77.5409094,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199205161,
+      "lat": 12.8580095,
+      "lon": 77.5394039,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199206508,
+      "lat": 12.8571411,
+      "lon": 77.5410794,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199213846,
+      "lat": 12.8573216,
+      "lon": 77.5409007,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199244880,
+      "lat": 12.8571163,
+      "lon": 77.5410426,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199258517,
+      "lat": 12.8580046,
+      "lon": 77.5399676,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199258518,
+      "lat": 12.8580336,
+      "lon": 77.53997,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199281529,
+      "lat": 12.8565419,
+      "lon": 77.5402252,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199283645,
+      "lat": 12.8564689,
+      "lon": 77.5398592,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199284910,
+      "lat": 12.8571175,
+      "lon": 77.5410525,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12199288191,
+      "lat": 12.8580534,
+      "lon": 77.5399701,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12230826895,
+      "lat": 12.8663372,
+      "lon": 77.54525,
+      "tags": {
+        "addr:street": "Holiday Village Resort Road, Mallasandra",
+        "amenity": "clinic",
+        "name": "Dixit Skin & Ortho Care",
+        "phone": "+91 74830 75957"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12488316263,
+      "lat": 12.8755618,
+      "lon": 77.532839,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Hug in a Mug"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12508589559,
+      "lat": 12.8774654,
+      "lon": 77.5464993,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12508589562,
+      "lat": 12.8774364,
+      "lon": 77.5466045,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12508633358,
+      "lat": 12.8759706,
+      "lon": 77.5296955,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Big Barn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12508633689,
+      "lat": 12.8748842,
+      "lon": 77.5381578,
+      "tags": {
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12508633834,
+      "lat": 12.8732754,
+      "lon": 77.5313343,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12568274373,
+      "lat": 12.879016,
+      "lon": 77.5455395,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "craft": "watchmaker",
+        "name": "Titan & Fastrack Watch Store",
+        "operator": "Sri Nandi Enterprises",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "payment:upi": "yes",
+        "shop": "watches"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12669463724,
+      "lat": 12.8742656,
+      "lon": 77.540834,
+      "tags": {
+        "addr:street": "Kanakapura Road, Vajarahalli",
+        "amenity": "restaurant",
+        "name": "Rajathagiri Palace",
+        "panoramax": "aa3b1bad-a633-481d-ba60-5d45875b12a1",
+        "panoramax:0": "1b46c2d8-5ae3-43b0-93db-126cfd26a248"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12749347575,
+      "lat": 12.8609396,
+      "lon": 77.5426752,
+      "tags": {
+        "addr:street": "Holiday Village Road, off Kanakapura Road",
+        "name": "Magique Family Saloon",
+        "phone": "7975285129",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12751715330,
+      "lat": 12.8657435,
+      "lon": 77.5395313,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Judicial Layout",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752691013,
+      "lat": 12.8745875,
+      "lon": 77.5414755,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karur Vysya Bank",
+        "brand:wikidata": "Q6373724",
+        "operator": "Karur Vysya Bank",
+        "operator:wikidata": "Q6373724"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12827978980,
+      "lat": 12.8745652,
+      "lon": 77.5394104,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Apollo Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12958693853,
+      "lat": 12.8637062,
+      "lon": 77.5301347,
+      "tags": {
+        "addr:floor": "G",
+        "amenity": "community_centre",
+        "check_date": "2025-06-28",
+        "community_centre": "cultural_centre",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Dhaatu Puppet Gallery",
+        "name:en": "Dhaatu Puppet Gallery",
+        "name:kn": "ಧಾತು ಪಪ್ಪೆಟ್ ಗ್ಯಾಲರಿ",
+        "operator:type": "private",
+        "website": "https://www.dhaatupuppets.org",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12958693854,
+      "lat": 12.8636877,
+      "lon": 77.53029,
+      "tags": {
+        "addr:floor": "G",
+        "amenity": "community_centre",
+        "check_date": "2025-06-28",
+        "community_centre": "cultural_centre",
+        "level": "0",
+        "name": "VasantaVana",
+        "name:kn": "ವಸಂತವನ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12969563454,
+      "lat": 12.8536199,
+      "lon": 77.5449277,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12969563456,
+      "lat": 12.8535062,
+      "lon": 77.544461,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985609357,
+      "lat": 12.8599685,
+      "lon": 77.5423745,
+      "tags": {
+        "addr:housenumber": "15/5",
+        "amenity": "cafe",
+        "name": "Malgudi Parampare Cafe",
+        "phone": "8660959583"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985621322,
+      "lat": 12.8600351,
+      "lon": 77.5424122,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "cafe",
+        "name": "Authentic Bengaluru Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985629180,
+      "lat": 12.8600356,
+      "lon": 77.5424839,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "restaurant",
+        "name": "Paarus Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985645907,
+      "lat": 12.8599702,
+      "lon": 77.5424744,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "restaurant",
+        "name": "Cuisinova"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985648248,
+      "lat": 12.8600349,
+      "lon": 77.5424564,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "amenity": "fast_food",
+        "name": "Dash of Delish"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985651797,
+      "lat": 12.859971,
+      "lon": 77.5424112,
+      "tags": {
+        "addr:street": "Tummy Town Food Court, Holiday Village Road, Bengaluru",
+        "name": "Bunny Bakers",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13115663809,
+      "lat": 12.8600364,
+      "lon": 77.5423748,
+      "tags": {
+        "name": "New Mangalore Store",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13137769246,
+      "lat": 12.8757204,
+      "lon": 77.5440302,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Life Care Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13137769253,
+      "lat": 12.8757671,
+      "lon": 77.5440186,
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "name": "Bloom n Bliss",
+        "phone": "+918073101933",
+        "shop": "florist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13142030402,
+      "lat": 12.8751982,
+      "lon": 77.5428077,
+      "tags": {
+        "addr:housenumber": "86/2",
+        "addr:postcode": "560109",
+        "addr:street": "Kanakapura Road",
+        "amenity": "cafe",
+        "name": "Marroni Bistro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13208696268,
+      "lat": 12.880859,
+      "lon": 77.5459954,
+      "tags": {
+        "addr:street": "Kanakapura Road, Doddakallasandra, Bengaluru",
+        "amenity": "restaurant",
+        "name": "Udupi Upahara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13208696269,
+      "lat": 12.8814887,
+      "lon": 77.5462598,
+      "tags": {
+        "addr:street": "Kanakapura Road, Doddakallasandra, Bengaluru",
+        "name": "Style 365 Studio Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13208707225,
+      "lat": 12.8814551,
+      "lon": 77.5460213,
+      "tags": {
+        "addr:street": "Kanakapura Main Road, Doddakallasandra, Bengaluru",
+        "clothes": "women;wedding;traditional",
+        "name": "Saanidhya Silks & Sarees",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13208732222,
+      "lat": 12.8815792,
+      "lon": 77.5463047,
+      "tags": {
+        "addr:street": "Kanakapura Road, Doddakallasandra, Bengaluru",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "Apollo Dental",
+        "phone": "8310463413"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13208738219,
+      "lat": 12.8814643,
+      "lon": 77.5462756,
+      "tags": {
+        "addr:street": "Kanakapura Road, Doddakallasandra, Bengaluru",
+        "name": "Caratlane",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13208776815,
+      "lat": 12.8810666,
+      "lon": 77.5463894,
+      "tags": {
+        "addr:street": "Kanakapura Road, Doddakallasandra, Bengaluru",
+        "name": "Bunny Bakers",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13208784481,
+      "lat": 12.8811191,
+      "lon": 77.5467138,
+      "tags": {
+        "addr:street": "Kanakapura Road, Doddakallasandra, Bengaluru",
+        "name": "PPS Motors (Mahindra Showroom)",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13229636571,
+      "lat": 12.8807481,
+      "lon": 77.5464237,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "clothes": "women;men;children;workwear;denim;babies",
+        "name": "Reliance Trends",
+        "operator": "Reliance",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13242265801,
+      "lat": 12.8665965,
+      "lon": 77.5348406,
+      "tags": {
+        "addr:district": "Bengaluru",
+        "addr:postcode": "560109",
+        "addr:street": "Kanakapura Road",
+        "amenity": "restaurant",
+        "cuisine": "indian;regional;sandwich;coffee_shop;chinese;noodle;breakfast;pasta;tea;soup;pastry",
+        "diet:vegetarian": "yes",
+        "name": "Nammura Hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245148771,
+      "lat": 12.8825205,
+      "lon": 77.5165647,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Green Village Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245148776,
+      "lat": 12.8847822,
+      "lon": 77.5164708,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Karishma Valley Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245148777,
+      "lat": 12.8882126,
+      "lon": 77.516275,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Season 18 Lounge and Kitchen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245148778,
+      "lat": 12.888414,
+      "lon": 77.5162697,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "MBR Grand"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245148804,
+      "lat": 12.8794534,
+      "lon": 77.5166962,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Range"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245148812,
+      "lat": 12.8781343,
+      "lon": 77.5166908,
+      "tags": {
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13285278052,
+      "lat": 12.8695058,
+      "lon": 77.5434425,
+      "tags": {
+        "addr:housenumber": "1211, 03",
+        "addr:street": "Holiday Village Road, Opp. Mahindra Eden‌,  Vajarahalli‌, Bengaluru - 560062",
+        "amenity": "car_wash",
+        "description": "Car wash, detailing services & cloth laundry services done here.",
+        "name": "Shine Care - Car Wash & Cloth Laundry",
+        "phone": "+919591716001",
+        "website": "https://www.shinecare.net"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13285388550,
+      "lat": 12.8695026,
+      "lon": 77.5433905,
+      "tags": {
+        "addr:street": "Holiday Village Road, opp. to Mahindra Eden, Mallasandra, Bengaluru - 560062",
+        "name": "New Coffee Katte",
+        "shop": "coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13322028762,
+      "lat": 12.8592606,
+      "lon": 77.5421659,
+      "tags": {
+        "access": "customers",
+        "addr:city": "Mallasandra",
+        "addr:district": "Bangalore",
+        "addr:postcode": "560109",
+        "addr:street": "Holiday Village Road",
+        "charge": "3500 INR",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "name": "Machaxi PlayMax - Holiday Village Road",
+        "opening_hours": "Mo-Su 06:00-22:30",
+        "operator": "Machaxi",
+        "operator:type": "private",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:upi": "yes",
+        "sport": "badminton;swimming;cricket;soccer",
+        "website": "https://machaxi.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 117082603,
+      "center": {
+        "lat": 12.8792524,
+        "lon": 77.544629
+      },
+      "tags": {
+        "amenity": "college",
+        "contact:phone": "08028435722",
+        "name": "KS Institute of Technology",
+        "operator": "KSIT",
+        "operator:type": "private_for_profit",
+        "short_name": "KSIT",
+        "website": "https://www.ksit.ac.in/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188431711,
+      "center": {
+        "lat": 12.8627048,
+        "lon": 77.5312787
+      },
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_98": "yes",
+        "full_service": "yes",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್",
+        "opening_hours": "00:00-23:59; 24/7",
+        "operator": "Shell Petrolium",
+        "payment:cash": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "self_service": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188431718,
+      "center": {
+        "lat": 12.8718136,
+        "lon": 77.5404217
+      },
+      "tags": {
+        "landuse": "commercial",
+        "name": "Nandi Toyota",
+        "name:kn": "ನಂದಿ ಟೊಯೋಟ",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188431720,
+      "center": {
+        "lat": 12.8664621,
+        "lon": 77.5339062
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Jnana Sweekar Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188431721,
+      "center": {
+        "lat": 12.8641083,
+        "lon": 77.5385117
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188431722,
+      "center": {
+        "lat": 12.8667602,
+        "lon": 77.5343667
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188431724,
+      "center": {
+        "lat": 12.8663283,
+        "lon": 77.533856
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335028882,
+      "center": {
+        "lat": 12.859477,
+        "lon": 77.5276557
+      },
+      "tags": {
+        "brand": "Volkswagen",
+        "brand:wikidata": "Q246",
+        "landuse": "industrial",
+        "name": "Volkswagen",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348105451,
+      "center": {
+        "lat": 12.8747569,
+        "lon": 77.5170836
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Raghavendra Swamy Mutt, Pavamanapura",
+        "name:kn": "ರಾಘವೇಂದ್ರ ಸ್ವಾಮಿ ಮಠ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362882712,
+      "center": {
+        "lat": 12.8801869,
+        "lon": 77.5488096
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363084750,
+      "center": {
+        "lat": 12.8629669,
+        "lon": 77.5222912
+      },
+      "tags": {
+        "landuse": "orchard",
+        "leisure": "resort",
+        "name": "Rajhans Greens"
+      }
+    },
+    {
+      "type": "way",
+      "id": 469366289,
+      "center": {
+        "lat": 12.8702211,
+        "lon": 77.5426611
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "Temple",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "orthodox",
+        "name": "Sri Kalyana Venkateshwara Temple",
+        "name:ta": "வெங்கடேஸ்வரா கோவில்",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 550648371,
+      "center": {
+        "lat": 12.8595647,
+        "lon": 77.5291674
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 551638468,
+      "center": {
+        "lat": 12.8592907,
+        "lon": 77.530433
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "name": "Magic Faraway Tree Pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 686440395,
+      "center": {
+        "lat": 12.8567206,
+        "lon": 77.5282478
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "name": "SLV"
+      }
+    },
+    {
+      "type": "way",
+      "id": 686445632,
+      "center": {
+        "lat": 12.8587493,
+        "lon": 77.528631
+      },
+      "tags": {
+        "addr:city": "Thalagattapura",
+        "addr:district": "Bengaluru",
+        "addr:postcode": "560109",
+        "addr:street": "Kanakapura Road",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_98": "yes",
+        "mobile": "+919845201700",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡಿಯನ್ ಆಯಿಲ್",
+        "opening_hours": "00:00-23:59; 24/7",
+        "operator": "Murthy & Co",
+        "operator:wikidata": "Q1289348",
+        "operator:wikipedia": "en:Indian Oil Corporation",
+        "payment:cash": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "ref": "KA-0552"
+      }
+    },
+    {
+      "type": "way",
+      "id": 686453684,
+      "center": {
+        "lat": 12.8668985,
+        "lon": 77.5338288
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis",
+        "surface": "artificial_turf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 686453686,
+      "center": {
+        "lat": 12.8620122,
+        "lon": 77.5313659
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "amenity": "school",
+        "name": "Deeksha PU College",
+        "name:kn": "ದೀಕ್ಷ ಪದವಿ ಪೂರ್ವ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 760579375,
+      "center": {
+        "lat": 12.8784105,
+        "lon": 77.5442434
+      },
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "brand": "Honda",
+        "brand:wikidata": "Q9584",
+        "building": "yes",
+        "name": "Magnum Honda",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "service:vehicle:car_repair": "yes",
+        "service:vehicle:repairs": "yes",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680919,
+      "center": {
+        "lat": 12.8443638,
+        "lon": 77.5423677
+      },
+      "tags": {
+        "leisure": "track",
+        "sport": "athletics"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680937,
+      "center": {
+        "lat": 12.8475495,
+        "lon": 77.5423421
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680938,
+      "center": {
+        "lat": 12.8466567,
+        "lon": 77.5425738
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680939,
+      "center": {
+        "lat": 12.8456453,
+        "lon": 77.5425044
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680940,
+      "center": {
+        "lat": 12.8458245,
+        "lon": 77.5419558
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680941,
+      "center": {
+        "lat": 12.8466691,
+        "lon": 77.5423394
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680942,
+      "center": {
+        "lat": 12.8476596,
+        "lon": 77.5420934
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680943,
+      "center": {
+        "lat": 12.8476286,
+        "lon": 77.5431024
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680945,
+      "center": {
+        "lat": 12.848604,
+        "lon": 77.5422676
+      },
+      "tags": {
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680947,
+      "center": {
+        "lat": 12.8479203,
+        "lon": 77.5428464
+      },
+      "tags": {
+        "addr:postcode": "560062",
+        "amenity": "school",
+        "name": "Sri Kumaran Children's Home CBSE",
+        "name:en": "Sri Kumaran Children's Home CBSE",
+        "phone": "65839365",
+        "website": "http://pupilpod.kumarans.org"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781680950,
+      "center": {
+        "lat": 12.8453011,
+        "lon": 77.542489
+      },
+      "tags": {
+        "addr:postcode": "560064",
+        "amenity": "school",
+        "name": "Sri Kumaran Children's Home ICSE",
+        "name:en": "Sri Kumaran Children's Home ICSE",
+        "website": "http://pupilpod.kumarans.org"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785509124,
+      "center": {
+        "lat": 12.8797942,
+        "lon": 77.5443169
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785509132,
+      "center": {
+        "lat": 12.8792047,
+        "lon": 77.5449465
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 930952644,
+      "center": {
+        "lat": 12.869015,
+        "lon": 77.5380399
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560109",
+        "addr:street": "KEB Road",
+        "amenity": "post_office",
+        "building": "yes",
+        "name": "Thalaghattapura Sub Post Office"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1118558815,
+      "center": {
+        "lat": 12.8566054,
+        "lon": 77.5407411
+      },
+      "tags": {
+        "access": "private",
+        "hoops": "2",
+        "leisure": "pitch",
+        "lit": "yes",
+        "name": "Multipurpose Court",
+        "sport": "basketball",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1118946146,
+      "center": {
+        "lat": 12.8614334,
+        "lon": 77.5349352
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127816679,
+      "center": {
+        "lat": 12.8563688,
+        "lon": 77.540572
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829720,
+      "center": {
+        "lat": 12.856799,
+        "lon": 77.5417999
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829721,
+      "center": {
+        "lat": 12.8572353,
+        "lon": 77.5410217
+      },
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829722,
+      "center": {
+        "lat": 12.8574888,
+        "lon": 77.5400332
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "lit": "yes",
+        "location": "outdoor",
+        "name": "GE Swimming Pool",
+        "swimming_pool": "outdoor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829726,
+      "center": {
+        "lat": 12.8573333,
+        "lon": 77.5410427
+      },
+      "tags": {
+        "access": "private",
+        "check_date": "2025-03-05",
+        "leisure": "playground",
+        "lit": "yes",
+        "max_age": "15",
+        "operator": "GEOA",
+        "surface": "sand"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829727,
+      "center": {
+        "lat": 12.8578033,
+        "lon": 77.5405276
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829728,
+      "center": {
+        "lat": 12.8568473,
+        "lon": 77.5407665
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829729,
+      "center": {
+        "lat": 12.8565789,
+        "lon": 77.5406287
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127829753,
+      "center": {
+        "lat": 12.8571014,
+        "lon": 77.5396339
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127832208,
+      "center": {
+        "lat": 12.8596845,
+        "lon": 77.5425536
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127832214,
+      "center": {
+        "lat": 12.8595501,
+        "lon": 77.5444674
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1128136281,
+      "center": {
+        "lat": 12.8566151,
+        "lon": 77.5403374
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "capacity": "6",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1138589740,
+      "center": {
+        "lat": 12.8756718,
+        "lon": 77.5444556
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "Kanakapura Road",
+        "brand": "DMart",
+        "brand:wikidata": "Q5203271",
+        "building": "yes",
+        "diet:gluten_free": "limited",
+        "diet:lactose_free": "limited",
+        "diet:sugar_free": "limited",
+        "dog": "no",
+        "email": "customerservice@dmart.in",
+        "internet_access": "no",
+        "name": "DMart",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:qr_code": "yes",
+        "payment:upi": "yes",
+        "payment:visa": "yes",
+        "phone": "+91 40 4691 1700",
+        "shop": "supermarket",
+        "website": "https://dmart.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1138590761,
+      "center": {
+        "lat": 12.8753646,
+        "lon": 77.5447851
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1138590762,
+      "center": {
+        "lat": 12.8759964,
+        "lon": 77.5445495
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "motorcycle_parking",
+        "covered": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1144623862,
+      "center": {
+        "lat": 12.8608026,
+        "lon": 77.5427373
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "116",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "air_conditioning": "yes",
+        "building": "yes",
+        "check_date": "2023-10-13",
+        "currency:INR": "yes",
+        "diet:gluten_free": "limited",
+        "diet:lactose_free": "limited",
+        "diet:sugar_free": "limited",
+        "dog": "no",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Market Fresh",
+        "name:ta": "மார்க்கெட் ஃபெரெஷ்",
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:qr_code": "yes",
+        "payment:upi": "yes",
+        "phone": "+91 88615 53742",
+        "shop": "supermarket",
+        "stroller": "yes",
+        "toilets": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1189542641,
+      "center": {
+        "lat": 12.8783193,
+        "lon": 77.5414764
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1189542642,
+      "center": {
+        "lat": 12.8774721,
+        "lon": 77.5407549
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237972001,
+      "center": {
+        "lat": 12.8654129,
+        "lon": 77.5332959
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237972009,
+      "center": {
+        "lat": 12.8617267,
+        "lon": 77.5303443
+      },
+      "tags": {
+        "amenity": "parking",
+        "capacity": "23",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237972011,
+      "center": {
+        "lat": 12.8615779,
+        "lon": 77.5290808
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963327,
+      "center": {
+        "lat": 12.8634456,
+        "lon": 77.5439231
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963340,
+      "center": {
+        "lat": 12.8629956,
+        "lon": 77.5373216
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963341,
+      "center": {
+        "lat": 12.8630817,
+        "lon": 77.5369253
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963342,
+      "center": {
+        "lat": 12.8625264,
+        "lon": 77.5343673
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963343,
+      "center": {
+        "lat": 12.8611159,
+        "lon": 77.5336059
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963344,
+      "center": {
+        "lat": 12.8593864,
+        "lon": 77.5350797
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963346,
+      "center": {
+        "lat": 12.858738,
+        "lon": 77.5361764
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243963347,
+      "center": {
+        "lat": 12.8580589,
+        "lon": 77.5366159
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1246298539,
+      "center": {
+        "lat": 12.8578548,
+        "lon": 77.5204459
+      },
+      "tags": {
+        "amenity": "clinic",
+        "name": "Central Ayurveda Research Institute",
+        "office": "research"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1246769917,
+      "center": {
+        "lat": 12.8774271,
+        "lon": 77.5060129
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1249855418,
+      "center": {
+        "lat": 12.867768,
+        "lon": 77.5430689
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "Resort",
+        "addr:postcode": "560062",
+        "addr:street": "Kumarans School Holiday Village Road",
+        "leisure": "resort",
+        "name": "Holiday Village",
+        "name:ta": "ஹாலிடே வில்லேஜ்",
+        "operator": "Bhindra Resorts"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1249855452,
+      "center": {
+        "lat": 12.8642097,
+        "lon": 77.5361165
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1250177472,
+      "center": {
+        "lat": 12.856581,
+        "lon": 77.5404362
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "capacity": "12",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1259592547,
+      "center": {
+        "lat": 12.8763367,
+        "lon": 77.5435397
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1263387780,
+      "center": {
+        "lat": 12.8763876,
+        "lon": 77.5491073
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1263387781,
+      "center": {
+        "lat": 12.875914,
+        "lon": 77.5489599
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280762879,
+      "center": {
+        "lat": 12.8504651,
+        "lon": 77.5207248
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302638873,
+      "center": {
+        "lat": 12.8781579,
+        "lon": 77.5130235
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "RV College of Architecture",
+        "website": "https://rvca.edu.in/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315363481,
+      "center": {
+        "lat": 12.8565972,
+        "lon": 77.540859
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "lit": "yes",
+        "sport": "cricket_nets;cricket",
+        "surface": "artificial_turf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315363488,
+      "center": {
+        "lat": 12.8569902,
+        "lon": 77.5398249
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315366128,
+      "center": {
+        "lat": 12.8576766,
+        "lon": 77.541505
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315366129,
+      "center": {
+        "lat": 12.857566,
+        "lon": 77.5415287
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315366130,
+      "center": {
+        "lat": 12.8567275,
+        "lon": 77.5412113
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316166352,
+      "center": {
+        "lat": 12.8584767,
+        "lon": 77.5407514
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1344973956,
+      "center": {
+        "lat": 12.8721245,
+        "lon": 77.5294493
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1344973965,
+      "center": {
+        "lat": 12.8687362,
+        "lon": 77.520762
+      },
+      "tags": {
+        "leisure": "resort",
+        "name": "Whispering Meadows"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1345637272,
+      "center": {
+        "lat": 12.8674125,
+        "lon": 77.5387951
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1345637273,
+      "center": {
+        "lat": 12.8667376,
+        "lon": 77.5403277
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Deeksha"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974789,
+      "center": {
+        "lat": 12.8836678,
+        "lon": 77.5461093
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Hillside College of Nursing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974796,
+      "center": {
+        "lat": 12.8806176,
+        "lon": 77.5465073
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Siddaganga National School",
+        "name:kn": "ಸಿದ್ದಗಂಗ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974798,
+      "center": {
+        "lat": 12.8772647,
+        "lon": 77.5429458
+      },
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974923,
+      "center": {
+        "lat": 12.8613174,
+        "lon": 77.5212029
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974926,
+      "center": {
+        "lat": 12.8590285,
+        "lon": 77.5272854
+      },
+      "tags": {
+        "leisure": "resort",
+        "name": "Hasiru Dhama"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974938,
+      "center": {
+        "lat": 12.8683274,
+        "lon": 77.5243603
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974945,
+      "center": {
+        "lat": 12.8764132,
+        "lon": 77.528991
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349974953,
+      "center": {
+        "lat": 12.8765153,
+        "lon": 77.5308699
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351984431,
+      "center": {
+        "lat": 12.8774566,
+        "lon": 77.5451743
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989751,
+      "center": {
+        "lat": 12.8766661,
+        "lon": 77.5287956
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989753,
+      "center": {
+        "lat": 12.8772892,
+        "lon": 77.5289322
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989754,
+      "center": {
+        "lat": 12.8771985,
+        "lon": 77.5282886
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989812,
+      "center": {
+        "lat": 12.8755356,
+        "lon": 77.5345151
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989829,
+      "center": {
+        "lat": 12.8744161,
+        "lon": 77.5361214
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Marikamba Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989845,
+      "center": {
+        "lat": 12.8743769,
+        "lon": 77.5384385
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Tiger 5"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989863,
+      "center": {
+        "lat": 12.8738042,
+        "lon": 77.5395855
+      },
+      "tags": {
+        "landuse": "industrial",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989866,
+      "center": {
+        "lat": 12.8733652,
+        "lon": 77.5404062
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "GAIL",
+        "fuel:cng": "yes",
+        "name": "GAIL CNG"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351989868,
+      "center": {
+        "lat": 12.8731839,
+        "lon": 77.5408843
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "BRS Grandeur"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1368282244,
+      "center": {
+        "lat": 12.8669533,
+        "lon": 77.5408329
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560062",
+        "building": "yes",
+        "charge": "300 INR",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "name": "Selenite Sports Academy",
+        "opening_hours": "Mo-Su 05:00-23:00",
+        "panoramax": "2df48d77-6d8a-4a7f-87f2-dce3f6b9aa0f",
+        "panoramax:0": "d6faeb59-b999-46b1-89d6-f77b34a7d12c",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:upi": "yes",
+        "rental": "shoes;racket;",
+        "sport": "badminton",
+        "website": "https://selenitesports.com/",
+        "website:booking": "https://playo.co/venues/bangalore/selenite-sports-academy-kanakapura-road-bengaluru"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1368282245,
+      "center": {
+        "lat": 12.8667499,
+        "lon": 77.5401588
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377258805,
+      "center": {
+        "lat": 12.8745721,
+        "lon": 77.542367
+      },
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "amenity": "fuel",
+        "brand": "Nayara",
+        "brand:wikidata": "Q5399377",
+        "building": "shed",
+        "fuel:diesel": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Nayara - Kanakapura Road",
+        "self_service": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377359946,
+      "center": {
+        "lat": 12.8743737,
+        "lon": 77.5421104
+      },
+      "tags": {
+        "addr:city": "Vajarahalli",
+        "addr:district": "Bengaluru",
+        "addr:housenumber": "94/2, 94/3",
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Road",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "building": "shed",
+        "fuel:diesel": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "layer": "1",
+        "name": "HP - Sri Rama Outlet",
+        "official_name": "Hindustan Petroleum",
+        "operator": "Sri Rama Auto Sales & Services",
+        "self_service": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382317066,
+      "center": {
+        "lat": 12.8600211,
+        "lon": 77.5424613
+      },
+      "tags": {
+        "addr:city": "Mallasandra",
+        "addr:district": "Bangalore",
+        "addr:postcode": "560062",
+        "addr:street": "Holiday Village Road",
+        "amenity": "food_court",
+        "building": "yes",
+        "check_date": "2025-04-29",
+        "name": "Tummy Town Food Court"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390725577,
+      "center": {
+        "lat": 12.8669351,
+        "lon": 77.5446663
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "R K gardens, BBMP Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422781167,
+      "center": {
+        "lat": 12.8666299,
+        "lon": 77.5237647
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422781168,
+      "center": {
+        "lat": 12.8663781,
+        "lon": 77.5239207
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422781169,
+      "center": {
+        "lat": 12.8662905,
+        "lon": 77.5236216
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422781170,
+      "center": {
+        "lat": 12.867384,
+        "lon": 77.5241112
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422781171,
+      "center": {
+        "lat": 12.8666309,
+        "lon": 77.5224678
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422781175,
+      "center": {
+        "lat": 12.8650367,
+        "lon": 77.5339052
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422781176,
+      "center": {
+        "lat": 12.8633219,
+        "lon": 77.5301259
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "check_date": "2025-06-28",
+        "community_centre": "cultural_centre",
+        "internet_access": "no",
+        "name": "Mandala Cultural Center",
+        "name:kn": "ಮಂಡಲ ಕಲ್ಚರಲ್ ಸೆಂಟರ್",
+        "website": "https://mandalabengaluru.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1424101763,
+      "center": {
+        "lat": 12.8646677,
+        "lon": 77.5207881
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428301872,
+      "center": {
+        "lat": 12.8669298,
+        "lon": 77.5215415
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "location": "outdoor",
+        "name": "PPH Open Swimming Pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1441801593,
+      "center": {
+        "lat": 12.8813854,
+        "lon": 77.5461367
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1441801779,
+      "center": {
+        "lat": 12.881199,
+        "lon": 77.5465635
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1442517463,
+      "center": {
+        "lat": 12.8930353,
+        "lon": 77.5162214
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1442547239,
+      "center": {
+        "lat": 12.8793096,
+        "lon": 77.5167492
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Nayara",
+        "brand:wikidata": "Q5399377",
+        "name": "Nayara"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443402179,
+      "center": {
+        "lat": 12.8810033,
+        "lon": 77.516613
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444115847,
+      "center": {
+        "lat": 12.8661024,
+        "lon": 77.5351045
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "capacity": "10",
+        "fee": "no",
+        "operator": "Nammura Restaurant",
+        "operator:type": "private",
+        "parking": "surface",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444119169,
+      "center": {
+        "lat": 12.8825505,
+        "lon": 77.5466982
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "capacity": "4",
+        "fee": "no",
+        "parking": "street_side",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444120393,
+      "center": {
+        "lat": 12.8632617,
+        "lon": 77.5342075
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    }
+  ]
+}

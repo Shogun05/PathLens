@@ -1,0 +1,132 @@
+{
+  "area_name": "Anubhava Nagara",
+  "osm_id": 19883344,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 9,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4446474806,
+      "lat": 12.9673983,
+      "lon": 77.5239973,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "196",
+        "addr:postcode": "560040",
+        "addr:street": "Opposite Kalyan Nagar Bus Stop, Nagarbhavi Main Road, Mudalapalya, Vijay Nagar",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Coastal heritage",
+        "opening_hours": "11:30 t0 15:30,18:30 to 23:00",
+        "phone": "080 23353344"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944332151,
+      "lat": 12.9654318,
+      "lon": 77.52312,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#63, 2nd Main, Byraveshwara Nagar,2nd Main , Nagarbhavi Main Road",
+        "addr:postcode": "560072",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Dhanush Hospital",
+        "name:kn": "ಧನುಷ್ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526700,
+      "lat": 12.96767,
+      "lon": 77.5226459,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Govindaraja Nagar Ward, Kalyan Nagar, Vijayanagar, Bengaluru",
+        "addr:postcode": "560072",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Vijaya Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526751,
+      "lat": 12.9656976,
+      "lon": 77.5233951,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Near Kalyan Nagar Bus Stand, Anubhav Nagar, Bengaluru",
+        "addr:postcode": "560072",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Pavithra Kids Care Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8189595341,
+      "lat": 12.9618327,
+      "lon": 77.5211334,
+      "tags": {
+        "amenity": "vending_machine",
+        "name": "Water ATM",
+        "vending": "water"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138430889,
+      "center": {
+        "lat": 12.9651448,
+        "lon": 77.5240595
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 140374686,
+      "center": {
+        "lat": 12.9680366,
+        "lon": 77.5178655
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172667027,
+      "center": {
+        "lat": 12.9670655,
+        "lon": 77.5201346
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Muneshwara Temple",
+        "name:kn": "ಮುನೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1258216444,
+      "center": {
+        "lat": 12.9663839,
+        "lon": 77.5265345
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

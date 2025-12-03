@@ -1,0 +1,297 @@
+{
+  "area_name": "MEI Colony",
+  "osm_id": 3416332352,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 22,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1794675779,
+      "lat": 13.0230791,
+      "lon": 77.522557,
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3199034834,
+      "lat": 13.0188018,
+      "lon": 77.5201262,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3201259297,
+      "lat": 13.0192355,
+      "lon": 77.5189908,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shiva Temple",
+        "name:kn": "ಶಿವ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3210778797,
+      "lat": 13.0189995,
+      "lon": 77.5203766,
+      "tags": {
+        "name": "Vasavi Stores",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3210797293,
+      "lat": 13.0190802,
+      "lon": 77.5202194,
+      "tags": {
+        "name": "Shivu Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938465166,
+      "lat": 13.0227778,
+      "lon": 77.5182116,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.50, Lakshmi Complex, Peenya Iii Stage , Near Rajagopal Nagar Old Police Station",
+        "addr:postcode": "560058",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Srinivasa Nursing Home, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6948439333,
+      "lat": 13.0138496,
+      "lon": 77.5209944,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "161 Balaji Krupa Laggere Main Road",
+        "addr:postcode": "560058",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Renuka Nursing Home, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962184,
+      "lat": 13.0283797,
+      "lon": 77.5196385,
+      "tags": {
+        "addr:full": "GF Shop No 3, Bda Comml. Complex, Nagarbhabvi, II Stage, III Block, Ring Road, KIADB Housing Complex, Peenya, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "name": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9249649095,
+      "lat": 13.0264015,
+      "lon": 77.5210156,
+      "tags": {
+        "amenity": "bank",
+        "brand": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10025845483,
+      "lat": 13.0242378,
+      "lon": 77.5222135,
+      "tags": {
+        "addr:postcode": "560058",
+        "address": "No.136/137, 8th Main, 3rd Phase, Peenya Industrial Area, Ward No.11, Bangalore - 560058, Karnataka.",
+        "contact:phone": "918088001122",
+        "description": "Leo Packers and Movers Service  in Peenya Industrial Area",
+        "email": "info@leopackersandmovers.com",
+        "name": "Leo Packers and Movers Peenya Industrial Area",
+        "shop": "yes",
+        "website": "https://leopackersandmovers.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11887029552,
+      "lat": 13.0260038,
+      "lon": 77.5141226,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11939010319,
+      "lat": 13.0280181,
+      "lon": 77.5208174,
+      "tags": {
+        "amenity": "fire_station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 46922187,
+      "center": {
+        "lat": 13.0237647,
+        "lon": 77.5312839
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Foremen Training Institute - FTI"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313863260,
+      "center": {
+        "lat": 13.0232712,
+        "lon": 77.5235566
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Ecological Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314084974,
+      "center": {
+        "lat": 13.0193205,
+        "lon": 77.5189623
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314084975,
+      "center": {
+        "lat": 13.0201974,
+        "lon": 77.5189787
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "playground",
+        "name": "Play ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314893923,
+      "center": {
+        "lat": 13.0199685,
+        "lon": 77.5208887
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Ganapathi Temple",
+        "name:kn": "ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363131631,
+      "center": {
+        "lat": 13.0183558,
+        "lon": 77.5190516
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1134831512,
+      "center": {
+        "lat": 13.0279503,
+        "lon": 77.5205608
+      },
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Peenya Fire Station",
+        "name:kn": "ಪೀಣ್ಯ ಅಗ್ನಿಶಾಮಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231037170,
+      "center": {
+        "lat": 13.0148798,
+        "lon": 77.5270213
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "School Ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280618999,
+      "center": {
+        "lat": 13.0257619,
+        "lon": 77.5211449
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharath Petroluem",
+        "fuel:1_25": "no",
+        "fuel:1_50": "no",
+        "fuel:GTL_diesel": "no",
+        "fuel:HGV_diesel": "no",
+        "fuel:biodiesel": "no",
+        "fuel:biogas": "no",
+        "fuel:cng": "no",
+        "fuel:diesel": "yes",
+        "fuel:e10": "no",
+        "fuel:e85": "no",
+        "fuel:electricity": "no",
+        "fuel:lpg": "no",
+        "fuel:octane_100": "no",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "no",
+        "fuel:octane_98": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280623460,
+      "center": {
+        "lat": 13.0256894,
+        "lon": 77.5134037
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

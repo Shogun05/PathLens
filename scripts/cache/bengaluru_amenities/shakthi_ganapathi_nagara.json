@@ -1,0 +1,155 @@
+{
+  "area_name": "Shakthi Ganapathi Nagara",
+  "osm_id": 19883345,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 11,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2249037241,
+      "lat": 12.9944698,
+      "lon": 77.5330067,
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "sports_centre",
+        "name": "Karnataka Engineers Association"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2249037328,
+      "lat": 12.9948879,
+      "lon": 77.5331783,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganapathi Temple",
+        "name:kn": "ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209389014,
+      "lat": 12.9929929,
+      "lon": 77.5292643,
+      "tags": {
+        "addr:postcode": "560079",
+        "addr:street": "BEML Layout, Kamala Nagar, Bengaluru, Karnataka",
+        "amenity": "theatre",
+        "name": "Veerabhadreshwara Theatre",
+        "name:kn": "ವೀರಭದ್ರೇಶ್ವರ ಚಿತ್ರಮಂದಿರ",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "080-23230923"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4221615261,
+      "lat": 12.9928196,
+      "lon": 77.5306777,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7",
+        "operator": "Canara bank ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6937748988,
+      "lat": 12.9948905,
+      "lon": 77.5347984,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.65,N.H.C.S. Layout,3Road Stage,4Th Block,Basaveshwar Nagar,Kamalanagar Main Road",
+        "addr:postcode": "560079",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ashok Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 141508010,
+      "center": {
+        "lat": 12.9931166,
+        "lon": 77.5319509
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 141744176,
+      "center": {
+        "lat": 12.993726,
+        "lon": 77.536518
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 219384062,
+      "center": {
+        "lat": 12.9929068,
+        "lon": 77.5330173
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Huttada Venkataramana Temple",
+        "name:kn": "ಹುತ್ತದ ವೆಂಕಟರಮಣ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 222278954,
+      "center": {
+        "lat": 12.9940136,
+        "lon": 77.5319539
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Max Muller School",
+        "name:kn": "ಮಾಕ್ಸ್ ಮುಲ್ಲರ್ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 252711787,
+      "center": {
+        "lat": 12.9934335,
+        "lon": 77.5292704
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Om Shakti Temple",
+        "name:kn": "ಓಂ ಶಕ್ತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1147338817,
+      "center": {
+        "lat": 12.9951618,
+        "lon": 77.5381263
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "cuisine": "south_indian",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes"
+      }
+    }
+  ]
+}

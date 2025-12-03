@@ -1,0 +1,449 @@
+{
+  "area_name": "NeoTown",
+  "osm_id": 12450827690,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 35,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 6752007378,
+      "lat": 12.8211031,
+      "lon": 77.6573919,
+      "tags": {
+        "description": "Garden, Basketball court",
+        "leisure": "park",
+        "name": "Podium 2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6752007379,
+      "lat": 12.821138,
+      "lon": 77.6580667,
+      "tags": {
+        "description": "Children play area, garden",
+        "leisure": "playground",
+        "name": "Podium 1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572669023,
+      "lat": 12.8231413,
+      "lon": 77.6674188,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Thirupalya, Bommasandra",
+        "addr:postcode": "560099",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Thirumala clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12097148756,
+      "lat": 12.8294745,
+      "lon": 77.6645048,
+      "tags": {
+        "access": "private",
+        "leisure": "park",
+        "name": "Requizza Recreation Area"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13113992224,
+      "lat": 12.8201768,
+      "lon": 77.6603394,
+      "tags": {
+        "name": "Dream Mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1248121638,
+      "center": {
+        "lat": 12.8285597,
+        "lon": 77.6661282
+      },
+      "tags": {
+        "access": "customers",
+        "leisure": "pitch",
+        "name": "Tennis Academy",
+        "sport": "tennis",
+        "surface": "earth"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1287043461,
+      "center": {
+        "lat": 12.8172891,
+        "lon": 77.6522927
+      },
+      "tags": {
+        "addr:postcode": "560105",
+        "amenity": "school",
+        "name": "Treamis World School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1306167504,
+      "center": {
+        "lat": 12.8299214,
+        "lon": 77.6648352
+      },
+      "tags": {
+        "addr:city": "Electronic City",
+        "addr:housenumber": "Golahalli Main Road",
+        "addr:postcode": "560100",
+        "building": "commercial",
+        "building:levels": "4",
+        "name": "Village Market (Supermarket)",
+        "opening_hours": "08:00-22:00",
+        "operator": "Village Group",
+        "payment:app": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:nfc": "yes",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346135001,
+      "center": {
+        "lat": 12.8189608,
+        "lon": 77.6577973
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education",
+        "name": "EuroSchool Electronic City"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421496122,
+      "center": {
+        "lat": 12.8289501,
+        "lon": 77.6662545
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "lit": "yes",
+        "name": "Aratt Requizza Badminton Courts & Squash Court",
+        "sport": "badminton;squash",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421496123,
+      "center": {
+        "lat": 12.8290392,
+        "lon": 77.6662702
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "lit": "yes",
+        "location": "outdoor",
+        "name": "Aratt Requizza Swimming Pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1425759164,
+      "center": {
+        "lat": 12.8274192,
+        "lon": 77.6619026
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561471,
+      "center": {
+        "lat": 12.817191,
+        "lon": 77.6678356
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Government School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561475,
+      "center": {
+        "lat": 12.8209848,
+        "lon": 77.6598728
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561488,
+      "center": {
+        "lat": 12.8192289,
+        "lon": 77.6577055
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561489,
+      "center": {
+        "lat": 12.8194799,
+        "lon": 77.6576829
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561505,
+      "center": {
+        "lat": 12.8225292,
+        "lon": 77.6558463
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561507,
+      "center": {
+        "lat": 12.819928,
+        "lon": 77.6574129
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561508,
+      "center": {
+        "lat": 12.8199368,
+        "lon": 77.6570712
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561510,
+      "center": {
+        "lat": 12.8215835,
+        "lon": 77.6559234
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561511,
+      "center": {
+        "lat": 12.8210604,
+        "lon": 77.6557101
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561512,
+      "center": {
+        "lat": 12.8206196,
+        "lon": 77.655963
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561545,
+      "center": {
+        "lat": 12.8247433,
+        "lon": 77.6566981
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561549,
+      "center": {
+        "lat": 12.8228849,
+        "lon": 77.6650183
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561552,
+      "center": {
+        "lat": 12.8187389,
+        "lon": 77.6651852
+      },
+      "tags": {
+        "amenity": "fuel",
+        "landuse": "retail"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561581,
+      "center": {
+        "lat": 12.821855,
+        "lon": 77.6644808
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561603,
+      "center": {
+        "lat": 12.828157,
+        "lon": 77.6601519
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561604,
+      "center": {
+        "lat": 12.8281981,
+        "lon": 77.6604854
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561605,
+      "center": {
+        "lat": 12.8280391,
+        "lon": 77.660144
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426561606,
+      "center": {
+        "lat": 12.8280477,
+        "lon": 77.6599499
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1435132889,
+      "center": {
+        "lat": 12.8234495,
+        "lon": 77.652251
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1435132890,
+      "center": {
+        "lat": 12.8235171,
+        "lon": 77.6524213
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1435132891,
+      "center": {
+        "lat": 12.8236822,
+        "lon": 77.6525607
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1435132892,
+      "center": {
+        "lat": 12.8236535,
+        "lon": 77.6527397
+      },
+      "tags": {
+        "building": "yes",
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1435132973,
+      "center": {
+        "lat": 12.8244155,
+        "lon": 77.6536507
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    }
+  ]
+}

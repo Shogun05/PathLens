@@ -1,0 +1,2527 @@
+{
+  "area_name": "Hoodi",
+  "osm_id": 1457440304,
+  "osm_type": "node",
+  "place_type": "suburb",
+  "amenity_count": 195,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 514160132,
+      "lat": 12.9923765,
+      "lon": 77.7129548,
+      "tags": {
+        "addr:postcode": "560048",
+        "addr:street": "Hoodi Main Road (Near Hoodi Circle)",
+        "amenity": "atm",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-04-03",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 514161424,
+      "lat": 12.9931471,
+      "lon": 77.7165617,
+      "tags": {
+        "addr:street": "Hoodi Main Road",
+        "amenity": "place_of_worship",
+        "name": "Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 514307734,
+      "lat": 12.9853135,
+      "lon": 77.7183757,
+      "tags": {
+        "addr:city": "Hoodi, Mahadevapura, Bangalore",
+        "addr:postcode": "560048",
+        "addr:street": "Basava Nagar Main Road",
+        "amenity": "school",
+        "name": "Gopalan International Schoool",
+        "name:kn": "ಗೊಪಲನ್ ಅಂತರಾಷ್ಟ್ರೀಯ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 514314695,
+      "lat": 12.9919585,
+      "lon": 77.7178824,
+      "tags": {
+        "addr:city": "Hoodi, Mahadevapura, Bangalore",
+        "addr:postcode": "560048",
+        "addr:street": "ITPL Main Road, near Hoodi Circle",
+        "amenity": "pharmacy",
+        "name": "Srinivasa Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 515659862,
+      "lat": 12.9918006,
+      "lon": 77.716493,
+      "tags": {
+        "addr:city": "Hoodi, Mahadevapura, Bangalore",
+        "addr:postcode": "560048",
+        "addr:street": "Hoodi Main Road",
+        "amenity": "place_of_worship",
+        "name": "Hoodi Mosque",
+        "name:kn": "ಹೂಡಿ ಮಸೀದಿ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 518624061,
+      "lat": 12.9934221,
+      "lon": 77.7167666,
+      "tags": {
+        "addr:street": "Hoodi Main Road",
+        "amenity": "school",
+        "name": "Hoodi High School",
+        "name:kn": "ಹೂಡಿ ಪ್ರೌಡಶಾಲೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 954308720,
+      "lat": 12.9856478,
+      "lon": 77.7183726,
+      "tags": {
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 960318286,
+      "lat": 12.9841327,
+      "lon": 77.7194164,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Basweshwara Nandeswara Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 962904402,
+      "lat": 12.9846765,
+      "lon": 77.7183953,
+      "tags": {
+        "addr:city": "Hoodi, Mahadevapura, Bangalore",
+        "addr:postcode": "560048",
+        "addr:street": "Basava Nagar Main Road",
+        "amenity": "school",
+        "name": "SM English School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 963291957,
+      "lat": 12.9911799,
+      "lon": 77.7176639,
+      "tags": {
+        "addr:postcode": "560048",
+        "addr:street": "Seetharampalya Road",
+        "name": "Krishna Bakery",
+        "name:en": "Sri Krishna Daily Shop",
+        "name:hi": "श्री कृष्णा डैली षोप्प",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 964496319,
+      "lat": 12.9920471,
+      "lon": 77.7178948,
+      "tags": {
+        "addr:postcode": "560048",
+        "addr:street": "Basava Nagar Main Road",
+        "name": "Saipriya Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 973472346,
+      "lat": 12.989865,
+      "lon": 77.717934,
+      "tags": {
+        "addr:city": "Hoodi, Mahadevapura, Bangalore",
+        "addr:postcode": "560048",
+        "amenity": "pharmacy",
+        "name": "SNR Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 973472348,
+      "lat": 12.9897446,
+      "lon": 77.717972,
+      "tags": {
+        "addr:postcode": "560048",
+        "name": "New Shanthi Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 980038314,
+      "lat": 12.9855008,
+      "lon": 77.718421,
+      "tags": {
+        "addr:city": "Hoodi, Mahadevapura, Bangalore",
+        "addr:postcode": "560048",
+        "amenity": "pharmacy",
+        "dispensing": "no",
+        "name": "Aruna Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 981991331,
+      "lat": 12.990976,
+      "lon": 77.721172,
+      "tags": {
+        "addr:street": "ITPL Main Road (Near Hotel Zuri)",
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "name": "Citibank",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 981991342,
+      "lat": 12.9911041,
+      "lon": 77.72103,
+      "tags": {
+        "addr:street": "ITPL Main Road (Near Hotel Zuri)",
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 981991347,
+      "lat": 12.9910736,
+      "lon": 77.7210086,
+      "tags": {
+        "addr:street": "ITPL Main Road (Near Hotel Zuri)",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "name:kn": "ಪಂಜಾಬ ರಾಷ್ಟ್ರೀಯ ಬ್ಯಾಂಕ್",
+        "operator": "Punjab National Bank",
+        "short_name": "PNB",
+        "website": "https://www.pnbindia.in",
+        "wikimedia_commons": "Category:Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 988724809,
+      "lat": 12.9918744,
+      "lon": 77.7204067,
+      "tags": {
+        "addr:street": "ITPL Main Road",
+        "name": "Furniture Palace",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 988724816,
+      "lat": 12.9918361,
+      "lon": 77.7204816,
+      "tags": {
+        "addr:street": "ITPL Road (Opposite Khivraj Bajaj Showroom)",
+        "amenity": "fast_food",
+        "cuisine": "indian",
+        "name": "Srinidhi Sagar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 988724833,
+      "lat": 12.9916553,
+      "lon": 77.7207261,
+      "tags": {
+        "addr:housenumber": "956",
+        "addr:postcode": "560048",
+        "addr:street": "1st Floor, ITPL Main Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Chillys",
+        "name:kn": "ಚಿಲ್ಲಿಸ್",
+        "phone": "+91 80 41487799;+91 80 41725222"
+      }
+    },
+    {
+      "type": "node",
+      "id": 991443317,
+      "lat": 12.9918202,
+      "lon": 77.7158094,
+      "tags": {
+        "name": "Puncture Shop",
+        "service": "repair;tyres",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 996176370,
+      "lat": 12.9878629,
+      "lon": 77.7095289,
+      "tags": {
+        "addr:city": "Whitefield, Bangalore",
+        "addr:street": "Hoodi Main Road",
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 996176391,
+      "lat": 12.989294,
+      "lon": 77.7125997,
+      "tags": {
+        "addr:city": "Whitefield, Bangalore",
+        "addr:housenumber": "11",
+        "addr:street": "Hoodi Main Road",
+        "amenity": "restaurant",
+        "check_date": "2025-04-03",
+        "cuisine": "indian",
+        "name": "Bhagini Restaurant",
+        "name:kn": "ಭಾಗಿನಿ ರೆಸ್ಟೋರೆಂಟ್",
+        "phone": "+91-80-28540327"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1003719471,
+      "lat": 12.9910857,
+      "lon": 77.7212174,
+      "tags": {
+        "addr:street": "ITPL Main Road (Near Hotel Zuri)",
+        "check_date": "2025-04-03",
+        "name": "Inscape Designer Furniture",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1024630290,
+      "lat": 12.989268,
+      "lon": 77.7125459,
+      "tags": {
+        "amenity": "bar",
+        "check_date": "2025-04-03",
+        "name": "Bhagini Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1032697374,
+      "lat": 12.9890678,
+      "lon": 77.7116566,
+      "tags": {
+        "addr:street": "Hoodi Main Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Ankur Family Restaurant",
+        "name:kn": "ಅಂಕುರ್ ಫ್ಯಾಮಿಲಿ ರೆಸ್ಟೋರೆಂಟ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1091242451,
+      "lat": 12.9921909,
+      "lon": 77.713452,
+      "tags": {
+        "brand": "TVS",
+        "brand:wikidata": "Q3300084",
+        "name": "TVS",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1094054658,
+      "lat": 12.9914521,
+      "lon": 77.7205954,
+      "tags": {
+        "addr:street": "Whitefield Road",
+        "brand": "Bajaj",
+        "brand:wikidata": "Q10910065",
+        "name": "Bajaj Motorcycle Showroom",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1097739305,
+      "lat": 12.9923059,
+      "lon": 77.7157612,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2023-12-23",
+        "fee": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1102898204,
+      "lat": 12.9913671,
+      "lon": 77.7209718,
+      "tags": {
+        "amenity": "nightclub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1107350598,
+      "lat": 12.9910481,
+      "lon": 77.7178239,
+      "tags": {
+        "amenity": "doctors",
+        "name": "Sancheswar Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1116410495,
+      "lat": 12.9964291,
+      "lon": 77.7165429,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Temple",
+        "name:kn": "ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1132393266,
+      "lat": 12.9916251,
+      "lon": 77.7208125,
+      "tags": {
+        "name": "Red Apple Unisex Saloon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1268904265,
+      "lat": 12.9918953,
+      "lon": 77.7143082,
+      "tags": {
+        "name": "Furniture Quotient",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1284061298,
+      "lat": 12.990819,
+      "lon": 77.7176114,
+      "tags": {
+        "name": "Pooja Electricals",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1475720883,
+      "lat": 12.9923298,
+      "lon": 77.7131282,
+      "tags": {
+        "addr:postcode": "560048",
+        "addr:street": "KR Puram - ITPB Road",
+        "amenity": "restaurant",
+        "name": "Zingron",
+        "name:kn": "ಜಿಂಗ್ರೊನ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1514989182,
+      "lat": 12.9952882,
+      "lon": 77.7177093,
+      "tags": {
+        "amenity": "post_office",
+        "name": "Hoodi Post Office (560 048)",
+        "name:kn": "ಹೂಡಿ ಅಂಚೆ ಕಛೇರಿ",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1539015302,
+      "lat": 12.995432,
+      "lon": 77.7155531,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Masjid-e-Madina",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1839608409,
+      "lat": 12.986715,
+      "lon": 77.7182541,
+      "tags": {
+        "amenity": "atm",
+        "drive_through": "yes",
+        "operator": "State Bank of Mysore"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1839611092,
+      "lat": 12.9931734,
+      "lon": 77.7170546,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2007720122,
+      "lat": 12.9946162,
+      "lon": 77.7185937,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Swami Vivekananda Ashrama",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2290010462,
+      "lat": 12.9934653,
+      "lon": 77.7173493,
+      "tags": {
+        "name": "City Super Bazaar",
+        "shop": "department_store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2520694106,
+      "lat": 12.9920126,
+      "lon": 77.7176777,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-04-03",
+        "name": "HDFC Bank",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3009829038,
+      "lat": 12.9920805,
+      "lon": 77.7177139,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Five Star Chicken",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "name": "Five Star Chicken",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4466765191,
+      "lat": 12.9905255,
+      "lon": 77.7224978,
+      "tags": {
+        "addr:street": "Whitefield Road",
+        "amenity": "place_of_worship",
+        "name": "Hanuman Temple",
+        "name:kn": "ಹನುಮಂತ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4466780489,
+      "lat": 12.9891244,
+      "lon": 77.718475,
+      "tags": {
+        "addr:postcode": "560048",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489908621,
+      "lat": 12.9900607,
+      "lon": 77.7180023,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "#110",
+        "addr:postcode": "560048",
+        "addr:street": "2nd Cross, , Kasturi Nagar,",
+        "leisure": "sports_centre",
+        "name": "Fitness Hub",
+        "opening_hours": "05:30 - 24:00",
+        "phone": "9845381177",
+        "sport": "gymnastics",
+        "website": "www.indiafitnesshub.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489935362,
+      "lat": 12.987832,
+      "lon": 77.7092846,
+      "tags": {
+        "addr:city": "Whitefield, Bangalore",
+        "addr:housenumber": "101/102",
+        "addr:postcode": "560048",
+        "addr:street": "Hoodi Main Road",
+        "name": "Fifth Element Thai Spa",
+        "opening_hours": "10:00-21:01",
+        "phone": "(91)-80-41666362",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5928669348,
+      "lat": 12.9848221,
+      "lon": 77.7111977,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "1",
+        "addr:postcode": "560048",
+        "addr:street": "NCPR Industrial Layout, Seetharampalya, Hoodi Main Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "delivery": "yes",
+        "name": "Yumatos",
+        "opening_hours": "Mo-Su 10:00-22:30",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418358288,
+      "lat": 12.9917247,
+      "lon": 77.7202988,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "opening_hours": "24/7",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8121020873,
+      "lat": 12.9914289,
+      "lon": 77.7175686,
+      "tags": {
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8196809332,
+      "lat": 12.9848835,
+      "lon": 77.7166089,
+      "tags": {
+        "addr:full": "Bengaluru, Seetharampalya, Hoodi, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "college",
+        "name": "Gopalan Pu And Commerce College"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9459853185,
+      "lat": 12.9937325,
+      "lon": 77.7171734,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9874782365,
+      "lat": 12.9834401,
+      "lon": 77.7182014,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "New Ambur Dum Biryani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9937584589,
+      "lat": 12.9921719,
+      "lon": 77.715443,
+      "tags": {
+        "brand": "Nandini",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9937584590,
+      "lat": 12.9924067,
+      "lon": 77.7172279,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-04-03",
+        "name": "Shub Sagar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9937584595,
+      "lat": 12.9926127,
+      "lon": 77.7185867,
+      "tags": {
+        "name": "Bhima Jewelers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10262612309,
+      "lat": 12.9913189,
+      "lon": 77.7214827,
+      "tags": {
+        "addr:street": "Whitefield Road",
+        "name": "House of Spirit",
+        "shop": "wine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10651168096,
+      "lat": 12.9917884,
+      "lon": 77.7134046,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10651190514,
+      "lat": 12.9896936,
+      "lon": 77.7124312,
+      "tags": {
+        "amenity": "post_office",
+        "brand": "Blue Dart Express",
+        "brand:short": "Blue Dart",
+        "brand:wikidata": "Q54621493",
+        "name": "Blue Dart",
+        "operator": "Blue Dart Express",
+        "operator:short": "Blue Dart",
+        "operator:wikidata": "Q54621493"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11215663899,
+      "lat": 12.9884886,
+      "lon": 77.7099372,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11642112406,
+      "lat": 12.9873708,
+      "lon": 77.7118608,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "capacity": "4",
+        "name": "Tilt Bicycle Rental",
+        "operator": "Tilt",
+        "operator:type": "private"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11642160030,
+      "lat": 12.988135,
+      "lon": 77.7120732,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11642160040,
+      "lat": 12.9881607,
+      "lon": 77.711556,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11642208651,
+      "lat": 12.988489,
+      "lon": 77.7116945,
+      "tags": {
+        "name": "DusMinute",
+        "shop": "department_store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11642208652,
+      "lat": 12.9883854,
+      "lon": 77.7118988,
+      "tags": {
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11642208653,
+      "lat": 12.9884057,
+      "lon": 77.7116945,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೋಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12129019645,
+      "lat": 12.9886154,
+      "lon": 77.7103409,
+      "tags": {
+        "amenity": "pub",
+        "name": "Tipsy Bull Brewhouse And Kitchen",
+        "website": "https://tipsybull.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12187635315,
+      "lat": 12.9830719,
+      "lon": 77.7171083,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12862846465,
+      "lat": 12.9895243,
+      "lon": 77.7149876,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "Easy Bites by Empire",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13041059062,
+      "lat": 12.9969301,
+      "lon": 77.7224123,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13062303501,
+      "lat": 12.9907341,
+      "lon": 77.7079521,
+      "tags": {
+        "addr:housenumber": "40 H",
+        "addr:postcode": "560048",
+        "addr:street": "Whitefield Road",
+        "amenity": "pub",
+        "cuisine": "burger",
+        "diet:vegetarian": "yes",
+        "name": "Mannheim Craft Brewery",
+        "opening_hours": "Mo-Su 11:00-00:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13120641506,
+      "lat": 12.9872387,
+      "lon": 77.7088261,
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13120641536,
+      "lat": 12.9878686,
+      "lon": 77.7089248,
+      "tags": {
+        "amenity": "pub",
+        "name": "Brix & Barrells"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13122918092,
+      "lat": 12.9868603,
+      "lon": 77.7107398,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13122918098,
+      "lat": 12.9868503,
+      "lon": 77.71023,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13142367241,
+      "lat": 12.9921744,
+      "lon": 77.7231773,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13142367242,
+      "lat": 12.992209,
+      "lon": 77.7229064,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13180220624,
+      "lat": 12.9907515,
+      "lon": 77.7203349,
+      "tags": {
+        "amenity": "parcel_locker",
+        "brand": "qikpod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245235394,
+      "lat": 12.9894753,
+      "lon": 77.7118966,
+      "tags": {
+        "leisure": "fitness_station",
+        "name": "BFC Fitness"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13245235396,
+      "lat": 12.990228,
+      "lon": 77.7129346,
+      "tags": {
+        "brand": "Audi",
+        "brand:wikidata": "Q23317",
+        "name": "Audi",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 122403374,
+      "center": {
+        "lat": 12.9903113,
+        "lon": 77.7123758
+      },
+      "tags": {
+        "name": "Sundaram Motors",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259063321,
+      "center": {
+        "lat": 12.9928494,
+        "lon": 77.7162797
+      },
+      "tags": {
+        "check_date": "2023-12-23",
+        "internet_access": "no",
+        "leisure": "sports_centre",
+        "name": "Hoodi Sports Complex",
+        "name:etymology:wikidata": "Q5897565",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259063322,
+      "center": {
+        "lat": 12.99287,
+        "lon": 77.7162613
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Dr. Rajkumar Flood Lit Kabaddi Pitch",
+        "sport": "kabaddi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 285845678,
+      "center": {
+        "lat": 12.9856771,
+        "lon": 77.7172914
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "sports_centre",
+        "name": "Gopalan International School Playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 305941540,
+      "center": {
+        "lat": 12.9938088,
+        "lon": 77.7161704
+      },
+      "tags": {
+        "leisure": "playground",
+        "name": "Kids play area"
+      }
+    },
+    {
+      "type": "way",
+      "id": 305941541,
+      "center": {
+        "lat": 12.9939645,
+        "lon": 77.7155487
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "name": "Tennis Court",
+        "name:kn": "ಟೆನ್ನಿಸ್ ಅಂಗಣ",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 322896805,
+      "center": {
+        "lat": 12.9849608,
+        "lon": 77.7174195
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:full": "181/1, 182/1, Behind SAP Labs, Seetharam Palya, Basavanagar, Hoodi, Mutharayana Nagar, Gnana Bharathi, Bengaluru, Karnataka",
+        "addr:postcode": "560048",
+        "addr:state": "Karnataka",
+        "addr:street": "Seetharampalya Road",
+        "amenity": "college",
+        "name": "Gopalan College of Engineering and Management"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351060167,
+      "center": {
+        "lat": 12.9876239,
+        "lon": 77.7103214
+      },
+      "tags": {
+        "brand": "Bosch Car Service",
+        "brand:wikidata": "Q894368",
+        "building": "commercial",
+        "name": "Bosch Car Service Center",
+        "name:kn": "ಬೋಷ್",
+        "operator": "Bosch",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 391707444,
+      "center": {
+        "lat": 12.9953662,
+        "lon": 77.7186176
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Hoodi Primary School",
+        "name:kn": "ಹೂಡಿ ಪ್ರಾಥಮಿಕ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 886184261,
+      "center": {
+        "lat": 12.9864581,
+        "lon": 77.7169589
+      },
+      "tags": {
+        "addr:full": "Seetharampalya, Hoodi, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "college",
+        "name": "GSAP-Gopalan College Of Architecture"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084450344,
+      "center": {
+        "lat": 12.9912334,
+        "lon": 77.7217831
+      },
+      "tags": {
+        "addr:street": "Whitefield Road",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "compressed_air": "yes",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "operator": "Bharat Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084450361,
+      "center": {
+        "lat": 12.9917603,
+        "lon": 77.718263
+      },
+      "tags": {
+        "addr:city": "Hoodi, Mahadevapura, Bangalore",
+        "addr:postcode": "560048",
+        "addr:street": "Whitefield Road",
+        "amenity": "school",
+        "name": "Sri Chaitanya Techno School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084450373,
+      "center": {
+        "lat": 12.9938591,
+        "lon": 77.716491
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084450378,
+      "center": {
+        "lat": 12.9931372,
+        "lon": 77.7189324
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084450383,
+      "center": {
+        "lat": 12.9891881,
+        "lon": 77.7243659
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084450384,
+      "center": {
+        "lat": 12.9893656,
+        "lon": 77.7241373
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084450385,
+      "center": {
+        "lat": 12.988983,
+        "lon": 77.7242213
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084458372,
+      "center": {
+        "lat": 12.9925216,
+        "lon": 77.7179012
+      },
+      "tags": {
+        "building": "yes",
+        "check_date": "2025-04-03",
+        "name": "Royal Oak",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084474518,
+      "center": {
+        "lat": 12.9873357,
+        "lon": 77.711611
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "lit": "yes",
+        "location": "outdoor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087017023,
+      "center": {
+        "lat": 12.9947997,
+        "lon": 77.7083922
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1101376580,
+      "center": {
+        "lat": 12.9924502,
+        "lon": 77.715714
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560048",
+        "addr:street": "Whitefield Main Rd, Hudi, Hoodi",
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "building": "yes",
+        "check_date": "2023-12-23",
+        "cuisine": "south_indian",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1123146976,
+      "center": {
+        "lat": 13.0003473,
+        "lon": 77.7166887
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Hoodi Lake Park",
+        "name:kn": "ಹೂಡಿ ಕೆರೆ ಉದ್ಯಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1135846658,
+      "center": {
+        "lat": 12.9857824,
+        "lon": 77.7140261
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "EuroSchool Whitefield"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1135846659,
+      "center": {
+        "lat": 12.9858381,
+        "lon": 77.7137029
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1135846660,
+      "center": {
+        "lat": 12.9855617,
+        "lon": 77.7136083
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1144281244,
+      "center": {
+        "lat": 12.9907045,
+        "lon": 77.7134124
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1144281246,
+      "center": {
+        "lat": 12.9916076,
+        "lon": 77.7116813
+      },
+      "tags": {
+        "access": "private",
+        "hoops": "2",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1144281247,
+      "center": {
+        "lat": 12.9917163,
+        "lon": 77.7117388
+      },
+      "tags": {
+        "access": "permissive",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1151907062,
+      "center": {
+        "lat": 12.9838607,
+        "lon": 77.7190736
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Government Primary School",
+        "name:kn": "ಸರ್ಕಾರಿ ಪ್ರಾಥಮಿಕ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1151912877,
+      "center": {
+        "lat": 12.9839545,
+        "lon": 77.7197842
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1178714207,
+      "center": {
+        "lat": 12.9881509,
+        "lon": 77.7077027
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1190294274,
+      "center": {
+        "lat": 12.9889936,
+        "lon": 77.7100421
+      },
+      "tags": {
+        "brand": "DMart",
+        "brand:wikidata": "Q5203271",
+        "building": "supermarket",
+        "name": "DMart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195542195,
+      "center": {
+        "lat": 12.9954343,
+        "lon": 77.7189048
+      },
+      "tags": {
+        "amenity": "grave_yard",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195542197,
+      "center": {
+        "lat": 12.9947631,
+        "lon": 77.7220284
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195542199,
+      "center": {
+        "lat": 12.9954119,
+        "lon": 77.7182703
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Government PUC",
+        "name:kn": "ಸರ್ಕಾರಿ ಪದವಿಪೂರ್ವ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195542203,
+      "center": {
+        "lat": 12.9940797,
+        "lon": 77.7249537
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195542210,
+      "center": {
+        "lat": 12.9951158,
+        "lon": 77.7178147
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195542216,
+      "center": {
+        "lat": 12.9944704,
+        "lon": 77.7224482
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1233514057,
+      "center": {
+        "lat": 12.9850527,
+        "lon": 77.7151026
+      },
+      "tags": {
+        "amenity": "grave_yard",
+        "landuse": "cemetery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1233514068,
+      "center": {
+        "lat": 12.9860293,
+        "lon": 77.7138312
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1252509972,
+      "center": {
+        "lat": 12.9875226,
+        "lon": 77.7115161
+      },
+      "tags": {
+        "access": "private",
+        "hoops": "1",
+        "leisure": "pitch",
+        "lit": "yes",
+        "name": "Godrej Air Basketball Half Court",
+        "sport": "basketball",
+        "surface": "artificial_turf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1252510394,
+      "center": {
+        "lat": 12.987768,
+        "lon": 77.7115184
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "name": "Outdoor Chess Board at Godrej Air",
+        "sport": "chess",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1252516688,
+      "center": {
+        "lat": 12.9877746,
+        "lon": 77.7121169
+      },
+      "tags": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "building": "roof",
+        "lit": "yes",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1252518541,
+      "center": {
+        "lat": 12.9860166,
+        "lon": 77.7116673
+      },
+      "tags": {
+        "amenity": "theatre",
+        "name": "Godrej Air Amphitheatre",
+        "theatre:type": "amphi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1256797188,
+      "center": {
+        "lat": 12.9890003,
+        "lon": 77.7132183
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267728589,
+      "center": {
+        "lat": 12.9956446,
+        "lon": 77.7082507
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267728590,
+      "center": {
+        "lat": 12.9956363,
+        "lon": 77.7080804
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267728591,
+      "center": {
+        "lat": 12.995593,
+        "lon": 77.7077798
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272642978,
+      "center": {
+        "lat": 12.9966088,
+        "lon": 77.7213042
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "location": "outdoor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272642982,
+      "center": {
+        "lat": 12.9964684,
+        "lon": 77.7207048
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272644144,
+      "center": {
+        "lat": 12.9969408,
+        "lon": 77.7192467
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272644145,
+      "center": {
+        "lat": 12.9970771,
+        "lon": 77.7192711
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272644146,
+      "center": {
+        "lat": 12.9973808,
+        "lon": 77.7190261
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272644148,
+      "center": {
+        "lat": 12.997522,
+        "lon": 77.7190859
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1278840883,
+      "center": {
+        "lat": 12.9895857,
+        "lon": 77.7189429
+      },
+      "tags": {
+        "leisure": "pitch",
+        "lit": "yes",
+        "sport": "badminton",
+        "surface": "wood"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1278840884,
+      "center": {
+        "lat": 12.9895936,
+        "lon": 77.7191927
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer",
+        "surface": "artificial_turf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1278840885,
+      "center": {
+        "lat": 12.9895531,
+        "lon": 77.719076
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "IBLITZ",
+        "sport": "soccer;badminton"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1278845874,
+      "center": {
+        "lat": 12.989427,
+        "lon": 77.7191567
+      },
+      "tags": {
+        "amenity": "parking_space"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1278848356,
+      "center": {
+        "lat": 12.9890043,
+        "lon": 77.7184963
+      },
+      "tags": {
+        "amenity": "parking_space"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1298326045,
+      "center": {
+        "lat": 12.9887349,
+        "lon": 77.7238589
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302227126,
+      "center": {
+        "lat": 12.9858766,
+        "lon": 77.7170755
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302227127,
+      "center": {
+        "lat": 12.9857712,
+        "lon": 77.7106084
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302227128,
+      "center": {
+        "lat": 12.9863139,
+        "lon": 77.7106302
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302227131,
+      "center": {
+        "lat": 12.9843373,
+        "lon": 77.7125499
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302227132,
+      "center": {
+        "lat": 12.9847366,
+        "lon": 77.7129243
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346398142,
+      "center": {
+        "lat": 12.9950803,
+        "lon": 77.7211802
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346398144,
+      "center": {
+        "lat": 12.9926017,
+        "lon": 77.7125712
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346398148,
+      "center": {
+        "lat": 12.9910644,
+        "lon": 77.7160174
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346398149,
+      "center": {
+        "lat": 12.9902068,
+        "lon": 77.7148173
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346398150,
+      "center": {
+        "lat": 12.9902489,
+        "lon": 77.7145249
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421319633,
+      "center": {
+        "lat": 12.9928667,
+        "lon": 77.7150238
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421319634,
+      "center": {
+        "lat": 12.9929526,
+        "lon": 77.7150557
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467748,
+      "center": {
+        "lat": 12.985749,
+        "lon": 77.7108949
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467749,
+      "center": {
+        "lat": 12.9845744,
+        "lon": 77.7126131
+      },
+      "tags": {
+        "access": "private",
+        "backrest": "yes",
+        "leisure": "bleachers"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467750,
+      "center": {
+        "lat": 12.9845525,
+        "lon": 77.7126436
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "theatre",
+        "theatre:type": "amphi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467751,
+      "center": {
+        "lat": 12.9845855,
+        "lon": 77.7128005
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467809,
+      "center": {
+        "lat": 12.9891224,
+        "lon": 77.7178703
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467821,
+      "center": {
+        "lat": 12.9910648,
+        "lon": 77.717192
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467827,
+      "center": {
+        "lat": 12.9902951,
+        "lon": 77.7142602
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467828,
+      "center": {
+        "lat": 12.9891336,
+        "lon": 77.7136974
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467829,
+      "center": {
+        "lat": 12.9890609,
+        "lon": 77.713623
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467836,
+      "center": {
+        "lat": 12.988445,
+        "lon": 77.7136281
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467837,
+      "center": {
+        "lat": 12.9887919,
+        "lon": 77.7136417
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467838,
+      "center": {
+        "lat": 12.9872872,
+        "lon": 77.710279
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467845,
+      "center": {
+        "lat": 12.9872884,
+        "lon": 77.7107264
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "theatre",
+        "theatre:type": "amphi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467846,
+      "center": {
+        "lat": 12.9876788,
+        "lon": 77.7106179
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467847,
+      "center": {
+        "lat": 12.9879174,
+        "lon": 77.7106214
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427467848,
+      "center": {
+        "lat": 12.9863218,
+        "lon": 77.7102339
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427485404,
+      "center": {
+        "lat": 12.9904165,
+        "lon": 77.719538
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427485425,
+      "center": {
+        "lat": 12.9880724,
+        "lon": 77.7200183
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427485455,
+      "center": {
+        "lat": 12.9911062,
+        "lon": 77.7199839
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429699959,
+      "center": {
+        "lat": 12.9907082,
+        "lon": 77.7234476
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429699963,
+      "center": {
+        "lat": 12.9924289,
+        "lon": 77.7230017
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "bleachers"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429699964,
+      "center": {
+        "lat": 12.9925286,
+        "lon": 77.7230712
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429699965,
+      "center": {
+        "lat": 12.9924452,
+        "lon": 77.7230661
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "theatre",
+        "theatre:type": "amphi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429700049,
+      "center": {
+        "lat": 12.9950437,
+        "lon": 77.7210417
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "badminton"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429700050,
+      "center": {
+        "lat": 12.9950434,
+        "lon": 77.7213187
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "badminton"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429700231,
+      "center": {
+        "lat": 12.9926106,
+        "lon": 77.7210567
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429706366,
+      "center": {
+        "lat": 12.9935751,
+        "lon": 77.7148487
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429706367,
+      "center": {
+        "lat": 12.9937354,
+        "lon": 77.7149642
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429706368,
+      "center": {
+        "lat": 12.993994,
+        "lon": 77.7154003
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429706370,
+      "center": {
+        "lat": 12.9914952,
+        "lon": 77.7116437
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "chess"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430477819,
+      "center": {
+        "lat": 12.991468,
+        "lon": 77.7196678
+      },
+      "tags": {
+        "amenity": "pub",
+        "breakfast": "no",
+        "craft": "brewery",
+        "diet:vegetarian": "yes",
+        "email": "admin@abvblr.com",
+        "name": "ABV - Artisanal Bier Village",
+        "opening_hours": "Mo-Fr 12:00-24:00; Sa-Su 00:00-01:00,12:00-24:00",
+        "outdoor_seating": "yes",
+        "phone": "+91 08061915234",
+        "reservation": "yes",
+        "website": "https://abvblr.com/",
+        "wheelchair": "limited",
+        "wheelchair:description": "Upper floors have only stairs"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430625641,
+      "center": {
+        "lat": 12.9917798,
+        "lon": 77.7197595
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430798378,
+      "center": {
+        "lat": 12.98363,
+        "lon": 77.7197733
+      },
+      "tags": {
+        "hoops": "2",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873794,
+      "center": {
+        "lat": 12.9959406,
+        "lon": 77.7195755
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "building:material": "metal",
+        "roof:colour": "blue",
+        "roof:shape": "round",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873795,
+      "center": {
+        "lat": 12.9961526,
+        "lon": 77.7187024
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "building:material": "metal",
+        "roof:colour": "blue",
+        "roof:shape": "round",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873796,
+      "center": {
+        "lat": 12.9965112,
+        "lon": 77.7178292
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "building:material": "metal",
+        "roof:colour": "blue",
+        "roof:shape": "round",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873797,
+      "center": {
+        "lat": 12.9962929,
+        "lon": 77.7187172
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "building:material": "metal",
+        "roof:colour": "blue",
+        "roof:shape": "round",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873798,
+      "center": {
+        "lat": 12.9960782,
+        "lon": 77.7196033
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "building:material": "metal",
+        "roof:colour": "blue",
+        "roof:shape": "round",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1431873799,
+      "center": {
+        "lat": 12.996332,
+        "lon": 77.7180178
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "building:material": "metal",
+        "roof:colour": "blue",
+        "roof:shape": "round",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445476549,
+      "center": {
+        "lat": 12.9840335,
+        "lon": 77.7170388
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445476550,
+      "center": {
+        "lat": 12.9833144,
+        "lon": 77.7165523
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1445476558,
+      "center": {
+        "lat": 12.9833158,
+        "lon": 77.716723
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "location": "outdoor"
+      }
+    }
+  ]
+}

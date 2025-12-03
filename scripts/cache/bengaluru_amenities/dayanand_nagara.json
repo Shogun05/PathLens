@@ -1,0 +1,130 @@
+{
+  "area_name": "Dayanand Nagara",
+  "osm_id": 19883491,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 9,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2767232789,
+      "lat": 12.990035,
+      "lon": 77.5643749,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "BBMP Veterinary Hospital",
+        "name:kn": "ಬೃ. ಬೆಂ. ಮ. ಪಾ. ಪಶುವೈದ್ಯ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2767239588,
+      "lat": 12.9902879,
+      "lon": 77.5645516,
+      "tags": {
+        "amenity": "library",
+        "name": "Government Public Library",
+        "name:kn": "ಸರ್ಕಾರಿ ಗ್ರಂಥಾಲಯ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2767247932,
+      "lat": 12.9915519,
+      "lon": 77.5639515,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Muneshwaraswamy Temple",
+        "name:kn": "ಮುನೇಶ್ವರಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187986370,
+      "lat": 12.9912126,
+      "lon": 77.5662996,
+      "tags": {
+        "addr:full": "Labour Colony, Srirampura, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Mythri Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038738,
+      "lat": 12.9912133,
+      "lon": 77.5669044,
+      "tags": {
+        "addr:full": "6th Cross Rd, Gowtham Nagar, Srirampura, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "social_facility",
+        "name": "Aashirvad Nursing Home",
+        "social_facility": "nursing_home",
+        "social_facility:for": "senior"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8196809284,
+      "lat": 12.9900587,
+      "lon": 77.5661228,
+      "tags": {
+        "addr:full": "7th Main Rd, S.R Puram, Labour Colony, Srirampura, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "college",
+        "name": "Government Pre University College",
+        "name:kn": "ಸರ್ಕಾರಿ ಪದವಿ ಪೂರ್ವ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 271785239,
+      "center": {
+        "lat": 12.9900504,
+        "lon": 77.5649365
+      },
+      "tags": {
+        "amenity": "police",
+        "building": "yes",
+        "name": "Srirampura Police Station",
+        "name:kn": "ಶ್ರೀರಾಮಪುರ ಆರಕ್ಷಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 271785644,
+      "center": {
+        "lat": 12.9903679,
+        "lon": 77.5648606
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Government Kannada High School",
+        "name:kn": "ಸರ್ಕಾರಿ ಕನ್ನಡ ಪ್ರೌಡಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 271786067,
+      "center": {
+        "lat": 12.9907432,
+        "lon": 77.5649082
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Bhashyam Circle,Rajajinagar 5Th Block",
+        "addr:postcode": "560010",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sreerampura Referal Hospital",
+        "name:kn": "ಶ್ರೀರಂಪುರ ರೆಫರಲ್ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    }
+  ]
+}

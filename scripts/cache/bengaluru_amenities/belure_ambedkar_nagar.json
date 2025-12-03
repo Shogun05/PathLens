@@ -1,0 +1,228 @@
+{
+  "area_name": "Belure Ambedkar Nagar",
+  "osm_id": 3771990411,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 16,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 702681616,
+      "lat": 12.9535965,
+      "lon": 77.660901,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445215172,
+      "lat": 12.9434622,
+      "lon": 77.6563502,
+      "tags": {
+        "addr:city": "BENGALURU",
+        "addr:postcode": "560017",
+        "addr:street": "Belur Nagasandra, Bellandur",
+        "amenity": "place_of_worship",
+        "name": "Hanuman Temple",
+        "name:kn": "ಹನುಮಂತ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445218429,
+      "lat": 12.9438224,
+      "lon": 77.6546548,
+      "tags": {
+        "addr:city": "BENGALURU",
+        "addr:postcode": "560017",
+        "addr:street": "Belur Nagasandra, Bellandur",
+        "amenity": "place_of_worship",
+        "name": "Chowdeshwaramma Temple",
+        "name:kn": "ಚೌಡೇಶ್ವರಮ್ಮ ದೇವಸ್ಧಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446993670,
+      "lat": 12.9448255,
+      "lon": 77.6645367,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560017",
+        "addr:street": "Wind tunnel road, HAL airport area",
+        "leisure": "park",
+        "name": "Indosyke Nal",
+        "phone": "+91 9035088980"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447086337,
+      "lat": 12.9443025,
+      "lon": 77.6525847,
+      "tags": {
+        "addr:city": "BENGALURU",
+        "addr:postcode": "560037",
+        "addr:street": "Challaghatta",
+        "name": "Ideal Supermarket",
+        "phone": "+91 96865 99611",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4731621689,
+      "lat": 12.9461075,
+      "lon": 77.6672982,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಎಸ್ ಬಿ ಐ",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5301660323,
+      "lat": 12.9548569,
+      "lon": 77.6608219,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Marriage Hall",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5301664922,
+      "lat": 12.9549429,
+      "lon": 77.6610471,
+      "tags": {
+        "amenity": "childcare",
+        "check_date": "2025-09-30",
+        "name": "Early Spring Daycare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5301671923,
+      "lat": 12.9547673,
+      "lon": 77.6611373,
+      "tags": {
+        "female": "yes",
+        "name": "VNS Beauty Saloon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10651895592,
+      "lat": 12.9529477,
+      "lon": 77.657206,
+      "tags": {
+        "name": "Real mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 323745541,
+      "center": {
+        "lat": 12.954788,
+        "lon": 77.6607783
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Munishwara Swamy Temple",
+        "name:kn": "ಶ್ರೀ ಮುನೀಶ್ವರ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 323950618,
+      "center": {
+        "lat": 12.9532604,
+        "lon": 77.6600385
+      },
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Kidzee Nursery",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 387461395,
+      "center": {
+        "lat": 12.9450775,
+        "lon": 77.6519189
+      },
+      "tags": {
+        "amenity": "school",
+        "email": "admissions@nalapadacademy.in",
+        "name": "Nalapad Academy",
+        "phone": "+91 91208 88888",
+        "school:gender": "mixed",
+        "website": "https://nalapadacademy.in/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 447766568,
+      "center": {
+        "lat": 12.9418752,
+        "lon": 77.666787
+      },
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560037",
+        "addr:street": "national aerospace laboratories,bellandur",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shiva Temple NAL",
+        "phone": "+91 9242158312",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443516538,
+      "center": {
+        "lat": 12.9540143,
+        "lon": 77.6600548
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shakti Vinayaka Temple",
+        "name:kn": "ಶಕ್ತ ವಿನಾಯಕ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443516585,
+      "center": {
+        "lat": 12.9540323,
+        "lon": 77.6620382
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sophie Nursery Primary and High School",
+        "wheelchair": "limited"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4663 @@
+{
+  "area_name": "Ashoka Pillar",
+  "osm_id": 19883443,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 413,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 582384953,
+      "lat": 12.9376734,
+      "lon": 77.5802836,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "202, R.V.Road",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "addr:street": "Rashtriya Vidyalaya Road",
+        "amenity": "hospital",
+        "email": "info@Bengaluruhospital.co.in",
+        "healthcare": "hospital",
+        "name": "Bengaluru Hospital, Susruta Medical Aid AndResearch Home Limited",
+        "name:kn": "ಬೆಂಗಳೂರು ಆಸ್ಪತ್ರೆ",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "http://dpal.kar.nic.in/Kanunu%20padakosha%20PDF%20Files/Recognised%20Hospitals.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 676872647,
+      "lat": 12.9478734,
+      "lon": 77.580172,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2022-08-11",
+        "fee": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 676872668,
+      "lat": 12.9538673,
+      "lon": 77.5849624,
+      "tags": {
+        "amenity": "toilets",
+        "fee": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 683352686,
+      "lat": 12.950253,
+      "lon": 77.5868038,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1449021351,
+      "lat": 12.9420282,
+      "lon": 77.5802856,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560004",
+        "addr:street": "Rashtriya Vidyalaya Road",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "compressed_air": "yes",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡಿಯನ್ ಆಯಿಲ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1466730665,
+      "lat": 12.948348,
+      "lon": 77.5807071,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1466731141,
+      "lat": 12.9518933,
+      "lon": 77.5848336,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474512610,
+      "lat": 12.9494002,
+      "lon": 77.5926204,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bhagini Hotel",
+        "name:kn": "ಭಾಗಿನಿ ಹೋಟೆಲ್",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405794811,
+      "lat": 12.9444702,
+      "lon": 77.5847747,
+      "tags": {
+        "amenity": "college",
+        "name": "Horticulture Training Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795045,
+      "lat": 12.9494818,
+      "lon": 77.5916049,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795060,
+      "lat": 12.9511502,
+      "lon": 77.5869158,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795064,
+      "lat": 12.9512344,
+      "lon": 77.5870455,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795081,
+      "lat": 12.9514672,
+      "lon": 77.5869825,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795088,
+      "lat": 12.9515214,
+      "lon": 77.5863056,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795096,
+      "lat": 12.9515785,
+      "lon": 77.5869766,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795103,
+      "lat": 12.9516947,
+      "lon": 77.5876117,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795104,
+      "lat": 12.9517501,
+      "lon": 77.5874235,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795106,
+      "lat": 12.9518415,
+      "lon": 77.5874529,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405795107,
+      "lat": 12.951798,
+      "lon": 77.5871966,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825519,
+      "lat": 12.9439037,
+      "lon": 77.5819302,
+      "tags": {
+        "amenity": "waste_basket",
+        "check_date": "2023-12-30",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825526,
+      "lat": 12.9439687,
+      "lon": 77.5807339,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825551,
+      "lat": 12.9448672,
+      "lon": 77.5803081,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825652,
+      "lat": 12.9463416,
+      "lon": 77.5802948,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825692,
+      "lat": 12.946762,
+      "lon": 77.5878507,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2023-12-30",
+        "fee": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825701,
+      "lat": 12.9469828,
+      "lon": 77.5878466,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825703,
+      "lat": 12.9470536,
+      "lon": 77.5876073,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825716,
+      "lat": 12.9471294,
+      "lon": 77.5803062,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825725,
+      "lat": 12.9472067,
+      "lon": 77.5879731,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825735,
+      "lat": 12.9473435,
+      "lon": 77.5880273,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825763,
+      "lat": 12.9477956,
+      "lon": 77.5877137,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825764,
+      "lat": 12.9478144,
+      "lon": 77.5875842,
+      "tags": {
+        "amenity": "waste_basket",
+        "check_date": "2023-12-30",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825767,
+      "lat": 12.9478271,
+      "lon": 77.5863571,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825768,
+      "lat": 12.947839,
+      "lon": 77.5877187,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825771,
+      "lat": 12.9478509,
+      "lon": 77.5864907,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825778,
+      "lat": 12.9478878,
+      "lon": 77.5803242,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825782,
+      "lat": 12.9482156,
+      "lon": 77.5804124,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825783,
+      "lat": 12.9482178,
+      "lon": 77.588168,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825785,
+      "lat": 12.9482347,
+      "lon": 77.5881112,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825786,
+      "lat": 12.9483029,
+      "lon": 77.5881244,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825792,
+      "lat": 12.948499,
+      "lon": 77.5805392,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825793,
+      "lat": 12.9485333,
+      "lon": 77.5805682,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825795,
+      "lat": 12.9485561,
+      "lon": 77.5806108,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825799,
+      "lat": 12.9487692,
+      "lon": 77.5807426,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825801,
+      "lat": 12.9489742,
+      "lon": 77.581104,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825802,
+      "lat": 12.9491435,
+      "lon": 77.5814435,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825810,
+      "lat": 12.9497025,
+      "lon": 77.5824372,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825812,
+      "lat": 12.950308,
+      "lon": 77.5825568,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825815,
+      "lat": 12.9508018,
+      "lon": 77.5827007,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825820,
+      "lat": 12.9510578,
+      "lon": 77.5829803,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825822,
+      "lat": 12.9511577,
+      "lon": 77.5830201,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825827,
+      "lat": 12.9517776,
+      "lon": 77.5832251,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405825830,
+      "lat": 12.9521119,
+      "lon": 77.5834209,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873559,
+      "lat": 12.95148,
+      "lon": 77.5863456,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873562,
+      "lat": 12.9515158,
+      "lon": 77.5861858,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873568,
+      "lat": 12.951628,
+      "lon": 77.5861083,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873570,
+      "lat": 12.9516584,
+      "lon": 77.5860843,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873588,
+      "lat": 12.9521776,
+      "lon": 77.5856078,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873593,
+      "lat": 12.9522688,
+      "lon": 77.5835284,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873600,
+      "lat": 12.9524849,
+      "lon": 77.5855716,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873611,
+      "lat": 12.9528197,
+      "lon": 77.5855106,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873618,
+      "lat": 12.9529213,
+      "lon": 77.5838722,
+      "tags": {
+        "amenity": "bench",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873621,
+      "lat": 12.9530637,
+      "lon": 77.5854007,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2405873635,
+      "lat": 12.953689,
+      "lon": 77.584188,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3010263823,
+      "lat": 12.9540038,
+      "lon": 77.5801262,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್",
+        "operator": "Karnataka Bank",
+        "source": "voice, GPS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3118790626,
+      "lat": 12.9368412,
+      "lon": 77.5837992,
+      "tags": {
+        "name": "Malabar Gold",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3118804213,
+      "lat": 12.9394505,
+      "lon": 77.5839294,
+      "tags": {
+        "alt_name": "Goli Vada Pav No.1",
+        "amenity": "fast_food",
+        "brand": "Goli Vada Pav",
+        "brand:wikidata": "Q5580697",
+        "cuisine": "indian",
+        "name": "Goli Vada Pav",
+        "name:kn": "ಗೋಲಿ ವಡ ಪಾವ್",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3118804214,
+      "lat": 12.9395055,
+      "lon": 77.5839162,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date:opening_hours": "2023-10-22",
+        "cuisine": "indian",
+        "name": "Karnataka Bhel House",
+        "opening_hours": "16:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3148484487,
+      "lat": 12.9400476,
+      "lon": 77.5828215,
+      "tags": {
+        "name": "Veena Musicals Service Center",
+        "shop": "musical_instrument"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3148484488,
+      "lat": 12.9393363,
+      "lon": 77.5824542,
+      "tags": {
+        "name": "New Veena Musicals",
+        "shop": "musical_instrument"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401950349,
+      "lat": 12.940504,
+      "lon": 77.5840047,
+      "tags": {
+        "name": "Arnav",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401950350,
+      "lat": 12.9402086,
+      "lon": 77.5839778,
+      "tags": {
+        "addr:street": "9th Main Road",
+        "leisure": "sports_centre",
+        "name": "Studio Venus",
+        "note": "Aerobics, dance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401975611,
+      "lat": 12.9382238,
+      "lon": 77.5838823,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Jnanakshi Eye Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401984698,
+      "lat": 12.9397408,
+      "lon": 77.5829526,
+      "tags": {
+        "name": "Suhas Medicals",
+        "shop": "chemist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401984699,
+      "lat": 12.9392065,
+      "lon": 77.5827357,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401984951,
+      "lat": 12.9390863,
+      "lon": 77.5827169,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Samaj Seva Sangha",
+        "name:kn": "ಸಮಾಜ ಸೇವಾ ಸಂಘ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401986202,
+      "lat": 12.9379857,
+      "lon": 77.5828269,
+      "tags": {
+        "name": "Raghavendra Medicals",
+        "shop": "chemist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401988084,
+      "lat": 12.9382066,
+      "lon": 77.582902,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Dental Health Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401988085,
+      "lat": 12.9381478,
+      "lon": 77.5828269,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "name": "Bank of India",
+        "operator": "Bank of India",
+        "operator:wikidata": "Q2004439"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3453283476,
+      "lat": 12.9424031,
+      "lon": 77.5802815,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560004",
+        "addr:street": "Rashtriya Vidyalaya Road",
+        "name": "SPG Infotech",
+        "operator": "Anjanadri",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832797416,
+      "lat": 12.9369895,
+      "lon": 77.5810697,
+      "tags": {
+        "level": "0,1,2",
+        "name": "PSR Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832797417,
+      "lat": 12.9372349,
+      "lon": 77.581058,
+      "tags": {
+        "level": "0,1",
+        "name": "Nandini Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832798964,
+      "lat": 12.936898,
+      "lon": 77.5810241,
+      "tags": {
+        "amenity": "parking",
+        "capacity": "3",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832806735,
+      "lat": 12.9368947,
+      "lon": 77.5819858,
+      "tags": {
+        "addr:street": "7th Main Road",
+        "brand": "Josco Jewellers",
+        "brand:wikidata": "Q99521002",
+        "level": "0",
+        "name": "Josco Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832806736,
+      "lat": 12.9368818,
+      "lon": 77.5820785,
+      "tags": {
+        "amenity": "clinic",
+        "level": "1",
+        "name": "Healios"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832812311,
+      "lat": 12.9370584,
+      "lon": 77.5819902,
+      "tags": {
+        "amenity": "post_office",
+        "level": "0",
+        "name": "Blue Dart-DHL Couriers",
+        "operator": "DHL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4349257796,
+      "lat": 12.9515064,
+      "lon": 77.5902414,
+      "tags": {
+        "amenity": "bicycle_parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4349370589,
+      "lat": 12.9434782,
+      "lon": 77.5817744,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Siddharda Ashrama"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4362723890,
+      "lat": 12.9508899,
+      "lon": 77.5803792,
+      "tags": {
+        "amenity": "place_of_worship"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4362723891,
+      "lat": 12.9520113,
+      "lon": 77.5806257,
+      "tags": {
+        "name": "Iyengar Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4362770794,
+      "lat": 12.9382297,
+      "lon": 77.5802736,
+      "tags": {
+        "amenity": "bar",
+        "name": "South Point"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4703298136,
+      "lat": 12.9499469,
+      "lon": 77.5860202,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4763212133,
+      "lat": 12.9502621,
+      "lon": 77.5867696,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4824906934,
+      "lat": 12.9489409,
+      "lon": 77.5862685,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849094832,
+      "lat": 12.9547083,
+      "lon": 77.582635,
+      "tags": {
+        "name": "New car designer",
+        "name:en": "New car designer",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849107925,
+      "lat": 12.9549066,
+      "lon": 77.5803975,
+      "tags": {
+        "name": "Prakash form and fabric",
+        "name:en": "Prakash foam and fabric",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849108630,
+      "lat": 12.9543469,
+      "lon": 77.5840455,
+      "tags": {
+        "name": "Surya carz",
+        "name:en": "Surya carz",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5078108577,
+      "lat": 12.9425836,
+      "lon": 77.5815226,
+      "tags": {
+        "addr:street": "6th Main, Hanumanth Nagar",
+        "amenity": "place_of_worship",
+        "denomination": "hindu",
+        "description": "Hindu Temple",
+        "name": "Andaal Rangamannaar Temple"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5078108718,
+      "lat": 12.942297,
+      "lon": 77.581498,
+      "tags": {
+        "addr:street": "6th Main, Hanumanth Nagar",
+        "amenity": "place_of_worship",
+        "name": "Andaal Rangamannaar Temple Hall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5239936021,
+      "lat": 12.9540847,
+      "lon": 77.5800757,
+      "tags": {
+        "name:ko": "빵집",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5306746599,
+      "lat": 12.9495484,
+      "lon": 77.5802739,
+      "tags": {
+        "amenity": "doctors",
+        "name": "Children's Clinic",
+        "name:kn": "ಮಕ್ಕಳ ಚಿಕಿತ್ಸಾಲಯ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5306746601,
+      "lat": 12.9495366,
+      "lon": 77.580231,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110283523,
+      "lat": 12.9479063,
+      "lon": 77.5880012,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110283792,
+      "lat": 12.9478809,
+      "lon": 77.5879078,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110283805,
+      "lat": 12.9479274,
+      "lon": 77.5879038,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110285206,
+      "lat": 12.9480516,
+      "lon": 77.5881285,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349285856,
+      "lat": 12.9523143,
+      "lon": 77.5817969,
+      "tags": {
+        "addr:place": "V V Puram",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Ganapathi Vidyamandir V V Puram",
+        "name:kn": "ಗಣಪತಿ ವಿದ್ಯಾಮಂದಿರ ವಿ.ವಿ. ಪುರಂ",
+        "operator": "Pvt. Aided",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349451119,
+      "lat": 12.9544133,
+      "lon": 77.5821593,
+      "tags": {
+        "addr:place": "V V Puram",
+        "amenity": "school",
+        "name": "GUHPS V V Puram",
+        "name:kn": "ಸರ್ಕಾರಿ ಉರ್ದು ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ವಿ.ವಿ. ಪುರಂ",
+        "operator": "Pvt. Aided",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6937898160,
+      "lat": 12.9497745,
+      "lon": 77.5802779,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#53/1 (45), Shalini,Susheela Road,Lalbagh Upparahalli ( Lalbagh West Gate)",
+        "addr:postcode": "560004",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "South City Hospital, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938864297,
+      "lat": 12.9417462,
+      "lon": 77.580349,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "CGHS Dispensary No.6, Jayanagar No.57/190,R.V.Road, 2nd Block, Jayanagar",
+        "addr:postcode": "560011",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "health_facility:type": "dispensary",
+        "healthcare": "centre",
+        "name": "CGHS Dispensary No.6",
+        "operator:type": "government",
+        "source": "OpenGovernmentData",
+        "website": "http://nb.bsf.gov.in/CGHS%20DIspenseries.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7043568691,
+      "lat": 12.9548308,
+      "lon": 77.580673,
+      "tags": {
+        "name": "Yousuff Glass Shop",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7576958049,
+      "lat": 12.949663,
+      "lon": 77.580184,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Rashtriya Vidyalaya Road, Upparahalli, Mavalli, Bengaluru",
+        "addr:postcode": "560004",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Children's Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7576958108,
+      "lat": 12.9380136,
+      "lon": 77.5838278,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Jaya Nagar East, Jayanagar, Bengaluru",
+        "addr:postcode": "560011",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Perfect Smiles Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386641,
+      "lat": 12.9493948,
+      "lon": 77.5888026,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386642,
+      "lat": 12.949434,
+      "lon": 77.5889307,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386643,
+      "lat": 12.9494785,
+      "lon": 77.5890313,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386644,
+      "lat": 12.9495379,
+      "lon": 77.5891614,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386645,
+      "lat": 12.9495896,
+      "lon": 77.5892814,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386646,
+      "lat": 12.9496516,
+      "lon": 77.5893934,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386647,
+      "lat": 12.9497046,
+      "lon": 77.5895101,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386648,
+      "lat": 12.9495262,
+      "lon": 77.5894202,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9292386649,
+      "lat": 12.9497418,
+      "lon": 77.5895376,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9417473954,
+      "lat": 12.939212,
+      "lon": 77.5838982,
+      "tags": {
+        "addr:floor": "0",
+        "air_conditioning": "no",
+        "amenity": "fast_food",
+        "check_date": "2025-01-10",
+        "cuisine": "south_indian",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Bengaluru Cafe",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "toilets": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9906246579,
+      "lat": 12.9438302,
+      "lon": 77.5843415,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "check_date": "2025-07-12",
+        "fee": "no",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922802663,
+      "lat": 12.9501718,
+      "lon": 77.5861922,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922802664,
+      "lat": 12.9502137,
+      "lon": 77.5853258,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831521,
+      "lat": 12.9495353,
+      "lon": 77.5832009,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831522,
+      "lat": 12.9494935,
+      "lon": 77.5831901,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831524,
+      "lat": 12.9491628,
+      "lon": 77.5829454,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "source": "survey",
+        "waste": "organic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831525,
+      "lat": 12.9491419,
+      "lon": 77.5829266,
+      "tags": {
+        "access": "yes",
+        "amenity": "drinking_water",
+        "fee": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831526,
+      "lat": 12.9490975,
+      "lon": 77.58283,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831527,
+      "lat": 12.9489341,
+      "lon": 77.58259,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey",
+        "waste": "recycling"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831528,
+      "lat": 12.9489184,
+      "lon": 77.5825591,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey",
+        "waste": "organic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831529,
+      "lat": 12.9488557,
+      "lon": 77.5822869,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831531,
+      "lat": 12.9487657,
+      "lon": 77.5822163,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831532,
+      "lat": 12.9486126,
+      "lon": 77.5817491,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831533,
+      "lat": 12.9485237,
+      "lon": 77.581336,
+      "tags": {
+        "amenity": "waste_basket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831534,
+      "lat": 12.9484679,
+      "lon": 77.5811473,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831535,
+      "lat": 12.9484963,
+      "lon": 77.5812019,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831536,
+      "lat": 12.9484502,
+      "lon": 77.5810062,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831537,
+      "lat": 12.9484636,
+      "lon": 77.5810705,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831538,
+      "lat": 12.9484923,
+      "lon": 77.5809176,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9922831542,
+      "lat": 12.9476859,
+      "lon": 77.5801036,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "no",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:wikidata": "Q4978693",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11355730137,
+      "lat": 12.9547863,
+      "lon": 77.5808837,
+      "tags": {
+        "check_date": "2023-11-16",
+        "name": "Royal Foam and Furnishings",
+        "shop": "interior_decoration"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11371236634,
+      "lat": 12.9539626,
+      "lon": 77.5851182,
+      "tags": {
+        "brand": "Nandini",
+        "check_date": "2023-11-23",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11371236635,
+      "lat": 12.9545088,
+      "lon": 77.5833551,
+      "tags": {
+        "brand": "Apollo Tyres",
+        "brand:wikidata": "Q4780362",
+        "check_date": "2023-11-23",
+        "name": "Apollo Tyres",
+        "shop": "tyres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11371245258,
+      "lat": 12.9491881,
+      "lon": 77.5931321,
+      "tags": {
+        "check_date": "2023-11-23",
+        "name": "Vara",
+        "shop": "clothes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11371245260,
+      "lat": 12.9510527,
+      "lon": 77.5911638,
+      "tags": {
+        "check_date": "2023-11-23",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11386048190,
+      "lat": 12.9394346,
+      "lon": 77.5838621,
+      "tags": {
+        "name": "Fruits shop",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11386048191,
+      "lat": 12.9394464,
+      "lon": 77.5838952,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Elaneeru(Tender coconut)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627257,
+      "lat": 12.9457837,
+      "lon": 77.5849985,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627258,
+      "lat": 12.9458145,
+      "lon": 77.5850019,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627259,
+      "lat": 12.9440457,
+      "lon": 77.5829918,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627260,
+      "lat": 12.9439403,
+      "lon": 77.582882,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627261,
+      "lat": 12.9438969,
+      "lon": 77.5822454,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627262,
+      "lat": 12.9438682,
+      "lon": 77.5813509,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627263,
+      "lat": 12.9443742,
+      "lon": 77.5811979,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627264,
+      "lat": 12.9444373,
+      "lon": 77.5812217,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627265,
+      "lat": 12.9452266,
+      "lon": 77.5814377,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627266,
+      "lat": 12.945364,
+      "lon": 77.5814803,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627267,
+      "lat": 12.9455418,
+      "lon": 77.5814797,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468627268,
+      "lat": 12.9457694,
+      "lon": 77.5815104,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699669,
+      "lat": 12.9459206,
+      "lon": 77.5815291,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699670,
+      "lat": 12.9460783,
+      "lon": 77.5815645,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699671,
+      "lat": 12.9461993,
+      "lon": 77.5815966,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699672,
+      "lat": 12.9462785,
+      "lon": 77.5816307,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699673,
+      "lat": 12.9465015,
+      "lon": 77.5816882,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699674,
+      "lat": 12.9467045,
+      "lon": 77.5817274,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699675,
+      "lat": 12.9468784,
+      "lon": 77.5817496,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699676,
+      "lat": 12.947,
+      "lon": 77.5817368,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699677,
+      "lat": 12.9472714,
+      "lon": 77.5817281,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699678,
+      "lat": 12.9474742,
+      "lon": 77.5816435,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699679,
+      "lat": 12.9476314,
+      "lon": 77.5814638,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699680,
+      "lat": 12.9477532,
+      "lon": 77.5813866,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699681,
+      "lat": 12.9478352,
+      "lon": 77.5813691,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699682,
+      "lat": 12.9479148,
+      "lon": 77.5813009,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699683,
+      "lat": 12.948031,
+      "lon": 77.5812922,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468699684,
+      "lat": 12.9499238,
+      "lon": 77.5831444,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "waste": "organic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000027565,
+      "lat": 12.9478573,
+      "lon": 77.5831559,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000027567,
+      "lat": 12.9477595,
+      "lon": 77.5832855,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000027568,
+      "lat": 12.9494589,
+      "lon": 77.58495,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000044812,
+      "lat": 12.9477268,
+      "lon": 77.5833393,
+      "tags": {
+        "amenity": "waste_basket",
+        "material": "plastic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000047038,
+      "lat": 12.9472808,
+      "lon": 77.5843206,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000047039,
+      "lat": 12.9472593,
+      "lon": 77.5840031,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000048464,
+      "lat": 12.9499556,
+      "lon": 77.5832852,
+      "tags": {
+        "amenity": "waste_basket",
+        "material": "plastic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000048468,
+      "lat": 12.9533931,
+      "lon": 77.5850082,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000049521,
+      "lat": 12.9492228,
+      "lon": 77.5841598,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000053550,
+      "lat": 12.9485766,
+      "lon": 77.5806648,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000061698,
+      "lat": 12.948785,
+      "lon": 77.5812241,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000067105,
+      "lat": 12.9486908,
+      "lon": 77.5808158,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000067106,
+      "lat": 12.9487856,
+      "lon": 77.5809973,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000067107,
+      "lat": 12.9487785,
+      "lon": 77.5810786,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000068522,
+      "lat": 12.947666,
+      "lon": 77.5846436,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000068523,
+      "lat": 12.9476499,
+      "lon": 77.5847152,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000068525,
+      "lat": 12.9477132,
+      "lon": 77.5846983,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078219,
+      "lat": 12.9475934,
+      "lon": 77.583714,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078220,
+      "lat": 12.9475127,
+      "lon": 77.5836882,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078221,
+      "lat": 12.9475055,
+      "lon": 77.5837178,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078223,
+      "lat": 12.9511021,
+      "lon": 77.58344,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "concrete",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078224,
+      "lat": 12.9511129,
+      "lon": 77.5834439,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "waste": "organic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078225,
+      "lat": 12.9511196,
+      "lon": 77.5834463,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue",
+        "waste": "recycling"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078227,
+      "lat": 12.9486174,
+      "lon": 77.5860148,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000078228,
+      "lat": 12.9484836,
+      "lon": 77.5859696,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000079741,
+      "lat": 12.9485218,
+      "lon": 77.5813824,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000080414,
+      "lat": 12.9480283,
+      "lon": 77.5849067,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000080415,
+      "lat": 12.9480712,
+      "lon": 77.584905,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000080416,
+      "lat": 12.948136,
+      "lon": 77.5850683,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000081609,
+      "lat": 12.948523,
+      "lon": 77.5814169,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000081611,
+      "lat": 12.9485545,
+      "lon": 77.5816222,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000082918,
+      "lat": 12.9493494,
+      "lon": 77.584222,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "material": "plastic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000085233,
+      "lat": 12.9484807,
+      "lon": 77.581678,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000085234,
+      "lat": 12.9484917,
+      "lon": 77.5817179,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000085310,
+      "lat": 12.9494656,
+      "lon": 77.5826178,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000085311,
+      "lat": 12.949415,
+      "lon": 77.5827961,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000085312,
+      "lat": 12.9509026,
+      "lon": 77.5833921,
+      "tags": {
+        "access": "yes",
+        "amenity": "drinking_water",
+        "fee": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000085313,
+      "lat": 12.9509248,
+      "lon": 77.5833982,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "concrete",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000089575,
+      "lat": 12.9483874,
+      "lon": 77.5860061,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090166,
+      "lat": 12.9475017,
+      "lon": 77.583829,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090167,
+      "lat": 12.9475618,
+      "lon": 77.5838651,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090276,
+      "lat": 12.9486722,
+      "lon": 77.5826276,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue",
+        "waste": "recycling"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090277,
+      "lat": 12.9486733,
+      "lon": 77.582625,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "waste": "organic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090679,
+      "lat": 12.9482159,
+      "lon": 77.5859175,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090680,
+      "lat": 12.9481869,
+      "lon": 77.585967,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090681,
+      "lat": 12.9480986,
+      "lon": 77.5858959,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090682,
+      "lat": 12.9480757,
+      "lon": 77.5859462,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090683,
+      "lat": 12.9480065,
+      "lon": 77.5859348,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090685,
+      "lat": 12.9474557,
+      "lon": 77.5855503,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090686,
+      "lat": 12.9473448,
+      "lon": 77.5852251,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000090687,
+      "lat": 12.9473069,
+      "lon": 77.5848944,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091023,
+      "lat": 12.9489204,
+      "lon": 77.585728,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091024,
+      "lat": 12.9488577,
+      "lon": 77.585667,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091025,
+      "lat": 12.948786,
+      "lon": 77.5857283,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091026,
+      "lat": 12.9488515,
+      "lon": 77.585745,
+      "tags": {
+        "bench": "yes",
+        "leisure": "picnic_table",
+        "material": "wood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091445,
+      "lat": 12.9481917,
+      "lon": 77.5829135,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091447,
+      "lat": 12.9479768,
+      "lon": 77.5830381,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091960,
+      "lat": 12.949262,
+      "lon": 77.5833652,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091961,
+      "lat": 12.9492295,
+      "lon": 77.5835395,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091962,
+      "lat": 12.949233,
+      "lon": 77.5835556,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000091963,
+      "lat": 12.9492055,
+      "lon": 77.5836832,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000092276,
+      "lat": 12.9476195,
+      "lon": 77.5836105,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000092277,
+      "lat": 12.9476021,
+      "lon": 77.5836666,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093289,
+      "lat": 12.9503107,
+      "lon": 77.5832383,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093290,
+      "lat": 12.9499754,
+      "lon": 77.5831517,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "concrete",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093490,
+      "lat": 12.9477324,
+      "lon": 77.5847176,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093491,
+      "lat": 12.9476864,
+      "lon": 77.5847734,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093492,
+      "lat": 12.9477876,
+      "lon": 77.5848177,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093494,
+      "lat": 12.9478337,
+      "lon": 77.5849751,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093495,
+      "lat": 12.9478436,
+      "lon": 77.58498,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000093776,
+      "lat": 12.949167,
+      "lon": 77.5829491,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue",
+        "waste": "recycling"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095350,
+      "lat": 12.9499232,
+      "lon": 77.5831298,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue",
+        "waste": "recycling"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095351,
+      "lat": 12.9514406,
+      "lon": 77.5835265,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095352,
+      "lat": 12.9515001,
+      "lon": 77.5836554,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "concrete",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095353,
+      "lat": 12.9514716,
+      "lon": 77.5836507,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue",
+        "waste": "recycling"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095354,
+      "lat": 12.9514523,
+      "lon": 77.5836481,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "waste": "organic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095490,
+      "lat": 12.9491717,
+      "lon": 77.5840157,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "brown"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095491,
+      "lat": 12.9491744,
+      "lon": 77.5839919,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095492,
+      "lat": 12.949182,
+      "lon": 77.5841422,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095493,
+      "lat": 12.9491763,
+      "lon": 77.5841304,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "name:en": "Trashcan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095495,
+      "lat": 12.9493312,
+      "lon": 77.5842214,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095496,
+      "lat": 12.9494982,
+      "lon": 77.5845087,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "brown"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095497,
+      "lat": 12.9494406,
+      "lon": 77.5845919,
+      "tags": {
+        "amenity": "bench",
+        "lit": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095498,
+      "lat": 12.9494132,
+      "lon": 77.5846938,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095499,
+      "lat": 12.949418,
+      "lon": 77.5847239,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095500,
+      "lat": 12.9494089,
+      "lon": 77.5848058,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095501,
+      "lat": 12.9494216,
+      "lon": 77.5848413,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "brown"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000095993,
+      "lat": 12.9491988,
+      "lon": 77.5841508,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000101352,
+      "lat": 12.9500151,
+      "lon": 77.5832921,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "concrete",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000101930,
+      "lat": 12.9500749,
+      "lon": 77.5828167,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000101977,
+      "lat": 12.9492318,
+      "lon": 77.5829608,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "concrete",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000101980,
+      "lat": 12.9472849,
+      "lon": 77.5839237,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000101981,
+      "lat": 12.9472794,
+      "lon": 77.583906,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000103764,
+      "lat": 12.9515979,
+      "lon": 77.5835711,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000103765,
+      "lat": 12.9516136,
+      "lon": 77.583575,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "mixed"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000103915,
+      "lat": 12.9509502,
+      "lon": 77.5830348,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000103916,
+      "lat": 12.9510058,
+      "lon": 77.5829578,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000103918,
+      "lat": 12.9513388,
+      "lon": 77.5830781,
+      "tags": {
+        "amenity": "shelter",
+        "bench": "no",
+        "lit": "no",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000103919,
+      "lat": 12.9489527,
+      "lon": 77.5850679,
+      "tags": {
+        "brand": "HOPCOMS",
+        "brand:wikidata": "Q22908959",
+        "check_date": "2024-06-22",
+        "name": "HOPCOMS",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000105613,
+      "lat": 12.9512843,
+      "lon": 77.5834874,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "concrete",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000106443,
+      "lat": 12.9494228,
+      "lon": 77.5850459,
+      "tags": {
+        "amenity": "waste_basket",
+        "material": "plastic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000106446,
+      "lat": 12.9508354,
+      "lon": 77.5835162,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000106447,
+      "lat": 12.9508996,
+      "lon": 77.5835348,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000107567,
+      "lat": 12.9472912,
+      "lon": 77.5836489,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000107758,
+      "lat": 12.9535803,
+      "lon": 77.5849908,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108477,
+      "lat": 12.9492162,
+      "lon": 77.585193,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108478,
+      "lat": 12.9491696,
+      "lon": 77.5853015,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108675,
+      "lat": 12.9501342,
+      "lon": 77.5834318,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108676,
+      "lat": 12.9501303,
+      "lon": 77.5834791,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108779,
+      "lat": 12.9504113,
+      "lon": 77.5833837,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue",
+        "waste": "recycling"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108780,
+      "lat": 12.9503965,
+      "lon": 77.5833821,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green",
+        "waste": "organic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108969,
+      "lat": 12.9494393,
+      "lon": 77.5850413,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000108970,
+      "lat": 12.949401,
+      "lon": 77.5851211,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000109175,
+      "lat": 12.9532948,
+      "lon": 77.5851274,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000109176,
+      "lat": 12.953211,
+      "lon": 77.585119,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000111340,
+      "lat": 12.9475707,
+      "lon": 77.5841371,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000111342,
+      "lat": 12.9475653,
+      "lon": 77.5843578,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000111344,
+      "lat": 12.9475989,
+      "lon": 77.5845301,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000113010,
+      "lat": 12.9493673,
+      "lon": 77.5852288,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "brown"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000113016,
+      "lat": 12.948024,
+      "lon": 77.5858658,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "brown"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000113017,
+      "lat": 12.947953,
+      "lon": 77.5859284,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "blue"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000113018,
+      "lat": 12.9479382,
+      "lon": 77.5859235,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000120030,
+      "lat": 12.9510886,
+      "lon": 77.5837854,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000120031,
+      "lat": 12.9511454,
+      "lon": 77.583799,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126198,
+      "lat": 12.9474604,
+      "lon": 77.5831749,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126199,
+      "lat": 12.9475503,
+      "lon": 77.5830068,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126200,
+      "lat": 12.9476395,
+      "lon": 77.5828504,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126201,
+      "lat": 12.9479526,
+      "lon": 77.5823043,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126202,
+      "lat": 12.9481217,
+      "lon": 77.5820667,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126203,
+      "lat": 12.9483094,
+      "lon": 77.5818383,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "wood",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126769,
+      "lat": 12.9518909,
+      "lon": 77.5848763,
+      "tags": {
+        "amenity": "clock"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126770,
+      "lat": 12.9511255,
+      "lon": 77.5847047,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126771,
+      "lat": 12.9509424,
+      "lon": 77.5845687,
+      "tags": {
+        "brand": "HOPCOMS",
+        "brand:wikidata": "Q22908959",
+        "check_date": "2024-06-22",
+        "name": "HOPCOMS",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126772,
+      "lat": 12.9500557,
+      "lon": 77.5843326,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000126773,
+      "lat": 12.9497285,
+      "lon": 77.5839621,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333829,
+      "lat": 12.9498201,
+      "lon": 77.583229,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333830,
+      "lat": 12.9487492,
+      "lon": 77.5827597,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333833,
+      "lat": 12.9484563,
+      "lon": 77.5827977,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333834,
+      "lat": 12.9484582,
+      "lon": 77.5829158,
+      "tags": {
+        "amenity": "waste_basket",
+        "material": "plastic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333835,
+      "lat": 12.9485588,
+      "lon": 77.5829471,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333836,
+      "lat": 12.9486003,
+      "lon": 77.58295,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333837,
+      "lat": 12.9486256,
+      "lon": 77.5829604,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333838,
+      "lat": 12.948652,
+      "lon": 77.5829647,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333839,
+      "lat": 12.9487508,
+      "lon": 77.5829779,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333840,
+      "lat": 12.948857,
+      "lon": 77.5830116,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333841,
+      "lat": 12.9490632,
+      "lon": 77.5830589,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333842,
+      "lat": 12.949531,
+      "lon": 77.5831773,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333843,
+      "lat": 12.9495587,
+      "lon": 77.5831816,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333844,
+      "lat": 12.9487765,
+      "lon": 77.5822511,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333845,
+      "lat": 12.9498669,
+      "lon": 77.5832425,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333846,
+      "lat": 12.9499774,
+      "lon": 77.5832663,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333847,
+      "lat": 12.9500179,
+      "lon": 77.583282,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333848,
+      "lat": 12.9501188,
+      "lon": 77.5834491,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333849,
+      "lat": 12.9501128,
+      "lon": 77.5834673,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333850,
+      "lat": 12.9511324,
+      "lon": 77.5834435,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333851,
+      "lat": 12.9513197,
+      "lon": 77.5836359,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333852,
+      "lat": 12.9514036,
+      "lon": 77.5835121,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "concrete"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333853,
+      "lat": 12.9512665,
+      "lon": 77.5834608,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "concrete"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333854,
+      "lat": 12.9510703,
+      "lon": 77.5834289,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "concrete"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333855,
+      "lat": 12.9510243,
+      "lon": 77.5835594,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333856,
+      "lat": 12.9509138,
+      "lon": 77.5835384,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333857,
+      "lat": 12.9509549,
+      "lon": 77.5835467,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333858,
+      "lat": 12.9515319,
+      "lon": 77.5835405,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333859,
+      "lat": 12.9515851,
+      "lon": 77.5835592,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333860,
+      "lat": 12.9535837,
+      "lon": 77.5849067,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333861,
+      "lat": 12.9517936,
+      "lon": 77.5837218,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333862,
+      "lat": 12.9519076,
+      "lon": 77.5836322,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333863,
+      "lat": 12.9518996,
+      "lon": 77.5837484,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333864,
+      "lat": 12.9522123,
+      "lon": 77.5838239,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333865,
+      "lat": 12.9522509,
+      "lon": 77.5838309,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333866,
+      "lat": 12.9523954,
+      "lon": 77.5838654,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333867,
+      "lat": 12.9523299,
+      "lon": 77.5837435,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000333868,
+      "lat": 12.9523508,
+      "lon": 77.5841706,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359669,
+      "lat": 12.9524939,
+      "lon": 77.5837914,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359670,
+      "lat": 12.9529697,
+      "lon": 77.5839233,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359671,
+      "lat": 12.9531516,
+      "lon": 77.5841746,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359672,
+      "lat": 12.9532353,
+      "lon": 77.5841196,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359673,
+      "lat": 12.9534505,
+      "lon": 77.5846776,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359674,
+      "lat": 12.9534355,
+      "lon": 77.5846438,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359675,
+      "lat": 12.9535811,
+      "lon": 77.5847475,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000359676,
+      "lat": 12.9518218,
+      "lon": 77.5836145,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009574028,
+      "lat": 12.9482237,
+      "lon": 77.5805186,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009574029,
+      "lat": 12.9484159,
+      "lon": 77.5809324,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009574030,
+      "lat": 12.9484662,
+      "lon": 77.5809022,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009574031,
+      "lat": 12.9485211,
+      "lon": 77.5808499,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009574032,
+      "lat": 12.9485629,
+      "lon": 77.5807929,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009574033,
+      "lat": 12.948574,
+      "lon": 77.5807299,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12048924774,
+      "lat": 12.93857,
+      "lon": 77.5801176,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2024-07-12",
+        "level": "1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12161153127,
+      "lat": 12.9461753,
+      "lon": 77.5801491,
+      "tags": {
+        "access": "customers",
+        "amenity": "drinking_water",
+        "fee": "no",
+        "indoor": "yes",
+        "level": "1",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12161153129,
+      "lat": 12.9464594,
+      "lon": 77.5801001,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2024-09-07",
+        "covered": "yes",
+        "indoor": "yes",
+        "level": "1",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12161169167,
+      "lat": 12.9462343,
+      "lon": 77.580172,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12177633672,
+      "lat": 12.9385273,
+      "lon": 77.5819787,
+      "tags": {
+        "air_conditioning": "no",
+        "amenity": "fast_food",
+        "check_date": "2024-09-15",
+        "cuisine": "south_indian",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Namma SLN",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "toilets": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229231972,
+      "lat": 12.950408,
+      "lon": 77.5841621,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12492566397,
+      "lat": 12.9383537,
+      "lon": 77.5802162,
+      "tags": {
+        "amenity": "charging_station",
+        "charging_station:battery_swapping": "yes",
+        "fee": "yes",
+        "level": "0",
+        "motorcar": "no",
+        "motorcycle": "yes",
+        "name": "Honda e:swap",
+        "operator": "Honda e:swap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12697993702,
+      "lat": 12.9401608,
+      "lon": 77.5839468,
+      "tags": {
+        "addr:floor": "G",
+        "amenity": "cafe",
+        "check_date": "2025-09-28",
+        "cuisine": "coffee_shop",
+        "level": "0",
+        "name": "block two coffee",
+        "opening_hours": "08:00-23:00",
+        "takeaway": "only",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12925347032,
+      "lat": 12.9546952,
+      "lon": 77.5822366,
+      "tags": {
+        "check_date": "2025-06-19",
+        "name": "AS Auto Sparts",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12925347033,
+      "lat": 12.9546874,
+      "lon": 77.5821725,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-06-19",
+        "name": "Shahi Tandoor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12966576918,
+      "lat": 12.9514233,
+      "lon": 77.5830916,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12995318319,
+      "lat": 12.9410031,
+      "lon": 77.5840085,
+      "tags": {
+        "amenity": "bench",
+        "armrest": "no",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "6"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12995318330,
+      "lat": 12.9394849,
+      "lon": 77.5839119,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-07-12",
+        "name": "Umesh Dosa Point"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13131428225,
+      "lat": 12.9479933,
+      "lon": 77.580087,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "Lalbagh West Gate",
+        "addr:street": "Rashtriya Vidyalaya Road",
+        "name": "Tea Stall",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13154523676,
+      "lat": 12.938528,
+      "lon": 77.5803599,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Lassi Shop",
+        "shop": "beverages",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13179711051,
+      "lat": 12.9401705,
+      "lon": 77.583974,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13195197468,
+      "lat": 12.9510042,
+      "lon": 77.5874497,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13195211142,
+      "lat": 12.9509978,
+      "lon": 77.587449,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13341775166,
+      "lat": 12.9506612,
+      "lon": 77.5919149,
+      "tags": {
+        "addr:floor": "2",
+        "amenity": "restaurant",
+        "check_date": "2025-11-30",
+        "internet_access": "no",
+        "name": "Alankaaram",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13341775180,
+      "lat": 12.9506612,
+      "lon": 77.5919149,
+      "tags": {
+        "addr:floor": "G",
+        "amenity": "fixme",
+        "check_date": "2025-11-30",
+        "fixme": "type",
+        "fixme:type": "bike showroom",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Honda Big Wing",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 15802464,
+      "center": {
+        "lat": 12.9488929,
+        "lon": 77.5866687
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Lalbagh Botanical Gardens",
+        "name:kn": "ಲಾಲ್‌ಬಾಗ್ ಸಸ್ಯೋದ್ಯಾನ",
+        "name:te": "లాల్‌బాగ్ వృక్షశాస్త్ర ఉద్యానవనం",
+        "tourism": "attraction",
+        "wikidata": "Q200711",
+        "wikimedia_commons": "Category:Lalbagh Botanical Garden",
+        "wikipedia": "en:Lal Bagh"
+      }
+    },
+    {
+      "type": "way",
+      "id": 130863019,
+      "center": {
+        "lat": 12.9393622,
+        "lon": 77.5833869
+      },
+      "tags": {
+        "amenity": "public_building",
+        "building": "yes",
+        "name": "BBMP Complex (Jayanagar 2nd Block)",
+        "name:kn": "ಬಿಬಿಎಂಪಿ ಸಂಕೀರ್ಣ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131442463,
+      "center": {
+        "lat": 12.9506553,
+        "lon": 77.5912883
+      },
+      "tags": {
+        "amenity": "marketplace",
+        "name": "HOPCOMS",
+        "name:kn": "ಹಾಪ್ ಕಾಮ್ಸ್"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131487203,
+      "center": {
+        "lat": 12.9545884,
+        "lon": 77.58246
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2023-11-23",
+        "denomination": "sunni",
+        "name": "Masjid-e-Abul Qasim",
+        "name:kn": "ಮಾವಳ್ಳಿ ಮಸೀದಿ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 152462759,
+      "center": {
+        "lat": 12.9515662,
+        "lon": 77.5905178
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 202799608,
+      "center": {
+        "lat": 12.9411323,
+        "lon": 77.5808612
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Bangalore Higher Secondary School (BHSS)",
+        "name:kn": "ಬೆಂಗಳೂರು ಪ್ರೌಡ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 232207307,
+      "center": {
+        "lat": 12.9492451,
+        "lon": 77.5908599
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "yes",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 257203639,
+      "center": {
+        "lat": 12.940415,
+        "lon": 77.5808636
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Vijaya College",
+        "name:kn": "ವಿಜಯ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335369724,
+      "center": {
+        "lat": 12.9490049,
+        "lon": 77.5924776
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335369725,
+      "center": {
+        "lat": 12.9492563,
+        "lon": 77.5878311
+      },
+      "tags": {
+        "amenity": "parking",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335369726,
+      "center": {
+        "lat": 12.9500526,
+        "lon": 77.5893375
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Bonsai Park",
+        "name:kn": "ಬೊನ್ಸಾಯಿ ಉದ್ಯಾನ",
+        "source": "knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335369765,
+      "center": {
+        "lat": 12.9497939,
+        "lon": 77.5856218
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335369766,
+      "center": {
+        "lat": 12.9503285,
+        "lon": 77.5857108
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335704458,
+      "center": {
+        "lat": 12.9506906,
+        "lon": 77.5829999
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335704459,
+      "center": {
+        "lat": 12.9503038,
+        "lon": 77.5847757
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335704460,
+      "center": {
+        "lat": 12.9504212,
+        "lon": 77.58397
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335704462,
+      "center": {
+        "lat": 12.949771,
+        "lon": 77.5839702
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335704463,
+      "center": {
+        "lat": 12.9485317,
+        "lon": 77.5845384
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338245372,
+      "center": {
+        "lat": 12.9432616,
+        "lon": 77.5807346
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "R V Teachers College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338245809,
+      "center": {
+        "lat": 12.9430855,
+        "lon": 77.5801805
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560004",
+        "addr:street": "Rashtriya Vidyalaya Road",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shri Vallabhamba Ganapathi and Shaneshwara Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338245947,
+      "center": {
+        "lat": 12.9426104,
+        "lon": 77.5802791
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560004",
+        "addr:street": "Rashtriya Vidyalaya Road",
+        "amenity": "bank",
+        "atm": "no",
+        "brand": "Central Bank of India",
+        "brand:wikidata": "Q2007090",
+        "brand:wikipedia": "en:Central Bank of India",
+        "building": "yes",
+        "name": "Central Bank of India",
+        "name:en": "Central Bank of India",
+        "name:kn": "ಸೆಂಟ್ರಲ್ ಬ್ಯಾಂಕ್",
+        "opening_hours": "Mo-Fr 09:00-16:00, Sa 09:00-13:00",
+        "website": "https://www.centralbankofindia.co.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338246149,
+      "center": {
+        "lat": 12.9427359,
+        "lon": 77.5803146
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "545",
+        "addr:postcode": "560004",
+        "addr:street": "Rashtriya Vidyalaya Road",
+        "building": "yes",
+        "name": "Krishna Jewelers",
+        "opening_hours": "11 am to 2 pm, 4pm to 8 pm;Sunday Holiday",
+        "operator": "Prasad M N",
+        "phone": "9844127656",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347076931,
+      "center": {
+        "lat": 12.9500332,
+        "lon": 77.5922164
+      },
+      "tags": {
+        "building": "yes",
+        "name": "HMG Stones",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "way",
+      "id": 549373054,
+      "center": {
+        "lat": 12.9496516,
+        "lon": 77.5803074
+      },
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "name": "South City Hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 688824194,
+      "center": {
+        "lat": 12.9496246,
+        "lon": 77.5928626
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "brand:wikipedia": "en:Royal Dutch Shell",
+        "compressed_air": "yes",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್"
+      }
+    },
+    {
+      "type": "way",
+      "id": 712309876,
+      "center": {
+        "lat": 12.9504783,
+        "lon": 77.5838806
+      },
+      "tags": {
+        "description": "A 20 million year old petrified wood fossil from Thiruvakkarai, Tamil Nadu, India",
+        "leisure": "park",
+        "name": "Fossilized Tree",
+        "wikidata": "Q6972778",
+        "wikimedia_commons": "Category:National Fossil Wood Park, Tiruvakkarai",
+        "wikipedia": "en:National Fossil Wood Park, Tiruvakkarai"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1082722307,
+      "center": {
+        "lat": 12.9498179,
+        "lon": 77.586695
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1296053203,
+      "center": {
+        "lat": 12.9490876,
+        "lon": 77.5807097
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "RV Public School",
+        "wikidata": "Q22032304"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1350390235,
+      "center": {
+        "lat": 12.9372378,
+        "lon": 77.5814124
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    }
+  ]
+}

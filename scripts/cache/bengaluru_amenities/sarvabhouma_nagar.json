@@ -1,0 +1,471 @@
+{
+  "area_name": "Sarvabhouma Nagar",
+  "osm_id": 19883483,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 34,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1463594510,
+      "lat": 12.9099779,
+      "lon": 77.5508753,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Masala",
+        "name:kn": "ಮಸಾಲ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463594776,
+      "lat": 12.9100302,
+      "lon": 77.5509021,
+      "tags": {
+        "amenity": "bar",
+        "name": "Masala",
+        "name:kn": "ಮಸಾಲ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463595320,
+      "lat": 12.9109528,
+      "lon": 77.5516022,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2120440982,
+      "lat": 12.9082122,
+      "lon": 77.5400363,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2120440983,
+      "lat": 12.9082284,
+      "lon": 77.540067,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123575611,
+      "lat": 12.9115707,
+      "lon": 77.5493949,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Chikkalasandra Raghavendra Swami Mutt",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123582023,
+      "lat": 12.9106952,
+      "lon": 77.5504089,
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123582390,
+      "lat": 12.9117827,
+      "lon": 77.5468577,
+      "tags": {
+        "leisure": "park",
+        "name": "Ramanjenaya Nagara Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123584079,
+      "lat": 12.9111893,
+      "lon": 77.5451491,
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123584652,
+      "lat": 12.9114769,
+      "lon": 77.5450633,
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123585527,
+      "lat": 12.9118324,
+      "lon": 77.544956,
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123625107,
+      "lat": 12.9130191,
+      "lon": 77.5463267,
+      "tags": {
+        "name": "A.R Minimart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2123626147,
+      "lat": 12.9103056,
+      "lon": 77.5454924,
+      "tags": {
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2984290232,
+      "lat": 12.9093408,
+      "lon": 77.5493517,
+      "tags": {
+        "name": "Farm Fresh",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3603794071,
+      "lat": 12.9113891,
+      "lon": 77.5531687,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "opening_hours": "24 Hour ATM",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545284791,
+      "lat": 12.908844,
+      "lon": 77.5410977,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545311890,
+      "lat": 12.9111565,
+      "lon": 77.5517155,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "addr:street": "Dr. Vishnuvardhan Road",
+        "level": "0",
+        "name": "Kanti Sweets",
+        "name:en": "Kanti Sweets",
+        "operator": "Kanti Sweets",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:paytm": "yes",
+        "payment:upi": "yes",
+        "shop": "bakery",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545856994,
+      "lat": 12.9111811,
+      "lon": 77.5517214,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "addr:street": "Dr. Vishnuvardhan Road",
+        "level": "1",
+        "name": "Naturals Salon",
+        "name:en": "Naturals Salon",
+        "shop": "cosmetics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545906689,
+      "lat": 12.9089953,
+      "lon": 77.5429575,
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545906792,
+      "lat": 12.9107538,
+      "lon": 77.5513427,
+      "tags": {
+        "addr:postcode": "560061",
+        "addr:street": "Dr. Vishnuvardhan Road",
+        "amenity": "fast_food",
+        "name": "Uttarahalli Biriyani House",
+        "name:en": "Uttarahalli Biriyani House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546027012,
+      "lat": 12.90929,
+      "lon": 77.5492265,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "23",
+        "addr:postcode": "560061",
+        "addr:street": "7th Main",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "South Grand",
+        "opening_hours": "06:30-22:00",
+        "smoking": "no",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5596655985,
+      "lat": 12.9099594,
+      "lon": 77.5499367,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "name": "Patanjali Store",
+        "operator": "Patanjali",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5596655986,
+      "lat": 12.9098827,
+      "lon": 77.5505327,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "addr:street": "Dr. Vishnuvardhan Road",
+        "level": "0.5",
+        "name": "Poorvika Mobiles",
+        "name:kn": "ಪೂರ್ವಿಕ",
+        "operator": "Poorvika",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5596655987,
+      "lat": 12.9099841,
+      "lon": 77.5500912,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "level": "-0.5",
+        "name": "Happy Pockets Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5615139110,
+      "lat": 12.9092402,
+      "lon": 77.5527258,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "addr:street": "Garden School Road",
+        "name": "Saraswati Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924714,
+      "lat": 12.913901,
+      "lon": 77.546925,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ramanjaneyanagar, Chikkalasandra, Bengaluru",
+        "addr:postcode": "560061",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Gowri Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924733,
+      "lat": 12.914444,
+      "lon": 77.546796,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Ramanjeneya Nagar Main Road, Sneha Colony, Chikkalasandra, Bengaluru",
+        "addr:postcode": "560061",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "GBY ENT Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924736,
+      "lat": 12.913579,
+      "lon": 77.548358,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Sarvabhouma Nagar, Chikkalasandra, Bengaluru",
+        "addr:postcode": "560061",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Root & Crown Dental Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924773,
+      "lat": 12.914273,
+      "lon": 77.548708,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Sarvabhuma Nagar, Chikkalasandra, Bengaluru",
+        "addr:postcode": "560061",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Akshay Dental care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924774,
+      "lat": 12.909983,
+      "lon": 77.544557,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Simhadri Layout, Uttarahalli Hobli, Bengaluru",
+        "addr:postcode": "560061",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Ullas Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 202062391,
+      "center": {
+        "lat": 12.9088231,
+        "lon": 77.5402569
+      },
+      "tags": {
+        "amenity": "school",
+        "building": "yes",
+        "name": "New Kumarans School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347539271,
+      "center": {
+        "lat": 12.9098917,
+        "lon": 77.5501266
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "addr:street": "Dr. Vishnuvardhan Road",
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "building": "yes",
+        "level": "0.5",
+        "name": "Bata",
+        "name:kn": "ಬಾಟಾ",
+        "operator": "Bata",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "shop": "shoes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348244961,
+      "center": {
+        "lat": 12.9100473,
+        "lon": 77.5500181
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560061",
+        "addr:street": "6th Main Rd, KSRTC Layout, Chikkalasandra",
+        "amenity": "fast_food",
+        "building": "yes",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "Hari Super Sandwich",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1033608653,
+      "center": {
+        "lat": 12.9107008,
+        "lon": 77.5504568
+      },
+      "tags": {
+        "leisure": "playground",
+        "playground:theme": "playground",
+        "surface": "dirt"
+      }
+    }
+  ]
+}

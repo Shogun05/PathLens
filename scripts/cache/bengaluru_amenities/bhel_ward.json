@@ -1,0 +1,567 @@
+{
+  "area_name": "BHEL Ward",
+  "osm_id": 19883433,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 41,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1307555240,
+      "lat": 12.9308436,
+      "lon": 77.5955007,
+      "tags": {
+        "name": "Sagar Automobiles",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1440356373,
+      "lat": 12.9358054,
+      "lon": 77.5927686,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Wellness Forever",
+        "brand:wikidata": "Q123114721",
+        "healthcare": "pharmacy",
+        "name": "Wellness Forever",
+        "name:en": "Wellness forever"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1466684135,
+      "lat": 12.9309662,
+      "lon": 77.6004616,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Auto LPG",
+        "fuel:cng": "yes",
+        "fuel:lpg": "yes",
+        "name": "Classic Auto Gas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473309603,
+      "lat": 12.9285393,
+      "lon": 77.6001599,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474472488,
+      "lat": 12.9387115,
+      "lon": 77.5937737,
+      "tags": {
+        "amenity": "hospital",
+        "description": "Patients initally should come here to scrrened to refer to the appropriate department for their disorder",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "name": "NIMHANS Screening block"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474472859,
+      "lat": 12.9388056,
+      "lon": 77.5942994,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "NIMHANS OPD"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474473881,
+      "lat": 12.9395395,
+      "lon": 77.5959949,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1603318753,
+      "lat": 12.937389,
+      "lon": 77.5993673,
+      "tags": {
+        "addr:postcode": "560029",
+        "amenity": "post_office",
+        "name": "Dharmaram College Sub Post Office"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2523956870,
+      "lat": 12.9322822,
+      "lon": 77.5981308,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560041",
+        "amenity": "school",
+        "name": "New Baldwin School",
+        "name:kn": "ನ್ಯೂ ಬಾಲ್ಡ್ ವಿನ್ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3702268573,
+      "lat": 12.9307235,
+      "lon": 77.6004442,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Chicken County",
+        "note": "Halal Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4172906593,
+      "lat": 12.9286014,
+      "lon": 77.5928375,
+      "tags": {
+        "addr:street": "Tilak Nagar Main Road",
+        "amenity": "fast_food",
+        "name": "Paani Kum Chai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4843100436,
+      "lat": 12.9392324,
+      "lon": 77.5949154,
+      "tags": {
+        "name": "Bakery Nimhans",
+        "name:en": "Bakery Nimhans",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4847845823,
+      "lat": 12.935905,
+      "lon": 77.5928069,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Prasad medicals",
+        "name:en": "Prasad medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4847850821,
+      "lat": 12.9390995,
+      "lon": 77.5946074,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Sri Ram coffee shop",
+        "name:en": "Sri Ram coffee shop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849094823,
+      "lat": 12.9383957,
+      "lon": 77.5925929,
+      "tags": {
+        "name": "Xerox",
+        "name:en": "Xerox",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234803135,
+      "lat": 12.928555,
+      "lon": 77.599351,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "4 Seasons Multi Cuisine Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234805899,
+      "lat": 12.9285254,
+      "lon": 77.6000608,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Vijayalakshmi Veg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234807614,
+      "lat": 12.9285122,
+      "lon": 77.6001778,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Muthoot Finance",
+        "brand:wikidata": "Q6943861",
+        "name": "Muthoot Finance",
+        "office": "financial"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349067615,
+      "lat": 12.9296754,
+      "lon": 77.5965327,
+      "tags": {
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Government Urdu Higher Primary School",
+        "name:kn": "ಸರ್ಕಾರಿ ಉರ್ದು ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಎಸ್‌.ರ್.ಕೆ ಗಾರ್ಡನ್",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349293094,
+      "lat": 12.9314978,
+      "lon": 77.5995415,
+      "tags": {
+        "addr:place": "Tilak Nagar",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GHPS Tilak Nagar",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ತಿಲಕ್ ನಗರ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6882713321,
+      "lat": 12.9375198,
+      "lon": 77.5985411,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "Dr. M. H. Marigowda Road",
+        "addr:postcode": "560029",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "99869900040",
+        "contact:phone": "8026094082",
+        "fax": "091080 6560723",
+        "name": "Kidwai Memorial Institute of Oncology Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "government",
+        "source": "OpenGovernmentData",
+        "website": "https://www.kmio.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6882713322,
+      "lat": 12.9357448,
+      "lon": 77.5938244,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "Jayanagar East, Byrasandra",
+        "addr:postcode": "560011",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9036586966",
+        "contact:phone": "8026564516",
+        "name": "Sanjaya Gandhi Accident Hospital and Research Institute Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "government",
+        "source": "OpenGovernmentData",
+        "website": "http://www.sgito.org"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938777910,
+      "lat": 12.9386321,
+      "lon": 77.5944105,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Hosur Road",
+        "addr:postcode": "560029",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "email": "rmo@nimhans.kar.nic.in;ms@nimhans.kar.nic.in",
+        "healthcare": "hospital",
+        "name": "National Institute of Mental Health and Neuro Sciences",
+        "operator:type": "government",
+        "short_name": "NIMHANS",
+        "source": "OpenGovernmentData",
+        "website": "https://nimhans.ac.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8279529784,
+      "lat": 12.9357161,
+      "lon": 77.594267,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Outpatients"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9730853893,
+      "lat": 12.9355966,
+      "lon": 77.5971575,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Kidwai Cancer Institute Radiation Block"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11294646342,
+      "lat": 12.936353,
+      "lon": 77.5927568,
+      "tags": {
+        "amenity": "public_bath",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11294646349,
+      "lat": 12.9293283,
+      "lon": 77.5926046,
+      "tags": {
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "HTM Dental Care Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11294646362,
+      "lat": 12.9307369,
+      "lon": 77.5926549,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "operator": "Karnataka Bank",
+        "operator:wikidata": "Q2042632"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11294646363,
+      "lat": 12.9363445,
+      "lon": 77.5927599,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11295217457,
+      "lat": 12.9396498,
+      "lon": 77.5967825,
+      "tags": {
+        "amenity": "hospital",
+        "check_date": "2023-10-28",
+        "healthcare": "hospital",
+        "healthcare:speciality": "neurology",
+        "name": "Nimhans Mr-pet Center",
+        "operator:type": "government",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131610640,
+      "center": {
+        "lat": 12.9288628,
+        "lon": 77.5955361
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "sunni",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239738394,
+      "center": {
+        "lat": 12.9357539,
+        "lon": 77.6001395
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Government Technical Industrial Institute"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239738396,
+      "center": {
+        "lat": 12.9331301,
+        "lon": 77.5980883
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Fire Service Campus",
+        "name:kn": "ಅಗ್ನಿ ಸೇವಾ ಆವರಣ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239738408,
+      "center": {
+        "lat": 12.936526,
+        "lon": 77.5981388
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Dr.M.H Marigowda Road",
+        "addr:postcode": "560 029",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "oncology",
+        "name": "Kidwai Memorial Institute of Oncology",
+        "name:etymology:wikidata": "Q7282619",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "https://www.kidwai.kar.nic.in/",
+        "wikidata": "Q6405058",
+        "wikipedia": "en:Kidwai Memorial Institute of Oncology"
+      }
+    },
+    {
+      "type": "way",
+      "id": 334493050,
+      "center": {
+        "lat": 12.9356389,
+        "lon": 77.5935945
+      },
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Sanjay Gandhi Accident and Trauma Hospital",
+        "name:etymology:wikidata": "Q730045",
+        "name:kn": "ಸಂಜಯ ಗಾಂಧಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 334493056,
+      "center": {
+        "lat": 12.9357711,
+        "lon": 77.5939433
+      },
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Sanjay Gandhi Accident and Trauma Hospital",
+        "name:etymology:wikidata": "Q730045",
+        "name:kn": "ಸಂಜಯ ಗಾಂಧಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347488024,
+      "center": {
+        "lat": 12.9288456,
+        "lon": 77.5971454
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560029",
+        "addr:street": "SR Krishnappa Garden, Hombegowda Nagar,",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "sunni",
+        "name": "Masjid-e-Husna",
+        "name:kn": "ಮಸ್ಜಿದ್ ಎ ಹುಸ್ನ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 788256779,
+      "center": {
+        "lat": 12.9337951,
+        "lon": 77.600289
+      },
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Jayanagara Fire Station",
+        "name:kn": "ಫೈರ್ ಅಂಡ್ ತುರ್ತು ಸೇವೆಗಳು ಅಕಾಡೆಮಿ",
+        "name:ta": "ஜெயாநகர் தீயணைப்பு நிலையம்"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1080795066,
+      "center": {
+        "lat": 12.9373112,
+        "lon": 77.5934888
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1242203393,
+      "center": {
+        "lat": 12.9311623,
+        "lon": 77.5976836
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1242203428,
+      "center": {
+        "lat": 12.9304914,
+        "lon": 77.5954162
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Byrasandra Lake Park"
+      }
+    }
+  ]
+}

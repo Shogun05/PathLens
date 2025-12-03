@@ -1,0 +1,160 @@
+{
+  "area_name": "Samadhana Nagar",
+  "osm_id": 19883392,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 11,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1474875685,
+      "lat": 13.0248621,
+      "lon": 77.6139585,
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Dr. Ambedkar Medical College Hospital",
+        "name:kn": "ಅಂಬೇಡ್ಕರ್ ವೈದ್ಯಕೀಯ ಕಾಲೇಜು ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886594828,
+      "lat": 13.0250774,
+      "lon": 77.6140174,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "K. G. Halli, Bengaluru",
+        "addr:postcode": "560045",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9980155789",
+        "contact:phone": "8025463442",
+        "name": "Dr. B. R. Ambedkar Medical College Hospital Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "https://www.bramc.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939074293,
+      "lat": 13.0218188,
+      "lon": 77.613084,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kadugondanahalli",
+        "addr:postcode": "560045",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "email": "drbramc@rediffmail.com",
+        "healthcare:speciality": "multi speciality",
+        "name": "Dr Ambedkar Medical College Hospital",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "http://www.bramc.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6950412307,
+      "lat": 13.0236062,
+      "lon": 77.6196139,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "5, Arabic College Main Road, Banglore",
+        "addr:postcode": "560045",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Al- Habeeb Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265567522,
+      "lat": 13.0213579,
+      "lon": 77.6189985,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265574592,
+      "lat": 13.0227436,
+      "lon": 77.6194946,
+      "tags": {
+        "amenity": "events_venue",
+        "name": "Amir Hall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265592079,
+      "lat": 13.0230689,
+      "lon": 77.619348,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Koya Pharma"
+      }
+    },
+    {
+      "type": "way",
+      "id": 175876882,
+      "center": {
+        "lat": 13.0241073,
+        "lon": 77.6148515
+      },
+      "tags": {
+        "addr:postcode": "560045",
+        "alt_name": "Ambedkar Medical College",
+        "amenity": "college",
+        "landuse": "education",
+        "name": "Dr. Ambedkar Medical College",
+        "name:etymology:wikidata": "Q231690",
+        "name:kn": "ಅಂಬೇಡ್ಕರ್ ವೈದ್ಯಕೀಯ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 389989913,
+      "center": {
+        "lat": 13.0218947,
+        "lon": 77.6128718
+      },
+      "tags": {
+        "amenity": "parking_space"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202598201,
+      "center": {
+        "lat": 13.0245659,
+        "lon": 77.6190841
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "CMA Grand Convention & Wedding Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1416890170,
+      "center": {
+        "lat": 13.0229144,
+        "lon": 77.6131504
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    }
+  ]
+}

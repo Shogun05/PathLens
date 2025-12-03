@@ -1,0 +1,154 @@
+{
+  "area_name": "Kempambudhi Ward",
+  "osm_id": 19883385,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 9,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1801375379,
+      "lat": 12.9469992,
+      "lon": 77.5641506,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Syndicate Bank",
+        "brand:wikidata": "Q2004088",
+        "name": "Syndicate Bank",
+        "name:en": "Syndicate Bank",
+        "name:kn": "ಸಿಂಡಿಕೇಟ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.syndicatebank.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55684219,
+      "center": {
+        "lat": 12.9507937,
+        "lon": 77.5548602
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Rajiv Gandhi Sports Complex",
+        "name:etymology:wikidata": "Q4593"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55684220,
+      "center": {
+        "lat": 12.951867,
+        "lon": 77.5589753
+      },
+      "tags": {
+        "alt_name": "Jinke Park",
+        "leisure": "park",
+        "name": "Dr Rajkumar Park",
+        "name:etymology:wikidata": "Q984634",
+        "name:kn": "ರಾಜಕುಮಾರ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362909552,
+      "center": {
+        "lat": 12.947441,
+        "lon": 77.5634781
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Hanumanth Nagar Park",
+        "name:kn": "ಹನುಮಂತನಗರ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363138580,
+      "center": {
+        "lat": 12.9474929,
+        "lon": 77.5579107
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Pralayakalada Veerabhadraswami Gudi",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1203069042,
+      "center": {
+        "lat": 12.9535295,
+        "lon": 77.5570806
+      },
+      "tags": {
+        "amenity": "crematorium",
+        "landuse": "crematorium",
+        "name": "Chamrajapet Crematorium",
+        "name:kn": "ಚಾಮರಾಜಪೇಟೆ ಚಿತಾಗಾರ",
+        "note": "10 Cremation Sites, conventional, wood burning, includes burial area.",
+        "operator": "BBMP",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1290606661,
+      "center": {
+        "lat": 12.953203,
+        "lon": 77.5569578
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "shower",
+        "description": "shower area",
+        "fee": "no",
+        "operator": "BBMP",
+        "unisex": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307949932,
+      "center": {
+        "lat": 12.9482335,
+        "lon": 77.5630041
+      },
+      "tags": {
+        "alt_name": "Gavi Gangadhareshwara Temple",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "shaivism",
+        "heritage": "2",
+        "heritage:operator": "nmma",
+        "heritage:website": "https://nmma.nic.in/nmma/exploreBuiltState.do?state=29",
+        "loc_name": "Sri Gangaadhareshwara",
+        "name": "Sri Gavigangadhareshwara Swamy Temple",
+        "name:en": "Sri Gavigangadhareshwara Swamy Temple",
+        "old_name": "Gavipura Cave Temple",
+        "opening_hours": "Mo-Su 07:00-12:30, 17:00-20:30",
+        "ref:nmma": "KR20010666",
+        "religion": "hindu",
+        "wheelchair": "no",
+        "wikidata": "Q5528052",
+        "wikipedia": "en:Gavi Gangadhareshwara Temple"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348696306,
+      "center": {
+        "lat": 12.9488812,
+        "lon": 77.5614482
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shri Jalakanteswara Swamy Devasthana",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

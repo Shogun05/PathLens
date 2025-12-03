@@ -1,0 +1,157 @@
+{
+  "area_name": "Virgonagar",
+  "osm_id": 2126383127,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 12,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1266405523,
+      "lat": 13.033577,
+      "lon": 77.7334349,
+      "tags": {
+        "brand": "Toyota",
+        "brand:wikidata": "Q53268",
+        "name": "Ravindu Toyota",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2475301934,
+      "lat": 13.0319594,
+      "lon": 77.7322509,
+      "tags": {
+        "amenity": "post_office",
+        "name": "Virgonagar Post Office",
+        "name:kn": "ವಿರ್ಗೊನಗರ ಅಂಚೆ ಕಛೇರಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947459688,
+      "lat": 13.0357404,
+      "lon": 77.7347061,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Avalahalli, Virgonagar P.O.",
+        "addr:postcode": "560049",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "S.N. Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947662459,
+      "lat": 13.0357169,
+      "lon": 77.7351701,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Avalahalli Virgonagar Old Madras Road Bangaror",
+        "addr:postcode": "560049",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Geetha Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12690033478,
+      "lat": 13.0338524,
+      "lon": 77.7321312,
+      "tags": {
+        "brand": "Tata",
+        "name": "Tata Motors",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12690033479,
+      "lat": 13.0365707,
+      "lon": 77.7356972,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1270913708,
+      "center": {
+        "lat": 13.0393392,
+        "lon": 77.7342407
+      },
+      "tags": {
+        "amenity": "grave_yard",
+        "landuse": "cemetery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1310025013,
+      "center": {
+        "lat": 13.0323501,
+        "lon": 77.7305044
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1370147605,
+      "center": {
+        "lat": 13.0296675,
+        "lon": 77.7384438
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Gopalan Sports Academy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1370147606,
+      "center": {
+        "lat": 13.0336434,
+        "lon": 77.7352613
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1370147618,
+      "center": {
+        "lat": 13.0310492,
+        "lon": 77.7393637
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1370147622,
+      "center": {
+        "lat": 13.0328342,
+        "lon": 77.7345858
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1958 @@
+{
+  "area_name": "Yelahanka Old Town",
+  "osm_id": 19884569,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 169,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1464782423,
+      "lat": 13.0968515,
+      "lon": 77.5964304,
+      "tags": {
+        "amenity": "cinema",
+        "name": "Prakash Theatre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1464782617,
+      "lat": 13.0973922,
+      "lon": 77.5964894,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Deeksha Orthopaedic Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1464783198,
+      "lat": 13.0997316,
+      "lon": 77.5980216,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Shushrusha Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2817011517,
+      "lat": 13.0933876,
+      "lon": 77.6007265,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560064",
+        "addr:street": "Shivanahalli main road",
+        "amenity": "restaurant",
+        "capacity": "50",
+        "cuisine": "regional",
+        "name": "Ganesh Uphaar",
+        "opening_hours": "9 to 10"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4294672489,
+      "lat": 13.0987953,
+      "lon": 77.596965,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Skanda Sagar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4490349010,
+      "lat": 13.0902404,
+      "lon": 77.6024288,
+      "tags": {
+        "addr:city": "Bengaluru, Karnataka",
+        "addr:housenumber": "No:55,,",
+        "addr:postcode": "560064",
+        "addr:street": "Jakkur Main Road,, Shivanahalli,, Yelahanka,,",
+        "name": "Multi Mart Super Market",
+        "phone": "(91)-8105063226",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4691599025,
+      "lat": 13.1004091,
+      "lon": 77.5991386,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4719664188,
+      "lat": 13.0998575,
+      "lon": 77.5976396,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "366/4",
+        "addr:postcode": "560064",
+        "addr:street": "Bhagyada Bagilu Road",
+        "amenity": "fast_food",
+        "brand": "Papa John's",
+        "brand:wikidata": "Q2759586",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Papa John's",
+        "name:kn": "ಪಪ ಜಾನ್ಸ್",
+        "opening_hours": "11:00 - 23:00",
+        "phone": "08197906655",
+        "takeaway": "yes",
+        "website": "https://www.papajohnspizza.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4829285321,
+      "lat": 13.0973713,
+      "lon": 77.5980105,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "operator": "home Honey ksa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5983326231,
+      "lat": 13.094978,
+      "lon": 77.5972765,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "cuisine": "coffee_shop",
+        "name": "Cafe Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939017804,
+      "lat": 13.1001759,
+      "lon": 77.5956731,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Hospital Road, Yelahanka",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Saraswathi Poly Clinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683180,
+      "lat": 13.0979448,
+      "lon": 77.5960808,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Gandhi Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Malavya Nursing Home",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683182,
+      "lat": 13.0973532,
+      "lon": 77.5967518,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "KHB Colony, Gandhinagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Patel Dental - Orthodontic & Dental Implant Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683189,
+      "lat": 13.0978476,
+      "lon": 77.5968473,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Krishna Nethralaya",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683195,
+      "lat": 13.1005709,
+      "lon": 77.5951888,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Railway Station Road, Gandhi Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Janani Maternity & Women's Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683196,
+      "lat": 13.0972366,
+      "lon": 77.5972516,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Gandhi Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Krishna Scanning and Diagnostic Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683208,
+      "lat": 13.0974609,
+      "lon": 77.5959547,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Near Prakash Theatre, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Balaji Multispeciality Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683210,
+      "lat": 13.097498,
+      "lon": 77.5944292,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Suggappa Layout, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683219,
+      "lat": 13.101335,
+      "lon": 77.59858,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "BB Road, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Apurva Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683232,
+      "lat": 13.098909,
+      "lon": 77.596219,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Gandhi Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Jayalakshmi Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683237,
+      "lat": 13.10051,
+      "lon": 77.595603,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Gandhi Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "NDR Orthopaedic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683244,
+      "lat": 13.0984621,
+      "lon": 77.5966397,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "B B Road, Near Post Office, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Sowmya Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683248,
+      "lat": 13.0973071,
+      "lon": 77.5965859,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Unnathi Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683251,
+      "lat": 13.0981485,
+      "lon": 77.596139,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Gandhi Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Pavan Hospitals",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683256,
+      "lat": 13.0997798,
+      "lon": 77.5955704,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "2nd B Cross Road, Gandhi Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "name": "Dr. Biswas Ji",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8088384741,
+      "lat": 13.1005238,
+      "lon": 77.588677,
+      "tags": {
+        "addr:city": "Yelahanka",
+        "addr:postcode": "560064",
+        "name": "Indian Railways Computerised Reservation Office",
+        "operator": "South Western Railways",
+        "shop": "ticket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11468958100,
+      "lat": 13.1036021,
+      "lon": 77.5998838,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "name": "Alakapuri Veg Restaurant",
+        "opening_hours": "Mo-Su 07:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516214987,
+      "lat": 13.1023214,
+      "lon": 77.5948021,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Santhosh Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516663840,
+      "lat": 13.1025917,
+      "lon": 77.5960339,
+      "tags": {
+        "name": "Arts",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516663845,
+      "lat": 13.1025108,
+      "lon": 77.5960211,
+      "tags": {
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516663846,
+      "lat": 13.1025862,
+      "lon": 77.5959906,
+      "tags": {
+        "name": "Charan Stores",
+        "shop": "fabric"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516663847,
+      "lat": 13.1025855,
+      "lon": 77.5959615,
+      "tags": {
+        "name": "Afiya Fashion Zari Works",
+        "shop": "fabric"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691473,
+      "lat": 13.1025078,
+      "lon": 77.5959323,
+      "tags": {
+        "name": "VM Collections",
+        "shop": "fabric"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691492,
+      "lat": 13.1025222,
+      "lon": 77.5956131,
+      "tags": {
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691493,
+      "lat": 13.1025388,
+      "lon": 77.5956597,
+      "tags": {
+        "name": "Sanjay Printers",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691498,
+      "lat": 13.1024448,
+      "lon": 77.595649,
+      "tags": {
+        "name": "Goa Tailors",
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691499,
+      "lat": 13.1025052,
+      "lon": 77.595543,
+      "tags": {
+        "name": "Indian Gents Tailor",
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691500,
+      "lat": 13.1025052,
+      "lon": 77.5955313,
+      "tags": {
+        "name": "Royal Hair Style",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691511,
+      "lat": 13.1024579,
+      "lon": 77.5953513,
+      "tags": {
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691514,
+      "lat": 13.1024611,
+      "lon": 77.595301,
+      "tags": {
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "SDMA Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691523,
+      "lat": 13.1022809,
+      "lon": 77.5953761,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Amruth Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691524,
+      "lat": 13.1022874,
+      "lon": 77.5952661,
+      "tags": {
+        "name": "Hemant Textiles",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691525,
+      "lat": 13.1024507,
+      "lon": 77.595244,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Shivaprasad Health Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691527,
+      "lat": 13.1022867,
+      "lon": 77.595242,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Sri Yashaswini Tindi Mane"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691528,
+      "lat": 13.102288,
+      "lon": 77.5951568,
+      "tags": {
+        "name": "Svimal Jewelers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691543,
+      "lat": 13.1023109,
+      "lon": 77.5950629,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Royal Medical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691553,
+      "lat": 13.1023103,
+      "lon": 77.5949288,
+      "tags": {
+        "name": "Ayesha Fashion Centre",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691555,
+      "lat": 13.1023214,
+      "lon": 77.5948423,
+      "tags": {
+        "name": "Sri Vasavi Provision Store",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691556,
+      "lat": 13.1023161,
+      "lon": 77.5948819,
+      "tags": {
+        "name": "Kavyashree Rice Traders",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11516691557,
+      "lat": 13.1024363,
+      "lon": 77.5948564,
+      "tags": {
+        "name": "Narendra Store",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11817854343,
+      "lat": 13.0872716,
+      "lon": 77.5973622,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11817854344,
+      "lat": 13.0878372,
+      "lon": 77.5974601,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11818724845,
+      "lat": 13.0950544,
+      "lon": 77.5972876,
+      "tags": {
+        "alt_name": "Stanley",
+        "name": "Sofas & More",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932202839,
+      "lat": 13.0954483,
+      "lon": 77.5942633,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-05-25",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932800644,
+      "lat": 13.0979126,
+      "lon": 77.5966615,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "check_date": "2024-05-25"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932800645,
+      "lat": 13.0979598,
+      "lon": 77.5967141,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-05-25",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932800646,
+      "lat": 13.0978763,
+      "lon": 77.5967358,
+      "tags": {
+        "amenity": "post_office",
+        "check_date": "2024-12-28",
+        "internet_access": "no",
+        "name": "Yelahanka Post Office",
+        "operator": "India Post",
+        "polling_station": "no",
+        "source": "local knowledge;survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932804271,
+      "lat": 13.0980767,
+      "lon": 77.5964701,
+      "tags": {
+        "check_date": "2024-05-25",
+        "name": "specsmakers",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932804272,
+      "lat": 13.0980347,
+      "lon": 77.5964552,
+      "tags": {
+        "check_date": "2024-05-25",
+        "name": "Sangeetha",
+        "name:kn": "ಸಂಗೀತ",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932804273,
+      "lat": 13.0978667,
+      "lon": 77.5963115,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "check_date": "2024-05-25",
+        "name": "Union Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932804274,
+      "lat": 13.0982708,
+      "lon": 77.5966166,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-05-25",
+        "name": "Biryani Paradise"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12049247036,
+      "lat": 13.0996273,
+      "lon": 77.597945,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Apollo Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12056743550,
+      "lat": 13.0988482,
+      "lon": 77.5978974,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Ashwini Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535062,
+      "lat": 13.1028502,
+      "lon": 77.5998503,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Sri Manjunatha Tiffen Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535063,
+      "lat": 13.1027629,
+      "lon": 77.5998097,
+      "tags": {
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535064,
+      "lat": 13.1026496,
+      "lon": 77.5997746,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Donne Biriyani Mess"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535065,
+      "lat": 13.102155,
+      "lon": 77.5996541,
+      "tags": {
+        "name": "Silicon Motors",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535068,
+      "lat": 13.1016527,
+      "lon": 77.5995324,
+      "tags": {
+        "name": "Silicon Motors",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535069,
+      "lat": 13.1014613,
+      "lon": 77.5994503,
+      "tags": {
+        "name": "Anil Car Seat Covers",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535071,
+      "lat": 13.1006249,
+      "lon": 77.5992486,
+      "tags": {
+        "name": "Sri Balaji Motors",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535072,
+      "lat": 13.1005622,
+      "lon": 77.5992483,
+      "tags": {
+        "name": "R.K. Radiator Works",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535073,
+      "lat": 13.100598,
+      "lon": 77.5992483,
+      "tags": {
+        "name": "MH Car Decor",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535074,
+      "lat": 13.1003583,
+      "lon": 77.5992328,
+      "tags": {
+        "name": "H.K.G.N Car Accessories",
+        "shop": "car_parts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535075,
+      "lat": 13.1000242,
+      "lon": 77.5990852,
+      "tags": {
+        "name": "Continental",
+        "shop": "tyres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535076,
+      "lat": 13.0995488,
+      "lon": 77.5990454,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "biriyani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535077,
+      "lat": 13.099055,
+      "lon": 77.5988263,
+      "tags": {
+        "name": "S.A Puncture Shop",
+        "shop": "tyres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535078,
+      "lat": 13.0989976,
+      "lon": 77.5988086,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:non-vegetarian": "yes",
+        "name": "Supreme Gardenia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535080,
+      "lat": 13.0985198,
+      "lon": 77.598651,
+      "tags": {
+        "name": "Ustav Mart",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535081,
+      "lat": 13.0975143,
+      "lon": 77.5982808,
+      "tags": {
+        "name": "Skyway",
+        "shop": "car_parts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535082,
+      "lat": 13.0967796,
+      "lon": 77.597972,
+      "tags": {
+        "name": "Restolex",
+        "shop": "bed"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535083,
+      "lat": 13.0966734,
+      "lon": 77.5979322,
+      "tags": {
+        "name": "duroflex",
+        "shop": "bed"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535084,
+      "lat": 13.0957413,
+      "lon": 77.5973869,
+      "tags": {
+        "name": "Wakefit",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535085,
+      "lat": 13.0950203,
+      "lon": 77.5972867,
+      "tags": {
+        "check_date": "2025-09-19",
+        "name": "Mahindra",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535086,
+      "lat": 13.0952106,
+      "lon": 77.5972931,
+      "tags": {
+        "name": "Kurl-on",
+        "shop": "bed"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12225535087,
+      "lat": 13.0952262,
+      "lon": 77.5972543,
+      "tags": {
+        "name": "Navrathnan's Antique Art",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218316,
+      "lat": 13.1024303,
+      "lon": 77.5949758,
+      "tags": {
+        "name": "Sri Chakrajanya Provision Store",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218317,
+      "lat": 13.1024323,
+      "lon": 77.5950228,
+      "tags": {
+        "name": "Sri Manjunatha Sound System",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218318,
+      "lat": 13.1022828,
+      "lon": 77.5953411,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Vishnu Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218319,
+      "lat": 13.1024562,
+      "lon": 77.5954004,
+      "tags": {
+        "name": "Arihanth Jwellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218320,
+      "lat": 13.1024337,
+      "lon": 77.5955808,
+      "tags": {
+        "name": "Sai Arts",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218321,
+      "lat": 13.1025809,
+      "lon": 77.5958083,
+      "tags": {
+        "name": "Sri Siddhi Tenginakaye Whole sale",
+        "shop": "wholesale",
+        "wholesale": "coconuts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218322,
+      "lat": 13.1025867,
+      "lon": 77.5960099,
+      "tags": {
+        "name": "Sri Vheerabhadra Naavmi",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218323,
+      "lat": 13.1025178,
+      "lon": 77.5961521,
+      "tags": {
+        "name": "Saksha Enterprises",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218324,
+      "lat": 13.1027273,
+      "lon": 77.5967149,
+      "tags": {
+        "shop": "farm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218325,
+      "lat": 13.1027194,
+      "lon": 77.5967473,
+      "tags": {
+        "name": "Kareem Store",
+        "shop": "wholesale",
+        "wholesale": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218326,
+      "lat": 13.1027204,
+      "lon": 77.5967693,
+      "tags": {
+        "name": "Ganapathi Store",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218327,
+      "lat": 13.1028285,
+      "lon": 77.596752,
+      "tags": {
+        "name": "MH2 store",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218328,
+      "lat": 13.1028393,
+      "lon": 77.5968005,
+      "tags": {
+        "hairdresser": "barber",
+        "male": "yes",
+        "name": "VSB Prasad Gents Beauty Saloon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218329,
+      "lat": 13.1027258,
+      "lon": 77.5968193,
+      "tags": {
+        "shop": "farm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218330,
+      "lat": 13.1027648,
+      "lon": 77.5969469,
+      "tags": {
+        "name": "Ilyas",
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218331,
+      "lat": 13.102799,
+      "lon": 77.597072,
+      "tags": {
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218332,
+      "lat": 13.1029195,
+      "lon": 77.5970945,
+      "tags": {
+        "name": "Sri Raghavendra Enterprises",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218333,
+      "lat": 13.1028166,
+      "lon": 77.5972065,
+      "tags": {
+        "name": "Beauty Castle",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218334,
+      "lat": 13.1028251,
+      "lon": 77.5972583,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Mahalakshmi Medical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218335,
+      "lat": 13.1028446,
+      "lon": 77.5973243,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Balaji Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218337,
+      "lat": 13.1028866,
+      "lon": 77.5974678,
+      "tags": {
+        "name": "Sainath Enterprises",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218338,
+      "lat": 13.102898,
+      "lon": 77.5975117,
+      "tags": {
+        "name": "MZ Karnataka Engineering",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218339,
+      "lat": 13.1029104,
+      "lon": 77.5975565,
+      "tags": {
+        "name": "GSS Engineering Works",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218340,
+      "lat": 13.1030683,
+      "lon": 77.5975862,
+      "tags": {
+        "name": "YNM Cement Distributor",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218341,
+      "lat": 13.1029355,
+      "lon": 77.5976288,
+      "tags": {
+        "name": "Dehi Axle and Power Steering Works",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218342,
+      "lat": 13.1030748,
+      "lon": 77.5976281,
+      "tags": {
+        "name": "Narayana Tea Condiments",
+        "shop": "tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218343,
+      "lat": 13.1030894,
+      "lon": 77.5976554,
+      "tags": {
+        "name": "Maruti Distributor",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218344,
+      "lat": 13.1030937,
+      "lon": 77.597693,
+      "tags": {
+        "name": "A.R Footware",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218345,
+      "lat": 13.1031028,
+      "lon": 77.5977258,
+      "tags": {
+        "name": "Karnataka Kitchen House",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218346,
+      "lat": 13.1031099,
+      "lon": 77.5977576,
+      "tags": {
+        "name": "Nisha Bakery & Sweets",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218347,
+      "lat": 13.1029819,
+      "lon": 77.5978258,
+      "tags": {
+        "name": "Yashwini Ladies Tailors",
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218348,
+      "lat": 13.1030048,
+      "lon": 77.5979244,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218349,
+      "lat": 13.1031842,
+      "lon": 77.5979105,
+      "tags": {
+        "name": "Shuddh",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218350,
+      "lat": 13.103027,
+      "lon": 77.5979824,
+      "tags": {
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218351,
+      "lat": 13.1030333,
+      "lon": 77.5980201,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218352,
+      "lat": 13.1030493,
+      "lon": 77.5980622,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Hot Chips"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218353,
+      "lat": 13.1030691,
+      "lon": 77.5980928,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Mataji Medical and General Stores"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218356,
+      "lat": 13.1033732,
+      "lon": 77.5985434,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218358,
+      "lat": 13.1032783,
+      "lon": 77.5986381,
+      "tags": {
+        "alt_name": "Shetty's Adda",
+        "amenity": "cafe",
+        "name": "Simple Tiffins"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218359,
+      "lat": 13.1033068,
+      "lon": 77.5987841,
+      "tags": {
+        "name": "Sri Panchamuki Condiments",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218360,
+      "lat": 13.1033317,
+      "lon": 77.5988609,
+      "tags": {
+        "name": "Nimrah Enterprises",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218362,
+      "lat": 13.1035864,
+      "lon": 77.5989255,
+      "tags": {
+        "name": "Sri Krishna Trading Company",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229218363,
+      "lat": 13.1035993,
+      "lon": 77.5989819,
+      "tags": {
+        "name": "Vibhav Electricals",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265289944,
+      "lat": 13.1042942,
+      "lon": 77.5937062,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2024-10-19",
+        "currency:INR": "yes",
+        "operator": "Axis Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265289945,
+      "lat": 13.1042748,
+      "lon": 77.5933887,
+      "tags": {
+        "check_date": "2024-10-19",
+        "name": "Asian Paints",
+        "shop": "paint"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265450393,
+      "lat": 13.1043417,
+      "lon": 77.595093,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2024-10-19",
+        "name": "Smart Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265468723,
+      "lat": 13.1042735,
+      "lon": 77.5943727,
+      "tags": {
+        "check_date": "2024-10-19",
+        "name": "Chicken Shop",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265521611,
+      "lat": 13.1039745,
+      "lon": 77.5941829,
+      "tags": {
+        "amenity": "community_centre",
+        "check_date": "2024-10-19",
+        "community_centre": "community_hall",
+        "name": "Jamia Shadi Mahal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12768263589,
+      "lat": 13.0998839,
+      "lon": 77.5962201,
+      "tags": {
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12768263590,
+      "lat": 13.0998479,
+      "lon": 77.5962035,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Pradhan Mantri Bharatiya Janaushadhi Pariyojana Kendra",
+        "brand:wikidata": "Q39058281",
+        "healthcare": "pharmacy",
+        "name": "Jan Aushadhi",
+        "official_name": "Pradhan Mantri Bharatiya Janaushadhi Pariyojana Kendra"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133125754,
+      "center": {
+        "lat": 13.0971325,
+        "lon": 77.5934644
+      },
+      "tags": {
+        "amenity": "college",
+        "landuse": "education",
+        "name": "Government School",
+        "name:kn": "ಸರ್ಕಾರಿ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133125764,
+      "center": {
+        "lat": 13.096833,
+        "lon": 77.5944513
+      },
+      "tags": {
+        "amenity": "college",
+        "landuse": "education",
+        "name": "Government PU College",
+        "name:kn": "ಸರ್ಕಾರಿ ಕಾಲೆಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363499100,
+      "center": {
+        "lat": 13.0999504,
+        "lon": 77.5903464
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363499102,
+      "center": {
+        "lat": 13.0996538,
+        "lon": 77.5907258
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363612256,
+      "center": {
+        "lat": 13.0978151,
+        "lon": 77.591792
+      },
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363612268,
+      "center": {
+        "lat": 13.0977437,
+        "lon": 77.5918736
+      },
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 368126724,
+      "center": {
+        "lat": 13.087543,
+        "lon": 77.5971936
+      },
+      "tags": {
+        "addr:city": "Bangalore Urban",
+        "addr:postcode": "560064",
+        "amenity": "school",
+        "name": "Vidya Shilp Academy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421956349,
+      "center": {
+        "lat": 13.1009552,
+        "lon": 77.5947807
+      },
+      "tags": {
+        "alt_name": "Yelahanka Bus Station",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Yelahanka Old Town",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 487589129,
+      "center": {
+        "lat": 13.1041328,
+        "lon": 77.5944961
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "building:levels": "2",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 487591672,
+      "center": {
+        "lat": 13.0995716,
+        "lon": 77.5962927
+      },
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "Bagaluru Cross, Yelahanka, Armed Police Training School",
+        "addr:postcode": "560063",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore North",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Yelahanka Government Hospital",
+        "name:kn": "ಯಲಹಂಕ ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726488902,
+      "center": {
+        "lat": 13.0990575,
+        "lon": 77.5970061
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560064",
+        "addr:street": "Hospital Rd, Gandhi Nagar, Yelahanka",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shri Veeranjaneya Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726497370,
+      "center": {
+        "lat": 13.0991845,
+        "lon": 77.5968656
+      },
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Government Hospital",
+        "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726506664,
+      "center": {
+        "lat": 13.0982401,
+        "lon": 77.5970471
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "387/347, Next To Post Office, B.B.Road Nehru Nagar, Yehlanka Old Town",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Deeksha Hospital",
+        "name:kn": "ದೀಕ್ಷ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 736945762,
+      "center": {
+        "lat": 13.0860157,
+        "lon": 77.6011067
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1082671466,
+      "center": {
+        "lat": 13.0874259,
+        "lon": 77.5982352
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084735123,
+      "center": {
+        "lat": 13.0873487,
+        "lon": 77.6024074
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Indira Gandhi International Academy",
+        "name:etymology:wikidata": "Q1149"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1110808778,
+      "center": {
+        "lat": 13.0949654,
+        "lon": 77.5986449
+      },
+      "tags": {
+        "amenity": "hospital",
+        "name": "Sparsh Hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1182954955,
+      "center": {
+        "lat": 13.1042957,
+        "lon": 77.5974816
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "landuse": "commercial",
+        "name": "Chowdeswari Devi Kalyana Mantapa"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1191458810,
+      "center": {
+        "lat": 13.1042981,
+        "lon": 77.5971218
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239621955,
+      "center": {
+        "lat": 13.1023579,
+        "lon": 77.5941397
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239668059,
+      "center": {
+        "lat": 13.1026669,
+        "lon": 77.5961315
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239668075,
+      "center": {
+        "lat": 13.1023932,
+        "lon": 77.5954871
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272659068,
+      "center": {
+        "lat": 13.0978156,
+        "lon": 77.5983365
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "check_date": "2023-11-12",
+        "compressed_air": "yes",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272659087,
+      "center": {
+        "lat": 13.0898032,
+        "lon": 77.5972221
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "Madhura Milana Convention Centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272659089,
+      "center": {
+        "lat": 13.0873513,
+        "lon": 77.5977404
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272659090,
+      "center": {
+        "lat": 13.0876381,
+        "lon": 77.5977867
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272734832,
+      "center": {
+        "lat": 13.0970962,
+        "lon": 77.5962139
+      },
+      "tags": {
+        "amenity": "fuel",
+        "compressed_air": "yes",
+        "name": "Nayara"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1303487956,
+      "center": {
+        "lat": 13.0887527,
+        "lon": 77.6005272
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1351862832,
+      "center": {
+        "lat": 13.1003154,
+        "lon": 77.5944028
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378947158,
+      "center": {
+        "lat": 13.0894661,
+        "lon": 77.6028702
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383194013,
+      "center": {
+        "lat": 13.0979334,
+        "lon": 77.5930771
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1392693060,
+      "center": {
+        "lat": 13.0880815,
+        "lon": 77.5979483
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1455433871,
+      "center": {
+        "lat": 13.0968866,
+        "lon": 77.5990637
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1455433882,
+      "center": {
+        "lat": 13.086194,
+        "lon": 77.6031263
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

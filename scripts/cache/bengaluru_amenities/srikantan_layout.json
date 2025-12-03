@@ -1,0 +1,4785 @@
+{
+  "area_name": "Srikantan Layout",
+  "osm_id": 12120352167,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 380,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 661983025,
+      "lat": 12.985511,
+      "lon": 77.5889985,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 673377213,
+      "lat": 12.9853914,
+      "lon": 77.5795059,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Sana Di Ge",
+        "name:kn": "ಸನ ದಿ ಗೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1006462338,
+      "lat": 12.985247,
+      "lon": 77.5803846,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "31/32",
+        "addr:postcode": "560001",
+        "addr:street": "Crescent Rd,Nehru Nagar,Gandhi Nagar",
+        "amenity": "hospital",
+        "name": "Mallige Medical Centre",
+        "phone": "080 2220 3333",
+        "website": "https://www.mallige.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1026508950,
+      "lat": 12.9881279,
+      "lon": 77.5744324,
+      "tags": {
+        "amenity": "police",
+        "check_date": "2024-03-02",
+        "name": "Seshadripuram Police Station",
+        "name:kn": "ಶೇಶಾದ್ರಿಪುರಮ್ ಆರಕ್ಷಕ ಠಾಣೆ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1101607728,
+      "lat": 12.9856254,
+      "lon": 77.5788885,
+      "tags": {
+        "addr:street": "Kumara Krupa Road",
+        "amenity": "restaurant",
+        "check_date": "2024-12-22",
+        "name": "Hotel Janardhana",
+        "name:kn": "ಜನಾರ್ಧನ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1101617173,
+      "lat": 12.9910826,
+      "lon": 77.5789046,
+      "tags": {
+        "amenity": "school",
+        "name": "Gandhi Nagar High School",
+        "name:kn": "ಗಾಂಧಿನಗರ ಪೌಡಶಾಲೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1116484556,
+      "lat": 12.9853569,
+      "lon": 77.5792692,
+      "tags": {
+        "addr:housenumber": "32/3",
+        "addr:street": "Crescent Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "fax": "+91-80-41138488",
+        "name": "Kabab Studio",
+        "name:kn": "ಕಬಾಬ್ ಸ್ಟುಡಿಯೊ",
+        "phone": "+91-80-41291300",
+        "website": "https://www.goldfinchhotels.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1121253486,
+      "lat": 12.9834716,
+      "lon": 77.5856742,
+      "tags": {
+        "branch": "Showroom",
+        "brand": "Nike",
+        "brand:wikidata": "Q483915",
+        "name": "Nike",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1289949443,
+      "lat": 12.9903369,
+      "lon": 77.5874909,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Queens Nursing Home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1363295014,
+      "lat": 12.9895632,
+      "lon": 77.5877862,
+      "tags": {
+        "amenity": "theatre",
+        "name": "NGMA Auditorium"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1363295015,
+      "lat": 12.9897809,
+      "lon": 77.5880062,
+      "tags": {
+        "amenity": "cafe",
+        "name": "NGMA Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614268180,
+      "lat": 12.9873383,
+      "lon": 77.5805314,
+      "tags": {
+        "amenity": "school",
+        "name": "Bharat Seva Dal",
+        "name:kn": "ಭಾರತ ಸೇವಾದಳ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614268185,
+      "lat": 12.9869904,
+      "lon": 77.5786112,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614268190,
+      "lat": 12.9876512,
+      "lon": 77.5799188,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614268192,
+      "lat": 12.9868232,
+      "lon": 77.5800176,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Richie-Rich",
+        "name:kn": "ರಿಚೀ-ರಿಚ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614268199,
+      "lat": 12.9867564,
+      "lon": 77.5795592,
+      "tags": {
+        "addr:housename": "Shivananda General Stores Complex",
+        "addr:street": "Kumarakripa East",
+        "name": "Shivananda Stores",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614366545,
+      "lat": 12.9885341,
+      "lon": 77.5770137,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "cuisine": "coffee_shop",
+        "name": "Cafe Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "takeaway": "yes",
+        "website": "https://www.cafecoffeeday.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614366547,
+      "lat": 12.9883033,
+      "lon": 77.5774436,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1614366548,
+      "lat": 12.9879409,
+      "lon": 77.5768491,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "name": "Citibank",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1617398438,
+      "lat": 12.9909647,
+      "lon": 77.5748146,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1617398443,
+      "lat": 12.9859821,
+      "lon": 77.5767419,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Jain Temple",
+        "name:kn": "ಜೈನ ದೇವಸ್ಥಾನ",
+        "religion": "jain",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1617398466,
+      "lat": 12.9928414,
+      "lon": 77.5753482,
+      "tags": {
+        "amenity": "social_facility",
+        "name": "Lakshmi Nursing Home",
+        "social_facility": "nursing_home",
+        "social_facility:for": "senior"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1617398469,
+      "lat": 12.9926441,
+      "lon": 77.5742046,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.67,Link Road,Sheshadripuram",
+        "addr:housenumber": "67",
+        "addr:postcode": "560020",
+        "addr:state": "Karnataka",
+        "addr:street": "Link Rd, Malleswaram, Jai Bheema Nagar, Seshadripuram",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sri Maruthi hospital, Sheshadripuram",
+        "phone": "080 2344 9632",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1617398472,
+      "lat": 12.9877001,
+      "lon": 77.5782687,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Park-n-Eat",
+        "name:kn": "ಪಾರ್ಕ್-ಎನ್-ಈಟ್",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1617398477,
+      "lat": 12.9865401,
+      "lon": 77.5772559,
+      "tags": {
+        "amenity": "college",
+        "name": "Yadava College",
+        "name:kn": "ಯಾದವ ಕಾಲೇಜು",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1737985671,
+      "lat": 12.987094,
+      "lon": 77.5784442,
+      "tags": {
+        "amenity": "fast_food",
+        "diet:vegetarian": "only",
+        "name": "Bangalore Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2025970826,
+      "lat": 12.9866761,
+      "lon": 77.5796529,
+      "tags": {
+        "addr:housename": "Shivananada General Stores Complex",
+        "addr:street": "Kumarakripa East",
+        "name": "Sangam Sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2025970848,
+      "lat": 12.9867912,
+      "lon": 77.5794891,
+      "tags": {
+        "addr:housename": "Shivananda Stores Complex",
+        "addr:street": "Kumarakripa East",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Coastal Express"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2026069825,
+      "lat": 12.9884699,
+      "lon": 77.5769743,
+      "tags": {
+        "amenity": "ice_cream",
+        "brand": "Corner House",
+        "delivery": "yes",
+        "name": "Corner House",
+        "shop": "confectionery",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2186146149,
+      "lat": 12.9920336,
+      "lon": 77.5763265,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2468465645,
+      "lat": 12.9921952,
+      "lon": 77.5754609,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2468465646,
+      "lat": 12.9893245,
+      "lon": 77.5740161,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Rama Temple",
+        "name:kn": "ಶ್ರೀ ರಾಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3198615159,
+      "lat": 12.9887808,
+      "lon": 77.5756802,
+      "tags": {
+        "name": "Archies",
+        "shop": "gift"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3198615160,
+      "lat": 12.9896328,
+      "lon": 77.5751613,
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "vaishnavism",
+        "name": "Hanuman Temple",
+        "name:kn": "ಹನುಮಂತ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3198616661,
+      "lat": 12.98415,
+      "lon": 77.5781517,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hotel Sanman"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3549082715,
+      "lat": 12.9878361,
+      "lon": 77.574957,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Krishna Devasthana",
+        "name:kn": "ಕೃಷ್ಣ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3549082716,
+      "lat": 12.9877862,
+      "lon": 77.5744684,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-03-02",
+        "name": "Kashi Vishwanatha Temple",
+        "name:kn": "ಕಾಶಿ ವಿಶ್ವನಾಥ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3549831014,
+      "lat": 12.9862102,
+      "lon": 77.5741379,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bhavani Tiffin Center",
+        "opening_hours": "13:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3806281886,
+      "lat": 12.9875847,
+      "lon": 77.573008,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3806281887,
+      "lat": 12.9876025,
+      "lon": 77.5736105,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Sri Manjunatha Condiments"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3872372431,
+      "lat": 12.9832602,
+      "lon": 77.5859672,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "49, Khanija Bhavan, 3rd Floor, East Wing",
+        "addr:postcode": "560001",
+        "addr:street": "Race Course Road",
+        "amenity": "courthouse",
+        "name": "Arbitration Center Bengaluru",
+        "operator": "Karnatak Judiciary",
+        "phone": "22954571,22954572, 22954573",
+        "website": "https://arbitrationcentreblr.org/home.php"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4067980536,
+      "lat": 12.9845114,
+      "lon": 77.5893647,
+      "tags": {
+        "access": "customers",
+        "amenity": "toilets",
+        "source": "gps"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4167273405,
+      "lat": 12.9875457,
+      "lon": 77.573633,
+      "tags": {
+        "name": "Capital hair dressers",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4430492477,
+      "lat": 12.9939183,
+      "lon": 77.5854854,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Royal Afghan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446518811,
+      "lat": 12.9863736,
+      "lon": 77.5793154,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "6/6",
+        "addr:postcode": "560001",
+        "addr:street": "Kumarakrupa Road, High Grounds, Madhava Nagar, Gandhi Nagar",
+        "amenity": "hospital",
+        "name": "Desai Nursing Home",
+        "phone": "+9180 2226 0307"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488528724,
+      "lat": 12.9896793,
+      "lon": 77.5907826,
+      "tags": {
+        "addr:housenumber": "no.70",
+        "addr:postcode": "560062",
+        "addr:street": "Cunningham Road",
+        "name": "SPA ce The Spa",
+        "opening_hours": "09:00-21:00",
+        "phone": "+91-80-33700700",
+        "shop": "beauty",
+        "website": "https://www.spacethespa.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489756504,
+      "lat": 12.9870391,
+      "lon": 77.5744897,
+      "tags": {
+        "addr:city": "Bengaluru,",
+        "addr:postcode": "560020",
+        "addr:street": "SC Road, Nehru Nagar, Seshadripuram, Bengaluru, Karnataka SC Road, Nehru Nagar, Seshadripuram, Karnataka",
+        "leisure": "sports_centre",
+        "name": "Fitness Freak",
+        "phone": "088849 31417"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4505462591,
+      "lat": 12.987183,
+      "lon": 77.5784519,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Super duba Raggi Dosa",
+        "name:de": "Super duba Raggi Dosa",
+        "name:en": "Super duba Raggi Dosa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4623704804,
+      "lat": 12.9920129,
+      "lon": 77.5753645,
+      "tags": {
+        "check_date": "2024-01-02",
+        "name": "Apoorva Iyengar Bakery",
+        "name:en": "Apoorva Iyengar Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5061380661,
+      "lat": 12.9902704,
+      "lon": 77.5744146,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Brindavan Pharma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5061380662,
+      "lat": 12.9879742,
+      "lon": 77.5764499,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "name": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್",
+        "operator": "Corporation Bank",
+        "operator:wikidata": "Q2003387"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456537,
+      "lat": 12.9922208,
+      "lon": 77.5751298,
+      "tags": {
+        "name": "Maa Ceramics and Sanitary Wares",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456538,
+      "lat": 12.991466,
+      "lon": 77.5748902,
+      "tags": {
+        "brand": "Vodafone",
+        "brand:wikidata": "Q122141",
+        "name": "Vodafone",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456539,
+      "lat": 12.9894569,
+      "lon": 77.5735286,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "check_date": "2024-03-02",
+        "name": "Kotak Mahindra Bank",
+        "name:kn": "ಕೋಟಕ್ ಮಹಿಂದ್ರ ಬ್ಯಾಂಕ್",
+        "operator": "Kotak Mahindra Bank",
+        "operator:wikidata": "Q2040404"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456540,
+      "lat": 12.9888505,
+      "lon": 77.5747806,
+      "tags": {
+        "name": "Total Lubricants",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456541,
+      "lat": 12.9884349,
+      "lon": 77.5740328,
+      "tags": {
+        "name": "Hygienic Hair Dressers",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456542,
+      "lat": 12.988504,
+      "lon": 77.5740252,
+      "tags": {
+        "name": "Roop Kala Silk House",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456543,
+      "lat": 12.9882025,
+      "lon": 77.5741117,
+      "tags": {
+        "name": "Planet Honda",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456545,
+      "lat": 12.989639,
+      "lon": 77.5732106,
+      "tags": {
+        "name": "Brindavan Cake and Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229482741,
+      "lat": 12.9879876,
+      "lon": 77.5773877,
+      "tags": {
+        "name": "Airtel Store",
+        "name:kn": "ಏರ್ಟೆಲ್",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229482742,
+      "lat": 12.9870483,
+      "lon": 77.5785854,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Pranam Dental and Medical Speciality Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229482743,
+      "lat": 12.9867071,
+      "lon": 77.5796028,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೊಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229482744,
+      "lat": 12.9848902,
+      "lon": 77.5828907,
+      "tags": {
+        "amenity": "police",
+        "name": "High Grounds Traffic Police Station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402224026,
+      "lat": 12.9841251,
+      "lon": 77.5814938,
+      "tags": {
+        "brand": "Volvo",
+        "brand:wikidata": "Q215293",
+        "name": "Volvo",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402224027,
+      "lat": 12.9866165,
+      "lon": 77.579997,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "3 Page"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402224032,
+      "lat": 12.9802917,
+      "lon": 77.5779251,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "cuisine": "coffee_shop",
+        "name": "Cafe Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5447887277,
+      "lat": 12.9867899,
+      "lon": 77.5745807,
+      "tags": {
+        "addr:city": "Bengaluru,",
+        "addr:housenumber": "212",
+        "addr:postcode": "560020",
+        "addr:street": "212, SC Road, Nehru Nagar, Sheshadripuram, Bengaluru, Karnataka 560020",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Hotel Sanman",
+        "opening_hours": "Mo-Su 10:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5905947501,
+      "lat": 12.9855047,
+      "lon": 77.5792404,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "19/2",
+        "addr:postcode": "560001",
+        "addr:street": "Crescent Road",
+        "amenity": "restaurant",
+        "check_date": "2023-02-19",
+        "name": "The London Curry House",
+        "opening_hours": "Mo-Su 12:00-15:00,19:00-23:00",
+        "smoking": "no",
+        "website": "https://thelondoncurryhousebanglore.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6440329525,
+      "lat": 12.9882645,
+      "lon": 77.573415,
+      "tags": {
+        "addr:full": "#20/7, 2nd Main Road, VV Giri Colony",
+        "amenity": "clinic",
+        "contact:phone": "8971544066",
+        "emergency": "no",
+        "health_amenity:type": "laboratory",
+        "healthcare": "clinic;doctor",
+        "healthcare:speciality": "general;geriatrics;infectious_diseases",
+        "name": "PCMH Restore Health",
+        "url": "https://www.pcmhrestorehealth.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886594854,
+      "lat": 12.9843552,
+      "lon": 77.5787035,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "Red Cross Bhavan, 326, Ist Floor, Race Course Road, Bengaluru",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9902859859",
+        "contact:phone": "8022268435",
+        "name": "Indian Red Cross Society - Karnataka Red Cross Blood Bank",
+        "office": "ngo",
+        "opening_hours": "24/7",
+        "operator:type": "ngo",
+        "source": "OpenGovernmentData",
+        "website": "https://www.redcrosskarnataka.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938690598,
+      "lat": 12.9878104,
+      "lon": 77.5809833,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.6/7, Crescent Road Cross, Kumar Park East",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare:speciality": "Dornier AlphaLithotripsy Treatment; X-Rays; US Scan; Urologist Consultation",
+        "name": "Hitech Kidney Stone Hospital, Bengaluru Urban",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "http://www.hitechkidneystonehospital.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938690626,
+      "lat": 12.9932806,
+      "lon": 77.580691,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "# 111 Railway Parallel Road, 7 Th Cross, Kumara Park (W)",
+        "addr:postcode": "560020",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Kumara Park (W)",
+        "amenity": "hospital",
+        "email": "info@squinteyehospital.com",
+        "name": "Samprathi Eye Hospital And Squint Centre",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "https://squinteyehospital.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938717992,
+      "lat": 12.99111,
+      "lon": 77.5777982,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No 4, 4Th Cross Kumara Park West",
+        "addr:postcode": "560020",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Jayashree Nursing Home, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7220195485,
+      "lat": 12.990736,
+      "lon": 77.5870219,
+      "tags": {
+        "name": "Shopwel Mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7232026913,
+      "lat": 12.9860194,
+      "lon": 77.5881341,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7232026916,
+      "lat": 12.9855359,
+      "lon": 77.5877164,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7276500290,
+      "lat": 12.9806334,
+      "lon": 77.5791138,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7276500304,
+      "lat": 12.9835372,
+      "lon": 77.5858502,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "name": "Corporation Bank",
+        "operator": "Corporation Bank",
+        "operator:wikidata": "Q2003387"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7276500312,
+      "lat": 12.9844624,
+      "lon": 77.5831076,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7276500338,
+      "lat": 12.9841696,
+      "lon": 77.5795363,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "Gandhi Nagar",
+        "addr:postcode": "560001",
+        "addr:street": "Race Course Road",
+        "brand": "Sugama Tourists",
+        "name": "Sugama Tourists",
+        "shop": "travel_agency",
+        "website": "https://www.sugamatourists.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7276500358,
+      "lat": 12.9836286,
+      "lon": 77.5771867,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7276500361,
+      "lat": 12.9846702,
+      "lon": 77.5746091,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7301656874,
+      "lat": 12.9872877,
+      "lon": 77.5760803,
+      "tags": {
+        "amenity": "library",
+        "name": "Quills Library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7658290107,
+      "lat": 12.9802518,
+      "lon": 77.5861466,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "LORE"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7658290108,
+      "lat": 12.9800179,
+      "lon": 77.5859709,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tijuori"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187929936,
+      "lat": 12.9928964,
+      "lon": 77.5897796,
+      "tags": {
+        "addr:full": "8th Main Rd, Vasanth Nagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "atm",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "name": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್ ಎಟಿಎಂ",
+        "operator": "Corporation Bank",
+        "operator:wikidata": "Q2003387"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962443,
+      "lat": 12.9961075,
+      "lon": 77.5794798,
+      "tags": {
+        "addr:full": "No 161 2nd Cross, Main Road, DN Ramaiah Layout, Seshadripuram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962462,
+      "lat": 12.9940393,
+      "lon": 77.5776887,
+      "tags": {
+        "addr:full": "No 159, 1st Main Rd, near Bhimas Hotel, Sripuram, Kumara Park West, Seshadripuram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962473,
+      "lat": 12.9931411,
+      "lon": 77.5767129,
+      "tags": {
+        "addr:full": "162, 1st Main Rd, Near-Priya Jewelers, 4th Block, Kumara Park West, Seshadripuram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "brand:wikipedia": "en:Indian Bank",
+        "name": "Indian Bank",
+        "name:kn": "ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962474,
+      "lat": 12.9927951,
+      "lon": 77.5898065,
+      "tags": {
+        "addr:full": "NANDI, GR. FL,I FLR,NO.11, 8th Main Rd, Vasanth Nagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "name": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240293380,
+      "lat": 12.9848923,
+      "lon": 77.5879088,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Gangotri",
+        "name:kn": "ಗಂಗೋತ್ರಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240293381,
+      "lat": 12.985676,
+      "lon": 77.5878675,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "restaurant",
+        "brand": "Brik Oven",
+        "brand:wikidata": "Q124374702",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Brik Oven",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9063471393,
+      "lat": 12.9840625,
+      "lon": 77.580813,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9063471395,
+      "lat": 12.984414,
+      "lon": 77.578281,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9063471396,
+      "lat": 12.9879515,
+      "lon": 77.5774683,
+      "tags": {
+        "name": "Titan Eye Plus",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9063471398,
+      "lat": 12.9887173,
+      "lon": 77.5779605,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Umesh Refreshments"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9063471405,
+      "lat": 12.9889048,
+      "lon": 77.5775568,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Umesh Dosa Point",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9199641839,
+      "lat": 12.9942201,
+      "lon": 77.5843234,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Water Monkey Cafe",
+        "opening_hours": "Mo-Su 11:00-18:30",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214166916,
+      "lat": 12.986254,
+      "lon": 77.5809807,
+      "tags": {
+        "name": "Navakarnataka Publications",
+        "office": "company",
+        "shop": "books"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185038,
+      "lat": 12.9867313,
+      "lon": 77.5797264,
+      "tags": {
+        "name": "Sapthagiri Xerox",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185039,
+      "lat": 12.9867761,
+      "lon": 77.5796677,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sea Rock Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185050,
+      "lat": 12.9873315,
+      "lon": 77.5788718,
+      "tags": {
+        "name": "Megha Xerox",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185060,
+      "lat": 12.989193,
+      "lon": 77.5744736,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Rasoi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185061,
+      "lat": 12.9896556,
+      "lon": 77.5744213,
+      "tags": {
+        "name": "Sri Venkateshwara Textiles",
+        "shop": "fabric"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185062,
+      "lat": 12.9899666,
+      "lon": 77.5745326,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573432807,
+      "lat": 12.9898444,
+      "lon": 77.5880764,
+      "tags": {
+        "name": "NGMA Store",
+        "shop": "art"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573432808,
+      "lat": 12.9898425,
+      "lon": 77.5879309,
+      "tags": {
+        "amenity": "library",
+        "name": "NGMA Library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573432815,
+      "lat": 12.9887722,
+      "lon": 77.5807865,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573432816,
+      "lat": 12.9887585,
+      "lon": 77.5807792,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433517,
+      "lat": 12.9887977,
+      "lon": 77.5807993,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433518,
+      "lat": 12.9887843,
+      "lon": 77.5807929,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433519,
+      "lat": 12.9887533,
+      "lon": 77.580814,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433520,
+      "lat": 12.9887395,
+      "lon": 77.5808066,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433521,
+      "lat": 12.9887787,
+      "lon": 77.5808268,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433522,
+      "lat": 12.9887653,
+      "lon": 77.5808204,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433523,
+      "lat": 12.9887631,
+      "lon": 77.5808529,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433524,
+      "lat": 12.9887497,
+      "lon": 77.5808465,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433525,
+      "lat": 12.9887376,
+      "lon": 77.5808402,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433526,
+      "lat": 12.9887239,
+      "lon": 77.5808328,
+      "tags": {
+        "covered": "yes",
+        "leisure": "picnic_table"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433528,
+      "lat": 12.98829,
+      "lon": 77.5798635,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433533,
+      "lat": 12.9887062,
+      "lon": 77.5808767,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433541,
+      "lat": 12.988699,
+      "lon": 77.5808117,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "C K P Canteen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433542,
+      "lat": 12.9888545,
+      "lon": 77.5808975,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9573433543,
+      "lat": 12.9935995,
+      "lon": 77.5844286,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9575201277,
+      "lat": 12.9942403,
+      "lon": 77.5814707,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "STEGI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9575294002,
+      "lat": 12.9936332,
+      "lon": 77.5809283,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurent1179"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9775599294,
+      "lat": 12.9961836,
+      "lon": 77.5846063,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "stone",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779286691,
+      "lat": 12.9927618,
+      "lon": 77.5892942,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Desserted"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779661191,
+      "lat": 12.9928781,
+      "lon": 77.5877257,
+      "tags": {
+        "access": "permissive",
+        "amenity": "motorcycle_parking",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779677431,
+      "lat": 12.9934802,
+      "lon": 77.5878812,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779677433,
+      "lat": 12.9933949,
+      "lon": 77.587827,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Carmel Culinary Court"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779677437,
+      "lat": 12.9928258,
+      "lon": 77.5878243,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Amphitheatre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779677464,
+      "lat": 12.9932192,
+      "lon": 77.5882796,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Diamond Jubilee Auditorium"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779677515,
+      "lat": 12.9937399,
+      "lon": 77.5884878,
+      "tags": {
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9779677525,
+      "lat": 12.9939353,
+      "lon": 77.588114,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Green Canteen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9910013000,
+      "lat": 12.986765,
+      "lon": 77.5797482,
+      "tags": {
+        "name": "Glamour Unisex Beauty Salon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10073419802,
+      "lat": 12.9851903,
+      "lon": 77.5806709,
+      "tags": {
+        "addr:floor": "G",
+        "air_conditioning": "yes",
+        "alt_name": "Nerlu Cafe",
+        "amenity": "cafe",
+        "check_date": "2025-08-24",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "Nerlu",
+        "level": "0",
+        "name": "ner.lu",
+        "outdoor_seating": "yes",
+        "start_date": "2022-07-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10183537173,
+      "lat": 12.980802,
+      "lon": 77.5770619,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10197599022,
+      "lat": 12.9909297,
+      "lon": 77.5884895,
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "capacity": "15",
+        "covered": "no",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10197599049,
+      "lat": 12.9932649,
+      "lon": 77.5856557,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228304184,
+      "lat": 12.9873323,
+      "lon": 77.5801221,
+      "tags": {
+        "addr:state": "KA",
+        "addr:street": "Kumara Krupa Road",
+        "amenity": "restaurant",
+        "name": "The Noodle Theory"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228304185,
+      "lat": 12.987145,
+      "lon": 77.579938,
+      "tags": {
+        "name": "Shubh Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228304186,
+      "lat": 12.9886571,
+      "lon": 77.5812034,
+      "tags": {
+        "name": "Cayana",
+        "shop": "boutique"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228304187,
+      "lat": 12.98669,
+      "lon": 77.5796975,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Panchavati Chemists and Druggists"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228304188,
+      "lat": 12.9873085,
+      "lon": 77.5800797,
+      "tags": {
+        "name": "Celebration",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228304189,
+      "lat": 12.9870121,
+      "lon": 77.5802165,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "name:kn": "ಡಾಮಿನೋಸ್",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228570993,
+      "lat": 12.9876205,
+      "lon": 77.5780205,
+      "tags": {
+        "name": "Aarcee",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228570994,
+      "lat": 12.9876571,
+      "lon": 77.57848,
+      "tags": {
+        "brand": "Suzuki",
+        "brand:wikidata": "Q181642",
+        "name": "Saptagiri Suzuki",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228570998,
+      "lat": 12.9880319,
+      "lon": 77.576825,
+      "tags": {
+        "amenity": "music_school",
+        "name": "Saraswati Sangeet Vidyalaya",
+        "opening_hours": "Mo-Sa 08:00-13:00,14:00-19:00; PH closed",
+        "operator:type": "private"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228570999,
+      "lat": 12.9861382,
+      "lon": 77.5800704,
+      "tags": {
+        "name": "Excelsior",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228571000,
+      "lat": 12.9877704,
+      "lon": 77.5781496,
+      "tags": {
+        "name": "Ahaa!",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228571001,
+      "lat": 12.9871351,
+      "lon": 77.578442,
+      "tags": {
+        "name": "Chalukya",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10242924683,
+      "lat": 12.988047,
+      "lon": 77.5797237,
+      "tags": {
+        "amenity": "recycling",
+        "recycling_type": "centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10286214678,
+      "lat": 12.9839077,
+      "lon": 77.5900874,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10291118232,
+      "lat": 12.985994,
+      "lon": 77.5874287,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housenumber": "46",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "High Grounds",
+        "addr:unit": "Prestige Trade Tower",
+        "amenity": "coworking_space",
+        "brand": "The Executive Centre",
+        "email": "bangalore@executivecentre.com",
+        "fee": "yes",
+        "level": "11",
+        "name": "The Executive Centre",
+        "office": "coworking",
+        "operator": "The Executive Centre",
+        "phone": "+91 80 6120 7000",
+        "website": "https://www.executivecentre.com/en-in/office-space/bangalore-prestige-trade-tower/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10291118234,
+      "lat": 12.9870786,
+      "lon": 77.5909732,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housename": "Safina Towers",
+        "addr:housenumber": "3",
+        "addr:postcode": "560052",
+        "addr:street": "Ali Asker Road",
+        "addr:suburb": "Vasanth Nagar",
+        "addr:unit": "Safina Towers South Tower",
+        "amenity": "coworking_space",
+        "brand": "The Executive Centre",
+        "email": "bangalore@executivecentre.com",
+        "fee": "yes",
+        "level": "3;4;5;6",
+        "name": "The Executive Centre",
+        "office": "coworking",
+        "operator": "The Executive Centre",
+        "phone": "+91 80 6120 7100",
+        "website": "https://www.executivecentre.com/en-in/office-space/safina-towers/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10591415447,
+      "lat": 12.9859225,
+      "lon": 77.5877778,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Maayaa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10978724223,
+      "lat": 12.9853611,
+      "lon": 77.5882869,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11061435985,
+      "lat": 12.9847784,
+      "lon": 77.5808621,
+      "tags": {
+        "amenity": "bar",
+        "name": "The Burrow"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11207651252,
+      "lat": 12.9845202,
+      "lon": 77.5902902,
+      "tags": {
+        "name": "Ticket Booth",
+        "shop": "ticket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11207651305,
+      "lat": 12.984538,
+      "lon": 77.5898492,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11214889025,
+      "lat": 12.9857351,
+      "lon": 77.5877616,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "cafe",
+        "name": "Boba Tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11214889026,
+      "lat": 12.9857843,
+      "lon": 77.5879335,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "name": "Sweet Factory",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11214889027,
+      "lat": 12.9856786,
+      "lon": 77.587802,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Misu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11214889028,
+      "lat": 12.984269,
+      "lon": 77.5865757,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "name": "Bank of Baroda",
+        "operator": "Bank of Baroda"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11214903950,
+      "lat": 12.9879489,
+      "lon": 77.5780544,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11281283563,
+      "lat": 12.9966141,
+      "lon": 77.5804456,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Bandhan Bank",
+        "brand:wikidata": "Q19882235",
+        "name": "Bandhan Bank",
+        "operator": "Bandhan Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11458986887,
+      "lat": 12.9866764,
+      "lon": 77.5890386,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11478107297,
+      "lat": 12.989156,
+      "lon": 77.5746098,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "check_date": "2024-01-02",
+        "operator": "Bank of India",
+        "operator:wikidata": "Q2004439"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11478107298,
+      "lat": 12.9891037,
+      "lon": 77.574818,
+      "tags": {
+        "check_date": "2024-01-02",
+        "name": "Sense of Style",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11478107299,
+      "lat": 12.989032,
+      "lon": 77.5750062,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-01-02",
+        "name": "Samudra"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11478107301,
+      "lat": 12.98774,
+      "lon": 77.5781892,
+      "tags": {
+        "check_date": "2024-01-02",
+        "name": "Light Zone",
+        "shop": "lighting"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11478107302,
+      "lat": 12.9877185,
+      "lon": 77.5782277,
+      "tags": {
+        "check_date": "2024-01-02",
+        "name": "Chirag Jewelers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11478259470,
+      "lat": 12.9858618,
+      "lon": 77.5877734,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "restaurant",
+        "check_date": "2024-01-02",
+        "cuisine": "punjabi",
+        "name": "Tandoori Taal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11539173257,
+      "lat": 12.9859547,
+      "lon": 77.5878321,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "fast_food",
+        "contact:instagram": "beyondburginc",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "diet:halal": "yes",
+        "name": "BeyondBurg Inc",
+        "phone": "+91 8075303678",
+        "takeaway": "yes",
+        "website": "https://beyondburginc.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11565045295,
+      "lat": 12.9905027,
+      "lon": 77.5868698,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11659640044,
+      "lat": 12.9867732,
+      "lon": 77.5908287,
+      "tags": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "covered": "no",
+        "fee": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11665305123,
+      "lat": 12.9833321,
+      "lon": 77.587783,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-02-26",
+        "cuisine": "juice",
+        "name": "Sreeraj Lassi Bar",
+        "name:kn": "ಶ್ರೀರಾಜ್ ಲಸ್ಸಿ ಬಾರ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11676429897,
+      "lat": 12.9950251,
+      "lon": 77.5870076,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11676514111,
+      "lat": 12.9879659,
+      "lon": 77.5909142,
+      "tags": {
+        "amenity": "college",
+        "name": "St. Anne's PU College"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11676514112,
+      "lat": 12.9881515,
+      "lon": 77.5905722,
+      "tags": {
+        "amenity": "school",
+        "name": "St. Anne Public School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11676514122,
+      "lat": 12.988588,
+      "lon": 77.590296,
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "chapel",
+        "name": "St Anne's Generalate",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11684647127,
+      "lat": 12.9874827,
+      "lon": 77.5744932,
+      "tags": {
+        "check_date": "2024-03-02",
+        "name": "CM RAM Arts",
+        "shop": "art"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11684647128,
+      "lat": 12.9873816,
+      "lon": 77.5744969,
+      "tags": {
+        "check_date": "2024-03-02",
+        "name": "Murugan Arts",
+        "shop": "art"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11687235825,
+      "lat": 12.9925805,
+      "lon": 77.5745703,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-03-03",
+        "name": "Vinayaka Tiffin Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11687235827,
+      "lat": 12.9807471,
+      "lon": 77.5766813,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-03-03",
+        "name": "The Kingdom"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11696866861,
+      "lat": 12.980325,
+      "lon": 77.5832927,
+      "tags": {
+        "amenity": "college",
+        "name": "Maharani's Arts, Commerce and Management College",
+        "start_date": "1975"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11696866863,
+      "lat": 12.9795827,
+      "lon": 77.5839847,
+      "tags": {
+        "amenity": "college",
+        "name": "Maharani's Science College for Women",
+        "start_date": "1938"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11769490824,
+      "lat": 12.9842865,
+      "lon": 77.5884856,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "green",
+        "material": "concrete",
+        "seats": "4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11775336500,
+      "lat": 12.9892413,
+      "lon": 77.5739801,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "The Darshini"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11951350410,
+      "lat": 12.9927709,
+      "lon": 77.5743277,
+      "tags": {
+        "brand": "Nandini",
+        "check_date": "2024-06-02",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11951350412,
+      "lat": 12.984684,
+      "lon": 77.5824702,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11951350413,
+      "lat": 12.9846445,
+      "lon": 77.5825397,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982395421,
+      "lat": 12.9954465,
+      "lon": 77.5790081,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-06-15",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11986964427,
+      "lat": 12.9924482,
+      "lon": 77.5756565,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Shanti Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11986964436,
+      "lat": 12.9937269,
+      "lon": 77.5769795,
+      "tags": {
+        "name": "Save More",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000326829,
+      "lat": 12.984181,
+      "lon": 77.5826369,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000326830,
+      "lat": 12.9846977,
+      "lon": 77.5817917,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-06-22",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000326832,
+      "lat": 12.987324,
+      "lon": 77.5783227,
+      "tags": {
+        "check_date": "2024-06-22",
+        "name": "Ravi Handicrafts",
+        "shop": "craft"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000326833,
+      "lat": 12.9880048,
+      "lon": 77.5769334,
+      "tags": {
+        "check_date": "2024-06-22",
+        "name": "Tri-Dia",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12022437803,
+      "lat": 12.9857937,
+      "lon": 77.5877686,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "cafe",
+        "name": "Sublime House of Tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12022437804,
+      "lat": 12.9857221,
+      "lon": 77.5879276,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "cafe",
+        "name": "Zed The Baker"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12022437805,
+      "lat": 12.9859481,
+      "lon": 77.5879172,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "High Grounds",
+        "addr:housename": "Prestige Trade Tower",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "Sampangi Rama Nagar",
+        "addr:unit": "The Courtyard by Sublime",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12022786207,
+      "lat": 12.994979,
+      "lon": 77.587259,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12022786208,
+      "lat": 12.9949405,
+      "lon": 77.5876816,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12039702363,
+      "lat": 12.9924495,
+      "lon": 77.5881636,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12039702364,
+      "lat": 12.9915191,
+      "lon": 77.5881355,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12118846712,
+      "lat": 12.9844944,
+      "lon": 77.5847934,
+      "tags": {
+        "amenity": "post_box"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12137776014,
+      "lat": 12.9857445,
+      "lon": 77.5877231,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "no",
+        "female": "yes",
+        "male": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12138994433,
+      "lat": 12.9859722,
+      "lon": 77.5885452,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12138994434,
+      "lat": 12.9859752,
+      "lon": 77.5885464,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12138994435,
+      "lat": 12.98573,
+      "lon": 77.5880362,
+      "tags": {
+        "name": "The Baklava Company",
+        "shop": "pastry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12138994441,
+      "lat": 12.9848716,
+      "lon": 77.5881058,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12138994442,
+      "lat": 12.9848686,
+      "lon": 77.5881046,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12138994447,
+      "lat": 12.9831549,
+      "lon": 77.5877358,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Dargah Hazrath Syedanna Yaqeen Shah",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12138994480,
+      "lat": 12.9827661,
+      "lon": 77.5870331,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12139160376,
+      "lat": 12.9904054,
+      "lon": 77.58851,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12139194003,
+      "lat": 12.9866839,
+      "lon": 77.5890377,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12147533852,
+      "lat": 12.9910219,
+      "lon": 77.5864182,
+      "tags": {
+        "amenity": "post_box",
+        "operator": "India Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12269300829,
+      "lat": 12.9882613,
+      "lon": 77.580231,
+      "tags": {
+        "access": "customers",
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12307194976,
+      "lat": 12.9943149,
+      "lon": 77.58432,
+      "tags": {
+        "name": "Anokhi",
+        "shop": "boutique"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12414204462,
+      "lat": 12.9868225,
+      "lon": 77.5852253,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Muneshwara Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12422943857,
+      "lat": 12.9919751,
+      "lon": 77.5818658,
+      "tags": {
+        "amenity": "nightclub",
+        "name": "Kitty Ko"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12422943858,
+      "lat": 12.9923293,
+      "lon": 77.5818202,
+      "tags": {
+        "amenity": "bar",
+        "name": "Sutra"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12422943859,
+      "lat": 12.9920548,
+      "lon": 77.5816472,
+      "tags": {
+        "name": "The Pastry Shop",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12422943862,
+      "lat": 12.9923685,
+      "lon": 77.5820643,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12422953303,
+      "lat": 12.9922169,
+      "lon": 77.5819811,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "OKO"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12422953304,
+      "lat": 12.9925122,
+      "lon": 77.5821367,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Baluchi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12425915304,
+      "lat": 12.9937367,
+      "lon": 77.5851059,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12425915428,
+      "lat": 12.9921372,
+      "lon": 77.5819932,
+      "tags": {
+        "access": "customers",
+        "amenity": "toilets",
+        "female": "no",
+        "male": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12426224447,
+      "lat": 12.9889016,
+      "lon": 77.5743127,
+      "tags": {
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12429035733,
+      "lat": 12.9836885,
+      "lon": 77.5772591,
+      "tags": {
+        "branch": "Milk Parlour",
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12438024630,
+      "lat": 12.9855114,
+      "lon": 77.5788172,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12441528412,
+      "lat": 12.9873315,
+      "lon": 77.5800872,
+      "tags": {
+        "check_date": "2024-12-22",
+        "name": "Cake Basket",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12441556289,
+      "lat": 12.9875015,
+      "lon": 77.5800593,
+      "tags": {
+        "amenity": "bank",
+        "brand": "IDFC First Bank",
+        "brand:wikidata": "Q22031467",
+        "check_date": "2024-12-22",
+        "name": "IDFC First Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12441556290,
+      "lat": 12.9874735,
+      "lon": 77.5801145,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IDFC First Bank",
+        "brand:wikidata": "Q22031467",
+        "check_date": "2024-12-22",
+        "operator": "IDFC First Bank",
+        "operator:wikidata": "Q22031467"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12441822767,
+      "lat": 12.9845106,
+      "lon": 77.5783868,
+      "tags": {
+        "brand": "Xiaomi",
+        "brand:wikidata": "Q1636958",
+        "check_date": "2024-12-22",
+        "name": "Xiaomi",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12525844603,
+      "lat": 12.9905992,
+      "lon": 77.5745019,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-01-23",
+        "name": "Mojo Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12525844608,
+      "lat": 12.9866607,
+      "lon": 77.5742892,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-01-23",
+        "name": "The Hyderabad Chefs"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12525844609,
+      "lat": 12.9835318,
+      "lon": 77.5745101,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2025-01-23",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350436,
+      "lat": 12.989113,
+      "lon": 77.5747176,
+      "tags": {
+        "check_date": "2025-03-21",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350442,
+      "lat": 12.9925107,
+      "lon": 77.5746316,
+      "tags": {
+        "check_date": "2025-03-21",
+        "shop": "tyres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350444,
+      "lat": 12.9844685,
+      "lon": 77.5871851,
+      "tags": {
+        "amenity": "post_box",
+        "operator": "India Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350448,
+      "lat": 12.9924689,
+      "lon": 77.574722,
+      "tags": {
+        "check_date": "2025-03-21",
+        "shop": "tyres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350450,
+      "lat": 12.9912292,
+      "lon": 77.574705,
+      "tags": {
+        "check_date": "2025-03-21",
+        "hairdresser": "barber",
+        "name": "Life Style Men's Salon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350451,
+      "lat": 12.9901712,
+      "lon": 77.5745755,
+      "tags": {
+        "check_date": "2025-03-21",
+        "name": "Bhagyalakshmi Book Stall",
+        "shop": "books"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350452,
+      "lat": 12.9892704,
+      "lon": 77.5743534,
+      "tags": {
+        "amenity": "kindergarten",
+        "check_date": "2025-03-21",
+        "name": "MBN Toddler Home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686350457,
+      "lat": 12.9836392,
+      "lon": 77.5855122,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "check_date": "2025-03-21",
+        "operator": "Union Bank of India",
+        "operator:wikidata": "Q2004078"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12846419059,
+      "lat": 12.988547,
+      "lon": 77.5772027,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-05-18",
+        "name": "Chalukya Samrat"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13086275912,
+      "lat": 12.985053,
+      "lon": 77.5791058,
+      "tags": {
+        "amenity": "cafe",
+        "contact:instagram": "blancthecoffeeplace_",
+        "cuisine": "coffee_shop",
+        "name": "Blanc The Coffee Place"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13288585570,
+      "lat": 12.9850109,
+      "lon": 77.5847599,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Loya"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36982901,
+      "center": {
+        "lat": 12.9898083,
+        "lon": 77.5851677
+      },
+      "tags": {
+        "barrier": "fence",
+        "golf:course": "18_hole",
+        "leisure": "golf_course",
+        "name": "Bangalore Golf Course",
+        "name:kn": "ಬೆಂಗಳೂರು ಗೋಲ್ಫ್ ಮೈದಾನ",
+        "short_name": "BGC",
+        "start_date": "1876",
+        "website": "http://bgc1876.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37869985,
+      "center": {
+        "lat": 12.9823794,
+        "lon": 77.5809442
+      },
+      "tags": {
+        "alt_name": "Mysore Race Club",
+        "leisure": "sports_centre",
+        "name": "Bangalore Race Course",
+        "official_name": "Bangalore Turf Club",
+        "sport": "horse_racing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38870537,
+      "center": {
+        "lat": 12.9921116,
+        "lon": 77.5781507
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Kumara Park West Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38870603,
+      "center": {
+        "lat": 12.9865923,
+        "lon": 77.586909
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housenumber": "70",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "alt_name": "Sophia Girls High School",
+        "amenity": "school",
+        "landuse": "education",
+        "name": "Sophia High School",
+        "name:kn": "ಸೋಫಿಯ ಪ್ರೌಡಶಾಲೆ",
+        "old_name": "Convent of the Sacred Heart",
+        "school:gender": "female",
+        "start_date": "1949"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38871248,
+      "center": {
+        "lat": 12.9845695,
+        "lon": 77.5901037
+      },
+      "tags": {
+        "amenity": "planetarium",
+        "landuse": "commercial",
+        "name": "Jawaharlal Nehru Planetarium",
+        "name:etymology:wikidata": "Q1047",
+        "short_name": "JNP",
+        "tourism": "attraction",
+        "website": "https://www.taralaya.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38871258,
+      "center": {
+        "lat": 12.9827565,
+        "lon": 77.5889767
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 45375850,
+      "center": {
+        "lat": 12.9921413,
+        "lon": 77.5743798
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Government Girls High School",
+        "name:kn": "ಸರ್ಕಾರಿ ಬಾಲಕಿಯರ ಪ್ರೌಡಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 45443117,
+      "center": {
+        "lat": 12.9883532,
+        "lon": 77.5757988
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Nehru Park",
+        "name:etymology:wikidata": "Q1047",
+        "name:kn": "ನೆಹರು ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 45443161,
+      "center": {
+        "lat": 12.9876863,
+        "lon": 77.5790668
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 45443657,
+      "center": {
+        "lat": 12.9891598,
+        "lon": 77.5807461
+      },
+      "tags": {
+        "alt_name": "Chitra Kala Parishat",
+        "amenity": "college",
+        "name": "Karnataka Chitrakala Parishath",
+        "name:kn": "ಚಿತ್ರಕಲಾ ಪರಿಷತ್",
+        "website": "http://karnatakachitrakalaparishath.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 45443682,
+      "center": {
+        "lat": 12.9889187,
+        "lon": 77.5762497
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560020",
+        "addr:street": "Seshadripuram",
+        "amenity": "college",
+        "email": "info@set.edu.in",
+        "fax": "+91-80-22955351",
+        "name": "Sheshadripuram College",
+        "name:kn": "ಶೇಶಾದ್ರಿಪುರಂ ಕಾಲೇಜು",
+        "phone": "+91-80-22955350",
+        "website": "https://www.set.edu.in/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 52242928,
+      "center": {
+        "lat": 12.9858897,
+        "lon": 77.5890352
+      },
+      "tags": {
+        "amenity": "public_building",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 121883116,
+      "center": {
+        "lat": 12.9890869,
+        "lon": 77.58839
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 121883178,
+      "center": {
+        "lat": 12.9846547,
+        "lon": 77.5899474
+      },
+      "tags": {
+        "leisure": "playground",
+        "name": "Science Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 121883179,
+      "center": {
+        "lat": 12.9850136,
+        "lon": 77.5900883
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 148661098,
+      "center": {
+        "lat": 12.99118,
+        "lon": 77.575137
+      },
+      "tags": {
+        "amenity": "college",
+        "building": "yes",
+        "check_date": "2024-01-02",
+        "name": "Seshadripuram Law College",
+        "name:en": "Seshadripuram Law College",
+        "name:kn": "ಶೇಷಾದ್ರಿಪುರಂ ಕಾನೂನು ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 148669366,
+      "center": {
+        "lat": 12.988255,
+        "lon": 77.5767046
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Nehru Park",
+        "name:etymology:wikidata": "Q1047",
+        "name:kn": "ನೆಹರು ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150797673,
+      "center": {
+        "lat": 12.9822669,
+        "lon": 77.5807312
+      },
+      "tags": {
+        "area": "no",
+        "leisure": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 182826337,
+      "center": {
+        "lat": 12.988373,
+        "lon": 77.5905885
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "St. Anne's First Grade College for Women"
+      }
+    },
+    {
+      "type": "way",
+      "id": 182826338,
+      "center": {
+        "lat": 12.9887991,
+        "lon": 77.5908396
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "St. Mary's High School",
+        "name:kn": "ಸೇಂಟ್ ಮೇರಿ ಪ್ರೌಡಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188340338,
+      "center": {
+        "lat": 12.9935054,
+        "lon": 77.5851109
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188340340,
+      "center": {
+        "lat": 12.9931588,
+        "lon": 77.5852067
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192032071,
+      "center": {
+        "lat": 12.991783,
+        "lon": 77.5817632
+      },
+      "tags": {
+        "access": "customers",
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192032072,
+      "center": {
+        "lat": 12.9940804,
+        "lon": 77.5854758
+      },
+      "tags": {
+        "access": "customers",
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 202289066,
+      "center": {
+        "lat": 12.984553,
+        "lon": 77.5832329
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "name": "Bangalore Turf Club Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208827393,
+      "center": {
+        "lat": 12.9835106,
+        "lon": 77.58689
+      },
+      "tags": {
+        "addr:street": "Race Course Road",
+        "amenity": "college",
+        "landuse": "education",
+        "name": "Govt R C College",
+        "official_name": "Government Ramnarayan Chellaram College of Commerce & Management"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208827410,
+      "center": {
+        "lat": 12.9824307,
+        "lon": 77.5864574
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housenumber": "3",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "addr:suburb": "High Grounds",
+        "amenity": "public_building",
+        "landuse": "commercial",
+        "name": "High Court of Karnataka Administrative Block"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208827412,
+      "center": {
+        "lat": 12.9814206,
+        "lon": 77.5855355
+      },
+      "tags": {
+        "amenity": "police",
+        "name": "CID Office",
+        "old_name": "Carlton House"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273780381,
+      "center": {
+        "lat": 12.9851335,
+        "lon": 77.5914853
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Indira Gandhi Musical Fountain Park",
+        "name:etymology:wikidata": "Q1149",
+        "start_date": "1995"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273786646,
+      "center": {
+        "lat": 12.9858079,
+        "lon": 77.5908514
+      },
+      "tags": {
+        "historic": "memorial",
+        "leisure": "park",
+        "name": "National Military Memorial",
+        "tourism": "attraction"
+      }
+    },
+    {
+      "type": "way",
+      "id": 291266074,
+      "center": {
+        "lat": 12.9880279,
+        "lon": 77.5803274
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "landuse": "commercial",
+        "name": "Gandhi Bhavan",
+        "name:etymology:wikidata": "Q1001",
+        "name:kn": "ಗಾಂಧಿ ಭವನ",
+        "office": "ngo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313828425,
+      "center": {
+        "lat": 12.988234,
+        "lon": 77.5749312
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "name": "Corporation Swimming Pool",
+        "name:kn": "ಕಾರ್ಪೊರೆಷನ್ ಈಜುಕೊಳ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313828426,
+      "center": {
+        "lat": 12.9866534,
+        "lon": 77.5788086
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Madhav Rao Park",
+        "name:etymology:wikidata": "Q6951710",
+        "name:kn": "ಮಾಧವ ರಾವ್ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335169243,
+      "center": {
+        "lat": 12.9965326,
+        "lon": 77.5822913
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335172719,
+      "center": {
+        "lat": 12.9908973,
+        "lon": 77.5788013
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Gandhi Nagar High School",
+        "name:kn": "ಗಾಂಧಿನಗರ ಪೌಡಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346526279,
+      "center": {
+        "lat": 12.9943024,
+        "lon": 77.5843483
+      },
+      "tags": {
+        "building": "yes",
+        "name": "RainTree",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346526405,
+      "center": {
+        "lat": 12.9933774,
+        "lon": 77.5873684
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "chapel",
+        "denomination": "catholic",
+        "name": "Mount Carmel Chapel",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346806171,
+      "center": {
+        "lat": 12.9929755,
+        "lon": 77.5813803
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "building": "yes",
+        "name": "Kalinga"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347485349,
+      "center": {
+        "lat": 12.9883152,
+        "lon": 77.5726942
+      },
+      "tags": {
+        "amenity": "hospital",
+        "building": "commercial",
+        "building:levels": "5",
+        "name": "Apollo Hospital",
+        "name:kn": "ಅಪೋಲೋ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348381097,
+      "center": {
+        "lat": 12.9884385,
+        "lon": 77.5746494
+      },
+      "tags": {
+        "addr:postcode": "560020",
+        "amenity": "post_office",
+        "building": "yes",
+        "name": "Seshadripuram Post Office",
+        "name:kn": "ಶೇಶಾದ್ರಿಪುರಂ ಅಂಚೆ ಕಛೇರಿ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348539706,
+      "center": {
+        "lat": 12.9884136,
+        "lon": 77.5742764
+      },
+      "tags": {
+        "addr:place": "Seshadripuram",
+        "addr:postcode": "560020",
+        "addr:street": "Subedar Chatram Road",
+        "addr:suburb": "Seshadripuram",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Anjaneya Swamy Sannidhi",
+        "name:kn": "ಆಂಜನೇಯ ಸ್ವಾಮಿ ಸನ್ನಿಧಿ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351384825,
+      "center": {
+        "lat": 12.9801752,
+        "lon": 77.5845128
+      },
+      "tags": {
+        "amenity": "theatre",
+        "building": "yes",
+        "building:part": "yes",
+        "height": "10",
+        "name": "Kondajji Basappa Auditorium"
+      }
+    },
+    {
+      "type": "way",
+      "id": 352191252,
+      "center": {
+        "lat": 12.9854416,
+        "lon": 77.5821636
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560001",
+        "addr:street": "Race Course Road (Devaraj Urs Road)",
+        "amenity": "college",
+        "name": "Karnataka Judicial Academy",
+        "name:kn": "ಕರ್ನಾಟಕ ನ್ಯಾಯಾಂಗ ಅಕಾಡೆಮಿ",
+        "phone": "+918022382894/96",
+        "smoking": "no",
+        "website": "https://kjablr.kar.nic.in/node/1/index.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363477537,
+      "center": {
+        "lat": 12.9849559,
+        "lon": 77.585188
+      },
+      "tags": {
+        "access": "customers",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396678893,
+      "center": {
+        "lat": 12.9951289,
+        "lon": 77.5866983
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 403473901,
+      "center": {
+        "lat": 12.9870893,
+        "lon": 77.5850959
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 403473907,
+      "center": {
+        "lat": 12.9867516,
+        "lon": 77.5856698
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 403473911,
+      "center": {
+        "lat": 12.9887832,
+        "lon": 77.5884095
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Bhagawan Sree Maruthi Temple",
+        "name:en": "Bhagawan Sree Maruthi Temple",
+        "opening_hours": "Mo-Su 06:30-12:00, 17:30-20:30",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 403476602,
+      "center": {
+        "lat": 12.9896882,
+        "lon": 77.5884338
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437536497,
+      "center": {
+        "lat": 12.9918836,
+        "lon": 77.5867661
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "common"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437538186,
+      "center": {
+        "lat": 12.9919586,
+        "lon": 77.5811238
+      },
+      "tags": {
+        "access": "customers",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437538187,
+      "center": {
+        "lat": 12.9905743,
+        "lon": 77.5833603
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437658830,
+      "center": {
+        "lat": 12.9822446,
+        "lon": 77.5776681
+      },
+      "tags": {
+        "leisure": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437658831,
+      "center": {
+        "lat": 12.9829894,
+        "lon": 77.5813372
+      },
+      "tags": {
+        "leisure": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437658832,
+      "center": {
+        "lat": 12.9822094,
+        "lon": 77.5840196
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437658833,
+      "center": {
+        "lat": 12.983654,
+        "lon": 77.583646
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437658834,
+      "center": {
+        "lat": 12.9831333,
+        "lon": 77.5794967
+      },
+      "tags": {
+        "leisure": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775169697,
+      "center": {
+        "lat": 12.9845932,
+        "lon": 77.5843957
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775169698,
+      "center": {
+        "lat": 12.9846121,
+        "lon": 77.5881533
+      },
+      "tags": {
+        "area:highway": "traffic_island",
+        "garden:type": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775169699,
+      "center": {
+        "lat": 12.9855698,
+        "lon": 77.588275
+      },
+      "tags": {
+        "garden:type": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 779282869,
+      "center": {
+        "lat": 12.9840682,
+        "lon": 77.578333
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 779282870,
+      "center": {
+        "lat": 12.9818346,
+        "lon": 77.5757991
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "Gandhi Nagar",
+        "addr:housenumber": "9",
+        "addr:postcode": "560009",
+        "addr:street": "Race Course Road",
+        "alt_name": "Sri Jagadguru Renukacharya College of Law",
+        "amenity": "college",
+        "name": "SJR College of Law",
+        "website": "https://www.sjrlawcollege.in/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 782014105,
+      "center": {
+        "lat": 12.9902123,
+        "lon": 77.5800977
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 782014109,
+      "center": {
+        "lat": 12.9903468,
+        "lon": 77.5818819
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 986979031,
+      "center": {
+        "lat": 12.9940269,
+        "lon": 77.584796
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 997923996,
+      "center": {
+        "lat": 12.9863583,
+        "lon": 77.5792111
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "6/6 Kumarakrupa Road OppositeShivananda Circle , High Grounds",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Dr. P.R. Desai Hospital Pvt Ltd",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890952,
+      "center": {
+        "lat": 12.9931109,
+        "lon": 77.5886356
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890955,
+      "center": {
+        "lat": 12.9926063,
+        "lon": 77.5884482
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Vatika"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890960,
+      "center": {
+        "lat": 12.9940556,
+        "lon": 77.5871824
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890964,
+      "center": {
+        "lat": 12.993608,
+        "lon": 77.5884909
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890966,
+      "center": {
+        "lat": 12.9929644,
+        "lon": 77.5885118
+      },
+      "tags": {
+        "leisure": "pitch",
+        "lit": "no",
+        "sport": "basketball",
+        "surface": "tartan"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890967,
+      "center": {
+        "lat": 12.993654,
+        "lon": 77.5882429
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890976,
+      "center": {
+        "lat": 12.99345,
+        "lon": 77.5871464
+      },
+      "tags": {
+        "amenity": "monastery",
+        "community:gender": "female",
+        "denomination": "catholic",
+        "landuse": "religious",
+        "monastery:type": "convent",
+        "name": "Mount Carmel Convent",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064890977,
+      "center": {
+        "lat": 12.9940686,
+        "lon": 77.5871753
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Mount Carmel Central School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064892106,
+      "center": {
+        "lat": 12.9937289,
+        "lon": 77.5888268
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1076398554,
+      "center": {
+        "lat": 12.9805943,
+        "lon": 77.5799311
+      },
+      "tags": {
+        "amenity": "fire_station",
+        "name": "High Grounds Fire Station",
+        "name:kn": "ಹೈಗ್ರೌಂಡ್ಸ್ ಅಗ್ನಿಶಾಮಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1081215229,
+      "center": {
+        "lat": 12.9889353,
+        "lon": 77.5740851
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1081215245,
+      "center": {
+        "lat": 12.9802646,
+        "lon": 77.5815071
+      },
+      "tags": {
+        "alt_name": "Karnataka State Prisons Department",
+        "amenity": "police",
+        "landuse": "commercial",
+        "name": "Department of Prisons & Correctional Services",
+        "office": "government"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1081848010,
+      "center": {
+        "lat": 12.9827382,
+        "lon": 77.5872615
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560001",
+        "addr:street": "Palace Road",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1113050871,
+      "center": {
+        "lat": 12.9883214,
+        "lon": 77.576245
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Nehru Sports Club",
+        "name:etymology:wikidata": "Q1047",
+        "name:kn": "ನೆಹರು ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124828965,
+      "center": {
+        "lat": 12.9835259,
+        "lon": 77.5899784
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124828967,
+      "center": {
+        "lat": 12.9847727,
+        "lon": 77.5829241
+      },
+      "tags": {
+        "amenity": "police",
+        "name": "High Grounds Traffic Police Station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124838493,
+      "center": {
+        "lat": 12.9873579,
+        "lon": 77.5805107
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Bharat Seva Dal",
+        "name:kn": "ಭಾರತ ಸೇವಾದಳ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125999710,
+      "center": {
+        "lat": 12.9962155,
+        "lon": 77.5833869
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "51",
+        "addr:street": "Railway Parallel Road",
+        "amenity": "school",
+        "name": "Bethesda High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195571016,
+      "center": {
+        "lat": 12.9963142,
+        "lon": 77.5802792
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡಿಯನ್ ಆಯಿಲ್",
+        "operator": "Indian Oil"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195571017,
+      "center": {
+        "lat": 12.9950657,
+        "lon": 77.5791434
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Trigaz",
+        "name": "Trigaz",
+        "operator": "Trigaz"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1209738951,
+      "center": {
+        "lat": 12.9841887,
+        "lon": 77.5905097
+      },
+      "tags": {
+        "leisure": "playground",
+        "name": "Science Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1209738954,
+      "center": {
+        "lat": 12.984445,
+        "lon": 77.5897752
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "lit": "no",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217527429,
+      "center": {
+        "lat": 12.9892107,
+        "lon": 77.5778284
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1256004256,
+      "center": {
+        "lat": 12.986744,
+        "lon": 77.5910584
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "operator": "BBMP",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1256004257,
+      "center": {
+        "lat": 12.9868497,
+        "lon": 77.5906621
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "operator": "BBMP",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286336448,
+      "center": {
+        "lat": 12.9851432,
+        "lon": 77.587593
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286336449,
+      "center": {
+        "lat": 12.9852406,
+        "lon": 77.5874133
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286336450,
+      "center": {
+        "lat": 12.9862256,
+        "lon": 77.5865829
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286336460,
+      "center": {
+        "lat": 12.9859649,
+        "lon": 77.5872179
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286336461,
+      "center": {
+        "lat": 12.9855191,
+        "lon": 77.5878601
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1292999612,
+      "center": {
+        "lat": 12.993966,
+        "lon": 77.5771632
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sri Chaitanya Techno School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1293978355,
+      "center": {
+        "lat": 12.9790661,
+        "lon": 77.5821806
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1293979654,
+      "center": {
+        "lat": 12.979646,
+        "lon": 77.5813946
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1293979656,
+      "center": {
+        "lat": 12.9792647,
+        "lon": 77.5798969
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1296036857,
+      "center": {
+        "lat": 12.9834013,
+        "lon": 77.5892693
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1296036860,
+      "center": {
+        "lat": 12.982974,
+        "lon": 77.5893518
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1296036861,
+      "center": {
+        "lat": 12.9831185,
+        "lon": 77.5894544
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297146106,
+      "center": {
+        "lat": 12.9905792,
+        "lon": 77.586795
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297146109,
+      "center": {
+        "lat": 12.9902984,
+        "lon": 77.5868815
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297146110,
+      "center": {
+        "lat": 12.990488,
+        "lon": 77.586411
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297630661,
+      "center": {
+        "lat": 12.9858819,
+        "lon": 77.5883501
+      },
+      "tags": {
+        "garden:type": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297674402,
+      "center": {
+        "lat": 12.9944698,
+        "lon": 77.5883037
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297674403,
+      "center": {
+        "lat": 12.9950071,
+        "lon": 77.5873706
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297674404,
+      "center": {
+        "lat": 12.9950196,
+        "lon": 77.5875986
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1299765928,
+      "center": {
+        "lat": 12.9927882,
+        "lon": 77.5858214
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304255927,
+      "center": {
+        "lat": 12.9846061,
+        "lon": 77.5906943
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "operator": "BBMP",
+        "orientation": "parallel",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1309200350,
+      "center": {
+        "lat": 12.9836454,
+        "lon": 77.5737757
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1310872547,
+      "center": {
+        "lat": 12.9823883,
+        "lon": 77.5871066
+      },
+      "tags": {
+        "garden:type": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1312442495,
+      "center": {
+        "lat": 12.9879774,
+        "lon": 77.5913386
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "orientation": "parallel",
+        "parking": "street_side",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342699279,
+      "center": {
+        "lat": 12.9919346,
+        "lon": 77.582268
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342699280,
+      "center": {
+        "lat": 12.9922548,
+        "lon": 77.5825197
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342699282,
+      "center": {
+        "lat": 12.9924904,
+        "lon": 77.5828096
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342699292,
+      "center": {
+        "lat": 12.9923618,
+        "lon": 77.5825112
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342699293,
+      "center": {
+        "lat": 12.992018,
+        "lon": 77.5824186
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342976490,
+      "center": {
+        "lat": 12.9879779,
+        "lon": 77.5810303
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sindhi High School",
+        "website": "http://sindhihighschool.org/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342976500,
+      "center": {
+        "lat": 12.9869669,
+        "lon": 77.5763639
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342998608,
+      "center": {
+        "lat": 12.9920403,
+        "lon": 77.5814166
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "roof",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342998611,
+      "center": {
+        "lat": 12.9929941,
+        "lon": 77.5820388
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353661366,
+      "center": {
+        "lat": 12.989969,
+        "lon": 77.5741628
+      },
+      "tags": {
+        "amenity": "fuel",
+        "check_date": "2024-02-11"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1370045550,
+      "center": {
+        "lat": 12.9906718,
+        "lon": 77.5731946
+      },
+      "tags": {
+        "amenity": "theatre",
+        "landuse": "commercial",
+        "name": "AV Varadachar Kalakshetra"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1370045556,
+      "center": {
+        "lat": 12.990094,
+        "lon": 77.5767803
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1370045558,
+      "center": {
+        "lat": 12.990054,
+        "lon": 77.5772363
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "Badaganadu Sangha Convention Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1414191566,
+      "center": {
+        "lat": 12.9812666,
+        "lon": 77.5783712
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Munishwara Swamy Sanidhi",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

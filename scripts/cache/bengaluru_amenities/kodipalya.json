@@ -1,0 +1,102 @@
+{
+  "area_name": "Kodipalya",
+  "osm_id": 8700678300,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 8,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 3512417933,
+      "lat": 12.8996006,
+      "lon": 77.4958799,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tea Coffee",
+        "name:kn": "ಟೀ ಕಾಫಿ",
+        "opening_hours": "Mo-Sa 09:00-17:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331547213,
+      "center": {
+        "lat": 12.9012695,
+        "lon": 77.4972635
+      },
+      "tags": {
+        "amenity": "college",
+        "landuse": "education",
+        "name": "Adichunchanagiri Shikshana Trust",
+        "name:kn": "ಆದಿಚುಂಚನಗಿರಿ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775176998,
+      "center": {
+        "lat": 12.900509,
+        "lon": 77.4965005
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775176999,
+      "center": {
+        "lat": 12.9000482,
+        "lon": 77.4964173
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 775177000,
+      "center": {
+        "lat": 12.899673,
+        "lon": 77.4963469
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364433561,
+      "center": {
+        "lat": 12.9049222,
+        "lon": 77.4948419
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "St. Mary's Global Academy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1365489282,
+      "center": {
+        "lat": 12.9085275,
+        "lon": 77.4875244
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1365489291,
+      "center": {
+        "lat": 12.9007541,
+        "lon": 77.4884411
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    }
+  ]
+}

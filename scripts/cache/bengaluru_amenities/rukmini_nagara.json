@@ -1,0 +1,1048 @@
+{
+  "area_name": "Rukmini Nagara",
+  "osm_id": 9967192674,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 80,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2467791465,
+      "lat": 13.0490027,
+      "lon": 77.5079841,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Total Gas",
+        "name": "Total Gas Station",
+        "operator": "Total Gas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939278605,
+      "lat": 13.0497108,
+      "lon": 77.5042903,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Old Widia School Stop,Hesarsghatta Main Road,Bhuvaneshwari Nagar,T. Dasarahalli",
+        "addr:postcode": "560057",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Deepak Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7489617972,
+      "lat": 13.0375383,
+      "lon": 77.5051347,
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "catholic",
+        "name": "St. Paul's Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7489617973,
+      "lat": 13.0373398,
+      "lon": 77.5057515,
+      "tags": {
+        "amenity": "monastery",
+        "community:gender": "female",
+        "denomination": "roman_catholic",
+        "name": "Redemption Sisters",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7489626471,
+      "lat": 13.0413777,
+      "lon": 77.5050224,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "naveen clinc"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038553,
+      "lat": 13.0439933,
+      "lon": 77.5065494,
+      "tags": {
+        "addr:full": "Vidya Nagar, Peenya, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Esi Dispensary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8329662306,
+      "lat": 13.0448529,
+      "lon": 77.5012583,
+      "tags": {
+        "amenity": "atm",
+        "cash_in": "no",
+        "currency:INR": "yes",
+        "operator": "ICICI Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8695987226,
+      "lat": 13.0459291,
+      "lon": 77.5006967,
+      "tags": {
+        "name": "Dus Minute",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9844348527,
+      "lat": 13.0459476,
+      "lon": 77.5078257,
+      "tags": {
+        "amenity": "driving_school",
+        "name": "Maruthi Driving School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11933068755,
+      "lat": 13.0488907,
+      "lon": 77.5004202,
+      "tags": {
+        "addr:floor": "2",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "bar": "no",
+        "check_date": "2024-08-29",
+        "delivery": "no",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "2",
+        "microbrewery": "no",
+        "name": "IKEA Restaurant",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11980088131,
+      "lat": 13.0494893,
+      "lon": 77.5006631,
+      "tags": {
+        "access": "permissive",
+        "addr:floor": "2",
+        "amenity": "toilets",
+        "check_date": "2024-08-29",
+        "level": "2",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110990,
+      "lat": 13.0480353,
+      "lon": 77.5008879,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "capacity": "20",
+        "name": "Trin Hub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110992,
+      "lat": 13.0477871,
+      "lon": 77.5008731,
+      "tags": {
+        "amenity": "taxi",
+        "name": "Pre Fixed Auto Fare Booth"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110993,
+      "lat": 13.0478883,
+      "lon": 77.5001335,
+      "tags": {
+        "access": "permissive",
+        "level": "1",
+        "name": "Madras Coffee House",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110994,
+      "lat": 13.0480673,
+      "lon": 77.5001764,
+      "tags": {
+        "access": "permissive",
+        "level": "1",
+        "name": "Go Desi",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110995,
+      "lat": 13.0481052,
+      "lon": 77.500045,
+      "tags": {
+        "access": "permissive",
+        "amenity": "vending_machine",
+        "level": "1",
+        "operator": "Vendo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110997,
+      "lat": 13.0482594,
+      "lon": 77.4996789,
+      "tags": {
+        "access": "permissive",
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "level": "1",
+        "operator": "State Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998178516,
+      "lat": 13.0454991,
+      "lon": 77.5056476,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "check_date": "2024-06-21",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998985477,
+      "lat": 13.0479053,
+      "lon": 77.5006073,
+      "tags": {
+        "access": "permissive",
+        "amenity": "toilets",
+        "check_date": "2024-06-21",
+        "fee": "yes",
+        "female": "yes",
+        "level": "1",
+        "male": "yes",
+        "operator": "BMRCL",
+        "toilets:handwashing": "yes",
+        "toilets:position": "urinal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998985478,
+      "lat": 13.0480153,
+      "lon": 77.5005074,
+      "tags": {
+        "access": "permissive",
+        "amenity": "drinking_water",
+        "bottle": "yes",
+        "fee": "yes",
+        "indoor": "yes",
+        "level": "1",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12017302524,
+      "lat": 13.0473955,
+      "lon": 77.50291,
+      "tags": {
+        "amenity": "college",
+        "check_date": "2024-06-28",
+        "name": "Sacred Heart College of Nursing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12017302525,
+      "lat": 13.0444229,
+      "lon": 77.510222,
+      "tags": {
+        "check_date": "2024-06-28",
+        "name": "Reliance Digital",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12151497861,
+      "lat": 13.0446326,
+      "lon": 77.5008126,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12528580055,
+      "lat": 13.0486189,
+      "lon": 77.5076129,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560073",
+        "addr:street": "Hessarghatta Main Road,Bagalakunte",
+        "amenity": "veterinary",
+        "name": "Nandi Pet Clinic And Shop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12535763496,
+      "lat": 13.0497759,
+      "lon": 77.507496,
+      "tags": {
+        "amenity": "bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12535945312,
+      "lat": 13.0481604,
+      "lon": 77.5077186,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sharma Family Dhaba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12535945313,
+      "lat": 13.048088,
+      "lon": 77.5076993,
+      "tags": {
+        "name": "BAJRANG STEEL FABRICATION",
+        "shop": "doityourself"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12743805130,
+      "lat": 13.0463318,
+      "lon": 77.4990643,
+      "tags": {
+        "access": "yes",
+        "amenity": "drinking_water",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12745127574,
+      "lat": 13.0462611,
+      "lon": 77.4989131,
+      "tags": {
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13131363119,
+      "lat": 13.0339213,
+      "lon": 77.5039222,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "Baskin Robbins"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133117196,
+      "center": {
+        "lat": 13.0491979,
+        "lon": 77.5054344
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Soundarya School",
+        "name:kn": "ಸೌಂದರ್ಯ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338086178,
+      "center": {
+        "lat": 13.035367,
+        "lon": 77.5026789
+      },
+      "tags": {
+        "addr:city": "banglore",
+        "addr:district": "banglore",
+        "addr:housenumber": "6th cross",
+        "addr:postcode": "560073",
+        "addr:street": "Nagasandra Main Road",
+        "dog": "leashed",
+        "leisure": "park",
+        "name": "bmtc park",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338086179,
+      "center": {
+        "lat": 13.0344882,
+        "lon": 77.5014235
+      },
+      "tags": {
+        "alt_name": "Nandi Scanning Center",
+        "amenity": "clinic",
+        "building": "clinic",
+        "name": "Nandi Clinic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346167952,
+      "center": {
+        "lat": 13.0365215,
+        "lon": 77.4987163
+      },
+      "tags": {
+        "amenity": "library",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348997452,
+      "center": {
+        "lat": 13.0464368,
+        "lon": 77.5022271
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "compressed_air": "yes",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್",
+        "operator": "Shell"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350768115,
+      "center": {
+        "lat": 13.0444199,
+        "lon": 77.4992379
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Volleyball",
+        "name:kn": "ವಾಲಿಬಾಲ್ ಅಂಗಣ",
+        "sport": "volleyball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350768156,
+      "center": {
+        "lat": 13.0444245,
+        "lon": 77.4994158
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Basketball Court",
+        "name:kn": "ಬಾಸ್ಕೆಟ್ ಬಾಲ್ ಅಂಕಣ",
+        "sport": "basketball",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 398905976,
+      "center": {
+        "lat": 13.045139,
+        "lon": 77.5004252
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "name": "Swimming Pool",
+        "name:kn": "ಈಜುಕೊಳ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 398905977,
+      "center": {
+        "lat": 13.044459,
+        "lon": 77.4990546
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Cricket Pitch",
+        "name:kn": "ಕ್ರಿಕೆಟ್ ಆಟದ ಮೈದಾನ",
+        "sport": "cricket",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 398905978,
+      "center": {
+        "lat": 13.0443989,
+        "lon": 77.4995507
+      },
+      "tags": {
+        "leisure": "playground",
+        "name": "Children's Play Area"
+      }
+    },
+    {
+      "type": "way",
+      "id": 399196845,
+      "center": {
+        "lat": 13.0451849,
+        "lon": 77.5007951
+      },
+      "tags": {
+        "leisure": "playground",
+        "name": "Children's Play Area"
+      }
+    },
+    {
+      "type": "way",
+      "id": 399196846,
+      "center": {
+        "lat": 13.0470904,
+        "lon": 77.5008221
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "name": "Swimming Pool",
+        "name:kn": "ಈಜುಕೊಳ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 399196847,
+      "center": {
+        "lat": 13.0469963,
+        "lon": 77.5010996
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground",
+        "name": "Children's Play Area"
+      }
+    },
+    {
+      "type": "way",
+      "id": 660403104,
+      "center": {
+        "lat": 13.0492751,
+        "lon": 77.5003507
+      },
+      "tags": {
+        "addr:street": "Tumkur Road",
+        "air_conditioning": "yes",
+        "brand": "IKEA",
+        "brand:wikidata": "Q54078",
+        "check_date": "2024-08-29",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "landuse": "retail",
+        "name": "IKEA",
+        "name:kn": "ಇಕೇಯ",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "IKEA",
+        "phone": "1800 419 45 32",
+        "shop": "furniture",
+        "stroller": "yes",
+        "toilets": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726342145,
+      "center": {
+        "lat": 13.048319,
+        "lon": 77.5080361
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.30 Hesaraghatta Road , T Dasarahalli",
+        "addr:postcode": "560057",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "building": "commercial",
+        "name": "Dr Ramachandra Hospital",
+        "name:kn": "ರಾಮಚಂದ್ರ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781538791,
+      "center": {
+        "lat": 13.0482907,
+        "lon": 77.5001797
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "name": "Nagasandra Metro Station Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785258899,
+      "center": {
+        "lat": 13.0489233,
+        "lon": 77.5042602
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Ramaiah Park",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:type": "government",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "way",
+      "id": 896095539,
+      "center": {
+        "lat": 13.0463672,
+        "lon": 77.5009318
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 896095540,
+      "center": {
+        "lat": 13.0464415,
+        "lon": 77.5003903
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 896095541,
+      "center": {
+        "lat": 13.0459569,
+        "lon": 77.5004955
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 896095542,
+      "center": {
+        "lat": 13.0458953,
+        "lon": 77.5009189
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1070554580,
+      "center": {
+        "lat": 13.0357273,
+        "lon": 77.5056937
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Chirst University Yeshwantpur Campus"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1073073120,
+      "center": {
+        "lat": 13.0463371,
+        "lon": 77.5065296
+      },
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Prakriya Hospital",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1073073121,
+      "center": {
+        "lat": 13.0457876,
+        "lon": 77.5072216
+      },
+      "tags": {
+        "amenity": "fuel",
+        "operator": "IBP"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1073252741,
+      "center": {
+        "lat": 13.0452676,
+        "lon": 77.5052013
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "compressed_air": "yes",
+        "name": "Swathi Petrol / Gas Station",
+        "operator": "Indian Oil"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820271,
+      "center": {
+        "lat": 13.0347866,
+        "lon": 77.501767
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820272,
+      "center": {
+        "lat": 13.0333049,
+        "lon": 77.5015463
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820273,
+      "center": {
+        "lat": 13.0382594,
+        "lon": 77.501033
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820277,
+      "center": {
+        "lat": 13.0367747,
+        "lon": 77.5052467
+      },
+      "tags": {
+        "amenity": "clinic",
+        "name": "Jyothis Health Centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820278,
+      "center": {
+        "lat": 13.0373004,
+        "lon": 77.5050461
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "catholic",
+        "name": "St. Paul's Church",
+        "name:kn": "ಸೈಂಟ್ ಪಾಲ್ಸ್ ಚರ್ಚ್",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820280,
+      "center": {
+        "lat": 13.0346158,
+        "lon": 77.5056378
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "St. Paul's College",
+        "name:kn": "ಸೆಂಟ್ ಪಾಲ್ಸ್ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087826092,
+      "center": {
+        "lat": 13.0393602,
+        "lon": 77.5024899
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087826093,
+      "center": {
+        "lat": 13.0379464,
+        "lon": 77.5022584
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087826094,
+      "center": {
+        "lat": 13.0362656,
+        "lon": 77.5019976
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202361051,
+      "center": {
+        "lat": 13.0478683,
+        "lon": 77.5039861
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Ramaiah Park",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:type": "government",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202361075,
+      "center": {
+        "lat": 13.0412311,
+        "lon": 77.5107699
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280618980,
+      "center": {
+        "lat": 13.0357858,
+        "lon": 77.5048426
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281206632,
+      "center": {
+        "lat": 13.0510604,
+        "lon": 77.5016177
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Widia Poornaprajna School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281336332,
+      "center": {
+        "lat": 13.0402025,
+        "lon": 77.5030746
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281336341,
+      "center": {
+        "lat": 13.040973,
+        "lon": 77.5062637
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Schoenstatt St Mary's High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281336344,
+      "center": {
+        "lat": 13.0453962,
+        "lon": 77.5021948
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281993748,
+      "center": {
+        "lat": 13.0452976,
+        "lon": 77.5087542
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281993750,
+      "center": {
+        "lat": 13.0434946,
+        "lon": 77.5091804
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281993751,
+      "center": {
+        "lat": 13.043619,
+        "lon": 77.5082603
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294790763,
+      "center": {
+        "lat": 13.0410098,
+        "lon": 77.5124524
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354340390,
+      "center": {
+        "lat": 13.0454115,
+        "lon": 77.4997713
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354340392,
+      "center": {
+        "lat": 13.0465577,
+        "lon": 77.5004152
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383280146,
+      "center": {
+        "lat": 13.0377926,
+        "lon": 77.5029461
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383280161,
+      "center": {
+        "lat": 13.0399847,
+        "lon": 77.4972233
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sri Chaitanya Techno School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383280318,
+      "center": {
+        "lat": 13.0367653,
+        "lon": 77.498713
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

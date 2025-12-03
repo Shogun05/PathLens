@@ -1,0 +1,96 @@
+{
+  "area_name": "Venkateshpuram",
+  "osm_id": 19883386,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 7,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 6886594852,
+      "lat": 13.0112036,
+      "lon": 77.6161659,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "Mediscope Hospital, No. 11, Pillanna Garden, 3rd stage",
+        "addr:postcode": "560045",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9945666554",
+        "contact:phone": "8025466554",
+        "name": "Mediscope Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944587830,
+      "lat": 13.0114714,
+      "lon": 77.6162986,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.9,Pillanna Garden 3Road Stage",
+        "addr:postcode": "560045",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Mediscon Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10242924685,
+      "lat": 13.0092852,
+      "lon": 77.6187774,
+      "tags": {
+        "amenity": "recycling",
+        "recycling_type": "centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265502992,
+      "lat": 13.0149829,
+      "lon": 77.6173932,
+      "tags": {
+        "amenity": "internet_cafe",
+        "name": "Tawakal Tea Corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265591466,
+      "lat": 13.0130099,
+      "lon": 77.6166361,
+      "tags": {
+        "name": "Metro Cycle World",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1119315459,
+      "center": {
+        "lat": 13.0103376,
+        "lon": 77.6187878
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1119315460,
+      "center": {
+        "lat": 13.012258,
+        "lon": 77.619056
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

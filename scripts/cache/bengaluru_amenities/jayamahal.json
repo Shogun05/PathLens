@@ -1,0 +1,1364 @@
+{
+  "area_name": "Jayamahal",
+  "osm_id": 19883306,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 105,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 534659750,
+      "lat": 12.9971601,
+      "lon": 77.5974721,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Jayamahal Hotel",
+        "addr:street": "Jayamahal Road",
+        "amenity": "bar",
+        "name": "Formula III Bar",
+        "opening_hours": "11:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871294,
+      "lat": 12.9965785,
+      "lon": 77.6045552,
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "S. S. Pharma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871295,
+      "lat": 12.9965348,
+      "lon": 77.6045413,
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "amenity": "dentist",
+        "name": "Glitz Dental Care and Health Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871296,
+      "lat": 12.9967968,
+      "lon": 77.6045046,
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "name": "Family Super Market",
+        "phone": "+91-80-23634305;+91-80-23430462",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871301,
+      "lat": 12.9993627,
+      "lon": 77.6008367,
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "brand:wikipedia": "en:Indian Bank",
+        "name": "Indian Bank",
+        "name:en": "Indian Bank",
+        "name:kn": "ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.indianbank.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871303,
+      "lat": 12.9995673,
+      "lon": 77.599394,
+      "tags": {
+        "addr:street": "Nandi Durg Road",
+        "amenity": "ice_cream",
+        "name": "Hangyo Icecream"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871308,
+      "lat": 13.0016562,
+      "lon": 77.596687,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Kara4Kids",
+        "url": "www.kara.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871309,
+      "lat": 13.0014631,
+      "lon": 77.5983593,
+      "tags": {
+        "addr:street": "Nandi Durg Road",
+        "amenity": "atm",
+        "brand": "Syndicate Bank",
+        "brand:wikidata": "Q2004088",
+        "name": "Syndicate Bank",
+        "name:kn": "ಸಿಂಡಿಕೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "Syndicate Bank",
+        "operator:wikidata": "Q2004088"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871310,
+      "lat": 12.9998077,
+      "lon": 77.5996733,
+      "tags": {
+        "addr:street": "Nandi Durg Road",
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "name": "More",
+        "name:kn": "ಮೋರ್",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871311,
+      "lat": 12.9969644,
+      "lon": 77.6041292,
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "name": "Arafa Stores",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871312,
+      "lat": 12.9973171,
+      "lon": 77.6037642,
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "amenity": "dentist",
+        "name": "Dr. Afrose Parveen Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871313,
+      "lat": 12.9979339,
+      "lon": 77.6031017,
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "name": "Benson Auto Garage",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1067192719,
+      "lat": 12.9994929,
+      "lon": 77.5989568,
+      "tags": {
+        "addr:street": "Nandi Durg Road",
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1067205123,
+      "lat": 13.001892,
+      "lon": 77.5992036,
+      "tags": {
+        "addr:street": "Nandi Durg Road",
+        "amenity": "telephone",
+        "name": "Airtel Office",
+        "name:kn": "ಏರ್ಟೆಲ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1067206582,
+      "lat": 13.0015628,
+      "lon": 77.5993592,
+      "tags": {
+        "addr:street": "Nandi Durg Road",
+        "amenity": "restaurant",
+        "name": "Elements",
+        "name:kn": "ಎಲಿಮೆಂಟ್ಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1067214962,
+      "lat": 12.9997425,
+      "lon": 77.5970015,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Jayamahal Shani Mandir",
+        "name:kn": "ಜಯಮಹಲ್ ಶನಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1290036140,
+      "lat": 12.9950213,
+      "lon": 77.5964919,
+      "tags": {
+        "addr:street": "Millers Road",
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1290044474,
+      "lat": 12.9955696,
+      "lon": 77.6017708,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469249201,
+      "lat": 12.9916626,
+      "lon": 77.6024335,
+      "tags": {
+        "amenity": "school",
+        "check_date": "2024-08-11",
+        "name": "Santosh Institute of Nursing & Research"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469249217,
+      "lat": 12.9917256,
+      "lon": 77.5991714,
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Government Veterinary Hospital",
+        "name:kn": "ಸರ್ಕಾರಿ ಪಶುವೈದ್ಯ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469249257,
+      "lat": 12.9916809,
+      "lon": 77.599758,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2631157902,
+      "lat": 12.9943529,
+      "lon": 77.5946809,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "opening_hours": "24/7",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2631157903,
+      "lat": 12.9943998,
+      "lon": 77.5945632,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560052",
+        "addr:street": "M V Jayaram Road",
+        "amenity": "pub",
+        "internet_access": "no",
+        "level": "1",
+        "name": "Watson's Pub",
+        "smoking": "no",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4362379252,
+      "lat": 12.996341,
+      "lon": 77.5999117,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Tagore Hall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4371078994,
+      "lat": 13.0018629,
+      "lon": 77.5988299,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "brand:wikipedia": "en:HDFC Bank",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "short_name": "HDFC",
+        "website": "https://www.hdfcbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446341278,
+      "lat": 12.9891941,
+      "lon": 77.6037864,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560051",
+        "addr:street": "Sultan Gunta,, Cock Burn Rd, Sulthangunta, Shivaji Nagar",
+        "amenity": "hospital",
+        "name": "H B S Hospital",
+        "phone": "080 2554 1321"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489190825,
+      "lat": 12.9994164,
+      "lon": 77.5969578,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560046",
+        "addr:street": "Emerald Mega Mall, Jayamahal Extension, Bhadrappa Layout, Jayamahal Extension, Jayamahal",
+        "name": "Jm sports",
+        "opening_hours": "10:00-21:30",
+        "phone": "+9188009 05719",
+        "shop": "sports",
+        "website": "https://www.pantaloons.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5174704944,
+      "lat": 13.0018586,
+      "lon": 77.5988817,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5174903783,
+      "lat": 12.9920154,
+      "lon": 77.6042578,
+      "tags": {
+        "name": "Zar Digital Prints",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5273606323,
+      "lat": 12.9956522,
+      "lon": 77.6015774,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6907496183,
+      "lat": 12.9887644,
+      "lon": 77.6027213,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "No. 133- 134, K. P. Broadway Road, Shivajinagar",
+        "addr:postcode": "560051",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9845854991",
+        "contact:phone": "8025552199",
+        "name": "Ocean Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7234539608,
+      "lat": 12.9978333,
+      "lon": 77.6075801,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Adam's Golden Heritage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7301335844,
+      "lat": 12.9963502,
+      "lon": 77.6058018,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sisters of Mary Immaculate of Bishop Morrow",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038706,
+      "lat": 12.9981064,
+      "lon": 77.6008126,
+      "tags": {
+        "addr:full": "79/10, Nandi Durga Rd, Byadarahalli, Benson Town, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Appllo Diagnostic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240810686,
+      "lat": 13.0005017,
+      "lon": 77.599504,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Lassi Shop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240810687,
+      "lat": 13.0009956,
+      "lon": 77.599335,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240810688,
+      "lat": 12.9972714,
+      "lon": 77.6013547,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Annunciation Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240810689,
+      "lat": 12.9953917,
+      "lon": 77.6027682,
+      "tags": {
+        "name": "Prestige Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9667558148,
+      "lat": 12.9961346,
+      "lon": 77.6043695,
+      "tags": {
+        "name": "Happy Belly Bakes",
+        "name:kn": "ಹ್ಯಾಪಿ ಬೆಲ್ಲಿ",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9835538871,
+      "lat": 13.0027078,
+      "lon": 77.5963338,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "22",
+        "addr:place": "Jayamahal Extension",
+        "addr:postcode": "560046",
+        "addr:street": "13th Cross Street",
+        "addr:suburb": "Jayamahal",
+        "mobile": "+91-984-5646-545",
+        "name": "Mostly Harmless",
+        "opening_hours": "Mo-Sa 09:00-20:30; PH closed",
+        "shop": "computer",
+        "website": "https://mostlyharmless.io/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000943,
+      "lat": 12.9906435,
+      "lon": 77.6008786,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000991,
+      "lat": 12.9877085,
+      "lon": 77.6013594,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000992,
+      "lat": 12.987766,
+      "lon": 77.6010925,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000993,
+      "lat": 12.9878137,
+      "lon": 77.6007278,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000994,
+      "lat": 12.9878281,
+      "lon": 77.6003898,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000995,
+      "lat": 12.9878673,
+      "lon": 77.6001189,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000996,
+      "lat": 12.9879359,
+      "lon": 77.5998976,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9930000997,
+      "lat": 12.9879986,
+      "lon": 77.5996911,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10761482804,
+      "lat": 12.9871727,
+      "lon": 77.5996408,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11096882127,
+      "lat": 12.9939484,
+      "lon": 77.5972825,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11658555246,
+      "lat": 12.9941832,
+      "lon": 77.5950416,
+      "tags": {
+        "check_date": "2024-02-24",
+        "name": "Featherlite Living",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12026493327,
+      "lat": 12.990767,
+      "lon": 77.5992592,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "cuisine": "south_indian",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103825756,
+      "lat": 12.9939382,
+      "lon": 77.5953295,
+      "tags": {
+        "check_date": "2024-08-11",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12229239088,
+      "lat": 13.0053048,
+      "lon": 77.5934781,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2024-10-06"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12404912802,
+      "lat": 12.9996817,
+      "lon": 77.6000976,
+      "tags": {
+        "addr:floor": "G",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "check_date": "2024-12-08",
+        "level": "0",
+        "name": "Velvet Bakes",
+        "outdoor_seating": "no",
+        "toilets": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12470693217,
+      "lat": 12.9999372,
+      "lon": 77.5962116,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12470693542,
+      "lat": 13.0016412,
+      "lon": 77.601576,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "cuisine": "south_indian",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12470693552,
+      "lat": 13.001798,
+      "lon": 77.6023847,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12952280430,
+      "lat": 12.995902,
+      "lon": 77.6061679,
+      "tags": {
+        "name": "Home Needs",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 39022406,
+      "center": {
+        "lat": 13.0012098,
+        "lon": 77.5976652
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Jayamahal Park",
+        "name:kn": "ಜಯಮಹಲ್ ಉದ್ಯಾನವನ",
+        "opening_hours": "Mo-Su 05:00-09:00,16:00-20:30"
+      }
+    },
+    {
+      "type": "way",
+      "id": 39022417,
+      "center": {
+        "lat": 13.00218,
+        "lon": 77.5963121
+      },
+      "tags": {
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Chacha Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 163198436,
+      "center": {
+        "lat": 12.9961923,
+        "lon": 77.5988126
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:country": "IN",
+        "addr:housenumber": "63",
+        "addr:postcode": "560046",
+        "addr:street": "Millers Road",
+        "addr:suburb": "Benson Town",
+        "amenity": "college",
+        "name": "United Theological College",
+        "short_name": "UTC",
+        "start_date": "1910",
+        "website": "https://utc.edu.in/",
+        "wikidata": "Q7893600",
+        "wikimedia_commons": "Category:United Theological College, Bangalore",
+        "wikipedia": "en:United Theological College, Bangalore"
+      }
+    },
+    {
+      "type": "way",
+      "id": 257625420,
+      "center": {
+        "lat": 12.9946075,
+        "lon": 77.5948001
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Kodava Samaja",
+        "name:kn": "ಕೊಡವ ಸಮಾಜ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346134477,
+      "center": {
+        "lat": 12.9964857,
+        "lon": 77.6058568
+      },
+      "tags": {
+        "addr:street": "Benson Cross Road",
+        "amenity": "monastery",
+        "building": "yes",
+        "denomination": "catholic",
+        "name": "Sisters of Mary Immaculate of Bishop Morrow",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346756797,
+      "center": {
+        "lat": 13.0028072,
+        "lon": 77.5953858
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "mosque",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346798436,
+      "center": {
+        "lat": 12.9976146,
+        "lon": 77.5977124
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347476203,
+      "center": {
+        "lat": 12.9918853,
+        "lon": 77.6038854
+      },
+      "tags": {
+        "addr:street": "Netaji Road",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "building": "yes",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 400480962,
+      "center": {
+        "lat": 12.991305,
+        "lon": 77.6011314
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Post Bag No.4, No.2, Hazarat Kambal Posh Road",
+        "addr:postcode": "560051",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "contact:email": "info@csihospitalblr.org",
+        "contact:phone": "080 22861103",
+        "healthcare": "hospital",
+        "name": "CSI Hospital",
+        "name:kn": "ಸಿ ಎಸ್ ಐ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData",
+        "website": "http://csihospitalblr.org"
+      }
+    },
+    {
+      "type": "way",
+      "id": 411055942,
+      "center": {
+        "lat": 12.9971956,
+        "lon": 77.596916
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "capacity": "50",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 438495206,
+      "center": {
+        "lat": 12.9959386,
+        "lon": 77.5993189
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 673959420,
+      "center": {
+        "lat": 13.0041285,
+        "lon": 77.5941368
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "mosque",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 673959423,
+      "center": {
+        "lat": 13.0026757,
+        "lon": 77.5944814
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "mosque",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 673959425,
+      "center": {
+        "lat": 13.0024728,
+        "lon": 77.594542
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "mosque",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566589,
+      "center": {
+        "lat": 12.9910455,
+        "lon": 77.6034915
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "lutheran",
+        "name": "Tamil Evangelical Lutheran Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566590,
+      "center": {
+        "lat": 12.9907106,
+        "lon": 77.603524
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Khan's Convention Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566591,
+      "center": {
+        "lat": 12.9902574,
+        "lon": 77.6033006
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Milan Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566592,
+      "center": {
+        "lat": 12.9909262,
+        "lon": 77.6024803
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "community_centre:for": "senior",
+        "name": "The Bangalore Friend-In Need Society",
+        "start_date": "1830"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566593,
+      "center": {
+        "lat": 12.9909278,
+        "lon": 77.6023316
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "The Colonel Hill High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566594,
+      "center": {
+        "lat": 12.9904302,
+        "lon": 77.6015787
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Al-Ameen Kambal Posh"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566599,
+      "center": {
+        "lat": 12.9917072,
+        "lon": 77.5997655
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566603,
+      "center": {
+        "lat": 12.9915638,
+        "lon": 77.5992593
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Veterinary Superspeciality Hospital",
+        "name:kn": "ಪಶುವೈದ್ಯ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083566607,
+      "center": {
+        "lat": 12.9896386,
+        "lon": 77.60226
+      },
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Charaka Super Speciality Hospital",
+        "official_name": "Sri Atal Bihari Vajpayee Medical College and Research Institute",
+        "official_name:etymology:wikidata": "Q233289"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1101219233,
+      "center": {
+        "lat": 12.9978927,
+        "lon": 77.607601
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "landuse": "commercial",
+        "name": "Adam's Golden Heritage"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1101219234,
+      "center": {
+        "lat": 12.9966726,
+        "lon": 77.6062242
+      },
+      "tags": {
+        "amenity": "animal_shelter",
+        "animal_shelter": "mammal",
+        "name": "Bangalore Gaurakhan Shala"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1101219240,
+      "center": {
+        "lat": 12.9969519,
+        "lon": 77.6065676
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "MQI College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157218003,
+      "center": {
+        "lat": 12.988831,
+        "lon": 77.6036192
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157218005,
+      "center": {
+        "lat": 12.9872766,
+        "lon": 77.6018227
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1160807139,
+      "center": {
+        "lat": 12.9898484,
+        "lon": 77.6011146
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Dargah Hazrath Kampalposh",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1160844624,
+      "center": {
+        "lat": 12.997306,
+        "lon": 77.6000075
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1160844629,
+      "center": {
+        "lat": 12.9974896,
+        "lon": 77.6054075
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Indian Social Institute"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1160844637,
+      "center": {
+        "lat": 12.9948922,
+        "lon": 77.6054903
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Family YMCA"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195581194,
+      "center": {
+        "lat": 12.9951646,
+        "lon": 77.5942006
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195581196,
+      "center": {
+        "lat": 12.9949885,
+        "lon": 77.5937862
+      },
+      "tags": {
+        "amenity": "hospital",
+        "name": "BBMP Hospital",
+        "name:kn": "ಬೃ. ಬೆಂ. ಮ. ಪಾ. ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195581197,
+      "center": {
+        "lat": 12.9952089,
+        "lon": 77.5928449
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1305182789,
+      "center": {
+        "lat": 12.9995073,
+        "lon": 77.6012527
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308476316,
+      "center": {
+        "lat": 12.9991068,
+        "lon": 77.6005921
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339448451,
+      "center": {
+        "lat": 13.0027861,
+        "lon": 77.5967064
+      },
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "internet_access": "no",
+        "name": "Cafe Coffee Day",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348168076,
+      "center": {
+        "lat": 12.9969365,
+        "lon": 77.6032101
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348168078,
+      "center": {
+        "lat": 12.995022,
+        "lon": 77.6042931
+      },
+      "tags": {
+        "amenity": "social_facility",
+        "name": "Wesley Old Age Home",
+        "social_facility": "assisted_living",
+        "social_facility:for": "senior"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348168098,
+      "center": {
+        "lat": 12.9990228,
+        "lon": 77.6033757
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348168112,
+      "center": {
+        "lat": 13.0014902,
+        "lon": 77.5988482
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Gulabi School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348168138,
+      "center": {
+        "lat": 13.0028438,
+        "lon": 77.60042
+      },
+      "tags": {
+        "amenity": "college"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348168195,
+      "center": {
+        "lat": 13.0016986,
+        "lon": 77.6013148
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354165113,
+      "center": {
+        "lat": 12.9904988,
+        "lon": 77.6045526
+      },
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Shivajinagar Shopping Complex"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1414123242,
+      "center": {
+        "lat": 12.9911139,
+        "lon": 77.6040751
+      },
+      "tags": {
+        "alt_name": "Pavamsar Lutheran Church",
+        "amenity": "place_of_worship",
+        "name": "Tamil Evangelical Lutheran Church",
+        "religion": "christian"
+      }
+    }
+  ]
+}

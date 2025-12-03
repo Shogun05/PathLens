@@ -1,0 +1,593 @@
+{
+  "area_name": "Bommasandra",
+  "osm_id": 1192792025,
+  "osm_type": "node",
+  "place_type": "suburb",
+  "amenity_count": 41,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2625813350,
+      "lat": 12.8149337,
+      "lon": 77.6913568,
+      "tags": {
+        "addr:postcode": "560099",
+        "alt_name": "Bommasandra Industrial Estate Sub-Office",
+        "amenity": "post_office",
+        "name": "Bommasandra Post Office",
+        "name:kn": "ಬೊಮ್ಮಸಂದ್ರ ಅಂಚೆ ಕಛೇರಿ",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720",
+        "phone": "080-27832176, 080-27833100"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445891763,
+      "lat": 12.8103648,
+      "lon": 77.6938525,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "257A",
+        "addr:postcode": "560100",
+        "addr:street": "1, KIADB, Bommasandra Industrial Area, Hosur Main Road,Electronic City",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hotel Food Zone",
+        "opening_hours": "11:30-23:30",
+        "phone": "+91 9916797731   +919916802011",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445901764,
+      "lat": 12.8091449,
+      "lon": 77.6962364,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "Shop 2, 56/B",
+        "addr:postcode": "560100",
+        "addr:street": "3rd Phase, Near Narayana Hridhayalaya, Bommasandra, Electronic City",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "MBR Dum Biryani County",
+        "opening_hours": "10:30-15:00,18:30-22:00",
+        "phone": "+91 8861495959   +918861594949",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445912447,
+      "lat": 12.8090409,
+      "lon": 77.6948662,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "2257A",
+        "addr:postcode": "560100",
+        "addr:street": "Bommasandra, Industrial Area, Hosur Road,Electronic City",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Narayana Veg Treat",
+        "opening_hours": "07:00-22:00",
+        "phone": "+91 9740889714 08027833600",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445987325,
+      "lat": 12.8163376,
+      "lon": 77.694734,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "52/56",
+        "addr:postcode": "560100",
+        "addr:street": "Bommansandra Industrial Area, Hosur Main Road, Electronic City",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Ritz  Electronic City",
+        "opening_hours": "12:30-15:00,19:30-22:30",
+        "phone": "080 42247048    08042247049",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445996689,
+      "lat": 12.8123669,
+      "lon": 77.6923627,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "144",
+        "addr:postcode": "560100",
+        "addr:street": "Kirloskar Road, Bommasandra Industrial Estate, Hebbagodi, Electronic City",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Urban Herbivore",
+        "opening_hours": "12:00-15:30,19:00-23:30",
+        "phone": "080 40400400",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446014429,
+      "lat": 12.8150088,
+      "lon": 77.6926849,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560100",
+        "addr:street": "The Lark Hotel, Hosur Main Road, Bommasandra Industrial Area,Electronic City",
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "On The Rock Electronic City",
+        "opening_hours": "11:00-23:00",
+        "phone": "080 42047433    08042047434",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5395273235,
+      "lat": 12.8215205,
+      "lon": 77.687234,
+      "tags": {
+        "name": "Airtel 4g",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5395273236,
+      "lat": 12.8213399,
+      "lon": 77.6874371,
+      "tags": {
+        "amenity": "bank",
+        "brand": "CSB Bank",
+        "brand:wikidata": "Q5053244",
+        "check_date": "2025-07-04",
+        "name": "CSB Bank",
+        "official_name": "Catholic Syrian Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5395290527,
+      "lat": 12.8202009,
+      "lon": 77.6883865,
+      "tags": {
+        "amenity": "bar",
+        "name": "Thirumala bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5395290528,
+      "lat": 12.8139247,
+      "lon": 77.6837743,
+      "tags": {
+        "amenity": "fast_food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402224038,
+      "lat": 12.8201031,
+      "lon": 77.6885226,
+      "tags": {
+        "name": "S. R. S. Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6896421629,
+      "lat": 12.8091126,
+      "lon": 77.6949558,
+      "tags": {
+        "addr:city": "Anekal Taluk",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "University Medical Centre, (KMC) Hospital",
+        "addr:postcode": "560099",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9901200440",
+        "contact:phone": "8027835000",
+        "name": "Narayana Hrudayalaya Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8779041517,
+      "lat": 12.8160167,
+      "lon": 77.6918314,
+      "tags": {
+        "name": "Royal Enfield Service Station",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10688149978,
+      "lat": 12.8151265,
+      "lon": 77.6913125,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "check_date": "2023-02-23",
+        "name": "Indian Oil"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12144442646,
+      "lat": 12.8213104,
+      "lon": 77.6875328,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "check_date": "2024-08-29",
+        "name": "Kotak Mahindra Bank",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12144442647,
+      "lat": 12.8183869,
+      "lon": 77.6908576,
+      "tags": {
+        "brand": "Decathlon",
+        "brand:wikidata": "Q509349",
+        "check_date": "2024-08-29",
+        "name": "Decathlon",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "sports",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12536338714,
+      "lat": 12.8145012,
+      "lon": 77.6918843,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2025-01-27",
+        "healthcare": "pharmacy",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12977371125,
+      "lat": 12.8147317,
+      "lon": 77.6932616,
+      "tags": {
+        "brand": "Tata",
+        "brand:wikidata": "Q188514",
+        "check_date": "2025-07-04",
+        "name": "Tata",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12977371126,
+      "lat": 12.8153432,
+      "lon": 77.6924602,
+      "tags": {
+        "amenity": "fuel",
+        "check_date": "2025-07-04"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12977371127,
+      "lat": 12.8196188,
+      "lon": 77.6891705,
+      "tags": {
+        "brand": "Hyundai",
+        "brand:wikidata": "Q55931",
+        "check_date": "2025-07-04",
+        "name": "Pavan Hyundai",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13070299120,
+      "lat": 12.8197371,
+      "lon": 77.6879196,
+      "tags": {
+        "access": "yes",
+        "amenity": "motorcycle_parking",
+        "capacity": "92",
+        "fee": "yes",
+        "name": "Bommasandra Metro Parking",
+        "operator": "BMRCL",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13085681598,
+      "lat": 12.8190158,
+      "lon": 77.688066,
+      "tags": {
+        "amenity": "post_office",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188320000,
+      "center": {
+        "lat": 12.8077447,
+        "lon": 77.6950585
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "258/A Bommasandra Industrial Area Taluk Bommasandra",
+        "addr:postcode": "560099",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Narayana Hrudayalaya",
+        "name:kn": "ನಾರಾಯಣ ಹೃದಯಾಲಯ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188320267,
+      "center": {
+        "lat": 12.8097378,
+        "lon": 77.6934117
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "BTL Institute of Technology",
+        "wikidata": "Q4836708",
+        "wikipedia": "en:BTL Institute of Technology"
+      }
+    },
+    {
+      "type": "way",
+      "id": 235446659,
+      "center": {
+        "lat": 12.8183399,
+        "lon": 77.6900822
+      },
+      "tags": {
+        "brand": "DMart",
+        "brand:wikidata": "Q5203271",
+        "building": "retail",
+        "check_date": "2025-05-31",
+        "name": "DMart",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket",
+        "source": "survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 608640671,
+      "center": {
+        "lat": 12.8078323,
+        "lon": 77.6951703
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 838531731,
+      "center": {
+        "lat": 12.8079134,
+        "lon": 77.6882492
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 838545482,
+      "center": {
+        "lat": 12.8137691,
+        "lon": 77.6836491
+      },
+      "tags": {
+        "amenity": "bank",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "brand:wikipedia": "en:Karnataka Bank",
+        "building": "yes",
+        "name": "Karnataka Bank"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1089432256,
+      "center": {
+        "lat": 12.8175325,
+        "lon": 77.6907278
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1089432257,
+      "center": {
+        "lat": 12.8179253,
+        "lon": 77.6906336
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1089432258,
+      "center": {
+        "lat": 12.8177035,
+        "lon": 77.6909033
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1089432259,
+      "center": {
+        "lat": 12.817783,
+        "lon": 77.6907647
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1089432260,
+      "center": {
+        "lat": 12.8176468,
+        "lon": 77.6910307
+      },
+      "tags": {
+        "amenity": "motorcycle_parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353572666,
+      "center": {
+        "lat": 12.8071915,
+        "lon": 77.6939875
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377351461,
+      "center": {
+        "lat": 12.8146636,
+        "lon": 77.6839768
+      },
+      "tags": {
+        "amenity": "fuel",
+        "compressed_air": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1425733474,
+      "center": {
+        "lat": 12.8170003,
+        "lon": 77.6911981
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "check_date": "2025-05-31",
+        "landuse": "retail",
+        "name": "Indian Oil",
+        "self_service": "no",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1425733475,
+      "center": {
+        "lat": 12.8166944,
+        "lon": 77.6915101
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "check_date": "2025-05-31",
+        "landuse": "retail",
+        "name": "Bharat Petroleum",
+        "self_service": "no",
+        "source": "survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427978924,
+      "center": {
+        "lat": 12.8160685,
+        "lon": 77.6987783
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427978938,
+      "center": {
+        "lat": 12.8166991,
+        "lon": 77.6943644
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427978989,
+      "center": {
+        "lat": 12.8171583,
+        "lon": 77.6991568
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

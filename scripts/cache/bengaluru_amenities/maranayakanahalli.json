@@ -1,0 +1,149 @@
+{
+  "area_name": "Maranayakanahalli",
+  "osm_id": 11547018157,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 12,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 6798364893,
+      "lat": 13.1650428,
+      "lon": 77.6434733,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Akkayyamma Temple",
+        "name:kn": "ಅಕ್ಕಯ್ಯಮ್ಮ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6798364894,
+      "lat": 13.1660238,
+      "lon": 77.6435805,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Bheemeshwara Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11936256151,
+      "lat": 13.1669334,
+      "lon": 77.6454341,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11936256163,
+      "lat": 13.1661786,
+      "lon": 77.6425186,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 976967587,
+      "center": {
+        "lat": 13.1606081,
+        "lon": 77.6421455
+      },
+      "tags": {
+        "leisure": "playground",
+        "sport": "athletics"
+      }
+    },
+    {
+      "type": "way",
+      "id": 976967603,
+      "center": {
+        "lat": 13.1595566,
+        "lon": 77.6445719
+      },
+      "tags": {
+        "leisure": "playground",
+        "sport": "athletics"
+      }
+    },
+    {
+      "type": "way",
+      "id": 976967605,
+      "center": {
+        "lat": 13.1611863,
+        "lon": 77.6419178
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 976967606,
+      "center": {
+        "lat": 13.1604867,
+        "lon": 77.6430074
+      },
+      "tags": {
+        "leisure": "playground",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1065504522,
+      "center": {
+        "lat": 13.1588383,
+        "lon": 77.6432214
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sri Jayaprakash Narayan National Youth Training Center",
+        "name:etymology:wikidata": "Q734509"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286972648,
+      "center": {
+        "lat": 13.1675785,
+        "lon": 77.6490129
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286972659,
+      "center": {
+        "lat": 13.171773,
+        "lon": 77.6460846
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286972665,
+      "center": {
+        "lat": 13.1708391,
+        "lon": 77.6456541
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "leisure": "resort",
+        "name": "Moongate Events Venue"
+      }
+    }
+  ]
+}

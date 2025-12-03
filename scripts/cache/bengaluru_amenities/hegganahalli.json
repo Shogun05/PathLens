@@ -1,0 +1,61 @@
+{
+  "area_name": "Hegganahalli",
+  "osm_id": 19883256,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 4,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1794166166,
+      "lat": 13.003447,
+      "lon": 77.504284,
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "Hegganahalli",
+        "addr:postcode": "560091",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore North",
+        "amenity": "hospital",
+        "emergency": "no",
+        "healthcare": "centre",
+        "name": "Government Primary Health Centre",
+        "name:kn": "ಸರ್ಕಾರಿ ಪ್ರಾಥಮಿಕ ಆರೋಗ್ಯ ಕೇಂದ್ರ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1794166354,
+      "lat": 13.0034513,
+      "lon": 77.5042307,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1794170447,
+      "lat": 13.009646,
+      "lon": 77.505888,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganapathi Temple",
+        "name:kn": "ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3455398720,
+      "lat": 13.0008775,
+      "lon": 77.5173607,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Veera Brahmendra temple",
+        "name:kn": "ವೀರ ಬ್ರಹ್ಮೇಂದ್ರ",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

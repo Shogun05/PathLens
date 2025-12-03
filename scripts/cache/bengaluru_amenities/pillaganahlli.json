@@ -1,0 +1,219 @@
+{
+  "area_name": "Pillaganahlli",
+  "osm_id": 11778631761,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 16,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 6349188814,
+      "lat": 12.8474735,
+      "lon": 77.5840074,
+      "tags": {
+        "addr:place": "Nekarara Colony",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Jnanajyothi HPS Nekarara Colony",
+        "name:kn": "ಜ್ಞಾನಜ್ಯೋತಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ನೇಕಾರರ ಕಾಲೋನಿ",
+        "operator": "Local body",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349192885,
+      "lat": 12.8435532,
+      "lon": 77.5850056,
+      "tags": {
+        "addr:place": "Nekarara Colony",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GMPS Nekarara Colony",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ನೇಕಾರರ ಕಾಲೋನಿ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6496814726,
+      "lat": 12.8525231,
+      "lon": 77.5877651,
+      "tags": {
+        "addr:place": "Gottigere",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "GHS Gottigere",
+        "name:kn": "ಸರ್ಕಾರಿ ಪ್ರೌಢಶಾಲೆ ಗೊಟ್ಟಿಗೆರೆ",
+        "operator": "Department of Education",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6745463978,
+      "lat": 12.8493518,
+      "lon": 77.5819746,
+      "tags": {
+        "addr:place": "Pillagana Halli",
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "GLPS Pillagana Halli",
+        "name:kn": "ಸರ್ಕಾರಿ ಕಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಪಿಳ್ಳಗನಹಳ್ಳಿ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944507682,
+      "lat": 12.8443653,
+      "lon": 77.583809,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Weavers Colony Main Road, Bannerghatta Road",
+        "addr:postcode": "560083",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Banashankari Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11124783672,
+      "lat": 12.8453185,
+      "lon": 77.5866616,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 412939998,
+      "center": {
+        "lat": 12.8383501,
+        "lon": 77.5912895
+      },
+      "tags": {
+        "access": "permissive",
+        "garden:type": "arboretum",
+        "landuse": "forest",
+        "leisure": "garden",
+        "name": "Kalkere Arboretum",
+        "natural": "wood",
+        "operator": "Karnataka Forest Department"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1149959414,
+      "center": {
+        "lat": 12.8474387,
+        "lon": 77.5890874
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sherwood High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1149959416,
+      "center": {
+        "lat": 12.8426521,
+        "lon": 77.5886058
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "compressed_air": "yes",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1189440573,
+      "center": {
+        "lat": 12.852166,
+        "lon": 77.5761178
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1199400804,
+      "center": {
+        "lat": 12.846001,
+        "lon": 77.5868715
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1199410733,
+      "center": {
+        "lat": 12.8449482,
+        "lon": 77.5874491
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1199410737,
+      "center": {
+        "lat": 12.8455953,
+        "lon": 77.5863196
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1199410738,
+      "center": {
+        "lat": 12.8462506,
+        "lon": 77.5874658
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337360134,
+      "center": {
+        "lat": 12.8510095,
+        "lon": 77.5777074
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337360155,
+      "center": {
+        "lat": 12.8541569,
+        "lon": 77.5762405
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    }
+  ]
+}

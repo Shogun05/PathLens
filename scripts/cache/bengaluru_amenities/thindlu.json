@@ -1,0 +1,1564 @@
+{
+  "area_name": "Thindlu",
+  "osm_id": 19883321,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 125,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2112143173,
+      "lat": 13.0781043,
+      "lon": 77.5787703,
+      "tags": {
+        "amenity": "post_office"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693281,
+      "lat": 13.0621975,
+      "lon": 77.5741087,
+      "tags": {
+        "amenity": "police",
+        "name": "Kodigehalli Police Station",
+        "name:kn": "ಕೊಡಿಗೇಹಳ್ಳಿ ಆರಕ್ಷಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693282,
+      "lat": 13.0631863,
+      "lon": 77.5727244,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "brand:wikipedia": "en:Indian Bank",
+        "name": "Indian Bank",
+        "name:en": "Indian Bank",
+        "name:kn": "ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.indianbank.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693283,
+      "lat": 13.0636896,
+      "lon": 77.5721105,
+      "tags": {
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "name": "More",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693284,
+      "lat": 13.0637683,
+      "lon": 77.572199,
+      "tags": {
+        "name": "The Big Market",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693285,
+      "lat": 13.0637178,
+      "lon": 77.5720279,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693292,
+      "lat": 13.0666704,
+      "lon": 77.5703287,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2024-07-21",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693293,
+      "lat": 13.0666286,
+      "lon": 77.5703088,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2024-07-21",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693295,
+      "lat": 13.0717094,
+      "lon": 77.5678536,
+      "tags": {
+        "amenity": "bar",
+        "name": "Nethravathi Bar and Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693296,
+      "lat": 13.0725801,
+      "lon": 77.5672904,
+      "tags": {
+        "amenity": "bar",
+        "name": "Sri Manjunatha Wines"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693298,
+      "lat": 13.0727682,
+      "lon": 77.5663519,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693299,
+      "lat": 13.0698267,
+      "lon": 77.5638554,
+      "tags": {
+        "amenity": "bank",
+        "atm": "no",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693301,
+      "lat": 13.0692445,
+      "lon": 77.562181,
+      "tags": {
+        "amenity": "atm",
+        "name": "SBI",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693302,
+      "lat": 13.0692521,
+      "lon": 77.5622181,
+      "tags": {
+        "amenity": "atm",
+        "name": "ICICI",
+        "name:kn": "ಐಸಿಐಸಿಐ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2340693303,
+      "lat": 13.0692615,
+      "lon": 77.5622483,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:ur": "کینرا بینک",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2389643458,
+      "lat": 13.0791605,
+      "lon": 77.5778697,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2389669488,
+      "lat": 13.0775521,
+      "lon": 77.5813643,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3994774201,
+      "lat": 13.0778369,
+      "lon": 77.5789149,
+      "tags": {
+        "amenity": "library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4104411468,
+      "lat": 13.0788225,
+      "lon": 77.5717807,
+      "tags": {
+        "amenity": "college",
+        "check_date": "2024-07-21",
+        "name": "Agricultural Engineering"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4279894865,
+      "lat": 13.0691498,
+      "lon": 77.5618249,
+      "tags": {
+        "addr:postcode": "560097",
+        "name": "Nandini Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5340233880,
+      "lat": 13.0705029,
+      "lon": 77.577765,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-07-21",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "park": "leisure",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5669213175,
+      "lat": 13.0744127,
+      "lon": 77.57006,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shani Temple",
+        "name:kn": "ಶನಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5669343547,
+      "lat": 13.0715699,
+      "lon": 77.5652901,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Temple",
+        "name:kn": "ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5669343548,
+      "lat": 13.0717558,
+      "lon": 77.5652705,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shiva Temple",
+        "name:kn": "ಶಿವ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6380870463,
+      "lat": 13.0712071,
+      "lon": 77.5806832,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Academic Cafeteria",
+        "opening_hours": "Mo-Fr 09:30-17:45; Sa 10:00-16:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6380900077,
+      "lat": 13.0711049,
+      "lon": 77.5781394,
+      "tags": {
+        "amenity": "hospital",
+        "check_date": "2024-07-21",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Medical Center",
+        "operator": "NCBS/InStem"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6382884233,
+      "lat": 13.071694,
+      "lon": 77.5803841,
+      "tags": {
+        "access": "customers",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6403396108,
+      "lat": 13.0719005,
+      "lon": 77.5793224,
+      "tags": {
+        "access": "customers",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7966164336,
+      "lat": 13.0716307,
+      "lon": 77.5675471,
+      "tags": {
+        "addr:street": "Kodigehalli Road",
+        "amenity": "driving_school",
+        "level": "0",
+        "name": "Mathru Shree Driving School",
+        "operator": "Mamtha M.",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187961960,
+      "lat": 13.0779626,
+      "lon": 77.5786126,
+      "tags": {
+        "addr:full": "Vignana Kendra, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Canara Bank",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:ur": "کینرا بینک"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8300225144,
+      "lat": 13.0691806,
+      "lon": 77.5809502,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Trupti Thindi",
+        "opening_hours": "PH,Mo-Su 07:00-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8300228268,
+      "lat": 13.0690971,
+      "lon": 77.5809341,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nila Food Corner",
+        "opening_hours": "PH,Mo-Su 07:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8361978897,
+      "lat": 13.0687061,
+      "lon": 77.5784641,
+      "tags": {
+        "name": "PowerZone bike repair shop",
+        "opening_hours": "Mo-Sa 09:00-18:00",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8361991061,
+      "lat": 13.068523,
+      "lon": 77.5784351,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560065",
+        "name": "Hyderabad Irani Tea",
+        "opening_hours": "PH,Mo-Su 07:00-23:00",
+        "shop": "tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8407820626,
+      "lat": 13.0692906,
+      "lon": 77.5756015,
+      "tags": {
+        "name": "Fresh Farm Veg and Fruots",
+        "opening_hours": "Mo-Su,PH 08:00-20:00",
+        "shop": "farm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8540577968,
+      "lat": 13.0691872,
+      "lon": 77.5755211,
+      "tags": {
+        "name": "Farm Fresh Vegs",
+        "shop": "farm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9161529874,
+      "lat": 13.0720813,
+      "lon": 77.5728428,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "JNS Tiffin Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9483060393,
+      "lat": 13.0705642,
+      "lon": 77.576758,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nitiksha Rasoi",
+        "opening_hours": "Mo-Su 09:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9568878438,
+      "lat": 13.0683205,
+      "lon": 77.5785541,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Santhu Spicy Table",
+        "opening_hours": "PH,Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10032026857,
+      "lat": 13.0688434,
+      "lon": 77.5803865,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Nosh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10555817219,
+      "lat": 13.0757448,
+      "lon": 77.5808036,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10791346039,
+      "lat": 13.0687939,
+      "lon": 77.5784904,
+      "tags": {
+        "name": "Sri Annapoorna Medical Store",
+        "phone": "+91 74110 99045",
+        "shop": "medical_supply"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10791389647,
+      "lat": 13.0685272,
+      "lon": 77.5783963,
+      "tags": {
+        "amenity": "food_court",
+        "name": "Chitra Hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11406977578,
+      "lat": 13.0681222,
+      "lon": 77.5791911,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Calm Down Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11530632115,
+      "lat": 13.0704515,
+      "lon": 77.5780101,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11594831328,
+      "lat": 13.0680231,
+      "lon": 77.5791747,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Calm Down Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11817854695,
+      "lat": 13.0723261,
+      "lon": 77.5859582,
+      "tags": {
+        "amenity": "prep_school",
+        "name": "Vaidya Medical Academy",
+        "office": "educational_institution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12175883071,
+      "lat": 13.0708682,
+      "lon": 77.5781591,
+      "tags": {
+        "addr:street": "Canara bank layout, Rajiv Gandhi nagar",
+        "amenity": "restaurant",
+        "name": "Swad authentic kerala restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12412564743,
+      "lat": 13.097981,
+      "lon": 77.5696584,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2024-12-11",
+        "healthcare": "clinic",
+        "name": "Namma Clinic",
+        "operator": "BBMP",
+        "operator:type": "government",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12458015816,
+      "lat": 13.0696562,
+      "lon": 77.5779499,
+      "tags": {
+        "name": "Mataji Pharma",
+        "shop": "medical_supply"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12541432212,
+      "lat": 13.0708939,
+      "lon": 77.5765029,
+      "tags": {
+        "name": "Vinayaka Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12794026312,
+      "lat": 13.0685994,
+      "lon": 77.5636901,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12794026313,
+      "lat": 13.0685837,
+      "lon": 77.5636818,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12794026314,
+      "lat": 13.0685945,
+      "lon": 77.5636764,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12794026315,
+      "lat": 13.0686066,
+      "lon": 77.563671,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12794026327,
+      "lat": 13.065484,
+      "lon": 77.5652857,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "stone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13111707601,
+      "lat": 13.077387,
+      "lon": 77.579739,
+      "tags": {
+        "addr:postcode": "560065",
+        "amenity": "college",
+        "name": "Institute of Agri-Business Management"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13112740301,
+      "lat": 13.0773825,
+      "lon": 77.57973,
+      "tags": {
+        "amenity": "college",
+        "name": "Institute of Agri-Business Management"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13339931420,
+      "lat": 13.0678307,
+      "lon": 77.5660633,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13339931422,
+      "lat": 13.0669456,
+      "lon": 77.5660039,
+      "tags": {
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13339931423,
+      "lat": 13.0669961,
+      "lon": 77.5658778,
+      "tags": {
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 201253853,
+      "center": {
+        "lat": 13.0805915,
+        "lon": 77.5751668
+      },
+      "tags": {
+        "boundary": "protected_area",
+        "leisure": "garden",
+        "name": "Botanical Garden",
+        "name:kn": "ಸಸ್ಯೋದ್ಯಾನ",
+        "protect_class": "21",
+        "protection_title": "Biodiversity Heritage Site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 201253920,
+      "center": {
+        "lat": 13.0772767,
+        "lon": 77.5777437
+      },
+      "tags": {
+        "amenity": "college",
+        "building": "school",
+        "name": "College of Agriculture",
+        "name:kn": "ಕೃಷಿ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 225265458,
+      "center": {
+        "lat": 13.065876,
+        "lon": 77.5700774
+      },
+      "tags": {
+        "amenity": "school",
+        "check_date": "2024-07-21",
+        "name": "Vidyaspoorthi School",
+        "name:kn": "ವಿದ್ಯಾಸ್ಪೂರ್ತಿ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230464641,
+      "center": {
+        "lat": 13.0789086,
+        "lon": 77.5771539
+      },
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230471113,
+      "center": {
+        "lat": 13.0766171,
+        "lon": 77.5806023
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "building": "university",
+        "name": "Dr. Babu Rajendra Prasad International Convention Centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230860212,
+      "center": {
+        "lat": 13.0767927,
+        "lon": 77.5784431
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346422524,
+      "center": {
+        "lat": 13.0691169,
+        "lon": 77.5808726
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "south_indian",
+        "diet:vegetarian": "yes",
+        "name": "Trupti Tindi",
+        "opening_hours": "Mo-Su 07:00-11:30,17:00-21:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396653991,
+      "center": {
+        "lat": 13.0757169,
+        "lon": 77.5829078
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396653995,
+      "center": {
+        "lat": 13.0783821,
+        "lon": 77.5785324
+      },
+      "tags": {
+        "addr:city": "BANGALORE",
+        "addr:postcode": "560065",
+        "addr:street": "G.K.V.K",
+        "amenity": "parking",
+        "capacity": "100",
+        "fee": "no",
+        "maxstay": "1 day",
+        "name": "Parking space",
+        "park_ride": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 408538810,
+      "center": {
+        "lat": 13.0757447,
+        "lon": 77.5819597
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 408538811,
+      "center": {
+        "lat": 13.0758003,
+        "lon": 77.5817706
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 515236150,
+      "center": {
+        "lat": 13.0969608,
+        "lon": 77.5699925
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 553192062,
+      "center": {
+        "lat": 13.0701069,
+        "lon": 77.5778563
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Ganesh Temple Park",
+        "official_name": "Pandit Deendayal Upadhyaya Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594550596,
+      "center": {
+        "lat": 13.0739388,
+        "lon": 77.5700771
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594568475,
+      "center": {
+        "lat": 13.0837733,
+        "lon": 77.5798214
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594570777,
+      "center": {
+        "lat": 13.0701791,
+        "lon": 77.578586
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594570780,
+      "center": {
+        "lat": 13.0689871,
+        "lon": 77.579003
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 675649201,
+      "center": {
+        "lat": 13.0671937,
+        "lon": 77.5690303
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 675649202,
+      "center": {
+        "lat": 13.0671814,
+        "lon": 77.5687231
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 675649204,
+      "center": {
+        "lat": 13.067187,
+        "lon": 77.5688664
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681573027,
+      "center": {
+        "lat": 13.0710621,
+        "lon": 77.579341
+      },
+      "tags": {
+        "leisure": "swimming_pool",
+        "name": "NCBS Pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681573199,
+      "center": {
+        "lat": 13.071134,
+        "lon": 77.5796267
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Sports Center"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681805619,
+      "center": {
+        "lat": 13.0707804,
+        "lon": 77.5794019
+      },
+      "tags": {
+        "leisure": "pitch",
+        "lit": "yes",
+        "sport": "tennis",
+        "surface": "grass"
+      }
+    },
+    {
+      "type": "way",
+      "id": 816044957,
+      "center": {
+        "lat": 13.0698363,
+        "lon": 77.5748727
+      },
+      "tags": {
+        "building": "yes",
+        "name": "SLVN Store",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "shop": "small_shop"
+      }
+    },
+    {
+      "type": "way",
+      "id": 816863562,
+      "center": {
+        "lat": 13.0714927,
+        "lon": 77.5801602
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560065",
+        "addr:street": "GKVK Campus",
+        "amenity": "college",
+        "full_name": "National Centre for Biological Sciences, Bangalore",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "NCBS Bangalore",
+        "short_name": "NCBS",
+        "website": "https://ncbs.res.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062006432,
+      "center": {
+        "lat": 13.0766719,
+        "lon": 77.5825485
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1188310648,
+      "center": {
+        "lat": 13.0685481,
+        "lon": 77.5810048
+      },
+      "tags": {
+        "addr:postcode": "560092",
+        "addr:street": "NTI Layout, Rajiv Gandhi Nagar ,Off Bangalore International Airport Road",
+        "amenity": "school",
+        "email": "communications.oisvn@orchids.edu.in",
+        "name": "Orchids The International School Vivekananda - SahakarNagar",
+        "opening_hours": "Mo-Su 09:00-18:30",
+        "operator": "Orchids International School",
+        "phone": "9513731352",
+        "website": "https://www.orchidsinternationalschool.com/bangalore-branches/sahakar-nagar/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1188316008,
+      "center": {
+        "lat": 13.0738673,
+        "lon": 77.5775206
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1188316014,
+      "center": {
+        "lat": 13.0717625,
+        "lon": 77.5776205
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1232959666,
+      "center": {
+        "lat": 13.06765,
+        "lon": 77.5685424
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Nike Bhupathi Tennis Village",
+        "sport": "tennis",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241006118,
+      "center": {
+        "lat": 13.0711475,
+        "lon": 77.5766295
+      },
+      "tags": {
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Children Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241006121,
+      "center": {
+        "lat": 13.0712865,
+        "lon": 77.577715
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241006188,
+      "center": {
+        "lat": 13.0694692,
+        "lon": 77.5764692
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1253845453,
+      "center": {
+        "lat": 13.0734202,
+        "lon": 77.5713918
+      },
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1253845508,
+      "center": {
+        "lat": 13.0693725,
+        "lon": 77.5801961
+      },
+      "tags": {
+        "amenity": "events_venue"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1253845511,
+      "center": {
+        "lat": 13.0727046,
+        "lon": 77.5775149
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1253845513,
+      "center": {
+        "lat": 13.0716905,
+        "lon": 77.5814353
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1253845515,
+      "center": {
+        "lat": 13.0711158,
+        "lon": 77.5809201
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281397133,
+      "center": {
+        "lat": 13.0751125,
+        "lon": 77.5707078
+      },
+      "tags": {
+        "building": "shed",
+        "name": "GKVK Mangoes Seller",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "organic": "only",
+        "payment:cash": "yes",
+        "payment:google_pay": "yes",
+        "produce": "mangoes",
+        "shop": "farm"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1284859054,
+      "center": {
+        "lat": 13.0925831,
+        "lon": 77.5699919
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297388031,
+      "center": {
+        "lat": 13.0658952,
+        "lon": 77.5759558
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297388032,
+      "center": {
+        "lat": 13.0660367,
+        "lon": 77.5770757
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297388033,
+      "center": {
+        "lat": 13.0660888,
+        "lon": 77.5769001
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297388118,
+      "center": {
+        "lat": 13.0650967,
+        "lon": 77.5707917
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "compressed_air": "yes",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡಿಯನ್ ಆಯಿಲ್",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304390639,
+      "center": {
+        "lat": 13.0720381,
+        "lon": 77.566712
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Veerabhadreshwara Temple",
+        "name:kn": "ವೀರಭದ್ರೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304390819,
+      "center": {
+        "lat": 13.0695146,
+        "lon": 77.5627369
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharath Petroleum",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1306481284,
+      "center": {
+        "lat": 13.064823,
+        "lon": 77.5718595
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1306481285,
+      "center": {
+        "lat": 13.0655626,
+        "lon": 77.5720775
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1306494601,
+      "center": {
+        "lat": 13.0631952,
+        "lon": 77.5744743
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307513847,
+      "center": {
+        "lat": 13.0636828,
+        "lon": 77.5669299
+      },
+      "tags": {
+        "amenity": "toilets",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307519709,
+      "center": {
+        "lat": 13.0651392,
+        "lon": 77.5695082
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307519710,
+      "center": {
+        "lat": 13.0651861,
+        "lon": 77.5695305
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307519711,
+      "center": {
+        "lat": 13.0655401,
+        "lon": 77.5695711
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307519712,
+      "center": {
+        "lat": 13.0653224,
+        "lon": 77.5699574
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307651489,
+      "center": {
+        "lat": 13.0710936,
+        "lon": 77.5749671
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307652926,
+      "center": {
+        "lat": 13.0749932,
+        "lon": 77.5673288
+      },
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "Vidyaranyapura Post, Thindlu",
+        "addr:postcode": "560097",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore North",
+        "amenity": "clinic",
+        "description": "Primary Health Centre",
+        "healthcare": "centre",
+        "name": "Tindlu Primary Health Centre",
+        "name:kn": "ಆರೋಗ್ಯ ಪ್ರಾಥಮಿಕ ಕೇಂದ್ರ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346885374,
+      "center": {
+        "lat": 13.06561,
+        "lon": 77.5704676
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1381888174,
+      "center": {
+        "lat": 13.0633457,
+        "lon": 77.567669
+      },
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383284341,
+      "center": {
+        "lat": 13.0693933,
+        "lon": 77.5623976
+      },
+      "tags": {
+        "amenity": "fuel",
+        "name": "Essay Petroleum",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214541,
+      "center": {
+        "lat": 13.0973264,
+        "lon": 77.563205
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214542,
+      "center": {
+        "lat": 13.0964225,
+        "lon": 77.563321
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214543,
+      "center": {
+        "lat": 13.0962353,
+        "lon": 77.5631412
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214545,
+      "center": {
+        "lat": 13.097041,
+        "lon": 77.5634283
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428214546,
+      "center": {
+        "lat": 13.0967257,
+        "lon": 77.5633756
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    }
+  ]
+}
