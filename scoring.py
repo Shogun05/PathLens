@@ -16,6 +16,7 @@ import pandas as pd
 import h3
 import osmnx as ox
 import yaml
+from tqdm import tqdm
 
 
 ox.settings.use_cache = True
@@ -73,7 +74,7 @@ def compute_structure_metrics(G, nodes_gdf):
     area_km2 = ((bbox[2] - bbox[0]) * (bbox[3] - bbox[1])) / 1e6  # rough if coords in meters; in degrees this is rough.
     # local structure metrics (node-level): number of incident edges, average incident length
     avg_incident_length = []
-    for node in nodes_gdf.index:
+    for node in tqdm(nodes_gdf.index, desc="Computing structure metrics", unit="node"):
         incident_edges = list(G.edges(node, data=True))
         lengths = [d.get("length", 0) for _, _, d in incident_edges]
         avg_incident_length.append(np.mean(lengths) if lengths else 0)
@@ -104,6 +105,7 @@ def compute_centrality_metrics(
 
     if compute_betweenness:
         sample_nodes = min(len(G), max(sample_limit, 1))
+        print(f"Computing betweenness centrality (sampling {sample_nodes} nodes)...")
         betweenness = nx.betweenness_centrality(
             G,
             k=sample_nodes if sample_nodes < len(G) else None,
@@ -117,6 +119,7 @@ def compute_centrality_metrics(
         nodes["betweenness_centrality"] = 0.0
 
     if compute_closeness:
+        print("Computing closeness centrality...")
         closeness = nx.closeness_centrality(G, distance="length")
         closeness_series = pd.Series(closeness)
         nodes["closeness_centrality"] = nodes.index.map(closeness_series).fillna(0.0)
@@ -147,7 +150,7 @@ def nearest_amenity_distances(
     if has_poi_id:
         mapping_reset["poi_id"] = mapping_reset["poi_id"].astype(str)
 
-    for row in mapping_reset.itertuples(index=False):
+    for row in tqdm(mapping_reset.itertuples(index=False), total=len(mapping_reset), desc="Building POI-node index", unit="poi"):
         poi_index = getattr(row, "poi_index")
         nearest_node = getattr(row, "nearest_node")
         index_to_nodes[poi_index].add(nearest_node)
@@ -185,7 +188,8 @@ def nearest_amenity_distances(
     # For each node, compute the distance to closest node in each set using multi-source Dijkstra
     # For performance: run for each amenity type a multi-source dijkstra distances to all nodes
     distances = pd.DataFrame(index=nodes_gdf.index)
-    for t, node_set in amenity_node_sets.items():
+    print(f"Computing network distances for {len(amenity_node_sets)} amenity types...")
+    for t, node_set in tqdm(amenity_node_sets.items(), desc="Computing accessibility distances", unit="amenity_type"):
         if not node_set:
             distances[f"dist_to_{t}"] = np.nan
             continue
@@ -237,7 +241,8 @@ def aggregate_h3(nodes_gdf: gpd.GeoDataFrame, value_series: pd.Series, h3_res=8)
         nodes_latlon = nodes_gdf
 
     coords = list(zip(nodes_latlon.geometry.y, nodes_latlon.geometry.x))
-    h3_indexes = [h3.geo_to_h3(lat, lng, h3_res) for lat, lng in coords]
+    print(f"Computing H3 hexagons (resolution {h3_res})...")
+    h3_indexes = [h3.geo_to_h3(lat, lng, h3_res) for lat, lng in tqdm(coords, desc="Computing H3 indexes", unit="node")]
     agg = pd.DataFrame({"h3": h3_indexes, "value": value_series.reindex(nodes_gdf.index).values})
     agg = agg.groupby("h3").agg({"value": ["mean", "std", "count"]})
     agg.columns = ["_".join(col).strip() for col in agg.columns.values]

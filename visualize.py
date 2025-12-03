@@ -10,6 +10,7 @@ import osmnx as ox
 import pandas as pd
 from branca.colormap import linear
 from shapely.geometry import LineString
+from tqdm import tqdm
 
 DEFAULT_RAW_DIR = Path("data/raw")
 DEFAULT_PROCESSED_DIR = Path("data/processed")
@@ -47,11 +48,13 @@ def build_color_lookup(categories: pd.Series) -> dict:
 
 def add_poi_layers(m: folium.Map, pois: gpd.GeoDataFrame, nodes: gpd.GeoDataFrame, color_lookup: dict, show_links: bool):
     grouped = defaultdict(list)
-    for _, row in pois.iterrows():
+    print("Grouping POIs by category...")
+    for _, row in tqdm(pois.iterrows(), total=len(pois), desc="Grouping POIs", unit="poi"):
         cat = row.get("category_value") or "Other"
         grouped[cat].append(row)
 
-    for category, records in grouped.items():
+    print(f"Creating {len(grouped)} POI layers...")
+    for category, records in tqdm(grouped.items(), desc="Adding POI layers", unit="category"):
         layer = folium.FeatureGroup(name=f"POIs: {category}", show=True)
         color = color_lookup.get(category, "#FF8C00")
         for record in records:

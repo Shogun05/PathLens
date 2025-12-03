@@ -12,6 +12,7 @@ import geopandas as gpd
 import networkx as nx
 import osmnx as ox
 import pandas as pd
+from tqdm import tqdm
 
 ox.settings.use_cache = True
 ox.settings.log_console = True
