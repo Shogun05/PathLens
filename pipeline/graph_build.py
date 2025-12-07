@@ -32,9 +32,47 @@ def normalize_list_columns(gdf):
     return gdf
 
 
-def load_inputs(graph_path: Path, pois_path: Path):
+def _prepare_pois_layer(pois: gpd.GeoDataFrame, fallback_source: str) -> gpd.GeoDataFrame:
+    """Ensure the POI layer has a source tag so scenarios can be merged safely."""
+    prepared = pois.copy()
+    if prepared.empty:
+        prepared["source"] = fallback_source
+        return prepared
+    if "source" not in prepared.columns:
+        prepared["source"] = fallback_source
+    else:
+        prepared["source"] = prepared["source"].fillna(fallback_source)
+    return prepared
+
+
+def load_inputs(graph_path: Path, pois_path: Path, optimized_pois_path: Path | None = None):
     G = ox.load_graphml(graph_path)
-    pois = gpd.read_file(pois_path)
+    base_pois = gpd.read_file(pois_path)
+    base_pois = _prepare_pois_layer(base_pois, "existing")
+
+    if optimized_pois_path:
+        opt_path = Path(optimized_pois_path)
+        if not opt_path.exists():
+            raise FileNotFoundError(f"Optimized POI layer not found: {opt_path}")
+        optimized = gpd.read_file(opt_path)
+        if optimized.empty:
+            print(f"⚠️  Optimized POI layer at {opt_path} is empty; continuing with baseline POIs only.")
+            pois = base_pois
+        else:
+            optimized = optimized.copy()
+            if optimized.crs and base_pois.crs and optimized.crs != base_pois.crs:
+                optimized = optimized.to_crs(base_pois.crs)
+            optimized = _prepare_pois_layer(optimized, "optimized")
+            missing_in_base = set(optimized.columns) - set(base_pois.columns)
+            for col in missing_in_base:
+                base_pois[col] = None
+            missing_in_opt = set(base_pois.columns) - set(optimized.columns)
+            for col in missing_in_opt:
+                optimized[col] = None
+            pois = gpd.GeoDataFrame(pd.concat([base_pois, optimized], ignore_index=True, sort=False), crs=base_pois.crs)
+    else:
+        pois = base_pois
+
     return G, pois
 
 
@@ -247,6 +285,8 @@ def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
     else:
         category_values = pd.Series([None] * len(pois), index=pois.index)
 
+    source_values = pois["source"] if "source" in pois.columns else pd.Series(["existing"] * len(pois), index=pois.index)
+
     mapping = pd.DataFrame({
         "poi_index": pois.index,
         "poi_id": pois.get("osmid").astype(str) if "osmid" in pois.columns else pois.index.astype(str),
@@ -254,6 +294,7 @@ def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
         "distance_m": distances,
         "category_type": primary_category,
         "category_value": category_values,
+        "source": source_values.values,
     })
     mapping = mapping.set_index("poi_index")
 
@@ -274,13 +315,21 @@ def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
     return mapping, pois, nodes_gdf
 
 
-def save_outputs(Gs, nodes, edges, mapping, out_dir: Path):
+def save_outputs(Gs, nodes, edges, mapping, out_dir: Path, output_prefix: str, merged_pois: gpd.GeoDataFrame | None, merged_pois_out: Path | None):
     out_dir.mkdir(parents=True, exist_ok=True)
-    ox.save_graphml(Gs, out_dir / "graph.graphml")
-    nodes.to_parquet(out_dir / "nodes.parquet")
-    edges.to_parquet(out_dir / "edges.parquet")
-    mapping.to_parquet(out_dir / "poi_node_mapping.parquet")
-    print(f"Saved processed graph and mapping to {out_dir}")
+    prefix = output_prefix if not output_prefix else output_prefix.strip()
+    if prefix and not prefix.endswith("_"):
+        prefix = f"{prefix}_"
+    ox.save_graphml(Gs, out_dir / f"{prefix}graph.graphml")
+    nodes.to_parquet(out_dir / f"{prefix}nodes.parquet")
+    edges.to_parquet(out_dir / f"{prefix}edges.parquet")
+    mapping.to_parquet(out_dir / f"{prefix}poi_node_mapping.parquet")
+    print(f"Saved processed graph and mapping to {out_dir} (prefix='{prefix}')")
+    if merged_pois is not None and merged_pois_out:
+        merged_pois_out = merged_pois_out.with_suffix(merged_pois_out.suffix or ".geojson")
+        merged_pois_out.parent.mkdir(parents=True, exist_ok=True)
+        merged_pois.to_file(merged_pois_out, driver="GeoJSON")
+        print(f"Saved merged POI layer to {merged_pois_out}")
 
 
 def main():
@@ -289,9 +338,12 @@ def main():
     p.add_argument("--pois-path", required=True)
     p.add_argument("--buildings-path")
     p.add_argument("--landuse-path")
+    p.add_argument("--optimized-pois-path", help="Additional POI layer (e.g., optimized amenities) to merge before mapping")
     p.add_argument("--out-dir", default="data/processed")
+    p.add_argument("--output-prefix", default="", help="Prefix applied to output filenames for scenario separation")
+    p.add_argument("--merged-pois-out", help="Optional path to write the combined POI GeoJSON for inspection")
     args = p.parse_args()
-    G, pois = load_inputs(Path(args.graph_path), Path(args.pois_path))
+    G, pois = load_inputs(Path(args.graph_path), Path(args.pois_path), Path(args.optimized_pois_path) if args.optimized_pois_path else None)
     graph_dir = Path(args.graph_path).resolve().parent
     buildings_path = args.buildings_path or graph_dir / "buildings.geojson"
     landuse_path = args.landuse_path or graph_dir / "landuse.geojson"
@@ -301,7 +353,8 @@ def main():
     nodes, edges = nodes_edges_to_gdfs(Gs)
     nodes = annotate_nodes(nodes, Gs, buildings, landuse)
     mapping, pois, nodes = map_pois_to_nodes(pois, nodes)
-    save_outputs(Gs, nodes, edges, mapping, Path(args.out_dir))
+    merged_pois_out = Path(args.merged_pois_out) if args.merged_pois_out else None
+    save_outputs(Gs, nodes, edges, mapping, Path(args.out_dir), args.output_prefix, pois, merged_pois_out)
 
 
 if __name__ == "__main__":

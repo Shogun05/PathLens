@@ -47,6 +47,19 @@ def save_to_cache(data: object, cache_path: Path):
     print(f"💾 Saved to cache: {cache_path.name}")
 
 
+def safe_numeric(value, fallback: float = 0.0) -> float:
+    """Convert value to a finite float, substituting fallback when NaN/inf/None."""
+    if value is None:
+        return float(fallback)
+    try:
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return float(fallback)
+    if np.isfinite(numeric):
+        return numeric
+    return float(fallback)
+
+
 def load_config(config_path: Path | None) -> Dict:
     if config_path is None or not config_path.exists():
         raise FileNotFoundError(f"Configuration file not found at {config_path}")
@@ -358,6 +371,7 @@ def main():
     p.add_argument("--h3-res", type=int, default=None)
     p.add_argument("--config", default="../config.yaml")
     p.add_argument("--force", action="store_true", help="Force recompute all cached steps")
+    p.add_argument("--output-prefix", default="", help="Prefix applied to output filenames for scenario separation")
     args = p.parse_args()
 
     config = load_config(Path(args.config))
@@ -404,8 +418,15 @@ def main():
         pois = gpd.GeoDataFrame(columns=["poi_id"], geometry=gpd.GeoSeries([], crs=nodes.crs), crs=nodes.crs)
 
     # CACHEABLE: Distance computations (depends on graph, POIs, amenity types, cutoff)
-    distance_cache_key = get_cache_key("distances", args.graph_path, args.poi_mapping, 
-                                       tuple(sorted(amenity_types)), amenity_cutoff)
+    distance_cache_key = get_cache_key(
+        "distances",
+        args.graph_path,
+        args.poi_mapping,
+        args.pois_path,
+        tuple(sorted(amenity_types)),
+        amenity_cutoff,
+        args.output_prefix,
+    )
     distance_cache_path = cache_dir / f"distances_{distance_cache_key}.pkl"
     
     cached_distances = load_from_cache(distance_cache_path)
@@ -420,8 +441,12 @@ def main():
     nodes["accessibility_score"] = compute_accessibility_score(distances, amenity_weights)
     nodes["travel_time_min"] = compute_travel_time_metrics(distances, walking_speed)
     travel_time_clean = nodes["travel_time_min"].replace([np.inf, -np.inf], np.nan)
-    fallback = travel_time_clean.max() if not travel_time_clean.dropna().empty else 1.0
-    nodes["travel_time_score"] = 1.0 / (1.0 + travel_time_clean.fillna(fallback))
+    valid_travel = travel_time_clean.dropna()
+    fallback = float(valid_travel.max()) if not valid_travel.empty else 0.0
+    if not np.isfinite(fallback) or fallback < 0:
+        fallback = 0.0
+    nodes["travel_time_min"] = travel_time_clean.fillna(fallback)
+    nodes["travel_time_score"] = 1.0 / (1.0 + nodes["travel_time_min"])
 
     structure_components = [
         normalize_series(nodes["degree"].fillna(0)),
@@ -455,6 +480,8 @@ def main():
     agg = agg_walkability.merge(equity_agg, on="h3", how="left")
 
     circuity_value = compute_circuity_sample(G, nodes, sample_k=circuity_sample_k)
+    travel_time_min_mean = safe_numeric(nodes["travel_time_min"].mean(), fallback)
+    travel_time_score_mean = safe_numeric(nodes["travel_time_score"].mean(), 0.0)
     summary = {
         "network": {
             "circuity_sample_ratio": float(circuity_value) if circuity_value == circuity_value else None,
@@ -465,19 +492,23 @@ def main():
             "accessibility_mean": float(nodes["accessibility_score"].mean()),
             "walkability_mean": float(nodes["walkability"].mean()),
             "equity_mean": float(nodes["equity_score"].mean()),
-            "travel_time_min_mean": float(nodes["travel_time_min"].replace([np.inf, -np.inf], np.nan).mean()),
+            "travel_time_min_mean": travel_time_min_mean,
+            "travel_time_score_mean": travel_time_score_mean,
         },
     }
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    nodes.to_parquet(out_dir / "nodes_with_scores.parquet")
-    agg.to_parquet(out_dir / "h3_agg.parquet")
-    nodes.to_csv(out_dir / "nodes_with_scores.csv", index=True)
-    agg.to_csv(out_dir / "h3_agg.csv", index=False)
-    with (out_dir / "metrics_summary.json").open("w", encoding="utf-8") as f:
+    prefix = args.output_prefix.strip()
+    if prefix and not prefix.endswith("_"):
+        prefix = f"{prefix}_"
+    nodes.to_parquet(out_dir / f"{prefix}nodes_with_scores.parquet")
+    agg.to_parquet(out_dir / f"{prefix}h3_agg.parquet")
+    nodes.to_csv(out_dir / f"{prefix}nodes_with_scores.csv", index=True)
+    agg.to_csv(out_dir / f"{prefix}h3_agg.csv", index=False)
+    with (out_dir / f"{prefix}metrics_summary.json").open("w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
-    print(f"Saved node-level scores and H3 aggregates to {out_dir}")
+    print(f"Saved node-level scores and H3 aggregates to {out_dir} (prefix='{prefix}')")
 
 
 if __name__ == "__main__":
