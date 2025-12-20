@@ -16,6 +16,7 @@ import argparse
 import json
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Sequence
 
@@ -23,16 +24,27 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BASELINE_PREFIX = "baseline"
 DEFAULT_OPTIMIZED_PREFIX = "optimized"
 
+# Global counters for progress tracking
+_current_step = 0
+_total_steps = 0
+
 
 def run_step(command: Sequence[str], description: str) -> None:
     """Execute a subprocess command with logging and error handling."""
+    global _current_step
+    _current_step += 1
+    
+    progress_prefix = f"[Step {_current_step}/{_total_steps}]" if _total_steps > 0 else ""
     print("\n" + "=" * 80)
-    print(f"▶ {description}")
+    print(f"{progress_prefix} ▶ {description}")
     print("=" * 80)
     print("Command:", " ".join(str(piece) for piece in command))
+    start_time = time.time()
     result = subprocess.run(command, cwd=PROJECT_ROOT)
+    elapsed = time.time() - start_time
     if result.returncode != 0:
         raise SystemExit(f"Step failed ({description}) with exit code {result.returncode}.")
+    print(f"✓ Completed in {elapsed:.1f}s")
 
 
 def ensure_optimized_layer(combined_path: Path, optimized_path: Path) -> int:
@@ -58,6 +70,8 @@ def ensure_optimized_layer(combined_path: Path, optimized_path: Path) -> int:
 
 
 def main() -> None:
+    global _total_steps, _current_step
+    
     parser = argparse.ArgumentParser(description="Run baseline & optimized pipeline passes.")
     parser.add_argument("--python", type=Path, default=Path(sys.executable), help="Python interpreter to use")
     parser.add_argument("--refresh-map", action="store_true", help="Rebuild combined/optimized POI layers with the GA solution")
@@ -78,6 +92,40 @@ def main() -> None:
     optimized_geojson = runs_dir / "optimized_pois.geojson"
     merged_pois_output = runs_dir / "merged_pois.geojson"
 
+    # Define file paths early so we can check their existence for progress tracking
+    baseline_prefix = args.baseline_prefix.strip()
+    optimized_prefix = args.optimized_prefix.strip()
+    processed_dir = PROJECT_ROOT / "data" / "processed"
+    analysis_dir = PROJECT_ROOT / "data" / "analysis"
+
+    baseline_graph = processed_dir / f"{baseline_prefix}_graph.graphml"
+    baseline_mapping = processed_dir / f"{baseline_prefix}_poi_node_mapping.parquet"
+    optimized_graph = processed_dir / f"{optimized_prefix}_graph.graphml"
+    optimized_mapping = processed_dir / f"{optimized_prefix}_poi_node_mapping.parquet"
+    baseline_nodes = analysis_dir / f"{baseline_prefix}_nodes_with_scores.parquet"
+    optimized_nodes = analysis_dir / f"{optimized_prefix}_nodes_with_scores.parquet"
+
+    # Calculate total steps for progress tracking
+    _current_step = 0
+    _total_steps = 0
+    if not args.skip_map:
+        _total_steps += 1
+    if not args.skip_graph:
+        if args.force_graph or not (baseline_graph.exists() and baseline_mapping.exists()):
+            _total_steps += 1
+        if args.force_graph or not (optimized_graph.exists() and optimized_mapping.exists()):
+            _total_steps += 1
+    if not args.skip_scoring:
+        if args.force_scoring or not baseline_nodes.exists():
+            _total_steps += 1
+        if args.force_scoring or not optimized_nodes.exists():
+            _total_steps += 1
+    
+    print("\n" + "=" * 80)
+    print(f"PathLens Optimization Pipeline")
+    print(f"Total steps to execute: {_total_steps}")
+    print("=" * 80)
+
     if not args.skip_map:
         map_command = [
             python_exe,
@@ -95,16 +143,6 @@ def main() -> None:
         created = ensure_optimized_layer(combined_geojson, optimized_geojson)
         print(f"Derived optimized-only POI layer (missing previously) -> {optimized_geojson} ({created} features)")
 
-    baseline_prefix = args.baseline_prefix.strip()
-    optimized_prefix = args.optimized_prefix.strip()
-    processed_dir = PROJECT_ROOT / "data" / "processed"
-    analysis_dir = PROJECT_ROOT / "data" / "analysis"
-
-    baseline_graph = processed_dir / f"{baseline_prefix}_graph.graphml"
-    baseline_mapping = processed_dir / f"{baseline_prefix}_poi_node_mapping.parquet"
-    optimized_graph = processed_dir / f"{optimized_prefix}_graph.graphml"
-    optimized_mapping = processed_dir / f"{optimized_prefix}_poi_node_mapping.parquet"
-
     if not args.skip_graph:
         if args.force_graph or not (baseline_graph.exists() and baseline_mapping.exists()):
             baseline_command = [
@@ -121,7 +159,7 @@ def main() -> None:
             ]
             run_step(baseline_command, "Build baseline processed graph")
         else:
-            print(f"Skipping baseline graph build (reuse {baseline_graph.name})")
+            print(f"\n[Skip] Baseline graph build (reusing {baseline_graph.name})")
 
         if args.force_graph or not (optimized_graph.exists() and optimized_mapping.exists()):
             optimized_command = [
@@ -142,10 +180,7 @@ def main() -> None:
             ]
             run_step(optimized_command, "Build optimized processed graph with merged POIs")
         else:
-            print(f"Skipping optimized graph build (reuse {optimized_graph.name})")
-
-    baseline_nodes = analysis_dir / f"{baseline_prefix}_nodes_with_scores.parquet"
-    optimized_nodes = analysis_dir / f"{optimized_prefix}_nodes_with_scores.parquet"
+            print(f"\n[Skip] Optimized graph build (reusing {optimized_graph.name})")
 
     if not args.skip_scoring:
         if args.force_scoring or not baseline_nodes.exists():
@@ -167,7 +202,7 @@ def main() -> None:
             ]
             run_step(baseline_scoring_command, "Compute baseline scoring outputs")
         else:
-            print(f"Skipping baseline scoring (reuse {baseline_nodes.name})")
+            print(f"\n[Skip] Baseline scoring (reusing {baseline_nodes.name})")
 
         if args.force_scoring or not optimized_nodes.exists():
             optimized_scoring_command = [
@@ -188,16 +223,22 @@ def main() -> None:
             ]
             run_step(optimized_scoring_command, "Compute optimized scoring outputs")
         else:
-            print(f"Skipping optimized scoring (reuse {optimized_nodes.name})")
+            print(f"\n[Skip] Optimized scoring (reusing {optimized_nodes.name})")
 
     print("\n" + "=" * 80)
-    print("Pipeline orchestration complete. Key artifacts:")
+    print("✓ Pipeline orchestration complete!")
+    print("=" * 80)
+    print(f"\nKey artifacts:")
     print(f"  Baseline graph:    {baseline_graph}")
     print(f"  Optimized graph:   {optimized_graph}")
     print(f"  Baseline scores:   {baseline_nodes}")
     print(f"  Optimized scores:  {optimized_nodes}")
     print(f"  Metrics summaries: {analysis_dir / (baseline_prefix + '_metrics_summary.json')} | "
           f"{analysis_dir / (optimized_prefix + '_metrics_summary.json')}")
+    if optimized_geojson.exists():
+        print(f"  Optimized POIs:    {optimized_geojson}")
+    if merged_pois_output.exists():
+        print(f"  Merged POIs:       {merged_pois_output}")
     print("=" * 80)
 
 

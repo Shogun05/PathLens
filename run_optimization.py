@@ -72,56 +72,56 @@ def main() -> None:
     nodes_scores = analysis_dir / "nodes_with_scores.parquet"
     high_travel_csv = optimization_dir / "high_travel_time_nodes.csv"
 
-    if not args.skip_candidates:
-        candidate_command: List[str] = [
-            python_exe,
-            str(optimization_dir / "list_optimizable_nodes.py"),
-            "--input",
-            str(nodes_scores),
-            "--output",
-            str(high_travel_csv),
-        ]
-        if args.candidate_threshold is not None:
-            candidate_command.extend(["--threshold", str(args.candidate_threshold)])
-        if args.candidate_limit is not None:
-            candidate_command.extend(["--limit", str(args.candidate_limit)])
-        run_step("Extract high travel time nodes", candidate_command)
-    else:
-        print("\nSkipping candidate extraction (--skip-candidates)")
+    # if not args.skip_candidates:
+    #     candidate_command: List[str] = [
+    #         python_exe,
+    #         str(optimization_dir / "list_optimizable_nodes.py"),
+    #         "--input",
+    #         str(nodes_scores),
+    #         "--output",
+    #         str(high_travel_csv),
+    #     ]
+    #     if args.candidate_threshold is not None:
+    #         candidate_command.extend(["--threshold", str(args.candidate_threshold)])
+    #     if args.candidate_limit is not None:
+    #         candidate_command.extend(["--limit", str(args.candidate_limit)])
+    #     run_step("Extract high travel time nodes", candidate_command)
+    # else:
+    #     print("\nSkipping candidate extraction (--skip-candidates)")
 
-    if not args.skip_ga:
-        ga_command: List[str] = [
-            python_exe,
-            str(optimization_dir / "hybrid_ga.py"),
-            "--nodes-scores",
-            str(nodes_scores),
-            "--high-travel",
-            str(high_travel_csv),
-            "--analysis-dir",
-            str(runs_dir),
-        ]
-        if args.ga_config is not None:
-            ga_command.extend(["--config", str(args.ga_config)])
-        if args.ga_population is not None:
-            ga_command.extend(["--population", str(args.ga_population)])
-        if args.ga_generations is not None:
-            ga_command.extend(["--generations", str(args.ga_generations)])
-        if args.ga_workers is not None:
-            ga_command.extend(["--workers", str(args.ga_workers)])
-        if args.ga_random_seed is not None:
-            ga_command.extend(["--random-seed", str(args.ga_random_seed)])
-        run_step("Run hybrid genetic algorithm", ga_command)
-    else:
-        print("\nSkipping hybrid GA (--skip-ga)")
+    # if not args.skip_ga:
+    #     ga_command: List[str] = [
+    #         python_exe,
+    #         str(optimization_dir / "hybrid_ga.py"),
+    #         "--nodes-scores",
+    #         str(nodes_scores),
+    #         "--high-travel",
+    #         str(high_travel_csv),
+    #         "--analysis-dir",
+    #         str(runs_dir),
+    #     ]
+    #     if args.ga_config is not None:
+    #         ga_command.extend(["--config", str(args.ga_config)])
+    #     if args.ga_population is not None:
+    #         ga_command.extend(["--population", str(args.ga_population)])
+    #     if args.ga_generations is not None:
+    #         ga_command.extend(["--generations", str(args.ga_generations)])
+    #     if args.ga_workers is not None:
+    #         ga_command.extend(["--workers", str(args.ga_workers)])
+    #     if args.ga_random_seed is not None:
+    #         ga_command.extend(["--random-seed", str(args.ga_random_seed)])
+    #     run_step("Run hybrid genetic algorithm", ga_command)
+    # else:
+    #     print("\nSkipping hybrid GA (--skip-ga)")
 
-    combined_geojson = runs_dir / "poi_mapping.geojson"
-    if not args.skip_map_refresh:
-        map_command: List[str] = [python_exe, str(optimization_dir / "generate_solution_map.py")]
-        if args.map_skip_metrics:
-            map_command.append("--skip-metrics")
-        run_step("Generate combined POI GeoJSON and map", map_command)
-    else:
-        print("\nSkipping map refresh (--skip-map-refresh)")
+    # combined_geojson = runs_dir / "poi_mapping.geojson"
+    # if not args.skip_map_refresh:
+    #     map_command: List[str] = [python_exe, str(optimization_dir / "generate_solution_map.py")]
+    #     if args.map_skip_metrics:
+    #         map_command.append("--skip-metrics")
+    #     run_step("Generate combined POI GeoJSON and map", map_command)
+    # else:
+    #     print("\nSkipping map refresh (--skip-map-refresh)")
 
     orchestrator = optimization_dir / "run_optimized_pipeline.py"
     if not orchestrator.exists():

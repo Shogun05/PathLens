@@ -81,6 +81,7 @@ def parse_candidate_signature(signature: str) -> Dict[str, Tuple[str, ...]]:
 def load_best_candidate(best_candidate_path: Path) -> Tuple[Dict[str, Tuple[str, ...]], Dict[str, object]]:
     if not best_candidate_path.exists():
         raise FileNotFoundError(f"Best candidate file not found: {best_candidate_path}")
+    logging.info("Loading best candidate from %s", best_candidate_path)
     with best_candidate_path.open("r", encoding="utf-8") as handle:
         payload = json.load(handle)
     # older code used key "candidate" or "candidate.signature"; support both
@@ -89,6 +90,9 @@ def load_best_candidate(best_candidate_path: Path) -> Tuple[Dict[str, Tuple[str,
     metrics = payload.get("metrics", {}) if isinstance(payload, Mapping) else {}
     if not placements:
         logging.warning("Best candidate signature is empty; no placements to visualise.")
+    else:
+        total_pois = sum(len(nodes) for nodes in placements.values())
+        logging.info("Loaded %d amenity types with %d total POI placements", len(placements), total_pois)
     return placements, dict(metrics)
 
 
@@ -153,6 +157,7 @@ def load_existing_pois(pois_path: Path) -> gpd.GeoDataFrame:
     if not pois_path.exists():
         logging.warning("Existing POI GeoJSON not found: %s", pois_path)
         return gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
+    logging.info("Loading existing POIs from %s", pois_path)
     gdf = gpd.read_file(pois_path)
     try:
         gdf = gdf.to_crs("EPSG:4326")
@@ -162,6 +167,7 @@ def load_existing_pois(pois_path: Path) -> gpd.GeoDataFrame:
         gdf["source"] = "existing"
     else:
         gdf["source"] = gdf["source"].fillna("existing")
+    logging.info("Loaded %d existing POIs", len(gdf))
     return gdf
 
 
@@ -191,8 +197,12 @@ def compute_map_center(*gdfs: gpd.GeoDataFrame) -> Tuple[float, float]:
     for gdf in gdfs:
         if gdf is None or gdf.empty:
             continue
-        lats.extend(gdf.geometry.y.astype(float).tolist())
-        lons.extend(gdf.geometry.x.astype(float).tolist())
+        # Use centroids to handle all geometry types (Point, LineString, Polygon, etc.)
+        # Project to a local projected CRS to avoid centroid warnings
+        gdf_projected = gdf.to_crs("EPSG:3857")  # Web Mercator
+        centroids = gdf_projected.geometry.centroid.to_crs("EPSG:4326")
+        lats.extend(centroids.y.astype(float).tolist())
+        lons.extend(centroids.x.astype(float).tolist())
     if lats and lons:
         return (float(sum(lats) / len(lats)), float(sum(lons) / len(lons)))
     return DEFAULT_CENTER
@@ -216,6 +226,7 @@ def build_map(
     optimized_gdf: gpd.GeoDataFrame,
     output_html: Path,
 ) -> None:
+    logging.info("Building interactive map...")
     center_lat, center_lon = compute_map_center(existing_gdf, optimized_gdf)
     fmap = folium.Map(location=[center_lat, center_lon], zoom_start=13, tiles="CartoDB positron")
 
@@ -227,8 +238,15 @@ def build_map(
             geometry = row.geometry
             if geometry is None:
                 continue
+            # Handle different geometry types by using centroid
+            if geometry.geom_type == 'Point':
+                lat, lon = geometry.y, geometry.x
+            else:
+                # For Polygon, LineString, etc., use centroid
+                centroid = geometry.centroid
+                lat, lon = centroid.y, centroid.x
             folium.CircleMarker(
-                location=[geometry.y, geometry.x],
+                location=[lat, lon],
                 radius=3,
                 color="#3388ff",
                 opacity=0.8,
@@ -245,6 +263,13 @@ def build_map(
             geometry = row.geometry
             if geometry is None:
                 continue
+            # Handle different geometry types by using centroid
+            if geometry.geom_type == 'Point':
+                lat, lon = geometry.y, geometry.x
+            else:
+                # For Polygon, LineString, etc., use centroid
+                centroid = geometry.centroid
+                lat, lon = centroid.y, centroid.x
             popup_lines = [f"Amenity: {row.get('amenity', '-')}", f"OSM id: {row.get('osmid', '-')}" ]
             distance_value = row.get("distance_m")
             if pd.notna(distance_value):
@@ -254,7 +279,7 @@ def build_map(
                 popup_lines.append(f"Travel time: {float(travel_time):.1f} min")
             popup = "<br/>".join(popup_lines)
             folium.CircleMarker(
-                location=[geometry.y, geometry.x],
+                location=[lat, lon],
                 radius=6,
                 color="#d95f02",
                 weight=2,
@@ -326,7 +351,9 @@ def compute_optimized_scores(
         return
 
     logging.info("Recomputing optimized accessibility metrics for %d amenity types.", len(amenity_types))
+    logging.info("Loading graph from %s", graph_path)
     G = ox.load_graphml(graph_path)
+    logging.info("Converting graph to GeoDataFrame...")
     nodes_gdf_result = ox.graph_to_gdfs(G, nodes=True, edges=False)
     nodes_gdf = nodes_gdf_result[0] if isinstance(nodes_gdf_result, tuple) else nodes_gdf_result
 
@@ -364,6 +391,7 @@ def compute_optimized_scores(
     mapping_df = pd.DataFrame(mapping_records).set_index("poi_index")
 
     # compute nearest distances (returns DataFrame indexed by node id)
+    logging.info("Computing nearest amenity distances for %d placements...", len(mapping_df))
     distances = nearest_amenity_distances(
         G,
         nodes_gdf,
@@ -378,7 +406,9 @@ def compute_optimized_scores(
     nodes_aligned.index = nodes_aligned.index.map(str)
     distances = distances.reindex(nodes_aligned.index)
 
+    logging.info("Computing accessibility scores for %d nodes...", len(nodes_aligned))
     optimized_accessibility = compute_accessibility_score(distances, amenity_weights)
+    logging.info("Computing travel time metrics...")
     optimized_travel_time = compute_travel_time_metrics(distances, walking_speed)
     travel_time_clean = optimized_travel_time.replace([np.inf, -np.inf], np.nan)
     fallback = travel_time_clean.max()
@@ -394,6 +424,7 @@ def compute_optimized_scores(
     gamma = float(composite_weights.get("gamma", 0.2))
     delta = float(composite_weights.get("delta", 0.15))
 
+    logging.info("Computing composite walkability scores...")
     optimized_walkability = (
         alpha * structure_component
         + beta * optimized_accessibility.fillna(0.0)
@@ -409,6 +440,7 @@ def compute_optimized_scores(
     nodes_result["optimized_travel_time_score"] = optimized_travel_score
     nodes_result["optimized_walkability"] = optimized_walkability
 
+    logging.info("Saving optimized scores to output files...")
     nodes_output.parent.mkdir(parents=True, exist_ok=True)
     nodes_result.to_parquet(nodes_output)
     csv_output = nodes_output.with_suffix(".csv")

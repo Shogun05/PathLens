@@ -63,13 +63,31 @@ def load_inputs(graph_path: Path, pois_path: Path, optimized_pois_path: Path | N
             if optimized.crs and base_pois.crs and optimized.crs != base_pois.crs:
                 optimized = optimized.to_crs(base_pois.crs)
             optimized = _prepare_pois_layer(optimized, "optimized")
-            missing_in_base = set(optimized.columns) - set(base_pois.columns)
-            for col in missing_in_base:
-                base_pois[col] = None
-            missing_in_opt = set(base_pois.columns) - set(optimized.columns)
+            
+            # Find columns that exist in one but not the other
+            missing_in_opt = set(base_pois.columns) - set(optimized.columns) - {'geometry'}
+            missing_in_base = set(optimized.columns) - set(base_pois.columns) - {'geometry'}
+            
+            # Add missing columns with NaN values, using object dtype to avoid type conflicts
             for col in missing_in_opt:
                 optimized[col] = None
-            pois = gpd.GeoDataFrame(pd.concat([base_pois, optimized], ignore_index=True, sort=False), crs=base_pois.crs)
+                optimized[col] = optimized[col].astype('object')
+            
+            for col in missing_in_base:
+                base_pois[col] = None
+                base_pois[col] = base_pois[col].astype('object')
+            
+            # Convert any datetime columns to object to avoid concatenation issues
+            for df in [base_pois, optimized]:
+                for col in df.columns:
+                    if col != 'geometry' and pd.api.types.is_datetime64_any_dtype(df[col]):
+                        df[col] = df[col].astype('object')
+            
+            # Concat the aligned dataframes
+            pois = gpd.GeoDataFrame(
+                pd.concat([base_pois, optimized], ignore_index=True, sort=False),
+                crs=base_pois.crs
+            )
     else:
         pois = base_pois
 
@@ -328,7 +346,20 @@ def save_outputs(Gs, nodes, edges, mapping, out_dir: Path, output_prefix: str, m
     if merged_pois is not None and merged_pois_out:
         merged_pois_out = merged_pois_out.with_suffix(merged_pois_out.suffix or ".geojson")
         merged_pois_out.parent.mkdir(parents=True, exist_ok=True)
-        merged_pois.to_file(merged_pois_out, driver="GeoJSON")
+        
+        # Convert any Timestamp columns to strings for GeoJSON compatibility
+        merged_pois_copy = merged_pois.copy()
+        for col in merged_pois_copy.columns:
+            if col != 'geometry' and pd.api.types.is_datetime64_any_dtype(merged_pois_copy[col]):
+                merged_pois_copy[col] = merged_pois_copy[col].astype(str)
+            # Also handle Timestamp objects that might be stored as objects
+            elif col != 'geometry':
+                if merged_pois_copy[col].apply(lambda x: isinstance(x, pd.Timestamp)).any():
+                    merged_pois_copy[col] = merged_pois_copy[col].apply(
+                        lambda x: x.isoformat() if isinstance(x, pd.Timestamp) else x
+                    )
+        
+        merged_pois_copy.to_file(merged_pois_out, driver="GeoJSON")
         print(f"Saved merged POI layer to {merged_pois_out}")
 
 
