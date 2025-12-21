@@ -38,3 +38,52 @@ centrality:
 amenity_distance_cutoff_m: null  # null = no cutoff, compute all distances
 
 circuity_sample_k: 120
+
+# MILP Optimization Configuration
+milp:
+  # Budget constraints: maximum number of new amenities per type
+  amenity_budgets:
+    school: 5
+    hospital: 3
+    pharmacy: 4
+    supermarket: 5
+    bus_station: 6
+    park: 4
+  
+  # Solver settings
+  time_limit_seconds: 300  # 5 minutes default
+  gap_tolerance: 0.01      # 1% optimality gap
+  
+  # Equity settings
+  enable_equity: false
+  equity_min_coverage: 0.3  # Minimum coverage per hexagon (if enabled)
+  
+  # Performance tuning
+  use_population_weights: true
+  max_candidates: null      # Limit candidates for testing (null = all)
+
+# Hybrid GA-MILP Configuration
+hybrid_milp:
+  enabled: true  # Set to true to enable MILP refinement during GA evolution
+  
+  # MILP solver settings
+  time_limit_seconds: 2.0  # Fast solve per candidate (2s default)
+  
+  # Optimization window settings
+  max_amenities_to_relocate: 4  # Small local window
+  max_hexagons_to_optimize: 3   # Focus on worst neighborhoods
+  
+  # Selection strategy: "worst_hexagons", "least_contributing", or "random"
+  selection_strategy: "worst_hexagons"
+  
+  # Application policy
+  apply_to_elite_only: true  # Only refine top 20% of population
+  apply_every_n_generations: 1  # Frequency (1 = every generation)
+  max_candidates_per_generation: 5  # Limit MILP calls per generation
+  
+  # Acceptance criteria
+  min_improvement_threshold: 0.01  # Accept only if fitness improves by ≥1%
+  
+  # Caching
+  enable_caching: true
+  cache_dir: "cache/milp_refinement"

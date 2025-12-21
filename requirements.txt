@@ -32,3 +32,6 @@ tqdm==4.66.4
 tzdata==2025.2
 urllib3==2.5.0
 xyzservices==2025.11.0
+
+# MILP optimization
+pulp>=2.7.0
