@@ -16,10 +16,11 @@ import importlib
 import json
 import logging
 import math
+import os
 import random
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable, Dict, Iterable, List, Mapping, MutableMapping, Optional, Sequence, Tuple
@@ -373,8 +374,11 @@ class HybridGA:
                 pool = pools.get(amenity, [])
                 if not pool:
                     continue
-                slice_start = min(template_idx, max(0, len(pool) - 1))
-                chosen = pool[slice_start : slice_start + 1]
+                # Place 3-7 amenities per type (varied by template)
+                num_to_place = 3 + template_idx % 5  # 3, 4, 5, 6, 7
+                slice_start = min(template_idx * 2, max(0, len(pool) - num_to_place))
+                slice_end = min(slice_start + num_to_place, len(pool))
+                chosen = pool[slice_start:slice_end]
                 placements[amenity] = tuple(chosen)
             templates.append(Candidate(placements=placements, template_id=f"greedy_{template_idx}"))
         return templates
@@ -384,7 +388,10 @@ class HybridGA:
         for amenity, pool in self.context.amenity_pools.items():
             if not pool:
                 continue
-            sample_size = min(len(pool), max(1, int(len(pool) * 0.05)))
+            # Sample 10-15% of pool, minimum 5, maximum 20
+            sample_pct = 0.10 + (self.random.random() * 0.05)  # 10-15%
+            sample_size = min(20, max(5, int(len(pool) * sample_pct)))
+            sample_size = min(sample_size, len(pool))
             chosen = self.random.sample(pool, k=sample_size)
             placements[amenity] = tuple(sorted(chosen))
         return Candidate(placements=placements)
@@ -574,23 +581,53 @@ class HybridGA:
             # iterate amenities; break early if improved
             for amenity, pool in amenity_pools_items:
                 current_nodes = set(best_candidate.placements.get(amenity, ()))
-                # try candidates in pool (we don't show per-node progress to avoid spam)
-                for node in pool:
-                    if node in current_nodes:
-                        continue
-                    trial_nodes = tuple(sorted(current_nodes | {node}))
-                    trial_placements = dict(best_candidate.placements)
-                    trial_placements[amenity] = trial_nodes
-                    trial_candidate = Candidate(placements=trial_placements, template_id=best_candidate.template_id)
-                    trial_metrics = self.evaluate(trial_candidate)
-                    trial_fitness = float(trial_metrics.get("fitness", float("-inf")))
-                    if trial_fitness > best_fitness:
-                        best_candidate = trial_candidate
-                        best_metrics = trial_metrics
-                        best_fitness = trial_fitness
-                        improved = True
-                        self.operator_credits["local_search"] += 1
-                        break
+                
+                # Parallel evaluation of neighbors when using multiple workers
+                if self.config.workers > 1:
+                    # Build candidate neighbors
+                    neighbors = []
+                    for node in pool[:min(50, len(pool))]:  # Limit to top 50 for performance
+                        if node in current_nodes:
+                            continue
+                        trial_nodes = tuple(sorted(current_nodes | {node}))
+                        trial_placements = dict(best_candidate.placements)
+                        trial_placements[amenity] = trial_nodes
+                        trial_candidate = Candidate(placements=trial_placements, template_id=best_candidate.template_id)
+                        neighbors.append((node, trial_candidate))
+                    
+                    # Evaluate neighbors in parallel
+                    if neighbors:
+                        with ThreadPoolExecutor(max_workers=min(4, self.config.workers)) as executor:
+                            futures = {executor.submit(self.evaluate, cand): (node, cand) for node, cand in neighbors}
+                            for future in as_completed(futures):
+                                node, trial_candidate = futures[future]
+                                trial_metrics = future.result()
+                                trial_fitness = float(trial_metrics.get("fitness", float("-inf")))
+                                if trial_fitness > best_fitness:
+                                    best_candidate = trial_candidate
+                                    best_metrics = trial_metrics
+                                    best_fitness = trial_fitness
+                                    improved = True
+                                    self.operator_credits["local_search"] += 1
+                else:
+                    # Sequential evaluation for single worker
+                    for node in pool:
+                        if node in current_nodes:
+                            continue
+                        trial_nodes = tuple(sorted(current_nodes | {node}))
+                        trial_placements = dict(best_candidate.placements)
+                        trial_placements[amenity] = trial_nodes
+                        trial_candidate = Candidate(placements=trial_placements, template_id=best_candidate.template_id)
+                        trial_metrics = self.evaluate(trial_candidate)
+                        trial_fitness = float(trial_metrics.get("fitness", float("-inf")))
+                        if trial_fitness > best_fitness:
+                            best_candidate = trial_candidate
+                            best_metrics = trial_metrics
+                            best_fitness = trial_fitness
+                            improved = True
+                            self.operator_credits["local_search"] += 1
+                            break
+                
                 if improved:
                     break
             if not improved:
@@ -876,14 +913,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--nodes-scores", type=Path, default=project_root / "data" / "analysis" / "nodes_with_scores.parquet")
     parser.add_argument("--high-travel", type=Path, default=project_root / "optimization" / "high_travel_time_nodes.csv")
     parser.add_argument("--config", type=Path, default=project_root / "config.yaml")
-    parser.add_argument("--population", type=int, default=10)
+    parser.add_argument("--population", type=int, default=30)
     parser.add_argument("--generations", type=int, default=50)
     parser.add_argument("--crossover", type=float, default=0.75)
     parser.add_argument("--mutation", type=float, default=0.2)
     parser.add_argument("--elitism", type=int, default=4)
     parser.add_argument("--seed-fraction", type=float, default=0.4)
     parser.add_argument("--templates", type=int, default=5)
-    parser.add_argument("--local-search-budget", type=int, default=20)
+    parser.add_argument("--local-search-budget", type=int, default=30)
     parser.add_argument("--local-search-topk", type=int, default=5)
     parser.add_argument("--per-pool-limit", type=int, default=200)
     parser.add_argument("--analysis-dir", type=Path, default=project_root / "optimization" / "runs")
@@ -891,8 +928,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--workers",
         type=int,
-        default=1,
-        help="Number of worker threads used to evaluate each generation in parallel.",
+        default=max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4,
+        help="Number of worker threads used to evaluate each generation in parallel. Default: 75%% of CPU cores.",
     )
     parser.add_argument("--precompute-hook", type=str, default=None)
     parser.add_argument("--evaluate-hook", type=str, default=None)

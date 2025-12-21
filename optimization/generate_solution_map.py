@@ -14,9 +14,11 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from pathlib import Path
 from typing import Dict, List, Mapping, Optional, Sequence, Tuple
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import geopandas as gpd
 import pandas as pd
@@ -233,53 +235,140 @@ def build_map(
     if not existing_gdf.empty:
         existing_group = folium.FeatureGroup(name="Existing POIs", show=False)
         cluster = MarkerCluster(name="Existing POIs")
-        existing_iter = iter_with_progress(existing_gdf.iterrows(), "Existing POIs", total=len(existing_gdf))
-        for _, row in existing_iter:
+        
+        # Parallel preparation of marker data
+        def prepare_existing_marker(row_data):
+            """Prepare marker data for an existing POI."""
+            idx, row = row_data
             geometry = row.geometry
             if geometry is None:
-                continue
+                return None
+            
             # Handle different geometry types by using centroid
             if geometry.geom_type == 'Point':
                 lat, lon = geometry.y, geometry.x
             else:
-                # For Polygon, LineString, etc., use centroid
                 centroid = geometry.centroid
                 lat, lon = centroid.y, centroid.x
+            
+            # Build popup with POI information
+            amenity_type = row.get('amenity', row.get('fclass', 'Unknown'))
+            popup_lines = [
+                f"<b>Existing POI</b>",
+                f"Type: {amenity_type}",
+                f"OSM ID: {row.get('osmid', row.get('osm_id', '-'))}"
+            ]
+            
+            # Add name if available
+            name = row.get('name', row.get('Name', ''))
+            if pd.notna(name) and str(name).strip():
+                popup_lines.append(f"Name: {name}")
+            
+            # Add any other relevant fields
+            if 'tags' in row and pd.notna(row['tags']):
+                popup_lines.append(f"Tags: {row['tags']}")
+            
+            popup_html = "<br/>".join(popup_lines)
+            
+            return {
+                'lat': lat,
+                'lon': lon,
+                'popup_html': popup_html,
+                'amenity_type': amenity_type
+            }
+        
+        # Use ThreadPoolExecutor for parallel preparation
+        num_workers = max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4
+        logging.info(f"Preparing {len(existing_gdf)} existing POI markers using {num_workers} workers...")
+        
+        marker_data_list = []
+        with ThreadPoolExecutor(max_workers=num_workers) as executor:
+            futures = {executor.submit(prepare_existing_marker, row_data): idx 
+                      for idx, row_data in enumerate(existing_gdf.iterrows())}
+            
+            for future in iter_with_progress(as_completed(futures), "Existing POIs", total=len(futures)):
+                result = future.result()
+                if result:
+                    marker_data_list.append(result)
+        
+        # Add markers to cluster (must be sequential)
+        logging.info(f"Adding {len(marker_data_list)} markers to map...")
+        for marker_data in marker_data_list:
             folium.CircleMarker(
-                location=[lat, lon],
+                location=[marker_data['lat'], marker_data['lon']],
                 radius=3,
                 color="#3388ff",
                 opacity=0.8,
                 fill=True,
                 fill_opacity=0.5,
+                popup=folium.Popup(marker_data['popup_html'], max_width=250),
+                tooltip=f"{marker_data['amenity_type']}"
             ).add_to(cluster)
+        
         cluster.add_to(existing_group)
         existing_group.add_to(fmap)
 
     if not optimized_gdf.empty:
         optimized_group = folium.FeatureGroup(name="Optimized Placements", show=True)
-        optimized_iter = iter_with_progress(optimized_gdf.iterrows(), "Optimized placements", total=len(optimized_gdf))
-        for _, row in optimized_iter:
+        
+        # Parallel preparation of optimized marker data
+        def prepare_optimized_marker(row_data):
+            """Prepare marker data for an optimized POI."""
+            idx, row = row_data
             geometry = row.geometry
             if geometry is None:
-                continue
+                return None
+            
             # Handle different geometry types by using centroid
             if geometry.geom_type == 'Point':
                 lat, lon = geometry.y, geometry.x
             else:
-                # For Polygon, LineString, etc., use centroid
                 centroid = geometry.centroid
                 lat, lon = centroid.y, centroid.x
-            popup_lines = [f"Amenity: {row.get('amenity', '-')}", f"OSM id: {row.get('osmid', '-')}" ]
+            
+            amenity_type = row.get('amenity', '-')
+            popup_lines = [
+                f"<b>🎯 Optimized Placement</b>",
+                f"Amenity Type: <b>{amenity_type}</b>",
+                f"OSM Node ID: {row.get('osmid', '-')}"
+            ]
+            
             distance_value = row.get("distance_m")
             if pd.notna(distance_value):
                 popup_lines.append(f"Representative distance: {float(distance_value):.1f} m")
+            
             travel_time = row.get("travel_time_min")
             if pd.notna(travel_time):
                 popup_lines.append(f"Travel time: {float(travel_time):.1f} min")
-            popup = "<br/>".join(popup_lines)
+            
+            popup_html = "<br/>".join(popup_lines)
+            
+            return {
+                'lat': lat,
+                'lon': lon,
+                'popup_html': popup_html,
+                'amenity_type': amenity_type
+            }
+        
+        # Use ThreadPoolExecutor for parallel preparation
+        num_workers = max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4
+        logging.info(f"Preparing {len(optimized_gdf)} optimized markers using {num_workers} workers...")
+        
+        marker_data_list = []
+        with ThreadPoolExecutor(max_workers=num_workers) as executor:
+            futures = {executor.submit(prepare_optimized_marker, row_data): idx 
+                      for idx, row_data in enumerate(optimized_gdf.iterrows())}
+            
+            for future in iter_with_progress(as_completed(futures), "Optimized placements", total=len(futures)):
+                result = future.result()
+                if result:
+                    marker_data_list.append(result)
+        
+        # Add markers to group (must be sequential)
+        logging.info(f"Adding {len(marker_data_list)} optimized markers to map...")
+        for marker_data in marker_data_list:
             folium.CircleMarker(
-                location=[lat, lon],
+                location=[marker_data['lat'], marker_data['lon']],
                 radius=6,
                 color="#d95f02",
                 weight=2,
@@ -287,8 +376,10 @@ def build_map(
                 fill=True,
                 fill_color="#d95f02",
                 fill_opacity=0.7,
-                popup=popup,
+                popup=folium.Popup(marker_data['popup_html'], max_width=300),
+                tooltip=f"New {marker_data['amenity_type']}"
             ).add_to(optimized_group)
+        
         optimized_group.add_to(fmap)
 
     folium.LayerControl(collapsed=False).add_to(fmap)

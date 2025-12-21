@@ -4,12 +4,12 @@ network_type: "walk"
 walking_speed_kmph: 4.8
 
 amenity_weights:
-  school: 1.0
-  hospital: 2.0
-  pharmacy: 1.5
-  supermarket: 2.0
-  bus_station: 1.0
-  park: 0.8
+  school: 1.5
+  hospital: 2.5
+  pharmacy: 2.0
+  supermarket: 2.5
+  bus_station: 1.5
+  park: 1.2
 
 composite_weights:
   alpha: 0.25
@@ -18,12 +18,12 @@ composite_weights:
   delta: 0.15
 
 equity_thresholds:
-  school: 800 # meters
-  hospital: 1000
-  pharmacy: 600
-  supermarket: 800
-  bus_station: 600
-  park: 700
+  school: 1000 # meters
+  hospital: 1500
+  pharmacy: 800
+  supermarket: 1000
+  bus_station: 800
+  park: 900
 
 h3:
   resolution: 8
@@ -43,12 +43,12 @@ circuity_sample_k: 120
 milp:
   # Budget constraints: maximum number of new amenities per type
   amenity_budgets:
-    school: 5
-    hospital: 3
-    pharmacy: 4
-    supermarket: 5
-    bus_station: 6
-    park: 4
+    school: 15
+    hospital: 10
+    pharmacy: 12
+    supermarket: 15
+    bus_station: 20
+    park: 12
   
   # Solver settings
   time_limit_seconds: 300  # 5 minutes default
@@ -67,11 +67,11 @@ hybrid_milp:
   enabled: true  # Set to true to enable MILP refinement during GA evolution
   
   # MILP solver settings
-  time_limit_seconds: 2.0  # Fast solve per candidate (2s default)
+  time_limit_seconds: 3.0  # Fast solve per candidate (3s for more complex problems)
   
   # Optimization window settings
-  max_amenities_to_relocate: 4  # Small local window
-  max_hexagons_to_optimize: 3   # Focus on worst neighborhoods
+  max_amenities_to_relocate: 6  # Larger local window for more relocations
+  max_hexagons_to_optimize: 5   # Optimize more neighborhoods simultaneously
   
   # Selection strategy: "worst_hexagons", "least_contributing", or "random"
   selection_strategy: "worst_hexagons"

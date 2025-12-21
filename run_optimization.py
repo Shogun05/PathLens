@@ -248,6 +248,13 @@ Examples:
         if args.ga_random_seed is not None:
             ga_command.extend(["--random-seed", str(args.ga_random_seed)])
         
+        # Auto-add workers if not specified
+        if args.ga_workers is None:
+            import os
+            auto_workers = max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4
+            ga_command.extend(["--workers", str(auto_workers)])
+            logger.info(f"Auto-detected {auto_workers} worker threads (75% of {os.cpu_count()} cores)")
+        
         step_desc = "Run hybrid genetic algorithm"
         if hybrid_milp_enabled:
             step_desc += " with MILP refinement"
