@@ -1,0 +1,101 @@
+# =====================
+# IDE / Editors
+# =====================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.ac
+.ipynb_checkpoints/
+
+# =====================
+# Node / Yarn
+# =====================
+node_modules/
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarn/versions
+
+# =====================
+# Next.js / Frontend Builds
+# =====================
+.next/
+.out/
+dist/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*/venv/
+.env
+.env.*
+
+# =====================
+# Logs / Debug
+# =====================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dump.rdb
+.pytest_cache/
+.coverage
+
+# =====================
+# System / OS
+# =====================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.pem
+
+# =====================
+# Data / Database / Sensitive
+# =====================
+agenthub/agents/youtube/db
+*token.json*
+*credentials.json*
+*.sqlite3
+*.db
+
+# =====================
+# Cache / Temporary / Misc
+# =====================
+.cache/
+*.bak
+*.swp
+*.tmp
+
+# =====================
+# Archives / Large Files
+# =====================
+**/*.zip
+**/*.tar.gz
+**/*.tar
+**/*.tgz
+*.pack
+*.deb
+*.dylib
+
+# =====================
+# Mobile / SDK
+# =====================
+android-sdk/
+.emergent/
+
+# Generated test logs
+test_result.md
+
+yarn.lock

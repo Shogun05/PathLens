@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: 'IBM Plex Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+    :root {
+        /* Core colors - Urban planning theme */
+        --background: 220 18% 97%;
+        --foreground: 220 15% 15%;
+        
+        /* Card and surfaces */
+        --card: 0 0% 100%;
+        --card-foreground: 220 15% 15%;
+        
+        /* Popover */
+        --popover: 0 0% 100%;
+        --popover-foreground: 220 15% 15%;
+        
+        /* Primary - Deep blue for professionalism */
+        --primary: 210 90% 48%;
+        --primary-foreground: 0 0% 100%;
+        --primary-hover: 210 90% 42%;
+        
+        /* Secondary - Light slate */
+        --secondary: 220 14% 92%;
+        --secondary-foreground: 220 15% 25%;
+        
+        /* Muted - Neutral gray */
+        --muted: 220 14% 95%;
+        --muted-foreground: 220 10% 45%;
+        
+        /* Accent - Teal for data/tech */
+        --accent: 180 65% 50%;
+        --accent-foreground: 0 0% 100%;
+        --accent-hover: 180 65% 45%;
+        
+        /* Success - Green */
+        --success: 145 65% 45%;
+        --success-foreground: 0 0% 100%;
+        
+        /* Warning - Amber */
+        --warning: 38 92% 50%;
+        --warning-foreground: 220 15% 15%;
+        
+        /* Destructive - Red */
+        --destructive: 0 72% 51%;
+        --destructive-foreground: 0 0% 100%;
+        
+        /* Borders and inputs */
+        --border: 220 14% 88%;
+        --input: 220 14% 88%;
+        --ring: 210 90% 48%;
+        
+        /* Chart colors */
+        --chart-1: 210 90% 48%;
+        --chart-2: 180 65% 50%;
+        --chart-3: 145 65% 45%;
+        --chart-4: 38 92% 50%;
+        --chart-5: 270 60% 55%;
+        
+        /* Radius */
+        --radius: 0.5rem;
+        
+        /* Custom tokens for this app */
+        --log-bg: 220 15% 18%;
+        --log-text: 220 10% 85%;
+        --log-info: 180 65% 60%;
+        --log-warning: 38 92% 65%;
+        --log-error: 0 72% 65%;
+        
+        /* Shadows */
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        
+        /* Transitions */
+        --transition-smooth: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .dark {
+        --background: 220 18% 8%;
+        --foreground: 220 10% 92%;
+        
+        --card: 220 15% 12%;
+        --card-foreground: 220 10% 92%;
+        
+        --popover: 220 15% 12%;
+        --popover-foreground: 220 10% 92%;
+        
+        --primary: 210 90% 55%;
+        --primary-foreground: 0 0% 100%;
+        --primary-hover: 210 90% 48%;
+        
+        --secondary: 220 15% 18%;
+        --secondary-foreground: 220 10% 85%;
+        
+        --muted: 220 15% 15%;
+        --muted-foreground: 220 10% 60%;
+        
+        --accent: 180 65% 55%;
+        --accent-foreground: 0 0% 100%;
+        --accent-hover: 180 65% 50%;
+        
+        --success: 145 65% 50%;
+        --success-foreground: 0 0% 100%;
+        
+        --warning: 38 92% 60%;
+        --warning-foreground: 220 15% 15%;
+        
+        --destructive: 0 72% 60%;
+        --destructive-foreground: 0 0% 100%;
+        
+        --border: 220 15% 22%;
+        --input: 220 15% 22%;
+        --ring: 210 90% 55%;
+        
+        --chart-1: 210 90% 55%;
+        --chart-2: 180 65% 55%;
+        --chart-3: 145 65% 50%;
+        --chart-4: 38 92% 60%;
+        --chart-5: 270 60% 60%;
+        
+        --log-bg: 220 15% 10%;
+        --log-text: 220 10% 85%;
+        --log-info: 180 65% 60%;
+        --log-warning: 38 92% 65%;
+        --log-error: 0 72% 65%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+/* Custom scrollbar for log panel */
+.log-panel::-webkit-scrollbar {
+    width: 10px;
+}
+
+.log-panel::-webkit-scrollbar-track {
+    background: hsl(var(--log-bg));
+}
+
+.log-panel::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted));
+    border-radius: 5px;
+}
+
+.log-panel::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground));
+}
+
+/* Smooth transitions for interactive elements */
+.smooth-transition {
+    transition: all var(--transition-smooth);
+}
+
+/* Map iframe container */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
