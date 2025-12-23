@@ -27,6 +27,7 @@ from typing import Any, Callable, Dict, Iterable, List, Mapping, MutableMapping,
 
 import pandas as pd
 import yaml
+import networkx as nx
 
 # Try to import tqdm for nicer progress bars; gracefully fallback if not present.
 try:
@@ -237,21 +238,78 @@ def build_amenity_pools(
     pools: Dict[str, List[str]] = {}
     base_candidates = ensure_index_on_osmid(high_nodes)
     indexed_nodes = ensure_index_on_osmid(nodes)
+    
+    # Calculate city center for centrality bias
+    center_x = indexed_nodes['x'].median()
+    center_y = indexed_nodes['y'].median()
+    
     for amenity in weights.keys():
         column = distance_columns.get(amenity)
         if column and column in indexed_nodes.columns:
+            # Start with high travel nodes
             candidate_frame = indexed_nodes.loc[indexed_nodes.index.intersection(base_candidates.index)]
-            candidates = candidate_frame.sort_values(column, ascending=True)
+            
+            # CRITICAL FIX: Exclude nodes already well-served by existing amenities
+            # Minimum spacing: 1.5x the coverage threshold to ensure new placements add real value
+            # For 1200m threshold → exclude nodes within 1800m of existing amenities
+            min_spacing = 1200  # Conservative minimum: don't place where existing amenity is closer than this
+            
+            if column in candidate_frame.columns:
+                # Filter out nodes with existing amenity too close
+                before_count = len(candidate_frame)
+                candidate_frame = candidate_frame[
+                    (pd.to_numeric(candidate_frame[column], errors='coerce') >= min_spacing) |
+                    (pd.to_numeric(candidate_frame[column], errors='coerce').isna())
+                ]
+                after_count = len(candidate_frame)
+                if before_count > after_count:
+                    logging.info(
+                        "Filtered %d nodes for %s (too close to existing, < %dm)",
+                        before_count - after_count, amenity, min_spacing
+                    )
+            
+            # Calculate composite score: balance between distance from existing amenities and centrality
+            if 'x' in candidate_frame.columns and 'y' in candidate_frame.columns:
+                # Distance from city center (lower is better for central placement)
+                candidate_frame = candidate_frame.copy()
+                candidate_frame['dist_from_center'] = candidate_frame.apply(
+                    lambda row: math.sqrt((row['x'] - center_x)**2 + (row['y'] - center_y)**2),
+                    axis=1
+                )
+                
+                # Normalize both metrics to 0-1 range
+                existing_dist = pd.to_numeric(candidate_frame[column], errors='coerce').fillna(0)
+                center_dist = candidate_frame['dist_from_center']
+                
+                # Normalize
+                existing_dist_norm = (existing_dist - existing_dist.min()) / (existing_dist.max() - existing_dist.min() + 1)
+                center_dist_norm = (center_dist - center_dist.min()) / (center_dist.max() - center_dist.min() + 1)
+                
+                # Composite score: 60% weight on distance from existing, 40% weight on centrality (lower center distance = better)
+                candidate_frame['placement_score'] = 0.6 * existing_dist_norm - 0.4 * center_dist_norm
+                
+                candidates = candidate_frame.sort_values('placement_score', ascending=False)
+            else:
+                candidates = candidate_frame.sort_values(column, ascending=False)
         else:
             candidates = base_candidates.sort_values("travel_time_min", ascending=False)
+        
         node_ids = [str(idx) for idx in candidates.index.tolist()]
+        
+        # Fallback if we filtered everything out
         if not node_ids and column and column in indexed_nodes.columns:
-            fallback = indexed_nodes.sort_values(column, ascending=True)
+            logging.warning("All candidates filtered for %s, using fallback nodes with min_spacing check", amenity)
+            fallback = indexed_nodes[
+                (pd.to_numeric(indexed_nodes[column], errors='coerce') >= min_spacing) |
+                (pd.to_numeric(indexed_nodes[column], errors='coerce').isna())
+            ].sort_values(column, ascending=False)
             node_ids = [str(idx) for idx in fallback.index.tolist()]
+        
         if per_pool_limit > 0:
             node_ids = node_ids[:per_pool_limit]
+        
         pools[amenity] = node_ids
-        logging.info("Amenity %s pool prepared with %d candidates.", amenity, len(node_ids))
+        logging.info("Amenity %s pool prepared with %d candidates (filtered for min %dm from existing).", amenity, len(node_ids), min_spacing)
     return pools
 
 
@@ -266,7 +324,17 @@ def default_precompute_effects(context: GAContext) -> Mapping[str, object]:
     baselines = compute_distance_baselines(indexed_nodes, context.distance_columns)
     context.extra["indexed_nodes"] = indexed_nodes
     context.extra["distance_baselines"] = baselines
-    return {"nodes": indexed_nodes}
+    
+    # Load graph for diversity penalty computation
+    graph = context.extra.get("graph")
+    
+    # Precompute undirected graph ONCE to avoid expensive to_undirected() calls in evaluation
+    graph_undir = None
+    if graph is not None:
+        logging.info("Precomputing undirected graph for diversity penalty...")
+        graph_undir = graph.to_undirected()
+    
+    return {"nodes": indexed_nodes, "graph": graph, "graph_undir": graph_undir}
 
 
 def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, object], context: GAContext) -> Dict[str, object]:
@@ -312,12 +380,65 @@ def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, objec
         if not placed_nodes.empty:
             travel_penalty = float(placed_nodes["travel_time_min"].mean())
 
-    fitness = total_gain - 0.0005 * travel_penalty
+    # Add diversity penalty: penalize amenities of the same type placed too close together
+    diversity_penalty = 0.0
+    proximity_penalty = 0.0  # Penalty for placing too close to EXISTING amenities
+    
+    # Check proximity to existing amenities (fast - just column lookups)
+    for amenity, node_ids in candidate.placements.items():
+        column = context.distance_columns.get(amenity)
+        if not column or column not in nodes.columns:
+            continue
+        
+        for node in node_ids:
+            node_str = str(node)
+            if node_str in nodes.index:
+                existing_dist = pd.to_numeric(nodes.loc[node_str, column], errors='coerce')
+                if pd.notna(existing_dist) and existing_dist < 1200:
+                    # Harsh penalty for placing within coverage threshold of existing amenity
+                    # Penalty scales: 100% penalty at 0m, 0% penalty at 1200m
+                    ratio = existing_dist / 1200.0
+                    penalty = (1.0 - ratio) ** 2  # Exponential penalty
+                    proximity_penalty += penalty * 2.0  # Strong penalty weight
+    
+    # Add Euclidean-based diversity penalty for new placements (FAST - no network ops)
+    for amenity, node_ids in candidate.placements.items():
+        if len(node_ids) <= 1:
+            continue
+        
+        # Get coordinates for all placed nodes of this amenity type
+        coords = []
+        for node in node_ids:
+            node_str = str(node)
+            if node_str in nodes.index and 'x' in nodes.columns and 'y' in nodes.columns:
+                x = nodes.loc[node_str, 'x']
+                y = nodes.loc[node_str, 'y']
+                if pd.notna(x) and pd.notna(y):
+                    coords.append((float(x), float(y)))
+        
+        # Compute pairwise Euclidean distances (coords are already in meters - UTM projection)
+        for i in range(len(coords)):
+            for j in range(i + 1, len(coords)):
+                x1, y1 = coords[i]
+                x2, y2 = coords[j]
+                dist_meters = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+                
+                # Strong penalty if new placements are too close to each other
+                # Target: minimum 3000m spacing between new amenities of same type
+                min_spacing = 3000.0
+                if dist_meters < min_spacing:
+                    ratio = dist_meters / min_spacing
+                    penalty = (1.0 - ratio) ** 2  # Quadratic penalty
+                    diversity_penalty += penalty * 5.0  # STRONG penalty weight
+
+    fitness = total_gain - 0.0005 * travel_penalty - diversity_penalty - proximity_penalty
     fitness = max(fitness, 0.0)
     return {
         "fitness": fitness,
         "distance_gain": total_gain,
         "travel_penalty": travel_penalty,
+        "diversity_penalty": diversity_penalty,
+        "proximity_penalty": proximity_penalty,
         "placements": placements,
         "best_distances": best_distances,
         "amenity_scores": amenity_scores,
@@ -928,8 +1049,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--workers",
         type=int,
-        default=max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4,
-        help="Number of worker threads used to evaluate each generation in parallel. Default: 75%% of CPU cores.",
+        default=max(1, int(os.cpu_count() * 0.5)) if os.cpu_count() else 4,
+        help="Number of worker threads used to evaluate each generation in parallel. Default: 50%% of CPU cores.",
     )
     parser.add_argument("--precompute-hook", type=str, default=None)
     parser.add_argument("--evaluate-hook", type=str, default=None)
@@ -985,6 +1106,24 @@ def main() -> None:
     amenity_weights = detect_amenity_weights(nodes, amenity_weights_cfg)
     amenity_pools = build_amenity_pools(high_travel_nodes, nodes, distance_columns, amenity_weights, config.per_pool_limit)
 
+    # Load graph for diversity penalty computation
+    logging.info("Loading graph for diversity penalty computation...")
+    graph_path = Path(__file__).resolve().parents[1] / "data" / "processed" / "graph.graphml"
+    G = None
+    if graph_path.exists():
+        try:
+            import networkx as nx
+            G = nx.read_graphml(str(graph_path))
+            # Fix edge weights
+            for u, v, k, data in G.edges(keys=True, data=True):
+                if 'length' in data and isinstance(data['length'], str):
+                    data['length'] = float(data['length'])
+            logging.info("Loaded graph with %d nodes, %d edges for diversity penalty", len(G.nodes), len(G.edges))
+        except Exception as e:
+            logging.warning("Failed to load graph: %s (diversity penalty disabled)", e)
+    else:
+        logging.warning("Graph not found at %s (diversity penalty disabled)", graph_path)
+
     context = GAContext(
         nodes=nodes,
         high_travel_nodes=high_travel_nodes,
@@ -993,6 +1132,9 @@ def main() -> None:
         distance_columns=distance_columns,
         config=config,
     )
+    
+    # Add graph to context for diversity penalty
+    context.extra["graph"] = G
 
     analyse_distances(high_travel_nodes, context)
 

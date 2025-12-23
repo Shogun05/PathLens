@@ -145,6 +145,8 @@ Examples:
                        help="Worker thread count override for hybrid GA")
     parser.add_argument("--ga-random-seed", type=int, default=None, 
                        help="Seed override for hybrid GA")
+    parser.add_argument("--ga-local-search-budget", type=int, default=None,
+                       help="Local search budget override (0 to disable local search)")
     parser.add_argument("--ga-config", type=Path, default=None, 
                        help="Alternate YAML config for hybrid GA")
 
@@ -247,6 +249,8 @@ Examples:
             ga_command.extend(["--workers", str(args.ga_workers)])
         if args.ga_random_seed is not None:
             ga_command.extend(["--random-seed", str(args.ga_random_seed)])
+        if args.ga_local_search_budget is not None:
+            ga_command.extend(["--local-search-budget", str(args.ga_local_search_budget)])
         
         # Auto-add workers if not specified
         if args.ga_workers is None:

@@ -159,17 +159,44 @@ def load_existing_pois(pois_path: Path) -> gpd.GeoDataFrame:
     if not pois_path.exists():
         logging.warning("Existing POI GeoJSON not found: %s", pois_path)
         return gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
-    logging.info("Loading existing POIs from %s", pois_path)
+    
+    # Use Parquet cache for fast loading
+    cache_path = pois_path.with_suffix('.parquet')
+    
+    # Check if cache exists and is newer than source
+    if cache_path.exists() and cache_path.stat().st_mtime > pois_path.stat().st_mtime:
+        logging.info("Loading existing POIs from cache: %s", cache_path)
+        try:
+            gdf = gpd.read_parquet(cache_path)
+            logging.info("Loaded %d existing POIs from cache (fast!)", len(gdf))
+            return gdf
+        except Exception as e:
+            logging.warning("Cache load failed (%s), falling back to GeoJSON", e)
+    
+    # Load from GeoJSON (slow)
+    logging.info("Loading existing POIs from %s (this may take a while...)", pois_path)
     gdf = gpd.read_file(pois_path)
+    
     try:
         gdf = gdf.to_crs("EPSG:4326")
     except Exception:  # pragma: no cover - defensive
         logging.debug("Existing POIs already in EPSG:4326 or CRS conversion failed; proceeding as-is.")
+    
     if "source" not in gdf.columns:
         gdf["source"] = "existing"
     else:
         gdf["source"] = gdf["source"].fillna("existing")
+    
     logging.info("Loaded %d existing POIs", len(gdf))
+    
+    # Save to cache for next time
+    try:
+        logging.info("Saving POI cache to %s for faster future loads...", cache_path)
+        gdf.to_parquet(cache_path)
+        logging.info("Cache saved successfully")
+    except Exception as e:
+        logging.warning("Failed to save cache: %s", e)
+    
     return gdf
 
 
@@ -177,17 +204,29 @@ def export_combined_geojson(
     existing_gdf: gpd.GeoDataFrame,
     optimized_gdf: gpd.GeoDataFrame,
     output_path: Path,
+    skip_if_exists: bool = False,
 ) -> gpd.GeoDataFrame:
     if existing_gdf.empty and optimized_gdf.empty:
         logging.warning("No POIs available to export; skipping GeoJSON creation.")
         return gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
+    
     components = []
     if not existing_gdf.empty:
         components.append(existing_gdf)
     if not optimized_gdf.empty:
         components.append(optimized_gdf)
+    
     combined = gpd.GeoDataFrame(pd.concat(components, ignore_index=True), crs="EPSG:4326")
+    
+    # Skip expensive write if file exists and we're told to skip
+    if skip_if_exists and output_path.exists():
+        logging.info("Combined GeoJSON already exists at %s, skipping write (use --force to overwrite)", output_path)
+        return combined
+    
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Write in chunks for large files (faster and more memory efficient)
+    logging.info("Writing combined GeoJSON to %s (this may take a while for large files)...", output_path)
     combined.to_file(output_path, driver="GeoJSON")
     logging.info("Combined GeoJSON written to %s", output_path)
     return combined
@@ -227,10 +266,28 @@ def build_map(
     existing_gdf: gpd.GeoDataFrame,
     optimized_gdf: gpd.GeoDataFrame,
     output_html: Path,
+    graph_path: Optional[Path] = None,
+    placements: Optional[Mapping[str, Sequence[str]]] = None,
 ) -> None:
     logging.info("Building interactive map...")
     center_lat, center_lon = compute_map_center(existing_gdf, optimized_gdf)
     fmap = folium.Map(location=[center_lat, center_lon], zoom_start=13, tiles="CartoDB positron")
+    
+    # Load graph for path visualization if available
+    import networkx as nx
+    G = None
+    if graph_path and graph_path.exists() and placements and not optimized_gdf.empty:
+        try:
+            logging.info("Loading graph for path visualization...")
+            G = nx.read_graphml(str(graph_path))
+            # Fix edge weights
+            for u, v, k, data in G.edges(keys=True, data=True):
+                if 'length' in data and isinstance(data['length'], str):
+                    data['length'] = float(data['length'])
+            logging.info("Graph loaded successfully")
+        except Exception as e:
+            logging.warning("Failed to load graph for paths: %s", e)
+            G = None
 
     if not existing_gdf.empty:
         existing_group = folium.FeatureGroup(name="Existing POIs", show=False)
@@ -277,8 +334,8 @@ def build_map(
                 'amenity_type': amenity_type
             }
         
-        # Use ThreadPoolExecutor for parallel preparation
-        num_workers = max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4
+        # Use ThreadPoolExecutor for parallel preparation (50% of cores)
+        num_workers = max(1, int(os.cpu_count() * 0.5)) if os.cpu_count() else 4
         logging.info(f"Preparing {len(existing_gdf)} existing POI markers using {num_workers} workers...")
         
         marker_data_list = []
@@ -311,6 +368,143 @@ def build_map(
     if not optimized_gdf.empty:
         optimized_group = folium.FeatureGroup(name="Optimized Placements", show=True)
         
+        # Compute paths to nearest EXISTING amenities if graph available
+        paths_data = {}
+        if G is not None and placements and not existing_gdf.empty:
+            logging.info("Computing paths to nearest EXISTING amenities for each optimized placement...")
+            
+            # Precompute undirected graph and node coordinates
+            G_undir = G.to_undirected()
+            node_coords = {}
+            for node_id in G.nodes():
+                node_data = G.nodes[node_id]
+                lat = float(node_data.get('lat', node_data.get('y')))
+                lon = float(node_data.get('lon', node_data.get('x')))
+                node_coords[node_id] = (lat, lon)
+            
+            # Build mapping of existing POIs by amenity type to their nearest graph nodes
+            logging.info("Mapping existing POIs to graph nodes...")
+            existing_by_type = {}
+            for amenity_type in placements.keys():
+                # Filter existing POIs by type (check multiple columns)
+                matching_pois = existing_gdf[
+                    (existing_gdf.get('amenity') == amenity_type) | 
+                    (existing_gdf.get('fclass') == amenity_type) |
+                    (existing_gdf.get('shop') == amenity_type) |
+                    (existing_gdf.get('leisure') == amenity_type if amenity_type == 'park' else False)
+                ]
+                
+                if matching_pois.empty:
+                    logging.warning(f"No existing {amenity_type} POIs found")
+                    continue
+                
+                # Find nearest graph node for each POI
+                existing_nodes = set()
+                for _, poi in matching_pois.iterrows():
+                    geom = poi.geometry
+                    if geom is None:
+                        continue
+                    
+                    poi_lat = geom.y if geom.geom_type == 'Point' else geom.centroid.y
+                    poi_lon = geom.x if geom.geom_type == 'Point' else geom.centroid.x
+                    
+                    # Find nearest graph node (simple approach: check nodes within 100m)
+                    min_dist = float('inf')
+                    nearest_node = None
+                    for node_id, (lat, lon) in node_coords.items():
+                        dist = abs(lat - poi_lat) + abs(lon - poi_lon)  # Manhattan distance
+                        if dist < min_dist:
+                            min_dist = dist
+                            nearest_node = node_id
+                    
+                    if nearest_node and min_dist < 0.01:  # ~1km threshold
+                        existing_nodes.add(nearest_node)
+                
+                existing_by_type[amenity_type] = list(existing_nodes)
+                logging.info(f"Found {len(existing_nodes)} existing {amenity_type} nodes (from {len(matching_pois)} POIs)")
+            
+            def haversine_distance(lat1, lon1, lat2, lon2):
+                """Calculate haversine distance in meters."""
+                import math
+                R = 6371000
+                phi1, phi2 = math.radians(lat1), math.radians(lat2)
+                dphi = math.radians(lat2 - lat1)
+                dlambda = math.radians(lon2 - lon1)
+                a = math.sin(dphi/2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda/2)**2
+                return 2 * R * math.asin(math.sqrt(a))
+            
+            def find_nearest_existing_paths(args_tuple):
+                """Find paths to k nearest EXISTING amenities using expanding bounding box."""
+                source, amenity_type, k = args_tuple
+                
+                existing_nodes = existing_by_type.get(amenity_type, [])
+                if not existing_nodes:
+                    return source, []
+                
+                if source not in node_coords:
+                    logging.warning(f"Source node {source} not found in graph")
+                    return source, []
+                
+                source_lat, source_lon = node_coords[source]
+                
+                # Sort existing amenities by straight-line distance
+                candidate_distances = []
+                for target in existing_nodes:
+                    if target not in node_coords:
+                        continue
+                    target_lat, target_lon = node_coords[target]
+                    straight_dist = haversine_distance(source_lat, source_lon, target_lat, target_lon)
+                    candidate_distances.append((target, straight_dist))
+                
+                candidate_distances.sort(key=lambda x: x[1])
+                
+                # Expanding bounding box: start at 1200m, double until we find k candidates
+                search_radius = 1200
+                max_radius = 20000
+                nearby_candidates = []
+                
+                while len(nearby_candidates) < k and search_radius <= max_radius:
+                    nearby_candidates = [t for t, d in candidate_distances if d <= search_radius]
+                    if len(nearby_candidates) < k:
+                        search_radius *= 2
+                
+                if len(nearby_candidates) < k:
+                    nearby_candidates = [t for t, _ in candidate_distances]
+                
+                # Compute network paths to nearby candidates
+                results = []
+                for target in nearby_candidates[:k * 2]:
+                    try:
+                        dist = nx.shortest_path_length(G_undir, source, target, weight='length')
+                        path = nx.shortest_path(G_undir, source, target, weight='length')
+                        results.append((target, dist, path))
+                    except (nx.NetworkXNoPath, nx.NodeNotFound, Exception):
+                        continue
+                
+                results.sort(key=lambda x: x[1])
+                return source, results[:k]
+            
+            # Build task list: for each new placement, find nearest existing amenities of same type
+            tasks = []
+            for amenity_type, node_list in placements.items():
+                for source_node in node_list:
+                    tasks.append((source_node, amenity_type, 5))
+            
+            # Compute paths in parallel (use 50% of cores)
+            num_workers = max(1, int(os.cpu_count() * 0.5)) if os.cpu_count() else 4
+            logging.info(f"Computing {len(tasks)} path sets using {num_workers} workers...")
+            
+            with ThreadPoolExecutor(max_workers=num_workers) as executor:
+                futures = {executor.submit(find_nearest_existing_paths, task): task for task in tasks}
+                for future in iter_with_progress(as_completed(futures), "Path computations", total=len(futures)):
+                    try:
+                        source_node, paths = future.result()
+                        paths_data[source_node] = paths
+                        if paths:
+                            logging.debug(f"Node {source_node}: found {len(paths)} existing neighbors, nearest at {paths[0][1]:.0f}m")
+                    except Exception as e:
+                        logging.error(f"Failed to compute paths: {e}")
+        
         # Parallel preparation of optimized marker data
         def prepare_optimized_marker(row_data):
             """Prepare marker data for an optimized POI."""
@@ -327,10 +521,12 @@ def build_map(
                 lat, lon = centroid.y, centroid.x
             
             amenity_type = row.get('amenity', '-')
+            osmid = str(row.get('osmid', '-'))
+            
             popup_lines = [
                 f"<b>🎯 Optimized Placement</b>",
                 f"Amenity Type: <b>{amenity_type}</b>",
-                f"OSM Node ID: {row.get('osmid', '-')}"
+                f"OSM Node ID: {osmid}"
             ]
             
             distance_value = row.get("distance_m")
@@ -341,17 +537,26 @@ def build_map(
             if pd.notna(travel_time):
                 popup_lines.append(f"Travel time: {float(travel_time):.1f} min")
             
+            # Add nearest neighbor info if available
+            if osmid in paths_data and paths_data[osmid]:
+                popup_lines.append("<br/><b>📍 Nearest Existing Amenities:</b>")
+                for i, (target, dist, _) in enumerate(paths_data[osmid][:5], 1):
+                    popup_lines.append(f"{i}. {dist:.0f}m away")
+            elif osmid in paths_data:
+                popup_lines.append("<br/><i>No existing amenities found nearby</i>")
+            
             popup_html = "<br/>".join(popup_lines)
             
             return {
                 'lat': lat,
                 'lon': lon,
                 'popup_html': popup_html,
-                'amenity_type': amenity_type
+                'amenity_type': amenity_type,
+                'osmid': osmid
             }
         
-        # Use ThreadPoolExecutor for parallel preparation
-        num_workers = max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4
+        # Use ThreadPoolExecutor for parallel preparation (50% of cores)
+        num_workers = max(1, int(os.cpu_count() * 0.5)) if os.cpu_count() else 4
         logging.info(f"Preparing {len(optimized_gdf)} optimized markers using {num_workers} workers...")
         
         marker_data_list = []
@@ -363,6 +568,41 @@ def build_map(
                 result = future.result()
                 if result:
                     marker_data_list.append(result)
+        
+        # Add paths as separate feature group (hidden by default)
+        if G is not None and paths_data:
+            paths_group = folium.FeatureGroup(name="Paths to Nearest Existing Amenities", show=False)
+            colors = ['blue', 'green', 'purple', 'orange', 'darkred']
+            
+            logging.info("Adding path visualizations to map...")
+            for marker_data in marker_data_list:
+                osmid = marker_data['osmid']
+                if osmid not in paths_data:
+                    continue
+                
+                for idx, (target, dist, path) in enumerate(paths_data[osmid]):
+                    try:
+                        # Get coordinates for path
+                        path_coords = []
+                        for node in path:
+                            node_data = G.nodes[node]
+                            lat = float(node_data.get('lat', node_data.get('y')))
+                            lon = float(node_data.get('lon', node_data.get('x')))
+                            path_coords.append([lat, lon])
+                        
+                        color = colors[idx % len(colors)]
+                        folium.PolyLine(
+                            locations=path_coords,
+                            color=color,
+                            weight=2,
+                            opacity=0.6,
+                            popup=f"Path {idx+1}: {dist:.0f}m ({len(path)-1} edges)",
+                            tooltip=f"{dist:.0f}m to neighbor #{idx+1}"
+                        ).add_to(paths_group)
+                    except Exception as e:
+                        logging.debug("Failed to create path for %s: %s", osmid, e)
+            
+            paths_group.add_to(fmap)
         
         # Add markers to group (must be sequential)
         logging.info(f"Adding {len(marker_data_list)} optimized markers to map...")
@@ -619,6 +859,18 @@ def parse_args() -> argparse.Namespace:
         default=False,
         help="Skip recomputing post-optimization metrics (fast: only map + GeoJSON).",
     )
+    parser.add_argument(
+        "--skip-geojson",
+        action="store_true",
+        default=False,
+        help="Skip writing the large combined GeoJSON file (much faster, map generation only).",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        default=False,
+        help="Force overwrite of existing combined GeoJSON.",
+    )
     return parser.parse_args()
 
 
@@ -635,7 +887,19 @@ def main() -> None:
     optimized_gdf = build_optimised_geodata(placements, nodes_df, metrics)
 
     existing_gdf = load_existing_pois(args.existing_pois)
-    combined_gdf = export_combined_geojson(existing_gdf, optimized_gdf, args.output_geojson)
+    
+    # Conditionally export combined GeoJSON based on flags
+    if args.skip_geojson:
+        logging.info("Skipping combined GeoJSON export (--skip-geojson), map will use individual GeoDataFrames")
+        # Create combined for map centering but don't write to disk
+        components = []
+        if not existing_gdf.empty:
+            components.append(existing_gdf)
+        if not optimized_gdf.empty:
+            components.append(optimized_gdf)
+        combined_gdf = gpd.GeoDataFrame(pd.concat(components, ignore_index=True), crs="EPSG:4326") if components else gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
+    else:
+        combined_gdf = export_combined_geojson(existing_gdf, optimized_gdf, args.output_geojson, skip_if_exists=(not args.force))
 
     # Use the combined GeoDataFrame for centering if export succeeded.
     if not combined_gdf.empty:
@@ -645,7 +909,7 @@ def main() -> None:
         existing_view = existing_gdf
         optimized_view = optimized_gdf
 
-    build_map(existing_view, optimized_view, args.output_map)
+    build_map(existing_view, optimized_view, args.output_map, args.graph_path, placements)
 
     if not args.skip_metrics:
         compute_optimized_scores(
