@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "node_id": 9188733557, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.6023252, 13.0133889 ] } },
+{ "type": "Feature", "properties": { "node_id": 2250391981, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.5750216, 13.1297167 ] } },
+{ "type": "Feature", "properties": { "node_id": 3500405712, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.6889806, 12.9151556 ] } },
+{ "type": "Feature", "properties": { "node_id": 6152842755, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.4952547, 12.9998755 ] } },
+{ "type": "Feature", "properties": { "node_id": 6194003063, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.58535, 13.1179854 ] } },
+{ "type": "Feature", "properties": { "node_id": 10216399582, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.723486, 13.0172623 ] } },
+{ "type": "Feature", "properties": { "node_id": 7463811487, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.5760818, 12.842304 ] } },
+{ "type": "Feature", "properties": { "node_id": 9188742957, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.6062942, 13.0129721 ] } },
+{ "type": "Feature", "properties": { "node_id": 10035832527, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.6035793, 13.0141947 ] } },
+{ "type": "Feature", "properties": { "node_id": 12198639893, "amenity": "hospital" }, "geometry": { "type": "Point", "coordinates": [ 77.7144098, 13.0271503 ] } }
+]
+}
