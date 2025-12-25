@@ -11,7 +11,7 @@
 - [ ] `GEE-landscape/` directory with pipeline files
 - [ ] Python 3.8+ with `earthengine-api`, `geopandas`
 
-## 🚀 Quick Setup (Copy-Paste)
+## 🚀 Quick Setup
 
 ### 1. Create Service Account
 ```
@@ -53,7 +53,7 @@ print("✅ Auth OK:", ee.Image('ESA/WorldCover/v200').getInfo()['id'])
 ```
 
 ```
-python test_gee_auth.py
+python gee_auth.py
 ```
 
 ## 📁 Directory Structure

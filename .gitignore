@@ -4,3 +4,8 @@ cache/
 *__pycache__/
 *.csv
 runs/
+# GEE Service Account
+GEE-landuse/pathlens-service-account.json
+*.iam.gserviceaccount.com.json
+secrets/
+.env
