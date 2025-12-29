@@ -1,17 +1,3 @@
-{
-"type": "FeatureCollection",
-"name": "suggestions",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "amenity": "school", "type": "school", "lat": 12.9726883, "lon": 77.6468899, "x": 77.6468899, "y": 12.9726883, "address": "Unnamed Road", "id": "sug_73053" }, "geometry": { "type": "Point", "coordinates": [ 77.6468899, 12.9726883 ] } },
-{ "type": "Feature", "properties": { "amenity": "hospital", "type": "hospital", "lat": 12.9731206, "lon": 77.6470249, "x": 77.6470249, "y": 12.9731206, "address": "Unnamed Road", "id": "sug_31024" }, "geometry": { "type": "Point", "coordinates": [ 77.6470249, 12.9731206 ] } },
-{ "type": "Feature", "properties": { "amenity": "park", "type": "park", "lat": 12.9731206, "lon": 77.6470249, "x": 77.6470249, "y": 12.9731206, "address": "Unnamed Road", "id": "sug_50255" }, "geometry": { "type": "Point", "coordinates": [ 77.6470249, 12.9731206 ] } },
-{ "type": "Feature", "properties": { "amenity": "school", "type": "school", "lat": 12.9702989, "lon": 77.6413763, "x": 77.6413763, "y": 12.9702989, "address": "Unnamed Road", "id": "sug_38224" }, "geometry": { "type": "Point", "coordinates": [ 77.6413763, 12.9702989 ] } },
-{ "type": "Feature", "properties": { "amenity": "hospital", "type": "hospital", "lat": 12.9708605, "lon": 77.6432713, "x": 77.6432713, "y": 12.9708605, "address": "4th Cross Road", "id": "sug_66454" }, "geometry": { "type": "Point", "coordinates": [ 77.6432713, 12.9708605 ] } },
-{ "type": "Feature", "properties": { "amenity": "park", "type": "park", "lat": 12.9716765, "lon": 77.6445182, "x": 77.6445182, "y": 12.9716765, "address": "6th Cross Road", "id": "sug_74702" }, "geometry": { "type": "Point", "coordinates": [ 77.6445182, 12.9716765 ] } },
-{ "type": "Feature", "properties": { "amenity": "park", "type": "park", "lat": 12.970323, "lon": 77.6419316, "x": 77.6419316, "y": 12.970323, "address": "1st Cross Road", "id": "sug_64236" }, "geometry": { "type": "Point", "coordinates": [ 77.6419316, 12.970323 ] } },
-{ "type": "Feature", "properties": { "amenity": "school", "type": "school", "lat": 12.9704123, "lon": 77.6449726, "x": 77.6449726, "y": 12.9704123, "address": "7th Cross Road", "id": "sug_81964" }, "geometry": { "type": "Point", "coordinates": [ 77.6449726, 12.9704123 ] } },
-{ "type": "Feature", "properties": { "amenity": "hospital", "type": "hospital", "lat": 12.9813694, "lon": 77.6488613, "x": 77.6488613, "y": 12.9813694, "address": "1st Main Road", "id": "sug_54429" }, "geometry": { "type": "Point", "coordinates": [ 77.6488613, 12.9813694 ] } },
-{ "type": "Feature", "properties": { "amenity": "school", "type": "school", "lat": 12.9810565, "lon": 77.6478874, "x": 77.6478874, "y": 12.9810565, "address": "Unnamed Road", "id": "sug_48263" }, "geometry": { "type": "Point", "coordinates": [ 77.6478874, 12.9810565 ] } }
-]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fca93c2d8f5df1fa9ab5561dc0d6072d01e8bda80869b777c4f97516ca254c47
+size 2903
