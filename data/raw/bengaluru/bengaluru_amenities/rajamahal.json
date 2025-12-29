@@ -1,0 +1,1126 @@
+{
+  "area_name": "Rajamahal",
+  "osm_id": 19883424,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 88,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1101622501,
+      "lat": 12.9988604,
+      "lon": 77.5817424,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Government Maternity Hospital",
+        "name:kn": "ಸರಕಾರಿ ಹೆರಿಗೆ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462530129,
+      "lat": 13.0055106,
+      "lon": 77.5787567,
+      "tags": {
+        "addr:street": "1st Main Road",
+        "amenity": "restaurant",
+        "check_date": "2024-01-13",
+        "name": "Sri Udupi Swaadista",
+        "name:kn": "ಸ್ವಾದಿಷ್ಟ ರೆಸ್ಟೊರೆಂಟ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462540475,
+      "lat": 13.0049266,
+      "lon": 77.5787343,
+      "tags": {
+        "name": "Maha Bazaar",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462686365,
+      "lat": 13.0015732,
+      "lon": 77.578628,
+      "tags": {
+        "amenity": "police",
+        "name": "Vyali Kaval Police Station",
+        "name:kn": "ಆರಕ್ಷಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462688051,
+      "lat": 13.0019182,
+      "lon": 77.5790414,
+      "tags": {
+        "amenity": "post_office",
+        "name": "Vyali Kaval Post Office"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2019364212,
+      "lat": 13.000713,
+      "lon": 77.5757942,
+      "tags": {
+        "leisure": "park",
+        "name": "BBMP Park, Swimming Pool Extension",
+        "name:kn": "ಬೃ. ಬೆ. ಮ. ಪಾ. ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2298050805,
+      "lat": 13.0045164,
+      "lon": 77.5785881,
+      "tags": {
+        "addr:housename": "Janhavi Medicals",
+        "amenity": "pharmacy",
+        "designation": "Pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Janhavi Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2314538270,
+      "lat": 13.0012808,
+      "lon": 77.5783329,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2314538271,
+      "lat": 13.001239,
+      "lon": 77.5783221,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2314538273,
+      "lat": 13.0002354,
+      "lon": 77.5781558,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3742215657,
+      "lat": 13.0017604,
+      "lon": 77.5783235,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chats",
+        "name": "Atithis"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4173824529,
+      "lat": 13.0051746,
+      "lon": 77.5787373,
+      "tags": {
+        "amenity": "public_bookcase",
+        "name": "Sapna Book House",
+        "name:kn": "ಸಪ್ನ ಬುಕ್ ಹೌಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444162516,
+      "lat": 13.0018939,
+      "lon": 77.5784746,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "Opposite Vyatikal Police Station",
+        "addr:postcode": "560003",
+        "addr:street": "Vyalikaval Main Road",
+        "amenity": "restaurant",
+        "cuisine": "indian,chinese",
+        "name": "Hotel Ayodhya Upahar",
+        "opening_hours": "07:00-22:30",
+        "phone": "+91 96200 56546",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445192526,
+      "lat": 12.999009,
+      "lon": 77.5797442,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560003",
+        "addr:street": "Palace Guttahalli Main Road, No 21 And 22, 2nd Main Road",
+        "amenity": "clinic",
+        "name": "Bilva Hospital",
+        "name:kn": "ಬಿಲ್ವಾ ಆಸ್ಪತ್ರೆ",
+        "phone": "+9198444 56346"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488516241,
+      "lat": 12.9993517,
+      "lon": 77.5766782,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "No23",
+        "addr:postcode": "560003",
+        "addr:street": "Palace Guttahalli Main Road, Malleswaram",
+        "name": "Roots Beauty Clinic",
+        "opening_hours": "10:00-21:00",
+        "phone": "+91-80-23441974",
+        "shop": "beauty",
+        "website": "www.rootspa.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938690611,
+      "lat": 13.0020083,
+      "lon": 77.5763887,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "148, Vyalikval Malleswaram Xi Cross Malleshwaram",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sukruthi Eye Care Microsurgical Centre",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938717993,
+      "lat": 12.9989833,
+      "lon": 77.5802015,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.21,22,2nd Main Road, Palace Guttahalli",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Bilva Hospital",
+        "name:kn": "ಬಿಲ್ವಾ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939699617,
+      "lat": 12.9988238,
+      "lon": 77.5819892,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Near Nti Qtrs, Jataka Stand, P.G.Halli, East",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Place Guttahalli Maternity Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7087593340,
+      "lat": 12.9991179,
+      "lon": 77.5810423,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10934276526,
+      "lat": 13.0014948,
+      "lon": 77.578336,
+      "tags": {
+        "name": "Fresho Choice",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10934276528,
+      "lat": 13.0004102,
+      "lon": 77.5781985,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11096782357,
+      "lat": 12.9981862,
+      "lon": 77.5814836,
+      "tags": {
+        "amenity": "bar",
+        "name": "North Wind"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11513735749,
+      "lat": 13.0051852,
+      "lon": 77.5793774,
+      "tags": {
+        "leisure": "fitness_station",
+        "sport": "fitness"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11949210772,
+      "lat": 12.9993431,
+      "lon": 77.5780212,
+      "tags": {
+        "check_date": "2024-06-01",
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11949210773,
+      "lat": 12.9998483,
+      "lon": 77.5781152,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982395422,
+      "lat": 12.9973524,
+      "lon": 77.5807376,
+      "tags": {
+        "check_date": "2024-06-15",
+        "name": "Pooja Bar",
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982395423,
+      "lat": 12.9982738,
+      "lon": 77.5816375,
+      "tags": {
+        "amenity": "bar",
+        "check_date": "2024-06-15"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982693081,
+      "lat": 12.999271,
+      "lon": 77.5784967,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-06-15",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11986964511,
+      "lat": 12.9988056,
+      "lon": 77.5821957,
+      "tags": {
+        "brand": "Nandini",
+        "name": "Nandini",
+        "name:kn": "ನಂದಿನಿ",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103825757,
+      "lat": 12.9991829,
+      "lon": 77.5825259,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2024-08-11"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968917,
+      "lat": 12.9989667,
+      "lon": 77.5800117,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-08-11",
+        "healthcare": "pharmacy",
+        "name": "The Drug Hut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968933,
+      "lat": 12.9989823,
+      "lon": 77.5802854,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-08-11",
+        "healthcare": "pharmacy",
+        "name": "Bilva Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968935,
+      "lat": 12.9988703,
+      "lon": 77.5813139,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-08-11",
+        "name": "Palace Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968936,
+      "lat": 12.9989,
+      "lon": 77.5811516,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Central Bank of India",
+        "brand:wikidata": "Q2007090",
+        "check_date": "2024-08-11",
+        "name": "Central Bank of India",
+        "name:kn": "ಸೆಂಟ್ರಲ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968937,
+      "lat": 12.9988904,
+      "lon": 77.5812055,
+      "tags": {
+        "check_date": "2024-08-11",
+        "name": "NS Enterprises",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968938,
+      "lat": 12.9989603,
+      "lon": 77.5808423,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IDFC First Bank",
+        "brand:wikidata": "Q22031467",
+        "check_date": "2024-08-11",
+        "operator": "IDFC First Bank",
+        "operator:wikidata": "Q22031467"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12420181108,
+      "lat": 13.0045713,
+      "lon": 77.5787232,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "capacity": "25",
+        "check_date": "2024-12-13",
+        "name": "aubree",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12420181109,
+      "lat": 13.0051836,
+      "lon": 77.5788632,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "California Burrito",
+        "brand:wikidata": "Q124374596",
+        "check_date": "2024-12-13",
+        "cuisine": "mexican",
+        "name": "California Burrito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12470693239,
+      "lat": 13.0020645,
+      "lon": 77.5928172,
+      "tags": {
+        "access": "private",
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13227760613,
+      "lat": 13.0050491,
+      "lon": 77.5787196,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "California Burrito",
+        "brand:wikidata": "Q124374596",
+        "cuisine": "mexican",
+        "name": "California Burrito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13227760614,
+      "lat": 13.0055731,
+      "lon": 77.5787571,
+      "tags": {
+        "amenity": "bar",
+        "name": "Shetty Lunch Home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13228016712,
+      "lat": 13.0044381,
+      "lon": 77.5786929,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Indies Cafe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38870504,
+      "center": {
+        "lat": 13.0009049,
+        "lon": 77.5829668
+      },
+      "tags": {
+        "addr:housenumber": "8",
+        "addr:street": "Bellary Road",
+        "amenity": "college",
+        "emergency": "no",
+        "heritage": "2",
+        "heritage:operator": "nmma",
+        "heritage:website": "https://nmma.nic.in/nmma/exploreBuiltState.do?state=29",
+        "historic:name": "Avalon",
+        "name": "National Tuberculosis Institute",
+        "ref:nmma": "KR20010698"
+      }
+    },
+    {
+      "type": "way",
+      "id": 143384384,
+      "center": {
+        "lat": 12.9981618,
+        "lon": 77.5924696
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Palace Greens"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335169248,
+      "center": {
+        "lat": 12.9984002,
+        "lon": 77.5823983
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shri Anjaneya Swamy Temple",
+        "name:kn": "ಅಂಜನೇಯ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 344351449,
+      "center": {
+        "lat": 13.0119717,
+        "lon": 77.588618
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 344351451,
+      "center": {
+        "lat": 13.0114593,
+        "lon": 77.5882881
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346266426,
+      "center": {
+        "lat": 12.9990241,
+        "lon": 77.5821232
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560003",
+        "addr:street": "Palace Guttahalli Main Road",
+        "amenity": "post_office",
+        "building": "yes",
+        "name": "Palace Guttahalli Post office",
+        "name:kn": "ಅಂಚೆ ಕಛೇರಿ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347104511,
+      "center": {
+        "lat": 13.0059731,
+        "lon": 77.5885394
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 400439506,
+      "center": {
+        "lat": 12.9995021,
+        "lon": 77.5925097
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 400439507,
+      "center": {
+        "lat": 12.9975146,
+        "lon": 77.5919268
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 400442772,
+      "center": {
+        "lat": 13.0012629,
+        "lon": 77.5935327
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "community_centre": "events_venue",
+        "name": "Chamara Vajra",
+        "name:kn": "ಚಾಮರ ವಜ್ರ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 400448361,
+      "center": {
+        "lat": 13.0026608,
+        "lon": 77.5837858
+      },
+      "tags": {
+        "addr:floor": "G",
+        "addr:street": "Sankey Road",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "check_date": "2025-08-08",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:petrol": "yes",
+        "level": "0",
+        "name": "HP",
+        "name:kn": "ಹಿಂದುಸ್ತಾನ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "official_name": "Hindustan Petroleum",
+        "opening_hours": "24/7",
+        "self_service": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 402011848,
+      "center": {
+        "lat": 13.0050551,
+        "lon": 77.5796771
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785341394,
+      "center": {
+        "lat": 13.0022168,
+        "lon": 77.5921105
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:postcode": "560006",
+        "addr:street": "Jayamahal Road",
+        "amenity": "college",
+        "email": "iiamr@yahoo.com",
+        "name": "Indian Institute of Ayurvedic Medicine & Research",
+        "phone": "080 - 2343 7895",
+        "website": "http://iiamr.co.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785341396,
+      "center": {
+        "lat": 12.9961179,
+        "lon": 77.5949014
+      },
+      "tags": {
+        "access": "permissive",
+        "leisure": "pitch",
+        "parking": "surface",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1176949708,
+      "center": {
+        "lat": 13.0025183,
+        "lon": 77.5767216
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1176949709,
+      "center": {
+        "lat": 13.0008545,
+        "lon": 77.5762586
+      },
+      "tags": {
+        "leisure": "fitness_station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195571013,
+      "center": {
+        "lat": 12.9990806,
+        "lon": 77.5823861
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267895430,
+      "center": {
+        "lat": 13.0030694,
+        "lon": 77.5829689
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Mahalakshmi Temple",
+        "name:kn": "ಮಹಾಲಕ್ಷ್ಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338154676,
+      "center": {
+        "lat": 13.0113226,
+        "lon": 77.5880668
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "name": "The Gardenia"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338154677,
+      "center": {
+        "lat": 13.0105561,
+        "lon": 77.588105
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "name": "The Banquet Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338239585,
+      "center": {
+        "lat": 13.0108293,
+        "lon": 77.5884256
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "full_name": "Tripua Vasini White Petals",
+        "name": "White Petals"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338239598,
+      "center": {
+        "lat": 13.0114205,
+        "lon": 77.5888633
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338239599,
+      "center": {
+        "lat": 13.0106499,
+        "lon": 77.5890105
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338239604,
+      "center": {
+        "lat": 13.0102567,
+        "lon": 77.5866441
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260810,
+      "center": {
+        "lat": 13.0045562,
+        "lon": 77.5881003
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "name": "Princess Golf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260811,
+      "center": {
+        "lat": 13.0046284,
+        "lon": 77.5895866
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "name": "Anantya"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260824,
+      "center": {
+        "lat": 13.0046242,
+        "lon": 77.5873025
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "name": "Princess Shrine"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260825,
+      "center": {
+        "lat": 13.0060195,
+        "lon": 77.5877498
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "BPCA Cricket Ground",
+        "sport": "cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260826,
+      "center": {
+        "lat": 13.0059948,
+        "lon": 77.5858702
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "name": "Shringar Palace Garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260828,
+      "center": {
+        "lat": 13.0062941,
+        "lon": 77.5851183
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "name": "Palace Sheesh Mahal"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260831,
+      "center": {
+        "lat": 13.007397,
+        "lon": 77.5865362
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "alt_name": "The Grand Castle",
+        "amenity": "events_venue",
+        "name": "The Royal Senate"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260832,
+      "center": {
+        "lat": 13.0075322,
+        "lon": 77.5853999
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "alt_name": "Nalapad Pavilion",
+        "amenity": "events_venue",
+        "name": "Kings Court"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260833,
+      "center": {
+        "lat": 13.0090543,
+        "lon": 77.5860711
+      },
+      "tags": {
+        "addr:place": "Palace Grounds",
+        "amenity": "events_venue",
+        "name": "Gayatri Vihar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260834,
+      "center": {
+        "lat": 13.0107933,
+        "lon": 77.5844434
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260835,
+      "center": {
+        "lat": 13.0040743,
+        "lon": 77.5852936
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260836,
+      "center": {
+        "lat": 13.0062527,
+        "lon": 77.5844561
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338260876,
+      "center": {
+        "lat": 13.0041553,
+        "lon": 77.5922294
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1348168125,
+      "center": {
+        "lat": 13.002769,
+        "lon": 77.5932757
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1372952383,
+      "center": {
+        "lat": 13.0062349,
+        "lon": 77.5925893
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1415835957,
+      "center": {
+        "lat": 12.9965542,
+        "lon": 77.5946755
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1415835958,
+      "center": {
+        "lat": 12.9960037,
+        "lon": 77.5949973
+      },
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1415838696,
+      "center": {
+        "lat": 12.9991673,
+        "lon": 77.5893736
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1415838697,
+      "center": {
+        "lat": 13.0010594,
+        "lon": 77.5894062
+      },
+      "tags": {
+        "amenity": "parking",
+        "surface": "earth"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1415838699,
+      "center": {
+        "lat": 12.9996329,
+        "lon": 77.5906701
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1415838700,
+      "center": {
+        "lat": 12.9995562,
+        "lon": 77.5902137
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1441634659,
+      "center": {
+        "lat": 13.0047913,
+        "lon": 77.5800992
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    }
+  ]
+}

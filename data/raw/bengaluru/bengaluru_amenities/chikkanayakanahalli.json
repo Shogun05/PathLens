@@ -1,0 +1,490 @@
+{
+  "area_name": "Chikkanayakanahalli",
+  "osm_id": 2301140139,
+  "osm_type": "node",
+  "place_type": "suburb",
+  "amenity_count": 38,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4705484448,
+      "lat": 12.8964727,
+      "lon": 77.7014674,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "Hadosiddapura",
+        "addr:postcode": "560035",
+        "amenity": "kindergarten",
+        "name": "Little Millennium"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5040666911,
+      "lat": 12.8901627,
+      "lon": 77.6957175,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11162574754,
+      "lat": 12.8956472,
+      "lon": 77.7020757,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11162574757,
+      "lat": 12.8959584,
+      "lon": 77.7023117,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 431855665,
+      "center": {
+        "lat": 12.8862598,
+        "lon": 77.6977036
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "70",
+        "addr:postcode": "560035",
+        "addr:street": "Chikkanayakanahalli Road, Off Doddakanekkundi, Sarjapur Road",
+        "amenity": "school",
+        "name": "Prakriya Green Wisdom School",
+        "office": "educational_institution",
+        "phone": "+91-80-28440925/ 91-80-28441172",
+        "website": "http://www.prakriyaschool.com/site/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 431858470,
+      "center": {
+        "lat": 12.8885415,
+        "lon": 77.6967685
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "Post Box No. 21",
+        "addr:postcode": "560035",
+        "addr:street": "Chikanayakanahalli Village, Off. Sarjapur Road",
+        "amenity": "school",
+        "name": "Primus Public School",
+        "phone": "+91-80-2574 1450, 2574 1452. +91-7338699351 & +91-7338699352",
+        "website": "https://primusschool.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 511683209,
+      "center": {
+        "lat": 12.8871419,
+        "lon": 77.6977273
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "No. 40, Chikkanayakanahalli, Off Doddakaneli, Sarjapura Road,",
+        "addr:postcode": "560035",
+        "amenity": "college",
+        "name": "Bhoomi College",
+        "name:kn": "ಭೂಮಿ ಕಾಲೇಜು",
+        "office": "educational_institution",
+        "opening_hours": "Mo-Sa 08:00-16:00",
+        "phone": "+91 80 28441173 ,+91 9449853834",
+        "source": "http://bhoomicollege.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655045232,
+      "center": {
+        "lat": 12.8999691,
+        "lon": 77.6896649
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Shirdi Sai Baba Temple",
+        "name:kn": "ಶಿರ್ಡಿ ಸಾಯಿಬಾಬಾ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655045233,
+      "center": {
+        "lat": 12.8975944,
+        "lon": 77.6898054
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "J. Arun Kumar Academy",
+        "sport": "cricket_nets"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655045234,
+      "center": {
+        "lat": 12.8988691,
+        "lon": 77.6941841
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Lake View PU College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655045236,
+      "center": {
+        "lat": 12.8985784,
+        "lon": 77.6941559
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655045237,
+      "center": {
+        "lat": 12.8998155,
+        "lon": 77.6950738
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560035",
+        "addr:street": "Doddakannelli-Chikkanayakana Halli Rd, Chikkakannalli",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Someshwara Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655045245,
+      "center": {
+        "lat": 12.8964133,
+        "lon": 77.6950639
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "14/2,Chikkanayakanahalli Village, Off Sarjapur Road",
+        "addr:postcode": "560035",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "ayurveda",
+        "name": "Punarjani Ayurvedic Multispeciality Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 688813393,
+      "center": {
+        "lat": 12.898759,
+        "lon": 77.686632
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 773062405,
+      "center": {
+        "lat": 12.8860025,
+        "lon": 77.6977676
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 965128360,
+      "center": {
+        "lat": 12.8854855,
+        "lon": 77.6996336
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560035",
+        "amenity": "college",
+        "name": "Bangalore Technological Institute"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1192698538,
+      "center": {
+        "lat": 12.9003859,
+        "lon": 77.6943541
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "NPS East, Sarjapur"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1319770677,
+      "center": {
+        "lat": 12.891276,
+        "lon": 77.7001729
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1343497100,
+      "center": {
+        "lat": 12.8925285,
+        "lon": 77.692492
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1343497107,
+      "center": {
+        "lat": 12.8889907,
+        "lon": 77.6924693
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1343497108,
+      "center": {
+        "lat": 12.8887419,
+        "lon": 77.6929563
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1343497139,
+      "center": {
+        "lat": 12.8938445,
+        "lon": 77.6945877
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1343497140,
+      "center": {
+        "lat": 12.8937714,
+        "lon": 77.6935304
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1343497142,
+      "center": {
+        "lat": 12.8931327,
+        "lon": 77.6935315
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364175573,
+      "center": {
+        "lat": 12.8916847,
+        "lon": 77.6938943
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364175577,
+      "center": {
+        "lat": 12.8922036,
+        "lon": 77.6890401
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364175578,
+      "center": {
+        "lat": 12.8931011,
+        "lon": 77.6891863
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364175600,
+      "center": {
+        "lat": 12.8893513,
+        "lon": 77.6923205
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364208310,
+      "center": {
+        "lat": 12.8950981,
+        "lon": 77.6971266
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364208315,
+      "center": {
+        "lat": 12.8932577,
+        "lon": 77.7003215
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364208382,
+      "center": {
+        "lat": 12.8948642,
+        "lon": 77.6862856
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364208383,
+      "center": {
+        "lat": 12.8947078,
+        "lon": 77.6865573
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364208404,
+      "center": {
+        "lat": 12.8912842,
+        "lon": 77.6914092
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1420117170,
+      "center": {
+        "lat": 12.8906992,
+        "lon": 77.6951921
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Sri Chaitanya Techno School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1420117299,
+      "center": {
+        "lat": 12.8941467,
+        "lon": 77.6877011
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1420117300,
+      "center": {
+        "lat": 12.8957322,
+        "lon": 77.6965537
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1420117301,
+      "center": {
+        "lat": 12.8959436,
+        "lon": 77.6959739
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428290329,
+      "center": {
+        "lat": 12.8952258,
+        "lon": 77.7025863
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "area_name": "Vrishabhavathi Nagar",
+  "osm_id": 19883262,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 3,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2279531470,
+      "lat": 12.9855941,
+      "lon": 77.5252604,
+      "tags": {
+        "amenity": "fuel",
+        "name": "IBP petrol pump"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2279532132,
+      "lat": 12.9862632,
+      "lon": 77.5222349,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡಿಯನ್ ಆಯಿಲ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4558046689,
+      "lat": 12.9842792,
+      "lon": 77.5282764,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Axis Bank"
+      }
+    }
+  ]
+}

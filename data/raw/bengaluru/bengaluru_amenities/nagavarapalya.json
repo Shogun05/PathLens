@@ -1,0 +1,1399 @@
+{
+  "area_name": "Nagavarapalya",
+  "osm_id": 19883485,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 97,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 414032162,
+      "lat": 12.9812136,
+      "lon": 77.6570884,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "name": "HP Auto Care",
+        "official_name": "Hindustan Petroleum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1078209945,
+      "lat": 12.9852309,
+      "lon": 77.6636329,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಎಸ್ ಬಿ ಐ",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1078214686,
+      "lat": 12.994176,
+      "lon": 77.6638974,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1087901336,
+      "lat": 12.983791,
+      "lon": 77.65649,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1477494236,
+      "lat": 12.9935838,
+      "lon": 77.6639522,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "0",
+        "addr:housename": "Gopalan Grand Mall",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road (Old Madras Road)",
+        "addr:suburb": "Nagarvarapalya",
+        "air_conditioning": "yes",
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "check_date": "2024-04-03",
+        "level": "0",
+        "name": "More",
+        "operator": "More",
+        "organic": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket",
+        "source": "survey",
+        "stroller": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1607458588,
+      "lat": 12.993084,
+      "lon": 77.6620975,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "G",
+        "addr:housename": "Gopalan Signature Mall",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road",
+        "air_conditioning": "yes",
+        "alt_name": "Kentucky Fried Chicken",
+        "alt_name:en": "Kentucky Fried Chicken",
+        "alt_name:hi": "केंटुकी फ्राइड चिकन",
+        "alt_name:pa": "ਕੈਂਟੁਕੀ ਫ੍ਰਾਈਡ ਚਿਕਨ",
+        "alt_name:pnb": "کینٹکی فرائیڈ چکن",
+        "alt_name:ur": "کینٹکی فرائیڈ چکن",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:en": "KFC",
+        "brand:hi": "केएफसी",
+        "brand:pa": "ਕੇਐਫਸੀ",
+        "brand:pnb": "کے ایف سی",
+        "brand:ur": "کے ایف سی",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:wikipedia:pa": "ਕੇਐਫਸੀ",
+        "brand:wikipedia:ur": "کینٹکی فرائیڈ چکن",
+        "check_date": "2025-11-16",
+        "cuisine": "chicken",
+        "diet:halal": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "KFC",
+        "name:en": "KFC",
+        "name:hi": "केएफसी",
+        "name:pa": "ਕੇਐਫਸੀ",
+        "name:pnb": "کے ایف سی",
+        "name:ur": "کے ایف سی",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1607458589,
+      "lat": 12.9929957,
+      "lon": 77.6618949,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "G",
+        "addr:housename": "Gopalan Signature Mall",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road",
+        "air_conditioning": "yes",
+        "brand": "Lifestyle",
+        "brand:wikidata": "Q6545496",
+        "check_date": "2025-11-16",
+        "level": "0",
+        "name": "Lifestyle",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1619093886,
+      "lat": 12.9931914,
+      "lon": 77.6618949,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "G",
+        "addr:housename": "Gopalan Signature Mall",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road",
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:ur": "مکڈونلڈز",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:wikipedia:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:wikipedia:ur": "مکڈونلڈز",
+        "check_date": "2025-11-16",
+        "cuisine": "burger",
+        "diet:halal": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "McDonald's",
+        "name:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "name:ur": "مکڈونلڈز",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1925211620,
+      "lat": 12.9916211,
+      "lon": 77.6586524,
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1925211661,
+      "lat": 12.9912368,
+      "lon": 77.6577482,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "covered": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2480865069,
+      "lat": 12.9930746,
+      "lon": 77.6617576,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "G",
+        "addr:housename": "Gopalan Signature Mall",
+        "addr:housenumber": "6",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road",
+        "air_conditioning": "yes",
+        "check_date": "2025-11-16",
+        "level": "0",
+        "name": "Imagine Store",
+        "opening_hours": "Mo-Su 10:30-21:30",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+91 80 67142201",
+        "shop": "electronics",
+        "website": "https://imaginestore.org/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2481030017,
+      "lat": 12.9929234,
+      "lon": 77.6614361,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "G",
+        "addr:housename": "Gopalan Signature Mall",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road",
+        "check_date": "2025-11-16",
+        "level": "0",
+        "name": "Wildcrafts",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "bag",
+        "website": "https://www.wildcraft.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2481030018,
+      "lat": 12.9928929,
+      "lon": 77.6613161,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Gopalan Signature Mall",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road",
+        "shop": "watches"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2481972739,
+      "lat": 12.9934178,
+      "lon": 77.6641088,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "2",
+        "addr:housename": "Gopalan Grand Mall",
+        "addr:street": "Swamy Vivekananda Road (Old Madras Road)",
+        "addr:suburb": "Nagarvaraplaya",
+        "air_conditioning": "yes",
+        "amenity": "cinema",
+        "check_date": "2024-04-03",
+        "level": "2",
+        "name": "Gopalan Cinemas",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+91 80 25242424",
+        "source": "survey",
+        "website": "http://www.gopalancinemas.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2481972745,
+      "lat": 12.9941566,
+      "lon": 77.6637825,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road (Old Madras Road)",
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "name:kn": "ಬಾಟಾ",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451648238,
+      "lat": 12.9940602,
+      "lon": 77.6635358,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Balamuri Ganapathi Temple",
+        "name:kn": "ಬಲಮುರಿ ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451649990,
+      "lat": 12.9940893,
+      "lon": 77.6637502,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "brand:wikipedia": "en:Axis Bank",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "name:kn": "ಅಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.axisbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451663033,
+      "lat": 12.9897481,
+      "lon": 77.6639572,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Hanuman Temple",
+        "name:kn": "ಹನುಮಂತ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451663435,
+      "lat": 12.9923397,
+      "lon": 77.659961,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2024-12-10",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451664102,
+      "lat": 12.9923201,
+      "lon": 77.660059,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2024-12-14",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451665997,
+      "lat": 12.9895641,
+      "lon": 77.6636078,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Supriya Diagnostic Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451667183,
+      "lat": 12.9895434,
+      "lon": 77.6638556,
+      "tags": {
+        "name": "Modern Men's Saloon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451674829,
+      "lat": 12.9925055,
+      "lon": 77.6638079,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "brand:wikipedia": "en:Axis Bank",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "name:kn": "ಅಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.axisbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451678553,
+      "lat": 12.990095,
+      "lon": 77.6636365,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451678556,
+      "lat": 12.9906151,
+      "lon": 77.6637049,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451678926,
+      "lat": 12.9892805,
+      "lon": 77.6653699,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Yellamma Temple",
+        "name:kn": "ಯಲ್ಲಮ್ಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3451682131,
+      "lat": 12.9905092,
+      "lon": 77.6626052,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4066841503,
+      "lat": 12.9930498,
+      "lon": 77.663735,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560093",
+        "addr:street": "Naganarapalaya Main Road",
+        "amenity": "restaurant",
+        "check_date": "2024-04-03",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "name": "Sri Krishna Sagar",
+        "smoking": "no",
+        "source": "survey",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4141966889,
+      "lat": 12.9871041,
+      "lon": 77.6620214,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "CGHS Dispensary No.10, DRDO Complex DRDOComplex, C.V.Raman Nagar",
+        "addr:postcode": "560093",
+        "addr:state": "Karnataka",
+        "addr:street": "Dr. APJ Abdul Kalam Road",
+        "amenity": "clinic",
+        "health_facility:type": "dispensary",
+        "healthcare": "centre",
+        "name": "CGHS Dispensary No.10",
+        "operator:type": "government",
+        "source": "OpenGovernmentData",
+        "website": "http://nb.bsf.gov.in/CGHS%20DIspenseries.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4167644194,
+      "lat": 12.9898501,
+      "lon": 77.6645457,
+      "tags": {
+        "name": "Tender Chicken",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4167717190,
+      "lat": 12.9894846,
+      "lon": 77.6639748,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Trust medical store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4167718789,
+      "lat": 12.9812284,
+      "lon": 77.6572925,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "opening_hours": "24/7",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4171465001,
+      "lat": 12.9862101,
+      "lon": 77.6623936,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Homeopathic Self Reliance Forum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4391425089,
+      "lat": 12.9916552,
+      "lon": 77.6638354,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:en": "Apollo",
+        "name:kn": "ಅಪೊಲೋ ಫಾರ್ಮಸಿ",
+        "opening_hours": "Mo-Su,PH 07:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4470988804,
+      "lat": 12.988962,
+      "lon": 77.6638451,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "MedPlus",
+        "brand:wikidata": "Q65684234",
+        "healthcare": "pharmacy",
+        "name": "MedPlus",
+        "name:en": "MedPlus",
+        "name:kn": "ಮೆಡ್‍ಪ್ಲಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4471006190,
+      "lat": 12.9903868,
+      "lon": 77.6626633,
+      "tags": {
+        "name": "Feminity Beauty Salon",
+        "name:en": "Feminity Beauty Salon",
+        "shop": "cosmetics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4599152890,
+      "lat": 12.9890578,
+      "lon": 77.6640639,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Janpriya Tiffin",
+        "name:en": "Janpriya Tiffin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4599153790,
+      "lat": 12.9891957,
+      "lon": 77.663856,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Life line clinic",
+        "name:en": "Life line clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4599173691,
+      "lat": 12.9821034,
+      "lon": 77.6575557,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Karunadu services",
+        "name:en": "Karunadu services",
+        "phone": "08042123520"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4599826689,
+      "lat": 12.9932504,
+      "lon": 77.6619846,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Gopalan Signature Mall",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road",
+        "amenity": "atm",
+        "operator": "City Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4599826789,
+      "lat": 12.9922876,
+      "lon": 77.6599855,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4607424294,
+      "lat": 12.9927907,
+      "lon": 77.6637736,
+      "tags": {
+        "name": "Nice Fair",
+        "name:en": "Nice Fair",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4680308195,
+      "lat": 12.9877536,
+      "lon": 77.6624285,
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4680308697,
+      "lat": 12.9907544,
+      "lon": 77.6638013,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Grace dental",
+        "name:en": "Grace dental"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4685201691,
+      "lat": 12.9853868,
+      "lon": 77.667554,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "New Tandoor",
+        "name:hi": "New Tandoor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4686804000,
+      "lat": 12.9907421,
+      "lon": 77.6637709,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4719715796,
+      "lat": 12.993553,
+      "lon": 77.664097,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560093",
+        "addr:street": "Nagavarapalaya Main Road",
+        "amenity": "fast_food",
+        "brand": "Papa John's",
+        "brand:wikidata": "Q2759586",
+        "cuisine": "pizza",
+        "name": "Papa John's",
+        "opening_hours": "11:00 - 23:00",
+        "phone": "080-65691122",
+        "takeaway": "yes",
+        "website": "https://www.papajohnspizza.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4838619833,
+      "lat": 12.9933945,
+      "lon": 77.6634832,
+      "tags": {
+        "name": "Total lubricants Bike service center",
+        "name:en": "Total lubricants Bike service center",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4838623028,
+      "lat": 12.993454,
+      "lon": 77.6634803,
+      "tags": {
+        "name": "GKR Gents Beauty Parlour",
+        "name:en": "GKR Gents Beauty Parlour",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4930612921,
+      "lat": 12.990128,
+      "lon": 77.6630368,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name:kn": "ಮಸೀದಿ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9740683768,
+      "lat": 12.9904828,
+      "lon": 77.6604438,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Ace Dental Care"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11630436766,
+      "lat": 12.9878946,
+      "lon": 77.6666644,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11630436767,
+      "lat": 12.9883666,
+      "lon": 77.6672798,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11630509670,
+      "lat": 12.98708,
+      "lon": 77.66737,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12918683669,
+      "lat": 12.9922597,
+      "lon": 77.6600575,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-06-16",
+        "name": "HDFC Bank",
+        "short_name": "HDFC",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13150307874,
+      "lat": 12.9892067,
+      "lon": 77.6665143,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 35311978,
+      "center": {
+        "lat": 12.9822274,
+        "lon": 77.6533084
+      },
+      "tags": {
+        "amenity": "research_institute",
+        "check_date": "2024-11-10",
+        "landuse": "industrial",
+        "name": "Gas Turbine Research Establishment",
+        "name:kn": "ಆವಿ ನೀರುಗಾಲಿ ಸಂಶೋಧನ ನೆಲೆ",
+        "operator:type": "military",
+        "short_name": "GTRE",
+        "start_date": "1961",
+        "wikidata": "Q5526315",
+        "wikimedia_commons": "Category:GTRE aircraft engines",
+        "wikipedia": "en:Gas Turbine Research Establishment"
+      }
+    },
+    {
+      "type": "way",
+      "id": 176675169,
+      "center": {
+        "lat": 12.9929432,
+        "lon": 77.6615107
+      },
+      "tags": {
+        "addr:street": "Old Madras Road",
+        "building": "retail",
+        "check_date": "2025-11-16",
+        "name": "Gopalan Signature Mall",
+        "shop": "mall",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 182175819,
+      "center": {
+        "lat": 12.9919768,
+        "lon": 77.6595562
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "compressed_air": "yes",
+        "landuse": "commercial",
+        "name": "Shell"
+      }
+    },
+    {
+      "type": "way",
+      "id": 182175832,
+      "center": {
+        "lat": 12.9934419,
+        "lon": 77.6640393
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Nagavarapalya",
+        "addr:housenumber": "86",
+        "addr:postcode": "560016",
+        "addr:street": "Swamy Vivekananda Road (Old Madras Road)",
+        "building": "retail",
+        "name": "Gopalan Grand Mall",
+        "shop": "mall",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338104350,
+      "center": {
+        "lat": 12.9902358,
+        "lon": 77.6635792
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Government Kannada Primary School",
+        "name:kn": "ಸರ್ಕಾರಿ ಕನ್ನಡ ಪ್ರಾಥಮಿಕ ಶಾಲೆ",
+        "operator": "government"
+      }
+    },
+    {
+      "type": "way",
+      "id": 338106507,
+      "center": {
+        "lat": 12.9903484,
+        "lon": 77.662795
+      },
+      "tags": {
+        "building": "yes",
+        "name": "9 to 9 Step N Shop",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346163701,
+      "center": {
+        "lat": 12.9861901,
+        "lon": 77.6678754
+      },
+      "tags": {
+        "amenity": "parking",
+        "building": "yes",
+        "name": "CAIR Parking",
+        "parking": "multi-storey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346421773,
+      "center": {
+        "lat": 12.9850652,
+        "lon": 77.6575652
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346421936,
+      "center": {
+        "lat": 12.9882363,
+        "lon": 77.6567041
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346775300,
+      "center": {
+        "lat": 12.9850987,
+        "lon": 77.6631173
+      },
+      "tags": {
+        "amenity": "post_office",
+        "building": "commercial",
+        "name": "DRDO Shopping complex / CV Raman Nagar PO",
+        "operator": "India Posts",
+        "ref": "CV Raman Nagar PO"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346776018,
+      "center": {
+        "lat": 12.9847018,
+        "lon": 77.6631402
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "building": "yes",
+        "name": "DRDO Community Hall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347084114,
+      "center": {
+        "lat": 12.9847652,
+        "lon": 77.6626318
+      },
+      "tags": {
+        "amenity": "theatre",
+        "name": "Open Air Theatre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363617609,
+      "center": {
+        "lat": 12.9841178,
+        "lon": 77.663424
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Phase 1 Tennis Court",
+        "sport": "tennis",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363617610,
+      "center": {
+        "lat": 12.9839744,
+        "lon": 77.6615189
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 420436334,
+      "center": {
+        "lat": 12.9856425,
+        "lon": 77.6640815
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "name": "C V Raman Nagar Bus Stand",
+        "name:kn": "ಸಿ ವಿ ರಾಮನ್ ನಗರ ಬಸ್ ನಿಲ್ದಾಣ",
+        "operator": "BMTC"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086089,
+      "center": {
+        "lat": 12.9855823,
+        "lon": 77.6590148
+      },
+      "tags": {
+        "leisure": "golf_course",
+        "name": "HAL Golf Course"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086094,
+      "center": {
+        "lat": 12.9859338,
+        "lon": 77.6661957
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086118,
+      "center": {
+        "lat": 12.9887637,
+        "lon": 77.6596321
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086119,
+      "center": {
+        "lat": 12.9888989,
+        "lon": 77.6600823
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086120,
+      "center": {
+        "lat": 12.9875892,
+        "lon": 77.6672509
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086121,
+      "center": {
+        "lat": 12.9888213,
+        "lon": 77.66725
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086122,
+      "center": {
+        "lat": 12.9893158,
+        "lon": 77.6669265
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053086130,
+      "center": {
+        "lat": 12.9868422,
+        "lon": 77.6643563
+      },
+      "tags": {
+        "addr:street": "Naganarapalaya Main Road",
+        "amenity": "school",
+        "name": "Kendriya Vidhyalaya DRDO",
+        "name:kn": "ಕೆಂದ್ರೀಯ ವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354098105,
+      "center": {
+        "lat": 12.9895589,
+        "lon": 77.6592972
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354098107,
+      "center": {
+        "lat": 12.9886043,
+        "lon": 77.6593421
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354098108,
+      "center": {
+        "lat": 12.9887219,
+        "lon": 77.6575711
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354098115,
+      "center": {
+        "lat": 12.9869826,
+        "lon": 77.6557936
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1357862552,
+      "center": {
+        "lat": 12.9936491,
+        "lon": 77.6628458
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1357862553,
+      "center": {
+        "lat": 12.9935698,
+        "lon": 77.6628245
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1357862554,
+      "center": {
+        "lat": 12.9928399,
+        "lon": 77.6629469
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393795132,
+      "center": {
+        "lat": 12.9926435,
+        "lon": 77.6623036
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393795140,
+      "center": {
+        "lat": 12.9909276,
+        "lon": 77.66028
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393795142,
+      "center": {
+        "lat": 12.991334,
+        "lon": 77.6602169
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393795144,
+      "center": {
+        "lat": 12.9913994,
+        "lon": 77.6594345
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430635443,
+      "center": {
+        "lat": 12.9915373,
+        "lon": 77.6619222
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430649320,
+      "center": {
+        "lat": 12.9870008,
+        "lon": 77.6667131
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430649326,
+      "center": {
+        "lat": 12.9891648,
+        "lon": 77.6674091
+      },
+      "tags": {
+        "leisure": "bleachers"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430649327,
+      "center": {
+        "lat": 12.989185,
+        "lon": 77.66741
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "theatre",
+        "theatre:type": "amphi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430649328,
+      "center": {
+        "lat": 12.9894247,
+        "lon": 77.6669543
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground",
+        "surface": "grass"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1446567943,
+      "center": {
+        "lat": 12.9836152,
+        "lon": 77.6555607
+      },
+      "tags": {
+        "addr:district": "SUDDAGUNTEPALYA, C.V. RAMAN NAGAR",
+        "addr:street": "7th Main Road",
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Maheswaramma Temple",
+        "name:kn": "ಮಹೇಶ್ವರಮ್ಮ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1446568061,
+      "center": {
+        "lat": 12.9818497,
+        "lon": 77.6578125
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

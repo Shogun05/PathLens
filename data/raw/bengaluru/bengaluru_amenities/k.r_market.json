@@ -1,0 +1,709 @@
+{
+  "area_name": "K.R Market",
+  "osm_id": 19883415,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 54,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 683352692,
+      "lat": 12.9651082,
+      "lon": 77.5750394,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 711707870,
+      "lat": 12.9625258,
+      "lon": 77.5656883,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Anjaneya Temple",
+        "name:kn": "ಆಂಜನೇಯ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1632708962,
+      "lat": 12.9636734,
+      "lon": 77.5740355,
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1789725915,
+      "lat": 12.9604713,
+      "lon": 77.5652214,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "fee": "no",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1843603947,
+      "lat": 12.9648252,
+      "lon": 77.5764372,
+      "tags": {
+        "amenity": "post_office",
+        "designation": "560002",
+        "name": "KR Market Sub Post Office",
+        "operator": "Indias Postal Service"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1843611471,
+      "lat": 12.9649402,
+      "lon": 77.5761878,
+      "tags": {
+        "addr:street": "Sultan Road",
+        "alt_name": "City Market Police Station",
+        "amenity": "police",
+        "name": "Krishna Rajendra Market Police Station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1843616701,
+      "lat": 12.9608365,
+      "lon": 77.5701609,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Adi Shakti Chikka Annamma Temple",
+        "name:kn": "ಆದಿಶಕ್ತಿ ಚಿಕ್ಕ ಅಣ್ಣಮ್ಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1843617173,
+      "lat": 12.9614011,
+      "lon": 77.5698739,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Lakshmi Satyanarana Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1843617409,
+      "lat": 12.9617331,
+      "lon": 77.5700133,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Anjaneya Temple",
+        "name:kn": "ಆಂಜನೇಯ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3395243168,
+      "lat": 12.9606678,
+      "lon": 77.5714841,
+      "tags": {
+        "name": "Guruprakash General Stores",
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3395243169,
+      "lat": 12.962368,
+      "lon": 77.575774,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Koti Dhanvanthri Ganesha Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3395246644,
+      "lat": 12.9606852,
+      "lon": 77.5715513,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2025-06-19",
+        "name": "Sri Manjunatha Medical & General Stores"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489411314,
+      "lat": 12.9674105,
+      "lon": 77.576402,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "307",
+        "addr:postcode": "560053",
+        "addr:street": "Prince Building, Old Tharagupete Rd, Old Tharagupet",
+        "name": "Prince Sports India",
+        "opening_hours": "09:00-21:00",
+        "phone": "08041132118",
+        "shop": "sports"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418981387,
+      "lat": 12.9681033,
+      "lon": 77.5749359,
+      "tags": {
+        "name": "Casual shirt",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6882713298,
+      "lat": 12.9616862,
+      "lon": 77.5713676,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "No. 23 and 84, Sharoff Basappa Commercial Complex, 2nd Main, Ist Cross, New Tharugpet",
+        "addr:postcode": "560002",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9845801539",
+        "contact:phone": "8025990583",
+        "name": "Sri Vinayaka Charitable Trust Jeeva Voluntary Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "ngo",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6882713299,
+      "lat": 12.9635486,
+      "lon": 77.573669,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "Fort Road, Bengaluru",
+        "addr:postcode": "560002",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9591497657",
+        "contact:phone": "8026700001",
+        "fax": "080 26703267.",
+        "name": "Victoria Hospital Blood Bank",
+        "name:kn": "ರಕ್ತ ಸಂಗ್ರಹ",
+        "opening_hours": "24/7",
+        "operator:type": "government",
+        "source": "OpenGovernmentData",
+        "website": "https://victoriahospitalbangalore.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947682067,
+      "lat": 12.9619528,
+      "lon": 77.5728562,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Victoria Hospital Campus",
+        "addr:postcode": "560002",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Institute Of Nephro Urology hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11304774634,
+      "lat": 12.9675418,
+      "lon": 77.5746507,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "trash"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11304774639,
+      "lat": 12.9675719,
+      "lon": 77.5746436,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "level": "0",
+        "name": "The Cane Joint"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11355774237,
+      "lat": 12.9615281,
+      "lon": 77.5751736,
+      "tags": {
+        "amenity": "drinking_water",
+        "layer": "-1",
+        "level": "-1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11355774238,
+      "lat": 12.9614194,
+      "lon": 77.5751313,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2023-11-16",
+        "layer": "-1",
+        "level": "-1",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11366302456,
+      "lat": 12.9607162,
+      "lon": 77.5747037,
+      "tags": {
+        "amenity": "fountain",
+        "lit": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11371332792,
+      "lat": 12.961443,
+      "lon": 77.5748223,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2023-11-23",
+        "level": "-1",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11499969618,
+      "lat": 12.9618933,
+      "lon": 77.5756771,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11499969619,
+      "lat": 12.9618878,
+      "lon": 77.5756825,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "wet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522402151,
+      "lat": 12.966074,
+      "lon": 77.5776938,
+      "tags": {
+        "amenity": "fixme",
+        "check_date": "2025-01-21",
+        "fixme": "type",
+        "fixme:type": "Start",
+        "name": "starting point"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12541787701,
+      "lat": 12.9633809,
+      "lon": 77.5735348,
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "name": "Victoria Hospital - Parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12925420094,
+      "lat": 12.9621663,
+      "lon": 77.5717564,
+      "tags": {
+        "check_date": "2025-06-19",
+        "name": "Chamundi Dry Fruits and Spices",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13072369444,
+      "lat": 12.965328,
+      "lon": 77.5773423,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2025-08-15",
+        "name": "Dargah Hazrath Syed Mahamood Sha Khadri R-A",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13092341032,
+      "lat": 12.9675,
+      "lon": 77.5747947,
+      "tags": {
+        "addr:floor": "C",
+        "amenity": "childcare",
+        "check_date": "2025-08-23",
+        "level": "-1",
+        "name": "Feeding Room",
+        "name:en": "Feeding Room",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23494413,
+      "center": {
+        "lat": 12.965718,
+        "lon": 77.5762706
+      },
+      "tags": {
+        "alt_name": "K R Market",
+        "amenity": "marketplace",
+        "building": "retail",
+        "building:levels": "3",
+        "full_name": "Sri Krishnarajendra Market",
+        "name": "City Market"
+      }
+    },
+    {
+      "type": "way",
+      "id": 53849356,
+      "center": {
+        "lat": 12.9628398,
+        "lon": 77.569866
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "St. Joseph's School",
+        "name:kn": "ಸೆಂಟ್ ಜೋಸೆಫ್ ಶಾಲೆ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150350442,
+      "center": {
+        "lat": 12.9615314,
+        "lon": 77.5744325
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150350461,
+      "center": {
+        "lat": 12.9636538,
+        "lon": 77.5740019
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150350463,
+      "center": {
+        "lat": 12.9611314,
+        "lon": 77.5742769
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150350471,
+      "center": {
+        "lat": 12.9639468,
+        "lon": 77.5746917
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150350475,
+      "center": {
+        "lat": 12.9615579,
+        "lon": 77.5738049
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150350476,
+      "center": {
+        "lat": 12.9634957,
+        "lon": 77.5736948
+      },
+      "tags": {
+        "amenity": "hospital",
+        "building": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "heritage": "2",
+        "heritage:operator": "nmma",
+        "heritage:website": "https://nmma.nic.in/nmma/exploreBuiltState.do?state=29",
+        "name": "Victoria Hospital",
+        "name:etymology:wikidata": "Q9439",
+        "name:kn": "ವಿಕ್ಟೋರಿಯಾ ಆಸ್ಪತ್ರೆ",
+        "ref:nmma": "KR20011022",
+        "wheelchair": "yes",
+        "wikidata": "Q7926782",
+        "wikimedia_commons": "Category:Victoria Hospital, Bangalore",
+        "wikipedia": "en:Victoria Hospital (Bangalore Medical College)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327032476,
+      "center": {
+        "lat": 12.9623462,
+        "lon": 77.575312
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Government College of Nursing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327032477,
+      "center": {
+        "lat": 12.9636652,
+        "lon": 77.5700557
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "St. Joseph's Church",
+        "name:kn": "ಸಂತ ಜೋಸೆಫರ ಚರ್ಚ್",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327032478,
+      "center": {
+        "lat": 12.9637904,
+        "lon": 77.5759033
+      },
+      "tags": {
+        "addr:street": "Bala Gangadhara Swamy Flyover",
+        "alt_name": "GDCRI",
+        "amenity": "college",
+        "name": "Government Dental College and Research Institute",
+        "name:kn": "ದಂತ ವೈದ್ಯಕೀಯ ವಿದ್ಯಾಲಯ ಮತ್ತು ಸಂಶೋಧನಾ ಸಂಸ್ಥೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 373574996,
+      "center": {
+        "lat": 12.9635299,
+        "lon": 77.5702106
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "religion": "christian",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 410858826,
+      "center": {
+        "lat": 12.9666992,
+        "lon": 77.5741828
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 411069162,
+      "center": {
+        "lat": 12.9627432,
+        "lon": 77.5697651
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 512515890,
+      "center": {
+        "lat": 12.9649534,
+        "lon": 77.5745313
+      },
+      "tags": {
+        "amenity": "marketplace",
+        "landuse": "retail",
+        "name": "Fish and Meat Market"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1167151322,
+      "center": {
+        "lat": 12.961217,
+        "lon": 77.5747907
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1208844932,
+      "center": {
+        "lat": 12.9620817,
+        "lon": 77.5757885
+      },
+      "tags": {
+        "amenity": "toilets",
+        "building": "yes",
+        "female": "yes",
+        "male": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1216159263,
+      "center": {
+        "lat": 12.9617743,
+        "lon": 77.5749383
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1216159267,
+      "center": {
+        "lat": 12.961987,
+        "lon": 77.57503
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1216159268,
+      "center": {
+        "lat": 12.9616914,
+        "lon": 77.575924
+      },
+      "tags": {
+        "alt_name": "Vani Vilas Institute",
+        "amenity": "school",
+        "heritage": "2",
+        "heritage:operator": "nmma",
+        "heritage:website": "https://nmma.nic.in/nmma/exploreBuiltState.do?state=29",
+        "name": "Vani Villas College",
+        "name:kn": "ವಾಣಿ ವಿಲಾಸ ಕಾಲೇಜು",
+        "ref:nmma": "KR20010953",
+        "start_date": "1868"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1220567439,
+      "center": {
+        "lat": 12.9663126,
+        "lon": 77.574662
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "operator": "BMRCL",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1220567448,
+      "center": {
+        "lat": 12.9657768,
+        "lon": 77.5754276
+      },
+      "tags": {
+        "amenity": "marketplace",
+        "landuse": "retail"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1220567449,
+      "center": {
+        "lat": 12.9673131,
+        "lon": 77.5746937
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "operator": "BMRCL",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231129298,
+      "center": {
+        "lat": 12.9629605,
+        "lon": 77.5747755
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    }
+  ]
+}

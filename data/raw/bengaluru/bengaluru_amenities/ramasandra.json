@@ -1,0 +1,88 @@
+{
+  "area_name": "Ramasandra",
+  "osm_id": 2978709370,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 7,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 12956759741,
+      "lat": 12.9516069,
+      "lon": 77.4718966,
+      "tags": {
+        "amenity": "college",
+        "name": "Mount Carmel College of Nursing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12956759742,
+      "lat": 12.9516134,
+      "lon": 77.4722573,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Federal Bank",
+        "brand:wikidata": "Q2044983",
+        "name": "Federal Bank"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1360543546,
+      "center": {
+        "lat": 12.9509338,
+        "lon": 77.4718689
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1365569996,
+      "center": {
+        "lat": 12.9449151,
+        "lon": 77.4634731
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Ramasandra Government Higher Primary School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1365570001,
+      "center": {
+        "lat": 12.9529518,
+        "lon": 77.4668111
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410065956,
+      "center": {
+        "lat": 12.9521156,
+        "lon": 77.4729597
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410092195,
+      "center": {
+        "lat": 12.9387915,
+        "lon": 77.4708076
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vishveshwaraiah Layout 4th Block Park"
+      }
+    }
+  ]
+}

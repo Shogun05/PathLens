@@ -1,0 +1,2033 @@
+{
+  "area_name": "Mylasandra",
+  "osm_id": 19883462,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 162,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1462590139,
+      "lat": 12.9248641,
+      "lon": 77.499477,
+      "tags": {
+        "amenity": "post_office",
+        "name": "R V Vidyanikethan Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463458459,
+      "lat": 12.9250272,
+      "lon": 77.4986893,
+      "tags": {
+        "amenity": "fast_food",
+        "diet:vegetarian": "only",
+        "name": "Udupi Upahar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1516429899,
+      "lat": 12.9245212,
+      "lon": 77.4981445,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "designation": "Juice Centre",
+        "diet:vegetarian": "only",
+        "name": "Sathkar Juice Centre",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3125514995,
+      "lat": 12.9045616,
+      "lon": 77.5057926,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;indian",
+        "name": "Pallavi",
+        "name:kn": "ಪಲ್ಲವಿ",
+        "source": "GPS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3125514997,
+      "lat": 12.9048448,
+      "lon": 77.5050195,
+      "tags": {
+        "amenity": "bank",
+        "atm": "no",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "brand:wikipedia": "en:UCO Bank",
+        "name": "UCO Bank",
+        "name:en": "UCO Bank",
+        "name:kn": "ಯೂಕೊ ಬ್ಯಾಂಕ್",
+        "old_name": "United Commercial Bank",
+        "source": "GPS",
+        "website": "https://www.ucobank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3485239573,
+      "lat": 12.9193173,
+      "lon": 77.5041769,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Café Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3485273429,
+      "lat": 12.9168148,
+      "lon": 77.5040278,
+      "tags": {
+        "amenity": "parking",
+        "designation": "Mindtree Official Parking Area for both two and four wheelers",
+        "name": "Mindtree Global Village, Parking Area",
+        "park_ride": "yes",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3799002969,
+      "lat": 12.9240602,
+      "lon": 77.4976084,
+      "tags": {
+        "name": "Carz Spa",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3799002971,
+      "lat": 12.9130425,
+      "lon": 77.4852213,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488781609,
+      "lat": 12.9238683,
+      "lon": 77.4973285,
+      "tags": {
+        "addr:housenumber": "77/1",
+        "addr:postcode": "560059",
+        "addr:street": "Bangalore-Mysore Road",
+        "brand": "Mercedes-Benz",
+        "brand:wikidata": "Q36008",
+        "name": "Mercedes Benz Akshaya Motors",
+        "phone": "090199 44044",
+        "shop": "car",
+        "website": "akshayamotors.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5015926768,
+      "lat": 12.9247702,
+      "lon": 77.4983835,
+      "tags": {
+        "name": "D L Corner",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5015926769,
+      "lat": 12.9222139,
+      "lon": 77.5000264,
+      "tags": {
+        "name": "Apple Office Solutions",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5015926769,
+      "lat": 12.9222139,
+      "lon": 77.5000264,
+      "tags": {
+        "name": "Apple Office Solutions",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5015926770,
+      "lat": 12.9222854,
+      "lon": 77.4999496,
+      "tags": {
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5015926778,
+      "lat": 12.9246345,
+      "lon": 77.500701,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Medical Center",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5075573721,
+      "lat": 12.9220858,
+      "lon": 77.4953504,
+      "tags": {
+        "addr:housenumber": "#749/1",
+        "addr:postcode": "560059",
+        "addr:street": "Bangalore-Mysore Road",
+        "amenity": "restaurant",
+        "cuisine": "fine_dining",
+        "diet:vegetarian": "yes",
+        "email": "raihospitality24@gmail.com",
+        "internet_access": "wlan",
+        "name": "royal andaaz",
+        "name:en": "royal andaaz",
+        "name:hi": "रॉयल अन्दाज़",
+        "opening_hours": "Mo-Su 07:30-17:00, 18:00-23:00",
+        "operator": "Nikita rai;Rai hospitality",
+        "phone": "+91 90714 20001"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5167596348,
+      "lat": 12.9223401,
+      "lon": 77.4998622,
+      "tags": {
+        "amenity": "toilets",
+        "female": "yes",
+        "male": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5167596393,
+      "lat": 12.9230231,
+      "lon": 77.4986442,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5167596397,
+      "lat": 12.9240333,
+      "lon": 77.5002503,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2025-09-19",
+        "fee": "no",
+        "level": "0;-1",
+        "male": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5168531367,
+      "lat": 12.9263972,
+      "lon": 77.502667,
+      "tags": {
+        "name": "Metro Cash and Carry",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5168531368,
+      "lat": 12.9274069,
+      "lon": 77.5026998,
+      "tags": {
+        "name": "Royal Oak",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5172789781,
+      "lat": 12.9248746,
+      "lon": 77.4985655,
+      "tags": {
+        "name": "Durga Condiments",
+        "shop": "tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5172789782,
+      "lat": 12.9249452,
+      "lon": 77.4986325,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "name": "Lassi Corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5172789784,
+      "lat": 12.9237259,
+      "lon": 77.4987199,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5172791588,
+      "lat": 12.922463,
+      "lon": 77.4998007,
+      "tags": {
+        "amenity": "drinking_water",
+        "check_date": "2025-06-16"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5218115318,
+      "lat": 12.9225504,
+      "lon": 77.4997608,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5407171230,
+      "lat": 12.9227844,
+      "lon": 77.4980824,
+      "tags": {
+        "access": "permissive",
+        "amenity": "toilets",
+        "changing_table": "no",
+        "fee": "no",
+        "male": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5562287749,
+      "lat": 12.9233082,
+      "lon": 77.4997798,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2025-09-19"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5562288821,
+      "lat": 12.9248398,
+      "lon": 77.4985018,
+      "tags": {
+        "name": "Hotel Dream Land",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6254207185,
+      "lat": 12.9102591,
+      "lon": 77.4901432,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Pushpa Sadan",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6284085149,
+      "lat": 12.9224052,
+      "lon": 77.4990502,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6284085150,
+      "lat": 12.9230872,
+      "lon": 77.5005296,
+      "tags": {
+        "amenity": "toilets",
+        "male": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6284085151,
+      "lat": 12.9231745,
+      "lon": 77.5005516,
+      "tags": {
+        "amenity": "toilets",
+        "female": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813444929,
+      "lat": 12.9229823,
+      "lon": 77.4997634,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6815596324,
+      "lat": 12.9251181,
+      "lon": 77.498842,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Rolls Rice Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6918664411,
+      "lat": 12.9223117,
+      "lon": 77.4998975,
+      "tags": {
+        "amenity": "toilets",
+        "female": "no",
+        "male": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944231472,
+      "lat": 12.9110975,
+      "lon": 77.4806057,
+      "tags": {
+        "addr:district": "Bengaluru Rural",
+        "addr:full": "No-304, Kuvempu Street, Bazar Street , Kenegeri",
+        "addr:postcode": "560060",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Mathru Hospital - Bangalore",
+        "name:kn": "ಮಾತೃ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7124635762,
+      "lat": 12.930791,
+      "lon": 77.5066942,
+      "tags": {
+        "brand": "Volkswagen",
+        "brand:wikidata": "Q246",
+        "name": "Volkswagen",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7137042126,
+      "lat": 12.9304328,
+      "lon": 77.5062892,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Oriental Bank of Commerce"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7195158622,
+      "lat": 12.9246587,
+      "lon": 77.4983083,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Biryani Bhavan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7195158623,
+      "lat": 12.9245593,
+      "lon": 77.4981916,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:hamlet": "Dubasipalya",
+        "addr:street": "Mysore Road",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Domino's",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "operator": "Domino's Pizza",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7195158628,
+      "lat": 12.9245593,
+      "lon": 77.4981192,
+      "tags": {
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7229958826,
+      "lat": 12.9250769,
+      "lon": 77.4987938,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Sip n Hog"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7229958827,
+      "lat": 12.9250534,
+      "lon": 77.4987596,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Biryani Katte"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7229958828,
+      "lat": 12.9249933,
+      "lon": 77.4986637,
+      "tags": {
+        "name": "Jumbo Xerox",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7255803984,
+      "lat": 12.9248061,
+      "lon": 77.4984306,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Dosa Hut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7289130131,
+      "lat": 12.9221378,
+      "lon": 77.4924543,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7289130132,
+      "lat": 12.9213666,
+      "lon": 77.4923176,
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7289130133,
+      "lat": 12.9214777,
+      "lon": 77.4925268,
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7289130216,
+      "lat": 12.9249186,
+      "lon": 77.4993891,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank",
+        "operator": "Kotak Mahindra Bank",
+        "operator:wikidata": "Q2040404"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7289130265,
+      "lat": 12.9109393,
+      "lon": 77.4843889,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "name": "UCO Bank",
+        "name:kn": "ಯೂಕೊ ಬ್ಯಾಂಕ್",
+        "operator": "UCO Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7927404485,
+      "lat": 12.9254097,
+      "lon": 77.4986469,
+      "tags": {
+        "addr:postcode": "570026",
+        "addr:street": "#76, 6, Mysore Rd, opp. R.V.Engineering College, Harsha Layout, New Tharagupet, Bengaluru, Karnataka",
+        "amenity": "school",
+        "check_date": "2024-04-27",
+        "email": "communications.oism@orchids.edu.in",
+        "name": "Orchids The International School, Mysore Road",
+        "opening_hours": "Mo-Su 09:00-18:30",
+        "operator": "Orchids International School",
+        "phone": "9513731352",
+        "website": "https://www.orchidsinternationalschool.com/bangalore-branches/mysore-road/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8984816719,
+      "lat": 12.9084569,
+      "lon": 77.5119601,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560098",
+        "addr:street": "Old Manipal Hospital Road",
+        "name": "Reliance Smart Point",
+        "operator": "Reliance",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9192980649,
+      "lat": 12.9141593,
+      "lon": 77.4816613,
+      "tags": {
+        "amenity": "school",
+        "name": "Government School",
+        "name:kn": "ಸರ್ಕಾರಿ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654247749,
+      "lat": 12.9141602,
+      "lon": 77.4863912,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654247759,
+      "lat": 12.9305557,
+      "lon": 77.5063562,
+      "tags": {
+        "check_date": "2022-11-25",
+        "name": "Puma",
+        "name:kn": "ಪೂಮ",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9838551996,
+      "lat": 12.9200603,
+      "lon": 77.5108428,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Anjaneya Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10280801513,
+      "lat": 12.9040849,
+      "lon": 77.5078741,
+      "tags": {
+        "amenity": "pub",
+        "microbrewery": "yes",
+        "name": "Big Barrel Brewpub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248318176,
+      "lat": 12.9104906,
+      "lon": 77.4815428,
+      "tags": {
+        "amenity": "police",
+        "check_date": "2023-10-08",
+        "name": "Kengeri Police Station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248318177,
+      "lat": 12.9105508,
+      "lon": 77.4823586,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2023-10-08",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248318179,
+      "lat": 12.9106208,
+      "lon": 77.4835688,
+      "tags": {
+        "amenity": "school",
+        "check_date": "2023-10-08",
+        "operator:type": "government"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248318180,
+      "lat": 12.9115175,
+      "lon": 77.4846294,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IDFC First Bank",
+        "brand:wikidata": "Q22031467",
+        "check_date": "2023-10-08",
+        "operator": "IDFC First Bank",
+        "operator:wikidata": "Q22031467"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11757291185,
+      "lat": 12.9095419,
+      "lon": 77.5095467,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932168494,
+      "lat": 12.9244997,
+      "lon": 77.5007772,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganesh Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12206992028,
+      "lat": 12.9240283,
+      "lon": 77.5002596,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2025-09-19",
+        "fee": "no",
+        "level": "0;-1",
+        "male": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12206992033,
+      "lat": 12.9244994,
+      "lon": 77.5000574,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12492808022,
+      "lat": 12.9096478,
+      "lon": 77.5130175,
+      "tags": {
+        "amenity": "cinema",
+        "name": "Movietime"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12507331058,
+      "lat": 12.9138844,
+      "lon": 77.4870121,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kadamba Veg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12762416666,
+      "lat": 12.9174925,
+      "lon": 77.4854264,
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12872995423,
+      "lat": 12.9233711,
+      "lon": 77.499694,
+      "tags": {
+        "amenity": "university",
+        "check_date": "2025-09-19",
+        "name": "RV University",
+        "operator": "RSST"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13130322035,
+      "lat": 12.9227174,
+      "lon": 77.5059164,
+      "tags": {
+        "leisure": "fitness_centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155043801,
+      "lat": 12.9234508,
+      "lon": 77.4997987,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-09-19",
+        "name": "MM Foods"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155090430,
+      "lat": 12.9248386,
+      "lon": 77.4985064,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel Dream Land Family Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155095206,
+      "lat": 12.9244952,
+      "lon": 77.4992184,
+      "tags": {
+        "amenity": "post_box",
+        "collection_times": "Mo-Su,PH 12:00",
+        "support": "tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155115801,
+      "lat": 12.9246933,
+      "lon": 77.4982973,
+      "tags": {
+        "addr:street": "Pattangare Metro Pathway",
+        "amenity": "restaurant",
+        "name": "Mojo Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13276814998,
+      "lat": 12.9040944,
+      "lon": 77.5080064,
+      "tags": {
+        "name": "Top in Town",
+        "operator": "Top in Town",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:upi": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13288585237,
+      "lat": 12.9075231,
+      "lon": 77.5119377,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Mad Doh Sourdough Pizzeria",
+        "reservation": "yes",
+        "takeaway": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55685638,
+      "center": {
+        "lat": 12.9232,
+        "lon": 77.5006374
+      },
+      "tags": {
+        "alt_name": "Rashtreeya Vidyalaya College of Engineering",
+        "amenity": "college",
+        "full_name": "Rashtreeya Vidyalaya College of Engineering",
+        "local_ref": "RVCE",
+        "name": "R. V. College of Engineering",
+        "name:kn": "ರಾಷ್ಟ್ರೀಯ ವಿದ್ಯಾಲಯ ತಾಂತ್ರಿಕ ಮಹಾವಿದ್ಯಾಲಯ",
+        "short_name": "RVCE",
+        "website": "https://rvce.edu.in",
+        "wikidata": "Q7273419",
+        "wikimedia_commons": "Category:R.V. College of Engineering",
+        "wikipedia": "en:R.V. College of Engineering"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133052402,
+      "center": {
+        "lat": 12.923192,
+        "lon": 77.5006905
+      },
+      "tags": {
+        "amenity": "library",
+        "building": "university",
+        "building:levels": "4",
+        "name:kn": "ಗ್ರಂಥಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133117349,
+      "center": {
+        "lat": 12.9239875,
+        "lon": 77.4984239
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347481812,
+      "center": {
+        "lat": 12.9218063,
+        "lon": 77.5087855
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347572849,
+      "center": {
+        "lat": 12.9121751,
+        "lon": 77.4847186
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "building": "roof",
+        "compressed_air": "yes",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "operator": "Bharat Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347597626,
+      "center": {
+        "lat": 12.9107092,
+        "lon": 77.4838249
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "check_date": "2023-10-08",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348135295,
+      "center": {
+        "lat": 12.9095686,
+        "lon": 77.5092011
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560059",
+        "addr:street": "KG Rd, Concord Garden City, Hemmigepura Ward 198, Rajarajeshwari Nagar",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shri Balamuri Vigneshwara Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362910765,
+      "center": {
+        "lat": 12.916814,
+        "lon": 77.508714
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437563234,
+      "center": {
+        "lat": 12.9130348,
+        "lon": 77.4813867
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437563235,
+      "center": {
+        "lat": 12.9137066,
+        "lon": 77.4870405
+      },
+      "tags": {
+        "alt_name": "Kengeri Transit and Traffic Management Center",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Kengeri TTMC",
+        "name:kn": "ಕೆಂಗೇರಿ",
+        "operator": "BMTC",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437563236,
+      "center": {
+        "lat": 12.9127328,
+        "lon": 77.4856958
+      },
+      "tags": {
+        "amenity": "fuel",
+        "name": "Madhu Petrol / Gas Station",
+        "operator": "Indianoil"
+      }
+    },
+    {
+      "type": "way",
+      "id": 513025074,
+      "center": {
+        "lat": 12.9223901,
+        "lon": 77.4996843
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "building": "university",
+        "name": "Food Court"
+      }
+    },
+    {
+      "type": "way",
+      "id": 513025075,
+      "center": {
+        "lat": 12.9253736,
+        "lon": 77.4985971
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Orchard International School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532559714,
+      "center": {
+        "lat": 12.922639,
+        "lon": 77.4990152
+      },
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "covered": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532669943,
+      "center": {
+        "lat": 12.9239123,
+        "lon": 77.4997484
+      },
+      "tags": {
+        "amenity": "parking",
+        "capacity": "12",
+        "covered": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 560713513,
+      "center": {
+        "lat": 12.9254839,
+        "lon": 77.4990373
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 581289531,
+      "center": {
+        "lat": 12.9235725,
+        "lon": 77.4999033
+      },
+      "tags": {
+        "leisure": "outdoor_seating"
+      }
+    },
+    {
+      "type": "way",
+      "id": 581289535,
+      "center": {
+        "lat": 12.9227917,
+        "lon": 77.498263
+      },
+      "tags": {
+        "leisure": "outdoor_seating"
+      }
+    },
+    {
+      "type": "way",
+      "id": 581289536,
+      "center": {
+        "lat": 12.9227409,
+        "lon": 77.498485
+      },
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian",
+        "leisure": "outdoor_seating"
+      }
+    },
+    {
+      "type": "way",
+      "id": 581289538,
+      "center": {
+        "lat": 12.9222112,
+        "lon": 77.4997878
+      },
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian",
+        "leisure": "outdoor_seating"
+      }
+    },
+    {
+      "type": "way",
+      "id": 581289540,
+      "center": {
+        "lat": 12.9237929,
+        "lon": 77.5004981
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "building": "yes",
+        "check_date": "2025-09-19",
+        "internet_access": "no",
+        "name": "MM Foods",
+        "name:bn": "এম এম ফুডস",
+        "payment:cash": "yes",
+        "payment:upi": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636268134,
+      "center": {
+        "lat": 12.9229593,
+        "lon": 77.4980661
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 665219921,
+      "center": {
+        "lat": 12.9264834,
+        "lon": 77.5017194
+      },
+      "tags": {
+        "amenity": "parking_space"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545687,
+      "center": {
+        "lat": 12.9223744,
+        "lon": 77.4989098
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545709,
+      "center": {
+        "lat": 12.9222969,
+        "lon": 77.4986562
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545710,
+      "center": {
+        "lat": 12.923012,
+        "lon": 77.4999864
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545711,
+      "center": {
+        "lat": 12.9246391,
+        "lon": 77.5006239
+      },
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Medical centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545719,
+      "center": {
+        "lat": 12.9244411,
+        "lon": 77.4968578
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Bangalore Integrated Management Academy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545728,
+      "center": {
+        "lat": 12.9240089,
+        "lon": 77.4990615
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545729,
+      "center": {
+        "lat": 12.923812,
+        "lon": 77.4985279
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695545730,
+      "center": {
+        "lat": 12.9235352,
+        "lon": 77.4982462
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726382792,
+      "center": {
+        "lat": 12.9201193,
+        "lon": 77.4883303
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "name": "Volleyball Court",
+        "name:kn": "ವಾಲಿಬಾಲ್ ಅಂಗಣ",
+        "sport": "volleyball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726464577,
+      "center": {
+        "lat": 12.9199516,
+        "lon": 77.4887636
+      },
+      "tags": {
+        "building": "yes",
+        "layer": "1",
+        "name": "Nandini Milk Parlor",
+        "name:kn": "ನಂದಿನಿ ಹಾಲಿನ ಅಂಗಡಿ",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726476899,
+      "center": {
+        "lat": 12.9191609,
+        "lon": 77.4909124
+      },
+      "tags": {
+        "building": "yes",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726511114,
+      "center": {
+        "lat": 12.9193183,
+        "lon": 77.490068
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Nandini Milk Parlor",
+        "name:kn": "ನಂದಿನಿ ಹಾಲಿನ ಅಂಗಡಿ",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726511404,
+      "center": {
+        "lat": 12.9192243,
+        "lon": 77.4900843
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Ganapathy Temple",
+        "name:kn": "ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726511541,
+      "center": {
+        "lat": 12.9196133,
+        "lon": 77.4910425
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726511875,
+      "center": {
+        "lat": 12.9204091,
+        "lon": 77.4907494
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726512742,
+      "center": {
+        "lat": 12.9200929,
+        "lon": 77.48844
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Tennis Bda",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726521045,
+      "center": {
+        "lat": 12.9117658,
+        "lon": 77.4938608
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 727261794,
+      "center": {
+        "lat": 12.9256305,
+        "lon": 77.5024295
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "Pattanagere",
+        "addr:street": "Pattanagere Main Road",
+        "amenity": "community_centre",
+        "building": "yes",
+        "name": "Poornima Palace Convention Center"
+      }
+    },
+    {
+      "type": "way",
+      "id": 727261795,
+      "center": {
+        "lat": 12.9264315,
+        "lon": 77.5013106
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡಿಯನ್ ಆಯಿಲ್"
+      }
+    },
+    {
+      "type": "way",
+      "id": 727261796,
+      "center": {
+        "lat": 12.9259635,
+        "lon": 77.5007714
+      },
+      "tags": {
+        "amenity": "fuel",
+        "name": "Reliance",
+        "name:kn": "ರಿಲಾಯನ್ಸ್",
+        "operator": "Reliance"
+      }
+    },
+    {
+      "type": "way",
+      "id": 729214193,
+      "center": {
+        "lat": 12.9109301,
+        "lon": 77.5124248
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 729214194,
+      "center": {
+        "lat": 12.9110479,
+        "lon": 77.5119091
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 766647229,
+      "center": {
+        "lat": 12.9324692,
+        "lon": 77.5102193
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770851392,
+      "center": {
+        "lat": 12.9252677,
+        "lon": 77.5044626
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housenumber": "40",
+        "addr:postcode": "560059",
+        "addr:street": "Pattanagere Main Road",
+        "amenity": "school",
+        "email": "contact@gaflschool.com",
+        "name": "Global Academy for Learning",
+        "phone": "+91 88804 00900",
+        "school:gender": "mixed",
+        "website": "https://www.gaflschool.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770851394,
+      "center": {
+        "lat": 12.9271874,
+        "lon": 77.5031264
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 780585968,
+      "center": {
+        "lat": 12.9265475,
+        "lon": 77.502219
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "name": "Metro Cash & Carry Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 780585969,
+      "center": {
+        "lat": 12.9261259,
+        "lon": 77.5018471
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "name": "Poornima Palace Convention Center Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 816978768,
+      "center": {
+        "lat": 12.9230141,
+        "lon": 77.4959523
+      },
+      "tags": {
+        "addr:housenumber": "Duvasapalya, Stage II, Kengeri Satellite Town, Bengaluru, Karnataka",
+        "addr:postcode": "560059",
+        "addr:street": "Bangalore-Mysore Road",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "regional;north_indian",
+        "name": "Chetan Dhaba"
+      }
+    },
+    {
+      "type": "way",
+      "id": 839366903,
+      "center": {
+        "lat": 12.9083557,
+        "lon": 77.5100482
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560059",
+        "addr:street": "4th Cross Road, Concord Garden City, RR Nagar",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Subramanya Swamy Temple",
+        "name:kn": "ಸುಬ್ರಮಣ್ಯ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1050584162,
+      "center": {
+        "lat": 12.9230209,
+        "lon": 77.4954283
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "78/2",
+        "addr:postcode": "560059",
+        "addr:street": "Bangalore-Mysore Road, Near RV College of Engineering, Valagerahalli",
+        "brand": "Kia",
+        "name": "PPS Kia Showroom Mysore Road",
+        "not:brand:wikidata": "Q35349",
+        "opening_hours": "Mo-Su 09:30-19:30",
+        "phone": "06309990010",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054822213,
+      "center": {
+        "lat": 12.9285885,
+        "lon": 77.5070206
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120154288,
+      "center": {
+        "lat": 12.9126949,
+        "lon": 77.5124865
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560098",
+        "addr:street": "Kenchenahalli Main Road",
+        "amenity": "school",
+        "education": "school",
+        "name": "Shri Jnanakshi Vidyaniketan",
+        "name:kn": "ಜ್ಞಾನಾಕ್ಷಿ ವಿದ್ಯಾನಿಕೇತನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157248001,
+      "center": {
+        "lat": 12.922681,
+        "lon": 77.4927976
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157248009,
+      "center": {
+        "lat": 12.9102556,
+        "lon": 77.4956636
+      },
+      "tags": {
+        "amenity": "monastery",
+        "fixme": "Boundaries of the area",
+        "landuse": "religious",
+        "name": "Sawan Durbar Ashram",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157248024,
+      "center": {
+        "lat": 12.9097857,
+        "lon": 77.4899319
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "St. Theresa's School",
+        "name:kn": "ಸಂತ ತೆರೇಸರ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1219569970,
+      "center": {
+        "lat": 12.9178655,
+        "lon": 77.4992311
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265724895,
+      "center": {
+        "lat": 12.9176608,
+        "lon": 77.5017965
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265724922,
+      "center": {
+        "lat": 12.91304,
+        "lon": 77.5073386
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265724925,
+      "center": {
+        "lat": 12.9095538,
+        "lon": 77.5097798
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286468175,
+      "center": {
+        "lat": 12.9247325,
+        "lon": 77.4993034
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "motorcycle_parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286468298,
+      "center": {
+        "lat": 12.9206857,
+        "lon": 77.4992256
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286468299,
+      "center": {
+        "lat": 12.9192586,
+        "lon": 77.4987668
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1292114855,
+      "center": {
+        "lat": 12.9248933,
+        "lon": 77.5043401
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1292114864,
+      "center": {
+        "lat": 12.925705,
+        "lon": 77.4988722
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1292114865,
+      "center": {
+        "lat": 12.9256357,
+        "lon": 77.4987226
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1292114867,
+      "center": {
+        "lat": 12.9251533,
+        "lon": 77.498206
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1313225783,
+      "center": {
+        "lat": 12.9251963,
+        "lon": 77.4998768
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "pitch",
+        "sport": "cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1313422263,
+      "center": {
+        "lat": 12.9234468,
+        "lon": 77.4997996
+      },
+      "tags": {
+        "building": "yes",
+        "check_date": "2025-09-19",
+        "name": "thoda aur",
+        "opening_hours": "Mo-Fr 09:00-18:30",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315658041,
+      "center": {
+        "lat": 12.9043124,
+        "lon": 77.5066365
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "name": "Indian Oil",
+        "name:kn": "ಇಂಡ್ಯನ್ ಆಯಿಲ್",
+        "source": "GPS"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315658042,
+      "center": {
+        "lat": 12.9042592,
+        "lon": 77.5075814
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum",
+        "self_service": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315659137,
+      "center": {
+        "lat": 12.9090263,
+        "lon": 77.5124855
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1315659143,
+      "center": {
+        "lat": 12.9111596,
+        "lon": 77.5096932
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Panchasheela Polytechnic School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1319007276,
+      "center": {
+        "lat": 12.9248941,
+        "lon": 77.500246
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1319007277,
+      "center": {
+        "lat": 12.9246031,
+        "lon": 77.4999293
+      },
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "covered": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1319007943,
+      "center": {
+        "lat": 12.9238999,
+        "lon": 77.4994157
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1327820764,
+      "center": {
+        "lat": 12.9220627,
+        "lon": 77.5011313
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341013551,
+      "center": {
+        "lat": 12.922564,
+        "lon": 77.4989944
+      },
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "capacity": "20"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1350416432,
+      "center": {
+        "lat": 12.9094652,
+        "lon": 77.5130242
+      },
+      "tags": {
+        "landuse": "retail",
+        "name": "YGR Signature Mall",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1365489282,
+      "center": {
+        "lat": 12.9085275,
+        "lon": 77.4875244
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378353242,
+      "center": {
+        "lat": 12.9133971,
+        "lon": 77.4850732
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428266426,
+      "center": {
+        "lat": 12.9245556,
+        "lon": 77.508896
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1447184203,
+      "center": {
+        "lat": 12.9041255,
+        "lon": 77.5086447
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "name": "Shell",
+        "self_service": "no"
+      }
+    }
+  ]
+}

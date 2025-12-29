@@ -1,0 +1,454 @@
+{
+  "area_name": "T.C Palya",
+  "osm_id": 19884586,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 33,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4446927760,
+      "lat": 13.0090882,
+      "lon": 77.6918556,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "107/2",
+        "addr:postcode": "560036",
+        "addr:street": "3rd Floor, Nishvasaha Centre, Opp. Traffic Police, Old Madras Road, K.R.Puram",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Nimi dental bangalore",
+        "phone": "080 2561 9979",
+        "source": "http://yellowpages.sulekha.com/",
+        "website": "https://practo.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448000087,
+      "lat": 13.0096231,
+      "lon": 77.6924713,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "107/2",
+        "addr:postcode": "560036",
+        "addr:street": "Nishvasaha Centre, Old Madras Main Road, Opposite-Traffic Police, Station, K R Puram",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Sri Ram Hospital",
+        "phone": "080 2561 0988",
+        "source": "http://bestofhealthindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489264498,
+      "lat": 13.0216092,
+      "lon": 77.6875751,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "#2",
+        "addr:postcode": "560016",
+        "addr:street": "Haji layout.TCPalya Main Road, ramamurthy nagar,",
+        "name": "Sportexx",
+        "opening_hours": "10:00-21:00",
+        "phone": "+919902700551",
+        "shop": "sports",
+        "website": "sportexx.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6945033191,
+      "lat": 13.0121705,
+      "lon": 77.6961802,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Opposite Syndicate Bank, Old Madras Road, Krihnarjapuram",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sri Ramakrishna Hospital, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6991350543,
+      "lat": 13.0080624,
+      "lon": 77.6848145,
+      "tags": {
+        "amenity": "school",
+        "name": "ITI Central School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6991375756,
+      "lat": 13.0096874,
+      "lon": 77.6828156,
+      "tags": {
+        "addr:street": "ITI Colony",
+        "amenity": "place_of_worship",
+        "name": "Raghavendra Swami Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6991508720,
+      "lat": 13.0070518,
+      "lon": 77.6862182,
+      "tags": {
+        "addr:street": "ITI Colony",
+        "amenity": "library",
+        "name": "ITI Library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131890,
+      "lat": 13.0241655,
+      "lon": 77.6915736,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Krishna Ayurvedic Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131895,
+      "lat": 13.024184,
+      "lon": 77.691392,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Anandpura, Krishnarajapura, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Smart Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131911,
+      "lat": 13.0239661,
+      "lon": 77.691932,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Anandapura, Battarahalli, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "GSR Dental & Health Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131912,
+      "lat": 13.0239342,
+      "lon": 77.6917622,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Anandapura, Battarahalli, Bengaluru",
+        "addr:postcode": "560036",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Amma Poly Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131933,
+      "lat": 13.0233824,
+      "lon": 77.6905904,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "P and T Layout, Jinkethimmanahalli, Battarahalli, Bengaluru",
+        "addr:postcode": "560049",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sri Vinayaka Child Care Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12122016301,
+      "lat": 13.0144859,
+      "lon": 77.6938792,
+      "tags": {
+        "addr:postcode": "560036",
+        "addr:street": "TC Palaya Road",
+        "amenity": "place_of_worship",
+        "name": "Shri Raghavendra Swamy Matha",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12960370743,
+      "lat": 13.0239786,
+      "lon": 77.6919984,
+      "tags": {
+        "brand": "Kanti Sweets",
+        "brand:wikidata": "Q124374180",
+        "check_date": "2025-06-29",
+        "name": "Kanti Sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12968864355,
+      "lat": 13.020096,
+      "lon": 77.6929133,
+      "tags": {
+        "access": "private",
+        "amenity": "charging_station",
+        "fee": "yes",
+        "motorcar": "yes",
+        "motorcycle": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13028433913,
+      "lat": 13.0239115,
+      "lon": 77.6944408,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Udupi Gokula"
+      }
+    },
+    {
+      "type": "way",
+      "id": 135078009,
+      "center": {
+        "lat": 13.008689,
+        "lon": 77.6921095
+      },
+      "tags": {
+        "amenity": "parking",
+        "capacity": "10"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188334989,
+      "center": {
+        "lat": 13.0076062,
+        "lon": 77.6846733
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "ITI Vidya Mandir School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188335588,
+      "center": {
+        "lat": 13.0082853,
+        "lon": 77.6857412
+      },
+      "tags": {
+        "access": "yes",
+        "leisure": "pitch",
+        "name": "ITI Hockey Field",
+        "sport": "hockey",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188335589,
+      "center": {
+        "lat": 13.0092969,
+        "lon": 77.6878827
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "ITI Cricket Ground",
+        "sport": "cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 679185382,
+      "center": {
+        "lat": 13.0175958,
+        "lon": 77.6955579
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "TC Palya Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 997869899,
+      "center": {
+        "lat": 13.0199145,
+        "lon": 77.6923907
+      },
+      "tags": {
+        "building": "yes",
+        "landuse": "retail",
+        "name": "Peoples Mart",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:phonepe": "yes",
+        "payment:rupay": "yes",
+        "payment:upi": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1313244894,
+      "center": {
+        "lat": 13.0222409,
+        "lon": 77.689256
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410389406,
+      "center": {
+        "lat": 13.0241648,
+        "lon": 77.694715
+      },
+      "tags": {
+        "amenity": "fuel",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410389508,
+      "center": {
+        "lat": 13.0103076,
+        "lon": 77.6820438
+      },
+      "tags": {
+        "addr:street": "Sy. No. 16 & 17, Ramamurthy Nagar Main Road",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "coco": "yes",
+        "name": "HP Petrol Bunk",
+        "name:kn": "ಹಿಂದುಸ್ತಾನ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "official_name": "Hindustan Petroleum",
+        "opening_hours": "Mo-Su 06:00-22:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411381104,
+      "center": {
+        "lat": 13.0217123,
+        "lon": 77.6947589
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411381105,
+      "center": {
+        "lat": 13.0190387,
+        "lon": 77.6925608
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411381108,
+      "center": {
+        "lat": 13.0196599,
+        "lon": 77.6926279
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411381109,
+      "center": {
+        "lat": 13.020127,
+        "lon": 77.6926159
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411381112,
+      "center": {
+        "lat": 13.0198391,
+        "lon": 77.6926192
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1412415473,
+      "center": {
+        "lat": 13.0146735,
+        "lon": 77.684606
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1412416162,
+      "center": {
+        "lat": 13.0154468,
+        "lon": 77.6857644
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1421739302,
+      "center": {
+        "lat": 13.0186192,
+        "lon": 77.6967944
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "name": "Meenakshi Temple",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

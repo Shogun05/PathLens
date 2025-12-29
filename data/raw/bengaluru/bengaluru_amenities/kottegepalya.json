@@ -1,0 +1,389 @@
+{
+  "area_name": "Kottegepalya",
+  "osm_id": 19884533,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 29,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1902558593,
+      "lat": 12.9775284,
+      "lon": 77.5175141,
+      "tags": {
+        "addr:housename": "DIVA Boutique",
+        "addr:housenumber": "No. 96",
+        "addr:postcode": "5600091",
+        "addr:street": "9th Cross, Malagala, Pattegara Palya Main Road",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4558031091,
+      "lat": 12.9876421,
+      "lon": 77.5151107,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240257724,
+      "lat": 12.9961764,
+      "lon": 77.5224254,
+      "tags": {
+        "name": "Royal Oak",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240257727,
+      "lat": 12.9951873,
+      "lon": 77.5219448,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "check_date": "2023-03-16",
+        "fuel:diesel": "yes",
+        "fuel:petrol": "yes",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "operator": "Bharat Petroleum",
+        "self_service": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654252350,
+      "lat": 12.9958863,
+      "lon": 77.5228518,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654252379,
+      "lat": 12.98113,
+      "lon": 77.5111923,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10738598991,
+      "lat": 12.9946331,
+      "lon": 77.5225363,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "check_date": "2023-03-16",
+        "name": "Indian Oil"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11278749468,
+      "lat": 12.9770095,
+      "lon": 77.5147033,
+      "tags": {
+        "name": "Crazy Bean Bag",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11278749493,
+      "lat": 12.9794977,
+      "lon": 77.5167002,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Indira Canteen",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "way",
+      "id": 143731427,
+      "center": {
+        "lat": 12.9909868,
+        "lon": 77.513684
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "National Institute of Unani Medicine"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785010682,
+      "center": {
+        "lat": 12.9899803,
+        "lon": 77.5136653
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785010718,
+      "center": {
+        "lat": 12.98941,
+        "lon": 77.513334
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 886184252,
+      "center": {
+        "lat": 12.9961678,
+        "lon": 77.5213994
+      },
+      "tags": {
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1064408610,
+      "center": {
+        "lat": 12.9843725,
+        "lon": 77.5171635
+      },
+      "tags": {
+        "alt_name": "Sumanahalli Society",
+        "amenity": "social_facility",
+        "full_name": "Sumanahalli Leprosy Rehabilitation Training Centre",
+        "healthcare": "rehabilitation",
+        "healthcare:speciality": "leprosy",
+        "name": "Sumanahalli",
+        "social_facility": "nursing_home",
+        "website": "https://sumanahalli.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120737746,
+      "center": {
+        "lat": 12.9961474,
+        "lon": 77.5194088
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "GAIL",
+        "fuel:cng": "yes",
+        "name": "GAIL",
+        "operator": "GAIL"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1207060129,
+      "center": {
+        "lat": 12.9710574,
+        "lon": 77.5160685
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217243765,
+      "center": {
+        "lat": 12.9755968,
+        "lon": 77.5143144
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217243769,
+      "center": {
+        "lat": 12.9803675,
+        "lon": 77.5179018
+      },
+      "tags": {
+        "amenity": "training",
+        "landuse": "education",
+        "name": "Bosco Life Skill Training Center"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217243770,
+      "center": {
+        "lat": 12.97968,
+        "lon": 77.5180802
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "St. Joseph's Convent High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1247976105,
+      "center": {
+        "lat": 12.9916237,
+        "lon": 77.5198011
+      },
+      "tags": {
+        "amenity": "theatre",
+        "name": "Babu Jagjivanram Auditorium & Training Centre",
+        "start_date": "2024"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1247976109,
+      "center": {
+        "lat": 12.9914713,
+        "lon": 77.520289
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1247976122,
+      "center": {
+        "lat": 12.9910315,
+        "lon": 77.5170909
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353417439,
+      "center": {
+        "lat": 12.9884579,
+        "lon": 77.5099068
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353417448,
+      "center": {
+        "lat": 12.9876579,
+        "lon": 77.5126638
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420066,
+      "center": {
+        "lat": 12.9824858,
+        "lon": 77.5128127
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "catholic",
+        "name": "St. Joseph Vaz Catholic Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390079382,
+      "center": {
+        "lat": 12.9832647,
+        "lon": 77.5110293
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390079390,
+      "center": {
+        "lat": 12.9813946,
+        "lon": 77.5165761
+      },
+      "tags": {
+        "amenity": "social_facility",
+        "name": "Sumanahalli Skill Development Center",
+        "social_facility": "nursing_home",
+        "website": "https://sumanahalli.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390079392,
+      "center": {
+        "lat": 12.9822558,
+        "lon": 77.516831
+      },
+      "tags": {
+        "amenity": "social_facility",
+        "name": "Sumanahalli Anugraha",
+        "social_facility": "nursing_home",
+        "website": "https://sumanahalli.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390079395,
+      "center": {
+        "lat": 12.9814926,
+        "lon": 77.5179695
+      },
+      "tags": {
+        "amenity": "social_facility",
+        "healthcare": "counselling",
+        "name": "Sumanahalli Support Community Care Center"
+      }
+    }
+  ]
+}

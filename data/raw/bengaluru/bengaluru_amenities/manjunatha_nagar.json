@@ -1,0 +1,365 @@
+{
+  "area_name": "Manjunatha Nagar",
+  "osm_id": 19883468,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 25,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 6939278605,
+      "lat": 13.0497108,
+      "lon": 77.5042903,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Old Widia School Stop,Hesarsghatta Main Road,Bhuvaneshwari Nagar,T. Dasarahalli",
+        "addr:postcode": "560057",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Deepak Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11933068755,
+      "lat": 13.0488907,
+      "lon": 77.5004202,
+      "tags": {
+        "addr:floor": "2",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "bar": "no",
+        "check_date": "2024-08-29",
+        "delivery": "no",
+        "diet:non-vegetarian": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "2",
+        "microbrewery": "no",
+        "name": "IKEA Restaurant",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11980088131,
+      "lat": 13.0494893,
+      "lon": 77.5006631,
+      "tags": {
+        "access": "permissive",
+        "addr:floor": "2",
+        "amenity": "toilets",
+        "check_date": "2024-08-29",
+        "level": "2",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110990,
+      "lat": 13.0480353,
+      "lon": 77.5008879,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "capacity": "20",
+        "name": "Trin Hub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110992,
+      "lat": 13.0477871,
+      "lon": 77.5008731,
+      "tags": {
+        "amenity": "taxi",
+        "name": "Pre Fixed Auto Fare Booth"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110993,
+      "lat": 13.0478883,
+      "lon": 77.5001335,
+      "tags": {
+        "access": "permissive",
+        "level": "1",
+        "name": "Madras Coffee House",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110994,
+      "lat": 13.0480673,
+      "lon": 77.5001764,
+      "tags": {
+        "access": "permissive",
+        "level": "1",
+        "name": "Go Desi",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110995,
+      "lat": 13.0481052,
+      "lon": 77.500045,
+      "tags": {
+        "access": "permissive",
+        "amenity": "vending_machine",
+        "level": "1",
+        "operator": "Vendo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11981110997,
+      "lat": 13.0482594,
+      "lon": 77.4996789,
+      "tags": {
+        "access": "permissive",
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "level": "1",
+        "operator": "State Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998985477,
+      "lat": 13.0479053,
+      "lon": 77.5006073,
+      "tags": {
+        "access": "permissive",
+        "amenity": "toilets",
+        "check_date": "2024-06-21",
+        "fee": "yes",
+        "female": "yes",
+        "level": "1",
+        "male": "yes",
+        "operator": "BMRCL",
+        "toilets:handwashing": "yes",
+        "toilets:position": "urinal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998985478,
+      "lat": 13.0480153,
+      "lon": 77.5005074,
+      "tags": {
+        "access": "permissive",
+        "amenity": "drinking_water",
+        "bottle": "yes",
+        "fee": "yes",
+        "indoor": "yes",
+        "level": "1",
+        "operator": "BMRCL"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12017302524,
+      "lat": 13.0473955,
+      "lon": 77.50291,
+      "tags": {
+        "amenity": "college",
+        "check_date": "2024-06-28",
+        "name": "Sacred Heart College of Nursing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12528580055,
+      "lat": 13.0486189,
+      "lon": 77.5076129,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560073",
+        "addr:street": "Hessarghatta Main Road,Bagalakunte",
+        "amenity": "veterinary",
+        "name": "Nandi Pet Clinic And Shop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12535763496,
+      "lat": 13.0497759,
+      "lon": 77.507496,
+      "tags": {
+        "amenity": "bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12535945312,
+      "lat": 13.0481604,
+      "lon": 77.5077186,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sharma Family Dhaba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12535945313,
+      "lat": 13.048088,
+      "lon": 77.5076993,
+      "tags": {
+        "name": "BAJRANG STEEL FABRICATION",
+        "shop": "doityourself"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133117196,
+      "center": {
+        "lat": 13.0491979,
+        "lon": 77.5054344
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Soundarya School",
+        "name:kn": "ಸೌಂದರ್ಯ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 660403104,
+      "center": {
+        "lat": 13.0492751,
+        "lon": 77.5003507
+      },
+      "tags": {
+        "addr:street": "Tumkur Road",
+        "air_conditioning": "yes",
+        "brand": "IKEA",
+        "brand:wikidata": "Q54078",
+        "check_date": "2024-08-29",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "landuse": "retail",
+        "name": "IKEA",
+        "name:kn": "ಇಕೇಯ",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "IKEA",
+        "phone": "1800 419 45 32",
+        "shop": "furniture",
+        "stroller": "yes",
+        "toilets": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781538787,
+      "center": {
+        "lat": 13.0532657,
+        "lon": 77.4965581
+      },
+      "tags": {
+        "amenity": "college",
+        "landuse": "industrial",
+        "name": "Karnataka State Labour Institute"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781538791,
+      "center": {
+        "lat": 13.0482907,
+        "lon": 77.5001797
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "name": "Nagasandra Metro Station Parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785258899,
+      "center": {
+        "lat": 13.0489233,
+        "lon": 77.5042602
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Ramaiah Park",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:type": "government",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1073073120,
+      "center": {
+        "lat": 13.0463371,
+        "lon": 77.5065296
+      },
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Prakriya Hospital",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1073073121,
+      "center": {
+        "lat": 13.0457876,
+        "lon": 77.5072216
+      },
+      "tags": {
+        "amenity": "fuel",
+        "operator": "IBP"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202361051,
+      "center": {
+        "lat": 13.0478683,
+        "lon": 77.5039861
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Ramaiah Park",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:type": "government",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281206632,
+      "center": {
+        "lat": 13.0510604,
+        "lon": 77.5016177
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Widia Poornaprajna School"
+      }
+    }
+  ]
+}

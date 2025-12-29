@@ -1,0 +1,1090 @@
+{
+  "area_name": "Kudlu",
+  "osm_id": 3305446529,
+  "osm_type": "node",
+  "place_type": "suburb",
+  "amenity_count": 82,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4057972757,
+      "lat": 12.8918648,
+      "lon": 77.6496129,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5370990299,
+      "lat": 12.8853147,
+      "lon": 77.6560561,
+      "tags": {
+        "name": "Safa Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6745841071,
+      "lat": 12.8821255,
+      "lon": 77.6559921,
+      "tags": {
+        "addr:place": "Parappana Agrahara",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Shree Vidyanikethan",
+        "name:kn": "ಶ್ರೀ ವಿದ್ಯಾನಿಕೇತನ, ಪರಪ್ಪನ ಅಗ್ರಹಾರ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6745848093,
+      "lat": 12.8817347,
+      "lon": 77.6597705,
+      "tags": {
+        "addr:place": "Parappana Agrahara",
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "GLPS Parappana Agrahara",
+        "name:kn": "ಸರ್ಕಾರಿ ಕಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಪರಪ್ಪನ ಅಗ್ರಹಾರ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572669027,
+      "lat": 12.8859649,
+      "lon": 77.6489078,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "AECS Layout, Kudlu",
+        "addr:postcode": "560068",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Hospitec Multispeciality Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572669033,
+      "lat": 12.88515,
+      "lon": 77.64925,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "AECS Layout, Singasandra, Bengaluru",
+        "addr:postcode": "560068",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "check_date": "2024-10-20",
+        "name": "Madni Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572669058,
+      "lat": 12.8875348,
+      "lon": 77.6496807,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "AECS Layout, Singasandra, Bengaluru",
+        "addr:postcode": "560068",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Vita Family Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187964181,
+      "lat": 12.88485,
+      "lon": 77.650304,
+      "tags": {
+        "addr:full": "1066, A Blk, AECS Layout, Hosur Main Rd, Singasandra, AECS Layout - A Block, AECS Layout, Singasandra, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್. ಡಿ. ಎಫ್. ಸಿ. ಬ್ಯಾಂಕ್",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10683877995,
+      "lat": 12.8947657,
+      "lon": 77.6615988,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian;chinese;sandwich;american",
+        "diet:non-vegetarian": "yes",
+        "diet:vegetarian": "yes",
+        "level": "1",
+        "name": "Birbal Biryani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10683921044,
+      "lat": 12.8952056,
+      "lon": 77.6573307,
+      "tags": {
+        "air_conditioning": "yes",
+        "check_date": "2025-02-12",
+        "clothes": "women;men;children",
+        "level": "0",
+        "name": "Reliance Trends",
+        "operator": "Reliance",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "second_hand": "no",
+        "shop": "clothes",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10683921045,
+      "lat": 12.8950025,
+      "lon": 77.6572377,
+      "tags": {
+        "check_date": "2024-09-18",
+        "level": "0",
+        "name": "Reliance Digital",
+        "operator": "Reliance",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "appliance",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10683921046,
+      "lat": 12.8951857,
+      "lon": 77.656994,
+      "tags": {
+        "check_date": "2025-02-12",
+        "level": "0;1",
+        "name": "Reliance Smart Superstore",
+        "operator": "Reliance",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10683921047,
+      "lat": 12.8952727,
+      "lon": 77.6570219,
+      "tags": {
+        "amenity": "cinema",
+        "check_date": "2024-09-18",
+        "level": "2;3",
+        "name": "Cinephile 4K Multiplex",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "screen": "4",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685007738,
+      "lat": 12.8947279,
+      "lon": 77.6614484,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "indian",
+        "level": "0",
+        "name": "Gopal Jee Cafe",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685007743,
+      "lat": 12.8946577,
+      "lon": 77.6602471,
+      "tags": {
+        "level": "0",
+        "name": "My Chicken",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685007744,
+      "lat": 12.8946628,
+      "lon": 77.6601917,
+      "tags": {
+        "level": "1",
+        "name": "Gentleman Hair Studio",
+        "shop": "hairdresser",
+        "unisex": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685053923,
+      "lat": 12.8950894,
+      "lon": 77.6615924,
+      "tags": {
+        "amenity": "kindergarten",
+        "level": "0",
+        "name": "Koala Preschool",
+        "preschool": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685053924,
+      "lat": 12.8950121,
+      "lon": 77.6615985,
+      "tags": {
+        "level": "1",
+        "name": "Midas Touch",
+        "shop": "hairdresser",
+        "unisex": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685053925,
+      "lat": 12.8950745,
+      "lon": 77.6615909,
+      "tags": {
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "level": "1",
+        "name": "Creative Smiles"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685053926,
+      "lat": 12.894727,
+      "lon": 77.6616046,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "level": "0",
+        "name": "Geronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685053927,
+      "lat": 12.8947315,
+      "lon": 77.6615482,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "level": "0",
+        "name": "Geronics Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10685053928,
+      "lat": 12.8947805,
+      "lon": 77.6615315,
+      "tags": {
+        "leisure": "fitness_centre",
+        "level": "3",
+        "name": "Fit City Gym"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11136669670,
+      "lat": 12.8947448,
+      "lon": 77.6614264,
+      "tags": {
+        "female": "yes",
+        "level": "1",
+        "male": "yes",
+        "name": "Tony and Guy",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11136746017,
+      "lat": 12.8943447,
+      "lon": 77.6571511,
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Ramdev Medicals",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11700164026,
+      "lat": 12.8804891,
+      "lon": 77.6552588,
+      "tags": {
+        "addr:city": "Electronic city post",
+        "addr:housenumber": "13-14/1",
+        "addr:postcode": "560100",
+        "addr:street": "Haralur Road",
+        "amenity": "hospital",
+        "healthcare": "dentist",
+        "healthcare:speciality": "dentist",
+        "name": "Smile Smart Dental & Implant Centre",
+        "operator": "Smile Smart Dental",
+        "operator:type": "private"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11836691638,
+      "lat": 12.8936429,
+      "lon": 77.6574086,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11836691643,
+      "lat": 12.8931242,
+      "lon": 77.6564222,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12230072796,
+      "lat": 12.8806782,
+      "lon": 77.6525736,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Singasandra",
+        "addr:postcode": "560068",
+        "addr:street": "AECS Layout Main Road",
+        "amenity": "cafe",
+        "cuisine": "tea;indian",
+        "internet_access": "no",
+        "name": "Tealogy",
+        "opening_hours": "Mo-Su 10:00-22:30",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:google_pay": "yes",
+        "payment:upi": "yes",
+        "payment:upi_qr": "yes",
+        "takeaway": "yes",
+        "website": "https://tealogy.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12230142463,
+      "lat": 12.8806944,
+      "lon": 77.6529533,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "name": "Bank of Baroda",
+        "operator": "Bank of Baroda"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12230142464,
+      "lat": 12.8806874,
+      "lon": 77.6529435,
+      "tags": {
+        "amenity": "post_office",
+        "brand": "Blue Dart Express",
+        "brand:short": "Blue Dart",
+        "brand:wikidata": "Q54621493",
+        "name": "Blue Dart",
+        "operator": "Blue Dart Express",
+        "operator:short": "Blue Dart",
+        "operator:wikidata": "Q54621493"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12270754754,
+      "lat": 12.8827544,
+      "lon": 77.6503642,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "check_date": "2024-10-20",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12270754755,
+      "lat": 12.8841477,
+      "lon": 77.6492549,
+      "tags": {
+        "amenity": "hospital",
+        "check_date": "2024-10-20",
+        "healthcare": "hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12270754756,
+      "lat": 12.8859463,
+      "lon": 77.6495484,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-10-20",
+        "healthcare": "pharmacy",
+        "name": "SS Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12270754757,
+      "lat": 12.8892622,
+      "lon": 77.6505317,
+      "tags": {
+        "amenity": "hospital",
+        "check_date": "2024-10-20",
+        "healthcare": "hospital",
+        "name": "Raksha Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12270754758,
+      "lat": 12.8890673,
+      "lon": 77.6512336,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-10-20",
+        "healthcare": "pharmacy",
+        "name": "Sri Manjunatha Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12270754759,
+      "lat": 12.8891007,
+      "lon": 77.6520774,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-10-20",
+        "healthcare": "pharmacy",
+        "name": "Keshav Medical & General Store",
+        "opening_hours": "10:00-14:00,17:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522252573,
+      "lat": 12.8940089,
+      "lon": 77.6558713,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560102",
+        "addr:street": "Kudlu Rd, Reliable Tranquil Layout",
+        "air_conditioning": "yes",
+        "check_date": "2025-02-12",
+        "name": "Freshco Hyperbazaar",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "second_hand": "no",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12580943038,
+      "lat": 12.8930856,
+      "lon": 77.6532067,
+      "tags": {
+        "leisure": "pitch",
+        "source": "survey",
+        "sport": "badminton"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12580943039,
+      "lat": 12.8968052,
+      "lon": 77.6584541,
+      "tags": {
+        "amenity": "bank",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-02-12",
+        "name": "HDFC Bank",
+        "short_name": "HDFC",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12580943040,
+      "lat": 12.8967568,
+      "lon": 77.6584355,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-02-12",
+        "name": "HDFC Bank",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144331983,
+      "lat": 12.8931163,
+      "lon": 77.6607911,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144331984,
+      "lat": 12.8943811,
+      "lon": 77.6605819,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332086,
+      "lat": 12.8911606,
+      "lon": 77.659674,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332088,
+      "lat": 12.8907514,
+      "lon": 77.6597048,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332220,
+      "lat": 12.8914482,
+      "lon": 77.6603392,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332221,
+      "lat": 12.8915084,
+      "lon": 77.659961,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332224,
+      "lat": 12.8936942,
+      "lon": 77.6604465,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332677,
+      "lat": 12.8926385,
+      "lon": 77.6575148,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332682,
+      "lat": 12.8929202,
+      "lon": 77.6575229,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13144332686,
+      "lat": 12.893717,
+      "lon": 77.6578843,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 140868992,
+      "center": {
+        "lat": 12.888835,
+        "lon": 77.6625981
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Sadhguru Sainath International School and College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 412929455,
+      "center": {
+        "lat": 12.8943151,
+        "lon": 77.6486824
+      },
+      "tags": {
+        "amenity": "crematorium",
+        "landuse": "cemetery",
+        "name": "Kudlu Crematorium"
+      }
+    },
+    {
+      "type": "way",
+      "id": 855740610,
+      "center": {
+        "lat": 12.8961021,
+        "lon": 77.6499664
+      },
+      "tags": {
+        "building": "yes",
+        "shop": "storage_rental"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1148303801,
+      "center": {
+        "lat": 12.8951331,
+        "lon": 77.6571353
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "4",
+        "name": "PNR Felicity",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1148303802,
+      "center": {
+        "lat": 12.8949264,
+        "lon": 77.65702
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "fee": "yes",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1148303803,
+      "center": {
+        "lat": 12.8953905,
+        "lon": 77.6572284
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "fee": "yes",
+        "parking": "surface",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267842313,
+      "center": {
+        "lat": 12.8859026,
+        "lon": 77.65116
+      },
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "name": "Kalanikethan School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1274793360,
+      "center": {
+        "lat": 12.8921805,
+        "lon": 77.6560731
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1305166692,
+      "center": {
+        "lat": 12.8819721,
+        "lon": 77.6530013
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1305166693,
+      "center": {
+        "lat": 12.8815191,
+        "lon": 77.6527274
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-10-20",
+        "landuse": "religious",
+        "name": "Shree Mahaganapathi Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1419979521,
+      "center": {
+        "lat": 12.8854602,
+        "lon": 77.6545057
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1419979527,
+      "center": {
+        "lat": 12.8909155,
+        "lon": 77.6511482
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1419979528,
+      "center": {
+        "lat": 12.8894678,
+        "lon": 77.6498951
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422822765,
+      "center": {
+        "lat": 12.8966894,
+        "lon": 77.6561564
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941615,
+      "center": {
+        "lat": 12.8940961,
+        "lon": 77.6628554
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941616,
+      "center": {
+        "lat": 12.8941376,
+        "lon": 77.6626146
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941617,
+      "center": {
+        "lat": 12.8936392,
+        "lon": 77.6625953
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "chess"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941619,
+      "center": {
+        "lat": 12.8937894,
+        "lon": 77.6605276
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941621,
+      "center": {
+        "lat": 12.8935063,
+        "lon": 77.6606761
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941622,
+      "center": {
+        "lat": 12.8933402,
+        "lon": 77.6612504
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941625,
+      "center": {
+        "lat": 12.8923741,
+        "lon": 77.6610964
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941626,
+      "center": {
+        "lat": 12.8923172,
+        "lon": 77.6614801
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941627,
+      "center": {
+        "lat": 12.8915243,
+        "lon": 77.6604773
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941644,
+      "center": {
+        "lat": 12.8923437,
+        "lon": 77.6609239
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941647,
+      "center": {
+        "lat": 12.8939837,
+        "lon": 77.6592834
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941648,
+      "center": {
+        "lat": 12.8937869,
+        "lon": 77.6586275
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941649,
+      "center": {
+        "lat": 12.893473,
+        "lon": 77.6583932
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "badminton"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941650,
+      "center": {
+        "lat": 12.8930837,
+        "lon": 77.65875
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941653,
+      "center": {
+        "lat": 12.8933889,
+        "lon": 77.6570066
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941658,
+      "center": {
+        "lat": 12.8924608,
+        "lon": 77.657406
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941659,
+      "center": {
+        "lat": 12.8927323,
+        "lon": 77.6580462
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429941660,
+      "center": {
+        "lat": 12.8933851,
+        "lon": 77.6581303
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    }
+  ]
+}

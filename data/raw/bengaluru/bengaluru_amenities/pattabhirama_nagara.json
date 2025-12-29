@@ -1,0 +1,3290 @@
+{
+  "area_name": "Pattabhirama Nagara",
+  "osm_id": 19883452,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 255,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 364629322,
+      "lat": 12.9224908,
+      "lon": 77.576528,
+      "tags": {
+        "amenity": "post_office",
+        "name:kn": "ಅಂಚೆ ಕಛೇರಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 364629422,
+      "lat": 12.9207173,
+      "lon": 77.5745968,
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "amenity": "hospital",
+        "name": "JBS Hospital",
+        "name:kn": "ಜೆ ಬಿ ಎಸ್ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 364629579,
+      "lat": 12.9232772,
+      "lon": 77.5819096,
+      "tags": {
+        "amenity": "veterinary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 364629734,
+      "lat": 12.9231684,
+      "lon": 77.584433,
+      "tags": {
+        "amenity": "hospital",
+        "check_date": "2025-01-11",
+        "healthcare": "hospital",
+        "name": "Jayanagar heart Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 524078312,
+      "lat": 12.9172203,
+      "lon": 77.5923138,
+      "tags": {
+        "addr:street": "Marenahalli Road",
+        "brand": "Big Bazaar",
+        "brand:wikidata": "Q3631008",
+        "brand:wikipedia": "en:Big Bazaar",
+        "check_date": "2023-12-04",
+        "name": "Smart Bazaar",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1015924248,
+      "lat": 12.9217736,
+      "lon": 77.5925109,
+      "tags": {
+        "amenity": "school",
+        "name": "Holy Saint English School",
+        "name:kn": "ಹೊಲಿ ಸೆಂಟ್ ಆಂಗ್ಲ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1015924294,
+      "lat": 12.9229013,
+      "lon": 77.5816474,
+      "tags": {
+        "amenity": "school",
+        "name": "Good Shepherd School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463753949,
+      "lat": 12.9165317,
+      "lon": 77.5923697,
+      "tags": {
+        "brand": "Pantaloons",
+        "brand:wikidata": "Q7131643",
+        "name": "Pantaloons Onloop",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463768384,
+      "lat": 12.9177491,
+      "lon": 77.5924251,
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "designation": "Ganapati Temple",
+        "name": "Ganapati Temple",
+        "name:kn": "ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463769765,
+      "lat": 12.9168759,
+      "lon": 77.5903866,
+      "tags": {
+        "name": "Karnataka Hardware Shop",
+        "shop": "doityourself"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463771768,
+      "lat": 12.9162428,
+      "lon": 77.592424,
+      "tags": {
+        "amenity": "cinema",
+        "brand": "INOX Leisure",
+        "brand:wikidata": "Q5972349",
+        "name": "Inox",
+        "short_name": "INOX"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465122303,
+      "lat": 12.9166102,
+      "lon": 77.5914577,
+      "tags": {
+        "addr:floor": "0",
+        "amenity": "restaurant",
+        "check_date": "2023-11-29",
+        "level": "0",
+        "name": "Shiv Sagar Signature"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465122307,
+      "lat": 12.9153417,
+      "lon": 77.5948673,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "SLV",
+        "name:kn": "ಎಸ್ಎಲ್‌ವಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465122309,
+      "lat": 12.9163528,
+      "lon": 77.5921287,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Food Court"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465122324,
+      "lat": 12.9165527,
+      "lon": 77.5921175,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:ur": "مکڈونلڈز",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:wikipedia:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:wikipedia:ur": "مکڈونلڈز",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "name:kn": "ಮ್ಯಾಕ್‌ಡೊನಾಲ್ಡ್ಸ್",
+        "name:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "name:ur": "مکڈونلڈز",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465122326,
+      "lat": 12.9162325,
+      "lon": 77.5949182,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೋಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1466661277,
+      "lat": 12.9193402,
+      "lon": 77.5926135,
+      "tags": {
+        "addr:postcode": "560041",
+        "amenity": "post_office",
+        "name": "Post Office, Jayanagar 9th Block"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1467149940,
+      "lat": 12.9175358,
+      "lon": 77.5934343,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೋಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1467155166,
+      "lat": 12.9166557,
+      "lon": 77.5913219,
+      "tags": {
+        "brand": "Cromā",
+        "brand:wikidata": "Q5187683",
+        "name": "Cromā",
+        "shop": "electronics",
+        "website": "http://www.cromaretail.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473882300,
+      "lat": 12.9201877,
+      "lon": 77.574944,
+      "tags": {
+        "amenity": "cafe",
+        "name": "CCD"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474274261,
+      "lat": 12.9231887,
+      "lon": 77.585319,
+      "tags": {
+        "name": "Limelight",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474274262,
+      "lat": 12.9232135,
+      "lon": 77.5850336,
+      "tags": {
+        "name": "Namdhari's Fresh",
+        "opening_hours": "Mo-Sa 00:00-24:00+",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474784772,
+      "lat": 12.9218725,
+      "lon": 77.5857558,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "building": "public",
+        "name": "State Bank of India",
+        "name:kn": "ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್ ಆಫ್ ಇಂಡಿಯಾ",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474790102,
+      "lat": 12.9198472,
+      "lon": 77.5782896,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Syndicate Bank",
+        "brand:wikidata": "Q2004088",
+        "name": "Syndicate Bank",
+        "name:en": "Syndicate Bank",
+        "name:kn": "ಸಿಂಡಿಕೇಟ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.syndicatebank.in",
+        "wikimedia_commons": "Category:Syndicate Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474800468,
+      "lat": 12.9172523,
+      "lon": 77.5821549,
+      "tags": {
+        "name": "Nalli Silks",
+        "name:kn": "ನಳ್ಳಿ ಸಿಲ್ಕ್ಸ್",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1620352034,
+      "lat": 12.9220691,
+      "lon": 77.5755122,
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "amenity": "school",
+        "building": "school",
+        "name": "JSS Composite PU College",
+        "name:kn": "ಜೆಎಸ್ಎಸ್ ಸಂಯುಕ್ತ ಪದವಿಪೂರ್ವ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1657125038,
+      "lat": 12.9209676,
+      "lon": 77.5892115,
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1666757194,
+      "lat": 12.9197167,
+      "lon": 77.5753405,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "504, 40th Cross Road, Jayanagar",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "addr:street": "40th Cross Road",
+        "addr:subdistrict": "Jayanagar",
+        "amenity": "clinic",
+        "designation": "Medical Director",
+        "email": "nfo@prabhaeyeclinic.com",
+        "emergency": "yes",
+        "name": "Prabha Eye Clinic and Research Centre",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.prabhaeyeclinic.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1741779229,
+      "lat": 12.9170457,
+      "lon": 77.5931523,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Raghavendra Upahara",
+        "name:kn": "ರಾಘವೇಂದ್ರ ಉಪಹಾರ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1761876546,
+      "lat": 12.9179899,
+      "lon": 77.5920869,
+      "tags": {
+        "amenity": "school",
+        "name": "Jain Animation School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1761883485,
+      "lat": 12.9156658,
+      "lon": 77.5902764,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Jumbo Kids"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1761883513,
+      "lat": 12.915569,
+      "lon": 77.5902817,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Podar Happy Kids"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1763231466,
+      "lat": 12.9166803,
+      "lon": 77.5898443,
+      "tags": {
+        "addr:housename": "Pai Comforts",
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Pai Princess",
+        "name:kn": "ಪೈ ಪ್ರಿನ್ಸೆಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1782771941,
+      "lat": 12.9173594,
+      "lon": 77.5931667,
+      "tags": {
+        "addr:housenumber": "1225",
+        "addr:postcode": "560069",
+        "addr:street": "26th Main",
+        "amenity": "ice_cream",
+        "brand": "Corner House",
+        "cuisine": "ice_cream",
+        "delivery": "yes",
+        "name": "Corner House",
+        "takeaway": "yes",
+        "website": "https://cornerhouse.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1782771944,
+      "lat": 12.9170404,
+      "lon": 77.5934403,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "UpSouth",
+        "name:kn": "ಅಪ್‌ಸೌತ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1825083221,
+      "lat": 12.9220228,
+      "lon": 77.59341,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "brand:wikipedia": "en:Corporation Bank",
+        "name": "Corporation Bank",
+        "name:en": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್",
+        "website": "https://corpbank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1825094198,
+      "lat": 12.9230771,
+      "lon": 77.5932944,
+      "tags": {
+        "name": "Cakewalla",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1825094241,
+      "lat": 12.9230467,
+      "lon": 77.593202,
+      "tags": {
+        "amenity": "restaurant",
+        "level": "5",
+        "name": "Eeshanya",
+        "name:kn": "ಈಶಾನ್ಯ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2649085491,
+      "lat": 12.9228822,
+      "lon": 77.5849781,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "ice_cream",
+        "name": "Corner House",
+        "name:kn": "ಕಾರ್ನರ್ ಹೌಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2649089251,
+      "lat": 12.9198922,
+      "lon": 77.5900138,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "indian",
+        "name": "Ace Iyengar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2649089252,
+      "lat": 12.9218455,
+      "lon": 77.5854901,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560041",
+        "addr:street": "38th Cross Road",
+        "alt_name": "A2B",
+        "amenity": "restaurant",
+        "brand": "Adyar Ananda Bhavan",
+        "brand:wikidata": "Q15178238",
+        "cuisine": "regional",
+        "diet:vegetarian": "only",
+        "name": "Adyar Ananda Bhavan",
+        "name:kn": "ಆದ್ಯಾರ್ ಆನಂದ ಭವನ",
+        "operator": "Adyar Ananda Bhavan",
+        "phone": "+91 80 4167 3999",
+        "shop": "confectionery",
+        "website": "https://aabsweets.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2649089254,
+      "lat": 12.9218091,
+      "lon": 77.5893861,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "cuisine": "coffee_shop",
+        "name": "Cafe Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2649089263,
+      "lat": 12.9198895,
+      "lon": 77.5848457,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677314922,
+      "lat": 12.9204407,
+      "lon": 77.5835732,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Indian Overseas Bank",
+        "brand:wikidata": "Q2003611",
+        "brand:wikipedia": "en:Indian Overseas Bank",
+        "name": "Indian Overseas Bank",
+        "name:en": "Indian Overseas Bank",
+        "name:kn": "ಐ ಓ ಬಿ",
+        "operator": "Indian Overseas Bank",
+        "short_name": "IOB",
+        "website": "https://www.iob.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677337434,
+      "lat": 12.9215679,
+      "lon": 77.5849814,
+      "tags": {
+        "brand": "HOPCOMS",
+        "brand:wikidata": "Q22908959",
+        "name": "HOPCOMS",
+        "name:kn": "ಹಾಪ್ ಕಾಮ್ಸ್",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677337436,
+      "lat": 12.9216373,
+      "lon": 77.5849783,
+      "tags": {
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "name": "Nandini",
+        "name:kn": "ನಂದಿನಿ ಹಾಲಿನ ಅಂಗಡಿ",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677342250,
+      "lat": 12.9210453,
+      "lon": 77.5835608,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Athithyam"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677362270,
+      "lat": 12.9200207,
+      "lon": 77.5811039,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677362271,
+      "lat": 12.9200199,
+      "lon": 77.5810595,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677364298,
+      "lat": 12.921123,
+      "lon": 77.5812781,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Euro Kids"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2934044444,
+      "lat": 12.9156738,
+      "lon": 77.5967485,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2934044446,
+      "lat": 12.9162927,
+      "lon": 77.5966944,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Indian Overseas Bank",
+        "brand:wikidata": "Q2003611",
+        "brand:wikipedia": "en:Indian Overseas Bank",
+        "name": "Indian Overseas Bank",
+        "name:en": "Indian Overseas Bank",
+        "short_name": "IOB",
+        "website": "https://www.iob.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2934044449,
+      "lat": 12.9166518,
+      "lon": 77.5967457,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Ujjivan Small Finance Bank",
+        "brand:wikidata": "Q42529272",
+        "check_date": "2023-11-28",
+        "name": "Ujjivan Small Finance Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2934044450,
+      "lat": 12.9158974,
+      "lon": 77.5967626,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "The Pongal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2934044451,
+      "lat": 12.9159963,
+      "lon": 77.5967482,
+      "tags": {
+        "shop": "printer_ink"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3072185609,
+      "lat": 12.9155512,
+      "lon": 77.5951874,
+      "tags": {
+        "name": "Cake Art",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3072185610,
+      "lat": 12.9140657,
+      "lon": 77.5949385,
+      "tags": {
+        "amenity": "bank",
+        "atm": "no",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "operator": "ICICI Bank",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3072185611,
+      "lat": 12.9149192,
+      "lon": 77.5951905,
+      "tags": {
+        "name": "Lakme Salon",
+        "shop": "beauty",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3208547242,
+      "lat": 12.9226172,
+      "lon": 77.5932227,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Taaza Tindi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3221380822,
+      "lat": 12.914181,
+      "lon": 77.5949195,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Andhra Bank",
+        "brand:wikidata": "Q2003476",
+        "brand:wikipedia": "en:Andhra Bank",
+        "name": "Andhra Bank",
+        "name:en": "Andhra Bank",
+        "name:kn": "ಆಂಧ್ರ ಬ್ಯಾಂಕ್",
+        "operator": "Andhra Bank",
+        "website": "https://www.andhrabank.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3221387166,
+      "lat": 12.9156159,
+      "lon": 77.5951971,
+      "tags": {
+        "name": "Kunchum Foods",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3221387167,
+      "lat": 12.9160519,
+      "lon": 77.5951937,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "US Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3221387168,
+      "lat": 12.9138048,
+      "lon": 77.5951113,
+      "tags": {
+        "amenity": "post_box",
+        "name": "Post Office",
+        "name:kn": "ಅಂಚೆ ಕಛೇರಿ",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3450259414,
+      "lat": 12.9172738,
+      "lon": 77.5804687,
+      "tags": {
+        "amenity": "post_box",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3509485568,
+      "lat": 12.9175165,
+      "lon": 77.5780372,
+      "tags": {
+        "amenity": "bank",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3719546577,
+      "lat": 12.9227933,
+      "lon": 77.5835861,
+      "tags": {
+        "amenity": "bank",
+        "atm": "no",
+        "brand": "Dena Bank",
+        "brand:wikidata": "Q3595747",
+        "brand:wikipedia": "en:Dena Bank",
+        "name": "Dena Bank",
+        "name:en": "Dena Bank",
+        "name:kn": "ದೇನ ಬ್ಯಾಂಕ್",
+        "website": "http://www.denabank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3836771261,
+      "lat": 12.9167244,
+      "lon": 77.5897233,
+      "tags": {
+        "brand": "Honda",
+        "brand:wikidata": "Q9584",
+        "level": "0-1",
+        "name": "Honda",
+        "name:kn": "ಹೊಂಡ",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197698507,
+      "lat": 12.9164337,
+      "lon": 77.5950331,
+      "tags": {
+        "name": "New Karnataka Hardware",
+        "shop": "hardware",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4358561702,
+      "lat": 12.9221578,
+      "lon": 77.576215,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Madhura Bhavan",
+        "name:kn": "ಮದುರ ಭವನ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4358561703,
+      "lat": 12.9232169,
+      "lon": 77.5766524,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Syndicate Bank",
+        "brand:wikidata": "Q2004088",
+        "name": "Syndicate Bank",
+        "name:en": "Syndicate Bank",
+        "name:kn": "ಸಿಂಡಿಕೇಟ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.syndicatebank.in",
+        "wikimedia_commons": "Category:Syndicate Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4360018599,
+      "lat": 12.9172779,
+      "lon": 77.580441,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446991305,
+      "lat": 12.9231418,
+      "lon": 77.590042,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "#1524/29",
+        "addr:postcode": "560069",
+        "addr:street": "36 A Cross Road, 4th T Block East, Jayanagara",
+        "amenity": "pharmacy",
+        "drive_through": "yes",
+        "healthcare": "pharmacy",
+        "name": "Lifeken Medicines",
+        "name:kn": "ಲೈಫ್‌ಕೆನ್ ಮೆಡಿಸಿನ್ಸ್",
+        "phone": "080 2295 6229",
+        "source": "http://bestofhealthindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447006972,
+      "lat": 12.9207711,
+      "lon": 77.5867591,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "#650",
+        "addr:postcode": "560041",
+        "addr:street": "14 Main, 4th T Block East, Pattabhirama Nagar, Jayanagara",
+        "amenity": "clinic",
+        "name": "Sun Diagnostic Laboratory",
+        "phone": "080 4095 9529",
+        "source": "http://www.justdial.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4455261200,
+      "lat": 12.9176041,
+      "lon": 77.5927545,
+      "tags": {
+        "addr:street": "25th Main",
+        "name": "Lassi",
+        "name:en": "Lassi",
+        "shop": "beverages"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4487317090,
+      "lat": 12.9164396,
+      "lon": 77.5925822,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560078",
+        "addr:street": "South End C Cross",
+        "brand": "Puma",
+        "brand:wikidata": "Q157064",
+        "brand:wikipedia": "en:Puma (brand)",
+        "name": "Puma",
+        "name:kn": "ಪೂಮ",
+        "phone": "081422 75227",
+        "shop": "clothes",
+        "website": "https://in.puma.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488575257,
+      "lat": 12.9178704,
+      "lon": 77.577718,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "Marenahalli Rd, 8th Block",
+        "addr:postcode": "560070",
+        "addr:street": "Marenahalli Road",
+        "leisure": "sports_centre",
+        "name": "Total Fitness",
+        "opening_hours": "5:30-22:00",
+        "phone": "094497 97620",
+        "sport": "gymnastics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489366673,
+      "lat": 12.9171012,
+      "lon": 77.5941849,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560041",
+        "addr:street": "Marenahalli Rd, Jayanagara 9th Block, Jayanagara Jaya Nagar",
+        "leisure": "sports_centre",
+        "name": "Nike Factory Store",
+        "phone": "018008066453",
+        "website": "help-en-us.nike.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489917029,
+      "lat": 12.9185507,
+      "lon": 77.5856306,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "No.166,Ground Floor, 4th Cross,Dollars Colony",
+        "addr:postcode": "560041",
+        "addr:street": "Jp Nagar 4th Phase, Jp Nagar",
+        "name": "Trans studio",
+        "opening_hours": "09:00-21:00",
+        "phone": "8892183101",
+        "shop": "beauty",
+        "website": "www.transstudio.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489929881,
+      "lat": 12.9216156,
+      "lon": 77.5874902,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "No 764/44, First Floor, 37th Cross,",
+        "addr:postcode": "560041",
+        "addr:street": "4th Block, Jayanagar",
+        "name": "Bamboo Salon And Spa",
+        "opening_hours": "10:30-20:00",
+        "phone": "080 4096 2085",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4490228415,
+      "lat": 12.9174823,
+      "lon": 77.5934466,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "#1188/2",
+        "addr:postcode": "560069",
+        "addr:street": "26th Main, Above Food Fields, 9th Block, Jayanagar, 6th Phase, Jayanagara 9th Block, Jayanagara Jaya Nagar,",
+        "leisure": "sports_centre",
+        "name": "O2 The Fitness",
+        "opening_hours": "5:00-21:00",
+        "phone": "8026646854",
+        "sport": "gymnastics",
+        "website": "https://www.o2thefitness.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545893191,
+      "lat": 12.9198451,
+      "lon": 77.583641,
+      "tags": {
+        "name": "Adishwar Electronics",
+        "name:en": "Adishwar Electronics",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4586451891,
+      "lat": 12.916778,
+      "lon": 77.5925291,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Upahara Darshini",
+        "name:en": "Upahara Darshini",
+        "name:kn": "ಉಪಹಾರ ದರ್ಶಿನಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4822135789,
+      "lat": 12.919343,
+      "lon": 77.5915357,
+      "tags": {
+        "name": "Chips Shop",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4966811521,
+      "lat": 12.9192929,
+      "lon": 77.5926382,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Dhanalakshmi Bank ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5004237649,
+      "lat": 12.9219428,
+      "lon": 77.589423,
+      "tags": {
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Dr. Satish skin & ENT clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5081989204,
+      "lat": 12.9215366,
+      "lon": 77.5896053,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234781646,
+      "lat": 12.9177746,
+      "lon": 77.5747603,
+      "tags": {
+        "name": "DNI Digital Homes",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234786387,
+      "lat": 12.9173939,
+      "lon": 77.5781136,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mandarthi Veg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6072228712,
+      "lat": 12.9233543,
+      "lon": 77.5850596,
+      "tags": {
+        "addr:city": "Jayanagar, Bengaluru",
+        "addr:postcode": "560041",
+        "addr:street": "36th Cross Road",
+        "amenity": "restaurant",
+        "cuisine": "indian;regional",
+        "diet:vegetarian": "yes",
+        "name": "Jayanagar Thindi Mane",
+        "opening_hours": "Mo-Su 09:00-15:00, 18:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6080239039,
+      "lat": 12.9217823,
+      "lon": 77.585303,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "Ice Cream Works"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6080243881,
+      "lat": 12.9217794,
+      "lon": 77.5852464,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "MDP Coffee House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6481871896,
+      "lat": 12.9179288,
+      "lon": 77.5934244,
+      "tags": {
+        "name": "RcBazaar Bengaluru",
+        "shop": "electrical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6882713317,
+      "lat": 12.9163171,
+      "lon": 77.5949228,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "1897/A, Cellar Floor, Gulora, 26th Main Road, Sount End Cross Road, 9th Block, Jayanagar",
+        "addr:postcode": "560069",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9342171911",
+        "contact:phone": "8026494748",
+        "name": "Sanjeevini Trust Jayanagar Voluntary Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "ngo",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6937721191,
+      "lat": 12.9208019,
+      "lon": 77.5872302,
+      "tags": {
+        "addr:district": "Bengaluru Rural",
+        "addr:full": "27/B, 39Th Cross,8Th Block, Jayanagar",
+        "addr:postcode": "560082",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "J B S Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938863247,
+      "lat": 12.917589,
+      "lon": 77.5948906,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#942, 28Th Main, 9Th Block,Jayanagar",
+        "addr:postcode": "560039",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Shekhar Hospital, Jayanagar",
+        "name:kn": "ಶೇಖರ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7087422528,
+      "lat": 12.9223362,
+      "lon": 77.5859995,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "236/237, 11th Main Rd, 4th T Block East, DK Naik Nagar, Jayanagar, Karnataka",
+        "addr:postcode": "560041",
+        "name": "Furnishing Forum",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "payment:all": "yes",
+        "shop": "interior_decoration",
+        "source": "survey;local knowledge;gps;streetlevel imagery",
+        "website": "https://www.furnishingforum.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7096332833,
+      "lat": 12.921845,
+      "lon": 77.5853424,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Bangarpet Chats Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924713,
+      "lat": 12.9165942,
+      "lon": 77.5965621,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "J.P. Nagar, Bengaluru",
+        "addr:postcode": "560078",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Reviva Dermaesthetic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924717,
+      "lat": 12.9194081,
+      "lon": 77.5845857,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Jayanagar, Bengaluru",
+        "addr:postcode": "560041",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Amar Ayurveda",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924730,
+      "lat": 12.918078,
+      "lon": 77.580926,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "RV Road, Bengaluru",
+        "addr:postcode": "560041",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "RespiCare",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924750,
+      "lat": 12.919227,
+      "lon": 77.575866,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Jayanagar, Bengaluru",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Madhumeha Diabetes Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924754,
+      "lat": 12.916234,
+      "lon": 77.593019,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "J.P. Nagar, Bengaluru",
+        "addr:postcode": "560078",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Center for Liver Disease Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924758,
+      "lat": 12.9179383,
+      "lon": 77.5779837,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Jayanagar, Bengaluru",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Karthik Dental & Orthodontic Care Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924762,
+      "lat": 12.920651,
+      "lon": 77.5746118,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Jayanagar, Bengaluru",
+        "addr:postcode": "560082",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sahasra Hospital",
+        "name:kn": "ಸಹಸ್ರ ಆಸ್ಪತ್ರೆ",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579924768,
+      "lat": 12.9202202,
+      "lon": 77.5772991,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Jayanagar, Bengaluru",
+        "addr:postcode": "560070",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Shanti Hospital",
+        "name:kn": "ಶಾಂತಿ ಆಸ್ಪತ್ರೆ",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8136105934,
+      "lat": 12.9232558,
+      "lon": 77.5814085,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Karma Kaapi – Caffeine Studio",
+        "outdoor_seating": "no",
+        "website": "https://karmakaapi.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187963975,
+      "lat": 12.9191579,
+      "lon": 77.5838237,
+      "tags": {
+        "addr:full": "Bangalore - Branch & ATM, 318, 9th Main Rd, 5th Block, Jayanagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "branch": "Jayanagar 5th Block Wealth Branch",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "opening_hours": "Mo-Sa 09:30-15:00",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8252529418,
+      "lat": 12.9226084,
+      "lon": 77.5846459,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560041",
+        "addr:street": "10A Main Road",
+        "amenity": "restaurant",
+        "name": "Go Native Jayanagar",
+        "organic": "yes",
+        "website": "https://gonative.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9709553688,
+      "lat": 12.923394,
+      "lon": 77.5780611,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Tender Coconut Stall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9838474617,
+      "lat": 12.9232033,
+      "lon": 77.5760733,
+      "tags": {
+        "amenity": "post_box",
+        "survey:date": "2022-06-22"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904111106,
+      "lat": 12.9170177,
+      "lon": 77.5947337,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-10-28",
+        "name": "Kota Kachori"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904111107,
+      "lat": 12.9171118,
+      "lon": 77.5927033,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank",
+        "name:kn": "ಕೋಟಕ್ ಮಹಿಂದ್ರ ಬ್ಯಾಂಕ್",
+        "operator": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904111116,
+      "lat": 12.9190491,
+      "lon": 77.589667,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904130017,
+      "lat": 12.9205157,
+      "lon": 77.5896751,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Just Coffee",
+        "shop": "coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904130020,
+      "lat": 12.9218738,
+      "lon": 77.5850227,
+      "tags": {
+        "name": "Just Bake",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904130021,
+      "lat": 12.9206634,
+      "lon": 77.5846231,
+      "tags": {
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904130022,
+      "lat": 12.9202281,
+      "lon": 77.5838386,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Theobroma",
+        "shop": "bakery",
+        "website": "https://theobroma.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904130023,
+      "lat": 12.9200268,
+      "lon": 77.5838198,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "IDFC First Bank",
+        "brand:wikidata": "Q22031467",
+        "name": "IDFC First Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904130024,
+      "lat": 12.9200203,
+      "lon": 77.5835086,
+      "tags": {
+        "amenity": "pub",
+        "name": "LIT Gastropub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10051816952,
+      "lat": 12.9219975,
+      "lon": 77.5845867,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Maya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10058077317,
+      "lat": 12.9215629,
+      "lon": 77.5911575,
+      "tags": {
+        "addr:housenumber": "909, 1st Floor",
+        "addr:postcode": "566041",
+        "addr:street": "38th Cross Road",
+        "amenity": "college",
+        "email": "admissions@rangdebharat.org",
+        "name": "Rang De Bharat Foundation",
+        "opening_hours": "Tu-Su 10:00-20:00",
+        "phone": "7676006006",
+        "website": "https://www.rangdebharat.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10058078817,
+      "lat": 12.921552,
+      "lon": 77.5911015,
+      "tags": {
+        "addr:housenumber": "909, 1st Floor, 38th Cross, 21st Main, Jayanagar",
+        "addr:postcode": "560041",
+        "addr:street": "38th Cross Road",
+        "amenity": "college",
+        "email": "admissions@sampratishta.org",
+        "name": "Sampratishta School of Fine Arts & Design",
+        "opening_hours": "Tu-Su 10:00-20:00",
+        "phone": "7676006006",
+        "website": "https://www.sampratishta.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228903707,
+      "lat": 12.9196935,
+      "lon": 77.5838077,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Gopizza",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10228903708,
+      "lat": 12.9197052,
+      "lon": 77.5841121,
+      "tags": {
+        "name": "Farm & Co.",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10293686920,
+      "lat": 12.9209967,
+      "lon": 77.5897783,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10632949345,
+      "lat": 12.9188098,
+      "lon": 77.5848297,
+      "tags": {
+        "amenity": "recycling",
+        "name": "BBMP Dry Waste Collection Center",
+        "name:kn": "ಒಣ ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆಗೆ ಸ್ಥಳ",
+        "recycling_type": "centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10695273907,
+      "lat": 12.9232698,
+      "lon": 77.5810327,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-11-21",
+        "name": "Alchemy Coffee Roasters"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298563,
+      "lat": 12.9170197,
+      "lon": 77.5948866,
+      "tags": {
+        "brand": "TVS",
+        "brand:wikidata": "Q3300084",
+        "name": "Synergy TVS",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298565,
+      "lat": 12.9170504,
+      "lon": 77.5938009,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Yes Bank",
+        "brand:wikidata": "Q2040394",
+        "name": "Yes Bank",
+        "name:kn": "ಯಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Yes Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298566,
+      "lat": 12.9170308,
+      "lon": 77.5935119,
+      "tags": {
+        "brand": "Manyavar",
+        "brand:wikidata": "Q24906783",
+        "name": "Manyavar",
+        "name:kn": "ಮಾನ್ಯವಾರ್",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298574,
+      "lat": 12.9172818,
+      "lon": 77.584607,
+      "tags": {
+        "name": "Duroflex",
+        "shop": "bed"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298575,
+      "lat": 12.9172857,
+      "lon": 77.5845399,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Parency Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298576,
+      "lat": 12.9172726,
+      "lon": 77.5842851,
+      "tags": {
+        "name": "Kamakshi Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298577,
+      "lat": 12.9172962,
+      "lon": 77.5840116,
+      "tags": {
+        "name": "Restoflex",
+        "shop": "bed"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298584,
+      "lat": 12.9172675,
+      "lon": 77.5819882,
+      "tags": {
+        "name": "Thirumal",
+        "shop": "boutique"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298585,
+      "lat": 12.9172896,
+      "lon": 77.5816257,
+      "tags": {
+        "name": "Shinys Gold and Diamonds",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298586,
+      "lat": 12.9173197,
+      "lon": 77.5805756,
+      "tags": {
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298587,
+      "lat": 12.9173262,
+      "lon": 77.5804496,
+      "tags": {
+        "brand": "HOPCOMS",
+        "brand:wikidata": "Q22908959",
+        "name": "HOPCOMS",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298592,
+      "lat": 12.9173497,
+      "lon": 77.5799198,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10854298594,
+      "lat": 12.9173916,
+      "lon": 77.5785137,
+      "tags": {
+        "amenity": "clinic",
+        "name": "GHOC Obesity Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10895759704,
+      "lat": 12.9200817,
+      "lon": 77.5796007,
+      "tags": {
+        "amenity": "bank",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10895764713,
+      "lat": 12.9232358,
+      "lon": 77.5809069,
+      "tags": {
+        "brand": "Toni & Guy",
+        "brand:wikidata": "Q324784",
+        "name": "Toni & Guy",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10931530154,
+      "lat": 12.9177197,
+      "lon": 77.5799118,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Namma Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11117270553,
+      "lat": 12.9174347,
+      "lon": 77.5834483,
+      "tags": {
+        "amenity": "cafe",
+        "delivery": "yes",
+        "name": "Glen's Bakehouse",
+        "outdoor_seating": "yes",
+        "shop": "bakery",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11185907895,
+      "lat": 12.9219032,
+      "lon": 77.5849758,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-09-12",
+        "name": "Chat Bandi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11185921420,
+      "lat": 12.9216145,
+      "lon": 77.5846609,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-09-12",
+        "diet:vegetarian": "yes",
+        "name": "Eat First"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11265019814,
+      "lat": 12.9218307,
+      "lon": 77.586046,
+      "tags": {
+        "name": "Cycle World",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11277885673,
+      "lat": 12.9227496,
+      "lon": 77.5839284,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "Milano"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11277885674,
+      "lat": 12.9228646,
+      "lon": 77.5846285,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Blue Tokai",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11279857305,
+      "lat": 12.9166007,
+      "lon": 77.5963256,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Ambur Star Dum Biryani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11279857306,
+      "lat": 12.9166713,
+      "lon": 77.5937976,
+      "tags": {
+        "name": "Eastern Edition",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11279857307,
+      "lat": 12.9166635,
+      "lon": 77.5937037,
+      "tags": {
+        "name": "Twin Birds",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11279857308,
+      "lat": 12.9166713,
+      "lon": 77.5936165,
+      "tags": {
+        "brand": "Vision Express",
+        "brand:wikidata": "Q7936150",
+        "name": "Vision Express",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11279857309,
+      "lat": 12.9166682,
+      "lon": 77.5930319,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-11-29",
+        "name": "Biryani Mane"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11294646339,
+      "lat": 12.9166371,
+      "lon": 77.5949539,
+      "tags": {
+        "level": "0",
+        "name": "Rajshree Hardware",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11294646353,
+      "lat": 12.9149556,
+      "lon": 77.5949412,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Welcome Upahara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11309805460,
+      "lat": 12.9166467,
+      "lon": 77.5947595,
+      "tags": {
+        "check_date": "2023-11-03",
+        "name": "Light Store",
+        "shop": "lighting"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11309805461,
+      "lat": 12.9166445,
+      "lon": 77.5936147,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2023-11-03",
+        "healthcare": "clinic",
+        "name": "partha"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11309805462,
+      "lat": 12.9166967,
+      "lon": 77.5929637,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2023-11-03",
+        "healthcare": "pharmacy",
+        "name": "Bengaluru Drug House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11348889996,
+      "lat": 12.9197713,
+      "lon": 77.5809324,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "name": "Sri Vinayaka Juice",
+        "takeaway": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935806,
+      "lat": 12.916688,
+      "lon": 77.5927914,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Soch",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935807,
+      "lat": 12.9167011,
+      "lon": 77.5931305,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2023-11-29",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935808,
+      "lat": 12.9166966,
+      "lon": 77.5931883,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "check_date": "2023-11-29",
+        "operator": "IndusInd Bank",
+        "operator:wikidata": "Q2040323"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935809,
+      "lat": 12.9166545,
+      "lon": 77.5942339,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Reliance Trends",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935810,
+      "lat": 12.9166485,
+      "lon": 77.5945955,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Philips Hue",
+        "shop": "lighting"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935811,
+      "lat": 12.9166408,
+      "lon": 77.5945176,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Kadence Experience",
+        "shop": "musical_instrument"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935812,
+      "lat": 12.9166134,
+      "lon": 77.5947605,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Trust Cycles",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935813,
+      "lat": 12.9166298,
+      "lon": 77.5957278,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Fish Mart",
+        "shop": "seafood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935814,
+      "lat": 12.9166283,
+      "lon": 77.5957461,
+      "tags": {
+        "amenity": "dentist",
+        "check_date": "2023-11-29",
+        "healthcare": "dentist",
+        "name": "Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935815,
+      "lat": 12.9166388,
+      "lon": 77.5959639,
+      "tags": {
+        "amenity": "motorcycle_rental",
+        "check_date": "2023-12-06",
+        "name": "BeepKart"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935816,
+      "lat": 12.9166219,
+      "lon": 77.5964674,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Dinesh Electricals",
+        "shop": "electrical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11382935817,
+      "lat": 12.9166156,
+      "lon": 77.5965051,
+      "tags": {
+        "check_date": "2023-11-29",
+        "name": "Deepak Hardware",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11394086044,
+      "lat": 12.9170173,
+      "lon": 77.593916,
+      "tags": {
+        "check_date": "2023-12-04",
+        "name": "Jute Cute",
+        "shop": "interior_decoration"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11394086045,
+      "lat": 12.9171186,
+      "lon": 77.5936368,
+      "tags": {
+        "check_date": "2023-12-04",
+        "name": "Anugraha Netralaya",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345914,
+      "lat": 12.9166415,
+      "lon": 77.5939487,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-12-05",
+        "name": "Hot Gridle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345915,
+      "lat": 12.9165208,
+      "lon": 77.5949428,
+      "tags": {
+        "check_date": "2023-12-05",
+        "name": "Trikannad Poornima Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345916,
+      "lat": 12.9166328,
+      "lon": 77.5952237,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-12-05",
+        "name": "Hotel 9th Smile"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345917,
+      "lat": 12.9166451,
+      "lon": 77.5954774,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-12-05",
+        "name": "The Red Box"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345918,
+      "lat": 12.916627,
+      "lon": 77.5962281,
+      "tags": {
+        "check_date": "2023-12-05",
+        "name": "Shree Mahalakshmi Hardware",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345919,
+      "lat": 12.9166224,
+      "lon": 77.5962623,
+      "tags": {
+        "check_date": "2023-12-05",
+        "name": "Sujan Enterprises",
+        "shop": "interior_decoration"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345922,
+      "lat": 12.9164799,
+      "lon": 77.5967531,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "check_date": "2023-12-05",
+        "name": "Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11395345923,
+      "lat": 12.9164726,
+      "lon": 77.596667,
+      "tags": {
+        "amenity": "bank",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2023-12-05",
+        "name": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11532796972,
+      "lat": 12.9215801,
+      "lon": 77.5804942,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11532796980,
+      "lat": 12.9166351,
+      "lon": 77.5949081,
+      "tags": {
+        "check_date": "2024-01-20",
+        "name": "Bimba Designer Boutique",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11749458587,
+      "lat": 12.9206425,
+      "lon": 77.5826363,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11749458588,
+      "lat": 12.9205111,
+      "lon": 77.5826477,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11968859179,
+      "lat": 12.9193602,
+      "lon": 77.5838613,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housenumber": "69",
+        "addr:postcode": "560041",
+        "addr:street": "9th Main Road",
+        "addr:suburb": "Jayanagar",
+        "amenity": "restaurant",
+        "contact:instagram": "eatinglovepizzeria",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Eating Love",
+        "takeaway": "yes",
+        "website": "https://eatinglove.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982395298,
+      "lat": 12.9219633,
+      "lon": 77.5896562,
+      "tags": {
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "check_date": "2024-06-15",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982395299,
+      "lat": 12.9222167,
+      "lon": 77.5893948,
+      "tags": {
+        "amenity": "ice_cream",
+        "brand": "Polar Bear Ice Creams",
+        "brand:wikidata": "Q124374249",
+        "check_date": "2024-06-15",
+        "delivery": "yes",
+        "name": "Polar Bear Ice Creams",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12030632870,
+      "lat": 12.9218007,
+      "lon": 77.5933109,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Oncquest Laboratories",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12035150490,
+      "lat": 12.9163712,
+      "lon": 77.5928203,
+      "tags": {
+        "addr:housenumber": "1424/81",
+        "addr:street": "South End C Cross",
+        "amenity": "cafe",
+        "check_date": "2024-07-05",
+        "contact:instagram": "https://www.instagram.com/thecaffeinebaar",
+        "cuisine": "coffee_shop",
+        "delivery": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "The Caffeine Baar",
+        "opening_hours": "08:00-23:00",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://www.thecaffeinebaar.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12050930674,
+      "lat": 12.9222167,
+      "lon": 77.5893947,
+      "tags": {
+        "addr:floor": "1",
+        "check_date": "2024-06-15",
+        "level": "1",
+        "name": "Flaunt Salon and Spa",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12208522215,
+      "lat": 12.9198961,
+      "lon": 77.5898065,
+      "tags": {
+        "amenity": "cafe",
+        "contact:instagram": "brewinguntoldstories",
+        "cuisine": "coffee_shop",
+        "name": "Brewing Untold Stories",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12395928051,
+      "lat": 12.9221941,
+      "lon": 77.5850375,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:street": "10th Main Road",
+        "addr:suburb": "Jayanagar",
+        "amenity": "restaurant",
+        "name": "Sunnys"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12491795257,
+      "lat": 12.9232131,
+      "lon": 77.5846351,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Jana Small Finance Bank",
+        "brand:wikidata": "Q65122274",
+        "check_date": "2025-01-11",
+        "name": "Jana Small Finance Bank",
+        "phone": "18002080"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12491797193,
+      "lat": 12.9232221,
+      "lon": 77.5843728,
+      "tags": {
+        "amenity": "dentist",
+        "check_date": "2025-01-11",
+        "description": "Dr. H Murali",
+        "healthcare": "dentist",
+        "name": "Dhanvanthri Dental Clinic",
+        "phone": "+91 99865 77700; +91 98456 05004"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12491803164,
+      "lat": 12.9232155,
+      "lon": 77.5843753,
+      "tags": {
+        "amenity": "dentist",
+        "check_date": "2025-01-11",
+        "healthcare": "dentist",
+        "name": "Dhanavantri Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12492393138,
+      "lat": 12.9231939,
+      "lon": 77.5851987,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-01-11",
+        "name": "Krishna Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12492581612,
+      "lat": 12.9218794,
+      "lon": 77.580577,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12492581619,
+      "lat": 12.9217078,
+      "lon": 77.5805052,
+      "tags": {
+        "amenity": "charging_station",
+        "charging_station:battery_swapping": "yes",
+        "fee": "yes",
+        "level": "0",
+        "motorcar": "no",
+        "motorcycle": "yes",
+        "name": "Honda e:swap",
+        "operator": "Honda e:swap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12684804809,
+      "lat": 12.9196919,
+      "lon": 77.5834863,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Dakshin Thindi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12734279040,
+      "lat": 12.9188242,
+      "lon": 77.5780168,
+      "tags": {
+        "name": "Baky Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12734279041,
+      "lat": 12.9187549,
+      "lon": 77.5780128,
+      "tags": {
+        "name": "Sri Banashankari Fruits and Vegetables Stall",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12734279042,
+      "lat": 12.9186556,
+      "lon": 77.5780101,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Sri Udupi Food Hub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12856900602,
+      "lat": 12.921364,
+      "lon": 77.5802886,
+      "tags": {
+        "access": "permissive",
+        "addr:floor": "1",
+        "amenity": "toilets",
+        "female": "yes",
+        "fixme": "Accurate location within station",
+        "level": "1",
+        "male": "yes",
+        "operator": "BMRCL",
+        "toilets:handwashing": "yes",
+        "toilets:position": "urinal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12917043442,
+      "lat": 12.9209967,
+      "lon": 77.5835395,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Third Wave Coffee Roasters",
+        "brand:wikidata": "Q7785004",
+        "cuisine": "coffee_shop",
+        "delivery": "yes",
+        "name": "Third Wave Coffee Roasters",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12917043443,
+      "lat": 12.9212294,
+      "lon": 77.5835301,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12917043444,
+      "lat": 12.9213666,
+      "lon": 77.5838533,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Smoor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12917043445,
+      "lat": 12.9207274,
+      "lon": 77.5835381,
+      "tags": {
+        "name": "Crossword",
+        "shop": "books"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12917043446,
+      "lat": 12.920632,
+      "lon": 77.5835341,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Uncle Peter's Pancakes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13046073279,
+      "lat": 12.9216307,
+      "lon": 77.5850536,
+      "tags": {
+        "amenity": "library",
+        "name": "Reading Room"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13046073280,
+      "lat": 12.9216071,
+      "lon": 77.5849114,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13062869343,
+      "lat": 12.9162412,
+      "lon": 77.5925774,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "outdoor_seating": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13070233795,
+      "lat": 12.9216656,
+      "lon": 77.5808654,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-08-14",
+        "name": "Coffee Naa Tea Naa",
+        "outdoor_seating": "yes",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13070296258,
+      "lat": 12.9215745,
+      "lon": 77.5800218,
+      "tags": {
+        "access": "yes",
+        "amenity": "motorcycle_parking",
+        "capacity": "223",
+        "fee": "yes",
+        "name": "RV Road Metro Parking",
+        "operator": "BMRCL",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13072830363,
+      "lat": 12.9204248,
+      "lon": 77.5896784,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Aarell Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13104081668,
+      "lat": 12.9227182,
+      "lon": 77.5839297,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:instagram": "milanopizzacafe_india",
+        "cuisine": "pizza",
+        "name": "Milano Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13156003407,
+      "lat": 12.916322,
+      "lon": 77.5899092,
+      "tags": {
+        "addr:floor": "G",
+        "beauty": "nails;cosmetics;skin_care;waxing;hair;hair_removal",
+        "check_date": "2025-09-19",
+        "level": "0",
+        "payment:cash": "yes",
+        "payment:upi": "yes",
+        "shop": "beauty",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13164727368,
+      "lat": 12.916322,
+      "lon": 77.5899092,
+      "tags": {
+        "addr:floor": "G",
+        "beauty": "nails;cosmetics;skin_care;waxing;hair;hair_removal",
+        "check_date": "2025-09-19",
+        "level": "0",
+        "payment:cash": "yes",
+        "payment:upi": "yes",
+        "shop": "beauty",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13168786887,
+      "lat": 12.9231064,
+      "lon": 77.5852789,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Iris Cafe",
+        "website": "https://iriscafe.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13288585217,
+      "lat": 12.9201388,
+      "lon": 77.5780657,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Big Bean Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13326122967,
+      "lat": 12.923314,
+      "lon": 77.5808523,
+      "tags": {
+        "check_date": "2025-11-21",
+        "level": "2",
+        "name": "Küche 7",
+        "shop": "houseware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13326122969,
+      "lat": 12.9232299,
+      "lon": 77.5819847,
+      "tags": {
+        "check_date": "2025-11-21",
+        "name": "Autocorsa",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13326122970,
+      "lat": 12.9232744,
+      "lon": 77.581563,
+      "tags": {
+        "amenity": "events_venue",
+        "check_date": "2025-11-21",
+        "name": "House Of Weddings"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13326122971,
+      "lat": 12.9233304,
+      "lon": 77.5817566,
+      "tags": {
+        "check_date": "2025-11-21",
+        "name": "Nandini Milk Parlour",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13326122972,
+      "lat": 12.9232186,
+      "lon": 77.5835695,
+      "tags": {
+        "check_date": "2025-11-21",
+        "name": "Sri Satya Sai Tourists",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27791264,
+      "center": {
+        "lat": 12.9193523,
+        "lon": 77.5853001
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Putha Narasimhachar Park",
+        "name:etymology:wikidata": "Q7117564"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27791556,
+      "center": {
+        "lat": 12.9207599,
+        "lon": 77.5853206
+      },
+      "tags": {
+        "alt_name": "Chandragupta Maurya Playground",
+        "landuse": "recreation_ground",
+        "leisure": "pitch",
+        "name": "Shalini Ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32424606,
+      "center": {
+        "lat": 12.9205319,
+        "lon": 77.5825157
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Rainwater Harvesting Theme Park",
+        "official_name": "Sir M Vishweshwaraya Park Rain Water Harvesting Theme Park",
+        "official_name:etymology:wikidata": "Q741700",
+        "operator": "BWSSB",
+        "start_date": "2010-03-21"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32425083,
+      "center": {
+        "lat": 12.9198117,
+        "lon": 77.5757987
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "502/37",
+        "addr:postcode": "560070",
+        "addr:street": "40th cross, 1st Main Rd, 8th Block, Jayanagar",
+        "amenity": "restaurant",
+        "building": "commercial",
+        "name": "Paakashala"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32425211,
+      "center": {
+        "lat": 12.9211732,
+        "lon": 77.5892009
+      },
+      "tags": {
+        "created_by": "Potlatch 0.10f",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32425217,
+      "center": {
+        "lat": 12.9211481,
+        "lon": 77.5898414
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 40633850,
+      "center": {
+        "lat": 12.9225159,
+        "lon": 77.5927214
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "RV Institute of Management",
+        "name:kn": "ಶಿವಾನಂದ ಶರ್ಮ ಸ್ಮಾರಕ ರಾಷ್ಟ್ರೀಯ ವಿದ್ಯಾಲಯ",
+        "old_name": "Sivananda Sharma Memorial RV",
+        "short_name": "SSMRV"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133131184,
+      "center": {
+        "lat": 12.9173236,
+        "lon": 77.5855971
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Raghavendra Swami Mutt",
+        "name:kn": "ರಾಘವೇಂದ್ರ ಸ್ವಾಮಿ ಮಠ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 164568988,
+      "center": {
+        "lat": 12.9162738,
+        "lon": 77.5923203
+      },
+      "tags": {
+        "addr:housename": "Mantri Junction",
+        "building": "retail",
+        "check_date": "2023-11-29",
+        "name": "Mantri Junction",
+        "shop": "mall",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 164569256,
+      "center": {
+        "lat": 12.9181468,
+        "lon": 77.5919059
+      },
+      "tags": {
+        "amenity": "university",
+        "name": "Jain University",
+        "name:kn": "ಜೈನ ವಿಶ್ವವಿದ್ಯಾಲಯ",
+        "wikidata": "Q6124019",
+        "wikimedia_commons": "Category:Jain University",
+        "wikipedia": "en:Jain University"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259487871,
+      "center": {
+        "lat": 12.9173301,
+        "lon": 77.5851028
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#523, 10th Main,45th Cross, 5th Block, Jayanagar",
+        "addr:housename": "523",
+        "addr:postcode": "560041",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "building": "yes",
+        "email": "admin@sksh.com",
+        "healthcare": "hospital",
+        "name": "Shri Krishna Sevashrama Hospital",
+        "name:kn": "ಶ್ರೀಕ್ಷೇತ್ರ ಸೇವಾಶ್ರಮ ಆಸ್ಪತ್ರೆ",
+        "operator:type": "private",
+        "phone": "+918022441631",
+        "source": "OpenGovernmentData",
+        "website": "http://www.sks-hospital.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 344194886,
+      "center": {
+        "lat": 12.9170499,
+        "lon": 77.5930332
+      },
+      "tags": {
+        "brand": "Manyavar",
+        "brand:wikidata": "Q24906783",
+        "building": "yes",
+        "name": "Manyavar",
+        "name:kn": "ಮಾನ್ಯವಾರ್",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347080390,
+      "center": {
+        "lat": 12.9233665,
+        "lon": 77.5742427
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Mahaveer Innovations",
+        "shop": "bathroom_furnishing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 349513121,
+      "center": {
+        "lat": 12.9226076,
+        "lon": 77.5932038
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "south_Indian",
+        "name": "Taaza Tindi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 349513865,
+      "center": {
+        "lat": 12.9227465,
+        "lon": 77.5932002
+      },
+      "tags": {
+        "amenity": "bank",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "brand:wikipedia": "en:HDFC Bank",
+        "building": "yes",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "short_name": "HDFC",
+        "website": "https://www.hdfcbank.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350836815,
+      "center": {
+        "lat": 12.9219716,
+        "lon": 77.58572
+      },
+      "tags": {
+        "building": "retail",
+        "building:levels": "3",
+        "name": "Jayant Probikes & Fitness",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "way",
+      "id": 393754907,
+      "center": {
+        "lat": 12.9185593,
+        "lon": 77.5799789
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Laxman Rao Park",
+        "name:kn": "ಲಕ್ಷ್ಮಣ ರಾವ್ ಉದ್ಯಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 511623036,
+      "center": {
+        "lat": 12.9213666,
+        "lon": 77.5892011
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Nandanvan Childrens play Park",
+        "note": "Paid Entry"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1042760930,
+      "center": {
+        "lat": 12.9220598,
+        "lon": 77.5926631
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1044521119,
+      "center": {
+        "lat": 12.9225104,
+        "lon": 77.5755219
+      },
+      "tags": {
+        "addr:street": "Kanakapura Road",
+        "amenity": "school",
+        "name": "JSS Composite PU College",
+        "name:kn": "ಜೆಎಸ್ಎಸ್ ಸಂಯುಕ್ತ ಪದವಿಪೂರ್ವ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125669869,
+      "center": {
+        "lat": 12.9188915,
+        "lon": 77.5855339
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157395077,
+      "center": {
+        "lat": 12.9136583,
+        "lon": 77.5962921
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1215829554,
+      "center": {
+        "lat": 12.9226147,
+        "lon": 77.5805398
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Laxman Rao Park",
+        "name:kn": "ಲಕ್ಷ್ಮಣ ರಾವ್ ಉದ್ಯಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1215829555,
+      "center": {
+        "lat": 12.9208445,
+        "lon": 77.5805542
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Laxman Rao Park",
+        "name:kn": "ಲಕ್ಷ್ಮಣ ರಾವ್ ಉದ್ಯಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1215829556,
+      "center": {
+        "lat": 12.9187696,
+        "lon": 77.5805559
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Laxman Rao Park",
+        "name:kn": "ಲಕ್ಷ್ಮಣ ರಾವ್ ಉದ್ಯಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1223497734,
+      "center": {
+        "lat": 12.9198304,
+        "lon": 77.580661
+      },
+      "tags": {
+        "building": "kiosk",
+        "name": "Nandini Milk",
+        "name:kn": "ನಂದಿನಿ ಹಾಲಿನ ಅಂಗಡಿ",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1264693410,
+      "center": {
+        "lat": 12.9209392,
+        "lon": 77.5825997
+      },
+      "tags": {
+        "amenity": "theatre",
+        "theatre:type": "amphi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314416454,
+      "center": {
+        "lat": 12.9177918,
+        "lon": 77.5740778
+      },
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "building": "yes",
+        "building:levels": "2",
+        "fee": "yes",
+        "female": "yes",
+        "level": "0",
+        "male": "yes",
+        "roof:shape": "flat",
+        "toilets:handwashing": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1419660462,
+      "center": {
+        "lat": 12.9215988,
+        "lon": 77.5855275
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Ganesh Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

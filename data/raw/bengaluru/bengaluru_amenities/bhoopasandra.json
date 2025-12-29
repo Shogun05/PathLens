@@ -1,0 +1,1083 @@
+{
+  "area_name": "Bhoopasandra",
+  "osm_id": 19883374,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 88,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 593146903,
+      "lat": 13.026313,
+      "lon": 77.5845772,
+      "tags": {
+        "amenity": "college",
+        "name": "National Bureau of Agriculturally Important Insects"
+      }
+    },
+    {
+      "type": "node",
+      "id": 966863252,
+      "lat": 13.0322788,
+      "lon": 77.576876,
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "RMV Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1464775796,
+      "lat": 13.0291835,
+      "lon": 77.5788862,
+      "tags": {
+        "amenity": "fuel",
+        "operator": "IBP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1467335519,
+      "lat": 13.0292314,
+      "lon": 77.5787817,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Dhanalakshmi Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469035492,
+      "lat": 13.0281613,
+      "lon": 77.5793947,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Amma's ENT Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469035493,
+      "lat": 13.0268965,
+      "lon": 77.5799419,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "MedPlus",
+        "brand:wikidata": "Q65684234",
+        "healthcare": "pharmacy",
+        "name": "MedPlus",
+        "name:kn": "ಮೆಡ್‍ಪ್ಲಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1471780073,
+      "lat": 13.027249,
+      "lon": 77.5798112,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Paratha plaza",
+        "name:kn": "ಪರಾಠ ಪ್ಲಾಜ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472104730,
+      "lat": 13.0345529,
+      "lon": 77.5758254,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "Vijaya Bank",
+        "name:kn": "ವಿಜಯ ಬ್ಯಾಂಕು"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472104851,
+      "lat": 13.0342969,
+      "lon": 77.5759809,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472111412,
+      "lat": 13.028248,
+      "lon": 77.5792969,
+      "tags": {
+        "name": "Rasagolla Shoppe",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473190732,
+      "lat": 13.0298437,
+      "lon": 77.5782954,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "name": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್",
+        "operator": "Corporation Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1619884915,
+      "lat": 13.0323102,
+      "lon": 77.5807282,
+      "tags": {
+        "amenity": "school",
+        "name": "Shiksha Sagar High School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2084115319,
+      "lat": 13.0298117,
+      "lon": 77.5783199,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Axis Bank ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2319451107,
+      "lat": 13.0323229,
+      "lon": 77.5770689,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "RMV Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2665993754,
+      "lat": 13.0292523,
+      "lon": 77.5829489,
+      "tags": {
+        "amenity": "school",
+        "name": "UAS School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3316943068,
+      "lat": 13.0269386,
+      "lon": 77.5799437,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Lakshmi Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4315190385,
+      "lat": 13.0256648,
+      "lon": 77.5820029,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "Veterinary College Boys Hostel Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488052281,
+      "lat": 13.030455,
+      "lon": 77.5797656,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560094",
+        "addr:street": "No126, 80 ft road, RMV 2nd Stage, Ashwath Nagar",
+        "leisure": "sports_centre",
+        "name": "ProCycle",
+        "phone": "080 4114 0903"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489717051,
+      "lat": 13.0416048,
+      "lon": 77.5797696,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "25",
+        "addr:postcode": "560094",
+        "addr:street": "J.B Square building, Kalpana Chawala Road, Sanjay Nagar",
+        "leisure": "sports_centre",
+        "name": "Chisel Fitness Center",
+        "opening_hours": "05:00-22:00",
+        "phone": "(91)-80-33641514",
+        "sport": "gymnastics",
+        "website": "https://chisel.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4679825893,
+      "lat": 13.044455,
+      "lon": 77.5801705,
+      "tags": {
+        "addr:city": "Bhoopasandra",
+        "addr:country": "IN",
+        "addr:housenumber": "2",
+        "addr:postcode": "560094",
+        "addr:street": "Cross Road",
+        "addr:suburb": "Vinayaka Layout",
+        "amenity": "college",
+        "contact:email": "info@brindavancollege.com",
+        "contact:fax": "+91-80-2341 7832",
+        "contact:phone": "+91-80-4331 7777",
+        "contact:website": "brindavancollege.com",
+        "name": "Brindavan College",
+        "name:en": "Brindavan College",
+        "name:fr": "Brindavan College",
+        "name:hi": "वृंदावन कॉलेज",
+        "name:kn": "ಬೃಂದಾವನ ಕಾಲೇಜು",
+        "name:ml": "ബൃന്ദാവൻ കോളെജ്",
+        "name:ta": "பிருந்தாவன் கல்லூரி",
+        "old_name": "National First Grade College"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5983371030,
+      "lat": 13.0260907,
+      "lon": 77.5849835,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Indira Canteen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939108450,
+      "lat": 13.0322819,
+      "lon": 77.5770459,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.138, Aec Layout, Sanjay Nagar",
+        "addr:postcode": "560094",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Raj Mahal Vilas Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7223109303,
+      "lat": 13.0259692,
+      "lon": 77.5850059,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257189925,
+      "lat": 13.0392881,
+      "lon": 77.5892385,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "check_date": "2024-12-25",
+        "fee": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7302021177,
+      "lat": 13.0465803,
+      "lon": 77.5755743,
+      "tags": {
+        "shop": "medical_supply"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7302031293,
+      "lat": 13.0468704,
+      "lon": 77.5758244,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "chicken"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7302031325,
+      "lat": 13.0466883,
+      "lon": 77.576477,
+      "tags": {
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9532893829,
+      "lat": 13.0306487,
+      "lon": 77.5865717,
+      "tags": {
+        "amenity": "post_office",
+        "name": "India Post",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9912823316,
+      "lat": 13.0426402,
+      "lon": 77.5894859,
+      "tags": {
+        "amenity": "toilets",
+        "fee": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10252983809,
+      "lat": 13.0348455,
+      "lon": 77.5789482,
+      "tags": {
+        "addr:postcode": "560094",
+        "addr:street": "4th Main Road",
+        "amenity": "school",
+        "name": "Daffodils English School",
+        "website": "https://www.daffodils.school/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10574607719,
+      "lat": 13.0293422,
+      "lon": 77.5837058,
+      "tags": {
+        "amenity": "college",
+        "name": "Dairy Science College"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10574607724,
+      "lat": 13.0285112,
+      "lon": 77.5835663,
+      "tags": {
+        "amenity": "college",
+        "name": "National Bureau of Soil Survey and Landuse Planning"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753151433,
+      "lat": 13.0319305,
+      "lon": 77.5769245,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "female": "yes",
+        "male": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753151502,
+      "lat": 13.030552,
+      "lon": 77.5777929,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Sri Ganesh Darshini"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753151503,
+      "lat": 13.0302084,
+      "lon": 77.5780423,
+      "tags": {
+        "name": "Just Bake",
+        "name:kn": "ಜಸ್ಟ್ ಬೇಕ್",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10753151510,
+      "lat": 13.0285491,
+      "lon": 77.5791071,
+      "tags": {
+        "name": "Nandini Milk Parlour",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11117243810,
+      "lat": 13.0299497,
+      "lon": 77.5784688,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Nomad Pizza",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11199068287,
+      "lat": 13.0349878,
+      "lon": 77.575524,
+      "tags": {
+        "addr:floor": "G",
+        "addr:street": "4th Main Road",
+        "amenity": "fast_food",
+        "check_date": "2023-09-18",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "name": "Brahmins thindis",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "phone": "080508 86278"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11199092874,
+      "lat": 13.0348398,
+      "lon": 77.5754822,
+      "tags": {
+        "addr:floor": "G",
+        "check_date": "2023-09-18",
+        "name": "Manjunath condiments",
+        "shop": "tea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850255969,
+      "lat": 13.0311563,
+      "lon": 77.5778161,
+      "tags": {
+        "amenity": "school",
+        "name": "चिरंतना इंग्लिश स्कूल",
+        "name:en": "Chirantana English High school"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12064153963,
+      "lat": 13.0315097,
+      "lon": 77.577408,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:postcode": "560094",
+        "addr:street": "Sanjay Nagar Main Road",
+        "addr:suburb": "Sanjay Nagar",
+        "amenity": "pub",
+        "contact:instagram": "toroblr",
+        "delivery": "yes",
+        "name": "Toro Brew House & Kitchen Zozo",
+        "phone": "+91 9900005230",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12140229732,
+      "lat": 13.025346,
+      "lon": 77.5846247,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12149767435,
+      "lat": 13.02577,
+      "lon": 77.5844822,
+      "tags": {
+        "access": "permissive",
+        "amenity": "drinking_water",
+        "fee": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12149767436,
+      "lat": 13.0258564,
+      "lon": 77.5844357,
+      "tags": {
+        "access": "permissive",
+        "addr:floor": "1",
+        "amenity": "toilets",
+        "check_date": "2024-09-01",
+        "level": "1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12223936560,
+      "lat": 13.0290669,
+      "lon": 77.5794135,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "j"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12223936562,
+      "lat": 13.0288817,
+      "lon": 77.5790722,
+      "tags": {
+        "amenity": "waste_basket",
+        "colour": "j"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12487713375,
+      "lat": 13.0296603,
+      "lon": 77.5805059,
+      "tags": {
+        "brand": "HOPCOMS",
+        "brand:wikidata": "Q22908959",
+        "name": "HOPCOMS",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12497708532,
+      "lat": 13.0318659,
+      "lon": 77.580016,
+      "tags": {
+        "check_date": "2025-01-13",
+        "name": "Manjunath Stores",
+        "shop": "grocery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12717556901,
+      "lat": 13.0323908,
+      "lon": 77.5771592,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Sakura cafe / RMV CANTEEN"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12877032109,
+      "lat": 13.0323496,
+      "lon": 77.5773083,
+      "tags": {
+        "check_date": "2025-05-31",
+        "internet_access": "no",
+        "name": "Amma Pastries",
+        "name:en": "Amma Pastries",
+        "payment:cash": "yes",
+        "payment:upi": "yes",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12909734196,
+      "lat": 13.0424185,
+      "lon": 77.5893069,
+      "tags": {
+        "amenity": "police",
+        "check_date": "2025-06-12",
+        "name": "Hebbal Traffic Police Station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 42397792,
+      "center": {
+        "lat": 13.034726,
+        "lon": 77.579118
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Daffodils English School",
+        "start_date": "1978",
+        "website": "https://daffodils.school/",
+        "wikidata": "Q30589677",
+        "wikipedia": "en:Daffodils English School, Sanjaynagar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 42397793,
+      "center": {
+        "lat": 13.0313957,
+        "lon": 77.5807863
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 132417430,
+      "center": {
+        "lat": 13.0319397,
+        "lon": 77.5774013
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Sanjay Nagar Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133442038,
+      "center": {
+        "lat": 13.0295801,
+        "lon": 77.580377
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "recreation_ground",
+        "name": "Volleyball Ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 149355875,
+      "center": {
+        "lat": 13.0291133,
+        "lon": 77.5857219
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Veterinary College Garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 184299458,
+      "center": {
+        "lat": 13.0264061,
+        "lon": 77.5804879
+      },
+      "tags": {
+        "name": "Mars Maruti Authorized Service",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 238030308,
+      "center": {
+        "lat": 13.0420117,
+        "lon": 77.5902014
+      },
+      "tags": {
+        "amenity": "marketplace"
+      }
+    },
+    {
+      "type": "way",
+      "id": 260994096,
+      "center": {
+        "lat": 13.0283387,
+        "lon": 77.5844332
+      },
+      "tags": {
+        "amenity": "veterinary",
+        "name": "Veterinary Hospital",
+        "name:kn": "ಪಶುವೈದ್ಯ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 260994753,
+      "center": {
+        "lat": 13.0275269,
+        "lon": 77.5843812
+      },
+      "tags": {
+        "amenity": "post_office",
+        "name": "UAS Farm Post Office",
+        "operator": "India Post"
+      }
+    },
+    {
+      "type": "way",
+      "id": 325764796,
+      "center": {
+        "lat": 13.0280151,
+        "lon": 77.5852582
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 325764797,
+      "center": {
+        "lat": 13.0301133,
+        "lon": 77.5861251
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363075242,
+      "center": {
+        "lat": 13.044163,
+        "lon": 77.5785196
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363075328,
+      "center": {
+        "lat": 13.0415904,
+        "lon": 77.5814713
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 393785886,
+      "center": {
+        "lat": 13.0425128,
+        "lon": 77.5900176
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "check_date": "2025-06-14",
+        "name": "Hebbal Bus Station",
+        "name:kn": "ಹೆಬ್ಬಾಳು ಬಸ್ ನಿಲ್ದಾಣ",
+        "public_transport": "station",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 457998514,
+      "center": {
+        "lat": 13.0444348,
+        "lon": 77.5810147
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560094",
+        "addr:street": "2nd Cross Road, Bhoopasandra",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Abhaya Anjaneya Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 773825322,
+      "center": {
+        "lat": 13.0399775,
+        "lon": 77.5890897
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 773825323,
+      "center": {
+        "lat": 13.0403763,
+        "lon": 77.5892972
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560024",
+        "addr:street": "Hebbal Flyover, Bayanna Layout, Hebbal,",
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "building": "yes",
+        "cuisine": "south_indian",
+        "delivery": "no",
+        "name": "Indira Canteen",
+        "official_name": "Vishwenatha Naganahalli Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 777690271,
+      "center": {
+        "lat": 13.034927,
+        "lon": 77.5775813
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 963352882,
+      "center": {
+        "lat": 13.0248754,
+        "lon": 77.5830666
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560024",
+        "addr:street": "Hebbal, Sanjaynagar, Karnataka",
+        "amenity": "college",
+        "fixme": "polygon boundaries",
+        "landuse": "education",
+        "name": "ICAR - Indian Veterinary Research Institute, Hebbal",
+        "name:kn": "ಕೃಷಿ ವಿಶ್ವವಿದ್ಯಾಲಯ",
+        "phone": "080 2341 0729",
+        "website": "ivri.nic.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1111845884,
+      "center": {
+        "lat": 13.0414988,
+        "lon": 77.5814883
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Vidyasagar Preschool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1156278589,
+      "center": {
+        "lat": 13.0285262,
+        "lon": 77.5791876
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1172705361,
+      "center": {
+        "lat": 13.0352813,
+        "lon": 77.5883564
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1209134486,
+      "center": {
+        "lat": 13.0281727,
+        "lon": 77.5812205
+      },
+      "tags": {
+        "name": "IIHR Sales Counter",
+        "shop": "farm"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1279969036,
+      "center": {
+        "lat": 13.0392196,
+        "lon": 77.579859
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1279969058,
+      "center": {
+        "lat": 13.0360331,
+        "lon": 77.5807124
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1284657004,
+      "center": {
+        "lat": 13.0445163,
+        "lon": 77.5773144
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1329289180,
+      "center": {
+        "lat": 13.0437915,
+        "lon": 77.5815236
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349910496,
+      "center": {
+        "lat": 13.0320238,
+        "lon": 77.5805089
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1349910498,
+      "center": {
+        "lat": 13.0310374,
+        "lon": 77.5807903
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377975911,
+      "center": {
+        "lat": 13.0395936,
+        "lon": 77.5776302
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377975918,
+      "center": {
+        "lat": 13.041235,
+        "lon": 77.5769574
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377975919,
+      "center": {
+        "lat": 13.0409933,
+        "lon": 77.5764671
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378386995,
+      "center": {
+        "lat": 13.0343925,
+        "lon": 77.5788553
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378572788,
+      "center": {
+        "lat": 13.0417141,
+        "lon": 77.5771582
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378572802,
+      "center": {
+        "lat": 13.0411098,
+        "lon": 77.5813129
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378926273,
+      "center": {
+        "lat": 13.0348953,
+        "lon": 77.5771994
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393079985,
+      "center": {
+        "lat": 13.0272639,
+        "lon": 77.5850349
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    }
+  ]
+}

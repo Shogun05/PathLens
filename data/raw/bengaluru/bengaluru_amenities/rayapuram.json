@@ -1,0 +1,80 @@
+{
+  "area_name": "Rayapuram",
+  "osm_id": 19883300,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 6,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4101094992,
+      "lat": 12.9635168,
+      "lon": 77.5580738,
+      "tags": {
+        "addr:street": "Hosahalli Main Road",
+        "amenity": "place_of_worship",
+        "name": "Masjid e Jamia",
+        "name:kn": "ಮಸ್ಜಿದ್ ಎ ಜಾಮ್ಯ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130960194,
+      "lat": 12.9644277,
+      "lon": 77.5553928,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130960195,
+      "lat": 12.964346,
+      "lon": 77.557164,
+      "tags": {
+        "addr:street": "Hosahalli Main Road",
+        "amenity": "place_of_worship",
+        "name": "Peter Paul Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4130960393,
+      "lat": 12.9643372,
+      "lon": 77.5558948,
+      "tags": {
+        "amenity": "place_of_worship"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5259407821,
+      "lat": 12.966103,
+      "lon": 77.5549647,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Government Hospital",
+        "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347531885,
+      "center": {
+        "lat": 12.9655397,
+        "lon": 77.5547619
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "mosque",
+        "denomination": "sunni",
+        "name": "Masjid e Umre Faroq",
+        "name:kn": "ಮಸ್ಜಿದ್ ಎ ಉಮ್ರೆ ಫರೂಕ್",
+        "religion": "muslim"
+      }
+    }
+  ]
+}

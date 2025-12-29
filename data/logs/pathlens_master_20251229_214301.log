@@ -1,0 +1,8 @@
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/logs/pathlens_master_20251229_214301.log
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - Project root: /home/shogun/Documents/PathLens
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - Config: /home/shogun/Documents/PathLens/config.yaml
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - ================================================================================
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - PIPELINE: DATA-COLLECTION
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - ================================================================================
+2025-12-29 21:43:01,625 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/data-pipeline/run_pipeline.py --place Bangalore, India

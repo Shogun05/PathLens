@@ -1,0 +1,764 @@
+{
+  "area_name": "Arakere",
+  "osm_id": 19883377,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 57,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2510077040,
+      "lat": 12.8890292,
+      "lon": 77.6043291,
+      "tags": {
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3019860772,
+      "lat": 12.8899485,
+      "lon": 77.598016,
+      "tags": {
+        "name": "Just Bake",
+        "shop": "bakery",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3019860776,
+      "lat": 12.8901855,
+      "lon": 77.5980802,
+      "tags": {
+        "name": "Mahalakshmi Tyres",
+        "shop": "tyres",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3019860779,
+      "lat": 12.8900243,
+      "lon": 77.5980363,
+      "tags": {
+        "name": "S L V Battery House",
+        "note": "Rechargeable automotive & UPS batteries",
+        "shop": "rechargeable_battery",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3019860780,
+      "lat": 12.8887981,
+      "lon": 77.5975571,
+      "tags": {
+        "name": "S N Cycle Stores",
+        "service:bicycle:retail": "yes",
+        "shop": "bicycle",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3019860788,
+      "lat": 12.8852127,
+      "lon": 77.5968148,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3019860790,
+      "lat": 12.8903684,
+      "lon": 77.5981746,
+      "tags": {
+        "amenity": "post_box",
+        "operator": "Blue Dart / DHL",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3605539065,
+      "lat": 12.8876178,
+      "lon": 77.6030677,
+      "tags": {
+        "addr:postcode": "560076",
+        "addr:street": "Arekere Main Road",
+        "amenity": "place_of_worship",
+        "name": "Anjaneya Temple",
+        "name:kn": "ಆಂಜನೇಯ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3607116326,
+      "lat": 12.8866579,
+      "lon": 77.605946,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೋಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3607116665,
+      "lat": 12.8870605,
+      "lon": 77.603414,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Government Hospital",
+        "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3607404261,
+      "lat": 12.8893134,
+      "lon": 77.602422,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Rajashree Granthim hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3607412050,
+      "lat": 12.8865458,
+      "lon": 77.6063814,
+      "tags": {
+        "name": "Family Food House",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446840727,
+      "lat": 12.8830054,
+      "lon": 77.6073285,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "311-B",
+        "addr:postcode": "560076",
+        "addr:street": "12th Main Road, Behind Ingu Tengu Restaurant, Off Bannerghatta Road, Shantiniketan Layout, Karnataka",
+        "amenity": "hospital",
+        "name": "Brahmi Ayurvedic Center",
+        "phone": "+9190086 54547",
+        "website": "brahmi-ayurveda.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488075722,
+      "lat": 12.8856117,
+      "lon": 77.6036643,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560076",
+        "addr:street": "No. 780, 16th Main, BTM Layout, Udipi Garden Road",
+        "leisure": "sports_centre",
+        "name": "Nike Store",
+        "name:kn": "ನೈಕ್",
+        "phone": "1800 806 6453"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4702679393,
+      "lat": 12.8809055,
+      "lon": 77.6010003,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4702679691,
+      "lat": 12.8810319,
+      "lon": 77.5988542,
+      "tags": {
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "name": "More",
+        "name:en": "More Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4702704790,
+      "lat": 12.8808233,
+      "lon": 77.6009711,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4714421891,
+      "lat": 12.8815668,
+      "lon": 77.6010462,
+      "tags": {
+        "amenity": "post_office",
+        "name": "Hulimavu Post Office",
+        "name:en": "Hulimavu Post Office",
+        "name:kn": "ಹುಳಿಮಾವು ಅಂಚೆ ಕಛೇರಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5730432526,
+      "lat": 12.881119,
+      "lon": 77.5996134,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "#156/22, 2nd cross, muneshwara Layout",
+        "addr:postcode": "560076",
+        "addr:street": "Hulimavu Main Road",
+        "email": "samruddhilakshmiservices@gmail.com",
+        "level": "0",
+        "name": "Prestige Service centre",
+        "opening_hours": "Mo-Su 09:00-17:30",
+        "phone": "08041744414",
+        "shop": "appliance",
+        "source": "local knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6346979892,
+      "lat": 12.8841602,
+      "lon": 77.6017702,
+      "tags": {
+        "addr:place": "arakere",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GHPS Arakere",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಅರಕೆರೆ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793956,
+      "lat": 12.8834984,
+      "lon": 77.6068702,
+      "tags": {
+        "name": "Sri Sai Cars",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793957,
+      "lat": 12.8833218,
+      "lon": 77.6067805,
+      "tags": {
+        "amenity": "post_office",
+        "name": "Bannerghatta Road Post Office",
+        "name:kn": "ಬನ್ನೇರುಘಟ್ಟ ರಸ್ತೆ ಆಂಚೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793970,
+      "lat": 12.8834061,
+      "lon": 77.6062763,
+      "tags": {
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793971,
+      "lat": 12.8834475,
+      "lon": 77.6059108,
+      "tags": {
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793972,
+      "lat": 12.8836336,
+      "lon": 77.6064656,
+      "tags": {
+        "name": "A1 Laundry Service",
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793973,
+      "lat": 12.8832789,
+      "lon": 77.6074429,
+      "tags": {
+        "amenity": "atm",
+        "brand": "South Indian Bank",
+        "brand:wikidata": "Q2044973",
+        "name": "South Indian Bank",
+        "network": "South Indian Bank",
+        "operator": "South Indian Bank",
+        "operator:wikidata": "Q2044973"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793974,
+      "lat": 12.8834188,
+      "lon": 77.606056,
+      "tags": {
+        "shop": "medical_supply"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793975,
+      "lat": 12.8834268,
+      "lon": 77.605994,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "network": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6378793984,
+      "lat": 12.8832343,
+      "lon": 77.6075065,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian;south_indian",
+        "name": "iSiri Cafe",
+        "phone": "+9199454 75540",
+        "website": "http://www.isiricafe.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6400494675,
+      "lat": 12.8888039,
+      "lon": 77.6057027,
+      "tags": {
+        "addr:place": "Arakere",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Dayana Memorial HPS Arakere",
+        "name:kn": "ಡಯಾನಾ ಸ್ಮಾರಕ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಅರಕೆರೆ",
+        "operator": "Private Un-Aided",
+        "school": "Higher primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6405531177,
+      "lat": 12.8869151,
+      "lon": 77.6028827,
+      "tags": {
+        "addr:place": "Arakere",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Marry Immaculate School, Arakere",
+        "name:kn": "ಮೇರಿ ಇಮ್ಮ್ಯಾಕ್ಯುಲೇಟ್ ಶಾಲೆ, ಅರಕೆರೆ",
+        "operator": "Private",
+        "school": "Higher primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6405552609,
+      "lat": 12.8847701,
+      "lon": 77.6080296,
+      "tags": {
+        "addr:place": "Arakere",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Divya Jyothi HS, Arakere",
+        "name:kn": "ದಿವ್ಯ ಜ್ಯೋತಿ ಪ್ರೌಢಶಾಲೆ, ಅರಕೆರೆ",
+        "operator": "Private Un-Aided",
+        "school": "Higher secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6405566811,
+      "lat": 12.884049,
+      "lon": 77.6042452,
+      "tags": {
+        "addr:place": "Arakere",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "J P Vidyakendra School, Arakere",
+        "name:kn": "ಜೆ.ಪಿ. ವಿದ್ಯಾಕೇಂದ್ರ ಶಾಲೆ, ಅರಕೆರೆ",
+        "operator": "Private Un-Aided",
+        "school": "Upper primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6406173608,
+      "lat": 12.8863886,
+      "lon": 77.6095157,
+      "tags": {
+        "addr:place": "Arakere",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Shri Sharada Vidyanikethana Arkere",
+        "name:kn": "ಶ್ರೀ ಶಾರದ ವಿದ್ಯಾನಿಕೇತನ ಅರಕೆರೆ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10697710306,
+      "lat": 12.8870865,
+      "lon": 77.5974527,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "Arekere Village",
+        "addr:postcode": "560076",
+        "addr:street": "Bannerghatta Road",
+        "addr:suburb": "Begur Hobli",
+        "addr:unit": "Salarpuria Symbiosis",
+        "amenity": "coworking_space",
+        "brand": "WeWork",
+        "brand:wikidata": "Q19995004",
+        "fee": "yes",
+        "name": "WeWork",
+        "office": "coworking",
+        "operator": "WeWork",
+        "website": "https://www.wework.com/buildings/salarpuria-symbiosis--bengaluru--Karnataka"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11989948269,
+      "lat": 12.8889433,
+      "lon": 77.6027595,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:postcode": "560076",
+        "addr:street": "Arekere Main Road",
+        "name": "Green's Fresh Supermarket",
+        "opening_hours": "Mo-Su 07:00-22:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11989948369,
+      "lat": 12.8889002,
+      "lon": 77.602832,
+      "tags": {
+        "addr:postcode": "560075",
+        "addr:street": "Arekere Main Road",
+        "name": "Toy Station",
+        "opening_hours": "Tu-Su 10:00-20:00",
+        "shop": "toys"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13096120990,
+      "lat": 12.8850332,
+      "lon": 77.6025262,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 236678607,
+      "center": {
+        "lat": 12.8847076,
+        "lon": 77.597022
+      },
+      "tags": {
+        "addr:place": "Arakere",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "AECS Magnolia Maruthi Public School, Arakere",
+        "name:kn": "ಎ.ಇ.ಸಿ.ಎಸ್ ಮ್ಯಾಗ್ನೋಲಿಯಾ ಮಾರುತಿ ಪಬ್ಲಿಕ್ ಶಾಲೆ, ಅರಕೆರೆ",
+        "operator": "Private",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259160042,
+      "center": {
+        "lat": 12.882759,
+        "lon": 77.6092693
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "SHANTHIDHAM TEMPLE",
+        "name:kn": "ಸಾಯಿಬಾಬಾ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259174707,
+      "center": {
+        "lat": 12.8816232,
+        "lon": 77.6076027
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Shantiniketan Park",
+        "name:kn": "ಶಾಂತಿನಿಕೇತನ ಉದ್ಯಾನವನ",
+        "operator": "GBA",
+        "operator:type": "government"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259175025,
+      "center": {
+        "lat": 12.8823909,
+        "lon": 77.6069298
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560076",
+        "addr:street": "Vysya Bank Colony Main Road",
+        "leisure": "park",
+        "opening_hours": "Mo-Sun 06:00 19:00",
+        "operator": "GBA",
+        "operator:type": "government"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681174089,
+      "center": {
+        "lat": 12.8832065,
+        "lon": 77.6073556
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Shobha Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681174091,
+      "center": {
+        "lat": 12.8834896,
+        "lon": 77.6072936
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Mahindra Authorised Workshop",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681174094,
+      "center": {
+        "lat": 12.8833154,
+        "lon": 77.6065325
+      },
+      "tags": {
+        "amenity": "car_wash",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 754836769,
+      "center": {
+        "lat": 12.8848842,
+        "lon": 77.6061833
+      },
+      "tags": {
+        "description": "A lush green areas with large trees.",
+        "leisure": "park",
+        "name": "Large Arekere Trees Park",
+        "source": "survey;local knowledge;gps;streetlevel imagery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 754838113,
+      "center": {
+        "lat": 12.884522,
+        "lon": 77.6065445
+      },
+      "tags": {
+        "description": "Small area where kids play.",
+        "leisure": "playground",
+        "name": "Kaveri Road Playsite"
+      }
+    },
+    {
+      "type": "way",
+      "id": 754838389,
+      "center": {
+        "lat": 12.8844328,
+        "lon": 77.6066769
+      },
+      "tags": {
+        "description": "Small lush park.",
+        "leisure": "park",
+        "name": "Little Kaveri road park",
+        "source": "survey;local knowledge;gps;streetlevel imagery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 754838729,
+      "center": {
+        "lat": 12.8846329,
+        "lon": 77.6076506
+      },
+      "tags": {
+        "leisure": "playground",
+        "name": "Large Playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302259191,
+      "center": {
+        "lat": 12.8856996,
+        "lon": 77.5983891
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Topscore Sports"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302259192,
+      "center": {
+        "lat": 12.8858941,
+        "lon": 77.5991989
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302259193,
+      "center": {
+        "lat": 12.8858752,
+        "lon": 77.5996895
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302259194,
+      "center": {
+        "lat": 12.885888,
+        "lon": 77.5994563
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302259195,
+      "center": {
+        "lat": 12.8862942,
+        "lon": 77.5991837
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302259196,
+      "center": {
+        "lat": 12.8865079,
+        "lon": 77.5980542
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1302259197,
+      "center": {
+        "lat": 12.8858279,
+        "lon": 77.5981366
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1424767744,
+      "center": {
+        "lat": 12.8852035,
+        "lon": 77.6042616
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    }
+  ]
+}

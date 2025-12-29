@@ -1,0 +1,136 @@
+{
+  "area_name": "Bettadasanpura",
+  "osm_id": 459527147,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 9,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2399197710,
+      "lat": 12.8405143,
+      "lon": 77.6310921,
+      "tags": {
+        "addr:place": "Bettadasana Pura",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GHPS Bettadasana Pura",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬೆಟ್ಟದಾಸನ ಪುರ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5219101107,
+      "lat": 12.8446932,
+      "lon": 77.6264328,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Electronic City Kalibari"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402224043,
+      "lat": 12.8367106,
+      "lon": 77.6248799,
+      "tags": {
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "way",
+      "id": 231552474,
+      "center": {
+        "lat": 12.8436612,
+        "lon": 77.6384596
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "St. Xavier's School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 257454070,
+      "center": {
+        "lat": 12.8403154,
+        "lon": 77.6283182
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Timmaraya Temple",
+        "name:kn": "ತಿಮ್ಮರಾಯ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 257454071,
+      "center": {
+        "lat": 12.8405015,
+        "lon": 77.6282767
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shiva Temple",
+        "name:kn": "ಶಿವ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 648235761,
+      "center": {
+        "lat": 12.8403458,
+        "lon": 77.6294214
+      },
+      "tags": {
+        "access": "yes",
+        "addr:city": "Bangalore",
+        "addr:street": "Begur-Koppa Road",
+        "amenity": "parking",
+        "capacity": "10",
+        "parking": "lane",
+        "supervised": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1115903963,
+      "center": {
+        "lat": 12.8473688,
+        "lon": 77.6286454
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Delhi Public School Electronic City"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426889647,
+      "center": {
+        "lat": 12.842757,
+        "lon": 77.6400922
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru",
+        "addr:postcode": "560100",
+        "addr:street": "Begur Hobli, Bettadasanapura",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "fuel:diesel": "yes",
+        "fuel:octane_87": "yes",
+        "landuse": "retail",
+        "name": "Hindustan Petroleum Corporation Limited",
+        "official_name": "Hindustan Petroleum"
+      }
+    }
+  ]
+}

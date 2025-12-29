@@ -1,0 +1,213 @@
+{
+  "area_name": "Gerupalya",
+  "osm_id": 2593549161,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 16,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 9654239421,
+      "lat": 12.8829676,
+      "lon": 77.4486726,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Basava Ashram",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654239427,
+      "lat": 12.8791867,
+      "lon": 77.4461943,
+      "tags": {
+        "name": "Shopper's Choice",
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13116211977,
+      "lat": 12.8863805,
+      "lon": 77.4514352,
+      "tags": {
+        "amenity": "Public Toilet",
+        "changing_table": "no",
+        "name": "Community Toilet (Proposed)",
+        "unisex": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253432463,
+      "center": {
+        "lat": 12.8867106,
+        "lon": 77.4496199
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Rajarajeshwari College of Engineering",
+        "name:kn": "ರಾಜರಾಜೇಶ್ವರಿ ಇಂಜಿನಿಯರಿಂಗ್ ಕಾಲೇಜು"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253432467,
+      "center": {
+        "lat": 12.8877537,
+        "lon": 77.450487
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Rajarajeswari Dental College and Hospital",
+        "name:kn": "ರಾಜರಾಜೇಶ್ವರಿ ದಂತ ಕಾಲೇಜು ಮತ್ತು ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 984075710,
+      "center": {
+        "lat": 12.8828096,
+        "lon": 77.4456321
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560074",
+        "addr:street": "Bengaluru - Mysuru Road",
+        "leisure": "park",
+        "name": "DBIT Playgroud"
+      }
+    },
+    {
+      "type": "way",
+      "id": 984140510,
+      "center": {
+        "lat": 12.88221,
+        "lon": 77.4445112
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 984140511,
+      "center": {
+        "lat": 12.8822865,
+        "lon": 77.4444334
+      },
+      "tags": {
+        "amenity": "college",
+        "fixme": "boundary of the college",
+        "name": "Don Bosco Institute of Technology",
+        "wikipedia": "en:Don Bosco Institute of Technology, Bangalore"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1050574678,
+      "center": {
+        "lat": 12.8842174,
+        "lon": 77.4498569
+      },
+      "tags": {
+        "amenity": "police",
+        "name": "Kumbalagodu Police Station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1050574679,
+      "center": {
+        "lat": 12.8818393,
+        "lon": 77.4479979
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "name": "Hindustan Petroleum",
+        "name:kn": "ಹಿಂದುಸ್ತಾನ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "official_name": "Hindustan Petroleum",
+        "operator": "Hindustan Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1327758223,
+      "center": {
+        "lat": 12.8893088,
+        "lon": 77.4378634
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "GAIL",
+        "fuel:cng": "yes",
+        "name": "GAIL",
+        "operator": "GAIL"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1327758257,
+      "center": {
+        "lat": 12.893085,
+        "lon": 77.439036
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "East West College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1368604675,
+      "center": {
+        "lat": 12.8785644,
+        "lon": 77.4357083
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1368604701,
+      "center": {
+        "lat": 12.8779728,
+        "lon": 77.4410477
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1368604703,
+      "center": {
+        "lat": 12.8767779,
+        "lon": 77.4437984
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "St. Philomena's High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1368604704,
+      "center": {
+        "lat": 12.8769292,
+        "lon": 77.4454621
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Youth Training Centre",
+        "operator": "Department of Youth Education and Sports"
+      }
+    }
+  ]
+}

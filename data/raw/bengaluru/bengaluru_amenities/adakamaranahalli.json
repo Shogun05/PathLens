@@ -1,0 +1,53 @@
+{
+  "area_name": "Adakamaranahalli",
+  "osm_id": 4407193214,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 3,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 2869713803,
+      "lat": 13.0695053,
+      "lon": 77.4452815,
+      "tags": {
+        "addr:city": "Adakamranahalli",
+        "addr:street": "National Highway 4",
+        "amenity": "place_of_worship",
+        "denomination": "Hanuman",
+        "name": "Hanuman Temple",
+        "name:kn": "ಹನುಮಂತ ದೇವಸ್ಥಾನ",
+        "note": "Nice Hanuman Temple.",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7202935793,
+      "lat": 13.0689771,
+      "lon": 77.4509567,
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "Makali",
+        "addr:postcode": "562123",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore North",
+        "description": "Primary Health Centre",
+        "leisure": "fitness_centre",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12144112008,
+      "lat": 13.0678316,
+      "lon": 77.4506777,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum"
+      }
+    }
+  ]
+}

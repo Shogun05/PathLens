@@ -1,0 +1,80 @@
+{
+  "area_name": "Doddanna Nagar",
+  "osm_id": 19883396,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 6,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 8911005359,
+      "lat": 13.0027162,
+      "lon": 77.6089174,
+      "tags": {
+        "shop": "camera"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12265548260,
+      "lat": 13.0025681,
+      "lon": 77.6120094,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bismillah Hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 673959400,
+      "center": {
+        "lat": 13.0099785,
+        "lon": 77.610202
+      },
+      "tags": {
+        "amenity": "cinema",
+        "name": "Anand Theater",
+        "name:kn": "ಆನಂದ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 673959402,
+      "center": {
+        "lat": 13.0096266,
+        "lon": 77.6115425
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Periyar Nagar Football Club",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 796374106,
+      "center": {
+        "lat": 13.0063435,
+        "lon": 77.611474
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Eidgah-e-Jadeed",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202598208,
+      "center": {
+        "lat": 13.0143615,
+        "lon": 77.6056755
+      },
+      "tags": {
+        "amenity": "cinema",
+        "name": "Vinayaka Theater",
+        "name:kn": "ವಿನಾಯಕ"
+      }
+    }
+  ]
+}

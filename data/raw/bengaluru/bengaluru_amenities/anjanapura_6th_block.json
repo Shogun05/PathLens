@@ -1,0 +1,121 @@
+{
+  "area_name": "Anjanapura 6th Block",
+  "osm_id": 13245148760,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 8,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 12778644461,
+      "lat": 12.8559909,
+      "lon": 77.5550903,
+      "tags": {
+        "addr:city": "Anjanapura",
+        "addr:district": "Bengaluru",
+        "addr:postcode": "560062",
+        "addr:street": "80 Feet Road",
+        "amenity": "events_venue",
+        "name": "KBL Saarang",
+        "website": "https://kblsaarang.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12969563454,
+      "lat": 12.8536199,
+      "lon": 77.5449277,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12969563456,
+      "lat": 12.8535062,
+      "lon": 77.544461,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127832214,
+      "center": {
+        "lat": 12.8595501,
+        "lon": 77.5444674
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337361061,
+      "center": {
+        "lat": 12.8568135,
+        "lon": 77.5572025
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1345407066,
+      "center": {
+        "lat": 12.8562512,
+        "lon": 77.5561694
+      },
+      "tags": {
+        "addr:city": "Anjanapura",
+        "addr:district": "Bengaluru",
+        "addr:housenumber": "5/9",
+        "addr:postcode": "560062",
+        "addr:street": "80 feet road, near Vajaragiri Estate",
+        "building": "sports_hall",
+        "charge": "225 INR",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "name": "Arise Badminton Academy",
+        "opening_hours": "Mo-Su 05:00-22:00",
+        "rental": "shoes;racket;",
+        "sport": "badminton",
+        "website": "https://siliconcitysportsacademy.com/arise-badminton/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1345407106,
+      "center": {
+        "lat": 12.8537351,
+        "lon": 77.5512086
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1380289025,
+      "center": {
+        "lat": 12.8564627,
+        "lon": 77.5569237
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "surface",
+        "surface": "ground"
+      }
+    }
+  ]
+}

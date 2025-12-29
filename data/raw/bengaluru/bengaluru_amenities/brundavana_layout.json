@@ -1,0 +1,59 @@
+{
+  "area_name": "Brundavana Layout",
+  "osm_id": 13180542767,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 4,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 13131082420,
+      "lat": 12.9972246,
+      "lon": 77.4431833,
+      "tags": {
+        "addr:city": "banglore",
+        "addr:postcode": "562130",
+        "addr:street": "Shri nidhi layout, Nelamangala Rd, near janapriya township, Kadabagere, Bengaluru, Byandahalli, Karnataka",
+        "name": "Mataji Supermart",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "payment:cash": "yes",
+        "payment:google_pay": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382639984,
+      "center": {
+        "lat": 12.9930479,
+        "lon": 77.4395035
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382639985,
+      "center": {
+        "lat": 12.9931814,
+        "lon": 77.4392232
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382639992,
+      "center": {
+        "lat": 12.9931218,
+        "lon": 77.4393778
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    }
+  ]
+}

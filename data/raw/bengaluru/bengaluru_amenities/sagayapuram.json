@@ -1,0 +1,604 @@
+{
+  "area_name": "Sagayapuram",
+  "osm_id": 19883461,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 41,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1866331129,
+      "lat": 13.0039638,
+      "lon": 77.6155248,
+      "tags": {
+        "name": "Mysore Mini Shopee",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2533910830,
+      "lat": 13.0022734,
+      "lon": 77.6177342,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2533936671,
+      "lat": 13.0049443,
+      "lon": 77.6171173,
+      "tags": {
+        "amenity": "ice_cream",
+        "brand": "Corner House",
+        "cuisine": "ice_cream",
+        "delivery": "yes",
+        "name": "Corner House",
+        "name:kn": "ಕಾರ್ನರ್ ಹೌಸ್",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2950498782,
+      "lat": 13.0055224,
+      "lon": 77.6161553,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Prima Care",
+        "name:kn": "ಪ್ರೈಮ ಕೇರ್",
+        "postal_code": "560005",
+        "website": "https://primecare.in/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3526180139,
+      "lat": 13.0035234,
+      "lon": 77.6166155,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "brand:wikipedia": "en:ICICI Bank",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕ್",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3526180140,
+      "lat": 13.0036378,
+      "lon": 77.6166655,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "indian",
+        "name": "Indiradarshini",
+        "name:en": "Indira Darshini",
+        "name:hi": "इंदिरा दर्शिनी",
+        "name:kn": "ಇಂದಿರಾ ದರ್ಶಿನಿ",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488175593,
+      "lat": 13.004258,
+      "lon": 77.6135288,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "14",
+        "addr:postcode": "560005",
+        "addr:street": "Viviani Road  Near-Imarn Men's Wear, Frazer Town, Richards Town",
+        "name": "Food Mart Super Market",
+        "phone": "080509 15836",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4490493255,
+      "lat": 13.0021262,
+      "lon": 77.6178476,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "3rd",
+        "addr:postcode": "560084",
+        "addr:street": "3rd Floor, No.14, Pottery Rd, Bhadrappa Layout, Richards Town, Bengaluru",
+        "leisure": "sports_centre",
+        "name": "Fitness Time",
+        "opening_hours": "6:00-22:30",
+        "phone": "9972848576",
+        "sport": "gymnasium",
+        "website": "https://fitnesstime.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757433421,
+      "lat": 13.0054971,
+      "lon": 77.6161129,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Primecare Pharmacy",
+        "name:en": "Primecare Pharmacy",
+        "name:kn": "ಪ್ರೈಮ ಕೇರ್",
+        "source": "survey",
+        "website": "https://primecare.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5931501711,
+      "lat": 13.0039814,
+      "lon": 77.6194436,
+      "tags": {
+        "amenity": "post_box",
+        "collection_times": "Mo-Su 13:10",
+        "colour": "red",
+        "drive_through": "no",
+        "name": "Postbox",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6945031202,
+      "lat": 13.0080166,
+      "lon": 77.6221479,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "1 & 2, Hennur Road Cross, Lingarajpuram,Below Railway Flyover",
+        "addr:postcode": "560084",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sundar Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7817577921,
+      "lat": 13.0040149,
+      "lon": 77.6176333,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "brand:wikipedia": "en:Axis Bank",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "source": "survey",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7817577922,
+      "lat": 13.0038285,
+      "lon": 77.6154682,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "Apollo Pharmacy",
+        "brand:wikidata": "Q62562612",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೊಲೋ ಫಾರ್ಮಸಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7828966697,
+      "lat": 13.0050061,
+      "lon": 77.6174117,
+      "tags": {
+        "drink:juice": "yes",
+        "name": "Sugarcane Juice",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7828966698,
+      "lat": 13.00506,
+      "lon": 77.6174253,
+      "tags": {
+        "name": "Flower Shop",
+        "shop": "florist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7861978808,
+      "lat": 13.0049336,
+      "lon": 77.617151,
+      "tags": {
+        "name": "Lizz Salon and Spa",
+        "shop": "hairdresser",
+        "unisex": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7881321471,
+      "lat": 13.0056111,
+      "lon": 77.6161889,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "International Montessori House of Children"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7881335487,
+      "lat": 13.0053201,
+      "lon": 77.6162395,
+      "tags": {
+        "drink:juice": "yes",
+        "name": "Sugarcane Juice",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7941607043,
+      "lat": 13.0039944,
+      "lon": 77.6155412,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "MedPlus",
+        "brand:wikidata": "Q65684234",
+        "brand:wikipedia": "en:MedPlus",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "MedPlus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7941607044,
+      "lat": 13.003937,
+      "lon": 77.6155107,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7954170225,
+      "lat": 13.0029444,
+      "lon": 77.6171411,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Little Springs"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9786123496,
+      "lat": 13.003654,
+      "lon": 77.6166234,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "CSB Bank",
+        "brand:wikidata": "Q5053244",
+        "name": "CSB Bank",
+        "official_name": "Catholic Syrian Bank",
+        "operator": "Catholic Syrian Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10237447823,
+      "lat": 13.0093899,
+      "lon": 77.61687,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11046880966,
+      "lat": 13.0048779,
+      "lon": 77.6171409,
+      "tags": {
+        "amenity": "cafe",
+        "delivery": "yes",
+        "name": "Chez Kina",
+        "shop": "bakery",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33725070,
+      "center": {
+        "lat": 13.0040986,
+        "lon": 77.6169728
+      },
+      "tags": {
+        "barrier": "fence",
+        "leisure": "park",
+        "name": "Richards Park",
+        "name:kn": "ರಿಚರ್ಡ್ಸ್ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 39158802,
+      "center": {
+        "lat": 13.006205,
+        "lon": 77.619955
+      },
+      "tags": {
+        "barrier": "wall",
+        "landuse": "recreation_ground",
+        "leisure": "pitch",
+        "name": "St. Charles",
+        "sport": "soccer;basketball;cricket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169724902,
+      "center": {
+        "lat": 13.0061963,
+        "lon": 77.6178491
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "heritage": "2",
+        "heritage:operator": "nmma",
+        "heritage:website": "https://nmma.nic.in/nmma/exploreBuiltState.do?state=29",
+        "name": "Holy Ghost Church",
+        "name:kn": "ಹೋಲಿ ಘೋಸ್ಟ್ ಚರ್ಚ್",
+        "ref:nmma": "KR20010671",
+        "religion": "christian",
+        "website": "https://www.cssr.in/index.php?q=content/holy-ghost-church-bangalore"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172952766,
+      "center": {
+        "lat": 13.0028911,
+        "lon": 77.6158013
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560005",
+        "addr:street": "Pottery Road",
+        "amenity": "school",
+        "name": "Clarence High School",
+        "old_name": "Fraser Town European Day School",
+        "phone": "+91 80 25470868",
+        "start_date": "1914",
+        "website": "http://www.clarencehighschool.net/",
+        "wikipedia": "en:Clarence High School (Bangalore, India)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 173039120,
+      "center": {
+        "lat": 13.0063203,
+        "lon": 77.6148812
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 311623046,
+      "center": {
+        "lat": 13.0033402,
+        "lon": 77.6171322
+      },
+      "tags": {
+        "amenity": "social_facility",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Stephen's Home for the Aged",
+        "operator": "St. John's Church",
+        "operator:type": "religious",
+        "roof:colour": "#c66e4e",
+        "social_facility": "nursing_home",
+        "social_facility:for": "senior"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346015495,
+      "center": {
+        "lat": 13.0041,
+        "lon": 77.6169496
+      },
+      "tags": {
+        "building": "yes",
+        "leisure": "bandstand",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346019709,
+      "center": {
+        "lat": 13.0046459,
+        "lon": 77.6195021
+      },
+      "tags": {
+        "amenity": "social_facility",
+        "building": "yes",
+        "name": "Missionaries of Charity - Nirmala Shishubhavan",
+        "opening_hours": "08:00-12:00,15:00-18:00; Th off",
+        "roof:colour": "gray"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346019730,
+      "center": {
+        "lat": 13.0060537,
+        "lon": 77.6160903
+      },
+      "tags": {
+        "addr:housenumber": "8",
+        "addr:street": "John Armstrong Road",
+        "amenity": "place_of_worship",
+        "building": "chapel",
+        "building:levels": "2",
+        "denomination": "catholic",
+        "name": "Chapel of St.Gerard Majella",
+        "religion": "christian",
+        "roof:colour": "#c66e4e",
+        "service_times": "Mo-Fr 18:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363457167,
+      "center": {
+        "lat": 13.0068955,
+        "lon": 77.6165907
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363458473,
+      "center": {
+        "lat": 13.0049679,
+        "lon": 77.6197408
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "compressed_air": "yes",
+        "name": "Indian Oil"
+      }
+    },
+    {
+      "type": "way",
+      "id": 365234334,
+      "center": {
+        "lat": 13.0042468,
+        "lon": 77.6159177
+      },
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:street": "Hall Road",
+        "amenity": "community_centre",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "Bungalow 7",
+        "name:kn": "ಬಂಗ್ಲಾ ೭",
+        "roof:colour": "white"
+      }
+    },
+    {
+      "type": "way",
+      "id": 837561053,
+      "center": {
+        "lat": 13.0040301,
+        "lon": 77.6167034
+      },
+      "tags": {
+        "access": "yes",
+        "leisure": "playground",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 853107526,
+      "center": {
+        "lat": 13.0026129,
+        "lon": 77.6166965
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "10",
+        "addr:postcode": "560005",
+        "addr:street": "Pottery Road",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "name": "Mizpah Telugu Church",
+        "religion": "christian",
+        "roof:colour": "#c66e4e",
+        "service_times": "Su 09:30 - 12:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1119315457,
+      "center": {
+        "lat": 13.0094866,
+        "lon": 77.6168928
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202577040,
+      "center": {
+        "lat": 13.0025954,
+        "lon": 77.6153961
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354185330,
+      "center": {
+        "lat": 13.0060353,
+        "lon": 77.6170324
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    }
+  ]
+}

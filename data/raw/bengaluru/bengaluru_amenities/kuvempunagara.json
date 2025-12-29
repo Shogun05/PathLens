@@ -1,0 +1,718 @@
+{
+  "area_name": "Kuvempunagara",
+  "osm_id": 19883247,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 59,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1462235148,
+      "lat": 13.0694057,
+      "lon": 77.5451149,
+      "tags": {
+        "name": "Akshya Complex",
+        "shop": "supermarket",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462448663,
+      "lat": 13.0581352,
+      "lon": 77.546243,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Apollo Pharmacy",
+        "name:kn": "ಅಪೊಲೋ ಫಾರ್ಮಸಿ",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463455966,
+      "lat": 13.069411,
+      "lon": 77.5450254,
+      "tags": {
+        "amenity": "post_office",
+        "atm": "yes",
+        "name": "Post Office",
+        "name:kn": "ಅಂಚೆ ಕಛೇರಿ",
+        "wheelchair": "no",
+        "wikidata": "Q35054",
+        "wikipedia": "en:Post office"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463790590,
+      "lat": 13.0721308,
+      "lon": 77.5492982,
+      "tags": {
+        "amenity": "school",
+        "name": "Air Force School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463790763,
+      "lat": 13.0730662,
+      "lon": 77.5463531,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463791267,
+      "lat": 13.0721909,
+      "lon": 77.5464364,
+      "tags": {
+        "amenity": "theatre",
+        "name": "Air Force Theatre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1529386309,
+      "lat": 13.0730486,
+      "lon": 77.5413377,
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Kuvempunagar 2nd Stage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1529386386,
+      "lat": 13.0725786,
+      "lon": 77.5408777,
+      "tags": {
+        "name": "Padma Stores",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496203,
+      "lat": 13.0567383,
+      "lon": 77.5469649,
+      "tags": {
+        "name": "Kanti Sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496204,
+      "lat": 13.0568114,
+      "lon": 77.5469099,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "name": "Lassi Shop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496211,
+      "lat": 13.0576985,
+      "lon": 77.5465371,
+      "tags": {
+        "name": "shop@rite",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496215,
+      "lat": 13.0592583,
+      "lon": 77.5458048,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC",
+        "operator": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7227496218,
+      "lat": 13.0610821,
+      "lon": 77.5446421,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038473,
+      "lat": 13.070554,
+      "lon": 77.5388968,
+      "tags": {
+        "addr:full": "KVP Nagar, Jalahalli, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Government Hospital",
+        "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188057016,
+      "lat": 13.0721671,
+      "lon": 77.546269,
+      "tags": {
+        "addr:full": "Major Sandeep Unnikrishnan Rd, Govindayyanapalya, Jalahalli East, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "restaurant",
+        "name": "Chilli Shots Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676265216,
+      "lat": 13.0566388,
+      "lon": 77.5471368,
+      "tags": {
+        "check_date": "2025-03-18",
+        "name": "Sri Venkateshwara Bengali Sweets",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12757331355,
+      "lat": 13.070003,
+      "lon": 77.5551752,
+      "tags": {
+        "check_date": "2025-08-09",
+        "name": "Tattoo",
+        "shop": "tattoo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12757331356,
+      "lat": 13.0699145,
+      "lon": 77.5551314,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2025-04-15",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812316,
+      "lat": 13.0676808,
+      "lon": 77.5540231,
+      "tags": {
+        "addr:housenumber": "13/2",
+        "addr:street": "Ramachandrapura Main Road",
+        "amenity": "dentist",
+        "check_date": "2025-04-20",
+        "healthcare": "dentist",
+        "healthcare:speciality": "dental_oral_maxillo_facial_surgery",
+        "level": "0",
+        "name": "Biswas Dental Surgery",
+        "phone": "+91 95454 51029"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812317,
+      "lat": 13.0677035,
+      "lon": 77.5540336,
+      "tags": {
+        "check_date": "2025-04-20",
+        "level": "0",
+        "name": "Shiva Fashions",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812318,
+      "lat": 13.0677235,
+      "lon": 77.5540386,
+      "tags": {
+        "check_date": "2025-04-20",
+        "level": "0",
+        "name": "Appollo Electricals",
+        "shop": "electrical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812319,
+      "lat": 13.0678271,
+      "lon": 77.5540961,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2025-04-16",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812321,
+      "lat": 13.0678615,
+      "lon": 77.5541182,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2025-04-16",
+        "healthcare": "pharmacy",
+        "name": "Sri Sanjeev Pharma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812324,
+      "lat": 13.0680994,
+      "lon": 77.5542103,
+      "tags": {
+        "addr:housenumber": "24/2",
+        "addr:street": "Ramachandrapura Main Road",
+        "amenity": "doctors",
+        "check_date": "2025-04-20",
+        "healthcare": "doctor",
+        "level": "0",
+        "name": "Krishna Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812325,
+      "lat": 13.0683185,
+      "lon": 77.5543299,
+      "tags": {
+        "check_date": "2025-04-16",
+        "name": "Sree VN Enterprises",
+        "shop": "water_filter"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812326,
+      "lat": 13.0683507,
+      "lon": 77.5543466,
+      "tags": {
+        "check_date": "2025-04-19",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758812327,
+      "lat": 13.0683882,
+      "lon": 77.5543601,
+      "tags": {
+        "check_date": "2025-04-16",
+        "name": "Maruthi IT Solutions",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12761908830,
+      "lat": 13.0673288,
+      "lon": 77.5538666,
+      "tags": {
+        "check_date": "2025-06-15",
+        "name": "Shabari Tent House",
+        "rental": "marquee",
+        "shop": "rental"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12770171414,
+      "lat": 13.0675995,
+      "lon": 77.5539474,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2025-04-20",
+        "healthcare": "pharmacy",
+        "name": "Ayurveda Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12770171415,
+      "lat": 13.0677134,
+      "lon": 77.5540383,
+      "tags": {
+        "addr:housenumber": "13/2",
+        "addr:street": "Ramachandrapura Main Road",
+        "check_date": "2025-06-15",
+        "level": "0",
+        "name": "Shiva Bore Wells",
+        "phone": "+91 93437 27480; +91 99865 23159",
+        "shop": "trade",
+        "trade": "industrial_equipment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12778287150,
+      "lat": 13.0674212,
+      "lon": 77.5539115,
+      "tags": {
+        "addr:housenumber": "7/2",
+        "addr:street": "Ramachandrapura Main Road",
+        "check_date": "2025-06-15",
+        "name": "RV Sports & Service",
+        "shop": "sports"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13059317105,
+      "lat": 13.0701182,
+      "lon": 77.5552235,
+      "tags": {
+        "amenity": "photo_booth",
+        "check_date": "2025-08-09",
+        "name": "Photo Jumction"
+      }
+    },
+    {
+      "type": "way",
+      "id": 41210246,
+      "center": {
+        "lat": 13.0555739,
+        "lon": 77.5365404
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Kendriya Vidyalaya",
+        "name:kn": "ಕೇಂದ್ರಿಯ ವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 46243830,
+      "center": {
+        "lat": 13.0551707,
+        "lon": 77.540543
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Cluny Convent"
+      }
+    },
+    {
+      "type": "way",
+      "id": 46243835,
+      "center": {
+        "lat": 13.0553091,
+        "lon": 77.5413477
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Our Lady of Fathima Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594563630,
+      "center": {
+        "lat": 13.0716771,
+        "lon": 77.5516646
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 767320172,
+      "center": {
+        "lat": 13.0550663,
+        "lon": 77.5407364
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 774649683,
+      "center": {
+        "lat": 13.0643976,
+        "lon": 77.5433696
+      },
+      "tags": {
+        "addr:city": "Jalahalli East, Bangalore",
+        "addr:housenumber": "Kendriya Vidyalaya No.2",
+        "addr:postcode": "560014",
+        "amenity": "school",
+        "branch": "No.2, Jalahalli East",
+        "brand": "Kendriya Vidyalaya",
+        "brand:wikidata": "Q1156653",
+        "grades": "0-12",
+        "name": "Kendriya Vidyalaya",
+        "name:kn": "ಕೇಂದ್ರೀಯ ವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127727182,
+      "center": {
+        "lat": 13.0735501,
+        "lon": 77.5333272
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "National Public School, Jalahalli",
+        "name:kn": "ರಾಷ್ಟ್ರೀಯ ಸಾರ್ವಜನಿಕ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648097,
+      "center": {
+        "lat": 13.0721359,
+        "lon": 77.5348099
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648098,
+      "center": {
+        "lat": 13.0727024,
+        "lon": 77.5340544
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648099,
+      "center": {
+        "lat": 13.072796,
+        "lon": 77.5337091
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136648100,
+      "center": {
+        "lat": 13.0728596,
+        "lon": 77.5334866
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239012965,
+      "center": {
+        "lat": 13.0575509,
+        "lon": 77.5466442
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "GAIL",
+        "fuel:cng": "yes",
+        "operator": "GAIL"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265440959,
+      "center": {
+        "lat": 13.0667062,
+        "lon": 77.5447319
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265440963,
+      "center": {
+        "lat": 13.0659366,
+        "lon": 77.546163
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265440973,
+      "center": {
+        "lat": 13.0667202,
+        "lon": 77.5462939
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265570507,
+      "center": {
+        "lat": 13.0602989,
+        "lon": 77.55095
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584663,
+      "center": {
+        "lat": 13.073622,
+        "lon": 77.5334499
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584664,
+      "center": {
+        "lat": 13.0736416,
+        "lon": 77.5336276
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584665,
+      "center": {
+        "lat": 13.0734632,
+        "lon": 77.5341594
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584676,
+      "center": {
+        "lat": 13.0655317,
+        "lon": 77.5336314
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vishweshwaraiah Enclave Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584680,
+      "center": {
+        "lat": 13.06583,
+        "lon": 77.5358367
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308403413,
+      "center": {
+        "lat": 13.0565302,
+        "lon": 77.5473833
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ebenezer Marthoma Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878957,
+      "center": {
+        "lat": 13.0713914,
+        "lon": 77.5509415
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878958,
+      "center": {
+        "lat": 13.070773,
+        "lon": 77.5508318
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878961,
+      "center": {
+        "lat": 13.0666597,
+        "lon": 77.5465266
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878970,
+      "center": {
+        "lat": 13.0712761,
+        "lon": 77.5481731
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1346878971,
+      "center": {
+        "lat": 13.0708357,
+        "lon": 77.5480203
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    }
+  ]
+}

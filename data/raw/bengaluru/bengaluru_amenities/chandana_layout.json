@@ -1,0 +1,491 @@
+{
+  "area_name": "Chandana Layout",
+  "osm_id": 10272681263,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 37,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1794150253,
+      "lat": 12.9945246,
+      "lon": 77.5043269,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sollapuradamma Temple",
+        "name:kn": "ಸೊಲ್ಲಾಪುರದಮ್ಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4558031091,
+      "lat": 12.9876421,
+      "lon": 77.5151107,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938779562,
+      "lat": 12.9881868,
+      "lon": 77.5087273,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No. 127/1, Sri Gandhanda Kaval, Sunkadakatte, Viswaneedam Post, Magadi Main Road",
+        "addr:postcode": "560054",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sri Lakshmi Multi Speciality Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944525393,
+      "lat": 12.9819768,
+      "lon": 77.5108275,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No 193, So Feet Road, 2nd Block 2nd Stage",
+        "addr:postcode": "560072",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Unity Lifline Hospital Pvt Ltd",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944586994,
+      "lat": 12.9916367,
+      "lon": 77.5044787,
+      "tags": {
+        "addr:district": "Bengaluru Rural",
+        "addr:full": "H V Rangappa Building ,Gollarahatti, Hosahalli Cross, Magadi Main Road",
+        "addr:postcode": "560091",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Anand Nursing Home and Lab",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6946978667,
+      "lat": 12.988865,
+      "lon": 77.5078006,
+      "tags": {
+        "addr:district": "Bengaluru Rural",
+        "addr:full": "Magadi Main Road, Sunkadakatte",
+        "addr:postcode": "560091",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Ashraya Medinova Pvt Ltd",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187959398,
+      "lat": 12.9828242,
+      "lon": 77.5107928,
+      "tags": {
+        "addr:full": "Nagarabhavi, Magadi Main Rd, Kandhaya Nagar, sumnahalli, Kottigepalya, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187963425,
+      "lat": 12.9801316,
+      "lon": 77.5106987,
+      "tags": {
+        "addr:full": "Old Outer Ring Rd, 2 Block, Naagarabhaavi, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8196809374,
+      "lat": 12.979487,
+      "lon": 77.510375,
+      "tags": {
+        "addr:full": "23, Nagarbhavi Second Stage, BDA Layout, Naagarabhaavi, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "college",
+        "name": "Bsv Pu College Malagala"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654252379,
+      "lat": 12.98113,
+      "lon": 77.5111923,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654252380,
+      "lat": 12.9805027,
+      "lon": 77.5107577,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 143731427,
+      "center": {
+        "lat": 12.9909868,
+        "lon": 77.513684
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "National Institute of Unani Medicine"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192051391,
+      "center": {
+        "lat": 12.9787896,
+        "lon": 77.5111454
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "KLE School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192051395,
+      "center": {
+        "lat": 12.9787203,
+        "lon": 77.5113743
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192051693,
+      "center": {
+        "lat": 12.9796599,
+        "lon": 77.513564
+      },
+      "tags": {
+        "alt_name": "Buddha Park",
+        "leisure": "park",
+        "name": "Buddha Shanti Kanive",
+        "name:kn": "ಭುದ್ಧ ಶಾಂತಿ ಕಣಿವೆ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785010682,
+      "center": {
+        "lat": 12.9899803,
+        "lon": 77.5136653
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785010718,
+      "center": {
+        "lat": 12.98941,
+        "lon": 77.513334
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1050578227,
+      "center": {
+        "lat": 12.9834643,
+        "lon": 77.5099921
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Kempegowda Institute of Management Studies and Research"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122444429,
+      "center": {
+        "lat": 12.9898255,
+        "lon": 77.5005412
+      },
+      "tags": {
+        "amenity": "cinema",
+        "name": "Miraj Cinemas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1123272057,
+      "center": {
+        "lat": 12.9862801,
+        "lon": 77.5112768
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Vokkaligara School",
+        "name:kn": "ಒಕ್ಕಲಿಗರ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1207349998,
+      "center": {
+        "lat": 12.9795044,
+        "lon": 77.50757
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353417433,
+      "center": {
+        "lat": 12.9885207,
+        "lon": 77.5086958
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353417439,
+      "center": {
+        "lat": 12.9884579,
+        "lon": 77.5099068
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353417448,
+      "center": {
+        "lat": 12.9876579,
+        "lon": 77.5126638
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420066,
+      "center": {
+        "lat": 12.9824858,
+        "lon": 77.5128127
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "catholic",
+        "name": "St. Joseph Vaz Catholic Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420077,
+      "center": {
+        "lat": 12.9929933,
+        "lon": 77.5090794
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420078,
+      "center": {
+        "lat": 12.9909598,
+        "lon": 77.504771
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420079,
+      "center": {
+        "lat": 12.9924455,
+        "lon": 77.5067163
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420080,
+      "center": {
+        "lat": 12.991143,
+        "lon": 77.5025955
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1353420081,
+      "center": {
+        "lat": 12.9903828,
+        "lon": 77.5003622
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390079364,
+      "center": {
+        "lat": 12.9864958,
+        "lon": 77.5092195
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "RVS College of Nursing Sciences"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390079380,
+      "center": {
+        "lat": 12.9837378,
+        "lon": 77.5092114
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Vokkaligara Sangha Industrial Training Institute"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390079382,
+      "center": {
+        "lat": 12.9832647,
+        "lon": 77.5110293
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393102042,
+      "center": {
+        "lat": 12.9892009,
+        "lon": 77.497977
+      },
+      "tags": {
+        "amenity": "college"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393102043,
+      "center": {
+        "lat": 12.9918313,
+        "lon": 77.4989305
+      },
+      "tags": {
+        "amenity": "college"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393102047,
+      "center": {
+        "lat": 12.9891179,
+        "lon": 77.5046222
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393102061,
+      "center": {
+        "lat": 12.9899715,
+        "lon": 77.5067244
+      },
+      "tags": {
+        "amenity": "college",
+        "landuse": "education",
+        "name": "GT College"
+      }
+    }
+  ]
+}

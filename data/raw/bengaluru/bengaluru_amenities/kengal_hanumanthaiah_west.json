@@ -1,0 +1,451 @@
+{
+  "area_name": "Kengal Hanumanthaiah West",
+  "osm_id": 19883448,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 34,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 5808500942,
+      "lat": 12.9291704,
+      "lon": 77.4861924,
+      "tags": {
+        "addr:city": "Kengeri Satellite Town",
+        "addr:postcode": "560060",
+        "addr:street": "Near Bethesda School",
+        "name": "Sadaran Bakers/Anushree Bakery/Sai Bake Palace",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6809801083,
+      "lat": 12.9156896,
+      "lon": 77.4808065,
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "NEAR COLLAGE, RAILWAY STATION",
+        "addr:postcode": "560060",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Kengeri Upanagara Government Hospital",
+        "name:kn": "ಕೆಂಗೇರಿ ಉಪನಗರ ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944400794,
+      "lat": 12.9110766,
+      "lon": 77.4800451,
+      "tags": {
+        "addr:district": "Bengaluru Rural",
+        "addr:full": "#709, 1st Cross, Ring Road, Kengeri Upanagar,Behind Vijaya Bank",
+        "addr:postcode": "560060",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Belaku Eye Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7289130005,
+      "lat": 12.9193249,
+      "lon": 77.4831524,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9182325482,
+      "lat": 12.9294702,
+      "lon": 77.4868321,
+      "tags": {
+        "amenity": "parking",
+        "fee": "no",
+        "operator": "Green House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9187060177,
+      "lat": 12.9299385,
+      "lon": 77.4870761,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "currency:INR": "yes",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "operator:wikipedia": "en:State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9195745509,
+      "lat": 12.9261822,
+      "lon": 77.4856678,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "brand:wikipedia": "en:Axis Bank",
+        "currency:INR": "yes",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549",
+        "operator:wikipedia": "en:Axis Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9204433034,
+      "lat": 12.9297951,
+      "lon": 77.4869553,
+      "tags": {
+        "name": "Green House",
+        "operator": "Vegitable vendor",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9204433035,
+      "lat": 12.9295796,
+      "lon": 77.4868691,
+      "tags": {
+        "amenity": "weighbridge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9600130116,
+      "lat": 12.9293093,
+      "lon": 77.4837912,
+      "tags": {
+        "addr:street": "Rajkumar Main Road, Gandhi Nagar, Kengeri Satellite Town",
+        "amenity": "place_of_worship",
+        "name": "Aathi Sakthi Maramma Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654252412,
+      "lat": 12.9202922,
+      "lon": 77.4835119,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654252413,
+      "lat": 12.9195994,
+      "lon": 77.4832624,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10588737906,
+      "lat": 12.9245385,
+      "lon": 77.4850731,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hoysala Darshini (veg)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11145402633,
+      "lat": 12.9206492,
+      "lon": 77.4837747,
+      "tags": {
+        "amenity": "atm",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089426449,
+      "lat": 12.9179934,
+      "lon": 77.4780293,
+      "tags": {
+        "amenity": "crematorium",
+        "name": "Hindu Crematorium",
+        "survey:date": "2024-08-03"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089426450,
+      "lat": 12.9159731,
+      "lon": 77.4793016,
+      "tags": {
+        "amenity": "cinema",
+        "name": "Robin Theatre",
+        "survey:date": "2024-08-03"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089426451,
+      "lat": 12.915418,
+      "lon": 77.4809643,
+      "tags": {
+        "amenity": "college",
+        "name": "Seshadripuram Independent Pre-University College",
+        "phone": "+91 80 2295 5377",
+        "survey:date": "2024-08-03",
+        "website": "https://spuc.ac.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089426452,
+      "lat": 12.9155804,
+      "lon": 77.4811537,
+      "tags": {
+        "amenity": "college",
+        "name": "Seshadripuram Academy of Business Studies",
+        "phone": "+91 80 2848 8676",
+        "survey:date": "2024-08-03",
+        "website": "https://sabs.ac.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12528738371,
+      "lat": 12.9289537,
+      "lon": 77.486678,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560060",
+        "addr:street": "80 Feet Rd, Valagerahalli, Kengeri Satellite Town",
+        "name": "Smart Point",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12594973656,
+      "lat": 12.9237064,
+      "lon": 77.4726409,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Hanuman Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 151809005,
+      "center": {
+        "lat": 12.933002,
+        "lon": 77.484888
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347532410,
+      "center": {
+        "lat": 12.9157061,
+        "lon": 77.4817653
+      },
+      "tags": {
+        "addr:city": "Kengeri Satellite Town",
+        "addr:postcode": "560060",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q154950",
+        "brand:wikipedia": "en:Royal Dutch Shell",
+        "fuel:diesel": "yes",
+        "fuel:petrol": "yes",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್",
+        "operator": "Shell",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348298855,
+      "center": {
+        "lat": 12.928666,
+        "lon": 77.4862187
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "St. Francis of Assisi Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348497489,
+      "center": {
+        "lat": 12.9153259,
+        "lon": 77.4816357
+      },
+      "tags": {
+        "addr:city": "Kengeri Satellite Town",
+        "addr:postcode": "560060",
+        "amenity": "post_office",
+        "building": "yes",
+        "name": "Kengeri Post Office",
+        "name:kn": "ಕೆಂಗೇರಿ ಅಂಚೆ ಕಛೇರಿ",
+        "operator": "Indian Postal Department"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362880375,
+      "center": {
+        "lat": 12.9177032,
+        "lon": 77.4815343
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362880376,
+      "center": {
+        "lat": 12.9189066,
+        "lon": 77.4819706
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Kids Playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362880377,
+      "center": {
+        "lat": 12.9201481,
+        "lon": 77.4824172
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362880378,
+      "center": {
+        "lat": 12.9211121,
+        "lon": 77.4827536
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362915043,
+      "center": {
+        "lat": 12.9161686,
+        "lon": 77.4809949
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 614224625,
+      "center": {
+        "lat": 12.9282501,
+        "lon": 77.4855451
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Bethesda International School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 955011014,
+      "center": {
+        "lat": 12.9337484,
+        "lon": 77.4849086
+      },
+      "tags": {
+        "addr:city": "Kengeri Satellite Town",
+        "addr:postcode": "560060",
+        "amenity": "car_wash",
+        "name": "Car Wash"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1262097994,
+      "center": {
+        "lat": 12.918389,
+        "lon": 77.477391
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "SBS PU and Degree College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1262097998,
+      "center": {
+        "lat": 12.9169033,
+        "lon": 77.4757838
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Sri Bandeshwara Swamy Shivayogigala Bhavana",
+        "religion": "hindu",
+        "short_name": "SBS"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1303657989,
+      "center": {
+        "lat": 12.9159882,
+        "lon": 77.4791185
+      },
+      "tags": {
+        "amenity": "cinema",
+        "name": "Robin Theatre"
+      }
+    }
+  ]
+}

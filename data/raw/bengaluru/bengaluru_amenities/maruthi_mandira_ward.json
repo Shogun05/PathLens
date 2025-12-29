@@ -1,0 +1,1208 @@
+{
+  "area_name": "Maruthi Mandira Ward",
+  "osm_id": 19884589,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 102,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1778852317,
+      "lat": 12.9659432,
+      "lon": 77.5347345,
+      "tags": {
+        "addr:housename": "Vijayanagar TTMC",
+        "addr:postcode": "560040",
+        "name": "Reliance Mart",
+        "shop": "supermarket",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1835486164,
+      "lat": 12.9686251,
+      "lon": 77.5244618,
+      "tags": {
+        "name": "Vijaya Bank, Mudalapalya Branch",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2509173743,
+      "lat": 12.970694,
+      "lon": 77.5254335,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Kaveri Layout, Vijayanagar",
+        "addr:street": "Nagarabhavi Road",
+        "name": "Dear N Near Furniture Store",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2509173753,
+      "lat": 12.9705894,
+      "lon": 77.5259136,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Kaveri Layout",
+        "addr:street": "Nagarabhavi Road",
+        "name": "Kurlon Matress Express",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2509173769,
+      "lat": 12.9704143,
+      "lon": 77.5249373,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Moodapalya Circle",
+        "addr:street": "Nagarabhavi Road",
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Shri Guru Upahara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2514705846,
+      "lat": 12.964903,
+      "lon": 77.5302716,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Vinayaka Layout, Vijayanagar",
+        "addr:street": "Vinayaka Layout Main Road",
+        "name": "Adalia Boutique",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2514705847,
+      "lat": 12.9682121,
+      "lon": 77.5303413,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Vinayaka Layout, Vijayanagar",
+        "addr:street": "Marenhalli Main Road",
+        "name": "Behtar Super Market",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2514705848,
+      "lat": 12.9681781,
+      "lon": 77.5304191,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Vinayaka Layout, Vijayanagar",
+        "addr:street": "Marenhalli Main Road",
+        "name": "Zil Mil",
+        "shop": "boutique"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3957979017,
+      "lat": 12.9647608,
+      "lon": 77.5324347,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560040",
+        "addr:street": "Subbanna Garden Main Road",
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "drive_through": "no",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3957994140,
+      "lat": 12.9647458,
+      "lon": 77.5311092,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445356902,
+      "lat": 12.966771,
+      "lon": 77.5349228,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560040",
+        "addr:street": "17th Cross Rd, Service Road, Opp. Maruthi Mandir, TTMC Bus Stop, Govindaraja Nagar Ward, PF Layout, Vijayanagar",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Employees State Insurance Dispensary",
+        "operator": "Employees' State Insurance",
+        "operator:short": "ESI",
+        "operator:type": "private",
+        "operator:wikidata": "Q3595726",
+        "phone": "080 2845 2785",
+        "website": "globalhospitalsindia.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446447400,
+      "lat": 12.9673836,
+      "lon": 77.5357039,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "1714",
+        "addr:postcode": "560040",
+        "addr:street": "17th Cross, 21st Main, Maruthi Mandir, Vijay Nagar",
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Big Bite",
+        "opening_hours": "11:00-23:00",
+        "phone": "080 49653144"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447076314,
+      "lat": 12.968821,
+      "lon": 77.5246297,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "189, Shiva Complex, Shivananda Nagar, Near Vijay Bank, Moodalapalya",
+        "addr:postcode": "560040",
+        "addr:state": "Karnataka",
+        "addr:street": "Nagarabhavi Road",
+        "amenity": "hospital",
+        "name": "Manasa Hospital",
+        "name:kn": "ಮಾನಸ ಆಸ್ಪತ್ರೆ",
+        "phone": "+918023104640",
+        "source": "OpenGovernmentData",
+        "website": "http://www.manasa.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4681664946,
+      "lat": 12.9647338,
+      "lon": 77.5313573,
+      "tags": {
+        "addr:housenumber": "#75, 7th main",
+        "addr:postcode": "560040",
+        "addr:street": "Subbanna Garden Main road",
+        "email": "Kamala.rbd@gmail.com",
+        "name": "Modicare DP Vijayanagar",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "operator": "Kamalamma",
+        "phone": "9164258999",
+        "shop": "convenience",
+        "website": "http://www.modicare.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342559932,
+      "lat": 12.9657251,
+      "lon": 77.5350046,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್",
+        "operator": "Karnataka Bank",
+        "operator:wikidata": "Q2042632"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342565525,
+      "lat": 12.9657135,
+      "lon": 77.5350296,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "*"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342605763,
+      "lat": 12.9659481,
+      "lon": 77.5349805,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342607077,
+      "lat": 12.9659522,
+      "lon": 77.5351704,
+      "tags": {
+        "addr:housenumber": "Vijayanagar TTMC",
+        "amenity": "waste_basket",
+        "description": "Dry waste trash can"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342607127,
+      "lat": 12.9653025,
+      "lon": 77.5348628,
+      "tags": {
+        "amenity": "waste_basket",
+        "description": "Wet and Solid waste can's",
+        "name": "Trash Cans"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342616794,
+      "lat": 12.9650746,
+      "lon": 77.5347572,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "description": "Vijayanagar TTMC",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342617527,
+      "lat": 12.9651373,
+      "lon": 77.5346487,
+      "tags": {
+        "amenity": "waste_basket",
+        "name": "Trash cans"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342617615,
+      "lat": 12.9652059,
+      "lon": 77.5346742,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342617617,
+      "lat": 12.9656321,
+      "lon": 77.5348594,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "wet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342617619,
+      "lat": 12.9656408,
+      "lon": 77.5348628,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342618709,
+      "lat": 12.9652398,
+      "lon": 77.5346811,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342619747,
+      "lat": 12.9659691,
+      "lon": 77.5349971,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342619783,
+      "lat": 12.9652097,
+      "lon": 77.5346461,
+      "tags": {
+        "amenity": "waste_basket",
+        "description": "Wet and solid trash cans",
+        "name": "Trash cans"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342619784,
+      "lat": 12.9659442,
+      "lon": 77.5349808,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "wet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342623079,
+      "lat": 12.9654108,
+      "lon": 77.5347758,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "wet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342623830,
+      "lat": 12.9651903,
+      "lon": 77.5346826,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342624149,
+      "lat": 12.9654174,
+      "lon": 77.53478,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342624449,
+      "lat": 12.9651815,
+      "lon": 77.5346787,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "wet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342625354,
+      "lat": 12.9655852,
+      "lon": 77.5346554,
+      "tags": {
+        "amenity": "toilets",
+        "description": "Unisex toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342635679,
+      "lat": 12.9652864,
+      "lon": 77.5345868,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342636578,
+      "lat": 12.9654177,
+      "lon": 77.5346022,
+      "tags": {
+        "amenity": "waste_basket",
+        "name": "Wet and Solid Trash cans"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342641170,
+      "lat": 12.9652842,
+      "lon": 77.5345532,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342642368,
+      "lat": 12.9652212,
+      "lon": 77.5346031,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342644776,
+      "lat": 12.965222,
+      "lon": 77.5345993,
+      "tags": {
+        "amenity": "waste_disposal",
+        "waste": "wet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342646021,
+      "lat": 12.9651046,
+      "lon": 77.5345131,
+      "tags": {
+        "amenity": "waste_disposal",
+        "name": "Trash cans"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342647147,
+      "lat": 12.9659467,
+      "lon": 77.5348846,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "wet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342647148,
+      "lat": 12.9659568,
+      "lon": 77.5348979,
+      "tags": {
+        "amenity": "waste_basket",
+        "waste": "dry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342648481,
+      "lat": 12.9658602,
+      "lon": 77.534798,
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342648714,
+      "lat": 12.9658991,
+      "lon": 77.5348151,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342649371,
+      "lat": 12.9658859,
+      "lon": 77.5348572,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5349554920,
+      "lat": 12.9662347,
+      "lon": 77.5351942,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-01-06",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "name": "Vijayanagar Vaibhav"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6905172504,
+      "lat": 12.9683462,
+      "lon": 77.5270066,
+      "tags": {
+        "leisure": "fitness_centre",
+        "name": "Santhosh Gym",
+        "sport": "gymnastics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6905172505,
+      "lat": 12.9678509,
+      "lon": 77.5285193,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "cuisine": "south_indian",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6908926514,
+      "lat": 12.9680666,
+      "lon": 77.5301763,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "MedPlus",
+        "brand:wikidata": "Q65684234",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "MedPlus",
+        "name:kn": "ಮೆಡ್‍ಪ್ಲಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6908926515,
+      "lat": 12.9682052,
+      "lon": 77.5301358,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7059752703,
+      "lat": 12.9681659,
+      "lon": 77.5292945,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sri Raghavendra Upaahar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7079728383,
+      "lat": 12.9684181,
+      "lon": 77.5324474,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gangotri",
+        "name:kn": "ಗಂಗೋತ್ರಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7115980786,
+      "lat": 12.9664596,
+      "lon": 77.5344276,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Brahmi Ruchi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7115980787,
+      "lat": 12.9665005,
+      "lon": 77.5343128,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Udupi Aruna Grand"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7116375085,
+      "lat": 12.9662613,
+      "lon": 77.5350611,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "South spicy bites"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7116422785,
+      "lat": 12.9662248,
+      "lon": 77.5351188,
+      "tags": {
+        "amenity": "juice_bar",
+        "cuisine": "juice",
+        "name": "Lassi Magic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7116423386,
+      "lat": 12.9668661,
+      "lon": 77.5354811,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Yes Bank",
+        "brand:wikidata": "Q2040394",
+        "name": "Yes Bank",
+        "name:kn": "ಯಸ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7128464985,
+      "lat": 12.9669699,
+      "lon": 77.5355252,
+      "tags": {
+        "name": "RV Bajaj",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7128479785,
+      "lat": 12.9682775,
+      "lon": 77.5334693,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631435,
+      "lat": 12.9645849,
+      "lon": 77.534337,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631454,
+      "lat": 12.9662094,
+      "lon": 77.535375,
+      "tags": {
+        "name": "Nandini Milk Parlour",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631455,
+      "lat": 12.9653505,
+      "lon": 77.5346913,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631456,
+      "lat": 12.9654938,
+      "lon": 77.5347517,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631457,
+      "lat": 12.9654224,
+      "lon": 77.5347216,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631458,
+      "lat": 12.9652754,
+      "lon": 77.5346596,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631459,
+      "lat": 12.9656534,
+      "lon": 77.534819,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631460,
+      "lat": 12.9655669,
+      "lon": 77.5347825,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631461,
+      "lat": 12.9658444,
+      "lon": 77.5348996,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631462,
+      "lat": 12.9657375,
+      "lon": 77.5348545,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631463,
+      "lat": 12.9658246,
+      "lon": 77.5349641,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631464,
+      "lat": 12.9657177,
+      "lon": 77.534919,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631465,
+      "lat": 12.9656336,
+      "lon": 77.5348836,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631466,
+      "lat": 12.9655471,
+      "lon": 77.5348471,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631467,
+      "lat": 12.965474,
+      "lon": 77.5348163,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631468,
+      "lat": 12.9654026,
+      "lon": 77.5347862,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631469,
+      "lat": 12.9653307,
+      "lon": 77.5347558,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7139631470,
+      "lat": 12.9652556,
+      "lon": 77.5347242,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7156536813,
+      "lat": 12.9667322,
+      "lon": 77.535418,
+      "tags": {
+        "name": "Louver Furniture and Interiors",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7175191985,
+      "lat": 12.9647381,
+      "lon": 77.5307333,
+      "tags": {
+        "name": "Haircraft Salon and Spa",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7175191986,
+      "lat": 12.9647768,
+      "lon": 77.5305308,
+      "tags": {
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "name": "More",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7208489486,
+      "lat": 12.9678533,
+      "lon": 77.5284142,
+      "tags": {
+        "amenity": "toilets",
+        "opening_hours": "Mo-Su 05:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7255733101,
+      "lat": 12.9681697,
+      "lon": 77.5269225,
+      "tags": {
+        "name": "Sandhoz",
+        "shop": "pet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7258115785,
+      "lat": 12.9706278,
+      "lon": 77.5258392,
+      "tags": {
+        "amenity": "bank",
+        "name": "Janatha Seva Cooperative Bank Limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526738,
+      "lat": 12.97004,
+      "lon": 77.524811,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Huchappa Layout, Govindaraja Nagar Ward, Madhura Nagar, Vijayanagar, Bengaluru",
+        "addr:postcode": "560040",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Prashanthi Ayurvedic Centre",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526756,
+      "lat": 12.968292,
+      "lon": 77.524492,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Nagarabavi Main Road, Mudalapalya, Vijayanagar, Bengaluru",
+        "addr:postcode": "560072",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Jagjeevanram Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8127770360,
+      "lat": 12.9683292,
+      "lon": 77.5272267,
+      "tags": {
+        "amenity": "vending_machine",
+        "check_date": "2023-10-01",
+        "name": "Water ATM",
+        "operator": "BBMP",
+        "vending": "water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8142358217,
+      "lat": 12.9690976,
+      "lon": 77.5300595,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Siddi Vinayaka Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8145692753,
+      "lat": 12.9690755,
+      "lon": 77.5301997,
+      "tags": {
+        "amenity": "vending_machine",
+        "name": "Water ATM",
+        "operator": "BBMP",
+        "vending": "water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8145729233,
+      "lat": 12.967786,
+      "lon": 77.5303786,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Manjula Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8145729234,
+      "lat": 12.9678599,
+      "lon": 77.5303785,
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8178689617,
+      "lat": 12.9682672,
+      "lon": 77.5335513,
+      "tags": {
+        "addr:street": "21st Main Road",
+        "email": "djsaraswathi22@gmail.com",
+        "name": "Sowbagya Enterprises",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9690178391,
+      "lat": 12.9706594,
+      "lon": 77.5256373,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Nayara",
+        "brand:wikidata": "Q5399377",
+        "name": "Nayara",
+        "operator": "Nayara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11494322420,
+      "lat": 12.9662399,
+      "lon": 77.5351318,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-01-06",
+        "name": "Rajanna Military Hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11697274519,
+      "lat": 12.9667139,
+      "lon": 77.526627,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898624845,
+      "lat": 12.967247,
+      "lon": 77.5356517,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-05-12",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "name": "Krishna Vaibhava"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12438195367,
+      "lat": 12.9671694,
+      "lon": 77.5355723,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-21",
+        "name": "Sri Krishna Vaibhav"
+      }
+    },
+    {
+      "type": "way",
+      "id": 137930290,
+      "center": {
+        "lat": 12.9654668,
+        "lon": 77.534673
+      },
+      "tags": {
+        "alt_name": "Vijayanagar TTMC",
+        "amenity": "bus_station",
+        "check_date": "2024-01-10",
+        "name": "Vijayanagar Bus Stand",
+        "name:kn": "ವಿಜಯನಗರ ಬಸ್ ನಿಲ್ದಾಣ",
+        "network": "BMTC",
+        "official_name": "Rastrakavi Kuvempu Bus Stand",
+        "operator": "BMTC",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138391190,
+      "center": {
+        "lat": 12.9654598,
+        "lon": 77.5296602
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 310619327,
+      "center": {
+        "lat": 12.9648355,
+        "lon": 77.5327684
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Subbanna Garden road",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shanimahatma Temple",
+        "name:kn": "ಶನಿ ಮಹಾತ್ಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 737530277,
+      "center": {
+        "lat": 12.9676013,
+        "lon": 77.5270562
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 737530279,
+      "center": {
+        "lat": 12.9681633,
+        "lon": 77.5284161
+      },
+      "tags": {
+        "brand": "HOPCOMS",
+        "brand:wikidata": "Q22908959",
+        "building": "yes",
+        "name": "HOPCOMS",
+        "name:kn": "ಹಾಪ್ ಕಾಮ್ಸ್",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1258216441,
+      "center": {
+        "lat": 12.9698249,
+        "lon": 77.5279044
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "sports_centre",
+        "name": "Krantiveera Sangolli Rayanna Ground",
+        "name:etymology:wikidata": "Q10983724",
+        "name:kn": "ಕ್ರಾಂತಿವೀರ ಸಂಗೊಳ್ಳಿ ರಾಯಣ್ಣ ಮೈದಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1258216444,
+      "center": {
+        "lat": 12.9663839,
+        "lon": 77.5265345
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

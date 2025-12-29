@@ -1,0 +1,205 @@
+{
+  "area_name": "Laggere",
+  "osm_id": 1588150119,
+  "osm_type": "node",
+  "place_type": "suburb",
+  "amenity_count": 15,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1463492236,
+      "lat": 13.0055371,
+      "lon": 77.5254587,
+      "tags": {
+        "amenity": "school",
+        "name": "Mount Senora School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3199034834,
+      "lat": 13.0188018,
+      "lon": 77.5201262,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3201259297,
+      "lat": 13.0192355,
+      "lon": 77.5189908,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shiva Temple",
+        "name:kn": "ಶಿವ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3210778797,
+      "lat": 13.0189995,
+      "lon": 77.5203766,
+      "tags": {
+        "name": "Vasavi Stores",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3210797293,
+      "lat": 13.0190802,
+      "lon": 77.5202194,
+      "tags": {
+        "name": "Shivu Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6948439333,
+      "lat": 13.0138496,
+      "lon": 77.5209944,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "161 Balaji Krupa Laggere Main Road",
+        "addr:postcode": "560058",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Renuka Nursing Home, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6950185719,
+      "lat": 13.0093599,
+      "lon": 77.5222108,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.12, Laggere Main Road, Laggere, Bengaluru",
+        "addr:postcode": "560058",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sai Baba Hospital",
+        "name:kn": "ಸಾಯಿಬಾಬ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7202935803,
+      "lat": 13.009817,
+      "lon": 77.5231852,
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "Peenya Post, Muneshwara Badavane",
+        "addr:postcode": "560058",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore North",
+        "amenity": "hospital",
+        "name": "Laggere Government Hospital",
+        "name:kn": "ಲಗ್ಗೆರೆ ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314084974,
+      "center": {
+        "lat": 13.0193205,
+        "lon": 77.5189623
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314893923,
+      "center": {
+        "lat": 13.0199685,
+        "lon": 77.5208887
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Ganapathi Temple",
+        "name:kn": "ಗಣಪತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363131631,
+      "center": {
+        "lat": 13.0183558,
+        "lon": 77.5190516
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 675688696,
+      "center": {
+        "lat": 13.0097604,
+        "lon": 77.5143613
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1123272073,
+      "center": {
+        "lat": 13.0091958,
+        "lon": 77.514716
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Gnanodhaya International School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231037170,
+      "center": {
+        "lat": 13.0148798,
+        "lon": 77.5270213
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "School Ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1231037171,
+      "center": {
+        "lat": 13.0145337,
+        "lon": 77.5285528
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Cricket Ground",
+        "name:kn": "ಕ್ರಿಕೆಟ್ ಆಟದ ಮೈದಾನ"
+      }
+    }
+  ]
+}

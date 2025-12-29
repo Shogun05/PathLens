@@ -1,0 +1,149 @@
+{
+  "area_name": "2nd Block",
+  "osm_id": 11594317109,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 4,
+  "amenities": [
+    {
+      "type": "way",
+      "id": 1262098027,
+      "bounds": {
+        "minlat": 12.9236633,
+        "minlon": 77.471631,
+        "maxlat": 12.9252684,
+        "maxlon": 77.4721017
+      },
+      "geometry": [
+        {
+          "lat": 12.9252684,
+          "lon": 77.471631
+        },
+        {
+          "lat": 12.9237665,
+          "lon": 77.471631
+        },
+        {
+          "lat": 12.9236633,
+          "lon": 77.4721017
+        },
+        {
+          "lat": 12.9252684,
+          "lon": 77.471631
+        }
+      ],
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286755574,
+      "bounds": {
+        "minlat": 12.929344,
+        "minlon": 77.4751984,
+        "maxlat": 12.9297989,
+        "maxlon": 77.4758475
+      },
+      "geometry": [
+        {
+          "lat": 12.9297989,
+          "lon": 77.475366
+        },
+        {
+          "lat": 12.9297623,
+          "lon": 77.4758287
+        },
+        {
+          "lat": 12.929344,
+          "lon": 77.4758475
+        },
+        {
+          "lat": 12.9294015,
+          "lon": 77.4751984
+        },
+        {
+          "lat": 12.9297989,
+          "lon": 77.475366
+        }
+      ],
+      "tags": {
+        "leisure": "park",
+        "name": "Vishveshwaraiah Layout 1st Block Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410092195,
+      "bounds": {
+        "minlat": 12.9381778,
+        "minlon": 77.4705819,
+        "maxlat": 12.9394052,
+        "maxlon": 77.4710333
+      },
+      "geometry": [
+        {
+          "lat": 12.9382351,
+          "lon": 77.4705819
+        },
+        {
+          "lat": 12.9394052,
+          "lon": 77.4706444
+        },
+        {
+          "lat": 12.9393589,
+          "lon": 77.4710333
+        },
+        {
+          "lat": 12.9381778,
+          "lon": 77.4709593
+        },
+        {
+          "lat": 12.9382351,
+          "lon": 77.4705819
+        }
+      ],
+      "tags": {
+        "leisure": "park",
+        "name": "Vishveshwaraiah Layout 4th Block Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410092196,
+      "bounds": {
+        "minlat": 12.9319364,
+        "minlon": 77.4798598,
+        "maxlat": 12.9326277,
+        "maxlon": 77.4802909
+      },
+      "geometry": [
+        {
+          "lat": 12.9326277,
+          "lon": 77.4799473
+        },
+        {
+          "lat": 12.9325836,
+          "lon": 77.4802909
+        },
+        {
+          "lat": 12.9319364,
+          "lon": 77.4802034
+        },
+        {
+          "lat": 12.9319805,
+          "lon": 77.4798598
+        },
+        {
+          "lat": 12.9326277,
+          "lon": 77.4799473
+        }
+      ],
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "HK Patil Convention Hall"
+      }
+    }
+  ]
+}

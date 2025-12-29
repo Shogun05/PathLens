@@ -1,0 +1,3988 @@
+{
+  "area_name": "Dattatreya Ward",
+  "osm_id": 19883378,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 253,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 428305621,
+      "lat": 13.0016175,
+      "lon": 77.5713543,
+      "tags": {
+        "name": "Archies Gallery",
+        "shop": "gift"
+      }
+    },
+    {
+      "type": "node",
+      "id": 428857750,
+      "lat": 12.9966811,
+      "lon": 77.5696708,
+      "tags": {
+        "amenity": "police",
+        "name": "Maleshwaram Police station",
+        "name:kn": "ಮಲೇಶ್ವರಂ ಆರಕ್ಷಕ ಠಾಣೆ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 456039716,
+      "lat": 12.9931208,
+      "lon": 77.5710734,
+      "tags": {
+        "addr:street": "Sampige Road",
+        "amenity": "cinema",
+        "name": "Sampige Theatre",
+        "name:kn": "ಸಂಪಿಗೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 663604700,
+      "lat": 12.9921317,
+      "lon": 77.569768,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Om Sakthi Temple",
+        "name:kn": "ಓಂ ಶಕ್ತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "ups_other": "temple"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1290203334,
+      "lat": 13.0009296,
+      "lon": 77.5723686,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Food Camp",
+        "name:kn": "ಫುಡ್ ಕ್ಯಾಂಪ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1290203344,
+      "lat": 13.0010829,
+      "lon": 77.5721394,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Sri Sai Dosa Center",
+        "name:kn": "ಶ್ರೀ ಸಾಯಿ ದೊಸ ಸೆಂಟರ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1459879075,
+      "lat": 12.9971262,
+      "lon": 77.5715091,
+      "tags": {
+        "addr:city": "Malleswaram, Bangalore",
+        "addr:street": "5th Cross",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "The Apollo Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474820319,
+      "lat": 12.9966873,
+      "lon": 77.5723319,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "name:kn": "ಡಾಮಿನೋಸ್",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474820321,
+      "lat": 12.9970915,
+      "lon": 77.5719766,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Baptist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474820322,
+      "lat": 12.9970758,
+      "lon": 77.5721536,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Supra's Diagnostic Centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2319451104,
+      "lat": 12.9909704,
+      "lon": 77.571384,
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3525270784,
+      "lat": 12.9916712,
+      "lon": 77.5712761,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "name": "Citibank",
+        "name:kn": "ಸಿಟಿಬ್ಯಾಂಕ್",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3664774524,
+      "lat": 12.991965,
+      "lon": 77.5710415,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "leisure": "sports_centre",
+        "name": "Amoeba",
+        "name:kn": "ಅಮೇಬ",
+        "sport": "9pin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3664774925,
+      "lat": 12.9920489,
+      "lon": 77.5706285,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "cinema",
+        "brand": "INOX Leisure",
+        "brand:wikidata": "Q5972349",
+        "name": "INOX Malleshwaram - Mantri Square",
+        "short_name": "INOX"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3664774926,
+      "lat": 12.9921796,
+      "lon": 77.5705158,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "cuisine": "ice_cream",
+        "name": "Swenson's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3674560887,
+      "lat": 12.9913252,
+      "lon": 77.5713263,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3715556354,
+      "lat": 13.0014552,
+      "lon": 77.5722176,
+      "tags": {
+        "brand": "Airtel",
+        "name": "Airtel Express",
+        "name:kn": "ಏರ್ ಚೆಲ್ ಎಕ್ಸ್ಪ್ರೆಸ್",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444035799,
+      "lat": 13.0002869,
+      "lon": 77.5718472,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "18/2",
+        "addr:postcode": "560003",
+        "addr:street": "10th Cross, Malleswaram",
+        "amenity": "restaurant",
+        "cuisine": "fast_food",
+        "delivery": "yes",
+        "name": "Mumbai Spice",
+        "opening_hours": "11:30-23:00",
+        "phone": "+91 9880055571",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444077849,
+      "lat": 13.0007561,
+      "lon": 77.5723691,
+      "tags": {
+        "addr:city": "Malleshwaram,Bangaloe",
+        "addr:housenumber": "405",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "amenity": "restaurant",
+        "cuisine": "fast_food",
+        "name": "Asha Sweet Center",
+        "opening_hours": "08:30-22:00",
+        "phone": "080 4206 7320",
+        "takeaway": "yes",
+        "website": "https://ashasweetcenter.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444099475,
+      "lat": 12.9992108,
+      "lon": 77.5722756,
+      "tags": {
+        "addr:city": "Malleshwaram,Bangaloe",
+        "addr:housenumber": "10, 3",
+        "addr:postcode": "560003",
+        "addr:street": "8th Cross Road",
+        "amenity": "restaurant",
+        "cuisine": "indian;seafood",
+        "name": "Chandu's Deluxe",
+        "opening_hours": "11:30-20:30",
+        "phone": "080 6599 6565",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444115321,
+      "lat": 13.0026752,
+      "lon": 77.5720532,
+      "tags": {
+        "addr:city": "Malleshwaram,Bangalore",
+        "addr:housenumber": "2nd",
+        "addr:postcode": "56003",
+        "addr:street": "Temple Street",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Sri Venkateshwara Hotel",
+        "opening_hours": "09:00-22:00",
+        "phone": "+91 80 4965 2659",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444125315,
+      "lat": 12.9972964,
+      "lon": 77.5718337,
+      "tags": {
+        "addr:city": "Malleswaram, Bangalore",
+        "addr:housenumber": "59",
+        "addr:postcode": "560003",
+        "addr:street": "3rd Temple Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "New Fishland",
+        "opening_hours": "11:30-23:00",
+        "phone": "+91 8553464945",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444460861,
+      "lat": 12.9919067,
+      "lon": 77.5705078,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG 67 & 69",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Allen Solly",
+        "brand:wikidata": "Q110036995",
+        "level": "0",
+        "name": "Allen Solly",
+        "name:kn": "ಅಲೆನ್ ಸೊಲಿ",
+        "opening_hours": "09:00 - 22:00",
+        "phone": "080 22667550",
+        "shop": "clothes",
+        "website": "https://www.allensolly.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444783186,
+      "lat": 12.9917884,
+      "lon": 77.5702636,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "65 & 66",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Baboosh",
+        "opening_hours": "10:30 - 22:00",
+        "phone": "+(91)-80-22667038",
+        "shop": "clothes",
+        "website": "http://www.baboosh.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445089801,
+      "lat": 12.9916897,
+      "lon": 77.5711243,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "F 78",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Cocopelee",
+        "opening_hours": "10:45-20:30",
+        "phone": "+91 80 2266 7250",
+        "shop": "clothes",
+        "website": "http://www.cocopelee.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445106810,
+      "lat": 12.9914885,
+      "lon": 77.5711733,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "F 56",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "AND",
+        "opening_hours": "11:00-21:30",
+        "phone": "+919538899789",
+        "shop": "clothes",
+        "website": "http://andindia.anitadongre.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445114857,
+      "lat": 12.9915734,
+      "lon": 77.5705023,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Nike",
+        "brand:wikidata": "Q483915",
+        "brand:wikipedia": "en:Nike, Inc.",
+        "name": "Nike",
+        "name:kn": "ನೈಕ್",
+        "opening_hours": "10:00-21:30",
+        "phone": "8030160034",
+        "shop": "clothes",
+        "website": "www.nike.ssiplgroup.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445124814,
+      "lat": 12.9914832,
+      "lon": 77.5710526,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "F 15",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Columbia",
+        "brand:wikidata": "Q1112588",
+        "clothes": "outdoor",
+        "level": "1",
+        "name": "Columbia",
+        "official_name": "Columbia Sportswear",
+        "opening_hours": "11:00 - 23:00",
+        "phone": "+080 -22667014",
+        "shop": "clothes",
+        "website": "https://www.columbiasportswear.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445133451,
+      "lat": 12.9918688,
+      "lon": 77.5705197,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Fila",
+        "brand:wikidata": "Q482539",
+        "name": "Fila",
+        "opening_hours": "10:00-22:00",
+        "phone": "+918022667474",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445151604,
+      "lat": 12.9916949,
+      "lon": 77.5710365,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "77",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Celio",
+        "brand:wikidata": "Q2672003",
+        "brand:wikipedia": "en:Celio (retailer)",
+        "level": "-1",
+        "name": "Celio",
+        "opening_hours": "11:00 - 22:00",
+        "phone": "+(91)-8022667018",
+        "shop": "clothes",
+        "website": "https://www.celio.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445152582,
+      "lat": 12.9914309,
+      "lon": 77.5705668,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Adidas",
+        "brand:wikidata": "Q3895",
+        "brand:wikipedia": "en:Adidas",
+        "name": "Adidas",
+        "name:kn": "ಅಡಿಡಾಸ್",
+        "opening_hours": "10:00-21:00",
+        "phone": "+918030160034",
+        "shop": "sports",
+        "website": "https://shop.adidas.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445164588,
+      "lat": 12.9918152,
+      "lon": 77.570602,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "F-71",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Cotton world",
+        "opening_hours": "10:30 -21:00",
+        "phone": "080-22667030 / 31",
+        "shop": "clothes",
+        "website": "https://cottonworld.net"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445266794,
+      "lat": 12.9916983,
+      "lon": 77.5711798,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "SF 49",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Enamor",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "080 - 22667433",
+        "shop": "clothes",
+        "website": "https://enamor.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445291701,
+      "lat": 12.9914701,
+      "lon": 77.5706442,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "S-14 & 15",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Fabindia",
+        "brand:wikidata": "Q5427779",
+        "clothes": "women;men",
+        "level": "2",
+        "name": "Fabindia",
+        "name:kn": "ಫಾಬ್ ಇಂಡಿಯ",
+        "opening_hours": "10:30 - 21:30",
+        "organic": "yes",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+91-8088933981",
+        "shop": "clothes",
+        "website": "https://www.fabindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445334102,
+      "lat": 12.9916022,
+      "lon": 77.570586,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "58 & 59",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1,2",
+        "name": "Favourite Shop",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "+(91)-80-22667042",
+        "shop": "clothes",
+        "website": "www.favouriteshop.biz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445366547,
+      "lat": 12.9917024,
+      "lon": 77.5703066,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Puma",
+        "brand:wikidata": "Q157064",
+        "brand:wikipedia": "en:Puma (brand)",
+        "name": "Puma",
+        "name:kn": "ಪೂಮ",
+        "opening_hours": "09:30 -22:00",
+        "phone": "+918030160040",
+        "shop": "clothes",
+        "website": "www.in.puma.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445376790,
+      "lat": 12.9920289,
+      "lon": 77.5712576,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "33 & 34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Fazals",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "+(91)-80-30160100",
+        "shop": "clothes",
+        "website": "https://fazalandsons.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445391057,
+      "lat": 12.991776,
+      "lon": 77.5702127,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Planet Sports;Jayant Probikes and Fitness",
+        "opening_hours": "10:30-21:00; 10:00-20:30",
+        "phone": "+918030160199;+919845401350",
+        "shop": "sports;bicycle",
+        "website": "https://www.firefoxbikes.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445396522,
+      "lat": 12.9914706,
+      "lon": 77.5707615,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "F 67",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Fusion Beats",
+        "opening_hours": "10:00 - 21:30",
+        "phone": "+(91)-80-30160109",
+        "shop": "clothes",
+        "website": "https://fusionbeats.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445401477,
+      "lat": 12.9918207,
+      "lon": 77.5705006,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Proline",
+        "opening_hours": "10:00-21:00",
+        "phone": "+918022667256",
+        "shop": "clothes",
+        "website": "https://www.prolineindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445421552,
+      "lat": 12.9915868,
+      "lon": 77.5703571,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Rebook",
+        "opening_hours": "10:30-21:30",
+        "phone": "+918022667150",
+        "shop": "clothes",
+        "website": "www.rebook.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445426218,
+      "lat": 13.0009261,
+      "lon": 77.5732095,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "5/19",
+        "addr:postcode": "560003",
+        "addr:street": "1st Main, Vyalikaval",
+        "amenity": "clinic",
+        "name": "Ramani Orthopaedic Hospital",
+        "phone": "080 2331 1295"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445570843,
+      "lat": 12.991248,
+      "lon": 77.5707987,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "T-10 & 11, Third Floor",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Sportxs",
+        "phone": "080-65470694,",
+        "shop": "sports",
+        "website": "www.sportxs.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445642736,
+      "lat": 12.991691,
+      "lon": 77.5707302,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "branch": "hyper market",
+        "brand": "Spar",
+        "brand:wikidata": "Q610492",
+        "name": "Spar",
+        "opening_hours": "10:00-22:00",
+        "organic": "yes",
+        "phone": "+918039378500",
+        "shop": "supermarket",
+        "website": "https://www.sparindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445660392,
+      "lat": 12.9915813,
+      "lon": 77.5710872,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Home town",
+        "phone": "+918030160208",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445679562,
+      "lat": 12.9916575,
+      "lon": 77.5703119,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "name:kn": "ಬಾಟಾ",
+        "opening_hours": "10:00-22:00",
+        "phone": "+918022667013",
+        "shop": "shoes",
+        "website": "https://www.bata.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445716765,
+      "lat": 12.991754,
+      "lon": 77.5711303,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Oval bar",
+        "opening_hours": "10:00-23:30",
+        "phone": "+919916375915",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445737805,
+      "lat": 12.9916587,
+      "lon": 77.5707137,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Hush Puppies",
+        "brand:wikidata": "Q1828588",
+        "brand:wikipedia": "en:Hush Puppies",
+        "name": "Hush Puppies",
+        "phone": "+917204238404",
+        "shop": "shoes",
+        "website": "https://www.hushpuppies.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445744014,
+      "lat": 12.9916423,
+      "lon": 77.5707645,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "inc.5",
+        "opening_hours": "10:00-22:00",
+        "phone": "+918030160026",
+        "shop": "shoes",
+        "website": "www.inc5shoes.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446200980,
+      "lat": 12.9921138,
+      "lon": 77.5704491,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Anu Opticals",
+        "opening_hours": "10:00-21:30",
+        "phone": "+918030160170",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446221715,
+      "lat": 12.9915703,
+      "lon": 77.5703356,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Mochi",
+        "opening_hours": "11:00-22:00",
+        "phone": "+918030160098",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446222059,
+      "lat": 12.9916252,
+      "lon": 77.5702927,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LGG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Rocia",
+        "opening_hours": "10:00-22:00",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446222060,
+      "lat": 12.9916252,
+      "lon": 77.5702927,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Rocia",
+        "opening_hours": "10:00-22:00",
+        "phone": "+918022667318",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446250662,
+      "lat": 12.9915977,
+      "lon": 77.5703852,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Metro",
+        "brand:wikidata": "Q16938284",
+        "name": "Metro",
+        "phone": "8030160099",
+        "shop": "shoes",
+        "website": "https://www.metroshoes.net/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446256970,
+      "lat": 12.9918159,
+      "lon": 77.570522,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Soles",
+        "phone": "+918022667321",
+        "shop": "shoes",
+        "website": "www.solesshoes.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446270294,
+      "lat": 12.9915402,
+      "lon": 77.5712596,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Woodland",
+        "brand:wikidata": "Q123068491",
+        "name": "Woodland",
+        "opening_hours": "10:00-20:00",
+        "phone": "+918030160133",
+        "shop": "shoes",
+        "website": "https://www.woodlandworldwide.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446279429,
+      "lat": 12.9916343,
+      "lon": 77.571041,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Canon- camera store",
+        "opening_hours": "10:00-21:30",
+        "phone": "+918453680010",
+        "shop": "photo",
+        "website": "www.canon.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446286774,
+      "lat": 12.9915154,
+      "lon": 77.5707071,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Cromā",
+        "brand:wikidata": "Q5187683",
+        "name": "Cromā",
+        "opening_hours": "11:00-20:30",
+        "phone": "+917207666000",
+        "shop": "electronics",
+        "website": "https://www.croma.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446293640,
+      "lat": 12.9921112,
+      "lon": 77.5707965,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Jumbo",
+        "phone": "+918022667198",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446306046,
+      "lat": 12.9916189,
+      "lon": 77.5704825,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Lenovo flagship store",
+        "opening_hours": "11:00-21:30",
+        "phone": "+919632146439",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446311356,
+      "lat": 12.992136,
+      "lon": 77.5701139,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Relience Digital",
+        "opening_hours": "10:00-22:00",
+        "phone": "8022667001",
+        "shop": "electronics",
+        "website": "https://www.reliancedigital.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446323836,
+      "lat": 12.9917048,
+      "lon": 77.5709199,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Sangeetha",
+        "name:kn": "ಸಂಗೀತ",
+        "opening_hours": "10:00-22:00",
+        "phone": "+917022004708",
+        "shop": "mobile_phone",
+        "website": "https://www.sangeethamobiles.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446329921,
+      "lat": 12.9917975,
+      "lon": 77.5705176,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Imagine Store- apple Premium Reseller",
+        "opening_hours": "10:30-21:30",
+        "shop": "electronics",
+        "website": "https://imaginestore.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446337092,
+      "lat": 12.9916198,
+      "lon": 77.5711868,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Whizz- Camers Store",
+        "opening_hours": "10:30-21:30",
+        "phone": "+918030160037",
+        "shop": "photo",
+        "website": "www.whizz.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446342319,
+      "lat": 12.9913781,
+      "lon": 77.5711009,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "The Color Bar",
+        "opening_hours": "10:00-21:00",
+        "phone": "+918065656633",
+        "shop": "cosmetics",
+        "website": "https://www.colorbarcosmetics.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446350440,
+      "lat": 12.9920694,
+      "lon": 77.570822,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "GVC",
+        "phone": "+918022667556",
+        "shop": "nutrition_supplements",
+        "website": "https://www.gnc.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446366078,
+      "lat": 12.9915558,
+      "lon": 77.5709547,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Health & Glow",
+        "phone": "+91 8032466388",
+        "shop": "cosmetics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446378146,
+      "lat": 12.9920968,
+      "lon": 77.570594,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Kaya Skin Bar",
+        "opening_hours": "9:30-21:00",
+        "phone": "+918022667211",
+        "website": "https://www.kaya.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446386426,
+      "lat": 12.9915545,
+      "lon": 77.5710486,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "The Body Shop",
+        "brand:wikidata": "Q837851",
+        "brand:wikipedia": "en:The Body Shop",
+        "name": "The Body Shop",
+        "opening_hours": "10:30-21:30",
+        "phone": "+918030160120",
+        "shop": "cosmetics",
+        "website": "https://www.thebodyshop.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446474186,
+      "lat": 12.9921268,
+      "lon": 77.5705256,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Vision Express",
+        "brand:wikidata": "Q7936150",
+        "brand:wikipedia": "en:Vision Express",
+        "name": "Vision Express",
+        "opening_hours": "10:00-21:30",
+        "phone": "+918022667128",
+        "shop": "optician",
+        "website": "https://www.visionexpress.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446497849,
+      "lat": 12.9919478,
+      "lon": 77.5708501,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Trust Pharmacy",
+        "opening_hours": "9:30-23:00",
+        "phone": "+91 8022667221",
+        "website": "https://www.trustpharmacy.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446504503,
+      "lat": 12.9912735,
+      "lon": 77.5710821,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Relax'N go massage",
+        "shop": "massage"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446521799,
+      "lat": 12.9917881,
+      "lon": 77.5707312,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Royal Enfield",
+        "opening_hours": "10:00-20:00",
+        "phone": "+91 0973807838",
+        "shop": "electronics",
+        "website": "https://www.royalenfield.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446527432,
+      "lat": 12.9917126,
+      "lon": 77.5708843,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "opening_hours": "10:00-20:00",
+        "phone": "+919901998324",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446533470,
+      "lat": 12.9914643,
+      "lon": 77.5712116,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Tattoo World",
+        "opening_hours": "10:30-21:00",
+        "phone": "+919739006199",
+        "shop": "tattoo",
+        "website": "www.tattooworld.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446553289,
+      "lat": 12.9966939,
+      "lon": 77.5687228,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "49",
+        "addr:postcode": "560003",
+        "addr:street": "5th Cross, 4th Main,Malleshwaram",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Hotel Moon Light",
+        "opening_hours": "12:00-23:00",
+        "outdoor_seating": "no",
+        "phone": "080 23442993"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446600481,
+      "lat": 12.9918756,
+      "lon": 77.5701543,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Rajhadhani Thali Restaurant",
+        "opening_hours": "11:30-15:30,19:30-23:00",
+        "phone": "080 22667345"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446613297,
+      "lat": 13.0024248,
+      "lon": 77.571574,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446613298,
+      "lat": 13.0023294,
+      "lon": 77.5719173,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "40",
+        "addr:postcode": "560003",
+        "addr:street": "12th Cross, Kodandarampura, Near-Prasidh Clinic, Malleshwaram",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Megha Medicals",
+        "name:kn": "ಮೇಘ ಮೆಡಿಕಲ್ಸ್",
+        "phone": "+91 80 2334 7034"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446873919,
+      "lat": 12.9916087,
+      "lon": 77.5704303,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "23 & 24",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "GINI Jony",
+        "opening_hours": "10:00 - 21:30",
+        "phone": "080-22667257",
+        "shop": "clothes",
+        "website": "https://www.giniandjony.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446877302,
+      "lat": 12.9916688,
+      "lon": 77.5708192,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "55 & 56",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "GlobalDesi",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "080-30160063",
+        "shop": "clothes",
+        "website": "https://www.globaldesi.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446879588,
+      "lat": 12.9915773,
+      "lon": 77.5706234,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "55",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Go fashion",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "08030160000",
+        "shop": "clothes",
+        "website": "https://www.fashiongo.net/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446882829,
+      "lat": 12.9917237,
+      "lon": 77.5707817,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "60",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Identity",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "080-22667130",
+        "shop": "clothes",
+        "website": "https://identiti.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446883934,
+      "lat": 12.9916584,
+      "lon": 77.5708621,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "76",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Jashn",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "080-30160082",
+        "shop": "clothes",
+        "website": "www.jashnonline.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446887864,
+      "lat": 12.991478,
+      "lon": 77.5708273,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "68",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Jockey",
+        "brand:wikidata": "Q534235",
+        "brand:wikipedia": "en:Jockey International",
+        "level": "0",
+        "name": "Jockey",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "080-41490669",
+        "shop": "clothes",
+        "website": "https://www.jockeyindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446889638,
+      "lat": 12.9915068,
+      "lon": 77.5708648,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "68",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Kalanjali",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "+91-9739174779",
+        "shop": "clothes",
+        "website": "https://www.kalanjali.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446891792,
+      "lat": 12.9914885,
+      "lon": 77.5710096,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "58",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "Kushals",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "0802266 7177",
+        "shop": "jewelry",
+        "website": "https://www.kushals.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446894086,
+      "lat": 12.9917812,
+      "lon": 77.5705456,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "58",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Lakshitha",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "080-30160000",
+        "shop": "clothes",
+        "website": "https://www.lakshitaonline.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446895274,
+      "lat": 12.9917603,
+      "lon": 77.5705724,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "56",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Laven",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "080-22667307",
+        "shop": "clothes",
+        "website": "www.lavenfashions.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446898660,
+      "lat": 12.9916281,
+      "lon": 77.570791,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG19 & 21",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Levi's",
+        "brand:wikidata": "Q127962",
+        "brand:wikipedia": "en:Levi Strauss & Co.",
+        "clothes": "denim;men;women",
+        "level": "0",
+        "name": "Levi's",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "080-22682071",
+        "shop": "clothes",
+        "website": "https://www.levi.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446899259,
+      "lat": 12.9912093,
+      "lon": 77.5712013,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG 02-06",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Lifestyle",
+        "brand:wikidata": "Q6545496",
+        "level": "-1",
+        "name": "Lifestyle",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "080-22658934",
+        "shop": "clothes",
+        "website": "https://www.lifestylestores.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446902010,
+      "lat": 12.9917551,
+      "lon": 77.5705993,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG 60-64",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "Louis Philippe",
+        "name:kn": "ಲೂಯಿ ಫಿಲಿಪ್",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "080 30160166",
+        "shop": "clothes",
+        "website": "https://www.louisphilippe.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446905193,
+      "lat": 12.9914937,
+      "lon": 77.5709372,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG60-64",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "Madame",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "080-22667000",
+        "shop": "clothes",
+        "website": "http://www.madameonline.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446907052,
+      "lat": 12.9916322,
+      "lon": 77.5708648,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG 58 & 59",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Manyavar",
+        "brand:wikidata": "Q24906783",
+        "level": "-1",
+        "name": "Manyavar",
+        "opening_hours": "09:30 - 18:30",
+        "phone": "080-33050329",
+        "shop": "clothes",
+        "website": "https://www.manyavar.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446907849,
+      "lat": 12.991742,
+      "lon": 77.5706315,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "Lg1/ Lg5",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-2",
+        "name": "Marks Spencer",
+        "opening_hours": "11:00 - 21:30",
+        "phone": "080-22667100",
+        "shop": "clothes",
+        "website": "https://www.marksandspencer.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446908369,
+      "lat": 12.9917237,
+      "lon": 77.5704196,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "1",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Methiyadi stop",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "+91-7353397690",
+        "shop": "shoes",
+        "website": "https://www.themethiyadistop.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446909299,
+      "lat": 12.9914911,
+      "lon": 77.5711143,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "62",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "MINC",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "08022667114",
+        "shop": "clothes",
+        "website": "https://www.minc-ecofashion.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446987680,
+      "lat": 12.9917002,
+      "lon": 77.5704464,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "44/48",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "Reliance trends",
+        "opening_hours": "11:00 - 22:00",
+        "phone": "+91-9663436817",
+        "shop": "clothes",
+        "website": "https://www.ril.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447006091,
+      "lat": 12.9911729,
+      "lon": 77.5709614,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "CrossWord",
+        "phone": "+918022667499",
+        "shop": "books",
+        "website": "https://www.crossword.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447006891,
+      "lat": 12.9920092,
+      "lon": 77.570885,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Sound Glitz",
+        "opening_hours": "10:00-21:00",
+        "phone": "+918041470284",
+        "shop": "music",
+        "website": "https://www.soundglitz.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447007999,
+      "lat": 13.0019448,
+      "lon": 77.5716235,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "42",
+        "addr:postcode": "560003",
+        "addr:street": "Vyalikaval, 2nd Main, Opposite-Rajesh Hotel, Sadashiv Nagar",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Janhavi Medicals Malleshwaram",
+        "phone": "080 2336 6503"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447009028,
+      "lat": 13.0020076,
+      "lon": 77.5713914,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "17",
+        "addr:postcode": "560003",
+        "addr:street": "1, 3rd Cross Rd, Malleshwaram",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "K C G Pharma And Generals",
+        "phone": "094485 11024"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447009761,
+      "lat": 12.9915349,
+      "lon": 77.5709185,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "O2Spa",
+        "opening_hours": "10:00-22:00",
+        "phone": "+919036001402",
+        "shop": "beauty",
+        "website": "https://www.o2spa.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447010423,
+      "lat": 12.9917263,
+      "lon": 77.5706556,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "26 & 29",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Mom & Me",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "08031900777",
+        "shop": "clothes",
+        "website": "www.babyoye.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447010887,
+      "lat": 12.9918779,
+      "lon": 77.5704357,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "55",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Mufti",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "08022667123",
+        "shop": "clothes",
+        "website": "www.mufti.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447011000,
+      "lat": 12.9915476,
+      "lon": 77.5703926,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "YLG",
+        "opening_hours": "11:00-21:00",
+        "phone": "+918030160061",
+        "shop": "beauty",
+        "website": "https://www.ylgindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447013045,
+      "lat": 12.9915483,
+      "lon": 77.5706119,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Spa nation",
+        "opening_hours": "11:00-21:00",
+        "phone": "+918022667488",
+        "shop": "beauty",
+        "website": "https://www.spanation.net/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447017729,
+      "lat": 12.9915963,
+      "lon": 77.5710312,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Totally Hot stuff",
+        "opening_hours": "11:00-21:00",
+        "phone": "+919663333304",
+        "shop": "gift"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447017911,
+      "lat": 12.9917943,
+      "lon": 77.5703606,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG SF 55",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-2",
+        "name": "NatureFirst",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "08030160000",
+        "shop": "herbalist",
+        "website": "http://www.naturesfirst.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447019663,
+      "lat": 12.9916348,
+      "lon": 77.5709185,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "02",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Neeru's",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "080-65460514",
+        "shop": "clothes",
+        "website": "https://www.neerus.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447020027,
+      "lat": 12.9917339,
+      "lon": 77.5706166,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "UP south",
+        "opening_hours": "08:00-24:00",
+        "phone": "+918022667311",
+        "smoking": "no",
+        "website": "https://www.upsouth.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447039075,
+      "lat": 12.9915048,
+      "lon": 77.5704974,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG-34",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "brand": "Sbarro",
+        "brand:wikidata": "Q2589409",
+        "brand:wikipedia": "en:Sbarro",
+        "cuisine": "pizza",
+        "name": "Sbarro",
+        "opening_hours": "08:00-23:00",
+        "phone": "+918022667343",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://www.sbarro.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447082034,
+      "lat": 12.9917005,
+      "lon": 77.5706529,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Kaya Skin Bar",
+        "phone": "+9180 2266 7211",
+        "source": "www.justdial.com",
+        "website": "https://kaya.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447352349,
+      "lat": 12.9914927,
+      "lon": 77.570894,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "61",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Prapti",
+        "opening_hours": "09:30 - 18:30",
+        "phone": "080-30160160",
+        "shop": "clothes",
+        "website": "www.praptifashions.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447358300,
+      "lat": 12.9918978,
+      "lon": 77.5705614,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "71",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Pepe Jeans",
+        "brand:wikidata": "Q426992",
+        "brand:wikipedia": "en:Pepe Jeans",
+        "clothes": "denim",
+        "level": "-1",
+        "name": "Pepe Jeans",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "+91-9844117223",
+        "shop": "clothes",
+        "website": "https://www.pepejeans.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447368643,
+      "lat": 12.9914326,
+      "lon": 77.5709262,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "83",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Peora",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "080-30160190",
+        "shop": "clothes",
+        "website": "https://www.peora.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447376031,
+      "lat": 12.9916416,
+      "lon": 77.5709799,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "17",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Spring Summer",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "08030160000",
+        "shop": "clothes",
+        "website": "https://springandsummer.lk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447381189,
+      "lat": 12.9914404,
+      "lon": 77.571012,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG07-09",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "Pantalons",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "08030160085",
+        "shop": "clothes",
+        "website": "https://www.pantaloons.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447393204,
+      "lat": 12.9914378,
+      "lon": 77.5708377,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG 04, LG44/48",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1,-2",
+        "name": "Rubans",
+        "opening_hours": "10:00 - 21:30",
+        "phone": "080 3016 0000",
+        "shop": "jewelry",
+        "website": "https://www.rubans.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447497316,
+      "lat": 12.9914091,
+      "lon": 77.570968,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "ug41-43",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "Splash Fashion",
+        "opening_hours": "10:00 - 21:30",
+        "phone": "080 3016 0000",
+        "shop": "clothes",
+        "website": "https://www.splashfashions.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447579590,
+      "lat": 12.9919004,
+      "lon": 77.5706473,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "73",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Satya Paul",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "08022667202",
+        "shop": "clothes",
+        "website": "https://www.satyapaul.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447585910,
+      "lat": 12.991443,
+      "lon": 77.571173,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "64",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Spykar",
+        "opening_hours": "11:00 - 21:00",
+        "phone": "08022667020",
+        "shop": "clothes",
+        "website": "https://www.spykar.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448577459,
+      "lat": 12.9916486,
+      "lon": 77.5711196,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "LG 8 & 9",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "show off",
+        "opening_hours": "10:30 - 21:30",
+        "phone": "080-41460266",
+        "shop": "clothes",
+        "website": "www.showoffclothes.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448578750,
+      "lat": 12.9917995,
+      "lon": 77.5707731,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "74 & 75",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Soch",
+        "opening_hours": "11:00 - 21:00",
+        "phone": "08022667043",
+        "shop": "clothes",
+        "website": "www.sochstudio.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448580773,
+      "lat": 12.9914127,
+      "lon": 77.570647,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "U75G",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "U.S. Polo Assn.",
+        "brand:wikidata": "Q7863282",
+        "level": "-1",
+        "name": "U.S. Polo Assn.",
+        "opening_hours": "11:00-21:00",
+        "phone": "08030160000",
+        "shop": "clothes",
+        "website": "https://www.uspoloassn.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448583534,
+      "lat": 12.9914676,
+      "lon": 77.5707087,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "55,56",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "United Colour of Benetton",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "08022667010",
+        "shop": "clothes",
+        "website": "https://www.benetton.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448584188,
+      "lat": 12.9919093,
+      "lon": 77.5705987,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "ug72",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "V.Dot van heusen",
+        "opening_hours": "09:00 - 21:00",
+        "phone": "08030160168",
+        "shop": "clothes",
+        "website": "https://www.vanheusenindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448584946,
+      "lat": 12.991559,
+      "lon": 77.5705585,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "77",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "2",
+        "name": "Valentine",
+        "opening_hours": "11:00-21:30",
+        "phone": "08022667475",
+        "shop": "clothes",
+        "website": "https://www.valentineclothes.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448585944,
+      "lat": 12.9914519,
+      "lon": 77.5711003,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "78",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Vastrra",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "08030160000",
+        "shop": "clothes",
+        "website": "http://thevastrafashion.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448586763,
+      "lat": 12.9914393,
+      "lon": 77.5708015,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "43",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Voylla",
+        "opening_hours": "10:00 - 21:00",
+        "phone": "08030160000",
+        "shop": "jewelry",
+        "website": "https://www.voylla.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448587498,
+      "lat": 12.991729,
+      "lon": 77.5703768,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "43",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "1",
+        "name": "Vijayalakshmi",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "9590900092",
+        "shop": "clothes",
+        "website": "https://www.vijayalakshmisilks.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448588469,
+      "lat": 12.9916854,
+      "lon": 77.5707845,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "ug39-40",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "level": "-1",
+        "name": "Wills Lifestyle",
+        "opening_hours": "10:30 - 21:00",
+        "phone": "08030160042",
+        "shop": "clothes",
+        "website": "https://www.shopwillslifestyle.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4448590295,
+      "lat": 12.991835,
+      "lon": 77.5705452,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "UG 67 & 69",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "brand": "Allen Solly",
+        "brand:wikidata": "Q110036995",
+        "level": "-1",
+        "name": "Allen Solly",
+        "name:kn": "ಅಲೆನ್ ಸೊಲಿ",
+        "opening_hours": "09:00 - 21:00",
+        "phone": "080 22667550",
+        "shop": "clothes",
+        "website": "https://www.allensolly.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488035143,
+      "lat": 12.9974177,
+      "lon": 77.5721787,
+      "tags": {
+        "addr:city": "Malleswaram, Bangalore",
+        "addr:housenumber": "224",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road, Opposite Sai Temple, Sampige Road, Bhadrappa Layout, Malleshwaram",
+        "name": "olympic the sports shop",
+        "opening_hours": "10:00-21:30",
+        "phone": "080 2346 4839",
+        "shop": "sports",
+        "website": "olympicthesportshop.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489139931,
+      "lat": 12.9915431,
+      "lon": 77.5704437,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "F-15",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "branch": "Company",
+        "brand": "Columbia",
+        "brand:wikidata": "Q1112588",
+        "clothes": "outdoor",
+        "name": "Columbia",
+        "official_name": "Columbia Sportswear",
+        "opening_hours": "10:00-21:30",
+        "phone": "080 2266 7014",
+        "shop": "clothes",
+        "website": "https://www.columbiasportswear.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489177486,
+      "lat": 12.9911453,
+      "lon": 77.5704056,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560003",
+        "addr:street": "T-10 & 11, Third Floor, Malleswaram, Bhadrappa Layout, Jai Bheema Nagar, Sheshadripuram",
+        "name": "SportXS",
+        "opening_hours": "10:00-21:30",
+        "phone": "080 2266 7227",
+        "shop": "sports",
+        "website": "sportxs.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489416586,
+      "lat": 12.991824,
+      "lon": 77.5701784,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Firfox cycle",
+        "opening_hours": "10:00-21:30",
+        "phone": "96639 85212",
+        "shop": "sports",
+        "website": "https://herocycles.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489869310,
+      "lat": 12.9917364,
+      "lon": 77.5705587,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "No.S-19 & S-20,, Mantri Square Mall,",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "YLG Salon & Spa",
+        "opening_hours": "10:30-20:30",
+        "phone": "91)-80-30160061",
+        "shop": "beauty",
+        "website": "https://www.ylgindia.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489987205,
+      "lat": 12.9914824,
+      "lon": 77.5708676,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "Mantri Square No 1",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "O2 Spa",
+        "opening_hours": "10:00 - 22:00",
+        "phone": "(91)-9247020202",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5061380659,
+      "lat": 12.9966687,
+      "lon": 77.5728097,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "brand:wikipedia": "en:Indian Bank",
+        "name": "Indian Bank",
+        "name:kn": "ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027885,
+      "lat": 12.9966191,
+      "lon": 77.5675674,
+      "tags": {
+        "check_date": "2024-08-11",
+        "name": "Mahendra Diamonds and Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027886,
+      "lat": 12.9966897,
+      "lon": 77.5686323,
+      "tags": {
+        "amenity": "bank",
+        "name": "SVC Co-Operative Bank Ltd."
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027889,
+      "lat": 12.9967704,
+      "lon": 77.573453,
+      "tags": {
+        "leisure": "fitness_centre",
+        "name": "Fitness World"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027890,
+      "lat": 12.9967906,
+      "lon": 77.5734927,
+      "tags": {
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "Specialists Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456533,
+      "lat": 12.9967132,
+      "lon": 77.5693101,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "cuisine": "south_indian",
+        "delivery": "no",
+        "name": "Indira Canteen",
+        "note": "Dattatreya Temple Ward",
+        "operator": "BBMP",
+        "takeaway": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456534,
+      "lat": 12.9966535,
+      "lon": 77.5702704,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Syndicate Bank",
+        "brand:wikidata": "Q2004088",
+        "brand:wikipedia": "en:Syndicate Bank",
+        "name": "Syndicate Bank",
+        "name:kn": "ಸಿಂಡಿಕೇಟ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5229456535,
+      "lat": 12.9966843,
+      "lon": 77.57085,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402308125,
+      "lat": 12.9945667,
+      "lon": 77.5691333,
+      "tags": {
+        "amenity": "bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5685647407,
+      "lat": 12.9999132,
+      "lon": 77.571399,
+      "tags": {
+        "email": "rachoteshwarcommunication@gmail.com",
+        "name": "Rachoteshwar Communication",
+        "phone": "08041626111",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886594855,
+      "lat": 12.9960444,
+      "lon": 77.5693788,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "Malleshwaram",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "8722604100",
+        "contact:phone": "8023343791",
+        "name": "K. C. General Hospital Blood Bank",
+        "operator:type": "government",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938717990,
+      "lat": 12.9966677,
+      "lon": 77.5716037,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "24/1 5Th Cross Malleswaram",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Malleswaram Eye Day Care Hospital - Bengalore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938775802,
+      "lat": 12.9989898,
+      "lon": 77.5776748,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No. 2 Muneswara Block, Vinayaka Circle, Palace Guttahalli Main Road",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Anugraha Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944992838,
+      "lat": 12.9981241,
+      "lon": 77.5715661,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "452, R S Plaza, 1st Floor(Above Kids Kingdom),Between 6Th & 7Th Cross, Sampige Road",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sudharsana Nethralaya",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7031709761,
+      "lat": 12.9920333,
+      "lon": 77.5705883,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "description": "Our focus is on design innovation and promotion of handcrafted products made by skilled artisans using natural inputs which sustains and preserves the environment. We are dedicated towards preserving rich and vibrant traditional Indian art.",
+        "name": "Jute Cottage",
+        "note": "Eco-Friendly Store",
+        "payment:all": "yes",
+        "shop": "gift",
+        "source": "survey;local knowledge;gps",
+        "website": "https://www.jutecottage.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7087593338,
+      "lat": 12.9985638,
+      "lon": 77.5730158,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7087593339,
+      "lat": 12.9987859,
+      "lon": 77.5735831,
+      "tags": {
+        "name": "SKR Bicycle Bazar",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7202935829,
+      "lat": 12.993382,
+      "lon": 77.5694167,
+      "tags": {
+        "addr:district": "Chitradurga",
+        "addr:full": "K.C. General Hospital, Srirampura",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Hosdurga",
+        "amenity": "hospital",
+        "contact:phone": "08199-242555",
+        "name": "K.C. General Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962397,
+      "lat": 13.0009024,
+      "lon": 77.5715721,
+      "tags": {
+        "addr:full": "Malleshwaram branch, No 16 Nanjundeshwara Complex 10 TH CROSS, Sampige Rd, Vyalikaval, Yalappa Garden, Malleshwaram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "Vijaya Bank",
+        "name:kn": "ವಿಜಯ ಬ್ಯಾಂಕು"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962417,
+      "lat": 12.9984609,
+      "lon": 77.5730292,
+      "tags": {
+        "addr:full": "7th Cross Rd, Malleshwaram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "brand:wikipedia": "en:Bank of Baroda",
+        "name": "Bank of Baroda",
+        "name:kn": "ಬ್ಯಾಂಕ್ ಆಫ್ ಬರೋಡ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962426,
+      "lat": 12.9977681,
+      "lon": 77.5717257,
+      "tags": {
+        "addr:full": "Malleshwaram 6th cross, 159, 3rd Temple Rd, Sangeetha Apts, Malleshwaram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188018381,
+      "lat": 12.9953,
+      "lon": 77.567335,
+      "tags": {
+        "addr:full": "11th Main Rd, Malleshwaram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Dental 360"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038691,
+      "lat": 13.0015461,
+      "lon": 77.5721683,
+      "tags": {
+        "addr:full": "11th Cross Rd, HN Layout, Malleshwaram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "RICH CARE HOMEOPATHY"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038712,
+      "lat": 12.9969996,
+      "lon": 77.5730038,
+      "tags": {
+        "addr:full": "Sangeetha Apts, Malleshwaram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Supra Diagnostics Spine Care And Ortho Care Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038718,
+      "lat": 12.9960244,
+      "lon": 77.5693714,
+      "tags": {
+        "addr:full": "89, 5th Cross Rd, Behind Police Station, Malleshwaram, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "K.C.General Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9141920971,
+      "lat": 12.9959856,
+      "lon": 77.5685352,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Savera Hang Out"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185065,
+      "lat": 12.9966677,
+      "lon": 77.5729575,
+      "tags": {
+        "name": "Vijaya Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9214185066,
+      "lat": 12.99698,
+      "lon": 77.5734571,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9784639603,
+      "lat": 12.9928075,
+      "lon": 77.5712389,
+      "tags": {
+        "addr:street": "Sampige Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "check_date": "2024-03-02",
+        "name": "Union Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9786116686,
+      "lat": 12.9970579,
+      "lon": 77.5716111,
+      "tags": {
+        "name": "Rajat Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9786116687,
+      "lat": 12.9970573,
+      "lon": 77.5715481,
+      "tags": {
+        "name": "Kanchee-Co Swetha Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9786116689,
+      "lat": 12.9970928,
+      "lon": 77.5715992,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Indian Overseas Bank",
+        "brand:wikidata": "Q2003611",
+        "name": "Indian Overseas Bank",
+        "operator": "Indian Overseas Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9814346313,
+      "lat": 13.0014739,
+      "lon": 77.5714287,
+      "tags": {
+        "name": "Cothas Coffee",
+        "shop": "coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9910012980,
+      "lat": 12.9934596,
+      "lon": 77.5705549,
+      "tags": {
+        "amenity": "toilets",
+        "fee": "no",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10831664275,
+      "lat": 12.9966847,
+      "lon": 77.5711946,
+      "tags": {
+        "name": "Rajarathnam Krishna Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10831664290,
+      "lat": 12.9993139,
+      "lon": 77.5730708,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10831664291,
+      "lat": 12.9988722,
+      "lon": 77.573052,
+      "tags": {
+        "name": "Sri Angala Parameshwari Vegetables",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10831664292,
+      "lat": 12.9993648,
+      "lon": 77.571607,
+      "tags": {
+        "name": "Sri Venkateswara Garments",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10831664293,
+      "lat": 12.9993688,
+      "lon": 77.5715661,
+      "tags": {
+        "name": "Goldwinn Textile",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10934276537,
+      "lat": 12.999063,
+      "lon": 77.5736488,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10934276544,
+      "lat": 12.9988356,
+      "lon": 77.5715473,
+      "tags": {
+        "name": "Ramraj",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10944433588,
+      "lat": 12.9918609,
+      "lon": 77.5703851,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "Marie Claire Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11061437781,
+      "lat": 12.991763,
+      "lon": 77.570977,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560003",
+        "addr:street": "Sampige Road",
+        "air_conditioning": "yes",
+        "name": "imoo",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11096782377,
+      "lat": 12.9989932,
+      "lon": 77.5739639,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "check_date": "2024-06-01",
+        "fee": "yes",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11096782379,
+      "lat": 12.9969689,
+      "lon": 77.5745594,
+      "tags": {
+        "amenity": "post_office",
+        "name": "India Post",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11096802207,
+      "lat": 12.997393,
+      "lon": 77.5733015,
+      "tags": {
+        "name": "New Janardhan Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11195359441,
+      "lat": 13.0010897,
+      "lon": 77.5714902,
+      "tags": {
+        "amenity": "language_school",
+        "check_date": "2023-09-16",
+        "language:de": "yes",
+        "language:en": "yes",
+        "language:es": "yes",
+        "language:fr": "yes",
+        "name": "inlingua",
+        "phone": "+91 99010 33009"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11195725384,
+      "lat": 13.0011015,
+      "lon": 77.5718209,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Namma MTR"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11195725401,
+      "lat": 12.9993936,
+      "lon": 77.5722501,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Basaveshwara Khanavali",
+        "name:kn": "ಬಸವೇಶ್ವರ ಖಾನಾವಳಿ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11195725448,
+      "lat": 13.0012302,
+      "lon": 77.571438,
+      "tags": {
+        "brand": "Lenskart",
+        "brand:wikidata": "Q17068753",
+        "name": "Lenskart",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11195725450,
+      "lat": 13.0010825,
+      "lon": 77.5714347,
+      "tags": {
+        "name": "Fasttrack",
+        "shop": "watches"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11195725455,
+      "lat": 13.0013935,
+      "lon": 77.5714407,
+      "tags": {
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11195725456,
+      "lat": 13.0014386,
+      "lon": 77.5714353,
+      "tags": {
+        "name": "Specs Makers",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11684876144,
+      "lat": 12.9962744,
+      "lon": 77.5668325,
+      "tags": {
+        "amenity": "dentist",
+        "check_date": "2024-03-02",
+        "healthcare": "dentist",
+        "name": "Dental 360"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11882788000,
+      "lat": 12.9912832,
+      "lon": 77.5706068,
+      "tags": {
+        "amenity": "vending_machine",
+        "check_date": "2024-05-06",
+        "drink:bubble_tea": "yes",
+        "vending": "drinks"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897959731,
+      "lat": 12.9966271,
+      "lon": 77.5680009,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2024-05-12",
+        "name": "Tea Time"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897959732,
+      "lat": 12.9966325,
+      "lon": 77.5680591,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-05-12",
+        "name": "Five Star"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897968141,
+      "lat": 13.0031199,
+      "lon": 77.5713727,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-05-12",
+        "healthcare": "pharmacy",
+        "name": "Sri Sai Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897971020,
+      "lat": 12.9991576,
+      "lon": 77.5695024,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Royal Challenge Cotton Export",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897971021,
+      "lat": 12.9991513,
+      "lon": 77.5695657,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Women's Wear",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897971022,
+      "lat": 12.9991553,
+      "lon": 77.5696085,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Kushal's",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897971023,
+      "lat": 12.9991513,
+      "lon": 77.5696601,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Arrow",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897971024,
+      "lat": 12.9991596,
+      "lon": 77.5698374,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Kushi",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897985858,
+      "lat": 12.9998577,
+      "lon": 77.5715775,
+      "tags": {
+        "brand": "Liberty",
+        "brand:wikidata": "Q6541947",
+        "check_date": "2024-05-12",
+        "name": "Liberty Exclusive Showroom",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897987651,
+      "lat": 13.0020698,
+      "lon": 77.5714893,
+      "tags": {
+        "addr:floor": "1",
+        "check_date": "2024-05-12",
+        "level": "1",
+        "name": "Fabulouz",
+        "shop": "flooring"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11897987652,
+      "lat": 13.0015877,
+      "lon": 77.571459,
+      "tags": {
+        "amenity": "post_office",
+        "brand": "Desk to Desk Courier & Cargo",
+        "brand:short": "DTDC",
+        "brand:wikidata": "Q55608802",
+        "check_date": "2024-05-12",
+        "name": "DTDC",
+        "operator": "Desk to Desk Courier & Cargo",
+        "operator:short": "DTDC",
+        "operator:wikidata": "Q55608802"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898006733,
+      "lat": 12.9997739,
+      "lon": 77.5712448,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Bhima",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898006926,
+      "lat": 13.0023263,
+      "lon": 77.571429,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Arvind Store",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898007324,
+      "lat": 13.000939,
+      "lon": 77.5714485,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Raymond",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898009848,
+      "lat": 12.9995672,
+      "lon": 77.5713156,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Preethi Textiles",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898009849,
+      "lat": 12.9989259,
+      "lon": 77.5712772,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Arunodaya Apparel",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898009851,
+      "lat": 12.9982004,
+      "lon": 77.5715144,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "GKB Opticals",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898009852,
+      "lat": 12.9980774,
+      "lon": 77.5714891,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Poorvika",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898009853,
+      "lat": 12.9977364,
+      "lon": 77.5715142,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-05-12",
+        "name": "Udupi Gardens"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898017500,
+      "lat": 13.000884,
+      "lon": 77.57162,
+      "tags": {
+        "addr:floor": "1",
+        "amenity": "bank",
+        "check_date": "2024-05-12",
+        "level": "1",
+        "name": "Bharat Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898021444,
+      "lat": 12.9999201,
+      "lon": 77.5712262,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Sahasra Jewels",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898022381,
+      "lat": 13.0000396,
+      "lon": 77.5714322,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "Varmilan",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11949210770,
+      "lat": 12.998839,
+      "lon": 77.5763743,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-06-01",
+        "healthcare": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11949532607,
+      "lat": 12.9904279,
+      "lon": 77.5708406,
+      "tags": {
+        "addr:floor": "0",
+        "check_date": "2024-06-01",
+        "name": "Continental Coffee",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11951350408,
+      "lat": 12.9934864,
+      "lon": 77.5688437,
+      "tags": {
+        "brand": "Nandini",
+        "check_date": "2024-06-02",
+        "name": "Nandini",
+        "name:kn": "ನಂದಿನಿ",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11951628564,
+      "lat": 12.9932025,
+      "lon": 77.5706798,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-06-02",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982693082,
+      "lat": 12.9991289,
+      "lon": 77.5783048,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-06-15",
+        "name": "Ayodhya Sagar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982693085,
+      "lat": 12.998304,
+      "lon": 77.5732414,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-06-15",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982693086,
+      "lat": 12.9979879,
+      "lon": 77.5732898,
+      "tags": {
+        "check_date": "2024-06-15",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12000328232,
+      "lat": 12.9932604,
+      "lon": 77.571151,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-06-22",
+        "healthcare": "pharmacy",
+        "name": "NE Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968903,
+      "lat": 12.9979195,
+      "lon": 77.5732798,
+      "tags": {
+        "check_date": "2024-08-11",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968904,
+      "lat": 12.9986429,
+      "lon": 77.5732028,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2024-08-11",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968905,
+      "lat": 12.9988873,
+      "lon": 77.5753256,
+      "tags": {
+        "check_date": "2024-08-11",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968906,
+      "lat": 12.9986686,
+      "lon": 77.5758144,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-08-11",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103968909,
+      "lat": 12.9991112,
+      "lon": 77.5781651,
+      "tags": {
+        "amenity": "bar",
+        "check_date": "2024-08-11",
+        "name": "Srinivasa Bar & Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12103981469,
+      "lat": 12.9966044,
+      "lon": 77.5723384,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2024-08-11",
+        "healthcare": "clinic",
+        "name": "Ray Speciality Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12538610079,
+      "lat": 13.0007263,
+      "lon": 77.5714476,
+      "tags": {
+        "name": "Sampige Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12834564801,
+      "lat": 12.9966783,
+      "lon": 77.5728746,
+      "tags": {
+        "addr:housenumber": "35",
+        "addr:postcode": "560003",
+        "addr:street": "5th Cross Road",
+        "amenity": "clinic",
+        "name": "Bangalore Endocrinology & Diabetes Research Center (BEDRC)",
+        "opening_hours": "Mo-Sa 07:30-19:00",
+        "phone": "+918041281998"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013584280,
+      "lat": 12.9921228,
+      "lon": 77.5703135,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Kalmane Koffees"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13062869384,
+      "lat": 12.9913578,
+      "lon": 77.5711154,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13093773835,
+      "lat": 12.9900277,
+      "lon": 77.5713471,
+      "tags": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "10",
+        "covered": "yes",
+        "fee": "no",
+        "operator": "trin"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38536360,
+      "center": {
+        "lat": 12.9950532,
+        "lon": 77.5697431
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Malleswaran",
+        "addr:postcode": "560003",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "K C General Hospital",
+        "name:kn": "ಕೆ ಸಿ ಜನರಲ್ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 101928528,
+      "center": {
+        "lat": 12.9945118,
+        "lon": 77.5707402
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 113800231,
+      "center": {
+        "lat": 12.9990337,
+        "lon": 77.5705388
+      },
+      "tags": {
+        "amenity": "marketplace",
+        "landuse": "retail",
+        "name": "Malleshwaram 8th Cross Market",
+        "name:kn": "೮ನೇ ಅಡ್ಡರಸ್ತೆ ಮಾರಕಟ್ಟೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192049199,
+      "center": {
+        "lat": 12.9972966,
+        "lon": 77.5741453
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Brand Factory",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 192049201,
+      "center": {
+        "lat": 12.9972244,
+        "lon": 77.5736912
+      },
+      "tags": {
+        "brand": "Big Bazaar",
+        "brand:wikidata": "Q3631008",
+        "brand:wikipedia": "en:Big Bazaar",
+        "building": "yes",
+        "name": "Big Bazaar",
+        "name:kn": "ಬಿಗ್ ಬಜಾರ್",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 349378539,
+      "center": {
+        "lat": 13.0017522,
+        "lon": 77.5715711
+      },
+      "tags": {
+        "addr:housename": "Yashoda Arcade",
+        "alt_name": "yashodha Arcade",
+        "building": "retail",
+        "name": "Reliance Trends",
+        "name:kn": "ರಿಲಯನ್ಸ್ ಟ್ರೆಂಡ್ಸ್",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437438963,
+      "center": {
+        "lat": 12.9915771,
+        "lon": 77.5705772
+      },
+      "tags": {
+        "addr:street": "Sampige Road, Malleshwaram",
+        "landuse": "retail",
+        "name": "Mantri Square",
+        "note": "Mall was sealed on 16th March 2024, reopened on 17th March 2024: https://www.deccanherald.com/india/karnataka/bengaluru/mantri-mall-reopens-after-being-sealed-over-tax-dues-2940800",
+        "shop": "mall",
+        "wheelchair": "yes",
+        "wikidata": "Q6752215",
+        "wikimedia_commons": "Category:Mantri Square",
+        "wikipedia": "en:Mantri Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1081215223,
+      "center": {
+        "lat": 12.9939066,
+        "lon": 77.5692419
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1113050873,
+      "center": {
+        "lat": 12.996573,
+        "lon": 77.5731253
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Allamandas School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1195571024,
+      "center": {
+        "lat": 12.9971009,
+        "lon": 77.5733518
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Subramanyeshwara Temple",
+        "name:kn": "ಸುಬ್ರಮಣ್ಯೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1208264452,
+      "center": {
+        "lat": 12.9997231,
+        "lon": 77.5713949
+      },
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "covered": "no",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1208264453,
+      "center": {
+        "lat": 13.0005419,
+        "lon": 77.571376
+      },
+      "tags": {
+        "amenity": "parking",
+        "fee": "no",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1208264478,
+      "center": {
+        "lat": 13.0029887,
+        "lon": 77.5712982
+      },
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "fee": "no",
+        "parking": "street_side",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1210469164,
+      "center": {
+        "lat": 12.9959403,
+        "lon": 77.5665162
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ayyappa Temple",
+        "name:kn": "ಅಯ್ಯಪ್ಪ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301288895,
+      "center": {
+        "lat": 12.9924695,
+        "lon": 77.5701281
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1305597968,
+      "center": {
+        "lat": 13.0026177,
+        "lon": 77.5719578
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338316058,
+      "center": {
+        "lat": 12.9985759,
+        "lon": 77.5717153
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340207896,
+      "center": {
+        "lat": 12.9987506,
+        "lon": 77.574245
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Dattatreya Temple",
+        "name:kn": "ದತ್ತಾತ್ರೇಯ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

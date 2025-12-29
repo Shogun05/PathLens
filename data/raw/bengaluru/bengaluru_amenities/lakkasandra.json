@@ -1,0 +1,1326 @@
+{
+  "area_name": "Lakkasandra",
+  "osm_id": 19883457,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 87,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 537535805,
+      "lat": 12.9351086,
+      "lon": 77.611565,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:ur": "مکڈونلڈز",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:wikipedia:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "brand:wikipedia:ur": "مکڈونلڈز",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "name:kn": "ಮ್ಯಾಕ್‌ಡೊನಾಲ್ಡ್ಸ್",
+        "name:pa": "ਮੈਕਡੋਨਲਡ’ਜ਼",
+        "name:ur": "مکڈونلڈز",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 537535920,
+      "lat": 12.9343669,
+      "lon": 77.6107742,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "alt_name": "Kentucky Fried Chicken",
+        "alt_name:en": "Kentucky Fried Chicken",
+        "alt_name:hi": "केंटुकी फ्राइड चिकन",
+        "alt_name:pa": "ਕੈਂਟੁਕੀ ਫ੍ਰਾਈਡ ਚਿਕਨ",
+        "alt_name:pnb": "کینٹکی فرائیڈ چکن",
+        "alt_name:ur": "کینٹکی فرائیڈ چکن",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:en": "KFC",
+        "brand:hi": "केएफसी",
+        "brand:pa": "ਕੇਐਫਸੀ",
+        "brand:pnb": "کے ایف سی",
+        "brand:ur": "کے ایف سی",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:wikipedia:pa": "ਕੇਐਫਸੀ",
+        "brand:wikipedia:ur": "کینٹکی فرائیڈ چکن",
+        "cuisine": "chicken",
+        "name": "KFC",
+        "name:en": "KFC",
+        "name:hi": "केएफसी",
+        "name:kn": "ಕೆಎಫ್‌ಸಿ",
+        "name:pa": "ਕੇਐਫਸੀ",
+        "name:pnb": "کے ایف سی",
+        "name:ur": "کے ایف سی",
+        "takeaway": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1307443100,
+      "lat": 12.9343647,
+      "lon": 77.6110938,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "food_court",
+        "name": "Transit"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1307443105,
+      "lat": 12.9344118,
+      "lon": 77.6109865,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Cafe Coffee Day",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1459472858,
+      "lat": 12.9346877,
+      "lon": 77.6116748,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "cinema",
+        "brand": "PVR Cinemas",
+        "brand:short": "PVR",
+        "brand:wikidata": "Q3359908",
+        "name": "PVR",
+        "operator": "PVR Cinemas",
+        "screen": "12",
+        "short_name": "PVR"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1459719058,
+      "lat": 12.934745,
+      "lon": 77.611659,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "brand": "Westside",
+        "brand:wikidata": "Q123376384",
+        "name": "Westside",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1459720916,
+      "lat": 12.934792,
+      "lon": 77.6113,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:housenumber": "21, Shop No.5",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "brand": "Reebok",
+        "brand:wikidata": "Q466183",
+        "name": "Reebok",
+        "name:kn": "ರೀಬಾಕ್",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1459721959,
+      "lat": 12.934525,
+      "lon": 77.610909,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "cuisine": "pizza",
+        "level": "1",
+        "name": "Pizza Hut",
+        "name:kn": "ಪಿಟ್ಸ ಹಟ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1459722798,
+      "lat": 12.934546,
+      "lon": 77.61107,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "brand": "Metro",
+        "brand:wikidata": "Q16938284",
+        "name": "Metro",
+        "shop": "shoes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1459725062,
+      "lat": 12.935016,
+      "lon": 77.611357,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "restaurant",
+        "level": "2",
+        "name": "Sahib Singh Sultan",
+        "name:kn": "ಸಾಹಿಬ್ ಸಿಂಗ್ ಸುಲ್ತಾನ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462976045,
+      "lat": 12.9337269,
+      "lon": 77.6112285,
+      "tags": {
+        "addr:postcode": "560095",
+        "addr:street": "Near Forum Mall, Koramangala, Bangalore",
+        "shop": "florist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462977137,
+      "lat": 12.9341298,
+      "lon": 77.6109889,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "name": "More",
+        "shop": "supermarket",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462977852,
+      "lat": 12.9348719,
+      "lon": 77.6114029,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "brand": "Archies",
+        "brand:wikidata": "Q4786843",
+        "name": "Archies",
+        "shop": "gift",
+        "website": "https://archiecomics.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463612973,
+      "lat": 12.9351451,
+      "lon": 77.611553,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "name": "Ali-n-Arts Florist",
+        "shop": "florist"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465515463,
+      "lat": 12.9345734,
+      "lon": 77.6115121,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "name": "Landmark",
+        "shop": "hifi",
+        "website": "http://www.landmarkonthenet.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470539723,
+      "lat": 12.9348619,
+      "lon": 77.6112385,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "name": "Soch",
+        "shop": "clothes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470541759,
+      "lat": 12.93419,
+      "lon": 77.6109248,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "name": "Nexus Mall Koramangla",
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470608018,
+      "lat": 12.9345459,
+      "lon": 77.6114217,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "brand": "United Colors of Benetton",
+        "brand:wikidata": "Q817139",
+        "name": "United Colors of Benetton",
+        "shop": "clothes",
+        "short_name": "Benetton",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470608021,
+      "lat": 12.934891,
+      "lon": 77.6110462,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "branch": "Dockers",
+        "brand": "Levi's",
+        "brand:wikidata": "Q127962",
+        "clothes": "denim;men;women",
+        "name": "Levi's",
+        "shop": "clothes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470608022,
+      "lat": 12.9341695,
+      "lon": 77.6110462,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "name": "Raymonds",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470856078,
+      "lat": 12.9347915,
+      "lon": 77.6109681,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "name": "Ayesha",
+        "name:kn": "ಅಯೇಶ",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470856090,
+      "lat": 12.9347444,
+      "lon": 77.6110003,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "name": "Cookie Man",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470856097,
+      "lat": 12.9346922,
+      "lon": 77.6110539,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "name": "Sangeeta Mobiles",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470856114,
+      "lat": 12.9343785,
+      "lon": 77.611365,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "toilets",
+        "fee": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1470856144,
+      "lat": 12.9347706,
+      "lon": 77.6110968,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "branch": "showroom",
+        "brand": "Samsung",
+        "brand:wikidata": "Q20718",
+        "name": "Samsung",
+        "shop": "electronics",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1474476995,
+      "lat": 12.9429045,
+      "lon": 77.5977165,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganesha Temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1697594718,
+      "lat": 12.9348541,
+      "lon": 77.6110076,
+      "tags": {
+        "access": "customers",
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "parking",
+        "fee": "yes",
+        "name": "Nexus Mall Parking",
+        "parking": "multi-storey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1824140227,
+      "lat": 12.942312,
+      "lon": 77.60802,
+      "tags": {
+        "addr:street": "Hosur Road",
+        "name": "Manokamana Cermanic",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2647774007,
+      "lat": 12.9338666,
+      "lon": 77.6123477,
+      "tags": {
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "brand": "Tata",
+        "brand:wikidata": "Q188514",
+        "check_date": "2023-10-28",
+        "name": "Tata Motors",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3193517612,
+      "lat": 12.9353301,
+      "lon": 77.6091895,
+      "tags": {
+        "name": "Stellar",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3394751195,
+      "lat": 12.9403442,
+      "lon": 77.6024598,
+      "tags": {
+        "name": "Safal Fresh",
+        "opening_hours": "07:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3394753832,
+      "lat": 12.9420376,
+      "lon": 77.6023113,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Sri Chowdeshwari Bhavan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3394758626,
+      "lat": 12.9414015,
+      "lon": 77.6028616,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "10, RD Layout",
+        "addr:postcode": "560030",
+        "addr:street": "7th Cross",
+        "name": "Marble Centre International Private Limited",
+        "opening_hours": "09:00-18:00",
+        "operator": "Marble Centre International Private Limited",
+        "shop": "yes",
+        "website": "https://marblecentre.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3399027872,
+      "lat": 12.9407571,
+      "lon": 77.6025842,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560030",
+        "addr:street": "9th Cross",
+        "name": "Kohinoor Granite and Marble",
+        "shop": "flooring",
+        "website": "http://www.kohinoorgranite.net/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4443240833,
+      "lat": 12.9350497,
+      "lon": 77.6114296,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:housenumber": "forum mall",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "description": "It is a fashion store",
+        "level": "1",
+        "name": "Chumbak",
+        "opening_hours": "00:00-12:00",
+        "phone": "6747589579869",
+        "shop": "clothes",
+        "website": "https://www.chumbak.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447010431,
+      "lat": 12.9409856,
+      "lon": 77.6085956,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560030",
+        "addr:street": "Hosur Rd, Koramangala",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Ambur Biriyani Center",
+        "opening_hours": "09:00-22:00",
+        "phone": "090080 10360",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447017355,
+      "lat": 12.939969,
+      "lon": 77.6091099,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560030",
+        "addr:street": "Adugodi, Hosur Road",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Taj Food Point",
+        "phone": "9008010360",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447020567,
+      "lat": 12.9424172,
+      "lon": 77.6079042,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560030",
+        "addr:street": "Hosur Rd, Nanjappa Layout, Adugodi",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "D3 multi cusine",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447078886,
+      "lat": 12.9415138,
+      "lon": 77.6083283,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "43/41",
+        "addr:postcode": "560030",
+        "addr:street": "Laksar Hosur Road, Adugodi",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "iLounge Cafe",
+        "phone": "080 6456 7738",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "www.ioungecafe.asia.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4487272388,
+      "lat": 12.9350706,
+      "lon": 77.6116041,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:housenumber": "Chikku Lakshmaiah Layout",
+        "addr:postcode": "560029",
+        "addr:street": "Hosur Road",
+        "brand": "Adidas",
+        "brand:wikidata": "Q3895",
+        "name": "Adidas",
+        "name:kn": "ಅಡಿಡಾಸ್",
+        "shop": "sports",
+        "website": "https://shop.adidas.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4487302966,
+      "lat": 12.934232,
+      "lon": 77.6111578,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:postcode": "560029",
+        "addr:street": "Hosur Road",
+        "brand": "Puma",
+        "brand:wikidata": "Q157064",
+        "name": "Puma",
+        "phone": "088422 76825",
+        "shop": "clothes",
+        "website": "https://in.puma.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4487307801,
+      "lat": 12.9343711,
+      "lon": 77.6109597,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:housenumber": "17",
+        "addr:postcode": "560029",
+        "addr:street": "Hosur Road",
+        "brand": "Nike",
+        "brand:wikidata": "Q483915",
+        "level": "0",
+        "name": "Nike",
+        "name:kn": "ನೈಕ್",
+        "phone": "080 2206 7664",
+        "shop": "clothes",
+        "website": "https://nike.ssiplgroup.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489768760,
+      "lat": 12.9367017,
+      "lon": 77.6104595,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560034",
+        "addr:street": "H M Vibha Towers, Adugodi Road, Koramangala",
+        "brand": "Star Bazaar",
+        "brand:wikidata": "Q124175958",
+        "name": "Star Bazaar",
+        "organic": "yes",
+        "phone": "80-25535222",
+        "shop": "supermarket",
+        "website": "https://starbazaarindia.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4531744796,
+      "lat": 12.9345661,
+      "lon": 77.6116372,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:housenumber": "345",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "brand": "Pantaloons",
+        "brand:wikidata": "Q7131643",
+        "level": "3",
+        "name": "Pantaloons",
+        "opening_hours": "09:00-20:00, Su closed",
+        "phone": "+91 9886921292",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4729478014,
+      "lat": 12.9404277,
+      "lon": 77.5988406,
+      "tags": {
+        "amenity": "hospital",
+        "name": "NBRC(National Brain Research Center)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849094827,
+      "lat": 12.9354982,
+      "lon": 77.6089438,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Sip N Snacks",
+        "name:en": "Sip N Snacks"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849094828,
+      "lat": 12.9353203,
+      "lon": 77.6090576,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Salads and Grill's",
+        "name:en": "Salads and Grill's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849108623,
+      "lat": 12.9355551,
+      "lon": 77.608926,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Royal Pride",
+        "name:en": "The Royal Pride"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849108624,
+      "lat": 12.9352983,
+      "lon": 77.6091104,
+      "tags": {
+        "amenity": "atm",
+        "brand": "South Indian Bank",
+        "brand:wikidata": "Q2044973",
+        "name": "South Indian Bank",
+        "operator": "South Indian Bank",
+        "operator:wikidata": "Q2044973"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849108921,
+      "lat": 12.9353982,
+      "lon": 77.6090182,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Forum Park",
+        "name:en": "Forum Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4851635491,
+      "lat": 12.9353584,
+      "lon": 77.6089853,
+      "tags": {
+        "name": "Laboratory Traders",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4851635492,
+      "lat": 12.935344,
+      "lon": 77.6090148,
+      "tags": {
+        "name": "Star Electronics",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5396222724,
+      "lat": 12.9340385,
+      "lon": 77.6122448,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "name": "UCO Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5915195080,
+      "lat": 12.9352198,
+      "lon": 77.6093401,
+      "tags": {
+        "amenity": "pub",
+        "name": "Johnny Fox RestoBar & Pub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6536678805,
+      "lat": 12.9393229,
+      "lon": 77.6076781,
+      "tags": {
+        "addr:place": "Lakkasandra",
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "GLPS (U) Adugodi, Lakkasandra",
+        "name:kn": "ಸರ್ಕಾರಿ ಕಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ(ಉರ್ದು)ಆಡುಗೋಡಿ, ಲಕ್ಕಸಂದ್ರ",
+        "operator": "Department of Primary and Secondary Education",
+        "operator:type": "government",
+        "operator:wikidata": "Q111467381",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6882713320,
+      "lat": 12.9405901,
+      "lon": 77.5988133,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "NIMHANS Hosur Road",
+        "addr:postcode": "560029",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "080 26995435",
+        "contact:phone": "08026995435; 08026995436; 08026995437",
+        "name": "Transfusion Medicine Centre Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "government",
+        "source": "OpenGovernmentData",
+        "website": "http://www.nimhans.ac.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938704941,
+      "lat": 12.941871,
+      "lon": 77.6081394,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.44/22,Srinivasa Complex, Najjappa Layout,Hosur Road, Adugodi",
+        "addr:postcode": "560030",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sankalpa Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7293804877,
+      "lat": 12.9333764,
+      "lon": 77.6125275,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housename": "Salarpuria Towers",
+        "addr:housenumber": "22",
+        "addr:postcode": "560095",
+        "addr:street": "Hosur Road",
+        "addr:suburb": "Koramangala",
+        "amenity": "coworking_space",
+        "fee": "yes",
+        "name": "315 Work Avenue",
+        "office": "coworking",
+        "operator": "315 Work Avenue",
+        "website": "https://www.315workavenue.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7293817023,
+      "lat": 12.9364493,
+      "lon": 77.6107974,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "Adugodi",
+        "addr:housename": "Prestige Cube",
+        "addr:housenumber": "26",
+        "addr:postcode": "560029",
+        "addr:street": "Hosur Road",
+        "addr:suburb": "Koramangala",
+        "amenity": "coworking_space",
+        "brand": "WeWork",
+        "brand:wikidata": "Q19995004",
+        "fee": "yes",
+        "name": "WeWork",
+        "office": "coworking",
+        "operator": "WeWork",
+        "website": "https://www.wework.com/buildings/prestige-cube--bengaluru--Karnataka"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7293817077,
+      "lat": 12.9388556,
+      "lon": 77.6094228,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560030",
+        "addr:street": "Hosur Road",
+        "name": "Levi Strauss",
+        "name:kn": "ಲೆವಿ ಸ್ಟ್ರೌಸ್",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7866070928,
+      "lat": 12.9421741,
+      "lon": 77.6020964,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "16th cross",
+        "addr:postcode": "560030",
+        "addr:street": "Gopalappa Layout",
+        "amenity": "place_of_worship",
+        "name": "Chowdeshwari Amma Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8558793117,
+      "lat": 12.9386806,
+      "lon": 77.601935,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "operator": "Karnataka Bank",
+        "operator:wikidata": "Q2042632"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9906259149,
+      "lat": 12.9430742,
+      "lon": 77.5973428,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "check_date": "2023-10-28",
+        "fee": "no",
+        "female": "yes",
+        "male": "yes",
+        "name": "Public Toilet",
+        "name:en": "Public Toilet",
+        "operator": "BBMP",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10982294161,
+      "lat": 12.9346756,
+      "lon": 77.6115122,
+      "tags": {
+        "brand": "Birkenstock",
+        "brand:wikidata": "Q648458",
+        "name": "Birkenstock",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11396038127,
+      "lat": 12.9351034,
+      "lon": 77.611625,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum Mall",
+        "addr:street": "Hosur Road",
+        "amenity": "fast_food",
+        "name": "Samosa Party",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11396038128,
+      "lat": 12.9342242,
+      "lon": 77.6109653,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Forum mall",
+        "addr:street": "Hosur Road",
+        "brand": "Apple Store",
+        "brand:wikidata": "Q421253",
+        "level": "0",
+        "name": "Apple Store",
+        "name:kn": "ಆಪೆಲ್",
+        "operator": "iCare - Ample technologies pvt ltd",
+        "phone": "+9108046999888",
+        "shop": "electronics",
+        "short_name": "Apple"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11519453582,
+      "lat": 12.9367564,
+      "lon": 77.6102968,
+      "tags": {
+        "brand": "Zudio",
+        "brand:wikidata": "Q123375926",
+        "name": "Zudio",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12247812583,
+      "lat": 12.9393619,
+      "lon": 77.6094321,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12247812584,
+      "lat": 12.9392802,
+      "lon": 77.6094704,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12294001113,
+      "lat": 12.9347344,
+      "lon": 77.6112226,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:instagram": "goodflippin",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "Good Flippin' Burgers",
+        "takeaway": "yes",
+        "website": "https://goodflippin.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12862846474,
+      "lat": 12.9344461,
+      "lon": 77.611403,
+      "tags": {
+        "amenity": "fast_food",
+        "contact:instagram": "goodflippin",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "Good Flippin' Burgers",
+        "takeaway": "yes",
+        "website": "https://goodflippin.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13103122517,
+      "lat": 12.9350389,
+      "lon": 77.6100816,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13103122519,
+      "lat": 12.9349132,
+      "lon": 77.610268,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13103122521,
+      "lat": 12.9356656,
+      "lon": 77.6110898,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13103122522,
+      "lat": 12.935858,
+      "lon": 77.610987,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23542631,
+      "center": {
+        "lat": 12.9345856,
+        "lon": 77.6112435
+      },
+      "tags": {
+        "alt_name": "Forum Mall",
+        "landuse": "retail",
+        "name": "Nexus Koramangala",
+        "official_name": "Nexus Mall, Koramangala",
+        "old_name": "The Forum",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "shop": "mall",
+        "start_date": "2004",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.nexusselecttrust.com/nexus-koramangala",
+        "wheelchair": "yes",
+        "wikidata": "Q7734919",
+        "wikipedia": "en:Nexus Mall (Koramangala)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 97475731,
+      "center": {
+        "lat": 12.9435105,
+        "lon": 77.6058775
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Robert Bosch India Indoor Sports Facility"
+      }
+    },
+    {
+      "type": "way",
+      "id": 147129313,
+      "center": {
+        "lat": 12.9355264,
+        "lon": 77.6097472
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Sathya Sai Samskruti Sadana",
+        "name:kn": "ಸತ್ಯ ಸಾಯಿ ಸಂಸ್ಕ್ರತಿ ಭಾವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347534358,
+      "center": {
+        "lat": 12.9399039,
+        "lon": 77.5987167
+      },
+      "tags": {
+        "amenity": "library",
+        "building": "yes",
+        "name": "Central Library of NIMHANS"
+      }
+    },
+    {
+      "type": "way",
+      "id": 577663676,
+      "center": {
+        "lat": 12.9360645,
+        "lon": 77.6097257
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 638729638,
+      "center": {
+        "lat": 12.9337326,
+        "lon": 77.6114986
+      },
+      "tags": {
+        "addr:housenumber": "149/2",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:unleaded": "yes",
+        "name": "IOC Hamsa Service Station",
+        "opening_hours": "Mo-Su 06:00-23:00",
+        "operator": "Indian Oil"
+      }
+    },
+    {
+      "type": "way",
+      "id": 779344674,
+      "center": {
+        "lat": 12.9436204,
+        "lon": 77.6056771
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 779344675,
+      "center": {
+        "lat": 12.9430153,
+        "lon": 77.6056563
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781192782,
+      "center": {
+        "lat": 12.9359713,
+        "lon": 77.6100063
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1207541324,
+      "center": {
+        "lat": 12.9406411,
+        "lon": 77.5977285
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1259003513,
+      "center": {
+        "lat": 12.9433411,
+        "lon": 77.6053308
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1259003528,
+      "center": {
+        "lat": 12.9353285,
+        "lon": 77.6106247
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2222 @@
+{
+  "area_name": "Chickpete",
+  "osm_id": 19883317,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 175,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 456214138,
+      "lat": 12.9730205,
+      "lon": 77.5804826,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಎಸ್ ಬಿ ಐ",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 456214157,
+      "lat": 12.9738444,
+      "lon": 77.578582,
+      "tags": {
+        "addr:street": "Kempe Gowda Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "brand:wikipedia": "en:Bank of India",
+        "name": "Bank of India",
+        "name:en": "Bank of India",
+        "short_name": "BoI",
+        "website": "http://www.bankofindia.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 456214158,
+      "lat": 12.973729,
+      "lon": 77.578957,
+      "tags": {
+        "addr:street": "Kempe Gowda Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "brand:wikipedia": "en:Indian Bank",
+        "name": "Indian Bank",
+        "name:en": "Indian Bank",
+        "name:kn": "ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.indianbank.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871268,
+      "lat": 12.9671651,
+      "lon": 77.580199,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "name": "Chatpat",
+        "name:kn": "ಚಟ್ಪಟ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871269,
+      "lat": 12.9697027,
+      "lon": 77.5796625,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cane Crush"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871271,
+      "lat": 12.9732382,
+      "lon": 77.5778493,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2023-02-27",
+        "fee": "yes",
+        "level": "0"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871273,
+      "lat": 12.9703805,
+      "lon": 77.5800395,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Hotel Madhuvan",
+        "name:kn": "ಮಧುವನ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 665871274,
+      "lat": 12.9722509,
+      "lon": 77.5802138,
+      "tags": {
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 683352691,
+      "lat": 12.9709419,
+      "lon": 77.5735425,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Kailaseshwara Temple",
+        "name:kn": "ಶ್ರೀ ಕೈಲಾಸೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 683352694,
+      "lat": 12.9734503,
+      "lon": 77.5751186,
+      "tags": {
+        "addr:street": "Balepet Road",
+        "amenity": "cafe",
+        "name": "Fresh Cane"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1457578295,
+      "lat": 12.9733973,
+      "lon": 77.5781068,
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "350",
+        "fee": "yes",
+        "level": "2,3,4",
+        "name": "Maharaja Complex Multi Storey Parking",
+        "operator": "BBMP",
+        "parking": "multi-storey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1824167359,
+      "lat": 12.9738948,
+      "lon": 77.5785146,
+      "tags": {
+        "name": "Univer Cell",
+        "note": "Mobile shop",
+        "shop": "electronics",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2014227810,
+      "lat": 12.9699846,
+      "lon": 77.5797207,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Banaras Sweets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2014232345,
+      "lat": 12.9700251,
+      "lon": 77.5799594,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Vysya Bank",
+        "brand": "ING",
+        "brand:wikidata": "Q645708",
+        "name": "ING",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2014238900,
+      "lat": 12.9732008,
+      "lon": 77.5789268,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "name:kn": "ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕು",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2016154125,
+      "lat": 12.9707012,
+      "lon": 77.5736393,
+      "tags": {
+        "amenity": "police",
+        "name": "Chikkapete Police Station",
+        "name:kn": "ಚಿಕ್ಕಪೇಟೆ ಆರಕ್ಷಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3800281856,
+      "lat": 12.9735894,
+      "lon": 77.5783998,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Shanti Sagar",
+        "name:en": "New Shanthi Sagar",
+        "name:kn": "ಶಾಂತಿ ಸಾಗರ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209454289,
+      "lat": 12.9679842,
+      "lon": 77.578539,
+      "tags": {
+        "name": "Karu Pakula Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209454290,
+      "lat": 12.9681084,
+      "lon": 77.5786114,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "1",
+        "addr:place": "Avenue Road Circle",
+        "addr:postcode": "560 002",
+        "level": "0",
+        "name": "Shoba Jewellers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209454292,
+      "lat": 12.9680476,
+      "lon": 77.5787462,
+      "tags": {
+        "name": "Vajra Mahal",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209484254,
+      "lat": 12.9680202,
+      "lon": 77.5787717,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4209499020,
+      "lat": 12.9680176,
+      "lon": 77.5787039,
+      "tags": {
+        "amenity": "police",
+        "name": "Avenue Road Police Chowky"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4368918389,
+      "lat": 12.9729745,
+      "lon": 77.5808399,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Corporation Bank",
+        "brand:wikidata": "Q2003387",
+        "name": "Corporation Bank",
+        "name:kn": "ಕಾರ್ಪರೇಷನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4413510290,
+      "lat": 12.969833,
+      "lon": 77.5775083,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "45/6",
+        "addr:postcode": "500006",
+        "addr:street": "6th Cross Road",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "yes",
+        "name": "CCD",
+        "opening_hours": "09:00-06:00",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4487969466,
+      "lat": 12.9714473,
+      "lon": 77.5757997,
+      "tags": {
+        "addr:city": "Bengaluru,",
+        "addr:postcode": "560053",
+        "addr:street": "Laxman Rao, 63, BVK Iyengar Rd, Basettypet, Huriopet, Chickpet,",
+        "name": "Meenaxi Chemicals",
+        "phone": "080 2225 9599",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4487996362,
+      "lat": 12.9703096,
+      "lon": 77.5761097,
+      "tags": {
+        "addr:city": "Bengaluru,",
+        "addr:housenumber": "62",
+        "addr:postcode": "560053",
+        "addr:street": "A. M. Lane",
+        "name": "Shree Sudarshan Light And Appliances",
+        "phone": "(91)-9986419127",
+        "shop": "electronics",
+        "website": "www.smartgrahak.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488592383,
+      "lat": 12.9719137,
+      "lon": 77.5772021,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "1/2",
+        "addr:postcode": "560053",
+        "addr:street": "Dasappa Building, Dasappa Lane, Chikpet, Anchepet, Chickpet",
+        "name": "Murthy Glass & Plywood Pvt Ltd",
+        "phone": "+91 98448 11824",
+        "shop": "yes",
+        "website": "https://www.in.saint-gobain-glass.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489039609,
+      "lat": 12.9690423,
+      "lon": 77.575894,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "5/2",
+        "addr:postcode": "560053",
+        "addr:street": "A.M. Lane, B.V.K. Street, Chik Pet, Huriopet, Chickpet, Bengaluru",
+        "name": "R R Enterprieses",
+        "phone": "08022250035",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489046040,
+      "lat": 12.9719452,
+      "lon": 77.5748259,
+      "tags": {
+        "addr:city": "Bengaluru,",
+        "addr:housenumber": "98/1",
+        "addr:postcode": "560053",
+        "addr:street": "Laxman Rao Road, Balepet Cross, Near-Garden English School, Chickpet, Basettypet, Huriopet, Chickpet",
+        "name": "Sri Devi Chemicals",
+        "phone": "0802872934",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489691846,
+      "lat": 12.9704653,
+      "lon": 77.5734187,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "7973",
+        "addr:postcode": "560053",
+        "addr:street": "I Cross, As Char Street, Santhusapet, Chickpet, Bengaluru, Karnataka 560053",
+        "name": "Karnataka Chemical Industries",
+        "phone": "08022873910",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4655054151,
+      "lat": 12.9733363,
+      "lon": 77.5799372,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "2",
+        "addr:postcode": "560009",
+        "addr:street": "Kempegowda Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Allahabad Bank",
+        "brand:wikidata": "Q2018840",
+        "brand:wikipedia": "en:Allahabad Bank",
+        "fax": "080-22253402",
+        "name": "Allahabad Bank",
+        "name:en": "Allahabad Bank",
+        "name:kn": "ಅಲ್ಲಹಾಬಾದ್ ಬ್ಯಾಂಕ್",
+        "phone": "080-22262064",
+        "phone_1": "080-22261599",
+        "website": "https://www.allahabadbank.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5225695421,
+      "lat": 12.969167,
+      "lon": 77.576508,
+      "tags": {
+        "addr:street": "Mamulpet Road",
+        "clothes": "women;men;wedding;suits;fashion;children;underwear;traditional",
+        "name": "Kuberan silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5225695521,
+      "lat": 12.9693187,
+      "lon": 77.5767288,
+      "tags": {
+        "name": "Pradeep fashion",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5225695621,
+      "lat": 12.9694614,
+      "lon": 77.5764,
+      "tags": {
+        "addr:street": "Mamulpet Road",
+        "name": "Pradeep Fabrics",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5462868116,
+      "lat": 12.9722318,
+      "lon": 77.5787988,
+      "tags": {
+        "addr:housenumber": "34/35",
+        "addr:street": "Kilari Road",
+        "amenity": "cafe",
+        "name": "South Canara Coffeehouse"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418984600,
+      "lat": 12.9708074,
+      "lon": 77.5761672,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shree Kodahda Ramanjaneya Swamy Temple",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418984603,
+      "lat": 12.9689075,
+      "lon": 77.5771309,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "G R Veerabhadrappa's Veerashaiva Choultry, Sanskrit and Veda Pathashala"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418984604,
+      "lat": 12.9701196,
+      "lon": 77.576326,
+      "tags": {
+        "addr:housenumber": "69",
+        "addr:street": "A M Lane",
+        "name": "Panna Sri Cables",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418985026,
+      "lat": 12.9705176,
+      "lon": 77.5760191,
+      "tags": {
+        "addr:housenumber": "29",
+        "addr:street": "B.V.K. Iyengar Road",
+        "name": "Mutha department stores",
+        "shop": "department_store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418985027,
+      "lat": 12.9705111,
+      "lon": 77.5760421,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "B.V.K. Iyengar Road",
+        "name": "Kancheepuram & designers sarees",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418987487,
+      "lat": 12.9700843,
+      "lon": 77.5763899,
+      "tags": {
+        "addr:housenumber": "72",
+        "addr:street": "A M Lane",
+        "name": "Amar electricals",
+        "office": "company",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418987488,
+      "lat": 12.9687354,
+      "lon": 77.5774013,
+      "tags": {
+        "name": "Hingade Arcade",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418987489,
+      "lat": 12.9715705,
+      "lon": 77.5772659,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Jodhpur Sweets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418988790,
+      "lat": 12.9691224,
+      "lon": 77.5768357,
+      "tags": {
+        "name": "Chickpet Plaza",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418988791,
+      "lat": 12.970133,
+      "lon": 77.5763065,
+      "tags": {
+        "addr:housenumber": "68",
+        "addr:street": "A M Lane",
+        "name": "Arihant cable corporation",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419006085,
+      "lat": 12.9702453,
+      "lon": 77.5760979,
+      "tags": {
+        "name": "Sri Ram Electricals",
+        "phone": "08041221753",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419006086,
+      "lat": 12.9702313,
+      "lon": 77.5761119,
+      "tags": {
+        "addr:housenumber": "63/1",
+        "addr:street": "A M Lane",
+        "name": "Sri Anand Electricals",
+        "phone": "+919986174238",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419006088,
+      "lat": 12.9703132,
+      "lon": 77.5758789,
+      "tags": {
+        "name": "Aarti electricals and lightning",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419006185,
+      "lat": 12.9701942,
+      "lon": 77.5761895,
+      "tags": {
+        "addr:street": "A M Lane",
+        "name": "Sri Venkateshwara Lighting",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419007388,
+      "lat": 12.9702033,
+      "lon": 77.57617,
+      "tags": {
+        "addr:housenumber": "63",
+        "addr:postcode": "560053",
+        "addr:street": "A. M. Lane",
+        "name": "Prakash Spare Parts",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419007389,
+      "lat": 12.9698059,
+      "lon": 77.5758039,
+      "tags": {
+        "name": "Sri Varadevi Society Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419007390,
+      "lat": 12.9693452,
+      "lon": 77.5764784,
+      "tags": {
+        "name": "Srinivasa Stores",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008285,
+      "lat": 12.9702871,
+      "lon": 77.5759404,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "AS Char Street",
+        "name": "Nandini Milk Parlour",
+        "name:kn": "ನಂದಿನಿ ಹಾಲಿನ ಅಂಗಡಿ",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008685,
+      "lat": 12.9703241,
+      "lon": 77.5760364,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Kachori house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008686,
+      "lat": 12.9692952,
+      "lon": 77.5766217,
+      "tags": {
+        "name": "Maithili silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008687,
+      "lat": 12.9690365,
+      "lon": 77.5768479,
+      "tags": {
+        "name": "Rukmini building",
+        "shop": "department_store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008688,
+      "lat": 12.9701199,
+      "lon": 77.5762439,
+      "tags": {
+        "addr:housenumber": "29",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Majisa Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008689,
+      "lat": 12.9700781,
+      "lon": 77.576315,
+      "tags": {
+        "addr:housenumber": "28",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Bhati Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008690,
+      "lat": 12.9693234,
+      "lon": 77.577456,
+      "tags": {
+        "name": "Mamta dupattas",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008691,
+      "lat": 12.9693079,
+      "lon": 77.5774761,
+      "tags": {
+        "name": "Gold style",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419008693,
+      "lat": 12.9685544,
+      "lon": 77.5775827,
+      "tags": {
+        "name": "Sharma complex",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419011487,
+      "lat": 12.9701759,
+      "lon": 77.5762274,
+      "tags": {
+        "addr:street": "A M Lane",
+        "name": "Mahendar Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419011488,
+      "lat": 12.9701636,
+      "lon": 77.5762462,
+      "tags": {
+        "name": "Mehtab Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419011489,
+      "lat": 12.9696916,
+      "lon": 77.5757534,
+      "tags": {
+        "check_date": "2025-08-23",
+        "name": "Kanchi apex society",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419011490,
+      "lat": 12.9693654,
+      "lon": 77.5762498,
+      "tags": {
+        "check_date": "2025-08-23",
+        "name": "Sudarshan store",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419011491,
+      "lat": 12.9689875,
+      "lon": 77.5769619,
+      "tags": {
+        "name": "Kalamandir",
+        "name:kn": "ಕಲಾಮಂದಿರ",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419011492,
+      "lat": 12.9701437,
+      "lon": 77.5762001,
+      "tags": {
+        "addr:housenumber": "35/1",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "MP Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419011493,
+      "lat": 12.9701077,
+      "lon": 77.5762618,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Sri Guru Electrical & Co.",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015585,
+      "lat": 12.9698359,
+      "lon": 77.5768143,
+      "tags": {
+        "name": "Mahavir Electric",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015586,
+      "lat": 12.970146,
+      "lon": 77.5761829,
+      "tags": {
+        "addr:housenumber": "33",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Rajdhani Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015588,
+      "lat": 12.9688175,
+      "lon": 77.5780186,
+      "tags": {
+        "addr:housenumber": "787",
+        "addr:postcode": "560063",
+        "addr:street": "AM Lane",
+        "name": "Mohak Tex",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015589,
+      "lat": 12.9696203,
+      "lon": 77.576967,
+      "tags": {
+        "name": "Usha Electricals Stores",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015590,
+      "lat": 12.969671,
+      "lon": 77.5769673,
+      "tags": {
+        "name": "Highco",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015591,
+      "lat": 12.9700456,
+      "lon": 77.576386,
+      "tags": {
+        "addr:housenumber": "106",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Paramount Electrical Co.",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015592,
+      "lat": 12.9698897,
+      "lon": 77.5766241,
+      "tags": {
+        "name": "Power Associates",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015593,
+      "lat": 12.9698706,
+      "lon": 77.5766562,
+      "tags": {
+        "addr:housenumber": "21/1",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Pratibha Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015786,
+      "lat": 12.9701447,
+      "lon": 77.5762811,
+      "tags": {
+        "name": "Ganesh Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015787,
+      "lat": 12.9701654,
+      "lon": 77.5762888,
+      "tags": {
+        "name": "Sri Omkar electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015788,
+      "lat": 12.9696095,
+      "lon": 77.5759104,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Kanteshwara Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015789,
+      "lat": 12.970139,
+      "lon": 77.5762187,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Vinayaka Enterprises",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015790,
+      "lat": 12.9700592,
+      "lon": 77.5763455,
+      "tags": {
+        "addr:housenumber": "27",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Mataji Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015793,
+      "lat": 12.9685675,
+      "lon": 77.577541,
+      "tags": {
+        "name": "Byrappa & Sons",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015794,
+      "lat": 12.9685057,
+      "lon": 77.5776567,
+      "tags": {
+        "name": "Anand Bhavan",
+        "name:kn": "ಆನಂದ್ ಭಾವನ್",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015795,
+      "lat": 12.968738,
+      "lon": 77.578544,
+      "tags": {
+        "addr:housenumber": "64",
+        "addr:postcode": "560063",
+        "addr:street": "AM Lane",
+        "name": "Sha Misrimal Mohanlal & Co",
+        "phone": "8792982712",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419015796,
+      "lat": 12.9684235,
+      "lon": 77.577773,
+      "tags": {
+        "name": "Byrappa & Sons",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419016885,
+      "lat": 12.969013,
+      "lon": 77.5778985,
+      "tags": {
+        "addr:housenumber": "#3/4",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Mahalakshmi Fashions",
+        "phone": "9964231828",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419016886,
+      "lat": 12.9688722,
+      "lon": 77.57795,
+      "tags": {
+        "addr:housenumber": "790/1",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Shri Vardhaman Silk Centre and",
+        "phone": "08022264095",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024185,
+      "lat": 12.9701116,
+      "lon": 77.5763435,
+      "tags": {
+        "addr:housenumber": "71",
+        "addr:street": "A M Lane",
+        "name": "Cauvery Powers",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024186,
+      "lat": 12.9701042,
+      "lon": 77.5763561,
+      "tags": {
+        "addr:housenumber": "71",
+        "addr:street": "A M Lane",
+        "name": "Cauvery Electricals",
+        "phone": "+918022261999",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024187,
+      "lat": 12.9685732,
+      "lon": 77.5776696,
+      "tags": {
+        "name": "Devatha Market",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024188,
+      "lat": 12.9684705,
+      "lon": 77.5778334,
+      "tags": {
+        "name": "Bombay Fancy Store",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024189,
+      "lat": 12.9717448,
+      "lon": 77.5770331,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Karnataka Chat"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024192,
+      "lat": 12.9700768,
+      "lon": 77.5764056,
+      "tags": {
+        "addr:housenumber": "71",
+        "addr:street": "A M Lane",
+        "name": "K R Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024193,
+      "lat": 12.9700606,
+      "lon": 77.576438,
+      "tags": {
+        "addr:housenumber": "73",
+        "addr:street": "A M Lane",
+        "name": "Guru electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419024194,
+      "lat": 12.9700323,
+      "lon": 77.5764757,
+      "tags": {
+        "name": "Sri Bajrang Electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419025585,
+      "lat": 12.9684941,
+      "lon": 77.5779612,
+      "tags": {
+        "name": "Mohan Building",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027085,
+      "lat": 12.9685695,
+      "lon": 77.5784008,
+      "tags": {
+        "addr:housenumber": "B-24",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Woollen Ware House",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027086,
+      "lat": 12.9693695,
+      "lon": 77.5767616,
+      "tags": {
+        "name": "Sundar electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027087,
+      "lat": 12.9696813,
+      "lon": 77.577009,
+      "tags": {
+        "addr:street": "A M line-A",
+        "amenity": "fast_food",
+        "name": "हनुमान चाट्स",
+        "name:en": "Hanuman chats"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027088,
+      "lat": 12.9682287,
+      "lon": 77.5780937,
+      "tags": {
+        "name": "Pvr silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027090,
+      "lat": 12.9700486,
+      "lon": 77.5763732,
+      "tags": {
+        "addr:housenumber": "106/1",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Wire Sales Corporation",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027091,
+      "lat": 12.9700413,
+      "lon": 77.5764018,
+      "tags": {
+        "addr:housenumber": "26/3",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Hari Om Electricals and Hardware",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027092,
+      "lat": 12.9699441,
+      "lon": 77.5765263,
+      "tags": {
+        "addr:housenumber": "24",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Mukesh Enterprises",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027093,
+      "lat": 12.9698302,
+      "lon": 77.5767116,
+      "tags": {
+        "addr:housenumber": "20",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Gowder Complex",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027094,
+      "lat": 12.9698397,
+      "lon": 77.5767067,
+      "tags": {
+        "addr:housenumber": "20",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "MM Switchgear",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027095,
+      "lat": 12.9695714,
+      "lon": 77.5770767,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Vasath Textiles",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027096,
+      "lat": 12.9682756,
+      "lon": 77.578859,
+      "tags": {
+        "name": "Rajashree market",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027186,
+      "lat": 12.9696489,
+      "lon": 77.5769901,
+      "tags": {
+        "name": "Light house",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027188,
+      "lat": 12.9694413,
+      "lon": 77.5772825,
+      "tags": {
+        "addr:housenumber": "10/3",
+        "addr:street": "A M Lane",
+        "name": "Delbees",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027190,
+      "lat": 12.9694822,
+      "lon": 77.5773149,
+      "tags": {
+        "addr:street": "A M lane",
+        "name": "Dhanalakshmi market",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027192,
+      "lat": 12.9682222,
+      "lon": 77.5783267,
+      "tags": {
+        "name": "Jewellers association building",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027194,
+      "lat": 12.9695947,
+      "lon": 77.5769459,
+      "tags": {
+        "name": "Padam electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027195,
+      "lat": 12.9693581,
+      "lon": 77.5775277,
+      "tags": {
+        "addr:street": "A M Lane",
+        "name": "S. Kapurchand and sons",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027196,
+      "lat": 12.9695826,
+      "lon": 77.5771793,
+      "tags": {
+        "addr:housenumber": "80",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Manikant & Co.",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027197,
+      "lat": 12.9692566,
+      "lon": 77.5775515,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Chamundeshwari Textiles",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027198,
+      "lat": 12.9686865,
+      "lon": 77.5790878,
+      "tags": {
+        "name": "Pathi market",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027199,
+      "lat": 12.9689457,
+      "lon": 77.5780128,
+      "tags": {
+        "addr:street": "A M Lane",
+        "name": "Mahalaxmi fashions",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027200,
+      "lat": 12.9689238,
+      "lon": 77.5792294,
+      "tags": {
+        "name": "Raghavendra market",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027486,
+      "lat": 12.9700534,
+      "lon": 77.5764466,
+      "tags": {
+        "addr:housenumber": "73",
+        "addr:street": "A M Lane",
+        "name": "Vijay Electrical enterprises",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419027487,
+      "lat": 12.9700441,
+      "lon": 77.5764584,
+      "tags": {
+        "addr:housenumber": "74",
+        "addr:street": "A M Lane",
+        "name": "Prakash Electrical Enterprises",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419028085,
+      "lat": 12.9700673,
+      "lon": 77.5764205,
+      "tags": {
+        "addr:housenumber": "72",
+        "addr:street": "A M Lane",
+        "name": "Balaji Agencies",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419028086,
+      "lat": 12.9700228,
+      "lon": 77.5764918,
+      "tags": {
+        "addr:housenumber": "35",
+        "addr:street": "A M Lane",
+        "name": "Mishra electricals",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419044985,
+      "lat": 12.9681904,
+      "lon": 77.578846,
+      "tags": {
+        "name": "Sakalajee market",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419044988,
+      "lat": 12.9692985,
+      "lon": 77.5793482,
+      "tags": {
+        "addr:street": "Avenue Road",
+        "amenity": "bank",
+        "brand": "Karur Vysya Bank",
+        "brand:wikidata": "Q6373724",
+        "name": "Karur Vysya Bank",
+        "name:kn": "ಕರೂರು ವೈಶ್ಯ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419044989,
+      "lat": 12.9686127,
+      "lon": 77.5790381,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "Avenue Road",
+        "amenity": "place_of_worship",
+        "name": "Balaji Temple",
+        "name:kn": "ಬಾಲಾಜಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419044990,
+      "lat": 12.9688815,
+      "lon": 77.5791931,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI",
+        "survey:date": "2022-07-17"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419048785,
+      "lat": 12.9695167,
+      "lon": 77.5772706,
+      "tags": {
+        "addr:housenumber": "25/79",
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "Poonam Trading Co",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419048786,
+      "lat": 12.9692799,
+      "lon": 77.5775206,
+      "tags": {
+        "addr:postcode": "560053",
+        "addr:street": "AM Lane",
+        "name": "SK Complex",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419048789,
+      "lat": 12.9683266,
+      "lon": 77.5782068,
+      "tags": {
+        "name": "Rajatha Complex",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419048790,
+      "lat": 12.9685731,
+      "lon": 77.5789075,
+      "tags": {
+        "name": "Arya Vysya Mandali Chambers",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419049986,
+      "lat": 12.9709487,
+      "lon": 77.578094,
+      "tags": {
+        "alt_name": "Haldiram",
+        "amenity": "fast_food",
+        "brand": "Haldiram's",
+        "brand:wikidata": "Q17054442",
+        "cuisine": "indian",
+        "name": "Haldiram's",
+        "shop": "confectionery",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419049987,
+      "lat": 12.9707166,
+      "lon": 77.5784032,
+      "tags": {
+        "name": "Manak Mewa",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419052586,
+      "lat": 12.9692487,
+      "lon": 77.5794495,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IDFC First Bank",
+        "brand:wikidata": "Q22031467",
+        "check_date": "2022-07-17",
+        "name": "IDFC First Bank",
+        "operator": "IDFC First Bank",
+        "operator:wikidata": "Q22031467",
+        "survey:date": "2022-07-17"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419052587,
+      "lat": 12.9694658,
+      "lon": 77.5794819,
+      "tags": {
+        "addr:housenumber": "553",
+        "addr:postcode": "560053",
+        "addr:street": "Avenue Road",
+        "alt_name": "Parvathy Someshwara Temple",
+        "amenity": "place_of_worship",
+        "name": "Sri Parvati Someshwara Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419052588,
+      "lat": 12.9699453,
+      "lon": 77.5798033,
+      "tags": {
+        "addr:street": "Avenue Road",
+        "amenity": "place_of_worship",
+        "name": "Sri Guru Shanaischara Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419052685,
+      "lat": 12.9692728,
+      "lon": 77.579469,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419052686,
+      "lat": 12.9692389,
+      "lon": 77.5795139,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419052689,
+      "lat": 12.9692885,
+      "lon": 77.5794993,
+      "tags": {
+        "name": "Avenue plaza",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419055685,
+      "lat": 12.9693722,
+      "lon": 77.5793304,
+      "tags": {
+        "amenity": "community_centre",
+        "name": "Chintalapalli Venkatamuni Setty's Free Boarding Hostel and Choultry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419055686,
+      "lat": 12.9697564,
+      "lon": 77.5797471,
+      "tags": {
+        "addr:street": "Avenue Road",
+        "amenity": "bank",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "name": "Indian Bank",
+        "name:kn": "ಇಂಡಿಯನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419055687,
+      "lat": 12.9692492,
+      "lon": 77.5793602,
+      "tags": {
+        "addr:housenumber": "544",
+        "addr:postcode": "560053",
+        "addr:street": "Avenue Road",
+        "amenity": "fast_food",
+        "name": "Aradhana Gowri Condiments & Chats"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419057785,
+      "lat": 12.9696955,
+      "lon": 77.5797222,
+      "tags": {
+        "name": "Jayanthi building",
+        "name:kn": "ಜಯಂತಿ",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419057885,
+      "lat": 12.9710049,
+      "lon": 77.5780144,
+      "tags": {
+        "name": "Bikaji",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419058085,
+      "lat": 12.9686361,
+      "lon": 77.5779851,
+      "tags": {
+        "addr:street": "A M Lane",
+        "name": "Thandava mudiliar and sons",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419095285,
+      "lat": 12.9723595,
+      "lon": 77.5759819,
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "Patasi Bai Nursery School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6419145385,
+      "lat": 12.9716342,
+      "lon": 77.5741018,
+      "tags": {
+        "addr:housenumber": "123/4",
+        "addr:postcode": "560053",
+        "addr:street": "Balepet Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Udupi Sri Krishna Bhavan",
+        "opening_hours": "We-Mo 07:45-19:45"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938775840,
+      "lat": 12.9711822,
+      "lon": 77.5781228,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "7Th Cross, Rangaswamy Temple Street",
+        "addr:postcode": "560053",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Amar Hospital",
+        "name:kn": "ಅಮರ್ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944096791,
+      "lat": 12.9717138,
+      "lon": 77.5770294,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "202/3 Mahesh Towers R T Street",
+        "addr:postcode": "560053",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Mahesh Clinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7292436135,
+      "lat": 12.9732666,
+      "lon": 77.5800808,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank",
+        "name:kn": "ಕೋಟಕ್ ಮಹಿಂದ್ರ ಬ್ಯಾಂಕ್",
+        "operator": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7292436136,
+      "lat": 12.9734013,
+      "lon": 77.5797763,
+      "tags": {
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "shop": "shoes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7292436137,
+      "lat": 12.9740416,
+      "lon": 77.5783776,
+      "tags": {
+        "name": "Maharaja Times",
+        "shop": "watches",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7292436138,
+      "lat": 12.9740926,
+      "lon": 77.5782381,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "South Indian Bank",
+        "brand:wikidata": "Q2044973",
+        "name": "South Indian Bank",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7576958029,
+      "lat": 12.970483,
+      "lon": 77.5789065,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Anchepet, Chickpet, Bengaluru",
+        "addr:postcode": "560053",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Priya Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7576958054,
+      "lat": 12.9712575,
+      "lon": 77.5777304,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Rangaswamy Temple Road, Mamulpet, Bengaluru",
+        "addr:postcode": "560053",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Sham Singh Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7576958086,
+      "lat": 12.9702549,
+      "lon": 77.5734571,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Santhusapet, Bengaluru",
+        "addr:postcode": "560053",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Manavarthapet Pregnancy Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7576958095,
+      "lat": 12.972126,
+      "lon": 77.573351,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "JM Road, Upparpete, Bengaluru",
+        "addr:postcode": "560053",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "ESI Hospital",
+        "operator": "Employees' State Insurance",
+        "operator:short": "ESI",
+        "operator:wikidata": "Q3595726",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7576958114,
+      "lat": 12.9690341,
+      "lon": 77.57708,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Cubbon Pet Main Road, Cubbonpet, Bengaluru",
+        "addr:postcode": "560002",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Shyam Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10796728054,
+      "lat": 12.9681314,
+      "lon": 77.5754183,
+      "tags": {
+        "addr:street": "old tharagupet",
+        "name": "Lal building",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11304774635,
+      "lat": 12.9696253,
+      "lon": 77.5756956,
+      "tags": {
+        "clothes": "women;traditional",
+        "level": "1;2;3",
+        "name": "Srinidhi Silk",
+        "shop": "clothes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11304774637,
+      "lat": 12.9690028,
+      "lon": 77.5766738,
+      "tags": {
+        "clothes": "traditional",
+        "name": "Sudarshan Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11304774640,
+      "lat": 12.9697214,
+      "lon": 77.5757325,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "level": "0",
+        "name": "Bhavani Juice Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11304774641,
+      "lat": 12.9689646,
+      "lon": 77.5773285,
+      "tags": {
+        "clothes": "traditional;men",
+        "level": "0",
+        "name": "Kurta Ghar",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11420343300,
+      "lat": 12.9720865,
+      "lon": 77.5822514,
+      "tags": {
+        "amenity": "parking_entrance",
+        "fee": "yes",
+        "lit": "yes",
+        "parking": "underground",
+        "supervised": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11906960322,
+      "lat": 12.9687592,
+      "lon": 77.5751191,
+      "tags": {
+        "addr:housenumber": "33",
+        "addr:street": "AS Char Street",
+        "name": "C. G. Imex Corporation",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12942443654,
+      "lat": 12.9736523,
+      "lon": 77.5791633,
+      "tags": {
+        "addr:floor": "G",
+        "addr:housenumber": "9, 12",
+        "addr:street": "Kempe Gowda Road",
+        "brand": "Ramraj Cotton",
+        "brand:wikidata": "Q119161281",
+        "check_date": "2025-06-21",
+        "level": "0",
+        "name": "Ramraj Cotton",
+        "name:en": "Ramraj Cotton",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12968607916,
+      "lat": 12.9723719,
+      "lon": 77.578395,
+      "tags": {
+        "addr:city": "Chickpet, Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "Shop no 42",
+        "addr:postcode": "560053",
+        "addr:street": "kilari road",
+        "name": "Mahaveer Glass Creators- Interior Glass Creators",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "operator": "Mahaveer Chand",
+        "phone": "+91 98459 43997",
+        "shop": "glass"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13081636281,
+      "lat": 12.9691873,
+      "lon": 77.5799446,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:district": "karnataka",
+        "addr:housenumber": "68",
+        "addr:postcode": "560002",
+        "addr:street": "Chowdeshwari Temple Street",
+        "name": "MB Jewels - Emerald Dealer EJI",
+        "opening_hours": "Mo-Sa 11:00-19:30",
+        "phone": "08041510855",
+        "shop": "wholesale",
+        "wholesale": "jewellery_store"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347018372,
+      "center": {
+        "lat": 12.9703914,
+        "lon": 77.5744849
+      },
+      "tags": {
+        "amenity": "cinema",
+        "building": "yes",
+        "name": "Vijaya Laxmi Theatre",
+        "name:kn": "ವಿಜಯಲಕ್ಷ್ಮಿ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347042595,
+      "center": {
+        "lat": 12.9727366,
+        "lon": 77.5752163
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Adinatha Digambar Jain Temple",
+        "religion": "jain"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350790256,
+      "center": {
+        "lat": 12.9723736,
+        "lon": 77.5762017
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351342259,
+      "center": {
+        "lat": 12.9711404,
+        "lon": 77.5801439
+      },
+      "tags": {
+        "addr:street": "Avenue Road",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "church_of_south_india",
+        "name": "Rice Memorial Church",
+        "religion": "christian",
+        "wikidata": "Q24935415",
+        "wikimedia_commons": "Category:Rice Memorial Church, Bangalore",
+        "wikipedia": "en:Rice Memorial Church, Bangalore"
+      }
+    },
+    {
+      "type": "way",
+      "id": 410858825,
+      "center": {
+        "lat": 12.970304,
+        "lon": 77.5792557
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "name": "Sri Ranganathaswamy Temple",
+        "name:kn": "ರಂಗನಾಥಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421131119,
+      "center": {
+        "lat": 12.9702719,
+        "lon": 77.5794685
+      },
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Ballapurpet Market",
+        "name:kn": "ಬಳ್ಳಾಪುರಪೇಟೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421133334,
+      "center": {
+        "lat": 12.9727433,
+        "lon": 77.5812321
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-07-28",
+        "landuse": "religious",
+        "name": "Sri Anjaneyswamy Temple",
+        "name:kn": "ಆಂಜನೇಯ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421133338,
+      "center": {
+        "lat": 12.9727972,
+        "lon": 77.5811882
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "check_date": "2024-07-28",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

@@ -1,0 +1,607 @@
+{
+  "area_name": "Jnana Bharathi",
+  "osm_id": 447063720,
+  "osm_type": "node",
+  "place_type": "suburb",
+  "amenity_count": 48,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1463519407,
+      "lat": 12.9410456,
+      "lon": 77.515395,
+      "tags": {
+        "leisure": "pitch",
+        "name": "Sports Authority of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463521815,
+      "lat": 12.9433773,
+      "lon": 77.5044892,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Muneshwara Temple",
+        "name:kn": "ಮುನೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463525671,
+      "lat": 12.9377048,
+      "lon": 77.50855,
+      "tags": {
+        "amenity": "school",
+        "name": "Vice Chancellor's Lodge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463529628,
+      "lat": 12.9368003,
+      "lon": 77.5169615,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Club",
+        "name:kn": "ದಿ ಕ್ಲಬ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1463547121,
+      "lat": 12.9368996,
+      "lon": 77.5172029,
+      "tags": {
+        "amenity": "bar",
+        "name": "KC'S Club"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3713450648,
+      "lat": 12.9433024,
+      "lon": 77.5055822,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560060",
+        "addr:street": "University Road",
+        "amenity": "cafe",
+        "name": "University Cafeteria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3799002966,
+      "lat": 12.9365363,
+      "lon": 77.5167879,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "diet:vegetarian": "only",
+        "indoor_seating": "yes",
+        "name": "Sri Krishna Nandagokula Veg",
+        "outdoor_seating": "no",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5109209997,
+      "lat": 12.9358578,
+      "lon": 77.5160132,
+      "tags": {
+        "brand": "Renault",
+        "brand:wikidata": "Q6686",
+        "name": "Renault",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6952164918,
+      "lat": 12.9364637,
+      "lon": 77.5159062,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Go Gas",
+        "operator": "Go Gas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7137042125,
+      "lat": 12.9358794,
+      "lon": 77.5162321,
+      "tags": {
+        "brand": "Honda",
+        "brand:wikidata": "Q9584",
+        "name": "Tridentauto Honda",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7195132656,
+      "lat": 12.9390151,
+      "lon": 77.5190243,
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7695518285,
+      "lat": 12.9454491,
+      "lon": 77.509215,
+      "tags": {
+        "addr:postcode": "560056",
+        "addr:street": "Gandhi Marg",
+        "amenity": "college",
+        "name": "Department of Geology",
+        "opening_hours": "Mo-Sa 09:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8240257803,
+      "lat": 12.9348259,
+      "lon": 77.5116992,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Mane Upahara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9654247760,
+      "lat": 12.9349331,
+      "lon": 77.5119513,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Thalassery Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10574570483,
+      "lat": 12.9432577,
+      "lon": 77.5162965,
+      "tags": {
+        "leisure": "golf_course",
+        "name": "Sports Authority of India Golf Club"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11757261839,
+      "lat": 12.9380017,
+      "lon": 77.5184114,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139525035,
+      "center": {
+        "lat": 12.9463378,
+        "lon": 77.5131659
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139525037,
+      "center": {
+        "lat": 12.9456426,
+        "lon": 77.5154449
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139525039,
+      "center": {
+        "lat": 12.9438334,
+        "lon": 77.5139056
+      },
+      "tags": {
+        "leisure": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139525041,
+      "center": {
+        "lat": 12.9421101,
+        "lon": 77.5162017
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139525042,
+      "center": {
+        "lat": 12.9463831,
+        "lon": 77.5131684
+      },
+      "tags": {
+        "leisure": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139525046,
+      "center": {
+        "lat": 12.9463473,
+        "lon": 77.5141477
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "hockey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139525048,
+      "center": {
+        "lat": 12.9416601,
+        "lon": 77.5160465
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "sport": "swimming"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335710800,
+      "center": {
+        "lat": 12.9446893,
+        "lon": 77.5050242
+      },
+      "tags": {
+        "amenity": "library",
+        "building": "yes",
+        "name": "Dr. Babasaheb Ambedkar Central Library",
+        "name:kn": "ಡಾ.ಬಾಬಾಸಾಹೇಬ್ ಅಂಬೇಡ್ಕರ್ ಕೇಂದ್ರ ಗ್ರಂಥಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 504193652,
+      "center": {
+        "lat": 12.9440466,
+        "lon": 77.5155114
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "field_hockey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 639323959,
+      "center": {
+        "lat": 12.9449086,
+        "lon": 77.5058437
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "CWECK Cricket Ground",
+        "sport": "cricket",
+        "surface": "compacted"
+      }
+    },
+    {
+      "type": "way",
+      "id": 742634561,
+      "center": {
+        "lat": 12.9453679,
+        "lon": 77.5147864
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 742634569,
+      "center": {
+        "lat": 12.9383779,
+        "lon": 77.5158747
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770853487,
+      "center": {
+        "lat": 12.9397046,
+        "lon": 77.5195815
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770853488,
+      "center": {
+        "lat": 12.939842,
+        "lon": 77.5193748
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770853489,
+      "center": {
+        "lat": 12.9391304,
+        "lon": 77.5189861
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770853494,
+      "center": {
+        "lat": 12.9398869,
+        "lon": 77.5190706
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 772183062,
+      "center": {
+        "lat": 12.9509599,
+        "lon": 77.5141937
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "National Law College Ground",
+        "sport": "athletics"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1050584164,
+      "center": {
+        "lat": 12.9358259,
+        "lon": 77.5149976
+      },
+      "tags": {
+        "brand": "Tata",
+        "brand:wikidata": "Q188514",
+        "name": "Tata Motors",
+        "name:kn": "ಟಾಟಾ ಮೋಟೊರ್ಸ್",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054241399,
+      "center": {
+        "lat": 12.9533833,
+        "lon": 77.5138572
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Institute for Social and Economic Change",
+        "start_date": "1972",
+        "website": "https://www.isec.ac.in/",
+        "wikidata": "Q6039639",
+        "wikipedia": "en:Institute for Social and Economic Change"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054241405,
+      "center": {
+        "lat": 12.9509887,
+        "lon": 77.5138484
+      },
+      "tags": {
+        "amenity": "theatre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054241422,
+      "center": {
+        "lat": 12.9490068,
+        "lon": 77.5177379
+      },
+      "tags": {
+        "amenity": "library",
+        "building": "university",
+        "name": "BASE Library"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054241424,
+      "center": {
+        "lat": 12.9495923,
+        "lon": 77.5167239
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560072",
+        "addr:street": "National Law School of India University Nagarbhavi, P.O. Bag, 7201, Teachers Colony, Naagarabhaavi",
+        "amenity": "theatre",
+        "building": "university",
+        "name": "BASE Auditorium"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054241433,
+      "center": {
+        "lat": 12.9529327,
+        "lon": 77.5159691
+      },
+      "tags": {
+        "alt_name": "National Law School",
+        "amenity": "university",
+        "barrier": "wall",
+        "email": "contactus@nls.ac.in",
+        "fixme": "Accurate boundary",
+        "name": "National Law School of India University",
+        "name:kn": "ರಾಷ್ಟ್ರೀಯ ಕಾನೂನು ವಿಶ್ವವಿದ್ಯಾಲಯ",
+        "short_name": "NLSIU",
+        "start_date": "1986",
+        "website": "https://www.nls.ac.in/",
+        "wikidata": "Q3067635",
+        "wikipedia": "en:National Law School of India University"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054489019,
+      "center": {
+        "lat": 12.951586,
+        "lon": 77.5151076
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1134260322,
+      "center": {
+        "lat": 12.9442837,
+        "lon": 77.51498
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1134831506,
+      "center": {
+        "lat": 12.9354153,
+        "lon": 77.5100279
+      },
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Nagarbhavi Fire Station",
+        "name:kn": "ನಾಗರಭಾವಿ ಅಗ್ನಿಶಾಮಕ ಠಾಣೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1207332522,
+      "center": {
+        "lat": 12.9495379,
+        "lon": 77.5157179
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1219767937,
+      "center": {
+        "lat": 12.9401469,
+        "lon": 77.518104
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1257194251,
+      "center": {
+        "lat": 12.9358954,
+        "lon": 77.5155211
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "check_date": "2022-11-25",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:petrol": "yes",
+        "name": "HP",
+        "name:kn": "ಹಿಂದುಸ್ತಾನ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "official_name": "Hindustan Petroleum",
+        "self_service": "no",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265721209,
+      "center": {
+        "lat": 12.9380802,
+        "lon": 77.5184413
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1318025690,
+      "center": {
+        "lat": 12.935799,
+        "lon": 77.5122322
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1377355335,
+      "center": {
+        "lat": 12.9410421,
+        "lon": 77.5031936
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

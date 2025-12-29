@@ -1,0 +1,643 @@
+{
+  "area_name": "Jayanagar East",
+  "osm_id": 19883292,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 50,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1465122321,
+      "lat": 12.9190717,
+      "lon": 77.5936093,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Jayanagar 9th Block market"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465146871,
+      "lat": 12.9198321,
+      "lon": 77.5927344,
+      "tags": {
+        "amenity": "atm",
+        "operator": "State Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1825094757,
+      "lat": 12.9214393,
+      "lon": 77.5933817,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1825094796,
+      "lat": 12.9215211,
+      "lon": 77.5935613,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Shakti Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3072185614,
+      "lat": 12.9215034,
+      "lon": 77.5950833,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "name:kn": "ಎಚ್ ಡಿ ಎಫ್ ಸಿ",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3702261163,
+      "lat": 12.9202457,
+      "lon": 77.6002095,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "South_India",
+        "name": "Panchami Garden"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3995048781,
+      "lat": 12.9204156,
+      "lon": 77.5973219,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "1669",
+        "addr:postcode": "560069",
+        "addr:street": "39 Cross",
+        "name": "Jago Supermarket",
+        "name:kn": "ನಾವು ಮಾರ್ಟ್ ಸೂಪರ್ ಮಾರುಕಟ್ಟೆ",
+        "opening_hours": "08:00-22:30",
+        "operator": "Private",
+        "phone": "080 2653 0306",
+        "shop": "department_store",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3995050517,
+      "lat": 12.9202957,
+      "lon": 77.59682,
+      "tags": {
+        "branch": "Jayanagar",
+        "contact:email": "jn1.blr@printo.in",
+        "contact:mobile": "+91-7899-934-267",
+        "contact:website": "https://printo.in/",
+        "name": "Printo",
+        "opening_hours": "Mo-Sa 10:00-20:00, Su 12:30-20:00",
+        "shop": "printing",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757508,
+      "lat": 12.9204886,
+      "lon": 77.5956678,
+      "tags": {
+        "brand": "BMW",
+        "brand:wikidata": "Q249173",
+        "motorcycle:parts": "yes",
+        "motorcycle:repair": "yes",
+        "name": "BMW Motorcycle Works",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757509,
+      "lat": 12.9189814,
+      "lon": 77.5958851,
+      "tags": {
+        "name": "Bangles Store",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757510,
+      "lat": 12.9204794,
+      "lon": 77.5956182,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chicken;regional",
+        "internet_access": "no",
+        "name": "Donne Biriyani Hotel",
+        "smoking": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757512,
+      "lat": 12.9204847,
+      "lon": 77.5957496,
+      "tags": {
+        "name": "Mahesh Condiments",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757513,
+      "lat": 12.9204873,
+      "lon": 77.5957966,
+      "tags": {
+        "amenity": "recycling",
+        "name": "Mahesh Waste Paper Mart",
+        "recycling:paper": "yes",
+        "recycling_type": "centre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757514,
+      "lat": 12.9204402,
+      "lon": 77.5956155,
+      "tags": {
+        "name": "My Ride Car Accessories",
+        "shop": "car_parts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757516,
+      "lat": 12.9204873,
+      "lon": 77.5957,
+      "tags": {
+        "name": "Public Distribution Shop",
+        "name:kn": "ನ್ಯಾಯ ಬೆಲೆ ಅಂಗಡಿ",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757517,
+      "lat": 12.9203644,
+      "lon": 77.5956075,
+      "tags": {
+        "name": "Safa Furniture",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757518,
+      "lat": 12.9204899,
+      "lon": 77.5958314,
+      "tags": {
+        "name": "Suchitra Graphics",
+        "shop": "bookmaker"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197757522,
+      "lat": 12.9199487,
+      "lon": 77.595865,
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "shaktism",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197758133,
+      "lat": 12.918988,
+      "lon": 77.5956262,
+      "tags": {
+        "name": "Cel net Communications",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197758134,
+      "lat": 12.9189801,
+      "lon": 77.5956678,
+      "tags": {
+        "name": "MPS Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4197758135,
+      "lat": 12.9189814,
+      "lon": 77.59559,
+      "tags": {
+        "name": "S N Printers",
+        "shop": "bookmaker"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4318377694,
+      "lat": 12.9197304,
+      "lon": 77.592326,
+      "tags": {
+        "addr:street": "39 Cross",
+        "name": "Hercules Cycle Showroom",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545893192,
+      "lat": 12.9205227,
+      "lon": 77.5951235,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "name:en": "Karnataka Bank",
+        "name:kn": "ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545906690,
+      "lat": 12.9205305,
+      "lon": 77.5930437,
+      "tags": {
+        "name": "Bunny Bakers and Sweets",
+        "name:en": "Bunny Bakers and Sweets",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4545906691,
+      "lat": 12.9205691,
+      "lon": 77.5951275,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Karnataka Bank ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4875557994,
+      "lat": 12.9194713,
+      "lon": 77.5967266,
+      "tags": {
+        "addr:housenumber": "480",
+        "addr:street": "East End A Main Road",
+        "name": "Cadence90",
+        "service:bicycle:retail": "yes",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349228135,
+      "lat": 12.9197208,
+      "lon": 77.5940053,
+      "tags": {
+        "addr:place": "Puttayyana Palya",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GHPS Puttayyana Palya",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಪುಟ್ಟಯ್ಯನಪಾಳ್ಯ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6690688559,
+      "lat": 12.9215986,
+      "lon": 77.6084916,
+      "tags": {
+        "addr:place": "Madiwala",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "St Flourence HS, Madiwala",
+        "name:kn": "ಸೇಂಟ್ ಫ್ಲೋರೆನ್ಸ್ ಪ್ರೌಢಶಾಲೆ, ಮಡಿವಾಳ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7059564160,
+      "lat": 12.9197711,
+      "lon": 77.5952734,
+      "tags": {
+        "name": "Maa Janki Ceramics",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "shop": "interior_decoration",
+        "website": "https://www.concretewalltexture.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7166240064,
+      "lat": 12.920788,
+      "lon": 77.5936239,
+      "tags": {
+        "name": "Appearance Hair & Beauty Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7166248953,
+      "lat": 12.9208567,
+      "lon": 77.5935675,
+      "tags": {
+        "name": "Suhas Telecom",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7166273310,
+      "lat": 12.9209009,
+      "lon": 77.5932917,
+      "tags": {
+        "name": "Lotus Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10293686911,
+      "lat": 12.9203767,
+      "lon": 77.5971434,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab & Sind Bank",
+        "brand:en": "Punjab & Sind Bank",
+        "brand:hi": "पंजाब एण्ड सिंध बैंक",
+        "brand:wikidata": "Q2003302",
+        "name": "Punjab & Sind Bank",
+        "name:en": "Punjab & Sind Bank",
+        "name:hi": "पंजाब एण्ड सिंध बैंक",
+        "operator": "Punjab & Sind Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10293686919,
+      "lat": 12.9206882,
+      "lon": 77.5951038,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Hotel Prashanth"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10554508510,
+      "lat": 12.920554,
+      "lon": 77.5915324,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Turning Point Therapists"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11294646338,
+      "lat": 12.9195785,
+      "lon": 77.5950152,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12161830085,
+      "lat": 12.9207582,
+      "lon": 77.5967675,
+      "tags": {
+        "amenity": "drinking_water",
+        "indoor": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12161830093,
+      "lat": 12.9204166,
+      "lon": 77.5972503,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab & Sind Bank",
+        "brand:en": "Punjab & Sind Bank",
+        "brand:hi": "पंजाब एण्ड सिंध बैंक",
+        "brand:wikidata": "Q2003302",
+        "level": "0",
+        "name": "Punjab & Sind Bank",
+        "name:en": "Punjab & Sind Bank",
+        "name:hi": "पंजाब एण्ड सिंध बैंक",
+        "operator": "Punjab & Sind Bank",
+        "operator:wikidata": "Q2003302"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12161877005,
+      "lat": 12.920204,
+      "lon": 77.597169,
+      "tags": {
+        "addr:block": "9",
+        "addr:city": "Bangalore",
+        "addr:housenumber": "1588/42",
+        "addr:place": "Jayanagar",
+        "addr:postcode": "560069",
+        "addr:street": "East End Main Road",
+        "name": "Khan Motors",
+        "note": "\"Advisor for sellers and buyers of all kinds of two and four wheelers.\"",
+        "second_hand": "only",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12666413603,
+      "lat": 12.9190531,
+      "lon": 77.5970575,
+      "tags": {
+        "addr:city": "Jayanagar",
+        "addr:district": "Bengaluru Urban",
+        "addr:street": "East End Main Road",
+        "amenity": "restaurant",
+        "check_date": "2025-03-15",
+        "cuisine": "indian;chinese;coffee_shop;regional;noodle",
+        "diet:vegetarian": "yes",
+        "name": "Udupi Garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32426424,
+      "center": {
+        "lat": 12.9210822,
+        "lon": 77.5962995
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "ME & WA College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 40678727,
+      "center": {
+        "lat": 12.9185194,
+        "lon": 77.599254
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Jayanagar 9Th Block, B.G. Road, Banglore",
+        "addr:postcode": "560041",
+        "addr:state": "Karnataka",
+        "addr:street": "Bannerghatta Road",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "cardiology",
+        "name": "Sri Jayadeva Institute Of Cardiology",
+        "name:kn": "ಜಯದೇವ ಹೃದ್ರೋಗ ಸಂಸ್ಥೆ",
+        "name:ta": "ஸ்ரீ ஜெயதேவா இருதய மருத்துவமனை",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131610645,
+      "center": {
+        "lat": 12.9204169,
+        "lon": 77.5939909
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "denomination": "sunni",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362886442,
+      "center": {
+        "lat": 12.9207334,
+        "lon": 77.607243
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Maruthi Layout Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 627077106,
+      "center": {
+        "lat": 12.9233938,
+        "lon": 77.6081731
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125669868,
+      "center": {
+        "lat": 12.9213587,
+        "lon": 77.5955111
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1141414942,
+      "center": {
+        "lat": 12.9189955,
+        "lon": 77.6032376
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1242203373,
+      "center": {
+        "lat": 12.9196286,
+        "lon": 77.5993316
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1274548721,
+      "center": {
+        "lat": 12.9234541,
+        "lon": 77.6081387
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1313972719,
+      "center": {
+        "lat": 12.9206935,
+        "lon": 77.5967678
+      },
+      "tags": {
+        "addr:block": "9",
+        "addr:city": "Bengaluru",
+        "addr:parentstreet": "East End Main Road",
+        "addr:place": "Jayanagar",
+        "addr:postcode": "560069",
+        "addr:street": "38th Cross",
+        "amenity": "restaurant",
+        "building": "yes",
+        "building:levels": "2",
+        "contact:email": "cafekrishnam1983@gmail.com",
+        "contact:mobile": "+91-76768-69139;+91-63611-01075;+91-80884-06229",
+        "cuisine": "north_indian;south_indian;chinese",
+        "diet:lacto_vegetarian": "yes",
+        "diet:vegan": "yes",
+        "level": "0",
+        "name": "Cafe Krishnam",
+        "wheelchair": "no"
+      }
+    }
+  ]
+}

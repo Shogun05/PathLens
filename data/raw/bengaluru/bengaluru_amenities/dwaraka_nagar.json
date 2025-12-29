@@ -1,0 +1,809 @@
+{
+  "area_name": "Dwaraka Nagar",
+  "osm_id": 11773086779,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 64,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1101095235,
+      "lat": 13.1246098,
+      "lon": 77.6202857,
+      "tags": {
+        "amenity": "college",
+        "name": "Bridavan College of Engineering"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5936153686,
+      "lat": 13.1238209,
+      "lon": 77.6202417,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Brindavan College Canteen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5936153689,
+      "lat": 13.1253521,
+      "lon": 77.62013,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Brindavan College Bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5936153690,
+      "lat": 13.1254176,
+      "lon": 77.6201477,
+      "tags": {
+        "name": "Stationary Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944464779,
+      "lat": 13.1215236,
+      "lon": 77.6126106,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Near Bagalur Cross Signal,International Airport Main Road,Yelahanka",
+        "addr:postcode": "560063",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Saranalaya Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683188,
+      "lat": 13.122004,
+      "lon": 77.625004,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Chidananda Reddy Layout, Dwarka Nagar, Bengaluru",
+        "addr:postcode": "560063",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Dr. Ashwin clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683190,
+      "lat": 13.1209301,
+      "lon": 77.6164782,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vinayaka Nagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560063",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "iDentist Family Dental Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683192,
+      "lat": 13.1214057,
+      "lon": 77.6140329,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vinayak Nagar, Kattigenahalli, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Chirayu Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683193,
+      "lat": 13.120977,
+      "lon": 77.6176084,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Dwarka Nagar, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Valens Hospitals",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683194,
+      "lat": 13.121692,
+      "lon": 77.6260514,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kattigenahalli, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Venkateshwara Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683220,
+      "lat": 13.1215701,
+      "lon": 77.6126077,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vinayak Nagar, Kattigenahalli, Bengaluru",
+        "addr:postcode": "560063",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Om Shakthi Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683227,
+      "lat": 13.1213645,
+      "lon": 77.6173714,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Dwarka Nagar, Bengaluru",
+        "addr:postcode": "560063",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Seven Hills Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683229,
+      "lat": 13.1214663,
+      "lon": 77.6153779,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Vinayaka Nagar, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Dentteq Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683233,
+      "lat": 13.1213917,
+      "lon": 77.6124201,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Near Anandnagar, Yelahanka, Bengaluru",
+        "addr:postcode": "560063",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Ganga ENT Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683234,
+      "lat": 13.1219782,
+      "lon": 77.6247778,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "RK Hegde Nagar, Bengaluru",
+        "addr:postcode": "560077",
+        "addr:state": "Karnataka",
+        "amenity": "dentist",
+        "name": "Happy Pearl's Dental Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683240,
+      "lat": 13.1215659,
+      "lon": 77.6250507,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kattigenahalli, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sri Arogya Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7579683247,
+      "lat": 13.1213668,
+      "lon": 77.6174817,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Bagalur Main Road, Vinayak Nagar, Kattigenahalli, Bengaluru",
+        "addr:postcode": "560064",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sapthagiri Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11386036953,
+      "lat": 13.121367,
+      "lon": 77.6175957,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Panchami sagar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11819543689,
+      "lat": 13.121056,
+      "lon": 77.6121104,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12201270868,
+      "lat": 13.1236389,
+      "lon": 77.6190497,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12201270870,
+      "lat": 13.123549,
+      "lon": 77.619059,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211544313,
+      "lat": 13.1216825,
+      "lon": 77.6267464,
+      "tags": {
+        "amenity": "ice_cream",
+        "check_date": "2024-09-30",
+        "name": "Polar Bear"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211544314,
+      "lat": 13.1216609,
+      "lon": 77.6266052,
+      "tags": {
+        "check_date": "2024-09-30",
+        "name": "More",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211559773,
+      "lat": 13.1214308,
+      "lon": 77.6218865,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-09-30",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211559774,
+      "lat": 13.1213753,
+      "lon": 77.6204923,
+      "tags": {
+        "check_date": "2024-09-30",
+        "name": "Airtel",
+        "shop": "telecommunication"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211559775,
+      "lat": 13.1210351,
+      "lon": 77.6174285,
+      "tags": {
+        "check_date": "2024-09-30",
+        "name": "Tumbledry",
+        "shop": "dry_cleaning"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211559776,
+      "lat": 13.1208905,
+      "lon": 77.6164926,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2024-09-30",
+        "name": "Axis Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211559777,
+      "lat": 13.1213851,
+      "lon": 77.6141248,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "check_date": "2024-09-30",
+        "cuisine": "pizza",
+        "name": "Pizza Hut",
+        "name:kn": "ಪಿಟ್ಸ ಹಟ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12211559778,
+      "lat": 13.1212999,
+      "lon": 77.6140854,
+      "tags": {
+        "brand": "Lenskart",
+        "brand:wikidata": "Q17068753",
+        "check_date": "2024-09-30",
+        "name": "Lenskart",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12212969782,
+      "lat": 13.1219137,
+      "lon": 77.6112879,
+      "tags": {
+        "amenity": "taxi",
+        "taxi_vehicle": "auto_rickshaw"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12212969786,
+      "lat": 13.1213515,
+      "lon": 77.617323,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-10-01",
+        "name": "Dine Spot"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12212969787,
+      "lat": 13.1216608,
+      "lon": 77.6199518,
+      "tags": {
+        "check_date": "2024-10-01",
+        "name": "Adishwar",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12212969788,
+      "lat": 13.1218601,
+      "lon": 77.6226174,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-10-09",
+        "name": "Thamaq"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12212969789,
+      "lat": 13.1219021,
+      "lon": 77.6232327,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "check_date": "2024-10-01",
+        "name": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12234798249,
+      "lat": 13.1215257,
+      "lon": 77.6267513,
+      "tags": {
+        "check_date": "2024-10-08",
+        "name": "G.K. Vale",
+        "shop": "photo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12234798250,
+      "lat": 13.1215205,
+      "lon": 77.6266519,
+      "tags": {
+        "check_date": "2024-10-08",
+        "name": "Lakme Salon",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12234828969,
+      "lat": 13.1216215,
+      "lon": 77.6258249,
+      "tags": {
+        "check_date": "2024-10-08",
+        "name": "All Mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12236664687,
+      "lat": 13.1218806,
+      "lon": 77.623023,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-10-09",
+        "name": "Panchami Garden"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12236664688,
+      "lat": 13.1219231,
+      "lon": 77.6258721,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-10-09",
+        "name": "Hanuman Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12357225897,
+      "lat": 13.1121169,
+      "lon": 77.6168083,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13155774049,
+      "lat": 13.1228705,
+      "lon": 77.6108205,
+      "tags": {
+        "amenity": "bar",
+        "check_date": "2025-09-19",
+        "name": "Amulya Bar & Restaurant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133125919,
+      "center": {
+        "lat": 13.129696,
+        "lon": 77.6168769
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Kendriya Vidyalaya, Yelahanka AFS",
+        "name:kn": "ಕೇಂದ್ರೀಯ ವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 628739078,
+      "center": {
+        "lat": 13.1240154,
+        "lon": 77.6204825
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560063",
+        "addr:street": "Bagalur Road",
+        "amenity": "college",
+        "contact:email": "brindavancollege.edu.in",
+        "internet_access": "yes",
+        "name": "Brindavan Group of Institutions",
+        "phone": "080-28478766"
+      }
+    },
+    {
+      "type": "way",
+      "id": 628742116,
+      "center": {
+        "lat": 13.1255642,
+        "lon": 77.620526
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Soccer Field",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 628747685,
+      "center": {
+        "lat": 13.1237984,
+        "lon": 77.6202242
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "rice",
+        "name": "Brindavan College Canteen",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084735133,
+      "center": {
+        "lat": 13.1157885,
+        "lon": 77.6120715
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Chinmaya Vidyalaya",
+        "name:kn": "ಚಿನ್ಮಯ ವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084735135,
+      "center": {
+        "lat": 13.121393,
+        "lon": 77.6269081
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Yashasvi Vidya Niketan",
+        "name:kn": "ಯಶಸ್ವಿ ವಿದ್ಯಾ ನಿಕೇತನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1233840337,
+      "center": {
+        "lat": 13.1199846,
+        "lon": 77.6091888
+      },
+      "tags": {
+        "brand": "BYD",
+        "landuse": "commercial",
+        "name": "BYD",
+        "operator": "BYD",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1233840342,
+      "center": {
+        "lat": 13.1175419,
+        "lon": 77.6095066
+      },
+      "tags": {
+        "brand": "Jaguar",
+        "brand:wikidata": "Q21170490",
+        "check_date": "2024-09-30",
+        "landuse": "commercial",
+        "name": "Jaguar",
+        "operator": "Marqland",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267624394,
+      "center": {
+        "lat": 13.1252899,
+        "lon": 77.6221235
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267624397,
+      "center": {
+        "lat": 13.125284,
+        "lon": 77.6220626
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267624398,
+      "center": {
+        "lat": 13.1244055,
+        "lon": 77.6218231
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267624408,
+      "center": {
+        "lat": 13.1226344,
+        "lon": 77.6217587
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267672107,
+      "center": {
+        "lat": 13.1273101,
+        "lon": 77.6182855
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "building": "parking",
+        "name": "MLCP",
+        "parking": "multi-storey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272828052,
+      "center": {
+        "lat": 13.1204278,
+        "lon": 77.61086
+      },
+      "tags": {
+        "leisure": "fitness_station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272828055,
+      "center": {
+        "lat": 13.1213912,
+        "lon": 77.611639
+      },
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272828058,
+      "center": {
+        "lat": 13.1214431,
+        "lon": 77.6117771
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272828062,
+      "center": {
+        "lat": 13.1200941,
+        "lon": 77.6115642
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272828066,
+      "center": {
+        "lat": 13.1208596,
+        "lon": 77.6108524
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272828068,
+      "center": {
+        "lat": 13.1206106,
+        "lon": 77.6120259
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272839501,
+      "center": {
+        "lat": 13.1291905,
+        "lon": 77.6169927
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1373685914,
+      "center": {
+        "lat": 13.1214351,
+        "lon": 77.6232339
+      },
+      "tags": {
+        "amenity": "fuel",
+        "check_date": "2024-10-16",
+        "check_date:compressed_air": "2024-10-16",
+        "compressed_air": "yes",
+        "name": "Indian Oil"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426691106,
+      "center": {
+        "lat": 13.1199293,
+        "lon": 77.6123727
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1442524761,
+      "center": {
+        "lat": 13.1229782,
+        "lon": 77.6191227
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool",
+        "location": "outdoor"
+      }
+    }
+  ]
+}

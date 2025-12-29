@@ -1,0 +1,143 @@
+{
+  "area_name": "Lingarajpura",
+  "osm_id": 19883361,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 10,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1474877583,
+      "lat": 13.0188908,
+      "lon": 77.6276297,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Rama Temple",
+        "name:kn": "ಶ್ರೀರಾಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3742215036,
+      "lat": 13.0194557,
+      "lon": 77.6280049,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "5th Main",
+        "amenity": "place_of_worship",
+        "name": "Sai Baba Temple",
+        "name:kn": "ಸಾಯಿಬಾಬಾ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3742218415,
+      "lat": 13.0188187,
+      "lon": 77.6270726,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "5th Main",
+        "amenity": "place_of_worship",
+        "name": "Lakshmi Narasimha Swamy Temple",
+        "name:kn": "ಲಕ್ಷ್ಮಿ ನರಸಿಂಹ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947701109,
+      "lat": 13.0087438,
+      "lon": 77.6221512,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Lingarajpuram",
+        "addr:postcode": "560084",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Vinay Nursing Home, Lingarajpuram",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11917222399,
+      "lat": 13.0100294,
+      "lon": 77.6237528,
+      "tags": {
+        "check_date": "2024-05-19",
+        "name": "Sangeetha Tailors",
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 173039121,
+      "center": {
+        "lat": 13.0108569,
+        "lon": 77.6214886
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Siddhartha PU College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351857536,
+      "center": {
+        "lat": 13.0194816,
+        "lon": 77.6280203
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "5th Main",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Shiradi Saibaba Devasthana",
+        "name:kn": "ಶ್ರೀ ಶಿರಡಿ ಸಾಯಿಬಾಬಾ ದೇವಾಲಯ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 370528816,
+      "center": {
+        "lat": 13.0203116,
+        "lon": 77.6272125
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237551406,
+      "center": {
+        "lat": 13.0131322,
+        "lon": 77.6267009
+      },
+      "tags": {
+        "amenity": "social_facility",
+        "name": "United Christian Fellowship",
+        "social_facility": "assisted_living",
+        "social_facility:for": "senior",
+        "website": "https://www.ucfhome.org/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363505237,
+      "center": {
+        "lat": 13.0154013,
+        "lon": 77.6270993
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    }
+  ]
+}

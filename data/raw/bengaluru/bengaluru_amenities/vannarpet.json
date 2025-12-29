@@ -1,0 +1,471 @@
+{
+  "area_name": "Vannarpet",
+  "osm_id": 19883290,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 35,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4292885994,
+      "lat": 12.9581905,
+      "lon": 77.6169398,
+      "tags": {
+        "amenity": "school",
+        "name": "Reliance",
+        "name:kn": "ರಿಲಾಯನ್ಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4548857590,
+      "lat": 12.9563091,
+      "lon": 77.6208965,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ranganathar Andal Temple",
+        "name:en": "Ranganathar Andal Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4548858192,
+      "lat": 12.9568231,
+      "lon": 77.6188771,
+      "tags": {
+        "amenity": "place_of_worship",
+        "historic": "yes",
+        "name": "Sri Kasi Vishwanathar Temple",
+        "name:en": "Sri Kasi Vishwanathar Temple",
+        "religion": "hindu",
+        "start_date": "1887"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4548858194,
+      "lat": 12.9580553,
+      "lon": 77.6186029,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shakti Kaliamman Temple",
+        "name:en": "Shakti Kaliamman Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4548885790,
+      "lat": 12.9564486,
+      "lon": 77.6207504,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Karumariamman Temple",
+        "name:en": "Karumariamman Temple",
+        "name:kn": "ಕರುಮರಿಯಮ್ಮನ್ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4548885791,
+      "lat": 12.9585945,
+      "lon": 77.6185583,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Dhrowpathiamman Temple",
+        "name:en": "Dhrowpathiamman Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4548888989,
+      "lat": 12.9564566,
+      "lon": 77.6209088,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Murugan Temple",
+        "name:en": "Murugan Temple",
+        "name:kn": "ಮುರುಗನ್ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4548898589,
+      "lat": 12.9618069,
+      "lon": 77.6169696,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Nagamman Koil",
+        "name:en": "Nagamman Koil",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6347074655,
+      "lat": 12.9552253,
+      "lon": 77.6210383,
+      "tags": {
+        "addr:place": "Vivekangara",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GKHPS Vivekangara",
+        "name:kn": "ಸರ್ಕಾರಿ ಹಿರಿಯ ಕನ್ನಡ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ವಿವೇಕನಗರ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6347080518,
+      "lat": 12.9551126,
+      "lon": 77.6210785,
+      "tags": {
+        "addr:place": "Vivekanagara",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "GTELPS Vivekanagara",
+        "name:kn": "ಸರ್ಕಾರಿ ತೆಲುಗು ಪ್ರಾಥಮಿಕ ಶಾಲೆ ವಿವೇಕನಗರ",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6408981408,
+      "lat": 12.9572323,
+      "lon": 77.6179802,
+      "tags": {
+        "addr:place": "Vivekanagar, Austin Town W",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Babymirror HPS Vivekanagar, Austin Town W No 71",
+        "name:kn": "ಬೇಬಿ ಮಿರರ್ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ವಿವೇಕನಗರ ಆಸ್ಟಿನ್‌ಟೌನ್‌",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6408995812,
+      "lat": 12.9541946,
+      "lon": 77.6185446,
+      "tags": {
+        "addr:place": "Viveka, Austin Town",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Bala Aesu Vidyalaya HPS Viveka, Austin Town W No 71",
+        "name:kn": "ಬಾಲಾ ಏಸು ವಿದ್ಯಾಲಯ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ವಿವೇಕನಗರ,ಆಸ್ಟಿನ್‌ಟೌನ್‌",
+        "operator": "Private Un-Aided",
+        "school": "Higher Primary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6702845916,
+      "lat": 12.9568937,
+      "lon": 77.6178658,
+      "tags": {
+        "addr:place": "Eegipura",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Holy Christ HPS Eegipura",
+        "name:kn": "ಹೋಲಿ ಕ್ರೈಸ್ಟ್ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಈಜಿಪುರ",
+        "operator": "Private Un-Aided",
+        "school": "Higher Secondary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947674447,
+      "lat": 12.9543777,
+      "lon": 77.6209764,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.162, 4Th Main, Opposite Post Office, Viveknagar, 20Yds, Viveknagar Bus Stand",
+        "addr:postcode": "560047",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sri Ram Speciality Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9140200220,
+      "lat": 12.9588096,
+      "lon": 77.6177216,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9140200226,
+      "lat": 12.9588488,
+      "lon": 77.6171704,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10047367417,
+      "lat": 12.9551097,
+      "lon": 77.6207198,
+      "tags": {
+        "name": "Epson Service Centre",
+        "shop": "computer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10314122714,
+      "lat": 12.9523754,
+      "lon": 77.618828,
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11505830446,
+      "lat": 12.9537213,
+      "lon": 77.6203916,
+      "tags": {
+        "access": "yes",
+        "amenity": "drinking_water",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11505830447,
+      "lat": 12.9552768,
+      "lon": 77.6207566,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-01-10",
+        "healthcare": "pharmacy",
+        "name": "Sundeep Pharma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11505830448,
+      "lat": 12.9560508,
+      "lon": 77.6208156,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2024-01-10",
+        "name": "Sri Annapoorneshwari Hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 112580278,
+      "center": {
+        "lat": 12.9536356,
+        "lon": 77.6188074
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Infant Jesus Church",
+        "religion": "christian",
+        "wikidata": "Q15378772",
+        "wikimedia_commons": "Category:Infant Jesus Church, Bangalore",
+        "wikipedia": "en:Infant Jesus Church, Bangalore"
+      }
+    },
+    {
+      "type": "way",
+      "id": 326201186,
+      "center": {
+        "lat": 12.9543449,
+        "lon": 77.6226955
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Viveknagar Bus Station",
+        "name:kn": "ವಿವೇಕನಗರ ಬಸ್ ನಿಲ್ದಾಣ",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 411057604,
+      "center": {
+        "lat": 12.9537758,
+        "lon": 77.6188132
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "church",
+        "name": "Infant Jesus Church",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 487959492,
+      "center": {
+        "lat": 12.9613583,
+        "lon": 77.6168058
+      },
+      "tags": {
+        "amenity": "school",
+        "operator": "BBMP Girls High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 891226349,
+      "center": {
+        "lat": 12.9593532,
+        "lon": 77.6190318
+      },
+      "tags": {
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Mahanagar Palike HPS Austin Town",
+        "name:kn": "ಮಹಾನಗರ್ ಪಾಲಿಕೆ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಆಸ್ಟಿನ್‌ಟೌನ್‌",
+        "operator": "Department of Education",
+        "school": "primary"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1067951549,
+      "center": {
+        "lat": 12.9553325,
+        "lon": 77.621075
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Seva Bhat Telugu High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083590209,
+      "center": {
+        "lat": 12.9618003,
+        "lon": 77.6169608
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1086134450,
+      "center": {
+        "lat": 12.9589711,
+        "lon": 77.6168498
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1095462045,
+      "center": {
+        "lat": 12.9587565,
+        "lon": 77.6174079
+      },
+      "tags": {
+        "alt_name": "Maitreya Temple",
+        "amenity": "monastery",
+        "community:gender": "mixed",
+        "contact:facebook": "maitreyact",
+        "denomination": "yiguandao",
+        "email": "maitreya.ct@gmail.com",
+        "landuse": "religious",
+        "name": "Hong Ci Monastery",
+        "religion": "taoist"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1153736759,
+      "center": {
+        "lat": 12.9546763,
+        "lon": 77.620947
+      },
+      "tags": {
+        "amenity": "post_office",
+        "name": "India Post",
+        "name:kn": "ಅಂಚೆ ಕಛೇರಿ",
+        "operator": "India Post",
+        "operator:wikidata": "Q3519720",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1153736762,
+      "center": {
+        "lat": 12.952795,
+        "lon": 77.6251835
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157161753,
+      "center": {
+        "lat": 12.9569422,
+        "lon": 77.6195084
+      },
+      "tags": {
+        "amenity": "cinema",
+        "landuse": "commercial",
+        "name": "Sri Balaji",
+        "name:en": "Sri Balaji"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1169301033,
+      "center": {
+        "lat": 12.956232,
+        "lon": 77.6207994
+      },
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Namma Clinic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218033510,
+      "center": {
+        "lat": 12.954134,
+        "lon": 77.623748
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560047",
+        "addr:street": "4th Main Rd, Viveka Nagar",
+        "branch": "Milk Parlour",
+        "brand": "Nandini",
+        "brand:wikidata": "Q124374212",
+        "building": "yes",
+        "name": "Nandini Shoppe",
+        "name:kn": "ನಂದಿನಿ ಹಾಲಿನ ಅಂಗಡಿ",
+        "shop": "dairy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "area_name": "Prakash Nagara",
+  "osm_id": 19883492,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 43,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1470547253,
+      "lat": 12.9970293,
+      "lon": 77.5539717,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Shanti Sagar Hotel",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3209500886,
+      "lat": 12.9914598,
+      "lon": 77.5546233,
+      "tags": {
+        "name": "O. G. Variar and Sons Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3412690280,
+      "lat": 12.9904639,
+      "lon": 77.5569256,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Sri Prasamshi Medical Stores"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446343508,
+      "lat": 12.9967355,
+      "lon": 77.5543173,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560010",
+        "addr:street": "Dr Rajkumar Road, Opposite KLE College, Near Navrang Theatre,Rajajinaga",
+        "amenity": "restaurant",
+        "check_date": "2025-03-18",
+        "cuisine": "regional",
+        "diet:vegan": "no",
+        "diet:vegetarian": "only",
+        "indoor_seating": "yes",
+        "name": "Sagar Caterers and Hotel",
+        "opening_hours": "11:00-23:00",
+        "outdoor_seating": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "080 23325917",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4488045269,
+      "lat": 12.9926468,
+      "lon": 77.5570803,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "101",
+        "addr:postcode": "560021",
+        "addr:street": "7th cross, 11th Main Rd, Bhadrappa Layout, Prakash Nagar, Rajaji Nagar",
+        "name": "reenix sports india pvt ltd",
+        "opening_hours": "10:00-21:30",
+        "phone": "+9198868 11390",
+        "shop": "sports"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5061380655,
+      "lat": 12.9981249,
+      "lon": 77.5532794,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Annappa's Naati Mane Hassan Style",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5061380656,
+      "lat": 12.9981288,
+      "lon": 77.5579299,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-09-16",
+        "name": "Sri Eshwar Fruit Juice Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027879,
+      "lat": 12.9981821,
+      "lon": 77.5535026,
+      "tags": {
+        "name": "Titan",
+        "shop": "watches"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027880,
+      "lat": 12.9985641,
+      "lon": 77.5552753,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:kn": "ಆಕ್ಸಿಸ್ ಬ್ಯಾಂಕ್",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027881,
+      "lat": 12.9984849,
+      "lon": 77.5554044,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5175027882,
+      "lat": 12.9982334,
+      "lon": 77.557495,
+      "tags": {
+        "name": "HP World",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5227399591,
+      "lat": 12.9981658,
+      "lon": 77.5533488,
+      "tags": {
+        "name": "SRN Gems & Jewellery Works",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5227399592,
+      "lat": 12.9981764,
+      "lon": 77.5534478,
+      "tags": {
+        "name": "Ideal Decor",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5227399593,
+      "lat": 12.9981822,
+      "lon": 77.5534003,
+      "tags": {
+        "name": "Nisarga Holidays",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5227399594,
+      "lat": 12.9985671,
+      "lon": 77.5553891,
+      "tags": {
+        "name": "Sri Ganesha Stationeries",
+        "shop": "stationery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402224030,
+      "lat": 12.9953339,
+      "lon": 77.5550415,
+      "tags": {
+        "name": "Karnataka Furniture",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6108140989,
+      "lat": 12.997195,
+      "lon": 77.5603577,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6939075872,
+      "lat": 12.9929043,
+      "lon": 77.5588015,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "15/1 Iyappaswamy Templestraight Road",
+        "addr:postcode": "560021",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Supriya Hospital, Bengaluru Urban",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6945606655,
+      "lat": 12.9907644,
+      "lon": 77.5568951,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No 562, 3Road Main Second Block, Rajajinagar",
+        "addr:postcode": "560010",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Kumar Nethralaya",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7043906885,
+      "lat": 12.9900969,
+      "lon": 77.5545487,
+      "tags": {
+        "name": "Shree Sai Silk Sarees",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7087593326,
+      "lat": 12.9984069,
+      "lon": 77.5564425,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7099723587,
+      "lat": 12.9925863,
+      "lon": 77.5566119,
+      "tags": {
+        "brand": "KTM",
+        "brand:wikidata": "Q215657",
+        "name": "KTM",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7236205648,
+      "lat": 12.9900398,
+      "lon": 77.5557384,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Stay Happi Pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187959329,
+      "lat": 12.9900506,
+      "lon": 77.5561739,
+      "tags": {
+        "addr:full": "Shop No.53, 41st Cross, Near Old Police Station, 2nd Block, 4th Block, Rajajinagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Vijaya Bank",
+        "brand:wikidata": "Q2003171",
+        "brand:wikipedia": "en:Vijaya Bank",
+        "name": "Vijaya Bank",
+        "name:kn": "ವಿಜಯ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962466,
+      "lat": 12.9937009,
+      "lon": 77.5556279,
+      "tags": {
+        "addr:full": "No.82, Patel Arcade, Dr Rajkumar Road, 2nd Block, 2nd Block, Rajajinagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "IDBI Bank",
+        "brand:wikidata": "Q3633485",
+        "brand:wikipedia": "en:IDBI Bank",
+        "name": "IDBI Bank",
+        "name:kn": "ಐಡಿಬಿಐ ಬ್ಯಾಂಕ್",
+        "short_name": "IDBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187962500,
+      "lat": 12.9910228,
+      "lon": 77.5576941,
+      "tags": {
+        "addr:full": "588, Dr Rajkumar Rd, 2nd Block, Rajajinagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "bank",
+        "brand": "Andhra Bank",
+        "brand:wikidata": "Q2003476",
+        "brand:wikipedia": "en:Andhra Bank",
+        "name": "Andhra Bank",
+        "name:kn": "ಆಂಧ್ರ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038742,
+      "lat": 12.9905045,
+      "lon": 77.5566355,
+      "tags": {
+        "addr:full": "172/A, 8th Main Rd, 2nd Block, Rajajinagar, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Government Hospital",
+        "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11196202957,
+      "lat": 12.9981235,
+      "lon": 77.5573106,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2023-09-16",
+        "name": "Sri Balamuri Ganapathi Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12118816468,
+      "lat": 12.9964977,
+      "lon": 77.5544213,
+      "tags": {
+        "addr:street": "Dr. Rajkumar Road",
+        "name": "The Detailing Mafia",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261349,
+      "lat": 12.9948384,
+      "lon": 77.5552933,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-03-18",
+        "name": "Taj Biryani Paradise"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261351,
+      "lat": 12.9950231,
+      "lon": 77.5552222,
+      "tags": {
+        "check_date": "2025-03-18",
+        "name": "Star of Bangalore",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12777774134,
+      "lat": 12.9984145,
+      "lon": 77.5558812,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12777774136,
+      "lat": 12.9969944,
+      "lon": 77.5551845,
+      "tags": {
+        "amenity": "library",
+        "name": "Government Library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12777774172,
+      "lat": 12.9982979,
+      "lon": 77.5573209,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "cash_in": "no",
+        "layer": "1",
+        "level": "1",
+        "name": "State Bank of India",
+        "name:kn": "ಎಸ್ ಬಿ ಐ",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38096679,
+      "center": {
+        "lat": 12.9973223,
+        "lon": 77.5564063
+      },
+      "tags": {
+        "alt_name": "Gayathri Devi Park",
+        "leisure": "park",
+        "name": "Mariyappna Palya Park",
+        "name:kn": "ಮರಿಯಪ್ಪನ ಪಾಳ್ಯ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437871416,
+      "center": {
+        "lat": 12.9973687,
+        "lon": 77.5552461
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Saibaba Womens School",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1106630229,
+      "center": {
+        "lat": 12.9944436,
+        "lon": 77.5579391
+      },
+      "tags": {
+        "amenity": "college"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124828991,
+      "center": {
+        "lat": 12.9982752,
+        "lon": 77.5568833
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "yes",
+        "operator": "BMRCL",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124828992,
+      "center": {
+        "lat": 12.9983918,
+        "lon": 77.555689
+      },
+      "tags": {
+        "access": "yes",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1182387683,
+      "center": {
+        "lat": 12.997409,
+        "lon": 77.5546015
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Sri Sai College for Women"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1182387684,
+      "center": {
+        "lat": 12.9969702,
+        "lon": 77.5547225
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Manjunatha Swamy Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1380176392,
+      "center": {
+        "lat": 12.9957899,
+        "lon": 77.5554288
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Orchids The International School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1380176397,
+      "center": {
+        "lat": 12.9978288,
+        "lon": 77.5557891
+      },
+      "tags": {
+        "access": "permissive",
+        "leisure": "playground"
+      }
+    }
+  ]
+}

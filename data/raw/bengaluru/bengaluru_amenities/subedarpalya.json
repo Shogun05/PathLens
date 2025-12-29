@@ -1,0 +1,756 @@
+{
+  "area_name": "Subedarpalya",
+  "osm_id": 19884536,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 62,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 577966441,
+      "lat": 13.0192135,
+      "lon": 77.5572955,
+      "tags": {
+        "addr:street": "Suberdar Chatram Road",
+        "amenity": "restaurant",
+        "name": "Emirates",
+        "name:kn": "ಎಮಿರೇಟ್ಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 577966903,
+      "lat": 13.0192867,
+      "lon": 77.5571453,
+      "tags": {
+        "addr:street": "Suberdar Chatram Road",
+        "name": "RR Cycle Junction",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 577968271,
+      "lat": 13.018555,
+      "lon": 77.558819,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 638146220,
+      "lat": 13.0189986,
+      "lon": 77.5571289,
+      "tags": {
+        "addr:street": "Suberdar Chatram Road",
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 638380518,
+      "lat": 13.0187468,
+      "lon": 77.5569804,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Gayathri Devi Temple",
+        "name:kn": "ಗಾಯತ್ರಿ ದೇವಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3400223536,
+      "lat": 13.0183459,
+      "lon": 77.5572174,
+      "tags": {
+        "amenity": "cafe",
+        "name": "F A Tea stall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3400223634,
+      "lat": 13.0188238,
+      "lon": 77.5574002,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "New Sagar Fast Food - Vegetarian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3493124416,
+      "lat": 13.0216054,
+      "lon": 77.5587327,
+      "tags": {
+        "alt_name": "Goli Vada Pav No.1",
+        "amenity": "fast_food",
+        "brand": "Goli Vada Pav",
+        "brand:wikidata": "Q5580697",
+        "cuisine": "indian",
+        "name": "Goli Vada Pav",
+        "name:kn": "ಗೋಲಿ ವಡ ಪಾವ್",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3493124417,
+      "lat": 13.0218114,
+      "lon": 77.5586653,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "Bengali",
+        "name": "Aastha Mess"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4447104932,
+      "lat": 13.0210205,
+      "lon": 77.5586533,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "317/7",
+        "addr:postcode": "560022",
+        "addr:street": "Triveni Road",
+        "amenity": "pharmacy",
+        "name": "Jailaxmi Medical Store",
+        "phone": "+9180 2357 8232",
+        "source": "www.justdial.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4506403880,
+      "lat": 13.021032,
+      "lon": 77.5584863,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Madhu Dental Implants"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6645712426,
+      "lat": 13.0182154,
+      "lon": 77.5610782,
+      "tags": {
+        "amenity": "waste_basket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6794727082,
+      "lat": 13.0189687,
+      "lon": 77.5575829,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Arabian Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886594819,
+      "lat": 13.0195217,
+      "lon": 77.5578895,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "No. 1082/9, Sreenivasa Prasanna Complex, Triveni Road, Yeshwanthpur, Bengaluru",
+        "addr:postcode": "560022",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9972111552",
+        "contact:phone": "8023571001",
+        "name": "Kempegowda Medical Service Trust - Millennium Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938794412,
+      "lat": 13.0223669,
+      "lon": 77.5587304,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "1105, 5Th Cross,Kn Extension, Yeshwanthpur",
+        "addr:postcode": "560022",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Kala Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944239600,
+      "lat": 13.0220526,
+      "lon": 77.5576729,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No 1152 3Road Main 6Th Cross K N Extension, (Near Jain Temple) Yashwanthpur",
+        "addr:postcode": "560022",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Mangal's Nursing Home -Bangalore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6948459038,
+      "lat": 13.0218344,
+      "lon": 77.5567093,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No. 22/21, 6Th Cross, K N Extn, Yeshwanth Pur",
+        "addr:postcode": "560022",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Acharya Tulsi Jain Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8148771369,
+      "lat": 13.0203467,
+      "lon": 77.5559144,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಎಸ್ ಬಿ ಐ",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8254999682,
+      "lat": 13.0249126,
+      "lon": 77.5575755,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8255002879,
+      "lat": 13.0193484,
+      "lon": 77.5570913,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Garden Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8255026538,
+      "lat": 13.0250155,
+      "lon": 77.5576232,
+      "tags": {
+        "name": "Prakash Jewelry",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8364347332,
+      "lat": 13.019726,
+      "lon": 77.5552398,
+      "tags": {
+        "amenity": "college",
+        "name": "M.S.Polytechnic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8364362123,
+      "lat": 13.0247262,
+      "lon": 77.5578106,
+      "tags": {
+        "name": "Gajanan cycles",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8364364156,
+      "lat": 13.0197813,
+      "lon": 77.5550402,
+      "tags": {
+        "name": "Classic Traders",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8364370518,
+      "lat": 13.0197892,
+      "lon": 77.5551264,
+      "tags": {
+        "name": "United Hardware",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8427338689,
+      "lat": 13.0192651,
+      "lon": 77.5574251,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Bites and Braces Dental Clinic",
+        "phone": "9686633551"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9249613356,
+      "lat": 13.0258435,
+      "lon": 77.5579387,
+      "tags": {
+        "amenity": "bicycle_repair_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9249673893,
+      "lat": 13.0257426,
+      "lon": 77.5580434,
+      "tags": {
+        "name": "Elahi chicken and mutton",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9394330598,
+      "lat": 13.0214847,
+      "lon": 77.5629992,
+      "tags": {
+        "addr:street": "yeshwanthpur",
+        "amenity": "place_of_worship",
+        "check_date": "2023-12-23",
+        "description": "Hindu Temple",
+        "name": "Sree Ayyappa Temple",
+        "phone": "080-23378036/9483580061",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9532893822,
+      "lat": 13.017793,
+      "lon": 77.556767,
+      "tags": {
+        "amenity": "cafe",
+        "fixme": "Amenity tagging may not be accurate for a Juice Stall",
+        "name": "Juice Stall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11281292792,
+      "lat": 13.0188266,
+      "lon": 77.5580652,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Shreeyas Bar and Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11445452513,
+      "lat": 13.0221394,
+      "lon": 77.5630859,
+      "tags": {
+        "check_date": "2023-12-23",
+        "name": "Yash Bikes",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11684876148,
+      "lat": 13.0197667,
+      "lon": 77.5543909,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2024-03-02"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932321823,
+      "lat": 13.0181005,
+      "lon": 77.556118,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "check_date": "2025-04-06"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11991775972,
+      "lat": 13.0165165,
+      "lon": 77.5557773,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Sri Mahaganapati Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12450996658,
+      "lat": 13.0187658,
+      "lon": 77.5583691,
+      "tags": {
+        "amenity": "post_office",
+        "brand": "Blue Dart Express",
+        "brand:short": "Blue Dart",
+        "brand:wikidata": "Q54621493",
+        "check_date": "2024-12-25",
+        "operator": "Blue Dart Express",
+        "operator:short": "Blue Dart",
+        "operator:wikidata": "Q54621493"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261317,
+      "lat": 13.0190693,
+      "lon": 77.5576362,
+      "tags": {
+        "check_date": "2025-03-18",
+        "name": "Balaji Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261318,
+      "lat": 13.0190699,
+      "lon": 77.5575936,
+      "tags": {
+        "check_date": "2025-03-18",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261319,
+      "lat": 13.0191345,
+      "lon": 77.5575105,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2025-03-18",
+        "healthcare": "pharmacy",
+        "name": "Srikanth Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261320,
+      "lat": 13.0188015,
+      "lon": 77.5574805,
+      "tags": {
+        "check_date": "2025-03-18",
+        "name": "Aaradhya Store",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261365,
+      "lat": 13.0190409,
+      "lon": 77.5576338,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "check_date": "2025-03-18",
+        "name": "Bank of Baroda"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261366,
+      "lat": 13.0193277,
+      "lon": 77.5565792,
+      "tags": {
+        "brand": "Hero",
+        "brand:wikidata": "Q1613763",
+        "check_date": "2025-03-18",
+        "name": "Hero",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261367,
+      "lat": 13.0194302,
+      "lon": 77.5563272,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2025-03-18",
+        "name": "Karnataka Biryani Point"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261368,
+      "lat": 13.0198537,
+      "lon": 77.5559839,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2025-03-18",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261370,
+      "lat": 13.0212373,
+      "lon": 77.5562124,
+      "tags": {
+        "check_date": "2025-03-18",
+        "shop": "nuts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261371,
+      "lat": 13.0225774,
+      "lon": 77.5567554,
+      "tags": {
+        "check_date": "2025-03-18",
+        "name": "Sara",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261380,
+      "lat": 13.0255048,
+      "lon": 77.5576872,
+      "tags": {
+        "amenity": "bench",
+        "armrest": "yes",
+        "backrest": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676261382,
+      "lat": 13.0265607,
+      "lon": 77.5581534,
+      "tags": {
+        "check_date": "2025-03-18",
+        "name": "Rajat Opticals",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12732632383,
+      "lat": 13.0180275,
+      "lon": 77.556119,
+      "tags": {
+        "check_date": "2025-04-06",
+        "name": "BMTC Pass Counter",
+        "shop": "ticket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12732632384,
+      "lat": 13.0179471,
+      "lon": 77.5561221,
+      "tags": {
+        "check_date": "2025-04-06",
+        "name": "Venkatadri Condiments",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12732632385,
+      "lat": 13.0178765,
+      "lon": 77.5561228,
+      "tags": {
+        "check_date": "2025-04-06",
+        "name": "Punith Cafe",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12732632386,
+      "lat": 13.0177867,
+      "lon": 77.5561244,
+      "tags": {
+        "check_date": "2025-04-06",
+        "name": "Transit Clinic",
+        "shop": "kiosk"
+      }
+    },
+    {
+      "type": "way",
+      "id": 128964529,
+      "center": {
+        "lat": 13.020099,
+        "lon": 77.5564901
+      },
+      "tags": {
+        "amenity": "public_building",
+        "building": "yes",
+        "building:levels": "4",
+        "name": "Yeshwantpur RTO"
+      }
+    },
+    {
+      "type": "way",
+      "id": 249906103,
+      "center": {
+        "lat": 13.019717,
+        "lon": 77.55489
+      },
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Yeshwanthpur Fish Market",
+        "name:kn": "ಮೀನು ಮಾರುಕಟ್ಟೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 249908374,
+      "center": {
+        "lat": 13.0172046,
+        "lon": 77.5562367
+      },
+      "tags": {
+        "amenity": "cinema",
+        "building": "yes",
+        "name": "Gopal Theatre",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 393781676,
+      "center": {
+        "lat": 13.0181038,
+        "lon": 77.5565251
+      },
+      "tags": {
+        "alt_name": "Yeshwantpur Bus Station",
+        "amenity": "bus_station",
+        "name": "Yeshwanthapura TTMC",
+        "name:en": "Yeshwanthapura TTMC",
+        "name:kn": "ಯಶವಂತಪುರ ಬಸ್ ನಿಲ್ದಾನ",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 780917615,
+      "center": {
+        "lat": 13.0164805,
+        "lon": 77.555864
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "landuse": "religious",
+        "name": "Y Muniswamappa Kalyana Mantapa",
+        "name:kn": "ಮುನಿಸ್ವಾಮಪ್ಪ ಕಲ್ಯಾಣ ಮಂಟಪಕ್",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 780917616,
+      "center": {
+        "lat": 13.0182004,
+        "lon": 77.5590653
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Shree Daari Anjaneyaswamy Temple",
+        "name:kn": "ದಾರಿ ಅಂಜನೇಯ",
+        "religion": "hindu",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308403499,
+      "center": {
+        "lat": 13.0198679,
+        "lon": 77.5562676
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308403509,
+      "center": {
+        "lat": 13.0193297,
+        "lon": 77.5552833
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Jamia Masjid Yeshwanthpur",
+        "name:kn": "ಜಮ ಮಸೀದಿ",
+        "religion": "muslim"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1391861753,
+      "center": {
+        "lat": 13.0176429,
+        "lon": 77.5605621
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1391861761,
+      "center": {
+        "lat": 13.019771,
+        "lon": 77.5599658
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    }
+  ]
+}

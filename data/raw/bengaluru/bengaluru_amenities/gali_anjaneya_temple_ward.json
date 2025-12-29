@@ -1,0 +1,381 @@
+{
+  "area_name": "Gali Anjaneya Temple Ward",
+  "osm_id": 19883368,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 27,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1789736226,
+      "lat": 12.9534085,
+      "lon": 77.5435706,
+      "tags": {
+        "amenity": "bus_station",
+        "check_date": "2024-04-05",
+        "name": "Mysore Road Bus Station",
+        "name:kn": "ಮೈಸೂರು ರಸ್ತೆ ಬಸ್ ನಿಲ್ದಾಣ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1789739261,
+      "lat": 12.9525197,
+      "lon": 77.5409488,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2022-11-25",
+        "name": "Gaali Anjaneya Temple",
+        "name:kn": "ಗಾಳಿ ಅಂಜನೇಯ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4542486736,
+      "lat": 12.9537484,
+      "lon": 77.543639,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560026",
+        "addr:street": "Mysore Road",
+        "alt_name": "A2B",
+        "amenity": "restaurant",
+        "brand": "Adyar Ananda Bhavan",
+        "brand:wikidata": "Q15178238",
+        "cuisine": "South_Indian",
+        "diet:vegetarian": "only",
+        "email": "info@aabsweets.com",
+        "name": "Adyar Ananda Bhavan",
+        "name:kn": "ಆದ್ಯಾರ್ ಆನಂದ ಭವನ",
+        "opening_hours": "7:00-22:30",
+        "operator": "Adyar Ananda Bhavan",
+        "phone": "+91 80 2674 6999",
+        "smoking": "no",
+        "website": "https://aabsweets.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4542490906,
+      "lat": 12.9543065,
+      "lon": 77.5444531,
+      "tags": {
+        "amenity": "post_office",
+        "check_date": "2022-11-25",
+        "name": "India Post"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4542494317,
+      "lat": 12.9556017,
+      "lon": 77.5459806,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560026",
+        "addr:street": "Mysore Road",
+        "name": "Deco Design",
+        "operator": "Deco Design",
+        "shop": "furniture",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4620010389,
+      "lat": 12.9584059,
+      "lon": 77.5356011,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5103586722,
+      "lat": 12.9536888,
+      "lon": 77.543512,
+      "tags": {
+        "addr:street": "Mysore Road",
+        "amenity": "restaurant",
+        "check_date": "2022-11-25",
+        "name": "Imperial Restaurant",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6945348721,
+      "lat": 12.9586907,
+      "lon": 77.5352668,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#966/ 22, Service Road, RPC Layout, Vijayanagar, Opposite Syndicate Bank",
+        "addr:postcode": "560104",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "Cataract Treatment; Cornea Clinic; Retina Clinic; Glaucoma Clinic",
+        "name": "Divya Drishti Eye Hospital, Vijayanagar",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "http://divyadrishtieyehospital.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8120747620,
+      "lat": 12.9593325,
+      "lon": 77.5363763,
+      "tags": {
+        "addr:postcode": "560104",
+        "addr:street": "9th Main Road",
+        "amenity": "vending_machine",
+        "name": "Water ATM",
+        "vending": "water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10218102646,
+      "lat": 12.9545702,
+      "lon": 77.5447288,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "cash_in": "no",
+        "check_date": "2022-11-25",
+        "name": "ICICI Bank",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10218102647,
+      "lat": 12.9533862,
+      "lon": 77.5424568,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2022-11-25",
+        "name:en": "Roshan Mosque",
+        "religion": "muslim",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10571038248,
+      "lat": 12.9546654,
+      "lon": 77.5448794,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "No 2",
+        "addr:postcode": "560026",
+        "addr:street": "Timberyard Layout Feather Lite Compound, Mysore Road",
+        "branch": "Big Wing Service Topline",
+        "brand": "Honda",
+        "name": "Honda Big Wing Service Topline",
+        "not:brand:wikidata": "Q9584",
+        "opening_hours": "Mo-Su 09:30-18:30",
+        "phone": "09844564832",
+        "shop": "motorcycle_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11323076631,
+      "lat": 12.9523737,
+      "lon": 77.5438444,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-04-05",
+        "name": "Kadamba Classic Hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11323095020,
+      "lat": 12.9525544,
+      "lon": 77.5434542,
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2024-04-05",
+        "fee": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11323095021,
+      "lat": 12.9523656,
+      "lon": 77.544301,
+      "tags": {
+        "amenity": "toilets",
+        "fee": "yes",
+        "female": "yes",
+        "male": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11903974620,
+      "lat": 12.9600943,
+      "lon": 77.535249,
+      "tags": {
+        "check_date": "2024-05-14",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11904020620,
+      "lat": 12.9595929,
+      "lon": 77.5356369,
+      "tags": {
+        "amenity": "place_of_worship",
+        "check_date": "2024-05-14",
+        "name": "Vishvakarma Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11904042865,
+      "lat": 12.9595766,
+      "lon": 77.535977,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2024-05-14",
+        "name": "Mandya Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11904042969,
+      "lat": 12.9593134,
+      "lon": 77.5360153,
+      "tags": {
+        "amenity": "clinic",
+        "check_date": "2024-05-14",
+        "healthcare": "clinic",
+        "name": "Namma Clinic",
+        "operator": "Government"
+      }
+    },
+    {
+      "type": "way",
+      "id": 54147974,
+      "center": {
+        "lat": 12.9568726,
+        "lon": 77.5366726
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 54148021,
+      "center": {
+        "lat": 12.9590229,
+        "lon": 77.5364157
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Aalada Mara (Banyan Tree)",
+        "name:kn": "ಆಲದ ಮರ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 54148031,
+      "center": {
+        "lat": 12.9589791,
+        "lon": 77.5354787
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Hampinagara Bus Station",
+        "name:en": "Hampinagara Bus Station",
+        "name:kn": "ಹಂಪಿನಗರ ಬಸ್ ನಿಲ್ದಾಣ",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 54148075,
+      "center": {
+        "lat": 12.9632376,
+        "lon": 77.5361075
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 404195623,
+      "center": {
+        "lat": 12.9530952,
+        "lon": 77.5408987
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560104",
+        "addr:street": "Mysore Rd, Kavika Lay Out, Bapuji Nagar",
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "name": "Shri Beereshwara Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 687319753,
+      "center": {
+        "lat": 12.9526538,
+        "lon": 77.5396451
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1238821118,
+      "center": {
+        "lat": 12.9532043,
+        "lon": 77.5437227
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "check_date": "2024-04-05",
+        "name": "KSRTC Mysore Road Satellite Bus Station",
+        "name:kn": "ಕ. ರಾ. ರ. ಸಾ. ನಿ. ಬಸ್ ನಿಲ್ದಾಣ, ಮೈಸೂರು ರಸ್ತೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390722993,
+      "center": {
+        "lat": 12.9592412,
+        "lon": 77.5356745
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    }
+  ]
+}

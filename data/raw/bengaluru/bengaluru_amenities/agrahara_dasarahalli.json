@@ -1,0 +1,417 @@
+{
+  "area_name": "Agrahara Dasarahalli",
+  "osm_id": 19884511,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 27,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1440193832,
+      "lat": 12.9865791,
+      "lon": 77.5403594,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Total",
+        "brand:wikidata": "Q154037",
+        "fuel:lpg": "yes",
+        "name": "Total gas",
+        "operator": "Total"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1440194638,
+      "lat": 12.98568,
+      "lon": 77.5421189,
+      "tags": {
+        "addr:housename": "Canara bank",
+        "addr:postcode": "560079",
+        "addr:street": "Basaveshwaranagar",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1440198432,
+      "lat": 12.9862868,
+      "lon": 77.539676,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Muneshwara Temple",
+        "name:kn": "ಮುನೇಶ್ವರ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1467501674,
+      "lat": 12.9856724,
+      "lon": 77.5420617,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1778957265,
+      "lat": 12.9793805,
+      "lon": 77.5420846,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "fuel:diesel": "yes",
+        "fuel:lpg": "no",
+        "fuel:octane_100": "yes",
+        "name": "Shell Petrol Bunk",
+        "name:kn": "ಶೆಲ್",
+        "operator": "Shell",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2505742971,
+      "lat": 12.9877574,
+      "lon": 77.5378544,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "Havanur Circle, Basaweshwara Nagar",
+        "addr:postcode": "560079",
+        "addr:street": "1st main Basaveshwaranagar",
+        "name": "Srinivasa Wines",
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4087635782,
+      "lat": 12.9878328,
+      "lon": 77.5376138,
+      "tags": {
+        "name": "Gundappa Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444302998,
+      "lat": 12.9862573,
+      "lon": 77.5403259,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "12",
+        "addr:postcode": "560079",
+        "addr:street": "4th Stage, 3rd Block,Basaveshwara Nagar,",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Cave n Dine",
+        "opening_hours": "11:00 to 16:00 , 180:30  to 23:30",
+        "phone": "080 23102051",
+        "website": "https://cavendine.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446337629,
+      "lat": 12.9864094,
+      "lon": 77.5405663,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "14",
+        "addr:postcode": "560079",
+        "addr:street": "4th Stage, 3rd Block,Basaveshwara Naga",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Cave N Dine",
+        "opening_hours": "11:00-16:00,18:30-23:30",
+        "phone": "080 23102051",
+        "website": "https://cavendine.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446983284,
+      "lat": 12.9853927,
+      "lon": 77.5383552,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "723/B",
+        "addr:postcode": "560010",
+        "addr:street": "11th Main Rd, 3rd Block, Rajaji Nagar",
+        "amenity": "pharmacy",
+        "name": "Dr. Suresh's Dia Care",
+        "phone": "+91 80 2338 2867",
+        "source": "www.justdial.com",
+        "website": "drsureshdiacare.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446985998,
+      "lat": 12.9857599,
+      "lon": 77.5386584,
+      "tags": {
+        "amenity": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446985999,
+      "lat": 12.9851133,
+      "lon": 77.5390188,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "403",
+        "addr:postcode": "560010",
+        "addr:street": "Dr. Rajkumar Road, 6th Block, 80 Feet Rd, 4th Block, Ramchandrapuram",
+        "amenity": "pharmacy",
+        "name": "Amrutha Medicals",
+        "name:kn": "ಅಮೃತ ಮೆಡಿಕಲ್ಸ್",
+        "phone": "+91 80 2311 7929",
+        "source": "www.justdial.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489873401,
+      "lat": 12.9874641,
+      "lon": 77.5385407,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "20/3",
+        "addr:postcode": "560079",
+        "addr:street": ", Kaushik Plaza, 80 Feet Road, 2nd Stage, Khb Colony, Near-Sony Show Room, Basaveshwara Nagar, 2nd Stage, KHB Colony, Basaveshwar Nagar, Bengaluru, Karnataka",
+        "leisure": "sports_centre",
+        "name": "Celebrities Fitness Slimming Studio",
+        "opening_hours": "5:00-22:00",
+        "phone": "\"096321 55362 \""
+      }
+    },
+    {
+      "type": "node",
+      "id": 6947707895,
+      "lat": 12.9862161,
+      "lon": 77.5374853,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "# 52 /10 80 Ft Road, Khb Colony Basaveshwaranagar",
+        "addr:postcode": "560079",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "email": "support@punyahospitals.com",
+        "healthcare": "hospital",
+        "name": "Punya Hospital, Bengaluru Urban",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "https://punyahospitals.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526695,
+      "lat": 12.9794497,
+      "lon": 77.5442417,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Agrahara Dasarahalli, Rajajinagar, Bengaluru",
+        "addr:postcode": "560079",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Adarsha Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572526781,
+      "lat": 12.9794315,
+      "lon": 77.5441641,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Agrahara Dasarahalli, Rajajinagar, Bengaluru",
+        "addr:postcode": "560010",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Ammashrees Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9161008239,
+      "lat": 12.9824636,
+      "lon": 77.5375074,
+      "tags": {
+        "name": "Daily Needs Exim Pvt. Ltd.",
+        "office": "company",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9161008291,
+      "lat": 12.9820356,
+      "lon": 77.5373867,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "name": "Union Bank of India",
+        "name:kn": "ಯೂನಿಯನ್ ಬ್ಯಾಂಕ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9161008304,
+      "lat": 12.987796,
+      "lon": 77.537777,
+      "tags": {
+        "brand": "cult.fit",
+        "brand:wikidata": "Q121289250",
+        "leisure": "fitness_centre",
+        "name": "cult.fit",
+        "operator": "cult.fit"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9163088408,
+      "lat": 12.9873836,
+      "lon": 77.5386851,
+      "tags": {
+        "amenity": "language_school",
+        "email": "enquiry@sayuri.co.in",
+        "name": "Sayuri",
+        "phone": "+91 99 006 31710",
+        "website": "https://sayuri.co.in/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169719304,
+      "center": {
+        "lat": 12.983033,
+        "lon": 77.5376807
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Government Homeopathy College & Hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169801514,
+      "center": {
+        "lat": 12.9803798,
+        "lon": 77.5390159
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#11/2, Magadi Main Road ,Agrahara , Dasarahalli,Next To Raheja Park",
+        "addr:postcode": "560079",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Sarvodaya Hospital",
+        "name:kn": "ಸರ್ವೋದಯ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169801559,
+      "center": {
+        "lat": 12.9819702,
+        "lon": 77.5379822
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 255543238,
+      "center": {
+        "lat": 12.9863176,
+        "lon": 77.5384952
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363145084,
+      "center": {
+        "lat": 12.9845464,
+        "lon": 77.541172
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Basava Park",
+        "name:kn": "ಬಸವ ಉದ್ಯಾನವನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1206776988,
+      "center": {
+        "lat": 12.9841866,
+        "lon": 77.5398134
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339066328,
+      "center": {
+        "lat": 12.9788943,
+        "lon": 77.5416146
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    }
+  ]
+}

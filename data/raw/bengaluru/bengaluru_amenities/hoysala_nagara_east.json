@@ -1,0 +1,529 @@
+{
+  "area_name": "Hoysala Nagara East",
+  "osm_id": 19884599,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 38,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1469636440,
+      "lat": 13.015204,
+      "lon": 77.6661513,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:ks": "ڈومینوز",
+        "brand:pa": "ਡੋਮੀਨੋਜ਼",
+        "brand:ur": "ڈومینوز",
+        "brand:wikidata": "Q839466",
+        "brand:wikipedia": "en:Domino's Pizza",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "name:ks": "ڈومینوز",
+        "name:pa": "ਡੋਮੀਨੋਜ਼",
+        "name:ur": "ڈومینوز",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469637252,
+      "lat": 13.0156682,
+      "lon": 77.6673107,
+      "tags": {
+        "name": "Brinda's Beauty Parlour",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1724416882,
+      "lat": 13.0148188,
+      "lon": 77.6653699,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Ayur Seva Hospital",
+        "name:en": "Ayur Vaid Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1725094661,
+      "lat": 13.0198131,
+      "lon": 77.666082,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganesha temple",
+        "name:kn": "ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1760694168,
+      "lat": 13.0150155,
+      "lon": 77.6658693,
+      "tags": {
+        "amenity": "atm",
+        "fee": "ICICI Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1760701663,
+      "lat": 13.020966,
+      "lon": 77.6662986,
+      "tags": {
+        "amenity": "atm",
+        "fee": "HDFC BANK ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1760703149,
+      "lat": 13.023316,
+      "lon": 77.6647121,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Hanuman Temple",
+        "name:kn": "ಹನುಮಂತ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1760703805,
+      "lat": 13.0215562,
+      "lon": 77.6662295,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Om Shakti Temple",
+        "name:kn": "ಓಂ ಶಕ್ತಿ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1761862415,
+      "lat": 13.015385,
+      "lon": 77.666733,
+      "tags": {
+        "name": "Smart Supermart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489771934,
+      "lat": 13.0200635,
+      "lon": 77.6741205,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "9",
+        "addr:postcode": "560016",
+        "addr:street": "Ramamurthi Nagar Main Road",
+        "name": "Hair Do Salon And Spa",
+        "opening_hours": "09:00-21:30",
+        "phone": "076763 55553",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489857891,
+      "lat": 13.0158391,
+      "lon": 77.6671436,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560016",
+        "addr:street": "Thambu Chetty Palya Main Rd, Bhadrappa Layout, M Vishveshvaraiah Nagar, Horamavu",
+        "leisure": "sports_centre",
+        "name": "Pulse Fitness",
+        "opening_hours": "05:30-21:30",
+        "phone": "8039510660",
+        "sport": "gymnastics",
+        "website": "https://www.gympik.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489912602,
+      "lat": 13.0152989,
+      "lon": 77.6663585,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "46",
+        "addr:postcode": "560016",
+        "addr:street": "7th Main,T C Palya Main Road,Hoysala Nagar",
+        "name": "Brindas Beauty Clinic And Academy",
+        "opening_hours": "09:00-21:00",
+        "phone": "080-33083089",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489968461,
+      "lat": 13.021991,
+      "lon": 77.6620866,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "326",
+        "addr:postcode": "560043",
+        "addr:street": "Hrbr layout",
+        "name": "Magic Mirror Unisex Spa & Salon",
+        "opening_hours": "09:00-21:00",
+        "phone": "080 2542 0424",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5019270023,
+      "lat": 13.0197834,
+      "lon": 77.673589,
+      "tags": {
+        "amenity": "bank",
+        "name:en": "HDFC BANK"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5019270024,
+      "lat": 13.0197152,
+      "lon": 77.6734719,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7",
+        "operator": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6938651815,
+      "lat": 13.0204141,
+      "lon": 77.6735102,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Raghavendra Circle, Near Navajyothi Public School, T.C. Palya Main Road, Ramamurthynagar",
+        "addr:postcode": "560016",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Amma Poly Clinic and Materinity Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6944274074,
+      "lat": 13.0139247,
+      "lon": 77.6640775,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No. 16, Hoysala Nagar, Maruti Complex, Ramamurthy Nagar Extension",
+        "addr:postcode": "560016",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Ayurseva Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7572131821,
+      "lat": 13.0258249,
+      "lon": 77.6604922,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "Kalkere Main Road, Horamavu, Bengaluru",
+        "addr:postcode": "560113",
+        "addr:state": "Karnataka",
+        "amenity": "clinic",
+        "name": "Arjun's Child Care Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10146571049,
+      "lat": 13.0117554,
+      "lon": 77.6729536,
+      "tags": {
+        "brand": "Zudio",
+        "brand:wikidata": "Q123375926",
+        "name": "Zudio",
+        "shop": "clothes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12538036889,
+      "lat": 13.0276892,
+      "lon": 77.6624314,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:postcode": "560043",
+        "addr:street": "Horamavu Main Rd, Ashirvad Colony, Horamavu",
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12985410880,
+      "lat": 13.0265206,
+      "lon": 77.6658185,
+      "tags": {
+        "addr:floor": "G",
+        "amenity": "place_of_worship",
+        "check_date": "2025-07-07",
+        "level": "0",
+        "name": "Sri Chamundeswari Temple",
+        "name:en": "Sri Chamundeswari Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 914903730,
+      "center": {
+        "lat": 13.0168292,
+        "lon": 77.669325
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560016",
+        "addr:street": "Venkataswamy Reddy layout, Thambu Chetty Palya Main Rd, 2nd Block, Garden Street Layout, Pappamma Layout, Ramamurthy Nagar",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Sri Yoga Ganapathi Temple",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1046070713,
+      "center": {
+        "lat": 13.0153822,
+        "lon": 77.6650789
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "1-8",
+        "addr:postcode": "560016",
+        "addr:street": "3rd Main Road",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "building:levels": "4",
+        "denomination": "pentecostal",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bae11ab821a75d1%3A0xdbc64bb7140dd00e!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPFd3rnzlFerkRpUTaZgooePNYo3d1l5c4eRwYM%3Dw426-h240-k-no!5sadonaichurch%20-%20Google%20Search!15sCgIgARICEAE&imagek",
+        "name": "Adonai Church",
+        "religion": "christian",
+        "service_times": "Sunday 10:00 - 13:00",
+        "smoking": "no",
+        "website": "https://adonaichurch.in"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1324924811,
+      "center": {
+        "lat": 13.0280364,
+        "lon": 77.6642559
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "regional;south_indian",
+        "diet:vegetarian": "yes",
+        "name": "Udupi Gardenia Jayantinagar",
+        "source": "microsoft/BuildingFootprints"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410389141,
+      "center": {
+        "lat": 13.0154238,
+        "lon": 77.6664847
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum",
+        "operator": "Bharat Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410389181,
+      "center": {
+        "lat": 13.0118087,
+        "lon": 77.6726236
+      },
+      "tags": {
+        "addr:street": "93, Ramamurthy Nagar Main Road",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "name": "Shell Petrol Bunk",
+        "name:kn": "ಶೆಲ್",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411371945,
+      "center": {
+        "lat": 13.0135506,
+        "lon": 77.6728989
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411408712,
+      "center": {
+        "lat": 13.0197161,
+        "lon": 77.6733173
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Chaitanya E-Techno School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411461369,
+      "center": {
+        "lat": 13.019036,
+        "lon": 77.674054
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "Lotus Convention Centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1423880504,
+      "center": {
+        "lat": 13.0154809,
+        "lon": 77.6642056
+      },
+      "tags": {
+        "amenity": "theatre",
+        "landuse": "commercial",
+        "name": "Natyapriya's Nruthyakshetra School of Performing Arts"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1423880505,
+      "center": {
+        "lat": 13.0160783,
+        "lon": 77.6638777
+      },
+      "tags": {
+        "amenity": "college",
+        "landuse": "education",
+        "name": "Havnur College of Law"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1423880520,
+      "center": {
+        "lat": 13.0155533,
+        "lon": 77.6636491
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1423887067,
+      "center": {
+        "lat": 13.0203776,
+        "lon": 77.6656371
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1424040539,
+      "center": {
+        "lat": 13.018196,
+        "lon": 77.6696421
+      },
+      "tags": {
+        "amenity": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1424040646,
+      "center": {
+        "lat": 13.0208322,
+        "lon": 77.663039
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1424040647,
+      "center": {
+        "lat": 13.0210729,
+        "lon": 77.6642644
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1424040648,
+      "center": {
+        "lat": 13.0214293,
+        "lon": 77.6643388
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1425204394,
+      "center": {
+        "lat": 13.0203726,
+        "lon": 77.6656727
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    }
+  ]
+}

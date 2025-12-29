@@ -1,0 +1,291 @@
+{
+  "area_name": "6th Block",
+  "osm_id": 11594317105,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 23,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4520785491,
+      "lat": 12.9617879,
+      "lon": 77.4727085,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Federal Bank",
+        "brand:wikidata": "Q2044983",
+        "brand:wikipedia": "en:Federal Bank",
+        "name": "Federal Bank",
+        "name:en": "Federal Bank",
+        "name:kn": "ಫೆಡೆರಲ್ ಬ್ಯಾಂಕ್",
+        "website": "https://www.federalbank.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7202935821,
+      "lat": 12.9629127,
+      "lon": 77.4751834,
+      "tags": {
+        "addr:district": "Bangalore",
+        "addr:full": "Sir M Vishweshwaraiah Layout 6th Block, Ullal Uppanagar",
+        "addr:postcode": "560056",
+        "addr:state": "Karnataka",
+        "addr:subdistrict": "Bangalore North",
+        "amenity": "hospital",
+        "name": "Ullalu Government Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11536084641,
+      "lat": 12.9592695,
+      "lon": 77.482792,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11536084642,
+      "lat": 12.9594138,
+      "lon": 77.4808374,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089402755,
+      "lat": 12.9525606,
+      "lon": 77.477533,
+      "tags": {
+        "amenity": "fuel",
+        "fuel:diesel": "yes",
+        "fuel:petrol": "yes",
+        "name": "Dream Fuel Junction",
+        "opening_hours": "06:00-23:00",
+        "survey:date": "2024-08-03"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089426446,
+      "lat": 12.9543846,
+      "lon": 77.4809848,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Veera Anjaneya Swamy Temple",
+        "religion": "hindu",
+        "survey:date": "2024-08-03"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089426447,
+      "lat": 12.9542442,
+      "lon": 77.4798007,
+      "tags": {
+        "amenity": "events_venue",
+        "name": "Kodagu Gowda Samaja",
+        "phone": "+91 80882 01592",
+        "survey:date": "2024-08-03"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12089426448,
+      "lat": 12.9564191,
+      "lon": 77.4790448,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "name": "Indian Oil",
+        "opening_hours": "05:00-22:00",
+        "survey:date": "2024-08-03"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362916463,
+      "center": {
+        "lat": 12.9524677,
+        "lon": 77.4798968
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vishveshwaraiah Layout 5th Block Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241557236,
+      "center": {
+        "lat": 12.9594509,
+        "lon": 77.4820429
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241560541,
+      "center": {
+        "lat": 12.9558074,
+        "lon": 77.4762626
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vishveshwaraiah Layout 6th Block Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241560542,
+      "center": {
+        "lat": 12.9628861,
+        "lon": 77.4767231
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Karnataka Institute of Leather & Fashion Techology"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241561474,
+      "center": {
+        "lat": 12.9563911,
+        "lon": 77.4790721
+      },
+      "tags": {
+        "amenity": "fuel",
+        "layer": "1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241561480,
+      "center": {
+        "lat": 12.9621475,
+        "lon": 77.4791379
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1262097992,
+      "center": {
+        "lat": 12.9667681,
+        "lon": 77.4722704
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Hill Rock National Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286755338,
+      "center": {
+        "lat": 12.9653436,
+        "lon": 77.4743957
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286755339,
+      "center": {
+        "lat": 12.9652711,
+        "lon": 77.4748544
+      },
+      "tags": {
+        "amenity": "clinic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286755357,
+      "center": {
+        "lat": 12.9600475,
+        "lon": 77.4777389
+      },
+      "tags": {
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1360543548,
+      "center": {
+        "lat": 12.9526519,
+        "lon": 77.4740665
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1360543549,
+      "center": {
+        "lat": 12.95387,
+        "lon": 77.4741557
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1360543550,
+      "center": {
+        "lat": 12.9538046,
+        "lon": 77.4772844
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410065956,
+      "center": {
+        "lat": 12.9521156,
+        "lon": 77.4729597
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1428274268,
+      "center": {
+        "lat": 12.9643667,
+        "lon": 77.4843286
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "120;121;122",
+        "addr:postcode": "560091",
+        "addr:street": "RR Residency Layout",
+        "leisure": "park",
+        "name": "RR Park",
+        "opening_hours": "Mo-Su 10:00-20:00"
+      }
+    }
+  ]
+}

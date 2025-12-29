@@ -1,0 +1,1318 @@
+{
+  "area_name": "Goraguntepalya",
+  "osm_id": 19884534,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 104,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 608958463,
+      "lat": 13.0218399,
+      "lon": 77.5349348,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sher-e-Punjab Dhaba",
+        "name:kn": "ಶೇರಿಪಂಜಾಬ್ ಡಾಬ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 608958478,
+      "lat": 13.0272382,
+      "lon": 77.5390972,
+      "tags": {
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 608958488,
+      "lat": 13.0273846,
+      "lon": 77.5388289,
+      "tags": {
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 608958604,
+      "lat": 13.0274578,
+      "lon": 77.5386787,
+      "tags": {
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 608958729,
+      "lat": 13.0273219,
+      "lon": 77.5389577,
+      "tags": {
+        "amenity": "fast_food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 608959102,
+      "lat": 13.0266571,
+      "lon": 77.5391304,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Raju Samosa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610336681,
+      "lat": 13.0220281,
+      "lon": 77.5340657,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Adarsh Dhaba",
+        "name:kn": "ಆದರ್ಶ ಡಾಬ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473004837,
+      "lat": 13.0238021,
+      "lon": 77.5494737,
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473014762,
+      "lat": 13.0271417,
+      "lon": 77.5438625,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel Prabha International",
+        "name:kn": "ಹೋಟೆಲ್ ಪ್ರಭಾ ಇಂಟರ್‌ನ್ಯಾಶನಲ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473023593,
+      "lat": 13.0275337,
+      "lon": 77.5397051,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No. 35/6, Industrial Suburb, Goragunte Palya, Yashwantpur",
+        "addr:postcode": "560022",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Mysore Hospital",
+        "name:kn": "ಮೈಸೂರು ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473023915,
+      "lat": 13.027027,
+      "lon": 77.539442,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Prakash Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1572644025,
+      "lat": 13.0235615,
+      "lon": 77.5507008,
+      "tags": {
+        "amenity": "parking",
+        "name": "Yeswantapur Station Parking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580632674,
+      "lat": 13.0225825,
+      "lon": 77.551512,
+      "tags": {
+        "amenity": "toilets",
+        "fee": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580635076,
+      "lat": 13.0233826,
+      "lon": 77.5508348,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580635077,
+      "lat": 13.0234202,
+      "lon": 77.5508174,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "name:kn": "ಭಾರತೀಯ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580635078,
+      "lat": 13.0233507,
+      "lon": 77.550854,
+      "tags": {
+        "amenity": "atm",
+        "name": "Union Bank",
+        "name:kn": "ಯೂನಿಯನ್ ಬ್ಯಾಂಕ್",
+        "operator": "Union Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1580635863,
+      "lat": 13.0241157,
+      "lon": 77.5504265,
+      "tags": {
+        "access": "customers",
+        "amenity": "parking_space",
+        "covered": "yes",
+        "fee": "yes",
+        "lit": "yes",
+        "name": "2-Wheeler Parking",
+        "opening_hours": "24/7",
+        "parking": "surface",
+        "supervised": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3400223742,
+      "lat": 13.0244173,
+      "lon": 77.5489753,
+      "tags": {
+        "alt_name": "Kentucky Fried Chicken",
+        "alt_name:en": "Kentucky Fried Chicken",
+        "alt_name:hi": "केंटुकी फ्राइड चिकन",
+        "alt_name:pa": "ਕੈਂਟੁਕੀ ਫ੍ਰਾਈਡ ਚਿਕਨ",
+        "alt_name:pnb": "کینٹکی فرائیڈ چکن",
+        "alt_name:ur": "کینٹکی فرائیڈ چکن",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:en": "KFC",
+        "brand:hi": "केएफसी",
+        "brand:pa": "ਕੇਐਫਸੀ",
+        "brand:pnb": "کے ایف سی",
+        "brand:ur": "کے ایف سی",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:wikipedia:pa": "ਕੇਐਫਸੀ",
+        "brand:wikipedia:ur": "کینٹکی فرائیڈ چکن",
+        "cuisine": "chicken",
+        "indoor_seating": "yes",
+        "name": "KFC",
+        "name:en": "KFC",
+        "name:hi": "केएफसी",
+        "name:kn": "ಕೆಎಫ್‍ಸಿ",
+        "name:pa": "ਕੇਐਫਸੀ",
+        "name:pnb": "کے ایف سی",
+        "name:ur": "کے ایف سی",
+        "outdoor_seating": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4027308246,
+      "lat": 13.0247172,
+      "lon": 77.5483657,
+      "tags": {
+        "brand": "More",
+        "brand:wikidata": "Q6910891",
+        "name": "More",
+        "name:kn": "ಮೋರ್",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489295822,
+      "lat": 13.0246952,
+      "lon": 77.5342433,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560022",
+        "addr:street": "No 103, II Stage Industrial Suburb, Yeshwanthpur, Yeshwanthpur, M S K Nagar, Yesvantpur Industrial Suburb",
+        "name": "Powersport India Avt Water Sport",
+        "opening_hours": "10:00-21:30",
+        "phone": "098450 26245",
+        "shop": "sports",
+        "website": "https://powersport.net.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489833618,
+      "lat": 13.0190488,
+      "lon": 77.5315045,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "No.243",
+        "addr:postcode": "560067",
+        "addr:street": "3rd Cross Road",
+        "name": "Dudez Saloon And Spa",
+        "phone": "+919945974591",
+        "shop": "beauty"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5714418132,
+      "lat": 13.0248469,
+      "lon": 77.5484619,
+      "tags": {
+        "amenity": "cinema",
+        "brand": "PVR Cinemas",
+        "brand:wikidata": "Q3359908",
+        "cinema:3D": "yes",
+        "name": "PVR Cinemas",
+        "phone": "080-28078100",
+        "screen": "6",
+        "short_name": "PVR"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5714418133,
+      "lat": 13.0245352,
+      "lon": 77.5487375,
+      "tags": {
+        "name": "Unlimited",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6285710086,
+      "lat": 13.0231091,
+      "lon": 77.5506642,
+      "tags": {
+        "amenity": "toilets",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6285723685,
+      "lat": 13.0240498,
+      "lon": 77.5506756,
+      "tags": {
+        "amenity": "fast_food",
+        "indoor_seating": "no",
+        "name": "Kadamba Fast Food",
+        "outdoor_seating": "no",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6285734402,
+      "lat": 13.0234299,
+      "lon": 77.5509897,
+      "tags": {
+        "amenity": "restaurant",
+        "indoor_seating": "yes",
+        "name": "Dakshen Veg Restaurant",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6654524745,
+      "lat": 13.0288117,
+      "lon": 77.5436617,
+      "tags": {
+        "leisure": "fitness_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6654524746,
+      "lat": 13.0286575,
+      "lon": 77.543415,
+      "tags": {
+        "amenity": "library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6654524747,
+      "lat": 13.0289162,
+      "lon": 77.5435142,
+      "tags": {
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6654524748,
+      "lat": 13.0286581,
+      "lon": 77.5436007,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9114716555,
+      "lat": 13.0271469,
+      "lon": 77.5394738,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "New Mangaluru Lynch Home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9912087567,
+      "lat": 13.0186371,
+      "lon": 77.5536101,
+      "tags": {
+        "amenity": "toilets",
+        "fee": "no",
+        "operator": "BBMP"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10105851144,
+      "lat": 13.0286206,
+      "lon": 77.5437151,
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10105851150,
+      "lat": 13.0282211,
+      "lon": 77.5437053,
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10105851161,
+      "lat": 13.0291141,
+      "lon": 77.5433251,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "steel",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10105851162,
+      "lat": 13.0291037,
+      "lon": 77.5433654,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "steel",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10105851163,
+      "lat": 13.0291344,
+      "lon": 77.5433747,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "steel",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10105851164,
+      "lat": 13.0291449,
+      "lon": 77.5433338,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "material": "steel",
+        "seats": "3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10105851165,
+      "lat": 13.0291645,
+      "lon": 77.5432326,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10216203915,
+      "lat": 13.0247023,
+      "lon": 77.5487874,
+      "tags": {
+        "amenity": "pub",
+        "microbrewery": "yes",
+        "name": "Byg Brewski"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11034537972,
+      "lat": 13.0295172,
+      "lon": 77.5412209,
+      "tags": {
+        "access": "customers",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11034537981,
+      "lat": 13.0294891,
+      "lon": 77.543653,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12016136802,
+      "lat": 13.027001,
+      "lon": 77.5425776,
+      "tags": {
+        "amenity": "charging_station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12017326334,
+      "lat": 13.0266801,
+      "lon": 77.5448613,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "check_date": "2024-06-28",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12054463594,
+      "lat": 13.0272542,
+      "lon": 77.545829,
+      "tags": {
+        "access": "private",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12193936415,
+      "lat": 13.0268613,
+      "lon": 77.5471885,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12193936421,
+      "lat": 13.0264905,
+      "lon": 77.5467425,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12193936425,
+      "lat": 13.0270095,
+      "lon": 77.5472402,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12193936429,
+      "lat": 13.0269132,
+      "lon": 77.5460427,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12193941187,
+      "lat": 13.0250919,
+      "lon": 77.5487295,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12193941189,
+      "lat": 13.0247062,
+      "lon": 77.5497556,
+      "tags": {
+        "amenity": "parking_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12518207463,
+      "lat": 13.026743,
+      "lon": 77.5446928,
+      "tags": {
+        "addr:floor": "G",
+        "brand": "Cromā",
+        "brand:wikidata": "Q5187683",
+        "check_date": "2025-01-20",
+        "level": "0",
+        "name": "Cromā",
+        "shop": "electronics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12525787380,
+      "lat": 13.028586,
+      "lon": 77.5406946,
+      "tags": {
+        "access": "customers",
+        "amenity": "toilets",
+        "level": "1",
+        "name": "Metro Toilet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12526540973,
+      "lat": 13.0278996,
+      "lon": 77.5420511,
+      "tags": {
+        "amenity": "taxi",
+        "name": "Rickshaw Stand",
+        "taxi_vehicle": "auto_rickshaw"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12526733161,
+      "lat": 13.0281963,
+      "lon": 77.5414469,
+      "tags": {
+        "amenity": "taxi",
+        "name": "Bike Taxi Pickup",
+        "taxi_vehicle": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12531311306,
+      "lat": 13.0266999,
+      "lon": 77.5392993,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Ami Tea Stall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12832854232,
+      "lat": 13.0325256,
+      "lon": 77.5409051,
+      "tags": {
+        "name": "Liquor Shop",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12916771471,
+      "lat": 13.0254338,
+      "lon": 77.5424182,
+      "tags": {
+        "addr:postcode": "560022",
+        "addr:street": "Service road to MEI Road",
+        "charge": "800 INR",
+        "email": "contact@playpickle.in",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "mobile": "+91-9663682245",
+        "name": "Play Pickle",
+        "opening_hours": "24/7",
+        "phone": "+919663682245",
+        "sport": "pickleball",
+        "website": "https://playpickle.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13277046524,
+      "lat": 13.0235213,
+      "lon": 77.5497316,
+      "tags": {
+        "amenity": "charging_station",
+        "capacity": "12",
+        "charging_station:battery_swapping": "yes",
+        "fee": "yes",
+        "level": "0",
+        "motorcar": "no",
+        "motorcycle": "yes",
+        "name": "Honda e:swap",
+        "operator": "Honda e:swap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13277046525,
+      "lat": 13.0235317,
+      "lon": 77.5497115,
+      "tags": {
+        "amenity": "charging_station",
+        "capacity": "12",
+        "charging_station:battery_swapping": "yes",
+        "fee": "yes",
+        "level": "0",
+        "motorcar": "no",
+        "motorcycle": "yes",
+        "name": "Honda e:swap",
+        "operator": "Honda e:swap"
+      }
+    },
+    {
+      "type": "way",
+      "id": 46922187,
+      "center": {
+        "lat": 13.0237647,
+        "lon": 77.5312839
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Foremen Training Institute - FTI"
+      }
+    },
+    {
+      "type": "way",
+      "id": 245016872,
+      "center": {
+        "lat": 13.0303122,
+        "lon": 77.5444258
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:street": "Raghavendra Rao Road",
+        "addr:suburb": "Yeshwantpura",
+        "amenity": "school",
+        "name": "National Public School Yeshwantpur",
+        "name:kn": "ರಾಷ್ಟ್ರೀಯ ಸಾರ್ವಜನಿಕ ಶಾಲೆ",
+        "operator": "National Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 255666698,
+      "center": {
+        "lat": 13.0244812,
+        "lon": 77.5502761
+      },
+      "tags": {
+        "amenity": "parking",
+        "name": "Yeswantapur Station Parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346503502,
+      "center": {
+        "lat": 13.0288615,
+        "lon": 77.5425755
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "RNS Ganesh Temple",
+        "name:kn": "RNS ಗಣೇಶ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346503525,
+      "center": {
+        "lat": 13.0246252,
+        "lon": 77.5487524
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:country": "IN",
+        "addr:housenumber": "9/36",
+        "addr:place": "Yeshwanthpur",
+        "addr:postcode": "560022",
+        "addr:street": "Tumkur Road",
+        "building": "yes",
+        "email": "info@sapphirecentre.com",
+        "name": "Vaishnavi Sapphire Centre",
+        "opening_hours": "09:00-23:00",
+        "phone": "080-29724422",
+        "shop": "mall",
+        "toilets": "yes",
+        "website": "https://www.sapphirecentre.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346866570,
+      "center": {
+        "lat": 13.0194971,
+        "lon": 77.539281
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Taran Sagar Restaurant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 408938058,
+      "center": {
+        "lat": 13.0252331,
+        "lon": 77.5474851
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "compressed_air": "yes",
+        "name": "Shell",
+        "name:kn": "ಶೆಲ್",
+        "operator": "Shell"
+      }
+    },
+    {
+      "type": "way",
+      "id": 665234772,
+      "center": {
+        "lat": 13.028452,
+        "lon": 77.5421946
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 665234779,
+      "center": {
+        "lat": 13.030208,
+        "lon": 77.5445991
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 674362377,
+      "center": {
+        "lat": 13.0277509,
+        "lon": 77.5429924
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560022",
+        "addr:street": "Tumkur Road",
+        "amenity": "hospital",
+        "name": "Sparsh Hospital",
+        "name:kn": "ಸ್ಪರ್ಶ್ ಆಸ್ಪತ್ರೆ",
+        "phone": "00919019108108",
+        "website": "https://www.sparshhospital.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 708190893,
+      "center": {
+        "lat": 13.0286568,
+        "lon": 77.5429644
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 708190895,
+      "center": {
+        "lat": 13.0287451,
+        "lon": 77.5432306
+      },
+      "tags": {
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 780917613,
+      "center": {
+        "lat": 13.0153552,
+        "lon": 77.5543271
+      },
+      "tags": {
+        "garden:style": "landscaping",
+        "leisure": "garden",
+        "traffic_calming": "island"
+      }
+    },
+    {
+      "type": "way",
+      "id": 781532338,
+      "center": {
+        "lat": 13.0223186,
+        "lon": 77.5330653
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum",
+        "name:kn": "ಭಾರತ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "operator": "Bharat Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 996044807,
+      "center": {
+        "lat": 13.0159004,
+        "lon": 77.5553757
+      },
+      "tags": {
+        "amenity": "recycling",
+        "building": "yes",
+        "name": "BBMP Waste Collection Center",
+        "recycling_type": "centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1034859475,
+      "center": {
+        "lat": 13.0159833,
+        "lon": 77.5542584
+      },
+      "tags": {
+        "garden:style": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1081463157,
+      "center": {
+        "lat": 13.0271679,
+        "lon": 77.5443832
+      },
+      "tags": {
+        "landuse": "commercial",
+        "leisure": "sports_centre",
+        "name": "Sports Habitat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820285,
+      "center": {
+        "lat": 13.027364,
+        "lon": 77.5465062
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1087820286,
+      "center": {
+        "lat": 13.0269028,
+        "lon": 77.5473937
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1095188787,
+      "center": {
+        "lat": 13.0230672,
+        "lon": 77.5508264
+      },
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1104353538,
+      "center": {
+        "lat": 13.0284806,
+        "lon": 77.5436325
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "badminton"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1104353540,
+      "center": {
+        "lat": 13.0282683,
+        "lon": 77.5430161
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1104353541,
+      "center": {
+        "lat": 13.0282099,
+        "lon": 77.542552
+      },
+      "tags": {
+        "landuse": "commercial",
+        "name": "RNS Motors",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1188328500,
+      "center": {
+        "lat": 13.0296654,
+        "lon": 77.5435844
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1188328502,
+      "center": {
+        "lat": 13.0295289,
+        "lon": 77.5441985
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1212235840,
+      "center": {
+        "lat": 13.0285713,
+        "lon": 77.5400769
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Ganapathi Temple",
+        "name:kn": "ಶಿವ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280619026,
+      "center": {
+        "lat": 13.0249864,
+        "lon": 77.530936
+      },
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "ESI Hospital Peenya",
+        "operator": "Employees' State Insurance",
+        "operator:short": "ESI",
+        "operator:wikidata": "Q3595726"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280805516,
+      "center": {
+        "lat": 13.0290263,
+        "lon": 77.5414845
+      },
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1293792961,
+      "center": {
+        "lat": 13.0234697,
+        "lon": 77.5504813
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1293792962,
+      "center": {
+        "lat": 13.0236888,
+        "lon": 77.5501044
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294790822,
+      "center": {
+        "lat": 13.0272712,
+        "lon": 77.5434423
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "compressed_air": "yes",
+        "landuse": "commercial",
+        "name": "Hindustan Petroleum",
+        "name:kn": "ಹಿಂದುಸ್ತಾನ್ ಪೆಟ್ರೋಲಿಯಂ",
+        "official_name": "Hindustan Petroleum"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297380180,
+      "center": {
+        "lat": 13.0292162,
+        "lon": 77.5411999
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301433609,
+      "center": {
+        "lat": 13.0269302,
+        "lon": 77.5479705
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "swimming_pool"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301433610,
+      "center": {
+        "lat": 13.0267978,
+        "lon": 77.5473626
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301433611,
+      "center": {
+        "lat": 13.0269315,
+        "lon": 77.5476254
+      },
+      "tags": {
+        "access": "permissive",
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1326186062,
+      "center": {
+        "lat": 13.0273062,
+        "lon": 77.545148
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1326186063,
+      "center": {
+        "lat": 13.0263338,
+        "lon": 77.5449993
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1326186064,
+      "center": {
+        "lat": 13.0265775,
+        "lon": 77.5446015
+      },
+      "tags": {
+        "garden:type": "landscaping",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1326186065,
+      "center": {
+        "lat": 13.0266243,
+        "lon": 77.5446832
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1352492184,
+      "center": {
+        "lat": 13.0303345,
+        "lon": 77.5445914
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1352492185,
+      "center": {
+        "lat": 13.0301571,
+        "lon": 77.5445322
+      },
+      "tags": {
+        "access": "private",
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1352492186,
+      "center": {
+        "lat": 13.030434,
+        "lon": 77.542289
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1361492556,
+      "center": {
+        "lat": 13.0266683,
+        "lon": 77.5466615
+      },
+      "tags": {
+        "access": "private",
+        "amenity": "parking",
+        "orientation": "perpendicular",
+        "parking": "street_side"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1455732017,
+      "center": {
+        "lat": 13.0299617,
+        "lon": 77.543211
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "area_name": "Mallasandra",
+  "osm_id": 19883469,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 19,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4447110199,
+      "lat": 13.0532902,
+      "lon": 77.5124539,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "353/2",
+        "addr:postcode": "560022",
+        "addr:street": "1st Main Road, Near-S K Jewellers, Yeshwanthpur, Bengaluru",
+        "amenity": "pharmacy",
+        "phone": "080 2347 2268",
+        "source": "www.justdial.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11668786472,
+      "lat": 13.0599602,
+      "lon": 77.5179073,
+      "tags": {
+        "addr:city": "Shettihalli, Jalahalli West, Bangalore 15",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "1 St floor, RR plaza",
+        "addr:postcode": "560015",
+        "addr:street": "above D needs supermarket",
+        "leisure": "fitness_centre",
+        "name": "Plyo Fit",
+        "opening_hours": "Mo-Sa 5:30 AM-12:30 AM",
+        "phone": "+918138050845",
+        "sport": "fitness;yoga;gymnastics;exercise",
+        "website": "https://plyofit.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12245693286,
+      "lat": 13.0607346,
+      "lon": 77.5070422,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37238703,
+      "center": {
+        "lat": 13.0563934,
+        "lon": 77.5134138
+      },
+      "tags": {
+        "alt_name": "Mallasandra Fort Park",
+        "disused:landuse": "quarry",
+        "historic": "fort",
+        "historic:name": "Mallasandra Fort",
+        "leisure": "park",
+        "loc_name": "Mallsandra Gudde",
+        "name": "Naadaprabhu Kempegowda Park, Mallasandra",
+        "old_name": "Jalahalli Quarry",
+        "old_name:kn": "ಜಾಲಹಳ್ಳಿ ಕಲ್ಲುಗಣಿ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726174388,
+      "center": {
+        "lat": 13.059074,
+        "lon": 77.5076931
+      },
+      "tags": {
+        "addr:street": "Hesaraghatta Main Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mallasandra Bus Station",
+        "name:kn": "ಮಲ್ಲಸಂದ್ರ",
+        "operator": "BMTC",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726175245,
+      "center": {
+        "lat": 13.0588898,
+        "lon": 77.5081641
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:housenumber": "5052",
+        "addr:postcode": "560015",
+        "addr:street": "Pipeline Rd, Rangappa Layout, Mallasandra, Jalahalli West",
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "building": "commercial",
+        "cuisine": "south_indian",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 726190880,
+      "center": {
+        "lat": 13.057066,
+        "lon": 77.508511
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#18-23, Maliasandra Main Road,4Th & 5Th Cross, Bagalagunte,Hesaraghatta Road",
+        "addr:postcode": "560057",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "building": "commercial",
+        "name": "Arunodaya Hospitals",
+        "name:kn": "ಅರುಣೋದಯ ಆಸ್ಪತ್ರೆ",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785271579,
+      "center": {
+        "lat": 13.0600344,
+        "lon": 77.5072697
+      },
+      "tags": {
+        "brand": "DMart",
+        "brand:wikidata": "Q5203271",
+        "landuse": "retail",
+        "name": "DMart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1150947118,
+      "center": {
+        "lat": 13.0553008,
+        "lon": 77.5104917
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Pipeline Park",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:type": "government",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1150947119,
+      "center": {
+        "lat": 13.0517203,
+        "lon": 77.5140491
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Pipeline Park",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:type": "government",
+        "operator:wikidata": "Q4978693"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239012958,
+      "center": {
+        "lat": 13.057432,
+        "lon": 77.5168125
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1263454559,
+      "center": {
+        "lat": 13.0602407,
+        "lon": 77.5074115
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1381021039,
+      "center": {
+        "lat": 13.0601219,
+        "lon": 77.5164032
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Airforce Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1381021040,
+      "center": {
+        "lat": 13.0593505,
+        "lon": 77.5168202
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Narayana e-Techno School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1381021066,
+      "center": {
+        "lat": 13.0576339,
+        "lon": 77.5134279
+      },
+      "tags": {
+        "amenity": "theatre",
+        "name": "Yadunandana Bayalu Ranga Mandira",
+        "theatre:type": "amphi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1381022434,
+      "center": {
+        "lat": 13.0590816,
+        "lon": 77.5167897
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1381022435,
+      "center": {
+        "lat": 13.059651,
+        "lon": 77.5168988
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443414771,
+      "center": {
+        "lat": 13.0597237,
+        "lon": 77.50738
+      },
+      "tags": {
+        "addr:street": "Hesaraghetta Main Road",
+        "amenity": "school",
+        "name": "Vijayashree International Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1443414774,
+      "center": {
+        "lat": 13.0588071,
+        "lon": 77.5198553
+      },
+      "tags": {
+        "amenity": "school"
+      }
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "area_name": "Raghavendra Colony",
+  "osm_id": 646342132,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 20,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 3742208086,
+      "lat": 13.0615669,
+      "lon": 77.5311976,
+      "tags": {
+        "amenity": "place_of_worship",
+        "note": "Temple Of Goddess Parvati",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187926291,
+      "lat": 13.0719107,
+      "lon": 77.524488,
+      "tags": {
+        "addr:full": "Srikrupa Layout, Abbigere, Abbigere, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "केनरा बैंक",
+        "brand:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "brand:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "brand:pnb": "کینرا بینک",
+        "brand:ur": "کینرا بینک",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "केनरा बैंक",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್",
+        "name:pa": "ਕੇਨਰਾ ਬੈਂਕ",
+        "name:pnb": "کینرا بینک",
+        "name:ur": "کینرا بینک",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8187932023,
+      "lat": 13.0604743,
+      "lon": 77.5313611,
+      "tags": {
+        "addr:full": "115, Kammagondana Halli Main Rd, Kammagondahalli, Jalahalli, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "atm",
+        "name": "Canara Bank ATM",
+        "name:kn": "ಕೆನರಾ ಬ್ಯಾಂಕ್ ಎಟಿಎಂ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188057014,
+      "lat": 13.0724189,
+      "lon": 77.5244541,
+      "tags": {
+        "addr:full": "Srikrupa Layout, Abbigere, Abbigere, Srikrupa Layout, Abbigere, Abbigere, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "restaurant",
+        "name": "Annapoorna Hotel",
+        "name:kn": "ಅಣ್ಣಪೂರ್ಣ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12022141681,
+      "lat": 13.0655657,
+      "lon": 77.5336236,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12116561075,
+      "lat": 13.0681719,
+      "lon": 77.5303835,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel MLV Grand"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12116561076,
+      "lat": 13.0681196,
+      "lon": 77.5304445,
+      "tags": {
+        "amenity": "bank",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "way",
+      "id": 306519175,
+      "center": {
+        "lat": 13.0715856,
+        "lon": 77.5289245
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Abbigere Park",
+        "name:kn": "ಅಬ್ಬಿಗೆರೆ ಉದ್ಯಾನವನ",
+        "note": "Government Maternity center + BBMP Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 306519532,
+      "center": {
+        "lat": 13.0704311,
+        "lon": 77.5289365
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Jindal Government School",
+        "name:kn": "ಜಿಂದಾಲ್ ಸರ್ಕಾರಿ ಶಾಲೆ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 306520068,
+      "center": {
+        "lat": 13.0713713,
+        "lon": 77.527315
+      },
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560090",
+        "addr:street": "Abbigere Pipeline Road",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "vaishnavism",
+        "name": "Rama Temple",
+        "name:kn": "ರಾಮ ದೇವಸ್ಥಾನ",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 628598365,
+      "center": {
+        "lat": 13.0723166,
+        "lon": 77.5244275
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "building:levels": "2",
+        "cuisine": "chinese;regional",
+        "internet_access": "no",
+        "name": "Annapurna Bakery and Sweets",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 628639504,
+      "center": {
+        "lat": 13.0720972,
+        "lon": 77.5301925
+      },
+      "tags": {
+        "amenity": "police",
+        "building:levels": "2",
+        "name": "Gangammagudi Police Station",
+        "name:kn": "ಗಂಗಮ್ಮಗುಡಿ ಆರಕ್ಷಕ ಠಾಣೆ",
+        "name_1": "house"
+      }
+    },
+    {
+      "type": "way",
+      "id": 767631173,
+      "center": {
+        "lat": 13.0597397,
+        "lon": 77.5193173
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584673,
+      "center": {
+        "lat": 13.0649412,
+        "lon": 77.5326224
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Ashoka College"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584676,
+      "center": {
+        "lat": 13.0655317,
+        "lon": 77.5336314
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vishweshwaraiah Enclave Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297584680,
+      "center": {
+        "lat": 13.06583,
+        "lon": 77.5358367
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308078690,
+      "center": {
+        "lat": 13.0580989,
+        "lon": 77.5296647
+      },
+      "tags": {
+        "leisure": "track",
+        "sport": "athletics"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308078711,
+      "center": {
+        "lat": 13.0575939,
+        "lon": 77.5282149
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308078712,
+      "center": {
+        "lat": 13.0574637,
+        "lon": 77.5280251
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308403295,
+      "center": {
+        "lat": 13.0661342,
+        "lon": 77.5302722
+      },
+      "tags": {
+        "amenity": "fuel"
+      }
+    }
+  ]
+}

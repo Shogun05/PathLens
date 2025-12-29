@@ -1,0 +1,36 @@
+{
+  "area_name": "Shakthi Nagar",
+  "osm_id": 19884570,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 2,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 4887964023,
+      "lat": 13.0204879,
+      "lon": 77.6186105,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Masjid Noor ur Rahman",
+        "name:en": "Masjid Noor ur Rahman",
+        "religion": "muslim",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202598203,
+      "center": {
+        "lat": 13.0210609,
+        "lon": 77.618726
+      },
+      "tags": {
+        "amenity": "clinic",
+        "name": "UPHC",
+        "name:kn": "ಗ್ರಾಮಾಂತರ ಪ್ರಾಥಮಿಕ ಆರೋಗ್ಯ ಕೇಂದ್ರ",
+        "operator": "BBMP"
+      }
+    }
+  ]
+}

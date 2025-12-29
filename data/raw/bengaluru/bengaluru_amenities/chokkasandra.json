@@ -1,0 +1,179 @@
+{
+  "area_name": "Chokkasandra",
+  "osm_id": 19883422,
+  "osm_type": "relation",
+  "place_type": "administrative",
+  "amenity_count": 14,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 1464741970,
+      "lat": 13.041276,
+      "lon": 77.5163638,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Agarwal Sweets and Restaurant",
+        "name:kn": "ಅಗರ್‌ವಾಲ್ ಸ್ವೀಟ್ಸ್ ಮತ್ತು ರೆಸ್ಟೋರೆಂಟ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1794669368,
+      "lat": 13.0354184,
+      "lon": 77.5178471,
+      "tags": {
+        "amenity": "fuel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3400223632,
+      "lat": 13.0398651,
+      "lon": 77.5181982,
+      "tags": {
+        "name": "Vinayaka traders",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4717617504,
+      "lat": 13.0408128,
+      "lon": 77.5165808,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:housenumber": "#1/3, Ist Floor, Sri Lakshmi Towers",
+        "addr:postcode": "560073",
+        "addr:street": "1st Cross, Nethaji Nagar, Chokasandra, Jalahalli",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Papa John's",
+        "name:kn": "ಪಪ ಜಾನ್ಸ್",
+        "opening_hours": "11:00-23:00",
+        "phone": "080 41325888",
+        "takeaway": "yes",
+        "website": "https://www.papajohnspizza.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6945050485,
+      "lat": 13.0423919,
+      "lon": 77.5136653,
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No. 15, Drls Plaza, 1st Floor, Nh-4, Above Andhra Bank, T. Dasarahalli",
+        "addr:postcode": "560057",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Sri Venkateshwara Eye Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7489626471,
+      "lat": 13.0413777,
+      "lon": 77.5050224,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "naveen clinc"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7516247130,
+      "lat": 13.0404348,
+      "lon": 77.5174608,
+      "tags": {
+        "name": "Pai Bhavan",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8188038553,
+      "lat": 13.0439933,
+      "lon": 77.5065494,
+      "tags": {
+        "addr:full": "Vidya Nagar, Peenya, Bengaluru, Karnataka",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "name": "Esi Dispensary"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998178516,
+      "lat": 13.0454991,
+      "lon": 77.5056476,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "check_date": "2024-06-21",
+        "cuisine": "pizza",
+        "name": "Domino's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202361075,
+      "center": {
+        "lat": 13.0412311,
+        "lon": 77.5107699
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281336341,
+      "center": {
+        "lat": 13.040973,
+        "lon": 77.5062637
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "Schoenstatt St Mary's High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281993750,
+      "center": {
+        "lat": 13.0434946,
+        "lon": 77.5091804
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1281993751,
+      "center": {
+        "lat": 13.043619,
+        "lon": 77.5082603
+      },
+      "tags": {
+        "leisure": "playground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294790763,
+      "center": {
+        "lat": 13.0410098,
+        "lon": 77.5124524
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    }
+  ]
+}

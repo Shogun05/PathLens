@@ -1,0 +1,983 @@
+{
+  "area_name": "D'Souza Nagar",
+  "osm_id": 12174147910,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 78,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 959266145,
+      "lat": 12.9321449,
+      "lon": 77.5417724,
+      "tags": {
+        "amenity": "post_office"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1433646771,
+      "lat": 12.932367,
+      "lon": 77.5414216,
+      "tags": {
+        "addr:city": "bangalore",
+        "addr:postcode": "560085",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "name": "Sri Mahadeshwara Filling Station",
+        "official_name": "Hindustan Petroleum",
+        "operator": "Hindustan Petroleum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1661797104,
+      "lat": 12.9339016,
+      "lon": 77.5414815,
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "MedPlus",
+        "brand:wikidata": "Q65684234",
+        "healthcare": "pharmacy",
+        "name": "MedPlus",
+        "opening_hours": "Mo-Su,PH 08:30-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2093264600,
+      "lat": 12.9342211,
+      "lon": 77.5345124,
+      "tags": {
+        "addr:housename": "PES University",
+        "addr:postcode": "560085",
+        "addr:street": "100 Feet Outer Ring Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand:wikidata": "Q2004078",
+        "brand:wikipedia": "en:Union Bank of India",
+        "name": "Union Bank of India",
+        "name:en": "Union Bank of India",
+        "name:kn": "ಯೂನಿಯನ್ ಬ್ಯಾಂಕ್",
+        "short_name": "UBI",
+        "website": "https://www.unionbankofindia.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2093288411,
+      "lat": 12.9336327,
+      "lon": 77.5343127,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housename": "PES University",
+        "addr:postcode": "560085",
+        "addr:street": "100",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "PES Food Court"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2093290604,
+      "lat": 12.9335839,
+      "lon": 77.5344798,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housename": "PES University",
+        "addr:postcode": "560085",
+        "addr:street": "Outer ring road",
+        "amenity": "cafe",
+        "cuisine": "indian",
+        "name": "Cafe Coffe Day Express",
+        "name:kn": "ಕಫೆ ಕಾಫಿ ಡೇ",
+        "website": "https://www.cafecoffeeday.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4243885680,
+      "lat": 12.9336297,
+      "lon": 77.5345923,
+      "tags": {
+        "amenity": "fountain",
+        "name": "Pi R Cube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4243886023,
+      "lat": 12.9337527,
+      "lon": 77.5345277,
+      "tags": {
+        "amenity": "bench"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4243891304,
+      "lat": 12.9357187,
+      "lon": 77.5345513,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housename": "PES University",
+        "addr:postcode": "560085",
+        "addr:street": "100 Feet Outer Ring Road",
+        "name": "Campus Mart",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4243906616,
+      "lat": 12.9342254,
+      "lon": 77.5344569,
+      "tags": {
+        "amenity": "atm",
+        "operator": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4243908360,
+      "lat": 12.9355646,
+      "lon": 77.5345308,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housename": "PES University",
+        "addr:postcode": "560085",
+        "addr:street": "100 Feet Outer Ring Road",
+        "amenity": "cafe",
+        "cuisine": "indian",
+        "name": "Nescafe",
+        "wifi": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489885397,
+      "lat": 12.933338,
+      "lon": 77.5402961,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "677",
+        "addr:postcode": "560085",
+        "addr:street": ", Outer Ring Rd, Hosakerehalli Layout, Banashankari Stage I, Banashankari, , Karnataka",
+        "leisure": "sports_centre",
+        "name": "Shapes Gym",
+        "opening_hours": "5:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4617491993,
+      "lat": 12.9300351,
+      "lon": 77.5411161,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Vajradanta Dental Clinic",
+        "name:en": "Vajradanta Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4617491994,
+      "lat": 12.9299855,
+      "lon": 77.5411817,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "North Karnataka Joladda Roti",
+        "name:en": "North Karnataka Joladda Roti"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4617511989,
+      "lat": 12.9308886,
+      "lon": 77.5403351,
+      "tags": {
+        "name": "Castrol Bike Repairs",
+        "name:en": "Castrol Bike Repairs",
+        "opening_hours": "24/7",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4617527589,
+      "lat": 12.929906,
+      "lon": 77.5415113,
+      "tags": {
+        "amenity": "dentist",
+        "name": "Chowdeshwari Dental Clinic",
+        "name:en": "Chowdeshwari Dental Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4620181689,
+      "lat": 12.9298098,
+      "lon": 77.5400027,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "MedPlus",
+        "name:en": "MedPlus",
+        "name:kn": "ಮೆಡ್‍ಪ್ಲಸ್"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449182704,
+      "lat": 12.9356526,
+      "lon": 77.5345329,
+      "tags": {
+        "amenity": "ice_cream"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449182705,
+      "lat": 12.9356072,
+      "lon": 77.5344944,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Food Corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449182706,
+      "lat": 12.9354906,
+      "lon": 77.5345149,
+      "tags": {
+        "name": "Fruit Juice Shop",
+        "shop": "beverages"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449208761,
+      "lat": 12.9341922,
+      "lon": 77.5342788,
+      "tags": {
+        "leisure": "fitness_centre",
+        "level": "0",
+        "name": "PESU Sports Center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449209437,
+      "lat": 12.9334557,
+      "lon": 77.5356164,
+      "tags": {
+        "amenity": "library",
+        "level": "1",
+        "name": "Lending Library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6449209438,
+      "lat": 12.9353489,
+      "lon": 77.5351147,
+      "tags": {
+        "amenity": "library",
+        "level": "1",
+        "name": "Reference Library"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6899554637,
+      "lat": 12.9349789,
+      "lon": 77.5366498,
+      "tags": {
+        "name": "Nandini Parlour",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6899554638,
+      "lat": 12.9349174,
+      "lon": 77.5367638,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Coffee House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6899554639,
+      "lat": 12.9349665,
+      "lon": 77.5367068,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257279181,
+      "lat": 12.9332662,
+      "lon": 77.5403188,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "name": "Union Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7258378647,
+      "lat": 12.931298,
+      "lon": 77.5412566,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "optometry;optometrist",
+        "name": "Vittal Eye HOspital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8261705436,
+      "lat": 12.9336108,
+      "lon": 77.5415266,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:postcode": "560085",
+        "addr:street": "2nd Main Rd, 6th Block, Banashankari 3rd Stage, Banashankari",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "healthcare:speciality": "Spine_Surgeon",
+        "name": "Sri Balaji Specialist clinic",
+        "website": "https://www.spineexpertbangalore.in/dr-pramod-sudarshan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10567529770,
+      "lat": 12.9331955,
+      "lon": 77.5261218,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "fee": "no",
+        "female": "yes",
+        "male": "yes",
+        "name": "Community Toilet",
+        "opening_hours": "24/7",
+        "operator": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:en": "Bruhat Bengaluru Mahanagara Palike",
+        "operator:ka": "ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ",
+        "operator:short": "BBMP",
+        "operator:wikidata": "Q4978693",
+        "toilets:disposal": "flush",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11278723468,
+      "lat": 12.9364245,
+      "lon": 77.5349405,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Indira Canteen",
+        "brand:wikidata": "Q36164828",
+        "cuisine": "south_indian",
+        "name": "Indira Canteen",
+        "operator": "BBMP",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11279447635,
+      "lat": 12.9338966,
+      "lon": 77.539501,
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11306481636,
+      "lat": 12.929597,
+      "lon": 77.5343709,
+      "tags": {
+        "amenity": "school",
+        "check_date": "2023-11-02",
+        "name": "Sharada Shri Public School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11340895285,
+      "lat": 12.9296753,
+      "lon": 77.5349343,
+      "tags": {
+        "check_date": "2023-11-02",
+        "name": "Krishna Cake Palace",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11340895286,
+      "lat": 12.9296544,
+      "lon": 77.5350121,
+      "tags": {
+        "check_date": "2023-11-02",
+        "name": "Nandini",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11340895287,
+      "lat": 12.9294996,
+      "lon": 77.5352415,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-11-02",
+        "name": "Ba Guru Thindi Madona"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11969539775,
+      "lat": 12.9354729,
+      "lon": 77.5396693,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11969539776,
+      "lat": 12.9349266,
+      "lon": 77.5395164,
+      "tags": {
+        "amenity": "shelter",
+        "shelter_type": "gazebo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 141791769,
+      "center": {
+        "lat": 12.9308127,
+        "lon": 77.5412224
+      },
+      "tags": {
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "#1,2nd Cross, 2nd Main,7Th Block, Banashankari 3Road Stage, Hosakerehalli",
+        "addr:postcode": "560085",
+        "addr:state": "Karnataka",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Vittala International Institute Of Ophthalmology, Hosakerehalli",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "way",
+      "id": 141816745,
+      "center": {
+        "lat": 12.9317713,
+        "lon": 77.5414635
+      },
+      "tags": {
+        "addr:postcode": "560085",
+        "addr:street": "Hosakerehalli",
+        "amenity": "school",
+        "name": "Little Flower School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 199316737,
+      "center": {
+        "lat": 12.9345346,
+        "lon": 77.5354966
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Student Lounge",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347044129,
+      "center": {
+        "lat": 12.9326876,
+        "lon": 77.5379543
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shri Venugopala Swami Devasthana",
+        "name:kn": "ಶ್ರೀ ವೇಣುಗೋಪಾಲ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ (ಬನಶಂಕರಿ)",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347417614,
+      "center": {
+        "lat": 12.926744,
+        "lon": 77.5265184
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 348866051,
+      "center": {
+        "lat": 12.9353345,
+        "lon": 77.5329892
+      },
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:postcode": "560083",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "italian",
+        "name": "Cafe Down The Alley",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 420181759,
+      "center": {
+        "lat": 12.9341348,
+        "lon": 77.5396549
+      },
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Shri Vidhyanagara BMTC Bus station",
+        "name:kn": "ಬಸ್ ನಿಲ್ದಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 687910157,
+      "center": {
+        "lat": 12.9352011,
+        "lon": 77.5347115
+      },
+      "tags": {
+        "amenity": "theatre",
+        "name": "Open Air Theatre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 687910163,
+      "center": {
+        "lat": 12.9354597,
+        "lon": 77.532337
+      },
+      "tags": {
+        "amenity": "parking",
+        "operator": "PES Student Parking Lot"
+      }
+    },
+    {
+      "type": "way",
+      "id": 687910164,
+      "center": {
+        "lat": 12.9353047,
+        "lon": 77.531819
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Cricket Pitches",
+        "name:kn": "ಕ್ರಿಕೆಟ್ ಆಟದ ಮೈದಾನ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 687911440,
+      "center": {
+        "lat": 12.9348535,
+        "lon": 77.5321405
+      },
+      "tags": {
+        "amenity": "university",
+        "name": "PES University",
+        "name:kn": "ಪಿಇಎಸ್ ವಿಶ್ವವಿದ್ಯಾಲಯ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 687919139,
+      "center": {
+        "lat": 12.9354352,
+        "lon": 77.5354024
+      },
+      "tags": {
+        "amenity": "parking",
+        "operator": "Reserved Parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691137802,
+      "center": {
+        "lat": 12.933912,
+        "lon": 77.5341528
+      },
+      "tags": {
+        "amenity": "shelter",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691137806,
+      "center": {
+        "lat": 12.9340838,
+        "lon": 77.5358619
+      },
+      "tags": {
+        "amenity": "food_court",
+        "building": "yes",
+        "level": "1",
+        "name": "South Thindies (Food Point)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691141403,
+      "center": {
+        "lat": 12.9334377,
+        "lon": 77.5350132
+      },
+      "tags": {
+        "amenity": "motorcycle_parking",
+        "operator": "Hostel Parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691142527,
+      "center": {
+        "lat": 12.9352328,
+        "lon": 77.5353381
+      },
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691142529,
+      "center": {
+        "lat": 12.9353606,
+        "lon": 77.5355414
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691142530,
+      "center": {
+        "lat": 12.9346384,
+        "lon": 77.5358562
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691143423,
+      "center": {
+        "lat": 12.9351058,
+        "lon": 77.53565
+      },
+      "tags": {
+        "amenity": "motorcycle_parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691143424,
+      "center": {
+        "lat": 12.9350725,
+        "lon": 77.5356515
+      },
+      "tags": {
+        "amenity": "motorcycle_parking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691144638,
+      "center": {
+        "lat": 12.9337358,
+        "lon": 77.5346714
+      },
+      "tags": {
+        "amenity": "fountain"
+      }
+    },
+    {
+      "type": "way",
+      "id": 721685566,
+      "center": {
+        "lat": 12.9320622,
+        "lon": 77.5275863
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "landuse": "commercial",
+        "name": "V Legacy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 729214166,
+      "center": {
+        "lat": 12.9411567,
+        "lon": 77.5308904
+      },
+      "tags": {
+        "amenity": "events_venue",
+        "landuse": "commercial",
+        "name": "Nandi Link Grounds"
+      }
+    },
+    {
+      "type": "way",
+      "id": 736950242,
+      "center": {
+        "lat": 12.9287127,
+        "lon": 77.5291
+      },
+      "tags": {
+        "amenity": "school",
+        "name": "National Hill View Public School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 766650745,
+      "center": {
+        "lat": 12.9272671,
+        "lon": 77.5262224
+      },
+      "tags": {
+        "amenity": "college",
+        "name": "Global Academy of Technology"
+      }
+    },
+    {
+      "type": "way",
+      "id": 768703804,
+      "center": {
+        "lat": 12.9393941,
+        "lon": 77.5271146
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157397996,
+      "center": {
+        "lat": 12.9381289,
+        "lon": 77.5379681
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Sri Ramakrishna Seva Trust",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157397997,
+      "center": {
+        "lat": 12.9352391,
+        "lon": 77.5395846
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Vidyanagara Park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1182315665,
+      "center": {
+        "lat": 12.93463,
+        "lon": 77.533221
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Football Ground",
+        "name:kn": "ಫುಟ್ಬಾಲ್ ಆಟದ ಮೈದಾನ",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217250856,
+      "center": {
+        "lat": 12.9376715,
+        "lon": 77.5341687
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Go Gas",
+        "name": "Go Gas",
+        "operator": "Go Gas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1217326874,
+      "center": {
+        "lat": 12.9330817,
+        "lon": 77.5415726
+      },
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "hindu"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1287589789,
+      "center": {
+        "lat": 12.9317173,
+        "lon": 77.5320307
+      },
+      "tags": {
+        "amenity": "parking",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1291004769,
+      "center": {
+        "lat": 12.9342175,
+        "lon": 77.539285
+      },
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "name": "Kalabhyraveshwara Service Station",
+        "operator": "Indian Oil Corporation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363986258,
+      "center": {
+        "lat": 12.9283177,
+        "lon": 77.529625
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363986274,
+      "center": {
+        "lat": 12.9334026,
+        "lon": 77.5273969
+      },
+      "tags": {
+        "leisure": "park"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1363986279,
+      "center": {
+        "lat": 12.9371611,
+        "lon": 77.5306442
+      },
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Pase Sports Arena"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427923145,
+      "center": {
+        "lat": 12.9257312,
+        "lon": 77.5262355
+      },
+      "tags": {
+        "leisure": "pitch"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427923146,
+      "center": {
+        "lat": 12.9257489,
+        "lon": 77.526462
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "basketball"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1444464468,
+      "center": {
+        "lat": 12.9273447,
+        "lon": 77.5264765
+      },
+      "tags": {
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1449386785,
+      "center": {
+        "lat": 12.9366071,
+        "lon": 77.5302506
+      },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer"
+      }
+    }
+  ]
+}

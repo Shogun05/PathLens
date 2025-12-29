@@ -1,0 +1,50 @@
+{
+  "area_name": "Niranthara Layout",
+  "osm_id": 10990039924,
+  "osm_type": "node",
+  "place_type": "neighbourhood",
+  "amenity_count": 3,
+  "amenities": [
+    {
+      "type": "node",
+      "id": 9177560311,
+      "lat": 13.1275198,
+      "lon": 77.6392624,
+      "tags": {
+        "amenity": "restaurant",
+        "delivery": "no",
+        "name": "Farmlore",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "takeaway": "no",
+        "website": "https://www.farmlore.in/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338323862,
+      "center": {
+        "lat": 13.1226834,
+        "lon": 77.6324227
+      },
+      "tags": {
+        "amenity": "fuel",
+        "check_date": "2024-09-30",
+        "name": "Hindustan Petroleum",
+        "name:kn": "ಹಿಂದುಸ್ತಾನ್ ಪೆಟ್ರೋಲಿಯಂ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1427248358,
+      "center": {
+        "lat": 13.1252882,
+        "lon": 77.6299921
+      },
+      "tags": {
+        "amenity": "community_centre",
+        "landuse": "commercial"
+      }
+    }
+  ]
+}
