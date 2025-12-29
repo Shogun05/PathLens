@@ -1,3 +1,10 @@
+## Downloader setup
+
+1. Run `python downloader/main.py` once to bootstrap the configuration; this execution creates `preferences.json`.
+2. Open the generated `preferences.json` and change only the download directory so it matches the input-image path expected by `run_custom_inference.py`, leaving every other option untouched.
+3. On subsequent runs of `python downloader/main.py`, downloads automatically honor the saved preferences and write images to the configured directory.
+
+
 # Sat2Graph 
 Sat2Graph: Road Graph Extraction through Graph-Tensor Encoding
 

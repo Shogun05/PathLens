@@ -15,6 +15,7 @@ opt-einsum==3.3.0
 Pillow==8.4.0
 protobuf==3.20.3
 Rtree==1.0.1
+requests>=2.31
 scipy==1.7.3
 six==1.17.0
 svgwrite==1.4.3
@@ -27,3 +28,4 @@ typing_extensions==4.7.1
 Werkzeug==2.2.3
 wrapt==1.16.0
 zipp==3.15.0
+
