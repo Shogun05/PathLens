@@ -1,0 +1,18 @@
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/logs/pathlens_master_20251229_222837.log
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - Project root: /home/shogun/Documents/PathLens
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - Config: /home/shogun/Documents/PathLens/config.yaml
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - ================================================================================
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - PIPELINE: DATA-COLLECTION
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - ================================================================================
+2025-12-29 22:28:37,553 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/data-pipeline/run_pipeline.py --place Bangalore, India
+2025-12-30 00:00:30,682 - PathLensMaster - INFO - ✓ data-collection completed successfully
+2025-12-30 00:00:30,684 - PathLensMaster - INFO - Skipping optimization pipeline
+2025-12-30 00:00:30,684 - PathLensMaster - INFO - Skipping landuse feasibility pipeline
+2025-12-30 00:00:30,687 - PathLensMaster - INFO - ================================================================================
+2025-12-30 00:00:30,687 - PathLensMaster - INFO - PATHLENS MASTER ORCHESTRATOR - SUMMARY
+2025-12-30 00:00:30,687 - PathLensMaster - INFO - ================================================================================
+2025-12-30 00:00:30,687 - PathLensMaster - INFO -   data                 | ✓ SUCCESS
+2025-12-30 00:00:30,687 - PathLensMaster - INFO - ================================================================================
+2025-12-30 00:00:30,687 - PathLensMaster - INFO - Summary saved: /home/shogun/Documents/PathLens/data/logs/run_summary_20251230_000030.json
+2025-12-30 00:00:30,687 - PathLensMaster - INFO - ✓ All pipelines completed successfully
