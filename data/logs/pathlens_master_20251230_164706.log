@@ -1,9 +1,0 @@
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/logs/pathlens_master_20251230_164706.log
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - Project root: /home/shogun/Documents/PathLens
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - Config: /home/shogun/Documents/PathLens/config.yaml
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - Skipping data collection pipeline
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - ================================================================================
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - PIPELINE: OPTIMIZATION
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - ================================================================================
-2025-12-30 16:47:06,355 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python3 /home/shogun/Documents/PathLens/optimization-pipeline/run_optimization.py --ga-config /home/shogun/Documents/PathLens/config.yaml

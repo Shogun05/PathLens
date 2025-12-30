@@ -2,10 +2,12 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
+from datetime import datetime
 import pandas as pd
 import numpy as np
 import os
 import subprocess
+import sys
 import json
 import logging
 
@@ -62,6 +64,37 @@ async def health():
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data", "analysis")
 RUN_SCRIPT = os.path.join(BASE_DIR, "run_pathlens.py")
+STATUS_PATH = os.path.join(BASE_DIR, "data", "optimization", "runs", "progress.json")
+
+
+def write_optimization_status(
+    status: str,
+    stage: str,
+    message: str,
+    percent: Optional[float] = None,
+    pipelines: Optional[Dict[str, str]] = None
+) -> None:
+    """Persist the current optimization status so the frontend can poll it."""
+    os.makedirs(os.path.dirname(STATUS_PATH), exist_ok=True)
+    payload = {
+        "status": status,
+        "stage": stage,
+        "message": message,
+        "percent": percent if percent is not None else 0,
+        "timestamp": datetime.utcnow().isoformat(),
+        "pipelines": pipelines
+        or {
+            "data": "pending",
+            "optimization": "pending",
+            "landuse": "pending"
+        }
+    }
+
+    try:
+        with open(STATUS_PATH, 'w') as f:
+            json.dump(payload, f, indent=2)
+    except Exception as exc:  # pragma: no cover - logging only
+        logger.warning(f"Failed to write optimization status: {exc}")
 
 # Models
 class Node(BaseModel):
@@ -271,25 +304,31 @@ async def get_suggestions():
 async def optimize(request: OptimizeRequest):
     logger.info(f"Optimization request received: {request}")
     
-    # Construct command
+    # Construct command requested by frontend action
     cmd = [
-        "python3", RUN_SCRIPT,
-        "--pipeline", "optimization",
-        "--ga-population", str(request.max_amenities * 10),  # Scale population with amenities
-        "--ga-generations", "10"
+        sys.executable, RUN_SCRIPT,
+        "--skip-data",
+        "--skip-landuse"
     ]
     
-    # Add place if specified
-    if request.location:
-        cmd.extend(["--place", request.location])
-    
+    write_optimization_status(
+        status="queued",
+        stage="initializing",
+        message="Optimization run queued",
+        percent=2,
+        pipelines={
+            "data": "skipped",
+            "optimization": "pending",
+            "landuse": "skipped"
+        }
+    )
+
     try:
         # Start optimization in background (non-blocking)
         process = subprocess.Popen(
             cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
         )
         
         logger.info(f"Started optimization process with PID {process.pid}")
@@ -300,6 +339,12 @@ async def optimize(request: OptimizeRequest):
         }
     except Exception as e:
         logger.error(f"Error starting optimization: {e}")
+        write_optimization_status(
+            status="failed",
+            stage="initializing",
+            message=str(e),
+            percent=0
+        )
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/rescore")
@@ -308,7 +353,7 @@ async def rescore(request: RescoreRequest):
     
     # Construct command to re-run scoring with custom POIs
     cmd = [
-        "python3", RUN_SCRIPT,
+        sys.executable, RUN_SCRIPT,
         "--pipeline", "optimization",
         "--place", request.location
     ]
@@ -317,9 +362,8 @@ async def rescore(request: RescoreRequest):
         # Start rescoring in background
         process = subprocess.Popen(
             cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
         )
         
         logger.info(f"Started rescoring process with PID {process.pid}")
@@ -377,13 +421,7 @@ async def get_optimization_status():
     try:
         with open(progress_path, 'r') as f:
             progress = json.load(f)
-        return {
-            "status": "running",
-            "current_generation": progress.get('generation'),
-            "best_fitness": progress.get('best_fitness'),
-            "elapsed_time": progress.get('elapsed_time'),
-            "timestamp": progress.get('timestamp')
-        }
+        return progress
     except Exception as e:
         logger.error(f"Error reading optimization status: {e}")
         return {"status": "error", "error": str(e)}
