@@ -11,6 +11,9 @@ import { pathLensAPI } from '@/lib/api';
 import { generateDemoNodes } from '@/lib/demo-data';
 import { ArrowRight, TrendingUp, Users, MapPin, Activity } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MetricsCard } from '@/components/MetricsCard';
+import { NodeDistribution } from '@/components/NodeDistribution';
+import { CriticalNodes } from '@/components/CriticalNodes';
 
 export default function BaselinePage() {
   const router = useRouter();
@@ -24,6 +27,7 @@ export default function BaselinePage() {
   } = usePathLensStore();
 
   const [loading, setLoading] = useState(true);
+  const [nodeLimit] = useState(2000); // Load max 2000 nodes for performance
 
   useEffect(() => {
     const loadBaselineData = async () => {
@@ -37,9 +41,11 @@ export default function BaselinePage() {
           const avgScore = demoNodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / demoNodes.length;
           setBaselineScore(avgScore);
         } else {
-          // Use API data
-          const nodes = await pathLensAPI.getNodes('baseline');
+          // Use API data with limit for performance
+          console.log(`Loading baseline nodes (limit: ${nodeLimit})...`);
+          const nodes = await pathLensAPI.getNodes({ type: 'baseline', limit: nodeLimit });
           if (nodes && nodes.length > 0) {
+            console.log(`Loaded ${nodes.length} baseline nodes`);
             setBaselineNodes(nodes);
             const avgScore = nodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / nodes.length;
             setBaselineScore(avgScore);
@@ -57,7 +63,7 @@ export default function BaselinePage() {
     };
 
     loadBaselineData();
-  }, [demoMode]); // Re-run when demoMode changes
+  }, [demoMode, nodeLimit]); // Re-run when demoMode changes
 
   const handleProceedToOptimization = () => {
     router.push('/optimized');
@@ -74,14 +80,44 @@ export default function BaselinePage() {
     <div className="flex h-full flex-col pointer-events-none">
       {/* Header removed - moved to layout */}
 
-      {/* Breadcrumbs - Pointer events enabled */}
+      {/* Breadcrumbs & Controls - Pointer events enabled */}
       <div className="border-b border-white/10 bg-[#101518] px-6 py-3 pointer-events-auto z-20">
-        <div className="flex items-center gap-2 text-sm text-gray-400">
-          <a className="hover:text-[#8fd6ff]">Projects</a>
-          <span>/</span>
-          <a className="hover:text-[#8fd6ff]">{location || 'City Analysis'}</a>
-          <span>/</span>
-          <span className="text-white font-medium">Baseline Analysis</span>
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2 text-sm text-gray-400">
+              <a className="hover:text-[#8fd6ff]">Projects</a>
+              <span>/</span>
+              <a className="hover:text-[#8fd6ff]">{location || 'City Analysis'}</a>
+              <span>/</span>
+              <span className="text-white font-medium">Baseline Analysis</span>
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-3">
+            <div className="flex items-center bg-[#1b2328] rounded-lg p-1 border border-white/10">
+              <button className="px-3 py-1.5 rounded text-xs font-medium bg-[#8fd6ff] text-[#101518]">
+                Single View
+              </button>
+              <button 
+                className="px-3 py-1.5 rounded text-xs font-medium text-gray-400 hover:text-white"
+                onClick={() => router.push('/comparison')}
+              >
+                Split View
+              </button>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              className="flex items-center gap-2 bg-[#8fd6ff]/10 hover:bg-[#8fd6ff]/20 text-[#8fd6ff] border-[#8fd6ff]/20"
+              onClick={() => {
+                // TODO: Implement export functionality
+                console.log('Export report');
+              }}
+            >
+              <span className="material-symbols-outlined text-[18px]">download</span>
+              <span className="text-sm font-bold">Export Report</span>
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -111,38 +147,57 @@ export default function BaselinePage() {
           </div>
 
           <div className="flex-1 overflow-y-auto p-6 space-y-6">
-            {/* Metrics */}
-            <div className="space-y-4">
-              <MetricItem 
-                icon={<TrendingUp className="h-4 w-4" />}
-                label="Accessibility Index"
-                value={avgAccessibility.toFixed(1)}
-                max={100}
-                color="text-[#8fd6ff]"
-              />
-              <MetricItem 
-                icon={<Activity className="h-4 w-4" />}
-                label="Walkability Score"
-                value={avgWalkability.toFixed(1)}
-                max={100}
-                color="text-green-400"
-              />
-              <MetricItem 
-                icon={<Users className="h-4 w-4" />}
-                label="Social Equity"
-                value={avgEquity.toFixed(1)}
-                max={100}
-                color="text-purple-400"
-              />
-              <MetricItem 
-                icon={<MapPin className="h-4 w-4" />}
-                label="Avg Travel Time"
-                value={avgTravelTime.toFixed(0)}
-                max={60}
-                unit="min"
-                color="text-orange-400"
-              />
-            </div>
+            {/* Network & Accessibility Metrics */}
+            {!demoMode && <MetricsCard type="baseline" />}
+            
+            {/* Distribution & Critical Nodes */}
+            {!demoMode && (
+              <div className="grid grid-cols-1 gap-4">
+                <NodeDistribution nodes={baselineNodes} />
+                <CriticalNodes 
+                  nodes={baselineNodes} 
+                  onLocateNode={(node) => {
+                    console.log('Locate node:', node);
+                    // TODO: Pan map to node location
+                  }}
+                />
+              </div>
+            )}
+            
+            {/* Simple Metrics for Demo Mode */}
+            {demoMode && (
+              <div className="space-y-4">
+                <MetricItem 
+                  icon={<TrendingUp className="h-4 w-4" />}
+                  label="Accessibility Index"
+                  value={avgAccessibility.toFixed(1)}
+                  max={100}
+                  color="text-[#8fd6ff]"
+                />
+                <MetricItem 
+                  icon={<Activity className="h-4 w-4" />}
+                  label="Walkability Score"
+                  value={avgWalkability.toFixed(1)}
+                  max={100}
+                  color="text-green-400"
+                />
+                <MetricItem 
+                  icon={<Users className="h-4 w-4" />}
+                  label="Social Equity"
+                  value={avgEquity.toFixed(1)}
+                  max={100}
+                  color="text-purple-400"
+                />
+                <MetricItem 
+                  icon={<MapPin className="h-4 w-4" />}
+                  label="Avg Travel Time"
+                  value={avgTravelTime.toFixed(0)}
+                  max={60}
+                  unit="min"
+                  color="text-orange-400"
+                />
+              </div>
+            )}
 
             <Separator className="bg-white/10" />
 

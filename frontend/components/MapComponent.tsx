@@ -1,8 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import 'leaflet.markercluster';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
 // Fix for default marker icons in Next.js
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -39,6 +42,8 @@ interface MapComponentProps {
   onMapReady?: (map: L.Map) => void;
   drawingMode?: boolean;
   onBoundsDrawn?: (bounds: L.LatLngBounds) => void;
+  enableClustering?: boolean;
+  maxMarkersBeforeClustering?: number;
 }
 
 export default function MapComponent({
@@ -50,10 +55,13 @@ export default function MapComponent({
   onMapReady,
   drawingMode = false,
   onBoundsDrawn,
+  enableClustering = true,
+  maxMarkersBeforeClustering = 500,
 }: MapComponentProps) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const rectangleRef = useRef<L.Rectangle | null>(null);
   const markersRef = useRef<Map<string, L.CircleMarker>>(new Map());
+  const markerClusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
   const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
 
   useEffect(() => {
@@ -84,25 +92,53 @@ export default function MapComponent({
     };
   }, []);
 
-  // Update markers when nodes or suggestions change
+  // Update markers when nodes or suggestions change - with clustering support
   useEffect(() => {
     if (!mapInstance) return;
 
     const map = mapInstance;
+    const shouldCluster = enableClustering && nodes.length > maxMarkersBeforeClustering;
+    
+    console.log(`[MapComponent] Processing ${nodes.length} nodes. Clustering: ${shouldCluster}`);
+    
+    // Clear previous markers/clusters
     const currentMarkers = markersRef.current;
-    const newMarkerIds = new Set<string>();
+    currentMarkers.forEach(marker => map.removeLayer(marker));
+    currentMarkers.clear();
+    
+    if (markerClusterGroupRef.current) {
+      map.removeLayer(markerClusterGroupRef.current);
+      markerClusterGroupRef.current = null;
+    }
+
+    // Initialize cluster group if needed
+    if (shouldCluster) {
+      markerClusterGroupRef.current = L.markerClusterGroup({
+        maxClusterRadius: 50,
+        spiderfyOnMaxZoom: true,
+        showCoverageOnHover: false,
+        zoomToBoundsOnClick: true,
+        iconCreateFunction: (cluster) => {
+          const count = cluster.getChildCount();
+          let size = 'small';
+          if (count > 100) size = 'large';
+          else if (count > 10) size = 'medium';
+          
+          return L.divIcon({
+            html: `<div><span>${count}</span></div>`,
+            className: `marker-cluster marker-cluster-${size}`,
+            iconSize: L.point(40, 40)
+          });
+        }
+      });
+    }
 
     // Process Nodes
-    console.log(`[MapComponent] Processing ${nodes.length} nodes. Map ready: ${!!mapInstance}`);
-    
+    const markers: L.CircleMarker[] = [];
     nodes.forEach((node) => {
-      if (!node.y || !node.x) {
-        // console.warn('Invalid node coordinates:', node);
-        return;
-      }
+      if (!node.y || !node.x) return;
+      
       const id = `node-${node.osmid}`;
-      newMarkerIds.add(id);
-
       const color = getNodeColor(node.score);
       const popupContent = `
         <div class="text-xs">
@@ -114,52 +150,33 @@ export default function MapComponent({
         </div>
       `;
 
-      if (currentMarkers.has(id)) {
-        // Update existing marker
-        const marker = currentMarkers.get(id)!;
-        
-        // Cancel any pending removal
-        if ((marker as any)._removeTimeout) {
-          clearTimeout((marker as any)._removeTimeout);
-          (marker as any)._removeTimeout = null;
-        }
+      const marker = L.circleMarker([node.y, node.x], {
+        radius: shouldCluster ? 4 : 5,
+        fillColor: color,
+        color: '#fff',
+        weight: 1,
+        opacity: 0.8,
+        fillOpacity: 0.6,
+      });
 
-        // Update style and content
-        marker.setStyle({ 
-          fillColor: color,
-          opacity: 0.8,
-          fillOpacity: 0.6
-        });
-        marker.setPopupContent(popupContent);
-      } else {
-        // Add new marker (start visible)
-        const marker = L.circleMarker([node.y, node.x], {
-          radius: 5,
-          fillColor: color,
-          color: '#fff',
-          weight: 1,
-          opacity: 0.8,
-          fillOpacity: 0.6,
-          className: 'leaflet-marker-transition'
-        });
-
-        marker.bindPopup(popupContent);
-        marker.addTo(map);
-        currentMarkers.set(id, marker);
-        
-        // No delayed fade-in for now to ensure visibility
-        // setTimeout(() => {
-        //   marker.setStyle({ opacity: 0.8, fillOpacity: 0.6 });
-        // }, 50);
-      }
+      marker.bindPopup(popupContent);
+      markers.push(marker);
+      currentMarkers.set(id, marker);
     });
 
-    // Process Suggestions
+    // Add markers to cluster group or map
+    if (shouldCluster && markerClusterGroupRef.current) {
+      markerClusterGroupRef.current.addLayers(markers);
+      map.addLayer(markerClusterGroupRef.current);
+    } else {
+      markers.forEach(marker => marker.addTo(map));
+    }
+
+    // Process Suggestions (always unclustered)
     suggestions.forEach((suggestion) => {
       const [lng, lat] = suggestion.geometry.coordinates;
       if (!lat || !lng) return;
       const id = `sugg-${suggestion.properties.id}`;
-      newMarkerIds.add(id);
 
       const popupContent = `
         <div class="text-xs">
@@ -169,74 +186,34 @@ export default function MapComponent({
         </div>
       `;
 
-      if (currentMarkers.has(id)) {
-        // Update existing suggestion
-        const marker = currentMarkers.get(id)!;
-        
-        if ((marker as any)._removeTimeout) {
-          clearTimeout((marker as any)._removeTimeout);
-          (marker as any)._removeTimeout = null;
-        }
+      const marker = L.circleMarker([lat, lng], {
+        radius: 8,
+        fillColor: '#8fd6ff',
+        color: '#fff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.8,
+      });
 
-        marker.setStyle({ 
-          opacity: 1,
-          fillOpacity: 0.8
-        });
-        marker.setPopupContent(popupContent);
-      } else {
-        // Add new suggestion
-        const marker = L.circleMarker([lat, lng], {
-          radius: 8,
-          fillColor: '#8fd6ff', // Cyan for suggestions
-          color: '#fff',
-          weight: 2,
-          opacity: 1,
-          fillOpacity: 0.8,
-          className: 'leaflet-marker-transition'
-        });
-
-        marker.bindPopup(popupContent);
-        marker.addTo(map);
-        currentMarkers.set(id, marker);
-
-        // No delayed fade-in for now
-        // setTimeout(() => {
-        //   marker.setStyle({ opacity: 1, fillOpacity: 0.8 });
-        // }, 50);
-      }
+      marker.bindPopup(popupContent);
+      marker.addTo(map);
+      currentMarkers.set(id, marker);
     });
 
-    // Remove markers that are no longer present
-    currentMarkers.forEach((marker, id) => {
-      if (!newMarkerIds.has(id)) {
-        // If already scheduled for removal, skip
-        if ((marker as any)._removeTimeout) return;
-
-        // Fade out
-        marker.setStyle({ opacity: 0, fillOpacity: 0 });
-        
-        // Remove after transition
-        (marker as any)._removeTimeout = setTimeout(() => {
-          map.removeLayer(marker);
-          currentMarkers.delete(id);
-        }, 500); // Match CSS transition duration
-      }
-    });
-
-    // Initial bounds fit
-    if (currentMarkers.size === 0 && newMarkerIds.size > 0) {
-       const points: L.LatLngTuple[] = [
-        ...nodes.map(n => [n.y, n.x] as L.LatLngTuple),
+    // Fit bounds on initial load
+    if (nodes.length > 0 || suggestions.length > 0) {
+      const points: L.LatLngTuple[] = [
+        ...nodes.slice(0, 100).map(n => [n.y, n.x] as L.LatLngTuple), // Sample for performance
         ...suggestions.map(s => [s.geometry.coordinates[1], s.geometry.coordinates[0]] as L.LatLngTuple)
       ];
 
       if (points.length > 0) {
         const bounds = L.latLngBounds(points);
-        map.fitBounds(bounds, { padding: [50, 50] });
+        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 14 });
       }
     }
 
-  }, [mapInstance, nodes, suggestions]);
+  }, [mapInstance, nodes, suggestions, enableClustering, maxMarkersBeforeClustering]);
 
   const startLatLngRef = useRef<L.LatLng | null>(null);
 

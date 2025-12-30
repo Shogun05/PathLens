@@ -10,6 +10,9 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { usePathLensStore, Suggestion } from '@/lib/store';
 import { pathLensAPI } from '@/lib/api';
 import { generateDemoNodes } from '@/lib/demo-data';
+import { MetricsCard } from '@/components/MetricsCard';
+import { NodeDistribution } from '@/components/NodeDistribution';
+import { CriticalNodes } from '@/components/CriticalNodes';
 import { ArrowLeft, RefreshCw, Check, Plus, School, Hospital, Bus, Trees, Map as MapIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -53,12 +56,14 @@ export default function OptimizedPage() {
           // For now, let's keep suggestions empty or mock them if requested
           setSuggestions([]); 
         } else {
-          // Use API data
+          // Use API data with limit for performance
+          console.log('Loading optimized nodes (limit: 2000)...');
           const [nodes, suggsCollection] = await Promise.all([
-            pathLensAPI.getNodes('optimized'),
+            pathLensAPI.getNodes({ type: 'optimized', limit: 2000 }),
             pathLensAPI.getSuggestions(),
           ]);
           
+          console.log(`Loaded ${nodes?.length || 0} optimized nodes`);
           if (nodes && nodes.length > 0) setOptimizedNodes(nodes);
           else setOptimizedNodes([]);
           
@@ -119,14 +124,44 @@ export default function OptimizedPage() {
     <div className="flex h-full flex-col pointer-events-none">
       {/* Header removed - moved to layout */}
 
-      {/* Breadcrumbs - Pointer events enabled */}
+      {/* Breadcrumbs & Controls - Pointer events enabled */}
       <div className="border-b border-white/10 bg-[#101518] px-6 py-3 pointer-events-auto z-20">
-        <div className="flex items-center gap-2 text-sm text-gray-400">
-          <a className="hover:text-[#8fd6ff]">Projects</a>
-          <span>/</span>
-          <a className="hover:text-[#8fd6ff]">{location || 'City Analysis'}</a>
-          <span>/</span>
-          <span className="text-white font-medium">Optimization</span>
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2 text-sm text-gray-400">
+              <a className="hover:text-[#8fd6ff]">Projects</a>
+              <span>/</span>
+              <a className="hover:text-[#8fd6ff]">{location || 'City Analysis'}</a>
+              <span>/</span>
+              <span className="text-white font-medium">Optimization</span>
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-3">
+            <div className="flex items-center bg-[#1b2328] rounded-lg p-1 border border-white/10">
+              <button className="px-3 py-1.5 rounded text-xs font-medium bg-[#8fd6ff] text-[#101518]">
+                Single View
+              </button>
+              <button 
+                className="px-3 py-1.5 rounded text-xs font-medium text-gray-400 hover:text-white"
+                onClick={() => router.push('/comparison')}
+              >
+                Split View
+              </button>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              className="flex items-center gap-2 bg-[#8fd6ff]/10 hover:bg-[#8fd6ff]/20 text-[#8fd6ff] border-[#8fd6ff]/20"
+              onClick={() => {
+                // TODO: Implement export functionality
+                console.log('Export report');
+              }}
+            >
+              <span className="material-symbols-outlined text-[18px]">download</span>
+              <span className="text-sm font-bold">Export Report</span>
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -164,29 +199,35 @@ export default function OptimizedPage() {
             <p className="text-sm text-gray-400">Projected Accessibility Score</p>
           </div>
 
-          <div className="flex-1 overflow-hidden flex flex-col">
-            <div className="p-4 border-b border-white/10 bg-[#1b2328]">
+          {/* Suggestions Section - Fixed height, scrollable if needed */}
+          <div className="border-b border-white/10 bg-[#1b2328]">
+            <div className="p-4">
               <h3 className="font-semibold text-sm text-gray-300 mb-2">Proposed Interventions</h3>
               <p className="text-xs text-gray-500">
                 Select interventions to include in the rescoring simulation.
               </p>
             </div>
 
-            <ScrollArea className="flex-1 p-4">
+            <div className="max-h-48 overflow-y-auto px-4 pb-4">
               <div className="space-y-3">
-                {suggestions.map((suggestion) => {
-                  const Icon = getAmenityIcon(suggestion.properties?.amenity_type);
-                  const isSelected = selectedSuggestionIds.has(suggestion.id);
-                  
-                  return (
-                    <Card 
-                      key={suggestion.id}
-                      className={`p-3 border transition-all cursor-pointer ${
-                        isSelected 
+                {suggestions.length === 0 ? (
+                  <div className="text-center py-8 text-gray-400 text-sm">
+                    No interventions available
+                  </div>
+                ) : (
+                  suggestions.map((suggestion) => {
+                    const Icon = getAmenityIcon(suggestion.properties?.amenity_type);
+                    const isSelected = selectedSuggestionIds.has(suggestion.properties.id);
+                    
+                    return (
+                      <Card 
+                        key={suggestion.properties.id}
+                        className={`p-3 border transition-all cursor-pointer ${
+                          isSelected 
                           ? 'bg-[#8fd6ff]/10 border-[#8fd6ff]/50' 
                           : 'bg-[#1b2328] border-white/5 hover:border-white/20'
                       }`}
-                      onClick={() => toggleSuggestion(suggestion.id)}
+                      onClick={() => toggleSuggestion(suggestion.properties.id)}
                     >
                       <div className="flex items-start gap-3">
                         <div className={`p-2 rounded-lg ${isSelected ? 'bg-[#8fd6ff]/20 text-[#8fd6ff]' : 'bg-white/5 text-gray-400'}`}>
@@ -199,7 +240,7 @@ export default function OptimizedPage() {
                             </h4>
                             <Switch 
                               checked={isSelected}
-                              onCheckedChange={() => toggleSuggestion(suggestion.id)}
+                              onCheckedChange={() => toggleSuggestion(suggestion.properties.id)}
                               className="scale-75 data-[state=checked]:bg-[#8fd6ff]"
                             />
                           </div>
@@ -218,11 +259,31 @@ export default function OptimizedPage() {
                       </div>
                     </Card>
                   );
-                })}
+                }))}
               </div>
-            </ScrollArea>
+            </div>
           </div>
 
+          {/* Network & Accessibility Metrics - Main scrollable section */}
+          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+            {!demoMode && <MetricsCard type="optimized" />}
+            
+            {/* Distribution & Critical Nodes */}
+            {!demoMode && (
+              <>
+                <NodeDistribution nodes={optimizedNodes} />
+                <CriticalNodes 
+                  nodes={optimizedNodes}
+                  onLocateNode={(node) => {
+                    console.log('Locate node:', node);
+                    // TODO: Pan map to node location
+                  }}
+                />
+              </>
+            )}
+          </div>
+
+          {/* Update Score Button - Fixed at bottom */}
           <div className="p-4 border-t border-white/10 bg-[#0f1c23]">
             <Button 
               className="w-full bg-[#8fd6ff] hover:bg-[#b0e2ff] text-[#101518] font-bold"

@@ -28,6 +28,9 @@ export interface Suggestion {
     land_availability?: 'feasible' | 'limited' | 'unavailable';
     available_area_sqm?: number;
     satellite_confidence?: number;
+    description?: string;
+    impact_score?: number;
+    cost_estimate?: string | number;
   };
 }
 
