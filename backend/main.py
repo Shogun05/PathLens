@@ -213,7 +213,18 @@ async def get_pois():
     try:
         with open(filepath, 'r') as f:
             geojson = json.load(f)
-        logger.info(f"Returning {len(geojson.get('features', []))} POIs")
+        
+        # Transform properties to match frontend expectations
+        features = geojson.get('features', [])
+        for feature in features:
+            props = feature.get('properties', {})
+            # Add amenity_type and id fields that frontend expects
+            if 'amenity' in props:
+                props['amenity_type'] = props['amenity']
+            if 'osmid' in props:
+                props['id'] = str(props['osmid'])
+        
+        logger.info(f"Returning {len(features)} POIs")
         return geojson
     except Exception as e:
         logger.error(f"Error reading POIs: {e}")
@@ -376,6 +387,172 @@ async def get_optimization_status():
     except Exception as e:
         logger.error(f"Error reading optimization status: {e}")
         return {"status": "error", "error": str(e)}
+
+@app.get("/api/optimization/results")
+async def get_optimization_results():
+    """Get the best optimization results (GA+MILP hybrid)"""
+    best_candidate_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "best_candidate.json")
+    
+    if not os.path.exists(best_candidate_path):
+        logger.warning("Best candidate not found")
+        raise HTTPException(status_code=404, detail="Optimization results not found")
+    
+    try:
+        with open(best_candidate_path, 'r') as f:
+            best_candidate = json.load(f)
+        
+        return {
+            "generation": best_candidate.get('generation'),
+            "fitness": best_candidate.get('metrics', {}).get('fitness'),
+            "metrics": best_candidate.get('metrics', {}),
+            "placements": best_candidate.get('metrics', {}).get('placements', {}),
+            "candidate": best_candidate.get('candidate'),
+            "template": best_candidate.get('template')
+        }
+    except Exception as e:
+        logger.error(f"Error reading optimization results: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/optimization/pois")
+async def get_optimization_pois():
+    """Get optimized POIs as GeoJSON (149 KB file with only optimized placements)"""
+    optimized_pois_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "optimized_pois.geojson")
+    
+    if not os.path.exists(optimized_pois_path):
+        logger.warning("Optimized POIs not found")
+        raise HTTPException(status_code=404, detail="Optimized POIs not found")
+    
+    try:
+        with open(optimized_pois_path, 'r') as f:
+            geojson = json.load(f)
+        
+        features = geojson.get('features', [])
+        
+        # Transform properties to match frontend expectations
+        for feature in features:
+            props = feature.get('properties', {})
+            # Add amenity_type and id fields that frontend expects
+            if 'amenity' in props:
+                props['amenity_type'] = props['amenity']
+            if 'osmid' in props:
+                props['id'] = str(props['osmid'])
+            # Add description
+            if 'amenity' in props:
+                amenity_name = props['amenity'].replace('_', ' ').title()
+                props['description'] = f"Optimized {amenity_name} placement"
+        
+        logger.info(f"Returning {len(features)} optimized POIs")
+        
+        return geojson
+    except Exception as e:
+        logger.error(f"Error reading optimized POIs: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/optimization/history")
+async def get_optimization_history():
+    """Get evolution history across all generations"""
+    runs_dir = os.path.join(BASE_DIR, "data", "optimization", "runs")
+    
+    try:
+        # Find all generation files
+        generation_files = sorted([
+            f for f in os.listdir(runs_dir) 
+            if f.startswith('generation_') and f.endswith('.json')
+        ])
+        
+        if not generation_files:
+            return {"generations": [], "message": "No generation history found"}
+        
+        history = []
+        for gen_file in generation_files:
+            gen_path = os.path.join(runs_dir, gen_file)
+            with open(gen_path, 'r') as f:
+                gen_data = json.load(f)
+            
+            # Extract generation number from filename
+            gen_num = int(gen_file.replace('generation_', '').replace('.json', ''))
+            
+            # Get best fitness from this generation
+            best_fitness = None
+            if isinstance(gen_data, list) and len(gen_data) > 0:
+                best_fitness = gen_data[0].get('metrics', {}).get('fitness')
+            
+            history.append({
+                "generation": gen_num,
+                "best_fitness": best_fitness,
+                "population_size": len(gen_data) if isinstance(gen_data, list) else 0
+            })
+        
+        logger.info(f"Returning history for {len(history)} generations")
+        return {"generations": history}
+        
+    except Exception as e:
+        logger.error(f"Error reading optimization history: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/optimization/summary")
+async def get_optimization_summary():
+    """Get optimization run summary with stats"""
+    summary_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "summary.json")
+    
+    if not os.path.exists(summary_path):
+        logger.warning("Summary not found")
+        return {"message": "No summary available"}
+    
+    try:
+        with open(summary_path, 'r') as f:
+            summary = json.load(f)
+        
+        logger.info("Returning optimization summary")
+        return summary
+    except Exception as e:
+        logger.error(f"Error reading summary: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/optimization/comparison")
+async def get_baseline_vs_optimized_comparison():
+    """Compare baseline vs optimized metrics"""
+    baseline_metrics_path = os.path.join(DATA_DIR, "baseline_metrics_summary.json")
+    optimized_metrics_path = os.path.join(DATA_DIR, "optimized_metrics_summary.json")
+    
+    comparison = {
+        "baseline": {},
+        "optimized": {},
+        "improvements": {}
+    }
+    
+    try:
+        # Load baseline metrics
+        if os.path.exists(baseline_metrics_path):
+            with open(baseline_metrics_path, 'r') as f:
+                comparison["baseline"] = json.load(f)
+        
+        # Load optimized metrics
+        if os.path.exists(optimized_metrics_path):
+            with open(optimized_metrics_path, 'r') as f:
+                comparison["optimized"] = json.load(f)
+        
+        # Calculate improvements
+        if comparison["baseline"] and comparison["optimized"]:
+            for key in comparison["baseline"]:
+                if key in comparison["optimized"]:
+                    baseline_val = comparison["baseline"][key]
+                    optimized_val = comparison["optimized"][key]
+                    
+                    if isinstance(baseline_val, (int, float)) and isinstance(optimized_val, (int, float)):
+                        improvement = optimized_val - baseline_val
+                        percent_change = (improvement / baseline_val * 100) if baseline_val != 0 else 0
+                        comparison["improvements"][key] = {
+                            "absolute": improvement,
+                            "percent": percent_change
+                        }
+        
+        logger.info("Returning baseline vs optimized comparison")
+        return comparison
+        
+    except Exception as e:
+        logger.error(f"Error creating comparison: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     import uvicorn

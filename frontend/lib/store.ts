@@ -81,6 +81,7 @@ interface PathLensState {
   setOptimizedNodes: (nodes: Node[]) => void;
   setSuggestions: (suggestions: Suggestion[]) => void;
   toggleSuggestion: (id: string) => void;
+  selectAllSuggestions: () => void;
   setIsOptimizing: (optimizing: boolean) => void;
   setIsRescoring: (rescoring: boolean) => void;
   setOptimizationProgress: (progress: string) => void;
@@ -134,6 +135,11 @@ export const usePathLensStore = create<PathLensState>((set) => ({
         newSet.add(id);
       }
       return { selectedSuggestionIds: newSet };
+    }),
+  selectAllSuggestions: () =>
+    set((state) => {
+      const allIds = new Set(state.suggestions.map(s => s.properties.id));
+      return { selectedSuggestionIds: allIds };
     }),
   setIsOptimizing: (isOptimizing) => set({ isOptimizing }),
   setIsRescoring: (isRescoring) => set({ isRescoring }),

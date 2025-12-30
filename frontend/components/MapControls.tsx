@@ -11,6 +11,12 @@ interface MapControlsProps {
   onLayerToggle?: (layer: string, enabled: boolean) => void;
   enabledLayers?: Set<string>;
   className?: string;
+  showBaselineToggle?: boolean;
+  showBaselineAmenities?: boolean;
+  onBaselineToggle?: (enabled: boolean) => void;
+  showNodesToggle?: boolean;
+  showNodes?: boolean;
+  onNodesToggle?: (enabled: boolean) => void;
 }
 
 export function MapControls({ 
@@ -18,7 +24,13 @@ export function MapControls({
   onZoomOut, 
   onLayerToggle,
   enabledLayers = new Set(['nodeScores']),
-  className = ''
+  className = '',
+  showBaselineToggle = false,
+  showBaselineAmenities = false,
+  onBaselineToggle,
+  showNodesToggle = false,
+  showNodes = true,
+  onNodesToggle,
 }: MapControlsProps) {
   const [showLayerMenu, setShowLayerMenu] = useState(false);
 
@@ -78,7 +90,7 @@ export function MapControls({
 
         {/* Bottom Left: Layer Chips */}
         <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end pointer-events-none">
-          <div className="pointer-events-auto flex flex-wrap gap-2 max-w-[70%]">
+          <div className="pointer-events-auto flex flex-wrap gap-2 max-w-[70%]" style={{ marginLeft: showNodesToggle ? '420px' : '0' }}>
             {/* All Layers Toggle */}
             <button
               className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1b2328]/90 border border-white/10 backdrop-blur-sm cursor-pointer hover:bg-[#1b2328] transition-colors"
@@ -87,6 +99,44 @@ export function MapControls({
               <Layers className="h-4 w-4 text-[#8fd6ff]" />
               <span className="text-xs font-medium text-white">Layers</span>
             </button>
+
+            {/* Baseline Amenities Toggle (only on /optimized) */}
+            {showBaselineToggle && onBaselineToggle && (
+              <button
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-full border backdrop-blur-sm cursor-pointer transition-colors ${
+                  showBaselineAmenities
+                    ? 'bg-[#8fd6ff]/20 border-[#8fd6ff]/40 hover:bg-[#8fd6ff]/30'
+                    : 'bg-[#1b2328]/90 border-white/10 hover:bg-[#1b2328]'
+                }`}
+                onClick={() => onBaselineToggle(!showBaselineAmenities)}
+              >
+                <MapPin className={`h-4 w-4 ${
+                  showBaselineAmenities ? 'text-[#8fd6ff]' : 'text-gray-400'
+                }`} />
+                <span className={`text-xs font-medium ${
+                  showBaselineAmenities ? 'text-[#8fd6ff]' : 'text-gray-400'
+                }`}>Existing Amenities</span>
+              </button>
+            )}
+
+            {/* Nodes Toggle (only on /optimized) */}
+            {showNodesToggle && onNodesToggle && (
+              <button
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-full border backdrop-blur-sm cursor-pointer transition-colors ${
+                  showNodes
+                    ? 'bg-[#8fd6ff]/20 border-[#8fd6ff]/40 hover:bg-[#8fd6ff]/30'
+                    : 'bg-[#1b2328]/90 border-white/10 hover:bg-[#1b2328]'
+                }`}
+                onClick={() => onNodesToggle(!showNodes)}
+              >
+                <Layers className={`h-4 w-4 ${
+                  showNodes ? 'text-[#8fd6ff]' : 'text-gray-400'
+                }`} />
+                <span className={`text-xs font-medium ${
+                  showNodes ? 'text-[#8fd6ff]' : 'text-gray-400'
+                }`}>Network Nodes</span>
+              </button>
+            )}
 
             {/* Active Layer Chips */}
             {layers

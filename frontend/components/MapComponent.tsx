@@ -36,6 +36,8 @@ interface MapSuggestion {
 interface MapComponentProps {
   nodes?: MapNode[];
   suggestions?: MapSuggestion[];
+  selectedSuggestionIds?: Set<string>;
+  onSuggestionClick?: (id: string) => void;
   center?: [number, number];
   zoom?: number;
   className?: string;
@@ -49,6 +51,8 @@ interface MapComponentProps {
 export default function MapComponent({
   nodes = [],
   suggestions = [],
+  selectedSuggestionIds = new Set(),
+  onSuggestionClick,
   center = [12.9716, 77.5946], // Bangalore default
   zoom = 12,
   className,
@@ -173,29 +177,45 @@ export default function MapComponent({
     }
 
     // Process Suggestions (always unclustered)
+    console.log(`[MapComponent] Rendering ${suggestions.length} suggestions`);
     suggestions.forEach((suggestion) => {
       const [lng, lat] = suggestion.geometry.coordinates;
       if (!lat || !lng) return;
       const id = `sugg-${suggestion.properties.id}`;
+      const isSelected = selectedSuggestionIds.has(suggestion.properties.id);
 
-      const popupContent = `
+      const tooltipContent = `
         <div class="text-xs">
           <strong>New Amenity</strong><br/>
-          <strong>Type:</strong> ${suggestion.properties.amenity_type}<br/>
-          <strong>ID:</strong> ${suggestion.properties.id}
+          <strong>Type:</strong> ${suggestion.properties.amenity_type || 'N/A'}<br/>
+          <strong>ID:</strong> ${suggestion.properties.id || 'N/A'}<br/>
+          <strong>Status:</strong> ${isSelected ? 'Selected' : 'Not Selected'}
+          ${suggestion.properties.description ? `<br/><em>${suggestion.properties.description}</em>` : ''}
         </div>
       `;
 
       const marker = L.circleMarker([lat, lng], {
-        radius: 8,
-        fillColor: '#8fd6ff',
+        radius: isSelected ? 10 : 8,
+        fillColor: isSelected ? '#10b981' : '#8fd6ff',
         color: '#fff',
-        weight: 2,
+        weight: isSelected ? 3 : 2,
         opacity: 1,
-        fillOpacity: 0.8,
+        fillOpacity: isSelected ? 0.9 : 0.8,
       });
 
-      marker.bindPopup(popupContent);
+      marker.bindTooltip(tooltipContent, {
+        permanent: false,
+        direction: 'top',
+        offset: [0, -10],
+        className: 'custom-tooltip'
+      });
+      
+      if (onSuggestionClick) {
+        marker.on('click', () => {
+          onSuggestionClick(suggestion.properties.id);
+        });
+      }
+      
       marker.addTo(map);
       currentMarkers.set(id, marker);
     });
@@ -213,7 +233,7 @@ export default function MapComponent({
       }
     }
 
-  }, [mapInstance, nodes, suggestions, enableClustering, maxMarkersBeforeClustering]);
+  }, [mapInstance, nodes, suggestions, enableClustering, maxMarkersBeforeClustering, selectedSuggestionIds, onSuggestionClick]);
 
   const startLatLngRef = useRef<L.LatLng | null>(null);
 

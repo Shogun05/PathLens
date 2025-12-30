@@ -67,4 +67,30 @@ export const pathLensAPI = {
     const response = await api.post('/api/rescore', data);
     return response.data;
   },
+
+  // Optimization endpoints
+  getOptimizationResults: async () => {
+    const response = await api.get('/api/optimization/results');
+    return response.data;
+  },
+
+  getOptimizationPois: async () => {
+    const response = await api.get('/api/optimization/pois');
+    return response.data;
+  },
+
+  getOptimizationHistory: async () => {
+    const response = await api.get('/api/optimization/history');
+    return response.data;
+  },
+
+  getOptimizationSummary: async () => {
+    const response = await api.get('/api/optimization/summary');
+    return response.data;
+  },
+
+  getOptimizationComparison: async () => {
+    const response = await api.get('/api/optimization/comparison');
+    return response.data;
+  },
 };

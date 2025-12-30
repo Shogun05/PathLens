@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-12-30T16:50:27.591606",
+  "pipelines_executed": [
+    "optimization"
+  ],
+  "results": {
+    "optimization": false
+  },
+  "config": "/home/shogun/Documents/PathLens/config.yaml",
+  "arguments": {
+    "pipeline": "optimization",
+    "skip_data": false,
+    "skip_optimization": false,
+    "skip_landuse": false,
+    "config": null,
+    "force": false,
+    "log_dir": null,
+    "place": "",
+    "ga_population": null,
+    "ga_generations": null,
+    "amenity": null
+  }
+}

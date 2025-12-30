@@ -58,22 +58,34 @@ export default function OptimizedPage() {
         } else {
           // Use API data with limit for performance
           console.log('Loading optimized nodes (limit: 2000)...');
-          const [nodes, suggsCollection] = await Promise.all([
+          const [nodes, suggsCollection, optimizationResults] = await Promise.all([
             pathLensAPI.getNodes({ type: 'optimized', limit: 2000 }),
-            pathLensAPI.getSuggestions(),
+            pathLensAPI.getOptimizationPois().catch(() => ({ features: [] })), // Use optimized POIs endpoint
+            pathLensAPI.getOptimizationResults().catch(() => null),
           ]);
           
           console.log(`Loaded ${nodes?.length || 0} optimized nodes`);
           if (nodes && nodes.length > 0) setOptimizedNodes(nodes);
           else setOptimizedNodes([]);
           
-          // Handle both array (direct list) and FeatureCollection formats
-          const suggestionsList = Array.isArray(suggsCollection) 
-            ? suggsCollection 
-            : (suggsCollection as any).features || [];
+          // Handle GeoJSON FeatureCollection from optimization POIs
+          const suggestionsList = suggsCollection?.features || [];
           
-          if (suggestionsList && suggestionsList.length > 0) setSuggestions(suggestionsList);
-          else setSuggestions([]);
+          if (suggestionsList && suggestionsList.length > 0) {
+            console.log(`Loaded ${suggestionsList.length} optimization suggestions`);
+            setSuggestions(suggestionsList);
+            // Select all suggestions by default
+            const selectAllSuggestions = usePathLensStore.getState().selectAllSuggestions;
+            selectAllSuggestions();
+          } else {
+            setSuggestions([]);
+          }
+          
+          // Use optimization results for score if available
+          if (optimizationResults?.metrics) {
+            console.log('Optimization metrics:', optimizationResults.metrics);
+            // Score is derived from nodes, but we can show optimization metadata
+          }
           
           // Calculate initial optimized score if not set
           if (nodes && nodes.length > 0) {
@@ -215,19 +227,20 @@ export default function OptimizedPage() {
                     No interventions available
                   </div>
                 ) : (
-                  suggestions.map((suggestion) => {
+                  suggestions.map((suggestion, index) => {
                     const Icon = getAmenityIcon(suggestion.properties?.amenity_type);
-                    const isSelected = selectedSuggestionIds.has(suggestion.properties.id);
+                    const suggestionId = suggestion.properties?.id || `suggestion-${index}`;
+                    const isSelected = selectedSuggestionIds.has(suggestionId);
                     
                     return (
                       <Card 
-                        key={suggestion.properties.id}
+                        key={suggestionId}
                         className={`p-3 border transition-all cursor-pointer ${
                           isSelected 
                           ? 'bg-[#8fd6ff]/10 border-[#8fd6ff]/50' 
                           : 'bg-[#1b2328] border-white/5 hover:border-white/20'
                       }`}
-                      onClick={() => toggleSuggestion(suggestion.properties.id)}
+                      onClick={() => toggleSuggestion(suggestionId)}
                     >
                       <div className="flex items-start gap-3">
                         <div className={`p-2 rounded-lg ${isSelected ? 'bg-[#8fd6ff]/20 text-[#8fd6ff]' : 'bg-white/5 text-gray-400'}`}>
@@ -240,7 +253,7 @@ export default function OptimizedPage() {
                             </h4>
                             <Switch 
                               checked={isSelected}
-                              onCheckedChange={() => toggleSuggestion(suggestion.properties.id)}
+                              onCheckedChange={() => toggleSuggestion(suggestionId)}
                               className="scale-75 data-[state=checked]:bg-[#8fd6ff]"
                             />
                           </div>
