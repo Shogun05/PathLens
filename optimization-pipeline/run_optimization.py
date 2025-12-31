@@ -85,7 +85,7 @@ def check_hybrid_milp_enabled(config_path: Path) -> bool:
 def run_step(description: str, command: List[str], logger) -> None:
     """Execute a subprocess while echoing context to stdout."""
     logger.info("=" * 80)
-    logger.info(f"▶ {description}")
+    logger.info(f"> {description}")
     logger.info("=" * 80)
     logger.info(f"Command: {' '.join(command)}")
     
@@ -94,7 +94,7 @@ def run_step(description: str, command: List[str], logger) -> None:
         logger.error(f"Step failed ({description}) with exit code {result.returncode}")
         raise SystemExit(f"Step failed ({description}) with exit code {result.returncode}.")
     
-    logger.info(f"✔ {description} completed")
+    logger.info(f"{description} completed successfully")
 
 
 def main() -> None:
@@ -318,7 +318,7 @@ Examples:
         logger.info("Skipping prefixed pipeline rebuild (--skip-pipeline)")
 
     logger.info("=" * 80)
-    logger.info("✓ Optimization workflow complete")
+    logger.info("Optimization workflow complete")
     logger.info(f"  Results: {runs_dir}")
     logger.info(f"  Analysis: {analysis_dir}")
     logger.info(f"  Logs: {log_dir}")

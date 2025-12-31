@@ -31,6 +31,17 @@ export interface NodesQueryParams {
   bbox?: string; // "west,south,east,north"
 }
 
+export interface OptimizationStatus {
+  status: string;
+  stage?: string;
+  message?: string;
+  percent?: number;
+  timestamp?: string;
+  pipelines?: Record<string, string>;
+  details?: Record<string, unknown>;
+  error?: string;
+}
+
 export const pathLensAPI = {
   optimize: async (data: OptimizeRequest) => {
     const response = await api.post('/api/optimize', data);
@@ -69,6 +80,11 @@ export const pathLensAPI = {
   },
 
   // Optimization endpoints
+  getOptimizationStatus: async (): Promise<OptimizationStatus> => {
+    const response = await api.get('/api/optimization/status');
+    return response.data;
+  },
+
   getOptimizationResults: async () => {
     const response = await api.get('/api/optimization/results');
     return response.data;

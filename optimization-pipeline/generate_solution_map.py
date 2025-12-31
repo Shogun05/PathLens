@@ -12,6 +12,7 @@ Usage: run from project root. The script:
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import logging
 import os
@@ -34,10 +35,11 @@ except ImportError as exc:  # pragma: no cover - defensive
 import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent  # Go up from optimization-pipeline/ to root
+DATA_PIPELINE_DIR = PROJECT_ROOT / "data-pipeline"
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from optimization_pipeline.hybrid_ga import ensure_index_on_osmid
+from hybrid_ga import ensure_index_on_osmid
 
 try:  # pragma: no cover - optional dependency
     import osmnx as ox
@@ -49,13 +51,40 @@ try:  # pragma: no cover - optional dependency
 except ImportError:  # pragma: no cover - defensive
     tqdm = None  # type: ignore
 
-sys.path.insert(0, str(PROJECT_ROOT / "data-pipeline"))
-from compute_scores import (
-    compute_accessibility_score,
-    compute_travel_time_metrics,
-    load_config,
-    nearest_amenity_distances,
-)
+if DATA_PIPELINE_DIR.exists() and str(DATA_PIPELINE_DIR) not in sys.path:
+    sys.path.insert(0, str(DATA_PIPELINE_DIR))
+
+
+def _load_compute_scores_fallback():
+    """Load compute_scores directly via spec when sys.path imports fail."""
+    compute_scores_path = DATA_PIPELINE_DIR / "compute_scores.py"
+    if not compute_scores_path.exists():
+        raise ModuleNotFoundError(
+            f"compute_scores.py not found in {compute_scores_path.parent}"
+        )
+    spec = importlib.util.spec_from_file_location("compute_scores", compute_scores_path)
+    if spec is None or spec.loader is None:
+        raise ModuleNotFoundError(
+            f"Unable to build module spec for {compute_scores_path}"
+        )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)  # type: ignore[attr-defined]
+    return module
+
+
+try:
+    from compute_scores import (
+        compute_accessibility_score,
+        compute_travel_time_metrics,
+        load_config,
+        nearest_amenity_distances,
+    )
+except ModuleNotFoundError:
+    _compute_scores = _load_compute_scores_fallback()
+    compute_accessibility_score = _compute_scores.compute_accessibility_score
+    compute_travel_time_metrics = _compute_scores.compute_travel_time_metrics
+    load_config = _compute_scores.load_config
+    nearest_amenity_distances = _compute_scores.nearest_amenity_distances
 
 DEFAULT_CENTER: Tuple[float, float] = (12.9716, 77.5946)  # Bengaluru fallback
 
@@ -803,7 +832,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--best-candidate",
         type=Path,
-        default=project_root / "optimization-pipeline" / "runs" / "best_candidate.json",
+        default=project_root / "data" / "optimization" / "runs" / "best_candidate.json",
         help="Path to the best_candidate.json output from the GA run.",
     )
     parser.add_argument(
@@ -821,37 +850,37 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--existing-pois",
         type=Path,
-        default=project_root / "data" / "raw" / "pois.geojson",
+        default=project_root / "data" / "raw" / "osm"/ "pois.geojson",
         help="GeoJSON containing existing POIs to overlay.",
     )
     parser.add_argument(
         "--config",
         type=Path,
-        default=project_root / "../config.yaml",
+        default=project_root / "config.yaml",
         help="Configuration file supplying amenity weights and scoring parameters.",
     )
     parser.add_argument(
         "--output-geojson",
         type=Path,
-        default=project_root / "optimization-pipeline" / "runs" / "poi_mapping.geojson",
+        default=project_root / "data"/ "optimization" / "runs" / "poi_mapping.geojson",
         help="Destination for the combined POI GeoJSON.",
     )
     parser.add_argument(
         "--output-map",
         type=Path,
-        default=project_root / "optimization-pipeline" / "runs" / "optimized_map.html",
+        default=project_root / "data"/ "optimization" / "runs" / "optimized_map.html",
         help="Destination for the interactive HTML map.",
     )
     parser.add_argument(
         "--optimized-nodes-output",
         type=Path,
-        default=project_root / "optimization-pipeline" / "runs" / "optimized_nodes_with_scores.parquet",
+        default=project_root /  "data"/ "optimization" / "runs" / "optimized_nodes_with_scores.parquet",
         help="Path to write node-level optimized scores (parquet).",
     )
     parser.add_argument(
         "--optimized-summary-output",
         type=Path,
-        default=project_root / "optimization-pipeline" / "runs" / "optimized_metrics_summary.json",
+        default=project_root / "data"/ "optimization" / "runs" / "optimized_metrics_summary.json",
         help="Path to write optimized score summary (JSON).",
     )
     parser.add_argument(

@@ -1035,7 +1035,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--high-travel", type=Path, default=project_root / "optimization-pipeline" / "high_travel_time_nodes.csv")
     parser.add_argument("--config", type=Path, default=project_root / "../config.yaml")
     parser.add_argument("--population", type=int, default=30)
-    parser.add_argument("--generations", type=int, default=10)
+    parser.add_argument("--generations", type=int, default=1)
     parser.add_argument("--crossover", type=float, default=0.75)
     parser.add_argument("--mutation", type=float, default=0.2)
     parser.add_argument("--elitism", type=int, default=4)

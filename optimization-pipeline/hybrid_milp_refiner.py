@@ -340,7 +340,7 @@ class HybridMILPRefiner:
             
             # Return refined candidate only if improved
             if improved:
-                logger.info(f"✓ MILP refinement improved fitness by {improvement:.4f}")
+                logger.info(f"MILP refinement improved fitness by {improvement:.4f}")
                 return refined_candidate, result
             else:
                 logger.debug("MILP refinement did not improve fitness")

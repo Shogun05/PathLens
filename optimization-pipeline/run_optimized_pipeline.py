@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import subprocess
 import sys
 import time
@@ -24,27 +25,65 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent  # Go up from optimization
 DEFAULT_BASELINE_PREFIX = "baseline"
 DEFAULT_OPTIMIZED_PREFIX = "optimized"
 
+LOGGER_NAME = "PathLensOptimizedPipeline"
+logger = logging.getLogger(LOGGER_NAME)
+
 # Global counters for progress tracking
 _current_step = 0
 _total_steps = 0
 
 
+def _stream_command(command: Sequence[str]) -> int:
+    """Run a command and stream stdout/stderr to the console while returning the exit code."""
+    with subprocess.Popen(
+        command,
+        cwd=PROJECT_ROOT,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        universal_newlines=True,
+    ) as process:
+        assert process.stdout is not None  # for type-checkers
+        for line in process.stdout:
+            sys.stdout.write(line)
+            logger.debug(line.rstrip())
+        process.wait()
+        return process.returncode if process.returncode is not None else -1
+
+
 def run_step(command: Sequence[str], description: str) -> None:
-    """Execute a subprocess command with logging and error handling."""
+    """Execute a subprocess command with logging, timing, and better failure diagnostics."""
     global _current_step
     _current_step += 1
-    
+
     progress_prefix = f"[Step {_current_step}/{_total_steps}]" if _total_steps > 0 else ""
+    header = f"{progress_prefix} -> {description}" if progress_prefix else description
     print("\n" + "=" * 80)
-    print(f"{progress_prefix} ▶ {description}")
+    print(header)
     print("=" * 80)
-    print("Command:", " ".join(str(piece) for piece in command))
+    command_str = " ".join(str(piece) for piece in command)
+    print("Command:", command_str)
+    logger.info("Starting step: %s", header)
+    logger.info("Executing command: %s", command_str)
     start_time = time.time()
-    result = subprocess.run(command, cwd=PROJECT_ROOT)
+
+    try:
+        return_code = _stream_command(command)
+    except FileNotFoundError as exc:  # pragma: no cover - defensive
+        logger.exception("Executable not found while running step '%s'", description)
+        raise SystemExit(f"Unable to launch command for '{description}': {exc}") from exc
+
     elapsed = time.time() - start_time
-    if result.returncode != 0:
-        raise SystemExit(f"Step failed ({description}) with exit code {result.returncode}.")
-    print(f"✓ Completed in {elapsed:.1f}s")
+    if return_code != 0:
+        logger.error(
+            "Step '%s' failed with exit code %s. Command: %s",
+            description,
+            return_code,
+            command_str,
+        )
+        raise SystemExit(f"Step failed ({description}) with exit code {return_code}.")
+
+    logger.info("Step completed: %s (%.1fs)", description, elapsed)
+    print(f"Completed in {elapsed:.1f}s")
 
 
 def ensure_optimized_layer(combined_path: Path, optimized_path: Path) -> int:
@@ -52,6 +91,7 @@ def ensure_optimized_layer(combined_path: Path, optimized_path: Path) -> int:
     if not combined_path.exists():
         raise FileNotFoundError(f"Combined POI layer not found at {combined_path}")
 
+    logger.info("Extracting optimized features from %s", combined_path)
     data = json.loads(combined_path.read_text(encoding="utf-8"))
     optimized_features = [
         feature
@@ -66,7 +106,9 @@ def ensure_optimized_layer(combined_path: Path, optimized_path: Path) -> int:
     }
     optimized_path.parent.mkdir(parents=True, exist_ok=True)
     optimized_path.write_text(json.dumps(optimized_collection, indent=2), encoding="utf-8")
-    return len(optimized_features)
+    count = len(optimized_features)
+    logger.info("Extracted %d optimized POIs into %s", count, optimized_path)
+    return count
 
 
 def main() -> None:
@@ -83,7 +125,19 @@ def main() -> None:
     parser.add_argument("--baseline-prefix", default=DEFAULT_BASELINE_PREFIX, help="Filename prefix for baseline artifacts")
     parser.add_argument("--optimized-prefix", default=DEFAULT_OPTIMIZED_PREFIX, help="Filename prefix for optimized artifacts")
     parser.add_argument("--skip-map-metrics", action="store_true", help="Pass --skip-metrics to generate_solution_map.py")
+    parser.add_argument(
+        "--log-level",
+        default="INFO",
+        choices=["CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG"],
+        help="Logging verbosity for this orchestrator",
+    )
     args = parser.parse_args()
+
+    logging.basicConfig(
+        level=getattr(logging, args.log_level.upper(), logging.INFO),
+        format="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
+    )
+    logger.debug("Logging configured at %s level", args.log_level.upper())
 
     python_exe = str(args.python)
 
@@ -122,9 +176,10 @@ def main() -> None:
             _total_steps += 1
     
     print("\n" + "=" * 80)
-    print(f"PathLens Optimization Pipeline")
+    print("PathLens Optimization Pipeline")
     print(f"Total steps to execute: {_total_steps}")
     print("=" * 80)
+    logger.info("Beginning pipeline run with %d steps", _total_steps)
 
     if not args.skip_map:
         map_command = [
@@ -133,14 +188,18 @@ def main() -> None:
         ]
         if args.skip_map_metrics:
             map_command.append("--skip-metrics")
+        map_script = PROJECT_ROOT / "optimization" / "generate_solution_map.py"
+        logger.debug("Map script resolved to %s", map_script)
         run_step(map_command, "Generate optimized POIs & map from GA best candidate")
         args.refresh_map = True
 
     if args.refresh_map:
         created = ensure_optimized_layer(combined_geojson, optimized_geojson)
+        logger.info("Prepared optimized-only POI layer with %d features at %s", created, optimized_geojson)
         print(f"Prepared optimized-only POI layer with {created} features -> {optimized_geojson}")
     elif not optimized_geojson.exists():
         created = ensure_optimized_layer(combined_geojson, optimized_geojson)
+        logger.info("Derived optimized-only layer with %d features (previously missing)", created)
         print(f"Derived optimized-only POI layer (missing previously) -> {optimized_geojson} ({created} features)")
 
     if not args.skip_graph:
@@ -159,6 +218,7 @@ def main() -> None:
             ]
             run_step(baseline_command, "Build baseline processed graph")
         else:
+            logger.info("Skipping baseline graph build; reusing %s", baseline_graph)
             print(f"\n[Skip] Baseline graph build (reusing {baseline_graph.name})")
 
         if args.force_graph or not (optimized_graph.exists() and optimized_mapping.exists()):
@@ -180,6 +240,7 @@ def main() -> None:
             ]
             run_step(optimized_command, "Build optimized processed graph with merged POIs")
         else:
+            logger.info("Skipping optimized graph build; reusing %s", optimized_graph)
             print(f"\n[Skip] Optimized graph build (reusing {optimized_graph.name})")
 
     if not args.skip_scoring:
@@ -202,6 +263,7 @@ def main() -> None:
             ]
             run_step(baseline_scoring_command, "Compute baseline scoring outputs")
         else:
+            logger.info("Skipping baseline scoring; reusing %s", baseline_nodes)
             print(f"\n[Skip] Baseline scoring (reusing {baseline_nodes.name})")
 
         if args.force_scoring or not optimized_nodes.exists():
@@ -223,11 +285,13 @@ def main() -> None:
             ]
             run_step(optimized_scoring_command, "Compute optimized scoring outputs")
         else:
+            logger.info("Skipping optimized scoring; reusing %s", optimized_nodes)
             print(f"\n[Skip] Optimized scoring (reusing {optimized_nodes.name})")
 
     print("\n" + "=" * 80)
-    print("✓ Pipeline orchestration complete!")
+    print("Pipeline orchestration complete!")
     print("=" * 80)
+    logger.info("Pipeline orchestration complete")
     print(f"\nKey artifacts:")
     print(f"  Baseline graph:    {baseline_graph}")
     print(f"  Optimized graph:   {optimized_graph}")
