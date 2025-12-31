@@ -1,0 +1,9 @@
+2025-12-22 02:02:22,156 - __main__ - INFO - Logging initialized: /home/shogun/Documents/PathLens/optimization/runs/logs/optimization_run_20251222_020222.log
+2025-12-22 02:02:22,156 - __main__ - INFO - PathLens Optimization Workflow
+2025-12-22 02:02:22,156 - __main__ - INFO - Project root: /home/shogun/Documents/PathLens
+2025-12-22 02:02:22,158 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2025-12-22 02:02:22,158 - __main__ - INFO - ================================================================================
+2025-12-22 02:02:22,158 - __main__ - INFO - ▶ Extract high travel time nodes
+2025-12-22 02:02:22,158 - __main__ - INFO - ================================================================================
+2025-12-22 02:02:22,158 - __main__ - INFO - Command: /usr/bin/python /home/shogun/Documents/PathLens/optimization/list_optimizable_nodes.py --input /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --output /home/shogun/Documents/PathLens/optimization/high_travel_time_nodes.csv
+2025-12-22 02:02:22,221 - __main__ - ERROR - Step failed (Extract high travel time nodes) with exit code 1

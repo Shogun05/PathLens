@@ -1,0 +1,69 @@
+{
+  "timestamp": "2025-12-30T16:47:06.439362",
+  "arguments": {
+    "python": "/home/shogun/Documents/PathLens/venv/bin/python3",
+    "skip_candidates": false,
+    "skip_ga": false,
+    "skip_map_refresh": false,
+    "skip_pipeline": false,
+    "candidate_threshold": null,
+    "candidate_limit": null,
+    "ga_population": null,
+    "ga_generations": null,
+    "ga_workers": null,
+    "ga_random_seed": null,
+    "ga_local_search_budget": null,
+    "ga_config": "/home/shogun/Documents/PathLens/config.yaml",
+    "map_skip_metrics": false,
+    "pipeline_refresh_map": false,
+    "pipeline_skip_map_metrics": false,
+    "pipeline_force_graph": false,
+    "pipeline_force_scoring": false,
+    "pipeline_skip_graph": false,
+    "pipeline_skip_scoring": false,
+    "baseline_prefix": "baseline",
+    "optimized_prefix": "optimized",
+    "log_dir": null
+  },
+  "python_executable": "/home/shogun/Documents/PathLens/venv/bin/python3",
+  "steps_executed": {
+    "candidates": true,
+    "ga": true,
+    "map_refresh": true,
+    "pipeline": true
+  }
+}{
+  "timestamp": "2025-12-30T16:47:06.439362",
+  "arguments": {
+    "python": "/home/shogun/Documents/PathLens/venv/bin/python3",
+    "skip_candidates": false,
+    "skip_ga": false,
+    "skip_map_refresh": false,
+    "skip_pipeline": false,
+    "candidate_threshold": null,
+    "candidate_limit": null,
+    "ga_population": null,
+    "ga_generations": null,
+    "ga_workers": null,
+    "ga_random_seed": null,
+    "ga_local_search_budget": null,
+    "ga_config": "/home/shogun/Documents/PathLens/config.yaml",
+    "map_skip_metrics": false,
+    "pipeline_refresh_map": false,
+    "pipeline_skip_map_metrics": false,
+    "pipeline_force_graph": false,
+    "pipeline_force_scoring": false,
+    "pipeline_skip_graph": false,
+    "pipeline_skip_scoring": false,
+    "baseline_prefix": "baseline",
+    "optimized_prefix": "optimized",
+    "log_dir": null
+  },
+  "python_executable": "/home/shogun/Documents/PathLens/venv/bin/python3",
+  "steps_executed": {
+    "candidates": true,
+    "ga": true,
+    "map_refresh": true,
+    "pipeline": true
+  }
+}

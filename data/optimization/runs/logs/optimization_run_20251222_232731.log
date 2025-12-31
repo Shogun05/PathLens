@@ -1,0 +1,14 @@
+2025-12-22 23:27:31,930 - __main__ - INFO - Logging initialized: /home/shogun/Documents/PathLens/optimization/runs/logs/optimization_run_20251222_232731.log
+2025-12-22 23:27:31,931 - __main__ - INFO - PathLens Optimization Workflow
+2025-12-22 23:27:31,931 - __main__ - INFO - Project root: /home/shogun/Documents/PathLens
+2025-12-22 23:27:31,937 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2025-12-22 23:27:31,938 - __main__ - INFO - ================================================================================
+2025-12-22 23:27:31,938 - __main__ - INFO - ▶ Extract high travel time nodes
+2025-12-22 23:27:31,938 - __main__ - INFO - ================================================================================
+2025-12-22 23:27:31,938 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization/list_optimizable_nodes.py --input /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --output /home/shogun/Documents/PathLens/optimization/high_travel_time_nodes.csv
+2025-12-22 23:27:33,566 - __main__ - INFO - ✔ Extract high travel time nodes completed
+2025-12-22 23:27:33,567 - __main__ - INFO - Auto-detected 12 worker threads (75% of 16 cores)
+2025-12-22 23:27:33,567 - __main__ - INFO - ================================================================================
+2025-12-22 23:27:33,567 - __main__ - INFO - ▶ Run hybrid genetic algorithm with MILP refinement
+2025-12-22 23:27:33,567 - __main__ - INFO - ================================================================================
+2025-12-22 23:27:33,567 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization/hybrid_ga.py --nodes-scores /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --high-travel /home/shogun/Documents/PathLens/optimization/high_travel_time_nodes.csv --analysis-dir /home/shogun/Documents/PathLens/optimization/runs --generations 50 --workers 12

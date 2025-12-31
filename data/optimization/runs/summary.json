@@ -1,0 +1,491 @@
+{
+  "best_candidate": "bus_station:7089247200|hospital:7331215226,7384411563|park:4029960024,7383997856|pharmacy:12285362614,2146206410|school:10063673429,2248079848,4029957205,7208384011,7331215076,7484505099|supermarket:3034669696",
+  "best_metrics": {
+    "fitness": 2.149422492096836,
+    "distance_gain": 2.1607822612932646,
+    "travel_penalty": 22.719538392857146,
+    "diversity_penalty": 0.0,
+    "proximity_penalty": 0.0,
+    "placements": {
+      "pharmacy": 2,
+      "park": 2,
+      "supermarket": 1,
+      "school": 6,
+      "bus_station": 1,
+      "hospital": 2
+    },
+    "best_distances": {
+      "pharmacy": 4401.591999999999,
+      "park": 1751.845,
+      "supermarket": 5601.329,
+      "school": 1964.5020000000002,
+      "bus_station": 8695.388000000004,
+      "hospital": 4941.901
+    },
+    "amenity_scores": {
+      "pharmacy": 0.3472050101394816,
+      "park": 0.37720711186670813,
+      "supermarket": 0.3656104452273332,
+      "school": 0.4085208257228943,
+      "bus_station": 0.3400677384679707,
+      "hospital": 0.3221711298688765
+    }
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 0,
+        "mutation": 0,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 2,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 10,
+        "mutation": 32,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 3,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 22,
+        "mutation": 73,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 4,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 30,
+        "mutation": 98,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 5,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 41,
+        "mutation": 134,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 6,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 49,
+        "mutation": 170,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 7,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 59,
+        "mutation": 205,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 8,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 67,
+        "mutation": 238,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 9,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 79,
+        "mutation": 264,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 10,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 89,
+        "mutation": 292,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 11,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 100,
+        "mutation": 317,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 12,
+      "best_fitness": 0.0,
+      "operator_credits": {
+        "crossover": 110,
+        "mutation": 344,
+        "local_search": 0
+      }
+    },
+    {
+      "generation": 13,
+      "best_fitness": 1.4863718238045687,
+      "operator_credits": {
+        "crossover": 121,
+        "mutation": 375,
+        "local_search": 68
+      }
+    },
+    {
+      "generation": 14,
+      "best_fitness": 1.4863718238045687,
+      "operator_credits": {
+        "crossover": 133,
+        "mutation": 407,
+        "local_search": 74
+      }
+    },
+    {
+      "generation": 15,
+      "best_fitness": 1.8208249608741978,
+      "operator_credits": {
+        "crossover": 144,
+        "mutation": 435,
+        "local_search": 164
+      }
+    },
+    {
+      "generation": 16,
+      "best_fitness": 1.8969189502955799,
+      "operator_credits": {
+        "crossover": 153,
+        "mutation": 474,
+        "local_search": 164
+      }
+    },
+    {
+      "generation": 17,
+      "best_fitness": 1.8969189502955799,
+      "operator_credits": {
+        "crossover": 163,
+        "mutation": 508,
+        "local_search": 186
+      }
+    },
+    {
+      "generation": 18,
+      "best_fitness": 1.922363454001592,
+      "operator_credits": {
+        "crossover": 171,
+        "mutation": 537,
+        "local_search": 199
+      }
+    },
+    {
+      "generation": 19,
+      "best_fitness": 1.922363454001592,
+      "operator_credits": {
+        "crossover": 182,
+        "mutation": 573,
+        "local_search": 199
+      }
+    },
+    {
+      "generation": 20,
+      "best_fitness": 1.922363454001592,
+      "operator_credits": {
+        "crossover": 193,
+        "mutation": 602,
+        "local_search": 221
+      }
+    },
+    {
+      "generation": 21,
+      "best_fitness": 1.922363454001592,
+      "operator_credits": {
+        "crossover": 203,
+        "mutation": 631,
+        "local_search": 244
+      }
+    },
+    {
+      "generation": 22,
+      "best_fitness": 1.9657543212099589,
+      "operator_credits": {
+        "crossover": 213,
+        "mutation": 664,
+        "local_search": 261
+      }
+    },
+    {
+      "generation": 23,
+      "best_fitness": 1.9657543212099589,
+      "operator_credits": {
+        "crossover": 220,
+        "mutation": 697,
+        "local_search": 261
+      }
+    },
+    {
+      "generation": 24,
+      "best_fitness": 1.9684063128419433,
+      "operator_credits": {
+        "crossover": 231,
+        "mutation": 727,
+        "local_search": 275
+      }
+    },
+    {
+      "generation": 25,
+      "best_fitness": 1.9684063128419433,
+      "operator_credits": {
+        "crossover": 239,
+        "mutation": 760,
+        "local_search": 291
+      }
+    },
+    {
+      "generation": 26,
+      "best_fitness": 1.9684063128419433,
+      "operator_credits": {
+        "crossover": 249,
+        "mutation": 788,
+        "local_search": 291
+      }
+    },
+    {
+      "generation": 27,
+      "best_fitness": 1.9684063128419433,
+      "operator_credits": {
+        "crossover": 260,
+        "mutation": 816,
+        "local_search": 312
+      }
+    },
+    {
+      "generation": 28,
+      "best_fitness": 1.9906580114319128,
+      "operator_credits": {
+        "crossover": 271,
+        "mutation": 851,
+        "local_search": 334
+      }
+    },
+    {
+      "generation": 29,
+      "best_fitness": 1.9906580114319128,
+      "operator_credits": {
+        "crossover": 281,
+        "mutation": 881,
+        "local_search": 337
+      }
+    },
+    {
+      "generation": 30,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 293,
+        "mutation": 915,
+        "local_search": 343
+      }
+    },
+    {
+      "generation": 31,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 301,
+        "mutation": 940,
+        "local_search": 364
+      }
+    },
+    {
+      "generation": 32,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 308,
+        "mutation": 977,
+        "local_search": 376
+      }
+    },
+    {
+      "generation": 33,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 319,
+        "mutation": 1002,
+        "local_search": 382
+      }
+    },
+    {
+      "generation": 34,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 327,
+        "mutation": 1037,
+        "local_search": 382
+      }
+    },
+    {
+      "generation": 35,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 336,
+        "mutation": 1065,
+        "local_search": 394
+      }
+    },
+    {
+      "generation": 36,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 347,
+        "mutation": 1102,
+        "local_search": 415
+      }
+    },
+    {
+      "generation": 37,
+      "best_fitness": 2.0204184548215944,
+      "operator_credits": {
+        "crossover": 356,
+        "mutation": 1133,
+        "local_search": 415
+      }
+    },
+    {
+      "generation": 38,
+      "best_fitness": 2.069761343589248,
+      "operator_credits": {
+        "crossover": 364,
+        "mutation": 1170,
+        "local_search": 418
+      }
+    },
+    {
+      "generation": 39,
+      "best_fitness": 2.069761343589248,
+      "operator_credits": {
+        "crossover": 374,
+        "mutation": 1201,
+        "local_search": 418
+      }
+    },
+    {
+      "generation": 40,
+      "best_fitness": 2.069761343589248,
+      "operator_credits": {
+        "crossover": 385,
+        "mutation": 1225,
+        "local_search": 440
+      }
+    },
+    {
+      "generation": 41,
+      "best_fitness": 2.0698237097797243,
+      "operator_credits": {
+        "crossover": 394,
+        "mutation": 1258,
+        "local_search": 440
+      }
+    },
+    {
+      "generation": 42,
+      "best_fitness": 2.088944643730042,
+      "operator_credits": {
+        "crossover": 405,
+        "mutation": 1290,
+        "local_search": 454
+      }
+    },
+    {
+      "generation": 43,
+      "best_fitness": 2.088944643730042,
+      "operator_credits": {
+        "crossover": 415,
+        "mutation": 1323,
+        "local_search": 454
+      }
+    },
+    {
+      "generation": 44,
+      "best_fitness": 2.088944643730042,
+      "operator_credits": {
+        "crossover": 425,
+        "mutation": 1353,
+        "local_search": 495
+      }
+    },
+    {
+      "generation": 45,
+      "best_fitness": 2.1302629662852546,
+      "operator_credits": {
+        "crossover": 436,
+        "mutation": 1379,
+        "local_search": 495
+      }
+    },
+    {
+      "generation": 46,
+      "best_fitness": 2.1302629662852546,
+      "operator_credits": {
+        "crossover": 444,
+        "mutation": 1413,
+        "local_search": 519
+      }
+    },
+    {
+      "generation": 47,
+      "best_fitness": 2.1302629662852546,
+      "operator_credits": {
+        "crossover": 456,
+        "mutation": 1442,
+        "local_search": 526
+      }
+    },
+    {
+      "generation": 48,
+      "best_fitness": 2.1302629662852546,
+      "operator_credits": {
+        "crossover": 466,
+        "mutation": 1481,
+        "local_search": 549
+      }
+    },
+    {
+      "generation": 49,
+      "best_fitness": 2.149422492096836,
+      "operator_credits": {
+        "crossover": 475,
+        "mutation": 1520,
+        "local_search": 556
+      }
+    },
+    {
+      "generation": 50,
+      "best_fitness": 2.149422492096836,
+      "operator_credits": {
+        "crossover": 484,
+        "mutation": 1543,
+        "local_search": 587
+      }
+    }
+  ],
+  "operator_credits": {
+    "crossover": 494,
+    "mutation": 1564,
+    "local_search": 587
+  }
+}
