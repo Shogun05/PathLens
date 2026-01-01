@@ -1,9 +1,15 @@
 venv/
 *__pycache__/
 # GEE Service Account
-GEE-landuse/pathlens-service-account.json
+landuse-pipeline/landuse-service-account.json
 *.iam.gserviceaccount.com.json
 secrets/
 .env
 prototype/
 GraphBuilder/venv
+.vscode/
+*.pdf
+cache/
+*.zip
+PAPER.md
+data/raw/extras
