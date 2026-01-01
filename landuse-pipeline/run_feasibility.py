@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-PathLens Complete Pipeline - Single File
+Land-Use Feasibility Pipeline - Single File
 Integrates: amenity placement → GEE upload → GEE analysis → local download → feasibility filtering
 
 Usage:
-    python pathlens_pipeline.py hospital
-    python pathlens_pipeline.py school
-    python pathlens_pipeline.py --all  # Process all amenities
+    python run_feasibility.py hospital
+    python run_feasibility.py school
+    python run_feasibility.py --all  # Process all amenities
 """
 
 import json
@@ -21,6 +21,7 @@ import geopandas as gpd
 from shapely.geometry import Point
 import ee
 import geemap
+from google.oauth2 import service_account
 
 
 # ================= CONFIGURATION =================
@@ -28,6 +29,7 @@ import geemap
 # landuse-pipeline/ is at project root, so parent is BASE_DIR
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_ID = 'tidecon-9913b'
+SERVICE_ACCOUNT_JSON = Path(__file__).resolve().parent / "landuse-service-account.json"
 
 # Input files
 BEST_CANDIDATE_PATH = BASE_DIR / "data" / "optimization" / "runs" / "best_candidate.json"
@@ -93,27 +95,38 @@ class AmenityPlacementBuilder:
         candidate_ids = set(amenity_map[amenity])
         
         # Load node table
-        df = pd.read_csv(self.nodes_csv_path)
+        df = pd.read_csv(self.nodes_csv_path, low_memory=False)
         
         id_col = "osmid"
-        lat_col = "lat"
-        lon_col = "lon"
         
         # Filter nodes
         df_sub = df[df[id_col].isin(candidate_ids)].copy()
         if df_sub.empty:
             raise RuntimeError(f"No nodes found for amenity '{amenity}'")
         
-        # Build GeoDataFrame
+        # Build GeoDataFrame from geometry column using approach from reproject_nodes.py
         df_sub["node_id"] = df_sub[id_col].astype("int64")
         df_sub["amenity"] = amenity
         
-        geometry = [Point(xy) for xy in zip(df_sub[lon_col], df_sub[lat_col])]
+        # Parse geometry from WKT string - handle both 'geometry' and 'wkt' columns
+        if "geometry" in df_sub.columns:
+            geometry_series = gpd.GeoSeries.from_wkt(df_sub["geometry"])
+        elif "wkt" in df_sub.columns:
+            geometry_series = gpd.GeoSeries.from_wkt(df_sub["wkt"])
+        else:
+            raise ValueError("No geometry column found (expected 'geometry' or 'wkt')")
+        
+        # Create GeoDataFrame with proper CRS handling
+        # OSM data is typically in EPSG:4326, but if x/y are in projected coords, may need different CRS
         gdf = gpd.GeoDataFrame(
             df_sub[["node_id", "amenity"]],
-            geometry=geometry,
-            crs="EPSG:4326",
+            geometry=geometry_series,
+            crs="EPSG:4326"  # OSM standard CRS
         )
+        
+        # Ensure data is in WGS84 for GEE
+        if gdf.crs.to_epsg() != 4326:
+            gdf = gdf.to_crs(epsg=4326)
         
         # Save GeoJSON
         out_path = OUTPUT_DIR / f"node_candidates_{amenity}.geojson"
@@ -133,12 +146,18 @@ class GEEUploader:
         self._initialize_ee()
     
     def _initialize_ee(self):
-        """Initialize Earth Engine"""
-        try:
-            ee.Initialize()
-        except:
-            ee.Authenticate()
-            ee.Initialize()
+        """Initialize Earth Engine with service account"""
+        if not SERVICE_ACCOUNT_JSON.exists():
+            raise FileNotFoundError(
+                f"Service account JSON not found: {SERVICE_ACCOUNT_JSON}\n"
+                "Download it from IAM → Service Accounts → KEYS → ADD KEY → JSON"
+            )
+        
+        credentials = service_account.Credentials.from_service_account_file(
+            str(SERVICE_ACCOUNT_JSON),
+            scopes=['https://www.googleapis.com/auth/earthengine']
+        )
+        ee.Initialize(credentials=credentials, project=self.project_id)
     
     def upload_geojson(self, geojson_path: Path, amenity: str) -> str:
         """Upload GeoJSON to GEE and return asset ID"""
@@ -147,6 +166,16 @@ class GEEUploader:
         print(f"{'='*60}")
         
         asset_id = f'projects/{self.project_id}/assets/{amenity}_nodes'
+        
+        # Delete existing asset if it exists to prevent overwrite errors
+        try:
+            ee.data.getAsset(asset_id)
+            print(f"✓ Deleting existing asset: {asset_id}")
+            ee.data.deleteAsset(asset_id)
+            time.sleep(2)  # Brief pause to ensure deletion completes
+        except ee.EEException:
+            # Asset doesn't exist, which is fine
+            pass
         
         # Read GeoJSON
         gdf = gpd.read_file(geojson_path)
@@ -201,7 +230,7 @@ class GEEUploader:
 
 # ================= STEP 3: GEE ANALYSIS =================
 
-class PathLensAnalyzer:
+class LandUseAnalyzer:
     """Run land-use feasibility analysis on GEE"""
     
     def __init__(self, project_id):
@@ -212,11 +241,18 @@ class PathLensAnalyzer:
         self._load_earth_engine_data()
     
     def _initialize_ee(self):
-        try:
-            ee.Initialize()
-        except:
-            ee.Authenticate()
-            ee.Initialize()
+        """Initialize Earth Engine with service account"""
+        if not SERVICE_ACCOUNT_JSON.exists():
+            raise FileNotFoundError(
+                f"Service account JSON not found: {SERVICE_ACCOUNT_JSON}\n"
+                "Download it from IAM → Service Accounts → KEYS → ADD KEY → JSON"
+            )
+        
+        credentials = service_account.Credentials.from_service_account_file(
+            str(SERVICE_ACCOUNT_JSON),
+            scopes=['https://www.googleapis.com/auth/earthengine']
+        )
+        ee.Initialize(credentials=credentials, project=self.project_id)
     
     def _load_earth_engine_data(self):
         """Load ESA WorldCover data"""
@@ -373,7 +409,7 @@ class GEEDownloader:
         print(f"{'='*60}")
         
         # Download feasibility as CSV
-        feas_output = output_dir / f"pathlens_feasibility_{amenity}.csv"
+        feas_output = output_dir / f"landuse_feasibility_{amenity}.csv"
         print(f"✓ Downloading feasibility data...", end="", flush=True)
         
         # Get data as list of features
@@ -384,11 +420,24 @@ class GEEDownloader:
         print(f" → {feas_output.name}")
         
         # Download placements as GeoJSON
-        place_output = output_dir / f"pathlens_placements_{amenity}.geojson"
+        place_output = output_dir / f"landuse_placements_{amenity}.geojson"
         print(f"✓ Downloading placement polygons...", end="", flush=True)
         
-        geemap.ee_export_geojson(placements_fc, filename=str(place_output))
-        print(f" → {place_output.name}")
+        # Check if placements collection is empty to avoid geemap error
+        placement_count = placements_fc.size().getInfo()
+        if placement_count == 0:
+            # Create empty GeoJSON structure
+            empty_gdf = gpd.GeoDataFrame(
+                {'node_id': [], 'amenity': [], 'free_area_m2': [], 
+                 'min_area_req': [], 'distance_m': [], 'patch_area_m2': []},
+                geometry=[],
+                crs="EPSG:4326"
+            )
+            empty_gdf.to_file(place_output, driver="GeoJSON")
+            print(f" → {place_output.name} (empty - no placements found)")
+        else:
+            geemap.ee_export_geojson(placements_fc, filename=str(place_output))
+            print(f" → {place_output.name}")
         
         return feas_output, place_output
 
@@ -408,7 +457,7 @@ class FeasibilityFilter:
         print(f"{'='*60}")
         
         # Load data
-        nodes = pd.read_csv(self.nodes_csv_path)
+        nodes = pd.read_csv(self.nodes_csv_path, low_memory=False)
         feas = pd.read_csv(feas_csv)
         placements = gpd.read_file(placements_geojson)
         
@@ -424,6 +473,27 @@ class FeasibilityFilter:
         
         feasible_only = feas_amen[feas_amen["feasible"]]
         print(f"✓ Found {len(feasible_only)} feasible nodes")
+        
+        # Handle case with no feasible nodes
+        if len(feasible_only) == 0:
+            print(f"\n⚠ No feasible nodes found for {amenity.upper()}")
+            print(f"  Skipping merge and creating empty output files...")
+            
+            # Save empty outputs
+            out_feas_nodes = output_dir / f"gee_feasible_nodes_{amenity}.csv"
+            out_merged = output_dir / f"gee_feasible_nodes_{amenity}_merged.csv"
+            out_placements = output_dir / f"gee_placements_{amenity}.geojson"
+            
+            feasible_only.to_csv(out_feas_nodes, index=False)
+            
+            # Create empty merged dataframe with expected columns
+            empty_merged = pd.DataFrame(columns=['osmid', 'node_id', 'amenity', 'free_area_m2', 'min_area_req', 'feasible'])
+            empty_merged.to_csv(out_merged, index=False)
+            
+            # Placements already saved as empty in download step
+            
+            print(f"✓ Saved empty outputs")
+            return out_feas_nodes, out_merged, out_placements
         
         # Merge with node table
         nodes = nodes.copy()
@@ -442,7 +512,11 @@ class FeasibilityFilter:
         if placements.crs is None:
             placements.set_crs(epsg=4326, inplace=True)
         
-        placements_clean = placements[placements["amenity"] == amenity]
+        # Filter placements by amenity (handle empty case)
+        if len(placements) > 0 and "amenity" in placements.columns:
+            placements_clean = placements[placements["amenity"] == amenity]
+        else:
+            placements_clean = placements
         
         # Save outputs
         out_feas_nodes = output_dir / f"gee_feasible_nodes_{amenity}.csv"
@@ -459,7 +533,7 @@ class FeasibilityFilter:
         
         # Show sample
         print(f"\nTop 5 feasible nodes:")
-        cols_show = ['osmid', 'lon', 'lat', 'free_area_m2', 'min_area_req', 'feasible']
+        cols_show = ['osmid', 'free_area_m2', 'min_area_req', 'feasible']
         if 'walkability' in merged.columns:
             cols_show.append('walkability')
         if 'accessibility_score' in merged.columns:
@@ -472,13 +546,13 @@ class FeasibilityFilter:
 
 # ================= MAIN PIPELINE =================
 
-class PathLensPipeline:
-    """Complete PathLens pipeline orchestrator"""
+class LandUsePipeline:
+    """Complete land-use feasibility pipeline orchestrator"""
     
     def __init__(self):
         self.placement_builder = AmenityPlacementBuilder(BEST_CANDIDATE_PATH, NODES_CSV_PATH)
         self.gee_uploader = GEEUploader(PROJECT_ID)
-        self.analyzer = PathLensAnalyzer(PROJECT_ID)
+        self.analyzer = LandUseAnalyzer(PROJECT_ID)
         self.downloader = GEEDownloader()
         self.filter = FeasibilityFilter(NODES_CSV_PATH)
     
@@ -487,7 +561,7 @@ class PathLensPipeline:
         start_time = time.time()
         
         print(f"\n{'#'*60}")
-        print(f"# PATHLENS PIPELINE: {amenity.upper()}")
+        print(f"# LAND-USE FEASIBILITY PIPELINE: {amenity.upper()}")
         print(f"{'#'*60}")
         
         try:
@@ -529,7 +603,7 @@ class PathLensPipeline:
         amenities = list(MIN_AREA.keys())
         
         print(f"\n{'#'*60}")
-        print(f"# PATHLENS BATCH PIPELINE: {len(amenities)} AMENITIES")
+        print(f"# LAND-USE BATCH PIPELINE: {len(amenities)} AMENITIES")
         print(f"{'#'*60}")
         
         results = {}
@@ -553,12 +627,12 @@ class PathLensPipeline:
 def main():
     if len(sys.argv) < 2:
         print("Usage:")
-        print("  python pathlens_pipeline.py <amenity>     # Process single amenity")
-        print("  python pathlens_pipeline.py --all         # Process all amenities")
+        print("  python run_feasibility.py <amenity>     # Process single amenity")
+        print("  python run_feasibility.py --all         # Process all amenities")
         print("\nAvailable amenities:", list(MIN_AREA.keys()))
         sys.exit(1)
     
-    pipeline = PathLensPipeline()
+    pipeline = LandUsePipeline()
     
     if sys.argv[1] == '--all':
         pipeline.process_all_amenities()

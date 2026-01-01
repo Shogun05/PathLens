@@ -3,8 +3,14 @@ venv/
 *.csv
 runs/
 # GEE Service Account
-GEE-landuse/pathlens-service-account.json
+landuse-pipeline/landuse-service-account.json
 *.iam.gserviceaccount.com.json
 secrets/
 .env
 prototype/
+.vscode/
+*.pdf
+cache/
+*.zip
+PAPER.md
+data/raw/extras
