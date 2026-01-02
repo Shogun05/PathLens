@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-01-02T21:20:51.635535",
+  "pipelines_executed": [
+    "data",
+    "optimization"
+  ],
+  "results": {
+    "data": true,
+    "optimization": true
+  },
+  "config": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\config.yaml",
+  "arguments": {
+    "pipeline": "all",
+    "skip_data": false,
+    "skip_optimization": false,
+    "skip_landuse": true,
+    "config": null,
+    "force": false,
+    "log_dir": null,
+    "place": "Bangalore, India",
+    "ga_population": null,
+    "ga_generations": null,
+    "amenity": null
+  }
+}
