@@ -15,18 +15,32 @@ from pathlib import Path
 def run_command(cmd, description):
     """Run a shell command and handle errors."""
     print("\n" + "=" * 60)
-    print(f"▶ {description}")
+    print(f"[RUNNING] {description}")
     print("=" * 60)
     print(f"Command: {' '.join(cmd)}")
     print()
     
-    result = subprocess.run(cmd, capture_output=False, text=True)
+    # Use Popen to stream output in real-time
+    process = subprocess.Popen(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        bufsize=1,
+        universal_newlines=True
+    )
     
-    if result.returncode != 0:
-        print(f"\n❌ Error: {description} failed with exit code {result.returncode}")
+    # Stream output line by line
+    for line in process.stdout:
+        print(line, end='', flush=True)
+    
+    returncode = process.wait()
+    
+    if returncode != 0:
+        print(f"\n[ERROR] {description} failed with exit code {returncode}")
         sys.exit(1)
     
-    print(f"\n✅ {description} completed successfully")
+    print(f"\n[SUCCESS] {description} completed successfully")
 
 
 def main():
@@ -41,7 +55,7 @@ def main():
     
     # If force flag is set, inform user
     if args.force:
-        print("⚠️  --force flag detected: All cached data will be ignored and recomputed")
+        print("[WARNING] --force flag detected: All cached data will be ignored and recomputed")
         print("   This may take a long time!\n")
     
     script_dir = Path(__file__).parent
@@ -59,15 +73,15 @@ def main():
     
     python_exe = sys.executable
     
-    # Step 1: Convert amenities to GeoJSON
-    pois_path = raw_dir / "pois.geojson"
+    # Step 1: Convert amenities to GeoJSON and Parquet
+    pois_path = raw_dir / "pois.parquet"
     if not args.skip_convert:
         if pois_path.exists() and not args.force:
-            print("\n✓ POIs already converted:", pois_path)
+            print("\n[OK] POIs already converted:", pois_path)
             print("  (Use --force to re-convert)")
         else:
             if args.force and pois_path.exists():
-                print("\n🔄 Force mode: Re-converting POIs...")
+                print("\n[FORCE] Re-converting POIs...")
             run_command(
                 [python_exe, str(pipeline_dir / "convert_amenities.py")],
                 "Converting amenities to GeoJSON"
@@ -83,10 +97,10 @@ def main():
     
     if (not has_graph or args.force) and not args.skip_graph:
         if args.force and has_graph:
-            print("\n🔄 Force mode: Re-downloading street network...")
+            print("\n[FORCE] Re-downloading street network...")
         print("\n" + "=" * 60)
-        print("📡 Downloading street network data from OpenStreetMap...")
-        print("⏱️  This may take 5-10 minutes for large cities...")
+        print("[DOWNLOAD] Downloading street network data from OpenStreetMap...")
+        print("[INFO] This may take 5-10 minutes for large cities...")
         print("=" * 60)
         run_command(
             [
@@ -98,9 +112,9 @@ def main():
             "Downloading OSM network data"
         )
     elif has_graph and not args.force:
-        print("\n✓ Using cached street network data from", graph_path)
+        print("\n[OK] Using cached street network data from", graph_path)
         if has_buildings:
-            print("✓ Using cached buildings data from", buildings_path)
+            print("[OK] Using cached buildings data from", buildings_path)
     
     # Step 2: Build graph and map POIs to nodes
     processed_graph = processed_dir / "graph.graphml"
@@ -108,18 +122,18 @@ def main():
     
     if not args.skip_graph:
         if processed_graph.exists() and poi_mapping.exists() and not args.force:
-            print("\n✓ Using cached processed graph:", processed_graph)
-            print("✓ Using cached POI mapping:", poi_mapping)
+            print("\n[OK] Using cached processed graph:", processed_graph)
+            print("[OK] Using cached POI mapping:", poi_mapping)
             print("  (Use --force to re-process)")
         else:
             if args.force and processed_graph.exists():
-                print("\n🔄 Force mode: Re-processing graph...")
+                print("\n[FORCE] Re-processing graph...")
             # Build command with only files that exist
             cmd = [
                 python_exe,
                 str(pipeline_dir / "build_graph.py"),
                 "--graph-path", str(raw_dir / "graph.graphml"),
-                "--pois-path", str(raw_dir / "pois.geojson"),
+                "--pois-path", str(raw_dir / "pois.parquet"),
                 "--out-dir", str(processed_dir)
             ]
             
@@ -144,19 +158,19 @@ def main():
     
     if not args.skip_scoring:
         if nodes_scores.exists() and h3_agg.exists() and metrics_summary.exists() and not args.force:
-            print("\n✓ Using cached walkability scores:", nodes_scores)
-            print("✓ Using cached H3 aggregates:", h3_agg)
+            print("\n[OK] Using cached walkability scores:", nodes_scores)
+            print("[OK] Using cached H3 aggregates:", h3_agg)
             print("  (Use --force to re-compute)")
         else:
             if args.force and nodes_scores.exists():
-                print("\n🔄 Force mode: Re-computing scores...")
+                print("\n[FORCE] Re-computing scores...")
             run_command(
                 [
                     python_exe,
                     str(pipeline_dir / "compute_scores.py"),
                     "--graph-path", str(processed_dir / "graph.graphml"),
                     "--poi-mapping", str(processed_dir / "poi_node_mapping.parquet"),
-                    "--pois-path", str(raw_dir / "pois.geojson"),
+                    "--pois-path", str(raw_dir / "pois.parquet"),
                     "--out-dir", str(analysis_dir),
                     "--config", str(project_dir / "config.yaml")
                 ],
@@ -164,36 +178,36 @@ def main():
             )
     
     # Step 4: Generate visualization
-    map_output = script_dir / "interactive_map.html"
+    # map_output = script_dir / "interactive_map.html"
     
-    if not args.skip_viz:
-        if map_output.exists() and not args.force:
-            print("\n✓ Map already exists:", map_output)
-            print("  (Use --force to re-generate)")
-        else:
-            if args.force and map_output.exists():
-                print("\n🔄 Force mode: Re-generating map...")
-            run_command(
-                [
-                    python_exe,
-                    str(pipeline_dir / "visualize.py"),
-                    "--graph-path", str(processed_dir / "graph.graphml"),
-                    "--pois-path", str(raw_dir / "pois.geojson"),
-                    "--nodes-path", str(analysis_dir / "nodes_with_scores.parquet"),
-                    "--mapping-path", str(processed_dir / "poi_node_mapping.parquet"),
-                    "--out", str(map_output)
-                ],
-                "Generating interactive map"
-            )
+    # if not args.skip_viz:
+    #     if map_output.exists() and not args.force:
+    #         print("\n[OK] Map already exists:", map_output)
+    #         print("  (Use --force to re-generate)")
+    #     else:
+    #         if args.force and map_output.exists():
+    #             print("\n[FORCE] Re-generating map...")
+    #         run_command(
+    #             [
+    #                 python_exe,
+    #                 str(pipeline_dir / "visualize.py"),
+    #                 "--graph-path", str(processed_dir / "graph.graphml"),
+    #                 "--pois-path", str(raw_dir / "pois.geojson"),
+    #                 "--nodes-path", str(analysis_dir / "nodes_with_scores.parquet"),
+    #                 "--mapping-path", str(processed_dir / "poi_node_mapping.parquet"),
+    #                 "--out", str(map_output)
+    #             ],
+    #             "Generating interactive map"
+    #         )
     
     print("\n" + "=" * 60)
-    print("🎉 PathLens pipeline completed successfully!")
+    print("[COMPLETE] PathLens pipeline completed successfully!")
     print("=" * 60)
-    print(f"📊 Results:")
+    print(f"[RESULTS]")
     print(f"  - Processed graph: {processed_dir / 'graph.graphml'}")
     print(f"  - Node scores: {analysis_dir / 'nodes_with_scores.csv'}")
     print(f"  - H3 aggregates: {analysis_dir / 'h3_agg.csv'}")
-    print(f"  - Interactive map: {script_dir / 'interactive_map.html'}")
+    # print(f"  - Interactive map: {script_dir / 'interactive_map.html'}")
     print(f"  - Metrics summary: {analysis_dir / 'metrics_summary.json'}")
 
 

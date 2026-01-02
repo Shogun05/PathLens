@@ -33,7 +33,7 @@ def load_amenity_files(cache_dir: Path):
                 amenities.append(amenity_copy)
         
         except Exception as e:
-            tqdm.write(f"⚠️  Error loading {json_file.name}: {e}")
+            tqdm.write(f"Error loading {json_file.name}: {e}")
             continue
     
     print(f"✓ Loaded {len(amenities)} total amenities")
@@ -96,7 +96,7 @@ def convert_to_geodataframe(amenities):
     # Create GeoDataFrame
     gdf = gpd.GeoDataFrame(records, crs="EPSG:4326")
     
-    print(f"✓ Created GeoDataFrame with {len(gdf)} amenities")
+    print(f" Created GeoDataFrame with {len(gdf)} amenities")
     print(f"  - Amenities: {gdf['amenity'].notna().sum()}")
     print(f"  - Shops: {gdf['shop'].notna().sum()}")
     print(f"  - Leisure: {gdf['leisure'].notna().sum()}")
@@ -108,7 +108,14 @@ def save_geojson(gdf: gpd.GeoDataFrame, output_path: Path):
     """Save GeoDataFrame as GeoJSON."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     gdf.to_file(output_path, driver="GeoJSON")
-    print(f"💾 Saved to: {output_path}")
+    print(f"Saved GeoJSON to: {output_path}")
+
+
+def save_parquet(gdf: gpd.GeoDataFrame, output_path: Path):
+    """Save GeoDataFrame as Parquet (much more efficient for large datasets)."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    gdf.to_parquet(output_path)
+    print(f"Saved Parquet to: {output_path}")
 
 
 def main():
@@ -116,11 +123,13 @@ def main():
     script_dir = Path(__file__).parent
     project_dir = script_dir.parent  # Go up from data-pipeline/ to project root
     cache_dir = project_dir / "data" / "raw" / "bengaluru" / "bengaluru_amenities"
-    output_path = project_dir / "data" / "raw" / "osm" / "pois.geojson"
+    output_geojson = project_dir / "data" / "raw" / "osm" / "pois.geojson"
+    output_parquet = project_dir / "data" / "raw" / "osm" / "pois.parquet"
     
-    print("🔄 Converting Bengaluru amenities to GeoJSON...")
-    print(f"📁 Source: {cache_dir}")
-    print(f"📁 Output: {output_path}")
+    print("Converting Bengaluru amenities to GeoJSON and Parquet...")
+    print(f"Source: {cache_dir}")
+    print(f"Output GeoJSON: {output_geojson}")
+    print(f"Output Parquet: {output_parquet}")
     print("=" * 60)
     
     # Load all amenity files
@@ -129,12 +138,18 @@ def main():
     # Convert to GeoDataFrame
     gdf = convert_to_geodataframe(amenities)
     
-    # Save as GeoJSON
-    save_geojson(gdf, output_path)
+    # Save as both GeoJSON and Parquet
+    save_geojson(gdf, output_geojson)
+    save_parquet(gdf, output_parquet)
     
-    print("\n✅ Conversion complete!")
+    print("\nConversion complete!")
     print(f"Total POIs: {len(gdf)}")
     print(f"Unique areas: {gdf['area_name'].nunique()}")
+    print(f"\nFile sizes:")
+    if output_geojson.exists():
+        print(f"  GeoJSON: {output_geojson.stat().st_size / 1024 / 1024:.1f} MB")
+    if output_parquet.exists():
+        print(f"  Parquet: {output_parquet.stat().st_size / 1024 / 1024:.1f} MB (~{output_geojson.stat().st_size / output_parquet.stat().st_size:.0f}x smaller)")
 
 
 if __name__ == "__main__":

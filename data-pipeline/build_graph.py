@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
 Simplify and annotate graph, map POIs to nearest street nodes.
-Inputs: raw graph.graphml and pois.geojson
+Inputs: raw graph.graphml and pois (GeoJSON or Parquet)
 Outputs: simplified graph.graphml, nodes.parquet, edges.parquet, poi_node_mapping.parquet
 """
 import argparse
+import sys
 from pathlib import Path
 import math
 
@@ -46,17 +47,37 @@ def _prepare_pois_layer(pois: gpd.GeoDataFrame, fallback_source: str) -> gpd.Geo
 
 
 def load_inputs(graph_path: Path, pois_path: Path, optimized_pois_path: Path | None = None):
+    print(f"Loading graph from {graph_path}...")
+    sys.stdout.flush()
     G = ox.load_graphml(graph_path)
-    base_pois = gpd.read_file(pois_path)
+    print(f"Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    sys.stdout.flush()
+    
+    print(f"Loading baseline POIs from {pois_path}...")
+    sys.stdout.flush()
+    # Use appropriate reader based on file extension
+    if pois_path.suffix.lower() == '.parquet':
+        base_pois = gpd.read_parquet(pois_path)
+    else:
+        base_pois = gpd.read_file(pois_path)
+    print(f"Loaded {len(base_pois)} baseline POIs")
+    sys.stdout.flush()
     base_pois = _prepare_pois_layer(base_pois, "existing")
 
     if optimized_pois_path:
         opt_path = Path(optimized_pois_path)
         if not opt_path.exists():
             raise FileNotFoundError(f"Optimized POI layer not found: {opt_path}")
-        optimized = gpd.read_file(opt_path)
+        # Use appropriate reader based on file extension
+        if opt_path.suffix.lower() == '.parquet':
+            optimized = gpd.read_parquet(opt_path)
+        else:
+            optimized = gpd.read_file(opt_path)
+        print(f"Loaded {len(optimized)} optimized POIs")
+        sys.stdout.flush()
         if optimized.empty:
-            print(f"⚠️  Optimized POI layer at {opt_path} is empty; continuing with baseline POIs only.")
+            print(f"[WARNING] Optimized POI layer at {opt_path} is empty; continuing with baseline POIs only.")
+            sys.stdout.flush()
             pois = base_pois
         else:
             optimized = optimized.copy()
@@ -88,6 +109,8 @@ def load_inputs(graph_path: Path, pois_path: Path, optimized_pois_path: Path | N
                 pd.concat([base_pois, optimized], ignore_index=True, sort=False),
                 crs=base_pois.crs
             )
+            print(f"Merged POIs: {len(pois)} total ({len(base_pois)} baseline + {len(optimized)} optimized)")
+            sys.stdout.flush()
     else:
         pois = base_pois
 
@@ -138,18 +161,21 @@ def add_edge_lengths_compat(G: nx.MultiDiGraph) -> nx.MultiDiGraph:
     # Prefer OSMnx helpers when present to stay consistent with upstream behavior
     if hasattr(ox, "distance") and hasattr(ox.distance, "add_edge_lengths"):
         print("Using ox.distance.add_edge_lengths() for edge length calculation")
+        sys.stdout.flush()
         return ox.distance.add_edge_lengths(G)
     
     if hasattr(ox, "add_edge_lengths"):
         try:
             print("Using ox.add_edge_lengths() for edge length calculation")
+            sys.stdout.flush()
             return ox.add_edge_lengths(G)
         except AttributeError:
             pass
 
     # Manual fallback: compute length from geometry or straight-line distance
     # NOTE: This assumes G is in a PROJECTED CRS (meters), not geographic (degrees)
-    print("⚠️  Using manual fallback for edge lengths - ensure graph is projected!")
+    print("[WARNING] Using manual fallback for edge lengths - ensure graph is projected!")
+    sys.stdout.flush()
     for u, v, k, data in G.edges(keys=True, data=True):
         if data.get("length"):
             continue
@@ -174,6 +200,7 @@ def simplify_and_annotate(G):
     # Simplify (merges nodes on straight lines) only if not already simplified
     if graph_already_simplified(G_proj):
         print("Graph is already simplified; skipping simplify_graph().")
+        sys.stdout.flush()
         Gs = G_proj
     else:
         Gs = ox.simplify_graph(G_proj)
@@ -181,6 +208,7 @@ def simplify_and_annotate(G):
     # The raw graph already has correct edge lengths in meters - no need to recalculate
     # (ox.distance.add_edge_lengths has a bug where it uses lat/lon for edges without geometry)
     print("Skipping add_edge_lengths - using existing lengths from raw graph")
+    sys.stdout.flush()
     
     # add bearing, maybe travel_time at walking speed (4.8 km/h)
     walk_speed_mps = 4.8 * 1000 / 3600.0
@@ -205,11 +233,18 @@ def nodes_edges_to_gdfs(Gs, crs_epsg=4326):
     # Normalize list columns for parquet compatibility
     nodes = normalize_list_columns(nodes)
     edges = normalize_list_columns(edges)
+    print(f"Converted to GeoDataFrames: {len(nodes)} nodes, {len(edges)} edges")
+    sys.stdout.flush()
     return nodes, edges
 
 
 def annotate_nodes(nodes_gdf: gpd.GeoDataFrame, G: nx.MultiDiGraph, buildings: gpd.GeoDataFrame | None, landuse: gpd.GeoDataFrame | None):
+    print("Annotating nodes with building and landuse data...")
+    sys.stdout.flush()
     nodes = nodes_gdf.copy()
+    
+    print(f"Computing node degrees for {len(nodes)} nodes...")
+    sys.stdout.flush()
     degree_series = pd.Series(dict(G.degree()))
     nodes["degree"] = nodes.index.map(degree_series).fillna(0)
     nodes["intersection_type"] = pd.cut(
@@ -219,11 +254,17 @@ def annotate_nodes(nodes_gdf: gpd.GeoDataFrame, G: nx.MultiDiGraph, buildings: g
     )
     if "street_count" in nodes.columns:
         nodes["street_count"].fillna(nodes["degree"], inplace=True)
+    print("Node degrees computed")
+    sys.stdout.flush()
 
     if buildings is not None and not buildings.empty:
         try:
+            print(f"Processing buildings layer ({len(buildings)} features)...")
+            sys.stdout.flush()
             buildings_proj = buildings.to_crs(nodes.crs)
             if "building" in buildings_proj.columns:
+                print("Computing nearest buildings (this may take a while)...")
+                sys.stdout.flush()
                 nearest_buildings = gpd.sjoin_nearest(
                     nodes,
                     buildings_proj[["geometry", "building"]],
@@ -232,13 +273,20 @@ def annotate_nodes(nodes_gdf: gpd.GeoDataFrame, G: nx.MultiDiGraph, buildings: g
                 )
                 nodes["nearest_building_type"] = nearest_buildings["building"]
                 nodes["dist_to_building"] = nearest_buildings["dist_to_building"]
-        except Exception:
-            pass
+                print("Buildings annotation complete")
+                sys.stdout.flush()
+        except Exception as e:
+            print(f"[WARNING] Buildings annotation failed: {e}")
+            sys.stdout.flush()
 
     if landuse is not None and not landuse.empty:
         try:
+            print(f"Processing landuse layer ({len(landuse)} features)...")
+            sys.stdout.flush()
             landuse_proj = landuse.to_crs(nodes.crs)
             if "landuse" in landuse_proj.columns:
+                print("Computing nearest landuse (this may take several minutes for large datasets)...")
+                sys.stdout.flush()
                 nearest_landuse = gpd.sjoin_nearest(
                     nodes,
                     landuse_proj[["geometry", "landuse"]],
@@ -247,14 +295,24 @@ def annotate_nodes(nodes_gdf: gpd.GeoDataFrame, G: nx.MultiDiGraph, buildings: g
                 )
                 nodes["nearest_landuse_type"] = nearest_landuse["landuse"]
                 nodes["dist_to_landuse"] = nearest_landuse["dist_to_landuse"]
-        except Exception:
-            pass
+                print("Landuse annotation complete")
+                sys.stdout.flush()
+        except Exception as e:
+            print(f"[WARNING] Landuse annotation failed: {e}")
+            sys.stdout.flush()
 
+    print(f"Node annotation complete: added degree, intersection_type, and spatial context")
+    sys.stdout.flush()
     return nodes
 
 
 def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
+    print(f"[POI MAPPING] Starting POI-to-node mapping for {len(pois_gdf)} POIs...")
+    sys.stdout.flush()
+    
     # Ensure consistent CRS and filter out invalid geometries
+    print("[POI MAPPING] Aligning CRS and filtering geometries...")
+    sys.stdout.flush()
     pois = pois_gdf.to_crs(nodes_gdf.crs).copy()
     pois = pois[pois.geometry.notnull()].copy()
     pois = pois[~pois.geometry.is_empty].copy()
@@ -264,7 +322,8 @@ def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
     # Convert non-point geometries to centroids to enable nearest-node lookup
     non_point_mask = ~pois.geometry.geom_type.isin(["Point", "MultiPoint"])
     if non_point_mask.any():
-        print("Converting non-point POI geometries to centroids for nearest-node mapping.")
+        print(f"[POI MAPPING] Converting {non_point_mask.sum()} non-point POI geometries to centroids...")
+        sys.stdout.flush()
         pois.loc[non_point_mask, "geometry"] = pois.loc[non_point_mask, "geometry"].centroid
 
     multi_point_mask = pois.geometry.geom_type == "MultiPoint"
@@ -275,8 +334,10 @@ def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
 
     if not pois.geometry.geom_type.isin(["Point"]).all():
         raise ValueError("Unable to convert all POI geometries to Points for nearest-node mapping.")
-    # nearest node mapping using OSMnx helper
-    # prepare arrays of x,y
+    
+    # nearest node mapping using spatial index
+    print(f"[POI MAPPING] Building spatial index for {len(nodes_gdf)} nodes...")
+    sys.stdout.flush()
     xs = pois.geometry.x.values
     ys = pois.geometry.y.values
     # note: for large inputs, consider vectorized rtree nearest neighbor approach
@@ -286,12 +347,20 @@ def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
     
     # For each POI, find nearest node
     from scipy.spatial import cKDTree
+    print(f"[POI MAPPING] Building KDTree...")
+    sys.stdout.flush()
     tree = cKDTree(node_coords)
+    print(f"[POI MAPPING] Querying nearest nodes for {len(pois)} POIs...")
+    sys.stdout.flush()
     poi_coords = list(zip(xs, ys))
     distances, indices = tree.query(poi_coords)
+    print(f"[POI MAPPING] Nearest node query complete")
+    sys.stdout.flush()
     node_index = [node_ids[i] for i in indices]
     
     # Create mapping DataFrame
+    print("[POI MAPPING] Creating POI-node mapping DataFrame...")
+    sys.stdout.flush()
     primary_category = None
     for col in ("amenity", "shop", "leisure", "landuse"):
         if col in pois.columns:
@@ -330,10 +399,14 @@ def map_pois_to_nodes(pois_gdf: gpd.GeoDataFrame, nodes_gdf: gpd.GeoDataFrame):
                 category_counts.get(category, pd.Series(dtype=float))
             ).fillna(0)
 
+    print(f"[POI MAPPING] Mapping complete: {len(mapping)} POI-node pairs created")
+    sys.stdout.flush()
     return mapping, pois, nodes_gdf
 
 
 def save_outputs(Gs, nodes, edges, mapping, out_dir: Path, output_prefix: str, merged_pois: gpd.GeoDataFrame | None, merged_pois_out: Path | None):
+    print(f"Saving outputs to {out_dir}...")
+    sys.stdout.flush()
     out_dir.mkdir(parents=True, exist_ok=True)
     prefix = output_prefix if not output_prefix else output_prefix.strip()
     if prefix and not prefix.endswith("_"):
@@ -343,6 +416,7 @@ def save_outputs(Gs, nodes, edges, mapping, out_dir: Path, output_prefix: str, m
     edges.to_parquet(out_dir / f"{prefix}edges.parquet")
     mapping.to_parquet(out_dir / f"{prefix}poi_node_mapping.parquet")
     print(f"Saved processed graph and mapping to {out_dir} (prefix='{prefix}')")
+    sys.stdout.flush()
     if merged_pois is not None and merged_pois_out:
         merged_pois_out = merged_pois_out.with_suffix(merged_pois_out.suffix or ".geojson")
         merged_pois_out.parent.mkdir(parents=True, exist_ok=True)
@@ -361,6 +435,7 @@ def save_outputs(Gs, nodes, edges, mapping, out_dir: Path, output_prefix: str, m
         
         merged_pois_copy.to_file(merged_pois_out, driver="GeoJSON")
         print(f"Saved merged POI layer to {merged_pois_out}")
+        sys.stdout.flush()
 
 
 def main():

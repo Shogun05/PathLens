@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "stage": "finalizing",
+  "message": "All requested pipelines completed successfully",
+  "percent": 100,
+  "timestamp": "2026-01-01T21:51:05.254626Z",
+  "pipelines": {
+    "data": "completed",
+    "optimization": "completed",
+    "landuse": "skipped"
+  },
+  "details": {
+    "results": {
+      "data": true,
+      "optimization": true
+    },
+    "summary_file": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\data\\logs\\run_summary_20260102_032105.json"
+  }
+}

@@ -1,0 +1,314 @@
+2026-01-01 20:01:37,991 - PathLensMaster - INFO - Logging initialized: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\logs\pathlens_master_20260101_200137.log
+2026-01-01 20:01:37,992 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
+2026-01-01 20:01:37,993 - PathLensMaster - INFO - Project root: D:\ENGG\EL\5th sem\MAIN_EL\PathLens
+2026-01-01 20:01:37,993 - PathLensMaster - INFO - Config: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\config.yaml
+2026-01-01 20:01:37,995 - PathLensMaster - INFO - ================================================================================
+2026-01-01 20:01:37,996 - PathLensMaster - INFO - PIPELINE: DATA-COLLECTION
+2026-01-01 20:01:37,996 - PathLensMaster - INFO - ================================================================================
+2026-01-01 20:01:37,997 - PathLensMaster - INFO - Command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe -u D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data-pipeline\run_pipeline.py --place Bangalore, India
+2026-01-01 20:01:38,160 - PathLensMaster - INFO - [data-collection] [OK] POIs already converted: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\raw\osm\pois.parquet
+2026-01-01 20:01:38,160 - PathLensMaster - INFO - [data-collection]   (Use --force to re-convert)
+2026-01-01 20:01:38,162 - PathLensMaster - INFO - [data-collection] [OK] Using cached street network data from D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\raw\osm\graph.graphml
+2026-01-01 20:01:38,163 - PathLensMaster - INFO - [data-collection] [OK] Using cached processed graph: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\graph.graphml
+2026-01-01 20:01:38,164 - PathLensMaster - INFO - [data-collection] [OK] Using cached POI mapping: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\poi_node_mapping.parquet
+2026-01-01 20:01:38,165 - PathLensMaster - INFO - [data-collection]   (Use --force to re-process)
+2026-01-01 20:01:38,166 - PathLensMaster - INFO - [data-collection] [OK] Using cached walkability scores: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\nodes_with_scores.parquet
+2026-01-01 20:01:38,167 - PathLensMaster - INFO - [data-collection] [OK] Using cached H3 aggregates: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\h3_agg.parquet
+2026-01-01 20:01:38,168 - PathLensMaster - INFO - [data-collection]   (Use --force to re-compute)
+2026-01-01 20:01:38,168 - PathLensMaster - INFO - [data-collection] ============================================================
+2026-01-01 20:01:38,169 - PathLensMaster - INFO - [data-collection] [COMPLETE] PathLens pipeline completed successfully!
+2026-01-01 20:01:38,169 - PathLensMaster - INFO - [data-collection] ============================================================
+2026-01-01 20:01:38,170 - PathLensMaster - INFO - [data-collection] [RESULTS]
+2026-01-01 20:01:38,170 - PathLensMaster - INFO - [data-collection]   - Processed graph: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\graph.graphml
+2026-01-01 20:01:38,171 - PathLensMaster - INFO - [data-collection]   - Node scores: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\nodes_with_scores.csv
+2026-01-01 20:01:38,172 - PathLensMaster - INFO - [data-collection]   - H3 aggregates: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\h3_agg.csv
+2026-01-01 20:01:38,172 - PathLensMaster - INFO - [data-collection]   - Metrics summary: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\metrics_summary.json
+2026-01-01 20:01:38,188 - PathLensMaster - INFO - ================================================================================
+2026-01-01 20:01:38,188 - PathLensMaster - INFO - PIPELINE: OPTIMIZATION
+2026-01-01 20:01:38,189 - PathLensMaster - INFO - ================================================================================
+2026-01-01 20:01:38,189 - PathLensMaster - INFO - Command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe -u D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\run_optimization.py --ga-config D:\ENGG\EL\5th sem\MAIN_EL\PathLens\config.yaml
+2026-01-01 20:01:38,400 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,399 - __main__ - INFO - Logging initialized: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\logs\optimization_run_20260101_200138.log
+2026-01-01 20:01:38,400 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,399 - __main__ - INFO - PathLens Optimization Workflow
+2026-01-01 20:01:38,402 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,399 - __main__ - INFO - Project root: D:\ENGG\EL\5th sem\MAIN_EL\PathLens
+2026-01-01 20:01:38,412 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,411 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2026-01-01 20:01:38,413 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,412 - __main__ - INFO - ================================================================================
+2026-01-01 20:01:38,413 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,412 - __main__ - INFO - > Extract high travel time nodes
+2026-01-01 20:01:38,414 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,412 - __main__ - INFO - ================================================================================
+2026-01-01 20:01:38,415 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:38,414 - __main__ - INFO - Command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\list_optimizable_nodes.py --input D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\nodes_with_scores.parquet --output D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\high_travel_time_nodes.csv
+2026-01-01 20:01:39,762 - PathLensMaster - INFO - [optimization] Filtered 4168 nodes above 15.00 minutes; wrote 4168 rows to D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\high_travel_time_nodes.csv
+2026-01-01 20:01:39,896 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:39,894 - __main__ - INFO - Extract high travel time nodes completed successfully
+2026-01-01 20:01:39,897 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:39,894 - __main__ - INFO - Auto-detected 6 worker threads (75% of 8 cores)
+2026-01-01 20:01:39,901 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:39,894 - __main__ - INFO - ================================================================================
+2026-01-01 20:01:39,902 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:39,894 - __main__ - INFO - > Run hybrid genetic algorithm with MILP refinement
+2026-01-01 20:01:39,903 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:39,894 - __main__ - INFO - ================================================================================
+2026-01-01 20:01:39,903 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:39,894 - __main__ - INFO - Command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\hybrid_ga.py --nodes-scores D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\nodes_with_scores.parquet --high-travel D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\high_travel_time_nodes.csv --analysis-dir D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs --config D:\ENGG\EL\5th sem\MAIN_EL\PathLens\config.yaml --workers 6
+2026-01-01 20:01:42,092 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,092 [INFO] Loaded configuration from D:\ENGG\EL\5th sem\MAIN_EL\PathLens\config.yaml
+2026-01-01 20:01:42,248 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,247 [INFO] Amenity school pool prepared with 200 candidates (filtered for min 1200m from existing).
+2026-01-01 20:01:42,311 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,310 [INFO] Amenity hospital pool prepared with 200 candidates (filtered for min 1200m from existing).
+2026-01-01 20:01:42,383 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,382 [INFO] Amenity pharmacy pool prepared with 200 candidates (filtered for min 1200m from existing).
+2026-01-01 20:01:42,449 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,448 [INFO] Amenity supermarket pool prepared with 200 candidates (filtered for min 1200m from existing).
+2026-01-01 20:01:42,515 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,514 [INFO] Amenity bus_station pool prepared with 200 candidates (filtered for min 1200m from existing).
+2026-01-01 20:01:42,583 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,582 [INFO] Amenity park pool prepared with 200 candidates (filtered for min 1200m from existing).
+2026-01-01 20:01:42,591 - PathLensMaster - INFO - [optimization] 2026-01-01 20:01:42,591 [INFO] Loading graph for diversity penalty computation...
+2026-01-01 20:02:15,797 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,797 [INFO] Loaded graph with 182191 nodes, 487510 edges for diversity penalty
+2026-01-01 20:02:15,798 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,797 [INFO] Analysing amenity distances for 4168 high-travel nodes.
+2026-01-01 20:02:15,878 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,878 [INFO] Amenity school               | mean distance 1854.01 m | available 4168
+2026-01-01 20:02:15,879 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,878 [INFO] Amenity hospital             | mean distance 2541.98 m | available 4168
+2026-01-01 20:02:15,880 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,879 [INFO] Amenity pharmacy             | mean distance 2638.66 m | available 4168
+2026-01-01 20:02:15,880 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,880 [INFO] Amenity supermarket          | mean distance 2762.00 m | available 4168
+2026-01-01 20:02:15,881 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,881 [INFO] Amenity bus_station          | mean distance 4413.21 m | available 4168
+2026-01-01 20:02:15,882 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,881 [INFO] Amenity park                 | mean distance 1896.62 m | available 4168
+2026-01-01 20:02:15,890 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,889 [INFO] Starting hybrid GA: population=30, generations=1
+2026-01-01 20:02:15,890 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,889 [INFO] Running default precompute for 182191 nodes.
+2026-01-01 20:02:15,988 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:15,987 [INFO] Precomputing undirected graph for diversity penalty...
+2026-01-01 20:02:26,304 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:26,303 [INFO] Using 6 worker threads for candidate evaluation.
+2026-01-01 20:02:26,304 - PathLensMaster - INFO - [optimization] 2026-01-01 20:02:26,304 [INFO] Seeded population with 5 greedy templates.
+2026-01-01 20:02:26,318 - PathLensMaster - INFO - [optimization] Generations:   0%|          | 0/1 [00:00<?, ?gen/s]2026-01-01 20:02:26,318 [INFO] Evaluating generation 1/1
+2026-01-01 20:02:26,861 - PathLensMaster - INFO - [optimization] Gen 1 eval:   0%|          | 0/30 [00:00<?, ?it/s][A
+2026-01-01 20:02:26,975 - PathLensMaster - INFO - [optimization] Gen 1 eval:   3%|3         | 1/30 [00:00<00:15,  1.84it/s][A
+2026-01-01 20:02:27,131 - PathLensMaster - INFO - [optimization] Gen 1 eval:   7%|6         | 2/30 [00:00<00:08,  3.44it/s][A
+2026-01-01 20:02:27,378 - PathLensMaster - INFO - [optimization] Gen 1 eval:  10%|#         | 3/30 [00:00<00:06,  4.36it/s][A
+2026-01-01 20:02:27,666 - PathLensMaster - INFO - [optimization] Gen 1 eval:  20%|##        | 6/30 [00:01<00:03,  7.59it/s][A
+2026-01-01 20:02:27,798 - PathLensMaster - INFO - [optimization] Gen 1 eval:  23%|##3       | 7/30 [00:01<00:03,  5.90it/s][A
+2026-01-01 20:02:27,939 - PathLensMaster - INFO - [optimization] Gen 1 eval:  30%|###       | 9/30 [00:01<00:02,  7.85it/s][A
+2026-01-01 20:02:28,392 - PathLensMaster - INFO - [optimization] Gen 1 eval:  37%|###6      | 11/30 [00:01<00:02,  9.39it/s][A
+2026-01-01 20:02:28,547 - PathLensMaster - INFO - [optimization] Gen 1 eval:  43%|####3     | 13/30 [00:02<00:02,  6.76it/s][A
+2026-01-01 20:02:28,897 - PathLensMaster - INFO - [optimization] Gen 1 eval:  53%|#####3    | 16/30 [00:02<00:01,  9.36it/s][A
+2026-01-01 20:02:29,166 - PathLensMaster - INFO - [optimization] Gen 1 eval:  60%|######    | 18/30 [00:02<00:01,  7.90it/s][A
+2026-01-01 20:02:29,338 - PathLensMaster - INFO - [optimization] Gen 1 eval:  67%|######6   | 20/30 [00:02<00:01,  7.77it/s][A
+2026-01-01 20:02:29,582 - PathLensMaster - INFO - [optimization] Gen 1 eval:  73%|#######3  | 22/30 [00:03<00:00,  8.59it/s][A
+2026-01-01 20:02:29,744 - PathLensMaster - INFO - [optimization] Gen 1 eval:  80%|########  | 24/30 [00:03<00:00,  8.47it/s][A
+2026-01-01 20:02:29,934 - PathLensMaster - INFO - [optimization] Gen 1 eval:  83%|########3 | 25/30 [00:03<00:00,  7.95it/s][A
+2026-01-01 20:02:29,941 - PathLensMaster - INFO - [optimization] Gen 1 eval:  90%|######### | 27/30 [00:03<00:00,  8.67it/s][A
+2026-01-01 20:02:29,942 - PathLensMaster - INFO - [optimization]                                                            [A
+2026-01-01 20:02:59,619 - PathLensMaster - INFO - [optimization] Gen 1 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-01 20:03:30,781 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  20%|##        | 1/5 [00:29<01:58, 29.68s/it][A
+2026-01-01 20:04:08,783 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  40%|####      | 2/5 [01:00<01:31, 30.55s/it][A
+2026-01-01 20:04:39,971 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  60%|######    | 3/5 [01:38<01:07, 33.95s/it][A
+2026-01-01 20:05:10,588 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  80%|########  | 4/5 [02:10<00:32, 32.86s/it][A
+2026-01-01 20:05:10,589 - PathLensMaster - INFO - [optimization] Gen 1 local_search: 100%|##########| 5/5 [02:40<00:00, 32.05s/it][A
+2026-01-01 20:05:10,590 - PathLensMaster - INFO - [optimization]                                                                  [A2026-01-01 20:05:10,588 [INFO] Generation 1 best fitness 0.0000 | template=None | placements={'school': 20, 'hospital': 20, 'pharmacy': 20, 'supermarket': 20, 'bus_station': 20, 'park': 20} | elapsed=164.27s
+2026-01-01 20:05:10,600 - PathLensMaster - INFO - [optimization] Generations: 100%|##########| 1/1 [02:44<00:00, 164.29s/gen]
+2026-01-01 20:05:10,601 - PathLensMaster - INFO - [optimization] Generations: 100%|##########| 1/1 [02:44<00:00, 164.29s/gen]
+2026-01-01 20:05:10,601 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:10,600 [INFO] GA complete. Summary written to D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\summary.json | total elapsed 174.71s
+2026-01-01 20:05:10,604 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:10,601 [INFO] Best candidate: bus_station:10206572560,11402898437,11403024197,11886145802,11886145804,6749078127,7089243647,7089243648,7089247233,7090558207,7090558236,7090558252,7090591565,7090777414,7482954982,7482957148,7482957149,7482957176,7482957229,9620224902|hospital:10206957258,10207162470,12738270734,12768091263,1588453599,1589077816,2247838114,2248172150,2248172153,3034669667,3034669673,3034669675,3983628532,7279291013,7279291138,7384411568,7467062457,7467062464,9605401068,9605401071|park:10287783888,12686348984,12738270732,12768091263,2248172205,7279291006,7279291152,7298266908,7331215155,7383997847,7383997852,7383997857,7383997861,7383997867,7383997875,7384110692,7384110696,7462094576,9605401029,9605401076|pharmacy:10206957266,11381108849,11411801237,12738351269,1595758142,2146206406,2419063863,3034669684,3034669694,3034669708,3034669719,3034693653,420078999,6758625468,7279290950,7279290953,7279290957,7279291001,7384411568,9605401091|school:10063673429,11395422155,1942844059,2146206157,2248079790,2248079802,2248079810,2248079846,2248079855,2248079874,2248079917,420078999,7265924677,7298266908,7331215086,7331215158,7428519633,7428873734,7428873737,7428873773|supermarket:12686348988,12738270734,12738309166,12738316919,12768091263,2396285164,2419063855,7279290949,7279290951,7279291028,7279291134,7383997883,7384110691,7384110714,7384756368,7451032919,7451032924,9605401048,9605401090,9976821048
+2026-01-01 20:05:12,165 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:12,164 - __main__ - INFO - Run hybrid genetic algorithm with MILP refinement completed successfully
+2026-01-01 20:05:12,166 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:12,165 - __main__ - INFO - ================================================================================
+2026-01-01 20:05:12,166 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:12,165 - __main__ - INFO - > Generate combined POI GeoJSON and map
+2026-01-01 20:05:12,167 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:12,165 - __main__ - INFO - ================================================================================
+2026-01-01 20:05:12,167 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:12,165 - __main__ - INFO - Command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\generate_solution_map.py
+2026-01-01 20:05:15,229 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:15,228 [INFO] Loading best candidate from D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\best_candidate.json
+2026-01-01 20:05:15,246 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:15,246 [INFO] Loaded 6 amenity types with 120 total POI placements
+2026-01-01 20:05:15,624 - PathLensMaster - INFO - [optimization] Collecting optimized POIs:   0%|          | 0/6 [00:00<?, ?it/s]
+2026-01-01 20:05:15,638 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:15,637 [INFO] Loading existing POIs from cache: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\raw\osm\pois.parquet
+2026-01-01 20:05:17,100 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:17,094 [INFO] Loaded 40436 existing POIs from cache (fast!)
+2026-01-01 20:05:17,293 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:17,292 [INFO] Combined GeoJSON already exists at D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\poi_mapping.geojson, skipping write (use --force to overwrite)
+2026-01-01 20:05:17,881 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:17,880 [INFO] Recomputing optimized accessibility metrics for 6 amenity types.
+2026-01-01 20:05:17,882 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:17,880 [INFO] Loading graph from D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\graph.graphml
+2026-01-01 20:05:58,225 - PathLensMaster - INFO - [optimization] 2026-01-01 20:05:58,224 [INFO] Converting graph to GeoDataFrame...
+2026-01-01 20:06:00,963 - PathLensMaster - INFO - [optimization] Validating placements:   0%|          | 0/120 [00:00<?, ?it/s]
+2026-01-01 20:06:00,967 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:00,967 [INFO] Computing nearest amenity distances for 120 placements...
+2026-01-01 20:06:00,969 - PathLensMaster - INFO - [optimization] Building POI-node index: 120 pois
+2026-01-01 20:06:00,970 - PathLensMaster - INFO - [optimization] Building POI-node index: 12/120 (10%)
+2026-01-01 20:06:00,970 - PathLensMaster - INFO - [optimization] Building POI-node index: 24/120 (20%)
+2026-01-01 20:06:00,970 - PathLensMaster - INFO - [optimization] Building POI-node index: 36/120 (30%)
+2026-01-01 20:06:00,971 - PathLensMaster - INFO - [optimization] Building POI-node index: 48/120 (40%)
+2026-01-01 20:06:00,971 - PathLensMaster - INFO - [optimization] Building POI-node index: 60/120 (50%)
+2026-01-01 20:06:00,972 - PathLensMaster - INFO - [optimization] Building POI-node index: 72/120 (60%)
+2026-01-01 20:06:00,972 - PathLensMaster - INFO - [optimization] Building POI-node index: 84/120 (70%)
+2026-01-01 20:06:00,972 - PathLensMaster - INFO - [optimization] Building POI-node index: 96/120 (80%)
+2026-01-01 20:06:00,973 - PathLensMaster - INFO - [optimization] Building POI-node index: 108/120 (90%)
+2026-01-01 20:06:00,973 - PathLensMaster - INFO - [optimization] Building POI-node index: 120/120 (100%)
+2026-01-01 20:06:00,980 - PathLensMaster - INFO - [optimization] Computing network distances for 6 amenity types...
+2026-01-01 20:06:00,980 - PathLensMaster - INFO - [optimization] Computing accessibility distances: 6 amenity_types
+2026-01-01 20:06:00,981 - PathLensMaster - INFO - [optimization] Computing accessibility distances: 1/6 (16%)
+2026-01-01 20:06:00,982 - PathLensMaster - INFO - [optimization] Computing accessibility distances: 2/6 (33%)
+2026-01-01 20:06:00,982 - PathLensMaster - INFO - [optimization] Computing accessibility distances: 3/6 (50%)
+2026-01-01 20:06:00,983 - PathLensMaster - INFO - [optimization] Computing accessibility distances: 4/6 (66%)
+2026-01-01 20:06:00,984 - PathLensMaster - INFO - [optimization] Computing accessibility distances: 5/6 (83%)
+2026-01-01 20:06:00,984 - PathLensMaster - INFO - [optimization] Computing accessibility distances: 6/6 (100%)
+2026-01-01 20:06:01,104 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:01,103 [INFO] Computing accessibility scores for 182191 nodes...
+2026-01-01 20:06:01,133 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:01,132 [INFO] Computing travel time metrics...
+2026-01-01 20:06:01,272 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:01,271 [INFO] Computing composite walkability scores...
+2026-01-01 20:06:01,454 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:01,453 [INFO] Saving optimized scores to output files...
+2026-01-01 20:06:09,614 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:09,613 [INFO] Optimized scores saved to D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\optimized_nodes_with_scores.parquet, D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\optimized_nodes_with_scores.csv, and D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\optimized_metrics_summary.json
+2026-01-01 20:06:11,780 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,779 - __main__ - INFO - Generate combined POI GeoJSON and map completed successfully
+2026-01-01 20:06:11,781 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,779 - __main__ - INFO - ================================================================================
+2026-01-01 20:06:11,781 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,780 - __main__ - INFO - > Run optimization pipeline orchestrator
+2026-01-01 20:06:11,782 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,780 - __main__ - INFO - ================================================================================
+2026-01-01 20:06:11,782 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,780 - __main__ - INFO - Command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\run_optimized_pipeline.py --baseline-prefix baseline --optimized-prefix optimized --skip-map
+2026-01-01 20:06:11,986 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,985 [INFO] PathLensOptimizedPipeline - Beginning pipeline run with 1 steps
+2026-01-01 20:06:11,987 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,986 [INFO] PathLensOptimizedPipeline - Skipping baseline graph build; reusing D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\baseline_graph.graphml
+2026-01-01 20:06:11,988 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,986 [INFO] PathLensOptimizedPipeline - Skipping optimized graph build; reusing D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\optimized_graph.graphml
+2026-01-01 20:06:11,988 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,986 [INFO] PathLensOptimizedPipeline - Skipping baseline scoring; reusing D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\baseline_nodes_with_scores.parquet
+2026-01-01 20:06:11,990 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,987 [INFO] PathLensOptimizedPipeline - Starting step: [Step 1/1] [OPTIMIZED] Compute optimized scoring outputs (in-memory merge)
+2026-01-01 20:06:11,991 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:11,987 [INFO] PathLensOptimizedPipeline - Executing command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe -u D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\run_optimized_scoring.py --graph-path D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\optimized_graph.graphml --poi-mapping D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\optimized_poi_node_mapping.parquet --baseline-pois-path D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\raw\osm\pois.parquet --optimized-pois-path D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\optimized_pois.geojson --out-dir D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis --config D:\ENGG\EL\5th sem\MAIN_EL\PathLens\config.yaml --output-prefix optimized
+2026-01-01 20:06:15,132 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:15,131 [INFO] PathLensOptimizedPipeline - [Step 1/1] Loading graph and POI mapping...
+2026-01-01 20:06:57,229 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:57,228 [INFO] PathLensOptimizedPipeline - [Step 1/1] Graph loaded: 182191 nodes, 487510 edges
+2026-01-01 20:06:59,705 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:59,705 [INFO] PathLensOptimizedPipeline - [Step 1/1] Extracted 182191 nodes as GeoDataFrame
+2026-01-01 20:06:59,782 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:59,782 [INFO] PathLensOptimizedPipeline - [Step 1/1] Loaded POI mapping: 40449 POIs
+2026-01-01 20:06:59,783 - PathLensMaster - INFO - [optimization] 2026-01-01 20:06:59,782 [INFO] PathLensOptimizedPipeline - [Step 1/1] [FAST] Loading baseline POIs from parquet (~1.5s)...
+2026-01-01 20:07:01,002 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:01,002 [INFO] PathLensOptimizedPipeline - [Step 1/1] Loaded 40436 baseline POIs
+2026-01-01 20:07:01,003 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:01,002 [INFO] PathLensOptimizedPipeline - [Step 1/1] [FAST] Loading optimized POIs from geojson...
+2026-01-01 20:07:05,117 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:05,116 [INFO] PathLensOptimizedPipeline - [Step 1/1] Loaded 13 optimized POIs
+2026-01-01 20:07:05,118 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:05,116 [INFO] PathLensOptimizedPipeline - [Step 1/1] [MEMORY MERGE] Merging 40436 baseline + 13 optimized POIs...
+2026-01-01 20:07:09,262 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:09,262 [INFO] PathLensOptimizedPipeline - [Step 1/1] D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\run_optimized_scoring.py:83: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+2026-01-01 20:07:09,263 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:09,262 [INFO] PathLensOptimizedPipeline - [Step 1/1]   pd.concat([baseline_pois, optimized_pois], ignore_index=True, sort=False),
+2026-01-01 20:07:09,470 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:09,470 [INFO] PathLensOptimizedPipeline - [Step 1/1] [MEMORY MERGE] Merged POIs: 40449 total (40436 baseline + 13 optimized)
+2026-01-01 20:07:11,293 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:11,292 [INFO] PathLensOptimizedPipeline - [Step 1/1] [COMPUTE] Computing structure metrics...
+2026-01-01 20:07:11,994 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:11,993 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 182191 nodes
+2026-01-01 20:07:12,390 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:12,389 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 18219/182191 (9%)
+2026-01-01 20:07:12,823 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:12,822 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 36438/182191 (19%)
+2026-01-01 20:07:13,268 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:13,268 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 54657/182191 (29%)
+2026-01-01 20:07:13,719 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:13,718 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 72876/182191 (39%)
+2026-01-01 20:07:14,130 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:14,130 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 91095/182191 (49%)
+2026-01-01 20:07:14,587 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:14,586 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 109314/182191 (59%)
+2026-01-01 20:07:15,007 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:15,006 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 127533/182191 (69%)
+2026-01-01 20:07:15,456 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:15,455 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 145752/182191 (79%)
+2026-01-01 20:07:15,860 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:15,860 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 163971/182191 (89%)
+2026-01-01 20:07:16,281 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:16,280 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 182190/182191 (99%)
+2026-01-01 20:07:16,281 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:16,280 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing structure metrics: 182191/182191 (100%)
+2026-01-01 20:07:16,868 - PathLensMaster - INFO - [optimization] 2026-01-01 20:07:16,867 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing betweenness centrality (sampling 150 nodes)...
+2026-01-01 20:16:29,745 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,744 [INFO] PathLensOptimizedPipeline - [Step 1/1] [CACHE] Saved to cache: structure_182191nodes.pkl
+2026-01-01 20:16:29,746 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,744 [INFO] PathLensOptimizedPipeline - [Step 1/1] [COMPUTE] Computing amenity distances...
+2026-01-01 20:16:29,752 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,752 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 40449 pois
+2026-01-01 20:16:29,764 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,763 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 4044/40449 (9%)
+2026-01-01 20:16:29,774 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,774 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 8088/40449 (19%)
+2026-01-01 20:16:29,793 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,792 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 12132/40449 (29%)
+2026-01-01 20:16:29,811 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,810 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 16176/40449 (39%)
+2026-01-01 20:16:29,825 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,825 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 20220/40449 (49%)
+2026-01-01 20:16:29,844 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,843 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 24264/40449 (59%)
+2026-01-01 20:16:29,858 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,857 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 28308/40449 (69%)
+2026-01-01 20:16:29,873 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,872 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 32352/40449 (79%)
+2026-01-01 20:16:29,892 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,891 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 36396/40449 (89%)
+2026-01-01 20:16:29,907 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,907 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 40440/40449 (99%)
+2026-01-01 20:16:29,908 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:29,907 [INFO] PathLensOptimizedPipeline - [Step 1/1] Building POI-node index: 40449/40449 (100%)
+2026-01-01 20:16:30,184 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:30,184 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing network distances for 6 amenity types...
+2026-01-01 20:16:30,185 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:30,184 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing accessibility distances: 6 amenity_types
+2026-01-01 20:16:30,186 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:30,184 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing accessibility distances: 1/6 (16%)
+2026-01-01 20:16:32,153 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:32,153 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing accessibility distances: 2/6 (33%)
+2026-01-01 20:16:34,101 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:34,101 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing accessibility distances: 3/6 (50%)
+2026-01-01 20:16:35,859 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:35,859 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing accessibility distances: 4/6 (66%)
+2026-01-01 20:16:37,911 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:37,910 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing accessibility distances: 5/6 (83%)
+2026-01-01 20:16:39,563 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:39,562 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing accessibility distances: 6/6 (100%)
+2026-01-01 20:16:41,568 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:41,568 [INFO] PathLensOptimizedPipeline - [Step 1/1] [CACHE] Saved to cache: distances_40449mappings_6types.parquet
+2026-01-01 20:16:46,302 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:46,302 [INFO] PathLensOptimizedPipeline - [Step 1/1] [AGGREGATE] Computing equity metrics and H3 aggregation...
+2026-01-01 20:16:51,633 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:51,633 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 hexagons (resolution 8)...
+2026-01-01 20:16:51,634 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:51,633 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 182191 nodes
+2026-01-01 20:16:51,685 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:51,684 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 18219/182191 (9%)
+2026-01-01 20:16:51,751 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:51,751 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 36438/182191 (19%)
+2026-01-01 20:16:51,817 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:51,816 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 54657/182191 (29%)
+2026-01-01 20:16:51,891 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:51,888 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 72876/182191 (39%)
+2026-01-01 20:16:51,952 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:51,951 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 91095/182191 (49%)
+2026-01-01 20:16:52,009 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:52,008 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 109314/182191 (59%)
+2026-01-01 20:16:52,067 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:52,066 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 127533/182191 (69%)
+2026-01-01 20:16:52,119 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:52,119 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 145752/182191 (79%)
+2026-01-01 20:16:52,168 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:52,168 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 163971/182191 (89%)
+2026-01-01 20:16:52,217 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:52,216 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 182190/182191 (99%)
+2026-01-01 20:16:52,217 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:52,216 [INFO] PathLensOptimizedPipeline - [Step 1/1] Computing H3 indexes: 182191/182191 (100%)
+2026-01-01 20:16:52,349 - PathLensMaster - INFO - [optimization] 2026-01-01 20:16:52,349 [INFO] PathLensOptimizedPipeline - [Step 1/1] [NORMALIZE] Normalizing scores to 1-100 scale...
+2026-01-01 20:17:04,741 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:04,740 [INFO] PathLensOptimizedPipeline - [Step 1/1] Saved node-level scores and H3 aggregates to D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis (prefix='optimized_')
+2026-01-01 20:17:07,461 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,459 [INFO] PathLensOptimizedPipeline - Step completed: [OPTIMIZED] Compute optimized scoring outputs (in-memory merge) (655.5s)
+2026-01-01 20:17:07,462 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,460 [INFO] PathLensOptimizedPipeline - Pipeline orchestration complete
+2026-01-01 20:17:07,463 - PathLensMaster - INFO - [optimization] ================================================================================
+2026-01-01 20:17:07,463 - PathLensMaster - INFO - [optimization] PathLens Optimization Pipeline
+2026-01-01 20:17:07,464 - PathLensMaster - INFO - [optimization] Total steps to execute: 1
+2026-01-01 20:17:07,466 - PathLensMaster - INFO - [optimization] ================================================================================
+2026-01-01 20:17:07,467 - PathLensMaster - INFO - [optimization] [Skip] Baseline graph build (reusing baseline_graph.graphml)
+2026-01-01 20:17:07,468 - PathLensMaster - INFO - [optimization] [Skip] Optimized graph build (reusing optimized_graph.graphml)
+2026-01-01 20:17:07,469 - PathLensMaster - INFO - [optimization] [Skip] Baseline scoring (reusing baseline_nodes_with_scores.parquet)
+2026-01-01 20:17:07,475 - PathLensMaster - INFO - [optimization] ================================================================================
+2026-01-01 20:17:07,478 - PathLensMaster - INFO - [optimization] [Step 1/1] [OPTIMIZED] Compute optimized scoring outputs (in-memory merge)
+2026-01-01 20:17:07,479 - PathLensMaster - INFO - [optimization] ================================================================================
+2026-01-01 20:17:07,481 - PathLensMaster - INFO - [optimization] Command: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\venv\Scripts\python.exe -u D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\run_optimized_scoring.py --graph-path D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\optimized_graph.graphml --poi-mapping D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\optimized_poi_node_mapping.parquet --baseline-pois-path D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\raw\osm\pois.parquet --optimized-pois-path D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\optimized_pois.geojson --out-dir D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis --config D:\ENGG\EL\5th sem\MAIN_EL\PathLens\config.yaml --output-prefix optimized
+2026-01-01 20:17:07,483 - PathLensMaster - INFO - [optimization] [Step 1/1] Loading graph and POI mapping...
+2026-01-01 20:17:07,485 - PathLensMaster - INFO - [optimization] [Step 1/1] Graph loaded: 182191 nodes, 487510 edges
+2026-01-01 20:17:07,488 - PathLensMaster - INFO - [optimization] [Step 1/1] Extracted 182191 nodes as GeoDataFrame
+2026-01-01 20:17:07,489 - PathLensMaster - INFO - [optimization] [Step 1/1] Loaded POI mapping: 40449 POIs
+2026-01-01 20:17:07,489 - PathLensMaster - INFO - [optimization] [Step 1/1] [FAST] Loading baseline POIs from parquet (~1.5s)...
+2026-01-01 20:17:07,490 - PathLensMaster - INFO - [optimization] [Step 1/1] Loaded 40436 baseline POIs
+2026-01-01 20:17:07,491 - PathLensMaster - INFO - [optimization] [Step 1/1] [FAST] Loading optimized POIs from geojson...
+2026-01-01 20:17:07,492 - PathLensMaster - INFO - [optimization] [Step 1/1] Loaded 13 optimized POIs
+2026-01-01 20:17:07,494 - PathLensMaster - INFO - [optimization] [Step 1/1] [MEMORY MERGE] Merging 40436 baseline + 13 optimized POIs...
+2026-01-01 20:17:07,499 - PathLensMaster - INFO - [optimization] [Step 1/1] D:\ENGG\EL\5th sem\MAIN_EL\PathLens\optimization-pipeline\run_optimized_scoring.py:83: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+2026-01-01 20:17:07,502 - PathLensMaster - INFO - [optimization] [Step 1/1]   pd.concat([baseline_pois, optimized_pois], ignore_index=True, sort=False),
+2026-01-01 20:17:07,506 - PathLensMaster - INFO - [optimization] [Step 1/1] [MEMORY MERGE] Merged POIs: 40449 total (40436 baseline + 13 optimized)
+2026-01-01 20:17:07,508 - PathLensMaster - INFO - [optimization] [Step 1/1] [COMPUTE] Computing structure metrics...
+2026-01-01 20:17:07,508 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 182191 nodes
+2026-01-01 20:17:07,509 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 18219/182191 (9%)
+2026-01-01 20:17:07,510 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 36438/182191 (19%)
+2026-01-01 20:17:07,510 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 54657/182191 (29%)
+2026-01-01 20:17:07,511 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 72876/182191 (39%)
+2026-01-01 20:17:07,512 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 91095/182191 (49%)
+2026-01-01 20:17:07,512 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 109314/182191 (59%)
+2026-01-01 20:17:07,514 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 127533/182191 (69%)
+2026-01-01 20:17:07,515 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 145752/182191 (79%)
+2026-01-01 20:17:07,516 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 163971/182191 (89%)
+2026-01-01 20:17:07,518 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 182190/182191 (99%)
+2026-01-01 20:17:07,518 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing structure metrics: 182191/182191 (100%)
+2026-01-01 20:17:07,519 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing betweenness centrality (sampling 150 nodes)...
+2026-01-01 20:17:07,521 - PathLensMaster - INFO - [optimization] [Step 1/1] [CACHE] Saved to cache: structure_182191nodes.pkl
+2026-01-01 20:17:07,522 - PathLensMaster - INFO - [optimization] [Step 1/1] [COMPUTE] Computing amenity distances...
+2026-01-01 20:17:07,524 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 40449 pois
+2026-01-01 20:17:07,524 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 4044/40449 (9%)
+2026-01-01 20:17:07,525 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 8088/40449 (19%)
+2026-01-01 20:17:07,526 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 12132/40449 (29%)
+2026-01-01 20:17:07,526 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 16176/40449 (39%)
+2026-01-01 20:17:07,527 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 20220/40449 (49%)
+2026-01-01 20:17:07,527 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 24264/40449 (59%)
+2026-01-01 20:17:07,528 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 28308/40449 (69%)
+2026-01-01 20:17:07,528 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 32352/40449 (79%)
+2026-01-01 20:17:07,529 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 36396/40449 (89%)
+2026-01-01 20:17:07,530 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 40440/40449 (99%)
+2026-01-01 20:17:07,531 - PathLensMaster - INFO - [optimization] [Step 1/1] Building POI-node index: 40449/40449 (100%)
+2026-01-01 20:17:07,532 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing network distances for 6 amenity types...
+2026-01-01 20:17:07,533 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing accessibility distances: 6 amenity_types
+2026-01-01 20:17:07,534 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing accessibility distances: 1/6 (16%)
+2026-01-01 20:17:07,535 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing accessibility distances: 2/6 (33%)
+2026-01-01 20:17:07,536 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing accessibility distances: 3/6 (50%)
+2026-01-01 20:17:07,539 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing accessibility distances: 4/6 (66%)
+2026-01-01 20:17:07,541 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing accessibility distances: 5/6 (83%)
+2026-01-01 20:17:07,542 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing accessibility distances: 6/6 (100%)
+2026-01-01 20:17:07,543 - PathLensMaster - INFO - [optimization] [Step 1/1] [CACHE] Saved to cache: distances_40449mappings_6types.parquet
+2026-01-01 20:17:07,544 - PathLensMaster - INFO - [optimization] [Step 1/1] [AGGREGATE] Computing equity metrics and H3 aggregation...
+2026-01-01 20:17:07,545 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 hexagons (resolution 8)...
+2026-01-01 20:17:07,546 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 182191 nodes
+2026-01-01 20:17:07,546 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 18219/182191 (9%)
+2026-01-01 20:17:07,547 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 36438/182191 (19%)
+2026-01-01 20:17:07,547 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 54657/182191 (29%)
+2026-01-01 20:17:07,548 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 72876/182191 (39%)
+2026-01-01 20:17:07,548 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 91095/182191 (49%)
+2026-01-01 20:17:07,549 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 109314/182191 (59%)
+2026-01-01 20:17:07,550 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 127533/182191 (69%)
+2026-01-01 20:17:07,551 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 145752/182191 (79%)
+2026-01-01 20:17:07,553 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 163971/182191 (89%)
+2026-01-01 20:17:07,553 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 182190/182191 (99%)
+2026-01-01 20:17:07,556 - PathLensMaster - INFO - [optimization] [Step 1/1] Computing H3 indexes: 182191/182191 (100%)
+2026-01-01 20:17:07,557 - PathLensMaster - INFO - [optimization] [Step 1/1] [NORMALIZE] Normalizing scores to 1-100 scale...
+2026-01-01 20:17:07,558 - PathLensMaster - INFO - [optimization] [Step 1/1] Saved node-level scores and H3 aggregates to D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis (prefix='optimized_')
+2026-01-01 20:17:07,559 - PathLensMaster - INFO - [optimization] Completed in 655.5s
+2026-01-01 20:17:07,560 - PathLensMaster - INFO - [optimization] ================================================================================
+2026-01-01 20:17:07,561 - PathLensMaster - INFO - [optimization] Pipeline orchestration complete!
+2026-01-01 20:17:07,562 - PathLensMaster - INFO - [optimization] ================================================================================
+2026-01-01 20:17:07,562 - PathLensMaster - INFO - [optimization] Key artifacts:
+2026-01-01 20:17:07,563 - PathLensMaster - INFO - [optimization]   Baseline graph:    D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\baseline_graph.graphml
+2026-01-01 20:17:07,564 - PathLensMaster - INFO - [optimization]   Optimized graph:   D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\processed\optimized_graph.graphml
+2026-01-01 20:17:07,564 - PathLensMaster - INFO - [optimization]   Baseline scores:   D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\baseline_nodes_with_scores.parquet
+2026-01-01 20:17:07,565 - PathLensMaster - INFO - [optimization]   Optimized scores:  D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\optimized_nodes_with_scores.parquet
+2026-01-01 20:17:07,566 - PathLensMaster - INFO - [optimization]   Metrics summaries: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\baseline_metrics_summary.json | D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis\optimized_metrics_summary.json
+2026-01-01 20:17:07,567 - PathLensMaster - INFO - [optimization]   Optimized POIs:    D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\optimized_pois.geojson
+2026-01-01 20:17:07,567 - PathLensMaster - INFO - [optimization]   Merged POIs:       D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\merged_pois.geojson
+2026-01-01 20:17:07,568 - PathLensMaster - INFO - [optimization] ================================================================================
+2026-01-01 20:17:07,570 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,494 - __main__ - INFO - Run optimization pipeline orchestrator completed successfully
+2026-01-01 20:17:07,572 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,495 - __main__ - INFO - ================================================================================
+2026-01-01 20:17:07,573 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,495 - __main__ - INFO - Optimization workflow complete
+2026-01-01 20:17:07,574 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,495 - __main__ - INFO -   Results: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs
+2026-01-01 20:17:07,575 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,496 - __main__ - INFO -   Analysis: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\analysis
+2026-01-01 20:17:07,576 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,496 - __main__ - INFO -   Logs: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\optimization\runs\logs
+2026-01-01 20:17:07,577 - PathLensMaster - INFO - [optimization] 2026-01-01 20:17:07,496 - __main__ - INFO - ================================================================================
+2026-01-01 20:17:07,586 - PathLensMaster - INFO - Skipping landuse feasibility pipeline
+2026-01-01 20:17:07,592 - PathLensMaster - INFO - ================================================================================
+2026-01-01 20:17:07,593 - PathLensMaster - INFO - PATHLENS MASTER ORCHESTRATOR - SUMMARY
+2026-01-01 20:17:07,593 - PathLensMaster - INFO - ================================================================================
+2026-01-01 20:17:07,609 - PathLensMaster - INFO - ================================================================================
+2026-01-01 20:17:07,610 - PathLensMaster - INFO - Summary saved: D:\ENGG\EL\5th sem\MAIN_EL\PathLens\data\logs\run_summary_20260101_201707.json

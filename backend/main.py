@@ -307,7 +307,6 @@ async def optimize(request: OptimizeRequest):
     # Construct command requested by frontend action
     cmd = [
         sys.executable, RUN_SCRIPT,
-        "--skip-data",
         "--skip-landuse"
     ]
     
@@ -317,7 +316,7 @@ async def optimize(request: OptimizeRequest):
         message="Optimization run queued",
         percent=2,
         pipelines={
-            "data": "skipped",
+            "data": "pending",
             "optimization": "pending",
             "landuse": "skipped"
         }

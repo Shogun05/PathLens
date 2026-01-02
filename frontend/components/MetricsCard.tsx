@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { Card } from '@/components/ui/card';
-import { pathLensAPI } from '@/lib/api';
-import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
+import { useEffect, useState } from "react";
+import { Card } from "@/components/ui/card";
+import { pathLensAPI } from "@/lib/api";
+import { TrendingUp, TrendingDown, Minus } from "lucide-react";
 
 interface MetricsCardProps {
-  type: 'baseline' | 'optimized';
+  type: "baseline" | "optimized";
 }
 
 interface MetricsSummary {
@@ -27,7 +27,7 @@ interface MetricsSummary {
 export function MetricsCard({ type }: MetricsCardProps) {
   const [metrics, setMetrics] = useState<MetricsSummary | null>(null);
   const [loading, setLoading] = useState(true);
-  
+
   useEffect(() => {
     const loadMetrics = async () => {
       try {
@@ -35,12 +35,12 @@ export function MetricsCard({ type }: MetricsCardProps) {
         const data = await pathLensAPI.getMetricsSummary(type);
         setMetrics(data);
       } catch (error) {
-        console.error('Failed to load metrics:', error);
+        console.error("Failed to load metrics:", error);
       } finally {
         setLoading(false);
       }
     };
-    
+
     loadMetrics();
   }, [type]);
 
@@ -55,7 +55,11 @@ export function MetricsCard({ type }: MetricsCardProps) {
     );
   }
 
-  const getTrendIcon = (value: number, threshold: number, higher: boolean = true) => {
+  const getTrendIcon = (
+    value: number,
+    threshold: number,
+    higher: boolean = true
+  ) => {
     if (higher) {
       return value > threshold ? (
         <TrendingUp className="h-3 w-3 text-green-400" />
@@ -72,8 +76,10 @@ export function MetricsCard({ type }: MetricsCardProps) {
   };
 
   const getStatusBadge = (value: number, low: number, high: number) => {
-    if (value < low) return <span className="text-xs text-red-400 font-medium">Low</span>;
-    if (value > high) return <span className="text-xs text-green-400 font-medium">High</span>;
+    if (value < low)
+      return <span className="text-xs text-red-400 font-medium">Low</span>;
+    if (value > high)
+      return <span className="text-xs text-green-400 font-medium">High</span>;
     return <span className="text-xs text-yellow-400 font-medium">Avg</span>;
   };
 
@@ -84,7 +90,9 @@ export function MetricsCard({ type }: MetricsCardProps) {
         {/* Circuity Ratio */}
         <Card className="bg-[#1b2328] border-white/5 p-4 flex items-center justify-between hover:border-white/20 transition-colors">
           <div>
-            <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Circuity Ratio</p>
+            <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">
+              Circuity Ratio
+            </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
                 {metrics.network.circuity_sample_ratio.toFixed(2)}
@@ -93,8 +101,18 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </div>
           </div>
           <div className="size-10 rounded-lg bg-red-500/10 flex items-center justify-center text-red-400">
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+              />
             </svg>
           </div>
         </Card>
@@ -102,7 +120,9 @@ export function MetricsCard({ type }: MetricsCardProps) {
         {/* Intersection Density */}
         <Card className="bg-[#1b2328] border-white/5 p-4 flex items-center justify-between hover:border-white/20 transition-colors">
           <div>
-            <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Intersection Density</p>
+            <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">
+              Intersection Density
+            </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
                 {Math.round(metrics.network.intersection_density_global)}
@@ -111,8 +131,18 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </div>
           </div>
           <div className="size-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400">
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"
+              />
             </svg>
           </div>
         </Card>
@@ -120,7 +150,9 @@ export function MetricsCard({ type }: MetricsCardProps) {
         {/* Link-Node Ratio */}
         <Card className="bg-[#1b2328] border-white/5 p-4 flex items-center justify-between hover:border-white/20 transition-colors">
           <div>
-            <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Link-Node Ratio</p>
+            <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">
+              Link-Node Ratio
+            </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
                 {metrics.network.link_node_ratio_global.toFixed(2)}
@@ -129,8 +161,18 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </div>
           </div>
           <div className="size-10 rounded-lg bg-yellow-500/10 flex items-center justify-center text-yellow-400">
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
             </svg>
           </div>
         </Card>
@@ -140,9 +182,11 @@ export function MetricsCard({ type }: MetricsCardProps) {
       <Card className="bg-[#1b2328] border-white/5 p-5">
         <div className="flex justify-between items-center mb-4">
           <h4 className="text-sm font-bold text-white">Accessibility Scores</h4>
-          <button className="text-[#8fd6ff] text-xs hover:underline">View details</button>
+          <button className="text-[#8fd6ff] text-xs hover:underline">
+            View details
+          </button>
         </div>
-        
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Walkability Gauge */}
           <div className="flex flex-col items-center gap-2">
@@ -160,13 +204,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.walkability_mean * 100}, 100`}
+                  strokeDasharray={`${metrics.scores.walkability_mean}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.walkability_mean * 100)}
+                  {Math.round(metrics.scores.walkability_mean)}
                 </span>
               </div>
             </div>
@@ -189,13 +233,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.equity_mean * 100}, 100`}
+                  strokeDasharray={`${metrics.scores.equity_mean}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.equity_mean * 100)}
+                  {Math.round(metrics.scores.equity_mean)}
                 </span>
               </div>
             </div>
@@ -218,13 +262,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.travel_time_score_mean * 100}, 100`}
+                  strokeDasharray={`${metrics.scores.travel_time_score_mean}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.travel_time_score_mean * 100)}
+                  {Math.round(metrics.scores.travel_time_score_mean)}
                 </span>
               </div>
             </div>
@@ -247,13 +291,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.accessibility_mean * 100}, 100`}
+                  strokeDasharray={`${metrics.scores.accessibility_mean}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.accessibility_mean * 100)}
+                  {Math.round(metrics.scores.accessibility_mean)}
                 </span>
               </div>
             </div>

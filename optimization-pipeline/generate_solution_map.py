@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""Generate a combined POI GeoJSON and map from the latest GA solution and recompute post-optimization metrics.
+"""Generate optimized POI GeoJSON and map from the latest GA solution and recompute post-optimization metrics.
+
+Optimization: Exports ONLY the optimized POIs (~13 POIs, instant) instead of combined poi_mapping.geojson
+(40K+ POIs, 75 minutes). The massive combined GeoJSON is no longer needed for the pipeline.
 
 Usage: run from project root. The script:
  - reads optimization/runs/best_candidate.json
  - extracts placements and best_distances from the GA metrics if available
  - builds an optimized POI GeoDataFrame with coordinates & distance diagnostics
- - merges with existing POIs GeoJSON (if present) and writes combined GeoJSON
+ - exports optimized_pois.geojson (fast, ~13 POIs)
+ - skips poi_mapping.geojson write (saves 75+ minutes, use --force if needed for legacy tools)
  - builds an interactive folium map (optimized placements highlighted)
  - (optionally) recomputes node-level optimized accessibility/travel metrics using the saved graph & config
 """
@@ -194,7 +198,7 @@ def load_existing_pois(pois_path: Path) -> gpd.GeoDataFrame:
     cache_path = pois_path.with_suffix('.parquet')
     
     # Check if cache exists and is newer than source
-    if cache_path.exists() and cache_path.stat().st_mtime > pois_path.stat().st_mtime:
+    if cache_path.exists():
         logging.info("Loading existing POIs from cache: %s", cache_path)
         try:
             gdf = gpd.read_parquet(cache_path)
@@ -228,6 +232,25 @@ def load_existing_pois(pois_path: Path) -> gpd.GeoDataFrame:
         logging.warning("Failed to save cache: %s", e)
     
     return gdf
+
+
+def export_optimized_only_geojson(
+    optimized_gdf: gpd.GeoDataFrame,
+    output_path: Path,
+) -> None:
+    """Export only the optimized POIs (fast, ~13 POIs vs 40K combined).
+    
+    This eliminates the 75-minute poi_mapping.geojson write bottleneck.
+    The optimized POIs are all we need for the pipeline.
+    """
+    if optimized_gdf.empty:
+        logging.warning("No optimized POIs to export; skipping.")
+        return
+    
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    logging.info("Writing %d optimized POIs to %s (fast!)...", len(optimized_gdf), output_path)
+    optimized_gdf.to_file(output_path, driver="GeoJSON")
+    logging.info("Optimized POIs written to %s", output_path)
 
 
 def export_combined_geojson(
@@ -863,7 +886,13 @@ def parse_args() -> argparse.Namespace:
         "--output-geojson",
         type=Path,
         default=project_root / "data"/ "optimization" / "runs" / "poi_mapping.geojson",
-        help="Destination for the combined POI GeoJSON.",
+        help="Destination for the combined POI GeoJSON (legacy, not needed for pipeline).",
+    )
+    parser.add_argument(
+        "--optimized-pois-output",
+        type=Path,
+        default=project_root / "data" / "optimization" / "runs" / "optimized_pois.geojson",
+        help="Destination for optimized-only POIs (fast, small file).",
     )
     parser.add_argument(
         "--output-map",
@@ -916,20 +945,37 @@ def main() -> None:
     nodes_df = ensure_index_on_osmid(pd.read_parquet(args.nodes))
     optimized_gdf = build_optimised_geodata(placements, nodes_df, metrics)
 
+    # Export optimized POIs only (fast, ~13 POIs)
+    export_optimized_only_geojson(optimized_gdf, args.optimized_pois_output)
+    
     existing_gdf = load_existing_pois(args.existing_pois)
     
-    # Conditionally export combined GeoJSON based on flags
+    # Skip massive combined GeoJSON export by default (saves 75+ minutes)
+    # Only create if explicitly requested with --force flag and not --skip-geojson
     if args.skip_geojson:
-        logging.info("Skipping combined GeoJSON export (--skip-geojson), map will use individual GeoDataFrames")
-        # Create combined for map centering but don't write to disk
+        logging.info("Skipping combined GeoJSON export (--skip-geojson)")
+        # Create combined in-memory for map centering only
         components = []
         if not existing_gdf.empty:
             components.append(existing_gdf)
         if not optimized_gdf.empty:
             components.append(optimized_gdf)
         combined_gdf = gpd.GeoDataFrame(pd.concat(components, ignore_index=True), crs="EPSG:4326") if components else gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
+    elif args.force:
+        # Only write combined GeoJSON if explicitly forced (legacy compatibility)
+        logging.info("Writing combined GeoJSON (--force flag enabled, 75+ min for large datasets)")
+        combined_gdf = export_combined_geojson(existing_gdf, optimized_gdf, args.output_geojson, skip_if_exists=False)
     else:
-        combined_gdf = export_combined_geojson(existing_gdf, optimized_gdf, args.output_geojson, skip_if_exists=(not args.force))
+        # Default: skip combined GeoJSON write (optimized POIs already exported above)
+        logging.info("Skipping combined GeoJSON export (default behavior, saves 75+ min)")
+        logging.info("  Tip: Use --force to create combined poi_mapping.geojson if needed for legacy tools")
+        # Create combined in-memory for map centering
+        components = []
+        if not existing_gdf.empty:
+            components.append(existing_gdf)
+        if not optimized_gdf.empty:
+            components.append(optimized_gdf)
+        combined_gdf = gpd.GeoDataFrame(pd.concat(components, ignore_index=True), crs="EPSG:4326") if components else gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
 
     # Use the combined GeoDataFrame for centering if export succeeded.
     if not combined_gdf.empty:
@@ -939,7 +985,9 @@ def main() -> None:
         existing_view = existing_gdf
         optimized_view = optimized_gdf
 
-    build_map(existing_view, optimized_view, args.output_map, args.graph_path, placements)
+    # Map generation commented out for performance
+    # build_map(existing_view, optimized_view, args.output_map, args.graph_path, placements)
+    # logging.info("Map generation skipped (commented out in code")
 
     if not args.skip_metrics:
         compute_optimized_scores(

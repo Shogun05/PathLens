@@ -60,7 +60,8 @@ def run_pipeline(pipeline_name: str, script_path: Path, args: List[str], logger:
     logger.info(f"PIPELINE: {pipeline_name.upper()}")
     logger.info("=" * 80)
 
-    command = [sys.executable, str(script_path)] + args
+    # Use -u flag for unbuffered output so print statements flow through immediately
+    command = [sys.executable, '-u', str(script_path)] + args
     logger.info(f"Command: {' '.join(command)}")
 
     try:
@@ -69,23 +70,29 @@ def run_pipeline(pipeline_name: str, script_path: Path, args: List[str], logger:
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            bufsize=1,
+            bufsize=1,  # Line buffered
             universal_newlines=True
         ) as process:
             assert process.stdout is not None  # for type checkers
             for line in process.stdout:
-                logger.info(f"[{pipeline_name}] {line.rstrip()}" if line else "")
+                stripped = line.rstrip()
+                if stripped:  # Only log non-empty lines
+                    prefixed = f"[{pipeline_name}] {stripped}"
+                    print(prefixed)  # Print to console
+                    logger.info(prefixed)  # Log to file
+                elif line:  # Preserve empty lines for formatting
+                    print(line, end='')
 
             returncode = process.wait()
 
         if returncode == 0:
-            logger.info(f"✓ {pipeline_name} completed successfully")
+            logger.info(f"{pipeline_name} completed successfully")
             return True
 
-        logger.error(f"✗ {pipeline_name} failed with exit code {returncode}")
+        logger.error(f"{pipeline_name} failed with exit code {returncode}")
         return False
     except Exception as e:
-        logger.error(f"✗ {pipeline_name} encountered error: {e}")
+        logger.error(f"{pipeline_name} encountered error: {e}")
         return False
 
 
@@ -350,7 +357,7 @@ Examples:
     logger.info("PATHLENS MASTER ORCHESTRATOR - SUMMARY")
     logger.info("=" * 80)
     for pipeline, success in results.items():
-        status = "✓ SUCCESS" if success else "✗ FAILED"
+        status = "SUCCESS" if success else "FAILED"
         logger.info(f"  {pipeline:20} | {status}")
     logger.info("=" * 80)
     logger.info(f"Summary saved: {summary_file}")
@@ -368,10 +375,10 @@ Examples:
     )
 
     if overall_success:
-        logger.info("✓ All pipelines completed successfully")
+        logger.info("All pipelines completed successfully")
         sys.exit(0)
     else:
-        logger.error("✗ Some pipelines failed")
+        logger.error("Some pipelines failed")
         sys.exit(1)
 
 
