@@ -4,3 +4,5 @@ cache/*.json filter=lfs diff=lfs merge=lfs -text
 data/processed/optimized_graph.graphml filter=lfs diff=lfs merge=lfs -text
 data/20citiesModel/* filter=lfs diff=lfs merge=lfs -text
 GraphBuilder/data/20citiesModel/model.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+data/analysis/baseline_nodes_with_scores.csv filter=lfs diff=lfs merge=lfs -text
+data/analysis/optimized_nodes_with_scores.csv filter=lfs diff=lfs merge=lfs -text
