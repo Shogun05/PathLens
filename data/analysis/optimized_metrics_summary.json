@@ -1,20 +1,14 @@
 {
   "network": {
-    "circuity_sample_ratio": 1.2535364270170428,
-    "intersection_density_global": 63.962362099315314,
-    "link_node_ratio_global": 3.4427017060946805
+    "circuity_sample_ratio": 1.2109098017238868,
+    "intersection_density_global": 119.16111979877999,
+    "link_node_ratio_global": 2.6758182347097286
   },
   "scores": {
-    "accessibility_mean": 67.38782419428391,
-    "walkability_mean": 65.00574005473051,
-    "equity_mean": 95.43516667330273,
-    "travel_time_min_mean": 27.15154503031915,
-    "travel_time_score_mean": 55.37475639012351
-  },
-  "local_impact": {
-    "affected_node_count": 8318,
-    "avg_reduction_min": 11.921043650222282,
-    "baseline_avg_min": 52.46610849910296,
-    "optimized_avg_min": 40.54506484888068
+    "accessibility_mean": 68.01142599754304,
+    "walkability_mean": 65.36099208895577,
+    "equity_mean": 93.07244203280284,
+    "travel_time_min_mean": 26.201400861692644,
+    "travel_time_score_mean": 56.69361792624857
   }
 }

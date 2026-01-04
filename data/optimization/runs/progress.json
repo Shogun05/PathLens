@@ -1,12 +1,18 @@
 {
-  "status": "running",
-  "stage": "optimization",
-  "message": "Running optimization pipeline",
-  "percent": 80,
-  "timestamp": "2026-01-04T13:56:25.210293Z",
+  "status": "completed",
+  "stage": "finalizing",
+  "message": "All requested pipelines completed successfully",
+  "percent": 100,
+  "timestamp": "2026-01-04T15:00:35.747740Z",
   "pipelines": {
     "data": "skipped",
-    "optimization": "running",
+    "optimization": "completed",
     "landuse": "skipped"
+  },
+  "details": {
+    "results": {
+      "optimization": true
+    },
+    "summary_file": "/home/shogun/Documents/PathLens/data/logs/run_summary_20260104_203035.json"
   }
 }

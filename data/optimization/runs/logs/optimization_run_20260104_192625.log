@@ -12,3 +12,20 @@
 2026-01-04 19:26:26,444 - __main__ - INFO - > Run hybrid genetic algorithm with MILP refinement
 2026-01-04 19:26:26,444 - __main__ - INFO - ================================================================================
 2026-01-04 19:26:26,444 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/hybrid_ga.py --nodes-scores /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --high-travel /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv --analysis-dir /home/shogun/Documents/PathLens/data/optimization/runs --config /home/shogun/Documents/PathLens/config.yaml --workers 12
+2026-01-04 20:28:26,559 - __main__ - INFO - Run hybrid genetic algorithm with MILP refinement completed successfully
+2026-01-04 20:28:26,561 - __main__ - INFO - ================================================================================
+2026-01-04 20:28:26,561 - __main__ - INFO - > Generate combined POI GeoJSON and map
+2026-01-04 20:28:26,561 - __main__ - INFO - ================================================================================
+2026-01-04 20:28:26,561 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/generate_solution_map.py
+2026-01-04 20:29:05,031 - __main__ - INFO - Generate combined POI GeoJSON and map completed successfully
+2026-01-04 20:29:05,031 - __main__ - INFO - ================================================================================
+2026-01-04 20:29:05,031 - __main__ - INFO - > Run optimization pipeline orchestrator
+2026-01-04 20:29:05,031 - __main__ - INFO - ================================================================================
+2026-01-04 20:29:05,031 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/run_optimized_pipeline.py --baseline-prefix baseline --optimized-prefix optimized --skip-map
+2026-01-04 20:30:35,730 - __main__ - INFO - Run optimization pipeline orchestrator completed successfully
+2026-01-04 20:30:35,730 - __main__ - INFO - ================================================================================
+2026-01-04 20:30:35,731 - __main__ - INFO - Optimization workflow complete
+2026-01-04 20:30:35,731 - __main__ - INFO -   Results: /home/shogun/Documents/PathLens/data/optimization/runs
+2026-01-04 20:30:35,731 - __main__ - INFO -   Analysis: /home/shogun/Documents/PathLens/data/analysis
+2026-01-04 20:30:35,731 - __main__ - INFO -   Logs: /home/shogun/Documents/PathLens/data/optimization/runs/logs
+2026-01-04 20:30:35,731 - __main__ - INFO - ================================================================================
