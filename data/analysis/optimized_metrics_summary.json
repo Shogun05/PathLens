@@ -10,5 +10,11 @@
     "equity_mean": 95.46326118379145,
     "travel_time_min_mean": 27.138643909915814,
     "travel_time_score_mean": 55.85256688317559
+  },
+  "local_impact": {
+    "affected_node_count": 5914,
+    "avg_reduction_min": 10.311719228785673,
+    "baseline_avg_min": 60.0171365416271,
+    "optimized_avg_min": 49.70541731284143
   }
 }

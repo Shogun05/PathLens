@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-04T16:55:53.246985",
+  "timestamp": "2026-01-04T18:11:53.202377",
   "arguments": {
     "python": "/home/shogun/Documents/PathLens/venv/bin/python",
     "skip_candidates": true,
     "skip_ga": true,
-    "skip_map_refresh": false,
+    "skip_map_refresh": true,
     "skip_pipeline": false,
     "candidate_threshold": null,
     "candidate_limit": null,
@@ -29,16 +29,16 @@
   "steps_executed": {
     "candidates": false,
     "ga": false,
-    "map_refresh": true,
+    "map_refresh": false,
     "pipeline": true
   }
 }{
-  "timestamp": "2026-01-04T16:55:53.246985",
+  "timestamp": "2026-01-04T18:11:53.202377",
   "arguments": {
     "python": "/home/shogun/Documents/PathLens/venv/bin/python",
     "skip_candidates": true,
     "skip_ga": true,
-    "skip_map_refresh": false,
+    "skip_map_refresh": true,
     "skip_pipeline": false,
     "candidate_threshold": null,
     "candidate_limit": null,
@@ -63,7 +63,7 @@
   "steps_executed": {
     "candidates": false,
     "ga": false,
-    "map_refresh": true,
+    "map_refresh": false,
     "pipeline": true
   }
 }

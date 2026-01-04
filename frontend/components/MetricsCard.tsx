@@ -22,6 +22,12 @@ interface MetricsSummary {
     travel_time_min_mean: number;
     travel_time_score_mean: number;
   };
+  local_impact?: {
+    affected_node_count: number;
+    avg_reduction_min: number;
+    baseline_avg_min: number;
+    optimized_avg_min: number;
+  };
 }
 
 export function MetricsCard({ type }: MetricsCardProps) {
@@ -262,17 +268,28 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.travel_time_score_mean}, 100`}
+                  strokeDasharray={`${Math.min((metrics.scores.travel_time_min_mean / 60) * 100, 100)}, 100`}
                   strokeWidth="3"
                 />
               </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center flex-col">
                 <span className="text-sm font-bold text-white">
-                  {metrics.scores.travel_time_score_mean.toFixed(1)}
+                  {metrics.scores.travel_time_min_mean.toFixed(1)}
                 </span>
+                <span className="text-[8px] text-gray-500">mins</span>
               </div>
             </div>
-            <span className="text-xs text-gray-400">Travel Time</span>
+            <span className="text-xs text-gray-400">Time</span>
+            {metrics.local_impact && metrics.local_impact.affected_node_count > 0 && (
+              <div className="flex flex-col items-center mt-1">
+                <span className="text-[10px] text-green-400 font-medium">
+                  -{metrics.local_impact.avg_reduction_min.toFixed(1)} min
+                </span>
+                <span className="text-[8px] text-gray-500">
+                  in {metrics.local_impact.affected_node_count} nodes
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Accessibility Gauge */}
