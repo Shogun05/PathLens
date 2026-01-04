@@ -662,13 +662,13 @@ def main():
     agg = agg_walkability.merge(equity_agg, on="h3", how="left")
 
     # Normalize all scores to 1-100 scale for better interpretability
-    print("[NORMALIZE] Normalizing scores to 1-100 scale...")
-    sys.stdout.flush()
-    nodes["accessibility_score"] = normalize_series(nodes["accessibility_score"]) * 99 + 1
-    nodes["structure_score"] = normalize_series(nodes["structure_score"]) * 99 + 1
-    nodes["equity_score"] = normalize_series(nodes["equity_score"]) * 99 + 1
-    nodes["travel_time_score"] = normalize_series(nodes["travel_time_score"]) * 99 + 1
-    nodes["walkability"] = normalize_series(nodes["walkability"]) * 99 + 1
+    # Scores are already on 0-100 scale (or close to it) based on formulas
+    # Normalization removed to preserve absolute values for comparison
+    # nodes["accessibility_score"] = normalize_series(nodes["accessibility_score"]) * 99 + 1
+    # nodes["structure_score"] = normalize_series(nodes["structure_score"]) * 99 + 1
+    # nodes["equity_score"] = normalize_series(nodes["equity_score"]) * 99 + 1
+    # nodes["travel_time_score"] = normalize_series(nodes["travel_time_score"]) * 99 + 1
+    # nodes["walkability"] = normalize_series(nodes["walkability"]) * 99 + 1
     
     circuity_value = compute_circuity_sample(G, nodes, sample_k=circuity_sample_k)
     travel_time_min_mean = safe_numeric(nodes["travel_time_min"].mean(), fallback)

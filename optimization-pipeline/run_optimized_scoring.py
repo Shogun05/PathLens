@@ -183,14 +183,14 @@ def main():
 
     # Score computation
     nodes["accessibility_score"] = compute_accessibility_score(distances, amenity_weights)
-    nodes["travel_time_min"] = compute_travel_time_metrics(distances, walking_speed)
+    nodes["travel_time_min"] = compute_travel_time_metrics(distances, amenity_weights, walking_speed)
     travel_time_clean = nodes["travel_time_min"].replace([np.inf, -np.inf], np.nan)
     valid_travel = travel_time_clean.dropna()
     fallback = float(valid_travel.max()) if not valid_travel.empty else 0.0
     if not np.isfinite(fallback) or fallback < 0:
         fallback = 0.0
     nodes["travel_time_min"] = travel_time_clean.fillna(fallback)
-    nodes["travel_time_score"] = 1.0 / (1.0 + nodes["travel_time_min"])
+    nodes["travel_time_score"] = 100.0 * (1.0 - nodes["travel_time_min"].clip(upper=60) / 60.0)
 
     structure_components = [
         normalize_series(nodes["degree"].fillna(0)),
@@ -200,12 +200,13 @@ def main():
         structure_components.append(normalize_series(nodes["betweenness_centrality"].fillna(0)))
     if centrality_cfg.get("compute_closeness", False) and "closeness_centrality" in nodes.columns:
         structure_components.append(normalize_series(nodes["closeness_centrality"].fillna(0)))
-    nodes["structure_score"] = sum(structure_components) / max(len(structure_components), 1)
+    nodes["structure_score"] = (sum(structure_components) / max(len(structure_components), 1)) * 100.0
 
     nodes_latlon = nodes.to_crs(epsg=4326) if nodes.crs and nodes.crs.to_epsg() != 4326 else nodes
     nodes["h3_index"] = [h3.geo_to_h3(pt.y, pt.x, h3_resolution) for pt in nodes_latlon.geometry]
     equity_variance = nodes.groupby("h3_index")["accessibility_score"].transform("var").fillna(0)
-    nodes["equity_score"] = 1.0 / (1.0 + equity_variance)
+    max_variance = equity_variance.max() if equity_variance.max() > 0 else 1.0
+    nodes["equity_score"] = 100.0 * (1.0 - equity_variance / max_variance)
 
     alpha = composite_weights.get("alpha", 0.25)
     beta = composite_weights.get("beta", 0.4)
@@ -227,11 +228,11 @@ def main():
     agg = agg_walkability.merge(equity_agg, on="h3", how="left")
 
     # Normalize scores
-    print("[NORMALIZE] Normalizing scores to 1-100 scale...")
-    sys.stdout.flush()
-    for col in ["accessibility_score", "structure_score", "equity_score", "travel_time_score", "walkability"]:
-        if col in nodes.columns:
-            nodes[col] = normalize_series(nodes[col]) * 99 + 1
+    # Scores are already on 0-100 scale (or close to it) based on formulas
+    # Normalization removed to preserve absolute values for comparison
+    # for col in ["accessibility_score", "structure_score", "equity_score", "travel_time_score", "walkability"]:
+    #     if col in nodes.columns:
+    #         nodes[col] = normalize_series(nodes[col]) * 99 + 1
 
     # Build summary
     print("[CIRCUITY] Computing circuity sample...")
