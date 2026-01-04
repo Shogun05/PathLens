@@ -27,12 +27,14 @@ export default function BaselinePage() {
   } = usePathLensStore();
 
   const [loading, setLoading] = useState(true);
-  const [nodeLimit] = useState(2000); // Load max 2000 nodes for performance
+  const [error, setError] = useState<string | null>(null);
+  const [nodeLimit] = useState(500); // Reduced from 2000 to prevent RAM crashes
 
   useEffect(() => {
     const loadBaselineData = async () => {
       try {
         setLoading(true);
+        setError(null);
         
         if (demoMode) {
           // Use demo data
@@ -41,14 +43,31 @@ export default function BaselinePage() {
           const avgScore = demoNodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / demoNodes.length;
           setBaselineScore(avgScore);
         } else {
-          // Use API data with limit for performance
-          console.log(`Loading baseline nodes (limit: ${nodeLimit})...`);
-          const nodes = await pathLensAPI.getNodes({ type: 'baseline', limit: nodeLimit });
+          // Load both metrics and nodes in parallel
+          console.log(`Loading baseline data (limit: ${nodeLimit} nodes)...`);
+          const [metrics, nodes] = await Promise.all([
+            pathLensAPI.getMetricsSummary('baseline').catch(err => {
+              console.warn('Failed to load metrics:', err);
+              return { scores: { accessibility_mean: 0 } };
+            }),
+            pathLensAPI.getNodes({ type: 'baseline', limit: nodeLimit })
+          ]);
+          
           if (nodes && nodes.length > 0) {
             console.log(`Loaded ${nodes.length} baseline nodes`);
             setBaselineNodes(nodes);
-            const avgScore = nodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / nodes.length;
-            setBaselineScore(avgScore);
+            
+            // Use pre-computed city-wide average from metrics API (all 182k nodes)
+            const metricsScore = metrics?.scores?.accessibility_mean;
+            if (metricsScore && metricsScore > 0) {
+              setBaselineScore(metricsScore);
+              console.log(`City-wide accessibility: ${metricsScore.toFixed(2)}`);
+            } else {
+              // Fallback: calculate from loaded nodes if metrics unavailable
+              const avgScore = nodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / nodes.length;
+              setBaselineScore(avgScore);
+              console.log(`Calculated accessibility from ${nodes.length} sampled nodes: ${avgScore.toFixed(2)}`);
+            }
           } else {
             // Clear nodes if no data returned
             setBaselineNodes([]);
@@ -57,6 +76,7 @@ export default function BaselinePage() {
         }
       } catch (error) {
         console.error('Failed to load baseline data:', error);
+        setError('Failed to load baseline data. Please refresh the page.');
       } finally {
         setLoading(false);
       }
@@ -144,6 +164,13 @@ export default function BaselinePage() {
               <span className="text-sm text-gray-400 mb-1">/ 100</span>
             </div>
             <p className="text-sm text-gray-400">Overall Accessibility Score</p>
+            
+            {/* Error message display */}
+            {error && (
+              <div className="mt-4 p-3 bg-red-500/10 border border-red-500/30 rounded-lg">
+                <p className="text-xs text-red-400">{error}</p>
+              </div>
+            )}
           </div>
 
           <div className="flex-1 overflow-y-auto p-6 space-y-6">
@@ -209,17 +236,21 @@ export default function BaselinePage() {
               </h3>
               <div className="space-y-3 text-sm text-gray-300">
                 <div className="flex justify-between">
-                  <span className="text-gray-400">Underserved Areas</span>
-                  <span className="text-white font-mono">12 Zones</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Critical Gaps</span>
-                  <span className="text-white font-mono">Schools, Parks</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Parks</span>
+                  <span className="text-gray-400">Critical Nodes</span>
                   <span className="text-white font-mono">
-                    {(baselineNodes.reduce((sum, n) => sum + (n.dist_to_park || 0), 0) / totalNodes).toFixed(0)}m avg
+                    {baselineNodes.filter(n => (n.accessibility_score ?? 0) < 30).length} nodes
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Avg School Distance</span>
+                  <span className="text-white font-mono">
+                    {(baselineNodes.reduce((sum, n) => sum + (n.dist_to_school || 0), 0) / totalNodes).toFixed(0)}m
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Avg Park Distance</span>
+                  <span className="text-white font-mono">
+                    {(baselineNodes.reduce((sum, n) => sum + (n.dist_to_park || 0), 0) / totalNodes).toFixed(0)}m
                   </span>
                 </div>
               </div>

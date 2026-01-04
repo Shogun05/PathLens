@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-01-03T02:23:21.183878",
+  "pipelines_executed": [
+    "optimization"
+  ],
+  "results": {
+    "optimization": true
+  },
+  "config": "/home/shogun/Documents/PathLens/config.yaml",
+  "arguments": {
+    "pipeline": "optimization",
+    "skip_data": false,
+    "skip_optimization": false,
+    "skip_landuse": false,
+    "config": null,
+    "force": false,
+    "log_dir": null,
+    "place": "Bangalore, India",
+    "ga_population": 120,
+    "ga_generations": 80,
+    "amenity": null
+  }
+}

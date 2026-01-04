@@ -35,11 +35,13 @@ export default function OptimizedPage() {
   } = usePathLensStore();
 
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const loadData = async () => {
       try {
         setLoading(true);
+        setError(null);
         
         if (demoMode) {
           // Use demo data
@@ -56,10 +58,14 @@ export default function OptimizedPage() {
           // For now, let's keep suggestions empty or mock them if requested
           setSuggestions([]); 
         } else {
-          // Use API data with limit for performance
-          console.log('Loading optimized nodes (limit: 2000)...');
-          const [nodes, suggsCollection, optimizationResults] = await Promise.all([
-            pathLensAPI.getNodes({ type: 'optimized', limit: 2000 }),
+          // Load metrics, nodes, and suggestions in parallel
+          console.log('Loading optimized data (limit: 500 nodes)...');
+          const [metrics, nodes, suggsCollection, optimizationResults] = await Promise.all([
+            pathLensAPI.getMetricsSummary('optimized').catch(err => {
+              console.warn('Failed to load metrics:', err);
+              return { scores: { accessibility_mean: 0 } };
+            }),
+            pathLensAPI.getNodes({ type: 'optimized', limit: 500 }),
             pathLensAPI.getOptimizationPois().catch(() => ({ features: [] })), // Use optimized POIs endpoint
             pathLensAPI.getOptimizationResults().catch(() => null),
           ]);
@@ -87,16 +93,25 @@ export default function OptimizedPage() {
             // Score is derived from nodes, but we can show optimization metadata
           }
           
-          // Calculate initial optimized score if not set
-          if (nodes && nodes.length > 0) {
-            const avgScore = nodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / nodes.length;
-            setOptimizedScore(avgScore);
+          // Use pre-computed city-wide average from metrics API (all 182k nodes)
+          const metricsScore = metrics?.scores?.accessibility_mean;
+          if (metricsScore && metricsScore > 0) {
+            setOptimizedScore(metricsScore);
+            console.log(`City-wide optimized accessibility: ${metricsScore.toFixed(2)}`);
           } else {
-            setOptimizedScore(0);
+            // Fallback: calculate from loaded nodes if metrics unavailable
+            if (nodes && nodes.length > 0) {
+              const avgScore = nodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / nodes.length;
+              setOptimizedScore(avgScore);
+              console.log(`Calculated accessibility from ${nodes.length} sampled nodes: ${avgScore.toFixed(2)}`);
+            } else {
+              setOptimizedScore(0);
+            }
           }
         }
       } catch (error) {
         console.error('Failed to load optimized data:', error);
+        setError('Failed to load optimized data. Please refresh the page.');
       } finally {
         setLoading(false);
       }
@@ -209,6 +224,13 @@ export default function OptimizedPage() {
               </Badge>
             </div>
             <p className="text-sm text-gray-400">Projected Accessibility Score</p>
+            
+            {/* Error message display */}
+            {error && (
+              <div className="mt-4 p-3 bg-red-500/10 border border-red-500/30 rounded-lg">
+                <p className="text-xs text-red-400">{error}</p>
+              </div>
+            )}
           </div>
 
           {/* Suggestions Section - Fixed height, scrollable if needed */}
@@ -229,7 +251,10 @@ export default function OptimizedPage() {
                 ) : (
                   suggestions.map((suggestion, index) => {
                     const Icon = getAmenityIcon(suggestion.properties?.amenity_type);
-                    const suggestionId = suggestion.properties?.id || `suggestion-${index}`;
+                    // Create unique key combining node ID and amenity type to handle multiple POIs at same node
+                    const suggestionId = suggestion.properties?.id 
+                      ? `${suggestion.properties.id}-${suggestion.properties?.amenity_type || index}` 
+                      : `suggestion-${index}`;
                     const isSelected = selectedSuggestionIds.has(suggestionId);
                     
                     return (

@@ -5,17 +5,18 @@ walking_speed_kmph: 4.8
 
 amenity_weights:
   school: 1.5
-  hospital: 2.5
+  hospital: 2.5      # Includes: hospital, clinic, doctors
   pharmacy: 2.0
-  supermarket: 2.5
+  supermarket: 2.5   # Includes: supermarket, grocery, convenience, mall, marketplace
   bus_station: 1.5
   park: 1.2
+  bank: 1.8          # Includes: bank, atm
 
 composite_weights:
-  alpha: 0.25
-  beta: 0.4
-  gamma: 0.2
-  delta: 0.15
+  alpha: 0.05   # Structure weight (fixed infrastructure)
+  beta: 0.80    # Accessibility weight (amenity proximity)
+  gamma: 0.05   # Equity weight (spatial fairness)
+  delta: 0.10   # Travel time weight (walkability speed)
 
 equity_thresholds:
   school: 1000 # meters
@@ -24,6 +25,7 @@ equity_thresholds:
   supermarket: 1000
   bus_station: 800
   park: 900
+  bank: 800
 
 h3:
   resolution: 8
@@ -43,20 +45,21 @@ circuity_sample_k: 120
 milp:
   # Budget constraints: maximum number of new amenities per type
   amenity_budgets:
-    school: 15
-    hospital: 10
-    pharmacy: 12
-    supermarket: 15
-    bus_station: 20
-    park: 12
+    school: 30
+    hospital: 25
+    pharmacy: 25
+    supermarket: 30
+    bus_station: 40
+    park: 25
+    bank: 20
   
   # Solver settings
   time_limit_seconds: 300  # 5 minutes default
   gap_tolerance: 0.01      # 1% optimality gap
   
   # Equity settings
-  enable_equity: false
-  equity_min_coverage: 0.3  # Minimum coverage per hexagon (if enabled)
+  enable_equity: true
+  equity_min_coverage: 0.5  # Minimum coverage per hexagon (if enabled)
   
   # Performance tuning
   use_population_weights: true

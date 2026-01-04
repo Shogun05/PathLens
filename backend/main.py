@@ -172,15 +172,27 @@ async def get_nodes(
             # Ensure required fields are present
             if pd.isna(row.get('lon')) or pd.isna(row.get('lat')):
                 continue
+            
+            # For optimized type, use optimized_ prefixed columns if available
+            if type == "optimized":
+                accessibility = row.get('optimized_accessibility_score', row.get('accessibility_score'))
+                walkability = row.get('optimized_walkability', row.get('walkability'))
+                equity = row.get('optimized_equity_score', row.get('equity_score'))
+                travel_time = row.get('optimized_travel_time_min', row.get('travel_time_min'))
+            else:
+                accessibility = row.get('accessibility_score')
+                walkability = row.get('walkability')
+                equity = row.get('equity_score')
+                travel_time = row.get('travel_time_min')
                 
             node = Node(
                 osmid=str(row['osmid']),
                 x=float(row['lon']),
                 y=float(row['lat']),
-                accessibility_score=row.get('accessibility_score'),
-                walkability_score=row.get('walkability'),
-                equity_score=row.get('equity_score'),
-                travel_time_min=row.get('travel_time_min'),
+                accessibility_score=accessibility,
+                walkability_score=walkability,
+                equity_score=equity,
+                travel_time_min=travel_time,
                 betweenness_centrality=row.get('betweenness_centrality'),
                 dist_to_school=row.get('dist_to_school'),
                 dist_to_hospital=row.get('dist_to_hospital'),
@@ -219,29 +231,72 @@ async def get_metrics_summary(type: str = Query(..., pattern="^(baseline|optimiz
     filepath = os.path.join(DATA_DIR, filename)
     
     if not os.path.exists(filepath):
-        logger.warning(f"File not found: {filepath}")
-        return {}
+        logger.warning(f"Metrics file not found: {filepath}")
+        # Return valid empty structure instead of empty object
+        return {
+            "network": {},
+            "scores": {
+                "accessibility_mean": 0,
+                "walkability_mean": 0,
+                "equity_mean": 0,
+                "travel_time_min_mean": 0,
+                "travel_time_score_mean": 0
+            }
+        }
     
     try:
         with open(filepath, 'r') as f:
-            metrics = json.load(f)
+            content = f.read().strip()
+            if not content:
+                logger.error(f"Empty metrics file: {filepath}")
+                return {
+                    "network": {},
+                    "scores": {
+                        "accessibility_mean": 0,
+                        "walkability_mean": 0,
+                        "equity_mean": 0,
+                        "travel_time_min_mean": 0,
+                        "travel_time_score_mean": 0
+                    }
+                }
+            metrics = json.loads(content)
         logger.info(f"Returning metrics summary for type {type}")
         return metrics
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON in metrics file {filepath}: {e}")
+        return {
+            "network": {},
+            "scores": {
+                "accessibility_mean": 0,
+                "walkability_mean": 0,
+                "equity_mean": 0,
+                "travel_time_min_mean": 0,
+                "travel_time_score_mean": 0
+            }
+        }
     except Exception as e:
         logger.error(f"Error reading metrics summary: {e}")
         raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
 
 @app.get("/api/pois")
 async def get_pois():
-    filepath = os.path.join(BASE_DIR, "data", "optimization", "runs", "combined_pois.geojson")
+    # Check for POI files in order of preference
+    # Note: combined_pois.geojson is no longer created by default (optimization removed it to save 75+ min)
+    poi_paths = [
+        os.path.join(BASE_DIR, "data", "raw", "osm", "pois.geojson"),  # Primary: full POI dataset
+        os.path.join(BASE_DIR, "data", "raw", "osm", "amenities.geojson"),  # Fallback
+    ]
     
-    if not os.path.exists(filepath):
-        logger.warning(f"File not found: {filepath}")
-        # Fallback to baseline amenities
-        fallback_path = os.path.join(BASE_DIR, "data", "raw", "osm", "amenities.geojson")
-        if not os.path.exists(fallback_path):
-            return {"type": "FeatureCollection", "features": []}
-        filepath = fallback_path
+    filepath = None
+    for path in poi_paths:
+        if os.path.exists(path):
+            filepath = path
+            logger.info(f"Using POI file: {filepath}")
+            break
+    
+    if not filepath:
+        logger.error("No POI files found")
+        return {"type": "FeatureCollection", "features": []}
     
     try:
         with open(filepath, 'r') as f:

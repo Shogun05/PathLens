@@ -8,7 +8,28 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  validateStatus: (status) => status < 500, // Don't throw on 4xx errors
 });
+
+// Add response interceptor to handle empty responses
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    // Handle network errors
+    if (!error.response) {
+      console.error('Network error - backend may not be running:', error.message);
+      return Promise.reject(new Error('Backend server is not responding. Please ensure it is running.'));
+    }
+    
+    // Handle empty response bodies
+    if (error.response && !error.response.data) {
+      console.error('Empty response from backend:', error.response.status);
+      error.response.data = { error: 'Empty response from server' };
+    }
+    
+    return Promise.reject(error);
+  }
+);
 
 export interface OptimizeRequest {
   location: string;

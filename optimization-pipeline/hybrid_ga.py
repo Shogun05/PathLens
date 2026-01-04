@@ -110,6 +110,7 @@ class GAContext:
     amenity_pools: Dict[str, List[str]]
     distance_columns: Dict[str, str]
     config: HybridGAConfig
+    amenity_budgets: Dict[str, int] = field(default_factory=dict)
     extra: Dict[str, object] = field(default_factory=dict)
 
 
@@ -341,6 +342,11 @@ def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, objec
     nodes: pd.DataFrame = effects["nodes"]  # type: ignore[assignment]
     amenity_weights = context.amenity_weights
     baselines = context.extra.get("distance_baselines", {}) if isinstance(context.extra, dict) else {}
+    
+    # New evaluation parameters (matching compute_scores.py)
+    DECAY_CONSTANT = 2000.0  # meters
+    total_weight = sum(amenity_weights.values())
+    
     total_gain = 0.0
     placements: Dict[str, int] = {}
     best_distances: Dict[str, float] = {}
@@ -360,15 +366,21 @@ def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, objec
             continue
         min_distance = float(numeric_distances.min())
         best_distances[amenity] = min_distance
-        baseline_distance = None
-        if isinstance(baselines, Mapping):
-            baseline_distance = baselines.get(amenity)
-        if baseline_distance is None or not isinstance(baseline_distance, (int, float)) or not math.isfinite(baseline_distance):
-            baseline_distance = float(numeric_distances.median()) if not numeric_distances.empty else 1.0
-        if baseline_distance <= 0:
+        
+        # NEW EXPONENTIAL DECAY FORMULA (matches compute_scores.py)
+        # Score improvement: baseline accessibility - optimized accessibility
+        baseline_distance = baselines.get(amenity, float(numeric_distances.median()))
+        if baseline_distance <= 0 or not math.isfinite(baseline_distance):
             baseline_distance = 1.0
-        score = weight * (baseline_distance / (min_distance + 1.0))
-        score = max(score, 0.0)
+        
+        # Accessibility contribution: 100 * exp(-distance / 2000)
+        baseline_accessibility = 100.0 * math.exp(-baseline_distance / DECAY_CONSTANT)
+        optimized_accessibility = 100.0 * math.exp(-min_distance / DECAY_CONSTANT)
+        
+        # Weighted improvement (normalized by total weight like in compute_scores.py)
+        improvement = (optimized_accessibility - baseline_accessibility) * (weight / total_weight)
+        score = max(improvement, 0.0)
+        
         amenity_scores[amenity] = score
         total_gain += score
         placements[amenity] = len(target_nodes)
@@ -495,8 +507,12 @@ class HybridGA:
                 pool = pools.get(amenity, [])
                 if not pool:
                     continue
-                # Place 3-7 amenities per type (varied by template)
-                num_to_place = 3 + template_idx % 5  # 3, 4, 5, 6, 7
+                # Use budget from config instead of hardcoded 3-7 range
+                max_budget = self.context.amenity_budgets.get(amenity, 20)
+                # Vary placement size by template (50-100% of budget)
+                min_placements = max(3, max_budget // 2)
+                num_to_place = min(max_budget, min_placements + template_idx % (max_budget - min_placements + 1))
+                num_to_place = min(num_to_place, len(pool))
                 slice_start = min(template_idx * 2, max(0, len(pool) - num_to_place))
                 slice_end = min(slice_start + num_to_place, len(pool))
                 chosen = pool[slice_start:slice_end]
@@ -509,9 +525,11 @@ class HybridGA:
         for amenity, pool in self.context.amenity_pools.items():
             if not pool:
                 continue
-            # Sample 10-15% of pool, minimum 5, maximum 20
+            # Use budget from config, default to 20 if not specified
+            max_budget = self.context.amenity_budgets.get(amenity, 20)
+            # Sample 10-15% of pool, minimum 5, maximum = budget from config
             sample_pct = 0.10 + (self.random.random() * 0.05)  # 10-15%
-            sample_size = min(20, max(5, int(len(pool) * sample_pct)))
+            sample_size = min(max_budget, max(5, int(len(pool) * sample_pct)))
             sample_size = min(sample_size, len(pool))
             chosen = self.random.sample(pool, k=sample_size)
             placements[amenity] = tuple(sorted(chosen))
@@ -1105,6 +1123,19 @@ def main() -> None:
     distance_columns = detect_distance_columns(nodes)
     amenity_weights = detect_amenity_weights(nodes, amenity_weights_cfg)
     amenity_pools = build_amenity_pools(high_travel_nodes, nodes, distance_columns, amenity_weights, config.per_pool_limit)
+    
+    # Load amenity budgets from config.yaml (defaults to 20 if not specified)
+    amenity_budgets = {}
+    if isinstance(cfg_yaml, dict):
+        milp_config = cfg_yaml.get("milp", {})
+        if isinstance(milp_config, dict):
+            budgets_from_config = milp_config.get("amenity_budgets", {})
+            if isinstance(budgets_from_config, dict):
+                amenity_budgets = {k: int(v) for k, v in budgets_from_config.items()}
+    # Set default budget of 20 for any amenity not in config
+    for amenity in amenity_weights.keys():
+        if amenity not in amenity_budgets:
+            amenity_budgets[amenity] = 20
 
     # Load graph for diversity penalty computation
     logging.info("Loading graph for diversity penalty computation...")
@@ -1131,6 +1162,7 @@ def main() -> None:
         amenity_pools=amenity_pools,
         distance_columns=distance_columns,
         config=config,
+        amenity_budgets=amenity_budgets,
     )
     
     # Add graph to context for diversity penalty

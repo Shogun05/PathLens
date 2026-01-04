@@ -684,6 +684,8 @@ def build_map(
 def compute_optimized_scores(
     placements: Mapping[str, Sequence[str]],
     optimized_gdf: gpd.GeoDataFrame,
+    existing_pois_gdf: gpd.GeoDataFrame,
+    existing_poi_mapping: pd.DataFrame,
     nodes_df: pd.DataFrame,
     graph_path: Optional[Path],
     config_path: Optional[Path],
@@ -691,6 +693,8 @@ def compute_optimized_scores(
     summary_output: Path,
 ) -> None:
     """Recompute optimized accessibility and travel metrics using the road graph and config.
+    
+    Combines existing POI-to-node mapping with new optimized placements to compute distances.
 
     Writes:
       - nodes_output (parquet) with optimized_* columns
@@ -772,41 +776,85 @@ def compute_optimized_scores(
         if col not in filtered_gdf.columns:
             filtered_gdf[col] = None
 
-    mapping_df = pd.DataFrame(mapping_records).set_index("poi_index")
+    # Build mapping for new optimized POIs
+    new_poi_mapping = pd.DataFrame(mapping_records).set_index("poi_index")
+    
+    # CRITICAL: Combine existing POI mapping with new optimized POI mapping
+    logging.info("Combining existing POI mapping (%d entries) with new placements (%d entries)...", 
+                 len(existing_poi_mapping), len(new_poi_mapping))
+    logging.info("Existing POI mapping columns: %s", list(existing_poi_mapping.columns))
+    logging.info("New POI mapping columns: %s", list(new_poi_mapping.columns))
+    logging.info("Sample existing POI: %s", existing_poi_mapping.iloc[0].to_dict() if len(existing_poi_mapping) > 0 else "None")
+    logging.info("Sample new POI: %s", new_poi_mapping.iloc[0].to_dict() if len(new_poi_mapping) > 0 else "None")
+    combined_mapping = pd.concat([existing_poi_mapping, new_poi_mapping])
+    logging.info("Combined mapping shape: %s", combined_mapping.shape)
+    
+    # Combine POI GeoDataFrames
+    combined_pois = pd.concat([existing_pois_gdf, filtered_gdf], ignore_index=True)
+    logging.info("Combined POI GeoDataFrame shape: %s", combined_pois.shape)
+    
+    # DEBUG: Check if new POIs have required columns for distance matching
+    logging.info("Existing POIs columns with 'amenity': %d", existing_pois_gdf['amenity'].notna().sum() if 'amenity' in existing_pois_gdf.columns else 0)
+    logging.info("New POIs columns with 'amenity': %d", filtered_gdf['amenity'].notna().sum() if 'amenity' in filtered_gdf.columns else 0)
+    logging.info("Combined POIs with 'amenity': %d", combined_pois['amenity'].notna().sum() if 'amenity' in combined_pois.columns else 0)
+    
+    # Check if any new POIs will match amenity types
+    for amenity in amenity_types[:2]:  # Check first 2
+        existing_count = (existing_pois_gdf['amenity'] == amenity).sum() if 'amenity' in existing_pois_gdf.columns else 0
+        new_count = (filtered_gdf['amenity'] == amenity).sum() if 'amenity' in filtered_gdf.columns else 0
+        logging.info(f"  {amenity}: {existing_count} existing + {new_count} new = {existing_count + new_count} total")
 
     # compute nearest distances (returns DataFrame indexed by node id)
-    logging.info("Computing nearest amenity distances for %d placements...", len(mapping_df))
+    logging.info("Computing nearest amenity distances using combined POI set (%d total POIs)...", len(combined_mapping))
     distances = nearest_amenity_distances(
         G,
         nodes_gdf,
-        mapping_df,
-        filtered_gdf,
+        combined_mapping,
+        combined_pois,
         amenity_types,
         distance_cutoff=amenity_cutoff,
     )
+    
+    # DEBUG: Check distance stats
+    logging.info("Distance computation complete. Sample distances:")
+    for col in distances.columns[:3]:  # Show first 3 amenity types
+        vals = distances[col].dropna()
+        logging.info("  %s: mean=%.1fm, median=%.1fm, min=%.1fm, max=%.1fm (n=%d)", 
+                    col, vals.mean(), vals.median(), vals.min(), vals.max(), len(vals))
+    
+    logging.info("Distance DataFrame shape: %s, index type: %s", distances.shape, distances.index.dtype)
+    logging.info("Distance DataFrame index sample: %s", distances.index[:5].tolist())
+    logging.info("Distance columns: %s", distances.columns.tolist())
     distances.index = distances.index.map(str)
 
     nodes_aligned = nodes_df.copy()
-    nodes_aligned.index = nodes_aligned.index.map(str)
+    # Convert both to same index type for alignment
+    nodes_aligned.index = nodes_aligned.index.astype(int)
+    distances.index = distances.index.astype(int)
     distances = distances.reindex(nodes_aligned.index)
+    
+    logging.info("After reindex - distances shape: %s, nodes_aligned shape: %s", distances.shape, nodes_aligned.shape)
+    logging.info("After reindex - distances.dist_to_hospital mean: %.2fm", distances['dist_to_hospital'].mean())
 
     logging.info("Computing accessibility scores for %d nodes...", len(nodes_aligned))
-    optimized_accessibility = compute_accessibility_score(distances, amenity_weights)
+    optimized_accessibility = compute_accessibility_score(distances, amenity_weights, decay_constant=2000.0)
     logging.info("Computing travel time metrics...")
-    optimized_travel_time = compute_travel_time_metrics(distances, walking_speed)
+    optimized_travel_time = compute_travel_time_metrics(distances, amenity_weights, walking_speed, route_inefficiency_factor=2.3)
     travel_time_clean = optimized_travel_time.replace([np.inf, -np.inf], np.nan)
     fallback = travel_time_clean.max()
     if pd.isna(fallback) or fallback <= 0:
         fallback = 1.0
-    optimized_travel_score = 1.0 / (1.0 + travel_time_clean.fillna(fallback))
+    # Travel time score: 0-100 scale (0 = 60+ min, 100 = 0 min)
+    optimized_travel_score = 100.0 * (1.0 - travel_time_clean.fillna(fallback).clip(upper=60) / 60.0)
 
     structure_component = nodes_aligned.get("structure_score", pd.Series(0.0, index=nodes_aligned.index)).fillna(0.0)
     equity_component = nodes_aligned.get("equity_score", pd.Series(0.0, index=nodes_aligned.index)).fillna(0.0)
 
-    alpha = float(composite_weights.get("alpha", 0.25))
-    beta = float(composite_weights.get("beta", 0.4))
-    gamma = float(composite_weights.get("gamma", 0.2))
-    delta = float(composite_weights.get("delta", 0.15))
+    # Updated composite weights (validated formula)
+    alpha = float(composite_weights.get("alpha", 0.05))
+    beta = float(composite_weights.get("beta", 0.80))
+    gamma = float(composite_weights.get("gamma", 0.05))
+    delta = float(composite_weights.get("delta", 0.10))
 
     logging.info("Computing composite walkability scores...")
     optimized_walkability = (
@@ -817,8 +865,11 @@ def compute_optimized_scores(
     )
 
     nodes_result = nodes_aligned.copy()
+    logging.info("Before distance copy - nodes_result dist_to_hospital mean: %.2fm", nodes_result['dist_to_hospital'].mean())
     for column in distances.columns:
         nodes_result[column] = distances[column]
+    logging.info("After distance copy - nodes_result dist_to_hospital mean: %.2fm", nodes_result['dist_to_hospital'].mean())
+    logging.info("Distance columns copied: %s", distances.columns.tolist())
     nodes_result["optimized_accessibility_score"] = optimized_accessibility
     nodes_result["optimized_travel_time_min"] = optimized_travel_time
     nodes_result["optimized_travel_time_score"] = optimized_travel_score
@@ -831,11 +882,13 @@ def compute_optimized_scores(
     nodes_result.to_csv(csv_output, index=True)
 
     summary = {
-        "optimized": {
+        "network": {},
+        "scores": {
             "accessibility_mean": float(optimized_accessibility.replace([np.inf, -np.inf], np.nan).mean(skipna=True)),
             "travel_time_min_mean": float(travel_time_clean.mean(skipna=True)),
             "travel_time_score_mean": float(optimized_travel_score.mean(skipna=True)),
             "walkability_mean": float(optimized_walkability.mean(skipna=True)),
+            "equity_mean": float(nodes_aligned.get("equity_score", pd.Series(0.0)).mean()),
         }
     }
 
@@ -877,6 +930,12 @@ def parse_args() -> argparse.Namespace:
         help="GeoJSON containing existing POIs to overlay.",
     )
     parser.add_argument(
+        "--poi-mapping",
+        type=Path,
+        default=project_root / "data" / "processed" / "poi_node_mapping.parquet",
+        help="Parquet file mapping existing POIs to graph nodes.",
+    )
+    parser.add_argument(
         "--config",
         type=Path,
         default=project_root / "config.yaml",
@@ -903,13 +962,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--optimized-nodes-output",
         type=Path,
-        default=project_root /  "data"/ "optimization" / "runs" / "optimized_nodes_with_scores.parquet",
+        default=project_root / "data" / "analysis" / "optimized_nodes_with_scores.parquet",
         help="Path to write node-level optimized scores (parquet).",
     )
     parser.add_argument(
         "--optimized-summary-output",
         type=Path,
-        default=project_root / "data"/ "optimization" / "runs" / "optimized_metrics_summary.json",
+        default=project_root / "data" / "analysis" / "optimized_metrics_summary.json",
         help="Path to write optimized score summary (JSON).",
     )
     parser.add_argument(
@@ -990,9 +1049,19 @@ def main() -> None:
     # logging.info("Map generation skipped (commented out in code")
 
     if not args.skip_metrics:
+        # Load existing POI mapping
+        if args.poi_mapping.exists():
+            logging.info("Loading existing POI mapping from %s", args.poi_mapping)
+            existing_poi_mapping = pd.read_parquet(args.poi_mapping)
+        else:
+            logging.warning("POI mapping file not found: %s. Using empty mapping.", args.poi_mapping)
+            existing_poi_mapping = pd.DataFrame(columns=['poi_index', 'nearest_node', 'poi_id']).set_index('poi_index')
+        
         compute_optimized_scores(
             placements,
             optimized_gdf,
+            existing_gdf,
+            existing_poi_mapping,
             nodes_df,
             args.graph_path,
             args.config,

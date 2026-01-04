@@ -236,6 +236,18 @@ def nearest_amenity_distances(
             if poi_id_val is not None and not (isinstance(poi_id_val, float) and np.isnan(poi_id_val)):
                 id_to_nodes[str(poi_id_val)].add(nearest_node)
 
+    # Define expanded amenity type mappings (multiple OSM types -> single category)
+    amenity_type_mappings = {
+        "hospital": ["hospital", "clinic", "doctors"],
+        "supermarket": ["supermarket", "grocery", "convenience", "mall", "marketplace"],
+        "bank": ["bank", "atm"],
+        # Other amenities map to themselves
+        "school": ["school"],
+        "pharmacy": ["pharmacy"],
+        "bus_station": ["bus_station"],
+        "park": ["park"],
+    }
+    
     # Build per-amenity node sets
     amenity_node_sets: Dict[str, set] = {}
     if pois_gdf is None or pois_gdf.empty:
@@ -248,14 +260,18 @@ def nearest_amenity_distances(
             amenity_node_sets[t] = set()
             continue
         
-        # Search across amenity, shop, and leisure columns
+        # Get all OSM tag values that map to this category
+        tag_values = amenity_type_mappings.get(t, [t])
+        
+        # Search across amenity, shop, and leisure columns for ANY matching tag value
         mask = pd.Series(False, index=pois_subset.index)
-        if "amenity" in pois_subset.columns:
-            mask |= (pois_subset["amenity"] == t)
-        if "shop" in pois_subset.columns:
-            mask |= (pois_subset["shop"] == t)
-        if "leisure" in pois_subset.columns:
-            mask |= (pois_subset["leisure"] == t)
+        for tag_value in tag_values:
+            if "amenity" in pois_subset.columns:
+                mask |= (pois_subset["amenity"] == tag_value)
+            if "shop" in pois_subset.columns:
+                mask |= (pois_subset["shop"] == tag_value)
+            if "leisure" in pois_subset.columns:
+                mask |= (pois_subset["leisure"] == tag_value)
         
         sel = pois_subset[mask]
         if sel.empty:
@@ -295,30 +311,82 @@ def nearest_amenity_distances(
     return distances
 
 
-def compute_accessibility_score(distances_df: pd.DataFrame, amenity_weights: Dict[str, float]):
+def compute_accessibility_score(distances_df: pd.DataFrame, amenity_weights: Dict[str, float], decay_constant: float = 2000.0):
+    """
+    Compute accessibility using exponential distance decay formula.
+    
+    Formula: accessibility = sum(weight * 100 * exp(-distance / decay_constant))
+    Default decay constant of 2000m gives baseline scores in 60-70 range for typical cities.
+    
+    Args:
+        distances_df: DataFrame with dist_to_{amenity} columns (in meters)
+        amenity_weights: Dict mapping amenity types to importance weights
+        decay_constant: Distance decay parameter in meters (default: 2000m)
+    
+    Returns:
+        Series of accessibility scores (0-100 range)
+    """
     acc = pd.Series(0.0, index=distances_df.index)
+    total_weight = sum(amenity_weights.values())
+    
     for amenity, weight in amenity_weights.items():
         col = f"dist_to_{amenity}"
         if col not in distances_df.columns:
             continue
-        # Accessibility formula: sum(weight / (distance + 1))
-        acc += weight / (distances_df[col].fillna(np.inf) + 1.0)
+        
+        # Exponential decay: closer amenities contribute more
+        distance = distances_df[col].fillna(10000.0)
+        amenity_score = 100.0 * np.exp(-distance / decay_constant)
+        
+        # Weight by amenity importance and normalize by total weight
+        acc += (weight / total_weight) * amenity_score
+    
     return acc
 
 
-def compute_travel_time_metrics(distances_df: pd.DataFrame, walking_speed_kmph: float) -> pd.Series:
+def compute_travel_time_metrics(
+    distances_df: pd.DataFrame, 
+    amenity_weights: Dict[str, float],
+    walking_speed_kmph: float,
+    route_inefficiency_factor: float = 2.3
+) -> pd.Series:
+    """
+    Compute weighted average travel time with route inefficiency adjustment.
+    
+    Applies route inefficiency factor to account for:
+    - Non-straight-line routing (traffic signals, one-way streets)
+    - Vertical movement (stairs, elevators, multi-level crossings)
+    - Pedestrian detours and barriers
+    
+    Args:
+        distances_df: DataFrame with dist_to_{amenity} columns (in meters)
+        amenity_weights: Dict mapping amenity types to importance weights
+        walking_speed_kmph: Walking speed in km/h (typically 4.8)
+        route_inefficiency_factor: Multiplier for network distance (default: 2.3x)
+    
+    Returns:
+        Series of weighted average travel time in minutes
+    """
     walking_speed_mps = walking_speed_kmph * 1000 / 3600.0
     if walking_speed_mps <= 0:
         walking_speed_mps = 1.0
-    times = []
-    for col in distances_df.columns:
-        time_minutes = distances_df[col] / walking_speed_mps / 60.0
-        times.append(time_minutes)
-    if not times:
-        return pd.Series(0.0, index=distances_df.index)
-    stacked = pd.concat(times, axis=1)
-    stacked.replace([np.inf, -np.inf], np.nan, inplace=True)
-    return stacked.min(axis=1)
+    
+    total_weight = sum(amenity_weights.values())
+    travel_time = pd.Series(0.0, index=distances_df.index)
+    
+    for amenity, weight in amenity_weights.items():
+        col = f"dist_to_{amenity}"
+        if col not in distances_df.columns:
+            continue
+        
+        # Apply route inefficiency scaling to network distances
+        adjusted_distance = distances_df[col].fillna(10000.0) * route_inefficiency_factor
+        time_minutes = (adjusted_distance / 1000.0 / walking_speed_kmph) * 60.0
+        
+        # Weighted average across all amenity types
+        travel_time += (weight / total_weight) * time_minutes
+    
+    return travel_time
 
 
 def aggregate_h3(nodes_gdf: gpd.GeoDataFrame, value_series: pd.Series, h3_res=8):
@@ -543,15 +611,17 @@ def main():
         save_to_cache(distances, distance_cache_path)
     nodes = nodes.join(distances)
 
-    nodes["accessibility_score"] = compute_accessibility_score(distances, amenity_weights)
-    nodes["travel_time_min"] = compute_travel_time_metrics(distances, walking_speed)
+    nodes["accessibility_score"] = compute_accessibility_score(distances, amenity_weights, decay_constant=2000.0)
+    nodes["travel_time_min"] = compute_travel_time_metrics(distances, amenity_weights, walking_speed, route_inefficiency_factor=2.3)
     travel_time_clean = nodes["travel_time_min"].replace([np.inf, -np.inf], np.nan)
     valid_travel = travel_time_clean.dropna()
     fallback = float(valid_travel.max()) if not valid_travel.empty else 0.0
     if not np.isfinite(fallback) or fallback < 0:
         fallback = 0.0
     nodes["travel_time_min"] = travel_time_clean.fillna(fallback)
-    nodes["travel_time_score"] = 1.0 / (1.0 + nodes["travel_time_min"])
+    
+    # Travel time score: normalize to 0-100 scale (0 = 60+ min, 100 = 0 min)
+    nodes["travel_time_score"] = 100.0 * (1.0 - nodes["travel_time_min"].clip(upper=60) / 60.0)
 
     structure_components = [
         normalize_series(nodes["degree"].fillna(0)),
@@ -561,18 +631,25 @@ def main():
         structure_components.append(normalize_series(nodes["betweenness_centrality"].fillna(0)))
     if centrality_cfg.get("compute_closeness", False) and "closeness_centrality" in nodes.columns:
         structure_components.append(normalize_series(nodes["closeness_centrality"].fillna(0)))
-    nodes["structure_score"] = sum(structure_components) / max(len(structure_components), 1)
+    
+    # Structure score: normalize to 0-100 scale
+    structure_normalized = sum(structure_components) / max(len(structure_components), 1)
+    nodes["structure_score"] = structure_normalized * 100.0
 
     nodes_latlon = nodes.to_crs(epsg=4326) if nodes.crs and nodes.crs.to_epsg() != 4326 else nodes
     nodes["h3_index"] = [h3.geo_to_h3(pt.y, pt.x, h3_resolution) for pt in nodes_latlon.geometry]
     equity_variance = nodes.groupby("h3_index")["accessibility_score"].transform("var").fillna(0)
-    nodes["equity_score"] = 1.0 / (1.0 + equity_variance)
+    
+    # Equity score: normalize to 0-100 scale (lower variance = higher equity)
+    max_variance = equity_variance.max() if equity_variance.max() > 0 else 1.0
+    nodes["equity_score"] = 100.0 * (1.0 - equity_variance / max_variance)
 
-    alpha = composite_weights.get("alpha", 0.25)
-    beta = composite_weights.get("beta", 0.4)
-    gamma = composite_weights.get("gamma", 0.2)
-    delta = composite_weights.get("delta", 0.15)
+    alpha = composite_weights.get("alpha", 0.05)
+    beta = composite_weights.get("beta", 0.80)
+    gamma = composite_weights.get("gamma", 0.05)
+    delta = composite_weights.get("delta", 0.10)
 
+    # Composite walkability: all components now on 0-100 scale
     nodes["walkability"] = (
         alpha * nodes["structure_score"]
         + beta * nodes["accessibility_score"]

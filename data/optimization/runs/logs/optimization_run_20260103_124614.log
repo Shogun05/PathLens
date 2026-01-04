@@ -1,0 +1,31 @@
+2026-01-03 12:46:14,674 - __main__ - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/optimization/runs/logs/optimization_run_20260103_124614.log
+2026-01-03 12:46:14,675 - __main__ - INFO - PathLens Optimization Workflow
+2026-01-03 12:46:14,675 - __main__ - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-03 12:46:14,678 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2026-01-03 12:46:14,678 - __main__ - INFO - ================================================================================
+2026-01-03 12:46:14,678 - __main__ - INFO - > Extract high travel time nodes
+2026-01-03 12:46:14,678 - __main__ - INFO - ================================================================================
+2026-01-03 12:46:14,678 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/list_optimizable_nodes.py --input /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --output /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv
+2026-01-03 12:46:15,327 - __main__ - INFO - Extract high travel time nodes completed successfully
+2026-01-03 12:46:15,328 - __main__ - INFO - Auto-detected 12 worker threads (75% of 16 cores)
+2026-01-03 12:46:15,328 - __main__ - INFO - ================================================================================
+2026-01-03 12:46:15,328 - __main__ - INFO - > Run hybrid genetic algorithm with MILP refinement
+2026-01-03 12:46:15,328 - __main__ - INFO - ================================================================================
+2026-01-03 12:46:15,328 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/hybrid_ga.py --nodes-scores /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --high-travel /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv --analysis-dir /home/shogun/Documents/PathLens/data/optimization/runs --config /home/shogun/Documents/PathLens/config.yaml --population 120 --generations 80 --workers 12
+2026-01-03 13:59:56,929 - __main__ - INFO - Run hybrid genetic algorithm with MILP refinement completed successfully
+2026-01-03 13:59:56,929 - __main__ - INFO - ================================================================================
+2026-01-03 13:59:56,929 - __main__ - INFO - > Generate combined POI GeoJSON and map
+2026-01-03 13:59:56,929 - __main__ - INFO - ================================================================================
+2026-01-03 13:59:56,929 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/generate_solution_map.py
+2026-01-03 14:00:34,324 - __main__ - INFO - Generate combined POI GeoJSON and map completed successfully
+2026-01-03 14:00:34,325 - __main__ - INFO - ================================================================================
+2026-01-03 14:00:34,325 - __main__ - INFO - > Run optimization pipeline orchestrator
+2026-01-03 14:00:34,325 - __main__ - INFO - ================================================================================
+2026-01-03 14:00:34,325 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/run_optimized_pipeline.py --baseline-prefix baseline --optimized-prefix optimized --skip-map
+2026-01-03 14:02:18,189 - __main__ - INFO - Run optimization pipeline orchestrator completed successfully
+2026-01-03 14:02:18,211 - __main__ - INFO - ================================================================================
+2026-01-03 14:02:18,211 - __main__ - INFO - Optimization workflow complete
+2026-01-03 14:02:18,211 - __main__ - INFO -   Results: /home/shogun/Documents/PathLens/data/optimization/runs
+2026-01-03 14:02:18,211 - __main__ - INFO -   Analysis: /home/shogun/Documents/PathLens/data/analysis
+2026-01-03 14:02:18,211 - __main__ - INFO -   Logs: /home/shogun/Documents/PathLens/data/optimization/runs/logs
+2026-01-03 14:02:18,212 - __main__ - INFO - ================================================================================

@@ -34,28 +34,10 @@ export default function AnalysisLayout({
   const [isMounted, setIsMounted] = useState(false);
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [enabledLayers, setEnabledLayers] = useState(new Set(['nodeScores']));
-  const [showBaselineAmenities, setShowBaselineAmenities] = useState(false);
-  const [baselineAmenities, setBaselineAmenities] = useState<any[]>([]);
   const [showNodes, setShowNodes] = useState(true);
 
   useEffect(() => {
     setIsMounted(true);
-    
-    // Fetch baseline amenities for toggle functionality
-    const fetchBaselineAmenities = async () => {
-      try {
-        const response = await fetch('http://localhost:8001/api/pois');
-        const data = await response.json();
-        if (data?.features) {
-          console.log(`[Layout] Loaded ${data.features.length} baseline amenities for toggle`);
-          setBaselineAmenities(data.features);
-        }
-      } catch (error) {
-        console.error('Failed to fetch baseline amenities:', error);
-      }
-    };
-    
-    fetchBaselineAmenities();
   }, []);
 
   // Determine which data to show based on route
@@ -63,16 +45,7 @@ export default function AnalysisLayout({
   const displayNodes = isOptimized 
     ? (showNodes ? optimizedNodes : [])
     : baselineNodes;
-  const displaySuggestions = isOptimized 
-    ? (showBaselineAmenities ? [...baselineAmenities, ...suggestions] : suggestions)
-    : [];
-
-  // Debug logging
-  useEffect(() => {
-    if (isOptimized) {
-      console.log(`[Layout] Toggle: ${showBaselineAmenities}, Baseline: ${baselineAmenities.length}, Optimized: ${suggestions.length}, Total displayed: ${displaySuggestions.length}`);
-    }
-  }, [isOptimized, showBaselineAmenities, baselineAmenities.length, suggestions.length, displaySuggestions.length]);
+  const displaySuggestions = isOptimized ? suggestions : [];
 
   const handleLayerToggle = (layer: string, enabled: boolean) => {
     setEnabledLayers(prev => {
@@ -117,9 +90,6 @@ export default function AnalysisLayout({
           onZoomOut={() => mapInstance?.zoomOut()}
           onLayerToggle={handleLayerToggle}
           enabledLayers={enabledLayers}
-          showBaselineToggle={isOptimized}
-          showBaselineAmenities={showBaselineAmenities}
-          onBaselineToggle={setShowBaselineAmenities}
           showNodesToggle={isOptimized}
           showNodes={showNodes}
           onNodesToggle={setShowNodes}

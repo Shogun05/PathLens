@@ -1,0 +1,275 @@
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/logs/pathlens_master_20260103_010852.log
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - Config: /home/shogun/Documents/PathLens/config.yaml
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - Skipping data collection pipeline
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - ================================================================================
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - PIPELINE: OPTIMIZATION
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - ================================================================================
+2026-01-03 01:08:52,211 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python -u /home/shogun/Documents/PathLens/optimization-pipeline/run_optimization.py --ga-population 120 --ga-generations 80 --ga-config /home/shogun/Documents/PathLens/config.yaml
+2026-01-03 01:08:52,258 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,258 - __main__ - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/optimization/runs/logs/optimization_run_20260103_010852.log
+2026-01-03 01:08:52,259 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,258 - __main__ - INFO - PathLens Optimization Workflow
+2026-01-03 01:08:52,259 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,258 - __main__ - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-03 01:08:52,261 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,261 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2026-01-03 01:08:52,261 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,261 - __main__ - INFO - ================================================================================
+2026-01-03 01:08:52,261 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,261 - __main__ - INFO - > Extract high travel time nodes
+2026-01-03 01:08:52,261 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,261 - __main__ - INFO - ================================================================================
+2026-01-03 01:08:52,261 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,261 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/list_optimizable_nodes.py --input /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --output /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv
+2026-01-03 01:08:52,886 - PathLensMaster - INFO - [optimization] Filtered 4168 nodes above 15.00 minutes; wrote 4168 rows to /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv
+2026-01-03 01:08:52,979 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,979 - __main__ - INFO - Extract high travel time nodes completed successfully
+2026-01-03 01:08:52,980 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,980 - __main__ - INFO - Auto-detected 12 worker threads (75% of 16 cores)
+2026-01-03 01:08:52,980 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,980 - __main__ - INFO - ================================================================================
+2026-01-03 01:08:52,980 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,980 - __main__ - INFO - > Run hybrid genetic algorithm with MILP refinement
+2026-01-03 01:08:52,980 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,980 - __main__ - INFO - ================================================================================
+2026-01-03 01:08:52,980 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:52,980 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/hybrid_ga.py --nodes-scores /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --high-travel /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv --analysis-dir /home/shogun/Documents/PathLens/data/optimization/runs --config /home/shogun/Documents/PathLens/config.yaml --population 120 --generations 80 --workers 12
+2026-01-03 01:08:53,550 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,549 [INFO] Loaded configuration from /home/shogun/Documents/PathLens/config.yaml
+2026-01-03 01:08:53,624 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,624 [INFO] Amenity school pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-03 01:08:53,650 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,649 [INFO] Amenity hospital pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-03 01:08:53,675 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,675 [INFO] Amenity pharmacy pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-03 01:08:53,699 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,699 [INFO] Amenity supermarket pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-03 01:08:53,724 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,724 [INFO] Amenity bus_station pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-03 01:08:53,748 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,748 [INFO] Amenity park pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-03 01:08:53,750 - PathLensMaster - INFO - [optimization] 2026-01-03 01:08:53,750 [INFO] Loading graph for diversity penalty computation...
+2026-01-03 01:09:21,252 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,252 [INFO] Loaded graph with 182191 nodes, 487510 edges for diversity penalty
+2026-01-03 01:09:21,262 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,252 [INFO] Analysing amenity distances for 4168 high-travel nodes.
+2026-01-03 01:09:21,298 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,297 [INFO] Amenity school               | mean distance 1854.01 m | available 4168
+2026-01-03 01:09:21,298 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,298 [INFO] Amenity hospital             | mean distance 2541.98 m | available 4168
+2026-01-03 01:09:21,298 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,298 [INFO] Amenity pharmacy             | mean distance 2638.66 m | available 4168
+2026-01-03 01:09:21,299 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,298 [INFO] Amenity supermarket          | mean distance 2762.00 m | available 4168
+2026-01-03 01:09:21,299 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,299 [INFO] Amenity bus_station          | mean distance 4413.21 m | available 4168
+2026-01-03 01:09:21,299 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,299 [INFO] Amenity park                 | mean distance 1896.62 m | available 4168
+2026-01-03 01:09:21,302 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,301 [INFO] Starting hybrid GA: population=120, generations=80
+2026-01-03 01:09:21,302 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,302 [INFO] Running default precompute for 182191 nodes.
+2026-01-03 01:09:21,369 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:21,369 [INFO] Precomputing undirected graph for diversity penalty...
+2026-01-03 01:09:25,950 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:25,949 [INFO] Using 12 worker threads for candidate evaluation.
+2026-01-03 01:09:25,950 - PathLensMaster - INFO - [optimization] 2026-01-03 01:09:25,950 [INFO] Seeded population with 5 greedy templates.
+2026-01-03 01:09:25,986 - PathLensMaster - INFO - [optimization] Generations:   0%|          | 0/80 [00:00<?, ?gen/s]2026-01-03 01:09:25,986 [INFO] Evaluating generation 1/80
+2026-01-03 01:09:26,473 - PathLensMaster - INFO - [optimization] Gen 1 eval:   0%|          | 0/120 [00:00<?, ?it/s][A
+2026-01-03 01:09:26,588 - PathLensMaster - INFO - [optimization] Gen 1 eval:   1%|          | 1/120 [00:00<00:57,  2.05it/s][A
+2026-01-03 01:09:26,820 - PathLensMaster - INFO - [optimization] Gen 1 eval:   6%|▌         | 7/120 [00:00<00:07, 14.69it/s][A
+2026-01-03 01:09:27,020 - PathLensMaster - INFO - [optimization] Gen 1 eval:   9%|▉         | 11/120 [00:00<00:06, 15.76it/s][A
+2026-01-03 01:09:27,194 - PathLensMaster - INFO - [optimization] Gen 1 eval:  13%|█▎        | 16/120 [00:01<00:05, 18.94it/s][A
+2026-01-03 01:09:27,334 - PathLensMaster - INFO - [optimization] Gen 1 eval:  17%|█▋        | 20/120 [00:01<00:04, 20.12it/s][A
+2026-01-03 01:09:27,460 - PathLensMaster - INFO - [optimization] Gen 1 eval:  19%|█▉        | 23/120 [00:01<00:04, 20.47it/s][A
+2026-01-03 01:09:27,641 - PathLensMaster - INFO - [optimization] Gen 1 eval:  22%|██▏       | 26/120 [00:01<00:04, 21.29it/s][A
+2026-01-03 01:09:27,805 - PathLensMaster - INFO - [optimization] Gen 1 eval:  24%|██▍       | 29/120 [00:01<00:04, 19.68it/s][A
+2026-01-03 01:09:27,966 - PathLensMaster - INFO - [optimization] Gen 1 eval:  28%|██▊       | 34/120 [00:01<00:03, 22.95it/s][A
+2026-01-03 01:09:28,109 - PathLensMaster - INFO - [optimization] Gen 1 eval:  31%|███       | 37/120 [00:01<00:03, 21.70it/s][A
+2026-01-03 01:09:28,217 - PathLensMaster - INFO - [optimization] Gen 1 eval:  34%|███▍      | 41/120 [00:02<00:03, 23.42it/s][A
+2026-01-03 01:09:28,398 - PathLensMaster - INFO - [optimization] Gen 1 eval:  37%|███▋      | 44/120 [00:02<00:03, 24.39it/s][A
+2026-01-03 01:09:28,513 - PathLensMaster - INFO - [optimization] Gen 1 eval:  39%|███▉      | 47/120 [00:02<00:03, 21.66it/s][A
+2026-01-03 01:09:28,690 - PathLensMaster - INFO - [optimization] Gen 1 eval:  42%|████▏     | 50/120 [00:02<00:03, 22.73it/s][A
+2026-01-03 01:09:28,904 - PathLensMaster - INFO - [optimization] Gen 1 eval:  46%|████▌     | 55/120 [00:02<00:02, 24.66it/s][A
+2026-01-03 01:09:29,011 - PathLensMaster - INFO - [optimization] Gen 1 eval:  48%|████▊     | 58/120 [00:02<00:03, 20.66it/s][A
+2026-01-03 01:09:29,119 - PathLensMaster - INFO - [optimization] Gen 1 eval:  51%|█████     | 61/120 [00:03<00:02, 22.19it/s][A
+2026-01-03 01:09:29,381 - PathLensMaster - INFO - [optimization] Gen 1 eval:  56%|█████▌    | 67/120 [00:03<00:01, 30.01it/s][A
+2026-01-03 01:09:29,546 - PathLensMaster - INFO - [optimization] Gen 1 eval:  59%|█████▉    | 71/120 [00:03<00:02, 23.41it/s][A
+2026-01-03 01:09:29,660 - PathLensMaster - INFO - [optimization] Gen 1 eval:  62%|██████▏   | 74/120 [00:03<00:02, 21.90it/s][A
+2026-01-03 01:09:29,781 - PathLensMaster - INFO - [optimization] Gen 1 eval:  65%|██████▌   | 78/120 [00:03<00:01, 24.81it/s][A
+2026-01-03 01:09:29,959 - PathLensMaster - INFO - [optimization] Gen 1 eval:  68%|██████▊   | 81/120 [00:03<00:01, 24.80it/s][A
+2026-01-03 01:09:30,183 - PathLensMaster - INFO - [optimization] Gen 1 eval:  70%|███████   | 84/120 [00:03<00:01, 22.07it/s][A
+2026-01-03 01:09:30,381 - PathLensMaster - INFO - [optimization] Gen 1 eval:  72%|███████▎  | 87/120 [00:04<00:01, 18.76it/s][A
+2026-01-03 01:09:30,569 - PathLensMaster - INFO - [optimization] Gen 1 eval:  78%|███████▊  | 93/120 [00:04<00:01, 22.50it/s][A
+2026-01-03 01:09:30,731 - PathLensMaster - INFO - [optimization] Gen 1 eval:  81%|████████  | 97/120 [00:04<00:01, 22.15it/s][A
+2026-01-03 01:09:30,849 - PathLensMaster - INFO - [optimization] Gen 1 eval:  83%|████████▎ | 100/120 [00:04<00:00, 21.14it/s][A
+2026-01-03 01:09:31,048 - PathLensMaster - INFO - [optimization] Gen 1 eval:  88%|████████▊ | 105/120 [00:04<00:00, 25.86it/s][A
+2026-01-03 01:09:31,187 - PathLensMaster - INFO - [optimization] Gen 1 eval:  90%|█████████ | 108/120 [00:05<00:00, 22.10it/s][A
+2026-01-03 01:09:31,259 - PathLensMaster - INFO - [optimization] Gen 1 eval:  92%|█████████▎| 111/120 [00:05<00:00, 21.98it/s][A
+2026-01-03 01:09:31,260 - PathLensMaster - INFO - [optimization]                                                              [A
+2026-01-03 01:09:43,902 - PathLensMaster - INFO - [optimization] Gen 1 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-03 01:09:58,451 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  20%|██        | 1/5 [00:12<00:50, 12.64s/it][A
+2026-01-03 01:10:11,781 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  40%|████      | 2/5 [00:27<00:41, 13.76s/it][A
+2026-01-03 01:10:24,797 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  60%|██████    | 3/5 [00:40<00:27, 13.57s/it][A
+2026-01-03 01:10:37,990 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  80%|████████  | 4/5 [00:53<00:13, 13.35s/it][A
+2026-01-03 01:10:37,990 - PathLensMaster - INFO - [optimization] Gen 1 local_search: 100%|██████████| 5/5 [01:06<00:00, 13.29s/it][A
+2026-01-03 01:10:37,990 - PathLensMaster - INFO - [optimization]                                                                  [A2026-01-03 01:10:37,990 [INFO] Generation 1 best fitness 0.0000 | template=None | placements={'school': 20, 'hospital': 20, 'pharmacy': 20, 'supermarket': 20, 'bus_station': 20, 'park': 20} | elapsed=72.00s
+2026-01-03 01:10:38,016 - PathLensMaster - INFO - [optimization] Generations:   1%|▏         | 1/80 [01:12<1:34:51, 72.04s/gen]2026-01-03 01:10:38,016 [INFO] Evaluating generation 2/80
+2026-01-03 01:10:38,397 - PathLensMaster - INFO - [optimization] Gen 2 eval:   0%|          | 0/120 [00:00<?, ?it/s][A
+2026-01-03 01:10:38,583 - PathLensMaster - INFO - [optimization] Gen 2 eval:   1%|          | 1/120 [00:00<00:45,  2.62it/s][A
+2026-01-03 01:10:38,810 - PathLensMaster - INFO - [optimization] Gen 2 eval:   6%|▌         | 7/120 [00:00<00:07, 14.83it/s][A
+2026-01-03 01:10:38,987 - PathLensMaster - INFO - [optimization] Gen 2 eval:   8%|▊         | 10/120 [00:00<00:07, 14.14it/s][A
+2026-01-03 01:10:39,181 - PathLensMaster - INFO - [optimization] Gen 2 eval:  12%|█▏        | 14/120 [00:00<00:06, 16.82it/s][A
+2026-01-03 01:10:39,312 - PathLensMaster - INFO - [optimization] Gen 2 eval:  16%|█▌        | 19/120 [00:01<00:05, 19.81it/s][A
+2026-01-03 01:10:39,489 - PathLensMaster - INFO - [optimization] Gen 2 eval:  20%|██        | 24/120 [00:01<00:03, 24.26it/s][A
+2026-01-03 01:10:39,607 - PathLensMaster - INFO - [optimization] Gen 2 eval:  22%|██▎       | 27/120 [00:01<00:04, 21.91it/s][A
+2026-01-03 01:10:39,732 - PathLensMaster - INFO - [optimization] Gen 2 eval:  25%|██▌       | 30/120 [00:01<00:03, 22.75it/s][A
+2026-01-03 01:10:39,901 - PathLensMaster - INFO - [optimization] Gen 2 eval:  28%|██▊       | 33/120 [00:01<00:03, 23.04it/s][A
+2026-01-03 01:10:40,005 - PathLensMaster - INFO - [optimization] Gen 2 eval:  30%|███       | 36/120 [00:01<00:03, 21.29it/s][A
+2026-01-03 01:10:40,183 - PathLensMaster - INFO - [optimization] Gen 2 eval:  33%|███▎      | 40/120 [00:01<00:03, 25.20it/s][A
+2026-01-03 01:10:40,320 - PathLensMaster - INFO - [optimization] Gen 2 eval:  36%|███▌      | 43/120 [00:02<00:03, 22.21it/s][A
+2026-01-03 01:10:40,499 - PathLensMaster - INFO - [optimization] Gen 2 eval:  38%|███▊      | 46/120 [00:02<00:03, 22.12it/s][A
+2026-01-03 01:10:40,645 - PathLensMaster - INFO - [optimization] Gen 2 eval:  41%|████      | 49/120 [00:02<00:03, 20.26it/s][A
+2026-01-03 01:10:40,807 - PathLensMaster - INFO - [optimization] Gen 2 eval:  43%|████▎     | 52/120 [00:02<00:03, 20.36it/s][A
+2026-01-03 01:10:40,972 - PathLensMaster - INFO - [optimization] Gen 2 eval:  48%|████▊     | 58/120 [00:02<00:02, 25.59it/s][A
+2026-01-03 01:10:41,214 - PathLensMaster - INFO - [optimization] Gen 2 eval:  51%|█████     | 61/120 [00:02<00:02, 23.27it/s][A
+2026-01-03 01:10:41,368 - PathLensMaster - INFO - [optimization] Gen 2 eval:  55%|█████▌    | 66/120 [00:03<00:02, 22.21it/s][A
+2026-01-03 01:10:41,501 - PathLensMaster - INFO - [optimization] Gen 2 eval:  59%|█████▉    | 71/120 [00:03<00:01, 24.94it/s][A
+2026-01-03 01:10:41,618 - PathLensMaster - INFO - [optimization] Gen 2 eval:  62%|██████▏   | 74/120 [00:03<00:01, 24.36it/s][A
+2026-01-03 01:10:41,750 - PathLensMaster - INFO - [optimization] Gen 2 eval:  64%|██████▍   | 77/120 [00:03<00:01, 24.68it/s][A
+2026-01-03 01:10:41,908 - PathLensMaster - INFO - [optimization] Gen 2 eval:  68%|██████▊   | 81/120 [00:03<00:01, 26.22it/s][A
+2026-01-03 01:10:42,040 - PathLensMaster - INFO - [optimization] Gen 2 eval:  70%|███████   | 84/120 [00:03<00:01, 23.88it/s][A
+2026-01-03 01:10:42,206 - PathLensMaster - INFO - [optimization] Gen 2 eval:  72%|███████▎  | 87/120 [00:04<00:01, 23.58it/s][A
+2026-01-03 01:10:42,378 - PathLensMaster - INFO - [optimization] Gen 2 eval:  77%|███████▋  | 92/120 [00:04<00:01, 25.75it/s][A
+2026-01-03 01:10:42,508 - PathLensMaster - INFO - [optimization] Gen 2 eval:  79%|███████▉  | 95/120 [00:04<00:01, 23.03it/s][A
+2026-01-03 01:10:42,681 - PathLensMaster - INFO - [optimization] Gen 2 eval:  82%|████████▏ | 98/120 [00:04<00:00, 23.02it/s][A
+2026-01-03 01:10:42,788 - PathLensMaster - INFO - [optimization] Gen 2 eval:  86%|████████▌ | 103/120 [00:04<00:00, 24.96it/s][A
+2026-01-03 01:10:42,948 - PathLensMaster - INFO - [optimization] Gen 2 eval:  88%|████████▊ | 106/120 [00:04<00:00, 25.66it/s][A
+2026-01-03 01:10:43,056 - PathLensMaster - INFO - [optimization] Gen 2 eval:  91%|█████████ | 109/120 [00:04<00:00, 23.43it/s][A
+2026-01-03 01:10:43,162 - PathLensMaster - INFO - [optimization] Gen 2 eval:  93%|█████████▎| 112/120 [00:05<00:00, 24.47it/s][A
+2026-01-03 01:10:43,162 - PathLensMaster - INFO - [optimization] Gen 2 eval: 100%|██████████| 120/120 [00:05<00:00, 37.27it/s][A
+2026-01-03 01:10:43,164 - PathLensMaster - INFO - [optimization]                                                              [A
+2026-01-03 01:10:56,142 - PathLensMaster - INFO - [optimization] Gen 2 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-03 01:11:12,440 - PathLensMaster - INFO - [optimization] Gen 2 local_search:  20%|██        | 1/5 [00:12<00:51, 12.98s/it][A
+2026-01-03 01:11:25,859 - PathLensMaster - INFO - [optimization] Gen 2 local_search:  40%|████      | 2/5 [00:29<00:44, 14.93s/it][A
+2026-01-03 01:11:39,372 - PathLensMaster - INFO - [optimization] Gen 2 local_search:  60%|██████    | 3/5 [00:42<00:28, 14.24s/it][A
+2026-01-03 01:11:47,501 - PathLensMaster - INFO - [optimization] Gen 2 local_search:  80%|████████  | 4/5 [00:56<00:13, 13.95s/it][A
+2026-01-03 01:11:47,501 - PathLensMaster - INFO - [optimization] Gen 2 local_search: 100%|██████████| 5/5 [01:04<00:00, 11.85s/it][A
+2026-01-03 01:11:47,501 - PathLensMaster - INFO - [optimization]                                                                  [A2026-01-03 01:11:47,501 [INFO] Generation 2 best fitness 0.0000 | template=None | placements={'school': 20, 'hospital': 20, 'pharmacy': 20, 'supermarket': 20, 'bus_station': 20, 'park': 20} | elapsed=69.49s
+2026-01-03 01:11:47,512 - PathLensMaster - INFO - [optimization] Generations:   2%|▎         | 2/80 [02:21<1:31:42, 70.54s/gen]2026-01-03 01:11:47,512 [INFO] Evaluating generation 3/80
+2026-01-03 01:11:47,976 - PathLensMaster - INFO - [optimization] Gen 3 eval:   0%|          | 0/120 [00:00<?, ?it/s][A
+2026-01-03 01:11:48,089 - PathLensMaster - INFO - [optimization] Gen 3 eval:   1%|          | 1/120 [00:00<00:55,  2.16it/s][A
+2026-01-03 01:11:48,358 - PathLensMaster - INFO - [optimization] Gen 3 eval:   8%|▊         | 9/120 [00:00<00:05, 19.89it/s][A
+2026-01-03 01:11:48,535 - PathLensMaster - INFO - [optimization] Gen 3 eval:  12%|█▏        | 14/120 [00:00<00:05, 19.30it/s][A
+2026-01-03 01:11:48,774 - PathLensMaster - INFO - [optimization] Gen 3 eval:  15%|█▌        | 18/120 [00:01<00:05, 20.29it/s][A
+2026-01-03 01:11:48,885 - PathLensMaster - INFO - [optimization] Gen 3 eval:  18%|█▊        | 21/120 [00:01<00:05, 17.43it/s][A
+2026-01-03 01:11:49,016 - PathLensMaster - INFO - [optimization] Gen 3 eval:  22%|██▏       | 26/120 [00:01<00:04, 22.86it/s][A
+2026-01-03 01:11:49,408 - PathLensMaster - INFO - [optimization] Gen 3 eval:  27%|██▋       | 32/120 [00:01<00:03, 28.60it/s][A
+2026-01-03 01:11:49,511 - PathLensMaster - INFO - [optimization] Gen 3 eval:  30%|███       | 36/120 [00:01<00:04, 19.11it/s][A
+2026-01-03 01:11:49,619 - PathLensMaster - INFO - [optimization] Gen 3 eval:  37%|███▋      | 44/120 [00:01<00:02, 28.62it/s][A
+2026-01-03 01:11:49,778 - PathLensMaster - INFO - [optimization] Gen 3 eval:  41%|████      | 49/120 [00:02<00:02, 32.07it/s][A
+2026-01-03 01:11:50,142 - PathLensMaster - INFO - [optimization] Gen 3 eval:  45%|████▌     | 54/120 [00:02<00:02, 31.89it/s][A
+2026-01-03 01:11:50,282 - PathLensMaster - INFO - [optimization] Gen 3 eval:  49%|████▉     | 59/120 [00:02<00:02, 23.03it/s][A
+2026-01-03 01:11:50,495 - PathLensMaster - INFO - [optimization] Gen 3 eval:  52%|█████▎    | 63/120 [00:02<00:02, 24.18it/s][A
+2026-01-03 01:11:50,717 - PathLensMaster - INFO - [optimization] Gen 3 eval:  56%|█████▌    | 67/120 [00:02<00:02, 22.49it/s][A
+2026-01-03 01:11:50,818 - PathLensMaster - INFO - [optimization] Gen 3 eval:  58%|█████▊    | 70/120 [00:03<00:02, 19.62it/s][A
+2026-01-03 01:11:50,941 - PathLensMaster - INFO - [optimization] Gen 3 eval:  61%|██████    | 73/120 [00:03<00:02, 21.36it/s][A
+2026-01-03 01:11:51,147 - PathLensMaster - INFO - [optimization] Gen 3 eval:  63%|██████▎   | 76/120 [00:03<00:01, 22.07it/s][A
+2026-01-03 01:11:51,275 - PathLensMaster - INFO - [optimization] Gen 3 eval:  68%|██████▊   | 81/120 [00:03<00:01, 22.86it/s][A
+2026-01-03 01:11:51,442 - PathLensMaster - INFO - [optimization] Gen 3 eval:  70%|███████   | 84/120 [00:03<00:01, 22.97it/s][A
+2026-01-03 01:11:51,558 - PathLensMaster - INFO - [optimization] Gen 3 eval:  72%|███████▎  | 87/120 [00:03<00:01, 21.44it/s][A
+2026-01-03 01:11:51,673 - PathLensMaster - INFO - [optimization] Gen 3 eval:  76%|███████▌  | 91/120 [00:04<00:01, 24.49it/s][A
+2026-01-03 01:11:51,857 - PathLensMaster - INFO - [optimization] Gen 3 eval:  78%|███████▊  | 94/120 [00:04<00:01, 24.88it/s][A
+2026-01-03 01:11:52,036 - PathLensMaster - INFO - [optimization] Gen 3 eval:  81%|████████  | 97/120 [00:04<00:01, 21.77it/s][A
+2026-01-03 01:11:52,181 - PathLensMaster - INFO - [optimization] Gen 3 eval:  83%|████████▎ | 100/120 [00:04<00:00, 20.09it/s][A
+2026-01-03 01:11:52,353 - PathLensMaster - INFO - [optimization] Gen 3 eval:  86%|████████▌ | 103/120 [00:04<00:00, 20.27it/s][A
+2026-01-03 01:11:52,466 - PathLensMaster - INFO - [optimization] Gen 3 eval:  90%|█████████ | 108/120 [00:04<00:00, 23.08it/s][A
+2026-01-03 01:11:52,549 - PathLensMaster - INFO - [optimization] Gen 3 eval:  94%|█████████▍| 113/120 [00:04<00:00, 27.98it/s][A
+2026-01-03 01:11:52,550 - PathLensMaster - INFO - [optimization]                                                              [A
+2026-01-03 01:12:02,673 - PathLensMaster - INFO - [optimization] Gen 3 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-03 01:12:17,085 - PathLensMaster - INFO - [optimization] Gen 3 local_search:  20%|██        | 1/5 [00:10<00:40, 10.12s/it][A
+2026-01-03 01:12:30,286 - PathLensMaster - INFO - [optimization] Gen 3 local_search:  40%|████      | 2/5 [00:24<00:37, 12.65s/it][A
+2026-01-03 01:12:43,770 - PathLensMaster - INFO - [optimization] Gen 3 local_search:  60%|██████    | 3/5 [00:37<00:25, 12.90s/it][A
+2026-01-03 01:12:54,993 - PathLensMaster - INFO - [optimization] Gen 3 local_search:  80%|████████  | 4/5 [00:51<00:13, 13.13s/it][A
+2026-01-03 01:12:54,993 - PathLensMaster - INFO - [optimization] Gen 3 local_search: 100%|██████████| 5/5 [01:02<00:00, 12.44s/it][A
+2026-01-03 01:12:54,993 - PathLensMaster - INFO - [optimization]                                                                  [A2026-01-03 01:12:54,993 [INFO] Generation 3 best fitness 0.0000 | template=None | placements={'bus_station': 44, 'supermarket': 1, 'pharmacy': 15, 'park': 3, 'school': 29, 'hospital': 18} | elapsed=67.48s
+2026-01-03 01:12:55,007 - PathLensMaster - INFO - [optimization] Generations:   4%|▍         | 3/80 [03:29<1:28:44, 69.15s/gen]2026-01-03 01:12:55,007 [INFO] Evaluating generation 4/80
+2026-01-03 01:12:55,434 - PathLensMaster - INFO - [optimization] Gen 4 eval:   0%|          | 0/120 [00:00<?, ?it/s][A
+2026-01-03 01:12:55,578 - PathLensMaster - INFO - [optimization] Gen 4 eval:   1%|          | 1/120 [00:00<00:50,  2.35it/s][A
+2026-01-03 01:12:55,717 - PathLensMaster - INFO - [optimization] Gen 4 eval:   6%|▌         | 7/120 [00:00<00:07, 15.15it/s][A
+2026-01-03 01:12:56,027 - PathLensMaster - INFO - [optimization] Gen 4 eval:  11%|█         | 13/120 [00:00<00:04, 23.84it/s][A
+2026-01-03 01:12:56,134 - PathLensMaster - INFO - [optimization] Gen 4 eval:  14%|█▍        | 17/120 [00:01<00:05, 18.41it/s][A
+2026-01-03 01:12:56,301 - PathLensMaster - INFO - [optimization] Gen 4 eval:  20%|██        | 24/120 [00:01<00:03, 27.64it/s][A
+2026-01-03 01:12:56,566 - PathLensMaster - INFO - [optimization] Gen 4 eval:  23%|██▎       | 28/120 [00:01<00:03, 26.51it/s][A
+2026-01-03 01:12:56,684 - PathLensMaster - INFO - [optimization] Gen 4 eval:  27%|██▋       | 32/120 [00:01<00:04, 21.87it/s][A
+2026-01-03 01:12:56,816 - PathLensMaster - INFO - [optimization] Gen 4 eval:  30%|███       | 36/120 [00:01<00:03, 24.32it/s][A
+2026-01-03 01:12:57,086 - PathLensMaster - INFO - [optimization] Gen 4 eval:  33%|███▎      | 40/120 [00:01<00:03, 25.81it/s][A
+2026-01-03 01:12:57,187 - PathLensMaster - INFO - [optimization] Gen 4 eval:  37%|███▋      | 44/120 [00:02<00:03, 21.21it/s][A
+2026-01-03 01:12:57,376 - PathLensMaster - INFO - [optimization] Gen 4 eval:  42%|████▎     | 51/120 [00:02<00:02, 29.99it/s][A
+2026-01-03 01:12:57,626 - PathLensMaster - INFO - [optimization] Gen 4 eval:  46%|████▌     | 55/120 [00:02<00:02, 27.10it/s][A
+2026-01-03 01:12:57,826 - PathLensMaster - INFO - [optimization] Gen 4 eval:  49%|████▉     | 59/120 [00:02<00:02, 22.84it/s][A
+2026-01-03 01:12:57,972 - PathLensMaster - INFO - [optimization] Gen 4 eval:  53%|█████▎    | 64/120 [00:02<00:02, 23.51it/s][A
+2026-01-03 01:12:58,129 - PathLensMaster - INFO - [optimization] Gen 4 eval:  57%|█████▋    | 68/120 [00:02<00:02, 24.47it/s][A
+2026-01-03 01:12:58,233 - PathLensMaster - INFO - [optimization] Gen 4 eval:  59%|█████▉    | 71/120 [00:03<00:02, 22.99it/s][A
+2026-01-03 01:12:58,447 - PathLensMaster - INFO - [optimization] Gen 4 eval:  63%|██████▎   | 76/120 [00:03<00:01, 28.11it/s][A
+2026-01-03 01:12:58,670 - PathLensMaster - INFO - [optimization] Gen 4 eval:  67%|██████▋   | 80/120 [00:03<00:01, 24.57it/s][A
+2026-01-03 01:12:58,963 - PathLensMaster - INFO - [optimization] Gen 4 eval:  70%|███████   | 84/120 [00:03<00:01, 22.20it/s][A
+2026-01-03 01:12:59,078 - PathLensMaster - INFO - [optimization] Gen 4 eval:  74%|███████▍  | 89/120 [00:03<00:01, 20.13it/s][A
+2026-01-03 01:12:59,250 - PathLensMaster - INFO - [optimization] Gen 4 eval:  81%|████████  | 97/120 [00:04<00:00, 29.24it/s][A
+2026-01-03 01:12:59,429 - PathLensMaster - INFO - [optimization] Gen 4 eval:  84%|████████▍ | 101/120 [00:04<00:00, 27.56it/s][A
+2026-01-03 01:12:59,565 - PathLensMaster - INFO - [optimization] Gen 4 eval:  88%|████████▊ | 105/120 [00:04<00:00, 26.01it/s][A
+2026-01-03 01:12:59,704 - PathLensMaster - INFO - [optimization] Gen 4 eval:  91%|█████████ | 109/120 [00:04<00:00, 26.85it/s][A
+2026-01-03 01:12:59,783 - PathLensMaster - INFO - [optimization] Gen 4 eval:  93%|█████████▎| 112/120 [00:04<00:00, 25.44it/s][A
+2026-01-03 01:12:59,784 - PathLensMaster - INFO - [optimization]                                                              [A
+2026-01-03 01:13:10,546 - PathLensMaster - INFO - [optimization] Gen 4 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-03 01:13:22,008 - PathLensMaster - INFO - [optimization] Gen 4 local_search:  20%|██        | 1/5 [00:10<00:43, 10.76s/it][A
+2026-01-03 01:13:32,655 - PathLensMaster - INFO - [optimization] Gen 4 local_search:  40%|████      | 2/5 [00:22<00:33, 11.17s/it][A
+2026-01-03 01:13:45,617 - PathLensMaster - INFO - [optimization] Gen 4 local_search:  60%|██████    | 3/5 [00:32<00:21, 10.93s/it][A
+2026-01-03 01:13:57,696 - PathLensMaster - INFO - [optimization] Gen 4 local_search:  80%|████████  | 4/5 [00:45<00:11, 11.73s/it][A
+2026-01-03 01:13:57,696 - PathLensMaster - INFO - [optimization] Gen 4 local_search: 100%|██████████| 5/5 [00:57<00:00, 11.86s/it][A
+2026-01-03 01:13:57,696 - PathLensMaster - INFO - [optimization]                                                                  [A2026-01-03 01:13:57,696 [INFO] Generation 4 best fitness 0.0000 | template=None | placements={'bus_station': 13, 'supermarket': 43, 'pharmacy': 50, 'park': 15, 'school': 16, 'hospital': 8} | elapsed=62.69s
+2026-01-03 01:13:57,713 - PathLensMaster - INFO - [optimization] Generations:   5%|▌         | 4/80 [04:31<1:24:22, 66.61s/gen]2026-01-03 01:13:57,713 [INFO] Evaluating generation 5/80
+2026-01-03 01:13:58,151 - PathLensMaster - INFO - [optimization] Gen 5 eval:   0%|          | 0/120 [00:00<?, ?it/s][A
+2026-01-03 01:13:58,299 - PathLensMaster - INFO - [optimization] Gen 5 eval:   1%|          | 1/120 [00:00<00:52,  2.28it/s][A
+2026-01-03 01:13:58,439 - PathLensMaster - INFO - [optimization] Gen 5 eval:   6%|▌         | 7/120 [00:00<00:07, 14.77it/s][A
+2026-01-03 01:13:58,631 - PathLensMaster - INFO - [optimization] Gen 5 eval:   8%|▊         | 10/120 [00:00<00:06, 16.78it/s][A
+2026-01-03 01:13:58,778 - PathLensMaster - INFO - [optimization] Gen 5 eval:  11%|█         | 13/120 [00:00<00:06, 16.35it/s][A
+2026-01-03 01:13:58,924 - PathLensMaster - INFO - [optimization] Gen 5 eval:  14%|█▍        | 17/120 [00:01<00:05, 19.50it/s][A
+2026-01-03 01:13:59,058 - PathLensMaster - INFO - [optimization] Gen 5 eval:  18%|█▊        | 22/120 [00:01<00:04, 23.83it/s][A
+2026-01-03 01:13:59,238 - PathLensMaster - INFO - [optimization] Gen 5 eval:  21%|██        | 25/120 [00:01<00:04, 23.44it/s][A
+2026-01-03 01:13:59,359 - PathLensMaster - INFO - [optimization] Gen 5 eval:  23%|██▎       | 28/120 [00:01<00:04, 21.09it/s][A
+2026-01-03 01:13:59,617 - PathLensMaster - INFO - [optimization] Gen 5 eval:  26%|██▌       | 31/120 [00:01<00:04, 22.01it/s][A
+2026-01-03 01:13:59,721 - PathLensMaster - INFO - [optimization] Gen 5 eval:  28%|██▊       | 34/120 [00:01<00:04, 17.50it/s][A
+2026-01-03 01:13:59,826 - PathLensMaster - INFO - [optimization] Gen 5 eval:  30%|███       | 36/120 [00:02<00:04, 17.87it/s][A
+2026-01-03 01:13:59,942 - PathLensMaster - INFO - [optimization] Gen 5 eval:  32%|███▎      | 39/120 [00:02<00:03, 20.26it/s][A
+2026-01-03 01:14:00,095 - PathLensMaster - INFO - [optimization] Gen 5 eval:  35%|███▌      | 42/120 [00:02<00:03, 21.71it/s][A
+2026-01-03 01:14:00,292 - PathLensMaster - INFO - [optimization] Gen 5 eval:  38%|███▊      | 45/120 [00:02<00:03, 21.03it/s][A
+2026-01-03 01:14:00,609 - PathLensMaster - INFO - [optimization] Gen 5 eval:  40%|████      | 48/120 [00:02<00:03, 18.82it/s][A
+2026-01-03 01:14:00,783 - PathLensMaster - INFO - [optimization] Gen 5 eval:  42%|████▎     | 51/120 [00:02<00:04, 14.47it/s][A
+2026-01-03 01:14:00,983 - PathLensMaster - INFO - [optimization] Gen 5 eval:  44%|████▍     | 53/120 [00:03<00:04, 13.68it/s][A
+2026-01-03 01:14:01,266 - PathLensMaster - INFO - [optimization] Gen 5 eval:  49%|████▉     | 59/120 [00:03<00:03, 18.66it/s][A
+2026-01-03 01:14:01,543 - PathLensMaster - INFO - [optimization] Gen 5 eval:  51%|█████     | 61/120 [00:03<00:04, 14.24it/s][A
+2026-01-03 01:14:01,702 - PathLensMaster - INFO - [optimization] Gen 5 eval:  57%|█████▋    | 68/120 [00:03<00:02, 18.08it/s][A
+2026-01-03 01:14:01,840 - PathLensMaster - INFO - [optimization] Gen 5 eval:  60%|██████    | 72/120 [00:03<00:02, 19.64it/s][A
+2026-01-03 01:14:02,146 - PathLensMaster - INFO - [optimization] Gen 5 eval:  62%|██████▎   | 75/120 [00:04<00:02, 20.08it/s][A
+2026-01-03 01:14:02,305 - PathLensMaster - INFO - [optimization] Gen 5 eval:  65%|██████▌   | 78/120 [00:04<00:02, 15.94it/s][A
+2026-01-03 01:14:02,434 - PathLensMaster - INFO - [optimization] Gen 5 eval:  68%|██████▊   | 82/120 [00:04<00:02, 18.07it/s][A
+2026-01-03 01:14:02,714 - PathLensMaster - INFO - [optimization] Gen 5 eval:  73%|███████▎  | 88/120 [00:04<00:01, 24.07it/s][A
+2026-01-03 01:14:02,872 - PathLensMaster - INFO - [optimization] Gen 5 eval:  76%|███████▌  | 91/120 [00:05<00:01, 18.79it/s][A
+2026-01-03 01:14:03,051 - PathLensMaster - INFO - [optimization] Gen 5 eval:  78%|███████▊  | 94/120 [00:05<00:01, 18.83it/s][A
+2026-01-03 01:14:03,202 - PathLensMaster - INFO - [optimization] Gen 5 eval:  81%|████████  | 97/120 [00:05<00:01, 18.26it/s][A
+2026-01-03 01:14:03,313 - PathLensMaster - INFO - [optimization] Gen 5 eval:  84%|████████▍ | 101/120 [00:05<00:00, 20.32it/s][A
+2026-01-03 01:14:03,499 - PathLensMaster - INFO - [optimization] Gen 5 eval:  88%|████████▊ | 105/120 [00:05<00:00, 23.65it/s][A
+2026-01-03 01:14:03,649 - PathLensMaster - INFO - [optimization] Gen 5 eval:  90%|█████████ | 108/120 [00:05<00:00, 21.13it/s][A
+2026-01-03 01:14:03,741 - PathLensMaster - INFO - [optimization] Gen 5 eval:  92%|█████████▎| 111/120 [00:05<00:00, 20.82it/s][A
+2026-01-03 01:14:03,742 - PathLensMaster - INFO - [optimization]                                                              [A
+2026-01-03 01:14:15,774 - PathLensMaster - INFO - [optimization] Gen 5 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-03 01:14:27,162 - PathLensMaster - INFO - [optimization] Gen 5 local_search:  20%|██        | 1/5 [00:12<00:48, 12.03s/it][A
+2026-01-03 01:14:39,652 - PathLensMaster - INFO - [optimization] Gen 5 local_search:  40%|████      | 2/5 [00:23<00:34, 11.65s/it][A
+2026-01-03 01:14:52,554 - PathLensMaster - INFO - [optimization] Gen 5 local_search:  60%|██████    | 3/5 [00:35<00:24, 12.04s/it][A
+2026-01-03 01:15:04,838 - PathLensMaster - INFO - [optimization] Gen 5 local_search:  80%|████████  | 4/5 [00:48<00:12, 12.38s/it][A
+2026-01-03 01:15:04,838 - PathLensMaster - INFO - [optimization] Gen 5 local_search: 100%|██████████| 5/5 [01:01<00:00, 12.34s/it][A
+2026-01-03 01:15:04,838 - PathLensMaster - INFO - [optimization]                                                                  [A2026-01-03 01:15:04,838 [INFO] Generation 5 best fitness 0.0000 | template=None | placements={'bus_station': 33, 'supermarket': 3, 'pharmacy': 17, 'park': 5, 'school': 5, 'hospital': 3} | elapsed=67.12s
+2026-01-03 01:15:04,851 - PathLensMaster - INFO - [optimization] Generations:   6%|▋         | 5/80 [05:38<1:23:29, 66.80s/gen]2026-01-03 01:15:04,851 [INFO] Evaluating generation 6/80
+2026-01-03 01:15:05,168 - PathLensMaster - INFO - [optimization] Gen 6 eval:   0%|          | 0/120 [00:00<?, ?it/s][A
+2026-01-03 01:15:05,285 - PathLensMaster - INFO - [optimization] Gen 6 eval:   1%|          | 1/120 [00:00<00:37,  3.16it/s][A
+2026-01-03 01:15:05,405 - PathLensMaster - INFO - [optimization] Gen 6 eval:   4%|▍         | 5/120 [00:00<00:08, 13.88it/s][A
+2026-01-03 01:15:05,520 - PathLensMaster - INFO - [optimization] Gen 6 eval:   7%|▋         | 8/120 [00:00<00:06, 17.63it/s][A
+2026-01-03 01:15:05,729 - PathLensMaster - INFO - [optimization] Gen 6 eval:   9%|▉         | 11/120 [00:00<00:05, 20.30it/s][A
+2026-01-03 01:15:05,847 - PathLensMaster - INFO - [optimization] Gen 6 eval:  12%|█▏        | 14/120 [00:00<00:06, 17.59it/s][A
+2026-01-03 01:15:06,106 - PathLensMaster - INFO - [optimization] Gen 6 eval:  15%|█▌        | 18/120 [00:01<00:04, 21.93it/s][A
+2026-01-03 01:15:06,236 - PathLensMaster - INFO - [optimization] Gen 6 eval:  18%|█▊        | 21/120 [00:01<00:05, 17.22it/s][A
+2026-01-03 01:15:06,362 - PathLensMaster - INFO - [optimization] Gen 6 eval:  22%|██▎       | 27/120 [00:01<00:03, 24.33it/s][A
+2026-01-03 01:15:06,551 - PathLensMaster - INFO - [optimization] Gen 6 eval:  28%|██▊       | 33/120 [00:01<00:02, 30.31it/s][A
+2026-01-03 01:15:06,708 - PathLensMaster - INFO - [optimization] Gen 6 eval:  31%|███       | 37/120 [00:01<00:03, 27.05it/s][A
+2026-01-03 01:15:06,827 - PathLensMaster - INFO - [optimization] Gen 6 eval:  34%|███▍      | 41/120 [00:01<00:02, 26.60it/s][A
+2026-01-03 01:15:06,944 - PathLensMaster - INFO - [optimization] Gen 6 eval:  37%|███▋      | 44/120 [00:01<00:02, 26.23it/s][A
+2026-01-03 01:15:07,165 - PathLensMaster - INFO - [optimization] Gen 6 eval:  42%|████▏     | 50/120 [00:02<00:02, 32.61it/s][A
+2026-01-03 01:15:07,283 - PathLensMaster - INFO - [optimization] Gen 6 eval:  45%|████▌     | 54/120 [00:02<00:02, 26.69it/s][A
+2026-01-03 01:15:07,549 - PathLensMaster - INFO - [optimization] Gen 6 eval:  49%|████▉     | 59/120 [00:02<00:02, 30.41it/s][A
+2026-01-03 01:15:07,766 - PathLensMaster - INFO - [optimization] Gen 6 eval:  52%|█████▎    | 63/120 [00:02<00:02, 23.76it/s][A
+2026-01-03 01:15:07,896 - PathLensMaster - INFO - [optimization] Gen 6 eval:  55%|█████▌    | 66/120 [00:02<00:02, 20.43it/s][A
+2026-01-03 01:15:08,097 - PathLensMaster - INFO - [optimization] Gen 6 eval:  62%|██████▏   | 74/120 [00:03<00:01, 29.63it/s][A
+2026-01-03 01:15:08,268 - PathLensMaster - INFO - [optimization] Gen 6 eval:  65%|██████▌   | 78/120 [00:03<00:01, 26.39it/s][A
+2026-01-03 01:15:08,371 - PathLensMaster - INFO - [optimization] Gen 6 eval:  68%|██████▊   | 82/120 [00:03<00:01, 25.53it/s][A
+2026-01-03 01:15:08,505 - PathLensMaster - INFO - [optimization] Gen 6 eval:  71%|███████   | 85/120 [00:03<00:01, 26.24it/s][A
+2026-01-03 01:15:08,645 - PathLensMaster - INFO - [optimization] Gen 6 eval:  75%|███████▌  | 90/120 [00:03<00:01, 29.25it/s][A
+2026-01-03 01:15:08,813 - PathLensMaster - INFO - [optimization] Gen 6 eval:  78%|███████▊  | 94/120 [00:03<00:00, 29.05it/s][A
+2026-01-03 01:15:08,951 - PathLensMaster - INFO - [optimization] Gen 6 eval:  82%|████████▏ | 98/120 [00:03<00:00, 27.34it/s][A
+2026-01-03 01:15:09,110 - PathLensMaster - INFO - [optimization] Gen 6 eval:  84%|████████▍ | 101/120 [00:04<00:00, 25.75it/s][A
+2026-01-03 01:15:09,221 - PathLensMaster - INFO - [optimization] Gen 6 eval:  88%|████████▊ | 105/120 [00:04<00:00, 25.55it/s][A
+2026-01-03 01:15:09,348 - PathLensMaster - INFO - [optimization] Gen 6 eval:  90%|█████████ | 108/120 [00:04<00:00, 25.94it/s][A
+2026-01-03 01:15:09,382 - PathLensMaster - INFO - [optimization] Gen 6 eval:  94%|█████████▍| 113/120 [00:04<00:00, 29.72it/s][A
+2026-01-03 01:15:09,383 - PathLensMaster - INFO - [optimization]                                                              [A
+2026-01-03 01:15:19,886 - PathLensMaster - INFO - [optimization] Gen 6 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-03 01:15:31,660 - PathLensMaster - INFO - [optimization] Gen 6 local_search:  20%|██        | 1/5 [00:10<00:42, 10.50s/it][A
+2026-01-03 01:15:44,496 - PathLensMaster - INFO - [optimization] Gen 6 local_search:  40%|████      | 2/5 [00:22<00:33, 11.25s/it][A

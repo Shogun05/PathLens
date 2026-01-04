@@ -1,19 +1,18 @@
 {
-  "status": "completed",
+  "status": "failed",
   "stage": "finalizing",
-  "message": "All requested pipelines completed successfully",
+  "message": "One or more pipelines failed",
   "percent": 100,
-  "timestamp": "2026-01-02T15:50:51.640141Z",
+  "timestamp": "2026-01-03T15:03:46.048211Z",
   "pipelines": {
-    "data": "completed",
-    "optimization": "completed",
+    "data": "skipped",
+    "optimization": "failed",
     "landuse": "skipped"
   },
   "details": {
     "results": {
-      "data": true,
-      "optimization": true
+      "optimization": false
     },
-    "summary_file": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\data\\logs\\run_summary_20260102_212051.json"
+    "summary_file": "/home/shogun/Documents/PathLens/data/logs/run_summary_20260103_203346.json"
   }
 }

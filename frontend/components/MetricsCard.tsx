@@ -95,9 +95,9 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
-                {metrics.network.circuity_sample_ratio.toFixed(2)}
+                {metrics.network.circuity_sample_ratio?.toFixed(2) ?? 'N/A'}
               </span>
-              {getStatusBadge(metrics.network.circuity_sample_ratio, 1.1, 1.5)}
+              {metrics.network.circuity_sample_ratio && getStatusBadge(metrics.network.circuity_sample_ratio, 1.1, 1.5)}
             </div>
           </div>
           <div className="size-10 rounded-lg bg-red-500/10 flex items-center justify-center text-red-400">
@@ -125,7 +125,7 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
-                {Math.round(metrics.network.intersection_density_global)}
+                {metrics.network.intersection_density_global ? Math.round(metrics.network.intersection_density_global) : 'N/A'}
               </span>
               <span className="text-sm text-gray-400 font-normal">/km²</span>
             </div>
@@ -155,9 +155,9 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
-                {metrics.network.link_node_ratio_global.toFixed(2)}
+                {metrics.network.link_node_ratio_global?.toFixed(2) ?? 'N/A'}
               </span>
-              {getStatusBadge(metrics.network.link_node_ratio_global, 2.0, 3.0)}
+              {metrics.network.link_node_ratio_global && getStatusBadge(metrics.network.link_node_ratio_global, 2.0, 3.0)}
             </div>
           </div>
           <div className="size-10 rounded-lg bg-yellow-500/10 flex items-center justify-center text-yellow-400">
@@ -210,7 +210,7 @@ export function MetricsCard({ type }: MetricsCardProps) {
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.walkability_mean)}
+                  {metrics.scores.walkability_mean.toFixed(1)}
                 </span>
               </div>
             </div>
@@ -239,7 +239,7 @@ export function MetricsCard({ type }: MetricsCardProps) {
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.equity_mean)}
+                  {metrics.scores.equity_mean.toFixed(1)}
                 </span>
               </div>
             </div>
@@ -268,7 +268,7 @@ export function MetricsCard({ type }: MetricsCardProps) {
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.travel_time_score_mean)}
+                  {metrics.scores.travel_time_score_mean.toFixed(1)}
                 </span>
               </div>
             </div>
@@ -297,11 +297,26 @@ export function MetricsCard({ type }: MetricsCardProps) {
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {Math.round(metrics.scores.accessibility_mean)}
+                  {metrics.scores.accessibility_mean.toFixed(2)}
                 </span>
               </div>
             </div>
-            <span className="text-xs text-gray-400">Access</span>
+            <div className="flex flex-col items-center">
+              <span className="text-xs text-gray-400">Access</span>
+              <span className="text-[10px] text-gray-500">/100</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Score Interpretation Guide */}
+        <div className="col-span-2 lg:col-span-4 mt-2">
+          <div className="text-xs text-gray-500 p-2 bg-[#1b2328] rounded border border-white/5">
+            <span className="font-semibold text-gray-400">Score Guide:</span>{' '}
+            <span className="text-red-400">1-20 (Critical)</span> |{' '}
+            <span className="text-orange-400">20-40 (Poor)</span> |{' '}
+            <span className="text-yellow-400">40-60 (Fair)</span> |{' '}
+            <span className="text-green-400">60-80 (Good)</span> |{' '}
+            <span className="text-emerald-400">80-100 (Excellent)</span>
           </div>
         </div>
       </Card>

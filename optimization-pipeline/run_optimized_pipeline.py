@@ -287,31 +287,29 @@ def main() -> None:
             logger.info("Skipping baseline scoring; reusing %s", baseline_nodes)
             print(f"\n[Skip] Baseline scoring (reusing {baseline_nodes.name})")
 
-        if args.force_scoring or not optimized_nodes.exists():
-            # Use optimized in-memory scoring (70+ seconds faster, no intermediate disk I/O)
-            optimized_scoring_command = [
-                python_exe,
-                "-u",  # Unbuffered output
-                str(PROJECT_ROOT / "optimization-pipeline" / "run_optimized_scoring.py"),
-                "--graph-path",
-                str(optimized_graph),
-                "--poi-mapping",
-                str(optimized_mapping),
-                "--baseline-pois-path",
-                str(PROJECT_ROOT / "data" / "raw" / "osm" / "pois.parquet"),
-                "--optimized-pois-path",
-                str(optimized_geojson),
-                "--out-dir",
-                str(analysis_dir),
-                "--config",
-                str(PROJECT_ROOT / "config.yaml"),
-                "--output-prefix",
-                optimized_prefix,
-            ]
-            run_step(optimized_scoring_command, "[OPTIMIZED] Compute optimized scoring outputs (in-memory merge)")
-        else:
-            logger.info("Skipping optimized scoring; reusing %s", optimized_nodes)
-            print(f"\n[Skip] Optimized scoring (reusing {optimized_nodes.name})")
+        # ALWAYS recompute optimized scores to reflect new POI placements from GA optimization
+        # Use optimized in-memory scoring (70+ seconds faster, no intermediate disk I/O)
+        optimized_scoring_command = [
+            python_exe,
+            "-u",  # Unbuffered output
+            str(PROJECT_ROOT / "optimization-pipeline" / "run_optimized_scoring.py"),
+            "--graph-path",
+            str(optimized_graph),
+            "--poi-mapping",
+            str(optimized_mapping),
+            "--baseline-pois-path",
+            str(PROJECT_ROOT / "data" / "raw" / "osm" / "pois.parquet"),
+            "--optimized-pois-path",
+            str(optimized_geojson),
+            "--out-dir",
+            str(analysis_dir),
+            "--config",
+            str(PROJECT_ROOT / "config.yaml"),
+            "--output-prefix",
+            optimized_prefix,
+        ]
+        run_step(optimized_scoring_command, "[OPTIMIZED] Compute optimized scoring outputs (in-memory merge)")
+        logger.info("Optimized scoring completed with new POI placements")
 
     print("\n" + "=" * 80)
     print("Pipeline orchestration complete!")
