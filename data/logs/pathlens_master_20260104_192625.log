@@ -1,0 +1,104 @@
+2026-01-04 19:26:25,209 - PathLensMaster - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/logs/pathlens_master_20260104_192625.log
+2026-01-04 19:26:25,209 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
+2026-01-04 19:26:25,209 - PathLensMaster - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-04 19:26:25,209 - PathLensMaster - INFO - Config: /home/shogun/Documents/PathLens/config.yaml
+2026-01-04 19:26:25,209 - PathLensMaster - INFO - Skipping data collection pipeline
+2026-01-04 19:26:25,210 - PathLensMaster - INFO - ================================================================================
+2026-01-04 19:26:25,210 - PathLensMaster - INFO - PIPELINE: OPTIMIZATION
+2026-01-04 19:26:25,210 - PathLensMaster - INFO - ================================================================================
+2026-01-04 19:26:25,210 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python -u /home/shogun/Documents/PathLens/optimization-pipeline/run_optimization.py --ga-config /home/shogun/Documents/PathLens/config.yaml
+2026-01-04 19:26:25,299 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,299 - __main__ - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/optimization/runs/logs/optimization_run_20260104_192625.log
+2026-01-04 19:26:25,300 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,299 - __main__ - INFO - PathLens Optimization Workflow
+2026-01-04 19:26:25,300 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,299 - __main__ - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-04 19:26:25,304 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,303 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2026-01-04 19:26:25,304 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,304 - __main__ - INFO - ================================================================================
+2026-01-04 19:26:25,304 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,304 - __main__ - INFO - > Extract high travel time nodes
+2026-01-04 19:26:25,304 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,304 - __main__ - INFO - ================================================================================
+2026-01-04 19:26:25,304 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:25,304 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/list_optimizable_nodes.py --input /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --output /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv
+2026-01-04 19:26:26,190 - PathLensMaster - INFO - [optimization] Filtered 4168 nodes above 15.00 minutes; wrote 4168 rows to /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv
+2026-01-04 19:26:26,444 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:26,443 - __main__ - INFO - Extract high travel time nodes completed successfully
+2026-01-04 19:26:26,444 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:26,444 - __main__ - INFO - Auto-detected 12 worker threads (75% of 16 cores)
+2026-01-04 19:26:26,444 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:26,444 - __main__ - INFO - ================================================================================
+2026-01-04 19:26:26,444 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:26,444 - __main__ - INFO - > Run hybrid genetic algorithm with MILP refinement
+2026-01-04 19:26:26,444 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:26,444 - __main__ - INFO - ================================================================================
+2026-01-04 19:26:26,444 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:26,444 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/hybrid_ga.py --nodes-scores /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --high-travel /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv --analysis-dir /home/shogun/Documents/PathLens/data/optimization/runs --config /home/shogun/Documents/PathLens/config.yaml --workers 12
+2026-01-04 19:26:27,139 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,138 [INFO] Loaded configuration from /home/shogun/Documents/PathLens/config.yaml
+2026-01-04 19:26:27,239 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,239 [INFO] Amenity school pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-04 19:26:27,268 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,267 [INFO] Amenity hospital pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-04 19:26:27,295 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,294 [INFO] Amenity pharmacy pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-04 19:26:27,324 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,324 [INFO] Amenity supermarket pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-04 19:26:27,350 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,350 [INFO] Amenity bus_station pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-04 19:26:27,379 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,378 [INFO] Amenity park pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-04 19:26:27,385 - PathLensMaster - INFO - [optimization] 2026-01-04 19:26:27,385 [INFO] Loading graph for diversity penalty computation...
+2026-01-04 19:27:17,629 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,628 [INFO] Loaded graph with 182191 nodes, 487510 edges for diversity penalty
+2026-01-04 19:27:17,639 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,629 [INFO] Analysing amenity distances for 4168 high-travel nodes.
+2026-01-04 19:27:17,709 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,709 [INFO] Amenity school               | mean distance 1854.01 m | available 4168
+2026-01-04 19:27:17,709 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,709 [INFO] Amenity hospital             | mean distance 2541.98 m | available 4168
+2026-01-04 19:27:17,710 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,709 [INFO] Amenity pharmacy             | mean distance 2638.66 m | available 4168
+2026-01-04 19:27:17,710 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,710 [INFO] Amenity supermarket          | mean distance 2762.00 m | available 4168
+2026-01-04 19:27:17,710 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,710 [INFO] Amenity bus_station          | mean distance 4413.21 m | available 4168
+2026-01-04 19:27:17,710 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,710 [INFO] Amenity park                 | mean distance 1896.62 m | available 4168
+2026-01-04 19:27:17,717 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,717 [INFO] Starting hybrid GA: population=75, generations=75
+2026-01-04 19:27:17,718 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,717 [INFO] Running default precompute for 182191 nodes.
+2026-01-04 19:27:17,831 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:17,831 [INFO] Precomputing undirected graph for diversity penalty...
+2026-01-04 19:27:23,239 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:23,239 [INFO] Using 12 worker threads for candidate evaluation.
+2026-01-04 19:27:23,240 - PathLensMaster - INFO - [optimization] 2026-01-04 19:27:23,240 [INFO] Seeded population with 5 greedy templates.
+2026-01-04 19:27:23,255 - PathLensMaster - INFO - [optimization] Generations:   0%|          | 0/75 [00:00<?, ?gen/s]2026-01-04 19:27:23,255 [INFO] Evaluating generation 1/75
+2026-01-04 19:27:23,833 - PathLensMaster - INFO - [optimization] Gen 1 eval:   0%|          | 0/75 [00:00<?, ?it/s][A
+2026-01-04 19:27:23,955 - PathLensMaster - INFO - [optimization] Gen 1 eval:   1%|▏         | 1/75 [00:00<00:42,  1.73it/s][A
+2026-01-04 19:27:24,267 - PathLensMaster - INFO - [optimization] Gen 1 eval:   7%|▋         | 5/75 [00:00<00:07,  8.93it/s][A
+2026-01-04 19:27:24,503 - PathLensMaster - INFO - [optimization] Gen 1 eval:   9%|▉         | 7/75 [00:01<00:08,  7.77it/s][A
+2026-01-04 19:27:24,621 - PathLensMaster - INFO - [optimization] Gen 1 eval:  15%|█▍        | 11/75 [00:01<00:05, 10.81it/s][A
+2026-01-04 19:27:24,784 - PathLensMaster - INFO - [optimization] Gen 1 eval:  17%|█▋        | 13/75 [00:01<00:05, 11.99it/s][A
+2026-01-04 19:27:25,001 - PathLensMaster - INFO - [optimization] Gen 1 eval:  23%|██▎       | 17/75 [00:01<00:03, 15.42it/s][A
+2026-01-04 19:27:25,205 - PathLensMaster - INFO - [optimization] Gen 1 eval:  25%|██▌       | 19/75 [00:01<00:04, 13.29it/s][A
+2026-01-04 19:27:25,372 - PathLensMaster - INFO - [optimization] Gen 1 eval:  29%|██▉       | 22/75 [00:01<00:03, 13.75it/s][A
+2026-01-04 19:27:25,473 - PathLensMaster - INFO - [optimization] Gen 1 eval:  32%|███▏      | 24/75 [00:02<00:03, 13.27it/s][A
+2026-01-04 19:27:25,746 - PathLensMaster - INFO - [optimization] Gen 1 eval:  35%|███▍      | 26/75 [00:02<00:03, 14.50it/s][A
+2026-01-04 19:27:25,867 - PathLensMaster - INFO - [optimization] Gen 1 eval:  37%|███▋      | 28/75 [00:02<00:04, 11.47it/s][A
+2026-01-04 19:27:26,028 - PathLensMaster - INFO - [optimization] Gen 1 eval:  40%|████      | 30/75 [00:02<00:03, 12.55it/s][A
+2026-01-04 19:27:26,326 - PathLensMaster - INFO - [optimization] Gen 1 eval:  43%|████▎     | 32/75 [00:02<00:03, 12.50it/s][A
+2026-01-04 19:27:26,512 - PathLensMaster - INFO - [optimization] Gen 1 eval:  49%|████▉     | 37/75 [00:03<00:02, 14.35it/s][A
+2026-01-04 19:27:26,613 - PathLensMaster - INFO - [optimization] Gen 1 eval:  53%|█████▎    | 40/75 [00:03<00:02, 14.84it/s][A
+2026-01-04 19:27:26,927 - PathLensMaster - INFO - [optimization] Gen 1 eval:  57%|█████▋    | 43/75 [00:03<00:01, 17.46it/s][A
+2026-01-04 19:27:27,076 - PathLensMaster - INFO - [optimization] Gen 1 eval:  60%|██████    | 45/75 [00:03<00:02, 12.58it/s][A
+2026-01-04 19:27:27,185 - PathLensMaster - INFO - [optimization] Gen 1 eval:  64%|██████▍   | 48/75 [00:03<00:01, 14.32it/s][A
+2026-01-04 19:27:27,369 - PathLensMaster - INFO - [optimization] Gen 1 eval:  67%|██████▋   | 50/75 [00:03<00:01, 15.11it/s][A
+2026-01-04 19:27:27,633 - PathLensMaster - INFO - [optimization] Gen 1 eval:  71%|███████   | 53/75 [00:04<00:01, 15.47it/s][A
+2026-01-04 19:27:27,806 - PathLensMaster - INFO - [optimization] Gen 1 eval:  75%|███████▍  | 56/75 [00:04<00:01, 13.85it/s][A
+2026-01-04 19:27:27,918 - PathLensMaster - INFO - [optimization] Gen 1 eval:  79%|███████▊  | 59/75 [00:04<00:01, 14.79it/s][A
+2026-01-04 19:27:28,093 - PathLensMaster - INFO - [optimization] Gen 1 eval:  83%|████████▎ | 62/75 [00:04<00:00, 17.21it/s][A
+2026-01-04 19:27:28,224 - PathLensMaster - INFO - [optimization] Gen 1 eval:  85%|████████▌ | 64/75 [00:04<00:00, 15.41it/s][A
+2026-01-04 19:27:28,333 - PathLensMaster - INFO - [optimization] Gen 1 eval:  89%|████████▉ | 67/75 [00:05<00:00, 17.28it/s][A
+2026-01-04 19:27:28,438 - PathLensMaster - INFO - [optimization] Gen 1 eval:  92%|█████████▏| 69/75 [00:05<00:00, 17.50it/s][A
+2026-01-04 19:27:28,442 - PathLensMaster - INFO - [optimization] Gen 1 eval:  99%|█████████▊| 74/75 [00:05<00:00, 24.70it/s][A
+2026-01-04 19:27:28,442 - PathLensMaster - INFO - [optimization]                                                            [A
+2026-01-04 19:27:46,994 - PathLensMaster - INFO - [optimization] Gen 1 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A
+2026-01-04 19:28:02,345 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  20%|██        | 1/5 [00:18<01:14, 18.55s/it][A
+2026-01-04 19:28:17,866 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  40%|████      | 2/5 [00:33<00:50, 16.67s/it][A
+2026-01-04 19:28:31,093 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  60%|██████    | 3/5 [00:49<00:32, 16.14s/it][A
+2026-01-04 19:28:45,870 - PathLensMaster - INFO - [optimization] Gen 1 local_search:  80%|████████  | 4/5 [01:02<00:14, 14.99s/it][A
+2026-01-04 19:28:45,870 - PathLensMaster - INFO - [optimization] Gen 1 local_search: 100%|██████████| 5/5 [01:17<00:00, 14.91s/it][A
+2026-01-04 19:28:45,871 - PathLensMaster - INFO - [optimization]                                                                  [A2026-01-04 19:28:45,870 [INFO] Generation 1 best fitness 0.0000 | template=None | placements={'school': 30, 'hospital': 25, 'pharmacy': 25, 'supermarket': 30, 'bus_station': 40, 'park': 25} | elapsed=82.62s
+2026-01-04 19:28:45,925 - PathLensMaster - INFO - [optimization] Generations:   1%|▏         | 1/75 [01:22<1:41:58, 82.68s/gen]2026-01-04 19:28:45,925 [INFO] Evaluating generation 2/75
+2026-01-04 19:28:46,302 - PathLensMaster - INFO - [optimization] Gen 2 eval:   0%|          | 0/75 [00:00<?, ?it/s][A
+2026-01-04 19:28:46,420 - PathLensMaster - INFO - [optimization] Gen 2 eval:   1%|▏         | 1/75 [00:00<00:27,  2.66it/s][A
+2026-01-04 19:28:46,559 - PathLensMaster - INFO - [optimization] Gen 2 eval:   7%|▋         | 5/75 [00:00<00:05, 12.33it/s][A
+2026-01-04 19:28:46,795 - PathLensMaster - INFO - [optimization] Gen 2 eval:  11%|█         | 8/75 [00:00<00:04, 15.48it/s][A
+2026-01-04 19:28:46,933 - PathLensMaster - INFO - [optimization] Gen 2 eval:  15%|█▍        | 11/75 [00:00<00:04, 14.23it/s][A
+2026-01-04 19:28:47,164 - PathLensMaster - INFO - [optimization] Gen 2 eval:  23%|██▎       | 17/75 [00:01<00:02, 22.26it/s][A
+2026-01-04 19:28:47,280 - PathLensMaster - INFO - [optimization] Gen 2 eval:  28%|██▊       | 21/75 [00:01<00:02, 20.32it/s][A
+2026-01-04 19:28:47,427 - PathLensMaster - INFO - [optimization] Gen 2 eval:  32%|███▏      | 24/75 [00:01<00:02, 21.55it/s][A
+2026-01-04 19:28:47,545 - PathLensMaster - INFO - [optimization] Gen 2 eval:  36%|███▌      | 27/75 [00:01<00:02, 21.21it/s][A
+2026-01-04 19:28:47,735 - PathLensMaster - INFO - [optimization] Gen 2 eval:  41%|████▏     | 31/75 [00:01<00:01, 24.35it/s][A
+2026-01-04 19:28:47,838 - PathLensMaster - INFO - [optimization] Gen 2 eval:  45%|████▌     | 34/75 [00:01<00:01, 21.25it/s][A
+2026-01-04 19:28:47,979 - PathLensMaster - INFO - [optimization] Gen 2 eval:  49%|████▉     | 37/75 [00:01<00:01, 22.97it/s][A
+2026-01-04 19:28:48,270 - PathLensMaster - INFO - [optimization] Gen 2 eval:  53%|█████▎    | 40/75 [00:02<00:01, 22.44it/s][A
+2026-01-04 19:28:48,431 - PathLensMaster - INFO - [optimization] Gen 2 eval:  57%|█████▋    | 43/75 [00:02<00:01, 16.77it/s][A
+2026-01-04 19:28:48,671 - PathLensMaster - INFO - [optimization] Gen 2 eval:  68%|██████▊   | 51/75 [00:02<00:00, 25.67it/s][A
+2026-01-04 19:28:48,894 - PathLensMaster - INFO - [optimization] Gen 2 eval:  72%|███████▏  | 54/75 [00:02<00:01, 20.85it/s][A
+2026-01-04 19:28:49,034 - PathLensMaster - INFO - [optimization] Gen 2 eval:  76%|███████▌  | 57/75 [00:02<00:00, 18.43it/s][A
+2026-01-04 19:28:49,194 - PathLensMaster - INFO - [optimization] Gen 2 eval:  85%|████████▌ | 64/75 [00:03<00:00, 25.60it/s][A
+2026-01-04 19:28:49,288 - PathLensMaster - INFO - [optimization] Gen 2 eval:  89%|████████▉ | 67/75 [00:03<00:00, 23.74it/s][A
+2026-01-04 19:28:49,288 - PathLensMaster - INFO - [optimization]                                                            [A
+2026-01-04 19:29:04,294 - PathLensMaster - INFO - [optimization] Gen 2 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A

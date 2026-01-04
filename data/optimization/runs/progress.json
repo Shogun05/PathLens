@@ -1,18 +1,12 @@
 {
-  "status": "failed",
-  "stage": "finalizing",
-  "message": "One or more pipelines failed",
-  "percent": 100,
-  "timestamp": "2026-01-03T15:03:46.048211Z",
+  "status": "running",
+  "stage": "optimization",
+  "message": "Running optimization pipeline",
+  "percent": 80,
+  "timestamp": "2026-01-04T13:56:25.210293Z",
   "pipelines": {
     "data": "skipped",
-    "optimization": "failed",
+    "optimization": "running",
     "landuse": "skipped"
-  },
-  "details": {
-    "results": {
-      "optimization": false
-    },
-    "summary_file": "/home/shogun/Documents/PathLens/data/logs/run_summary_20260103_203346.json"
   }
 }

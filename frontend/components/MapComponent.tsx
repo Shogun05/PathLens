@@ -30,6 +30,7 @@ interface MapSuggestion {
   properties: {
     id: string;
     amenity_type: string;
+    description?: string;
   };
 }
 
@@ -85,7 +86,7 @@ export default function MapComponent({
     }).addTo(map);
 
     setMapInstance(map);
-    
+
     if (onMapReady) {
       onMapReady(map);
     }
@@ -102,15 +103,16 @@ export default function MapComponent({
 
     const map = mapInstance;
     const shouldCluster = enableClustering && nodes.length > maxMarkersBeforeClustering;
-    
+
     console.log(`[MapComponent] Processing ${nodes.length} nodes. Clustering: ${shouldCluster}`);
-    
+
     // Clear previous markers/clusters
     const currentMarkers = markersRef.current;
     currentMarkers.forEach(marker => map.removeLayer(marker));
     currentMarkers.clear();
-    
+
     if (markerClusterGroupRef.current) {
+      markerClusterGroupRef.current.clearLayers();
       map.removeLayer(markerClusterGroupRef.current);
       markerClusterGroupRef.current = null;
     }
@@ -127,21 +129,25 @@ export default function MapComponent({
           let size = 'small';
           if (count > 100) size = 'large';
           else if (count > 10) size = 'medium';
-          
+
           return L.divIcon({
             html: `<div><span>${count}</span></div>`,
             className: `marker-cluster marker-cluster-${size}`,
             iconSize: L.point(40, 40)
           });
-        }
+        },
+        chunkedLoading: true, // Enable chunked loading for performance
+        chunkInterval: 200, // Process for 200ms
+        chunkDelay: 50, // Wait 50ms between chunks
       });
+      map.addLayer(markerClusterGroupRef.current);
     }
 
     // Process Nodes
     const markers: L.CircleMarker[] = [];
     nodes.forEach((node) => {
       if (!node.y || !node.x) return;
-      
+
       const id = `node-${node.osmid}`;
       const color = getNodeColor(node.score);
       const popupContent = `
@@ -171,7 +177,6 @@ export default function MapComponent({
     // Add markers to cluster group or map
     if (shouldCluster && markerClusterGroupRef.current) {
       markerClusterGroupRef.current.addLayers(markers);
-      map.addLayer(markerClusterGroupRef.current);
     } else {
       markers.forEach(marker => marker.addTo(map));
     }
@@ -209,13 +214,13 @@ export default function MapComponent({
         offset: [0, -10],
         className: 'custom-tooltip'
       });
-      
+
       if (onSuggestionClick) {
         marker.on('click', () => {
           onSuggestionClick(suggestion.properties.id);
         });
       }
-      
+
       marker.addTo(map);
       currentMarkers.set(id, marker);
     });
@@ -240,12 +245,12 @@ export default function MapComponent({
   const handleMouseDown = (e: React.MouseEvent) => {
     const map = mapInstance;
     if (!map) return;
-    
+
     const point = L.point(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
     const latlng = map.containerPointToLatLng(point);
-    
+
     startLatLngRef.current = latlng;
-    
+
     if (rectangleRef.current) {
       map.removeLayer(rectangleRef.current);
       rectangleRef.current = null;
@@ -254,15 +259,15 @@ export default function MapComponent({
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!startLatLngRef.current || !mapInstance) return;
-    
+
     const map = mapInstance;
     const point = L.point(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
     const latlng = map.containerPointToLatLng(point);
-    
+
     if (rectangleRef.current) {
       map.removeLayer(rectangleRef.current);
     }
-    
+
     const bounds = L.latLngBounds(startLatLngRef.current, latlng);
     rectangleRef.current = L.rectangle(bounds, {
       color: '#23CE6B',
@@ -275,15 +280,15 @@ export default function MapComponent({
 
   const handleMouseUp = (e: React.MouseEvent) => {
     if (!startLatLngRef.current || !mapInstance) return;
-    
+
     const map = mapInstance;
     const point = L.point(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
     const latlng = map.containerPointToLatLng(point);
-    
+
     if (rectangleRef.current) {
       map.removeLayer(rectangleRef.current);
     }
-    
+
     const bounds = L.latLngBounds(startLatLngRef.current, latlng);
     rectangleRef.current = L.rectangle(bounds, {
       color: '#23CE6B',
@@ -309,7 +314,7 @@ export default function MapComponent({
       `}</style>
       <div ref={mapContainerRef} className={className} />
       {drawingMode && (
-        <div 
+        <div
           className="absolute inset-0 z-[1000] cursor-crosshair"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
@@ -322,7 +327,7 @@ export default function MapComponent({
 
 function getNodeColor(score?: number): string {
   if (score === undefined) return '#8fd6ff';
-  
+
   // 10-level color gradient from red to green
   const colorScale = [
     '#ff0000', // 0-10: Critical - Red
@@ -336,7 +341,7 @@ function getNodeColor(score?: number): string {
     '#33ff00', // 80-90: Excellent - Bright Green
     '#00ff00', // 90-100: Exceptional - Pure Green
   ];
-  
+
   const index = Math.min(9, Math.floor(score / 10));
   return colorScale[index];
 }

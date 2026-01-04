@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-04T18:11:53.202377",
+  "timestamp": "2026-01-04T19:26:25.299900",
   "arguments": {
     "python": "/home/shogun/Documents/PathLens/venv/bin/python",
-    "skip_candidates": true,
-    "skip_ga": true,
-    "skip_map_refresh": true,
+    "skip_candidates": false,
+    "skip_ga": false,
+    "skip_map_refresh": false,
     "skip_pipeline": false,
     "candidate_threshold": null,
     "candidate_limit": null,
@@ -13,7 +13,7 @@
     "ga_workers": null,
     "ga_random_seed": null,
     "ga_local_search_budget": null,
-    "ga_config": null,
+    "ga_config": "/home/shogun/Documents/PathLens/config.yaml",
     "map_skip_metrics": false,
     "pipeline_refresh_map": false,
     "pipeline_skip_map_metrics": false,
@@ -27,18 +27,18 @@
   },
   "python_executable": "/home/shogun/Documents/PathLens/venv/bin/python",
   "steps_executed": {
-    "candidates": false,
-    "ga": false,
-    "map_refresh": false,
+    "candidates": true,
+    "ga": true,
+    "map_refresh": true,
     "pipeline": true
   }
 }{
-  "timestamp": "2026-01-04T18:11:53.202377",
+  "timestamp": "2026-01-04T19:26:25.299900",
   "arguments": {
     "python": "/home/shogun/Documents/PathLens/venv/bin/python",
-    "skip_candidates": true,
-    "skip_ga": true,
-    "skip_map_refresh": true,
+    "skip_candidates": false,
+    "skip_ga": false,
+    "skip_map_refresh": false,
     "skip_pipeline": false,
     "candidate_threshold": null,
     "candidate_limit": null,
@@ -47,7 +47,7 @@
     "ga_workers": null,
     "ga_random_seed": null,
     "ga_local_search_budget": null,
-    "ga_config": null,
+    "ga_config": "/home/shogun/Documents/PathLens/config.yaml",
     "map_skip_metrics": false,
     "pipeline_refresh_map": false,
     "pipeline_skip_map_metrics": false,
@@ -61,9 +61,9 @@
   },
   "python_executable": "/home/shogun/Documents/PathLens/venv/bin/python",
   "steps_executed": {
-    "candidates": false,
-    "ga": false,
-    "map_refresh": false,
+    "candidates": true,
+    "ga": true,
+    "map_refresh": true,
     "pipeline": true
   }
 }

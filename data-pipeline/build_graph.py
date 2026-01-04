@@ -26,10 +26,14 @@ def normalize_list_columns(gdf):
         if col == 'geometry':
             continue
         # Check if column contains any lists
-        if gdf[col].apply(lambda x: isinstance(x, (list, tuple))).any():
+        # Check if column contains any lists or sets
+        if gdf[col].apply(lambda x: isinstance(x, (list, tuple, set))).any():
             gdf[col] = gdf[col].apply(
-                lambda x: ','.join(map(str, x)) if isinstance(x, (list, tuple)) else str(x) if pd.notna(x) else None
+                lambda x: ','.join(map(str, x)) if isinstance(x, (list, tuple, set)) else str(x) if pd.notna(x) else None
             )
+        # Explicitly handle osmid_original if present to ensure it's a string
+        if col == "osmid_original":
+             gdf[col] = gdf[col].astype(str)
     return gdf
 
 
@@ -197,6 +201,19 @@ def add_edge_lengths_compat(G: nx.MultiDiGraph) -> nx.MultiDiGraph:
 def simplify_and_annotate(G):
     # Project to UTM for metric calculations
     G_proj = ox.project_graph(G)
+    
+    # Consolidate intersections to reduce node count (merges complex junctions)
+    # Tolerance of 15m is standard for street networks
+    print("Consolidating complex intersections (tolerance=15m)...")
+    sys.stdout.flush()
+    try:
+        # rebuild_graph=True ensures the graph is fully reconstructed with new nodes
+        G_proj = ox.consolidate_intersections(G_proj, tolerance=15, rebuild_graph=True, dead_ends=False)
+        print(f"Graph consolidated: {G_proj.number_of_nodes()} nodes, {G_proj.number_of_edges()} edges")
+    except Exception as e:
+        print(f"[WARNING] Consolidation failed (skipping): {e}")
+    sys.stdout.flush()
+
     # Simplify (merges nodes on straight lines) only if not already simplified
     if graph_already_simplified(G_proj):
         print("Graph is already simplified; skipping simplify_graph().")

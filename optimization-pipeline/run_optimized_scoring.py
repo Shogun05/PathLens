@@ -18,6 +18,7 @@ from pathlib import Path
 
 import geopandas as gpd
 import pandas as pd
+import osmnx as ox
 
 # Add data-pipeline to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "data-pipeline"))
@@ -156,6 +157,48 @@ def main():
         pois = pois.to_crs(nodes.crs)
     pois = ensure_poi_identifiers(pois)
     
+    # Update mapping for new POIs
+    # The merged 'pois' has baseline first (indices 0..N-1) then optimized (N..N+M).
+    # We need to add mapping for the optimized POIs.
+    baseline_count = len(baseline_pois)
+    new_pois_slice = pois.iloc[baseline_count:]
+    
+    if not new_pois_slice.empty:
+        print(f"[MAPPING] Snapping {len(new_pois_slice)} new POIs to nearest nodes...")
+        sys.stdout.flush()
+        
+        # Get coordinates for snapping
+        # Ensure points are compatible with graph CRS (usually projected)
+        X = new_pois_slice.geometry.x.values
+        Y = new_pois_slice.geometry.y.values
+        
+        # Snapping
+        nearest_nodes = ox.nearest_nodes(G, X, Y)
+        
+        # Create new mapping
+        # We need to verify if 'mapping' typically has specific columns or if index is key.
+        # Based on nearest_amenity_distances, it iterates rows and expects 'nearest_node'
+        # and optionally 'poi_id' column or 'poi_index' (which is the index).
+        
+        new_mapping = pd.DataFrame({
+            "nearest_node": nearest_nodes,
+        }, index=new_pois_slice.index)
+        
+        if "poi_id" in new_pois_slice.columns:
+            new_mapping["poi_id"] = new_pois_slice["poi_id"]
+        elif "id" in new_pois_slice.columns:
+            new_mapping["poi_id"] = new_pois_slice["id"]
+            
+        # Append to existing mapping
+        # We assume existing mapping is 0-indexed corresponding to baseline_pois
+        mapping = pd.concat([mapping, new_mapping])
+        
+        if mapping.index.name != "poi_index":
+            mapping.index.name = "poi_index"
+            
+        print(f"[MAPPING] Updated mapping total: {len(mapping)}")
+        sys.stdout.flush()
+    
     # Rest of compute_scores logic (same as original)
     amenity_types = list(amenity_weights.keys())
     
@@ -172,7 +215,7 @@ def main():
         save_to_cache(nodes, structure_cache_path)
     
     # Distance computation
-    distance_cache_path = cache_dir / f"distances_{len(mapping)}mappings_{len(amenity_types)}types.parquet"
+    distance_cache_path = cache_dir / f"distances_{len(mapping)}mappings_{len(pois)}pois_{len(amenity_types)}types.parquet"
     distances = load_from_cache(distance_cache_path) if not args.force and distance_cache_path.exists() else None
     if distances is None:
         print("[COMPUTE] Computing amenity distances...")

@@ -59,13 +59,13 @@ export default function OptimizedPage() {
           setSuggestions([]);
         } else {
           // Load metrics, nodes, and suggestions in parallel
-          console.log('Loading optimized data (limit: 500 nodes)...');
+          console.log('Loading optimized data (full city)...');
           const [metrics, nodes, suggsCollection, optimizationResults] = await Promise.all([
             pathLensAPI.getMetricsSummary('optimized').catch(err => {
               console.warn('Failed to load metrics:', err);
               return { scores: { accessibility_mean: 0 } };
             }),
-            pathLensAPI.getNodes({ type: 'optimized', limit: 500 }),
+            pathLensAPI.getNodes({ type: 'optimized' }),
             pathLensAPI.getOptimizationPois().catch(() => ({ features: [] })), // Use optimized POIs endpoint
             pathLensAPI.getOptimizationResults().catch(() => null),
           ]);
@@ -261,8 +261,8 @@ export default function OptimizedPage() {
                       <Card
                         key={suggestionId}
                         className={`p-3 border transition-all cursor-pointer ${isSelected
-                            ? 'bg-[#8fd6ff]/10 border-[#8fd6ff]/50'
-                            : 'bg-[#1b2328] border-white/5 hover:border-white/20'
+                          ? 'bg-[#8fd6ff]/10 border-[#8fd6ff]/50'
+                          : 'bg-[#1b2328] border-white/5 hover:border-white/20'
                           }`}
                         onClick={() => toggleSuggestion(suggestionId)}
                       >
