@@ -42,7 +42,7 @@ export default function OptimizedPage() {
       try {
         setLoading(true);
         setError(null);
-        
+
         if (demoMode) {
           // Use demo data
           const demoNodes = generateDemoNodes([12.9716, 77.5946], 50).map(n => ({
@@ -50,13 +50,13 @@ export default function OptimizedPage() {
             score: Math.min(100, (n.score || 0) + 15)
           }));
           setOptimizedNodes(demoNodes);
-          
+
           const avgScore = demoNodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / demoNodes.length;
           setOptimizedScore(avgScore);
-          
+
           // Add some demo suggestions if needed, or clear them
           // For now, let's keep suggestions empty or mock them if requested
-          setSuggestions([]); 
+          setSuggestions([]);
         } else {
           // Load metrics, nodes, and suggestions in parallel
           console.log('Loading optimized data (limit: 500 nodes)...');
@@ -69,14 +69,14 @@ export default function OptimizedPage() {
             pathLensAPI.getOptimizationPois().catch(() => ({ features: [] })), // Use optimized POIs endpoint
             pathLensAPI.getOptimizationResults().catch(() => null),
           ]);
-          
+
           console.log(`Loaded ${nodes?.length || 0} optimized nodes`);
           if (nodes && nodes.length > 0) setOptimizedNodes(nodes);
           else setOptimizedNodes([]);
-          
+
           // Handle GeoJSON FeatureCollection from optimization POIs
           const suggestionsList = suggsCollection?.features || [];
-          
+
           if (suggestionsList && suggestionsList.length > 0) {
             console.log(`Loaded ${suggestionsList.length} optimization suggestions`);
             setSuggestions(suggestionsList);
@@ -86,13 +86,13 @@ export default function OptimizedPage() {
           } else {
             setSuggestions([]);
           }
-          
+
           // Use optimization results for score if available
           if (optimizationResults?.metrics) {
             console.log('Optimization metrics:', optimizationResults.metrics);
             // Score is derived from nodes, but we can show optimization metadata
           }
-          
+
           // Use pre-computed city-wide average from metrics API (all 182k nodes)
           const metricsScore = metrics?.scores?.accessibility_mean;
           if (metricsScore && metricsScore > 0) {
@@ -163,13 +163,13 @@ export default function OptimizedPage() {
               <span className="text-white font-medium">Optimization</span>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-3">
             <div className="flex items-center bg-[#1b2328] rounded-lg p-1 border border-white/10">
               <button className="px-3 py-1.5 rounded text-xs font-medium bg-[#8fd6ff] text-[#101518]">
                 Single View
               </button>
-              <button 
+              <button
                 className="px-3 py-1.5 rounded text-xs font-medium text-gray-400 hover:text-white"
                 onClick={() => router.push('/comparison')}
               >
@@ -194,7 +194,7 @@ export default function OptimizedPage() {
 
       <div className="flex flex-1 overflow-hidden relative">
         {/* Sidebar - Moved to LEFT side for contrast with baseline */}
-        <motion.aside 
+        <motion.aside
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
@@ -203,9 +203,9 @@ export default function OptimizedPage() {
         >
           <div className="p-6 border-b border-white/10">
             <div className="flex items-center gap-2 mb-4">
-              <Button 
-                variant="ghost" 
-                size="icon" 
+              <Button
+                variant="ghost"
+                size="icon"
                 className="h-8 w-8 -ml-2 text-gray-400 hover:text-white"
                 onClick={() => router.push('/baseline')}
               >
@@ -213,7 +213,7 @@ export default function OptimizedPage() {
               </Button>
               <h1 className="text-2xl font-bold text-white">Optimization</h1>
             </div>
-            
+
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-end gap-2">
                 <span className="text-4xl font-bold text-[#8fd6ff]">{optimizedScore.toFixed(1)}</span>
@@ -224,7 +224,7 @@ export default function OptimizedPage() {
               </Badge>
             </div>
             <p className="text-sm text-gray-400">Projected Accessibility Score</p>
-            
+
             {/* Error message display */}
             {error && (
               <div className="mt-4 p-3 bg-red-500/10 border border-red-500/30 rounded-lg">
@@ -252,52 +252,55 @@ export default function OptimizedPage() {
                   suggestions.map((suggestion, index) => {
                     const Icon = getAmenityIcon(suggestion.properties?.amenity_type);
                     // Create unique key combining node ID and amenity type to handle multiple POIs at same node
-                    const suggestionId = suggestion.properties?.id 
-                      ? `${suggestion.properties.id}-${suggestion.properties?.amenity_type || index}` 
+                    const suggestionId = suggestion.properties?.id
+                      ? `${suggestion.properties.id}-${suggestion.properties?.amenity_type || index}`
                       : `suggestion-${index}`;
                     const isSelected = selectedSuggestionIds.has(suggestionId);
-                    
+
                     return (
-                      <Card 
+                      <Card
                         key={suggestionId}
-                        className={`p-3 border transition-all cursor-pointer ${
-                          isSelected 
-                          ? 'bg-[#8fd6ff]/10 border-[#8fd6ff]/50' 
-                          : 'bg-[#1b2328] border-white/5 hover:border-white/20'
-                      }`}
-                      onClick={() => toggleSuggestion(suggestionId)}
-                    >
-                      <div className="flex items-start gap-3">
-                        <div className={`p-2 rounded-lg ${isSelected ? 'bg-[#8fd6ff]/20 text-[#8fd6ff]' : 'bg-white/5 text-gray-400'}`}>
-                          <Icon className="h-4 w-4" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex justify-between items-start">
-                            <h4 className="font-medium text-sm text-white truncate">
-                              New {suggestion.properties?.amenity_type || 'Amenity'}
-                            </h4>
-                            <Switch 
-                              checked={isSelected}
-                              onCheckedChange={() => toggleSuggestion(suggestionId)}
-                              className="scale-75 data-[state=checked]:bg-[#8fd6ff]"
-                            />
+                        className={`p-3 border transition-all cursor-pointer ${isSelected
+                            ? 'bg-[#8fd6ff]/10 border-[#8fd6ff]/50'
+                            : 'bg-[#1b2328] border-white/5 hover:border-white/20'
+                          }`}
+                        onClick={() => toggleSuggestion(suggestionId)}
+                      >
+                        <div className="flex items-start gap-3">
+                          <div className={`p-2 rounded-lg ${isSelected ? 'bg-[#8fd6ff]/20 text-[#8fd6ff]' : 'bg-white/5 text-gray-400'}`}>
+                            <Icon className="h-4 w-4" />
                           </div>
-                          <p className="text-xs text-gray-400 mt-1 truncate">
-                            {suggestion.properties?.description || 'Proposed location based on gap analysis'}
-                          </p>
-                          <div className="flex items-center gap-2 mt-2">
-                            <Badge variant="secondary" className="text-[10px] h-5 bg-white/5 text-gray-400">
-                              +{suggestion.properties?.impact_score || 5} pts
-                            </Badge>
-                            <span className="text-[10px] text-gray-500">
-                              Cost: ${suggestion.properties?.cost_estimate || '50k'}
-                            </span>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex justify-between items-start">
+                              <h4 className="font-medium text-sm text-white truncate">
+                                New {suggestion.properties?.amenity_type || 'Amenity'}
+                              </h4>
+                              <Switch
+                                checked={isSelected}
+                                onCheckedChange={() => toggleSuggestion(suggestionId)}
+                                className="scale-75 data-[state=checked]:bg-[#8fd6ff]"
+                              />
+                            </div>
+                            <p className="text-xs text-gray-400 mt-1 truncate">
+                              {suggestion.properties?.description || 'Proposed location based on gap analysis'}
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge variant="secondary" className="text-[10px] h-5 bg-white/5 text-gray-400">
+                                +{suggestion.properties?.impact_score || 5} pts
+                              </Badge>
+                              <span className="text-[10px] text-gray-500">
+                                Cost: ${suggestion.properties?.cost_estimate || '50k'}
+                              </span>
+                              {/* Node ID for manual verification */}
+                              <span className="text-[10px] text-gray-600 font-mono">
+                                ID: {suggestion.properties?.id || 'N/A'}
+                              </span>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </Card>
-                  );
-                }))}
+                      </Card>
+                    );
+                  }))}
               </div>
             </div>
           </div>
@@ -305,12 +308,12 @@ export default function OptimizedPage() {
           {/* Network & Accessibility Metrics - Main scrollable section */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {!demoMode && <MetricsCard type="optimized" />}
-            
+
             {/* Distribution & Critical Nodes */}
             {!demoMode && (
               <>
                 <NodeDistribution nodes={optimizedNodes} />
-                <CriticalNodes 
+                <CriticalNodes
                   nodes={optimizedNodes}
                   onLocateNode={(node) => {
                     console.log('Locate node:', node);
@@ -323,7 +326,7 @@ export default function OptimizedPage() {
 
           {/* Update Score Button - Fixed at bottom */}
           <div className="p-4 border-t border-white/10 bg-[#0f1c23]">
-            <Button 
+            <Button
               className="w-full bg-[#8fd6ff] hover:bg-[#b0e2ff] text-[#101518] font-bold"
               onClick={handleRescore}
               disabled={isRescoring}

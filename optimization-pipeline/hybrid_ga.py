@@ -436,12 +436,12 @@ def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, objec
                 dist_meters = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
                 
                 # Strong penalty if new placements are too close to each other
-                # Target: minimum 3000m spacing between new amenities of same type
-                min_spacing = 3000.0
+                # Target: minimum 1200m spacing between new amenities of same type (match user rule)
+                min_spacing = 1200.0
                 if dist_meters < min_spacing:
                     ratio = dist_meters / min_spacing
                     penalty = (1.0 - ratio) ** 2  # Quadratic penalty
-                    diversity_penalty += penalty * 5.0  # STRONG penalty weight
+                    diversity_penalty += penalty * 1000.0  # STRONG penalty weight (was 5.0)
 
     fitness = total_gain - 0.0005 * travel_penalty - diversity_penalty - proximity_penalty
     fitness = max(fitness, 0.0)
@@ -1030,13 +1030,61 @@ class HybridGA:
         path = self.analysis_dir / f"generation_{generation:04d}.json"
         path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
+    def filter_conflicts(self, candidate: Candidate) -> Candidate:
+        """Post-process candidate to remove nodes violating spacing constraints."""
+        placements: Dict[str, Tuple[str, ...]] = {}
+        nodes = self.context.nodes
+        min_spacing = 1200.0
+        
+        # Ensure x/y columns exist
+        has_coords = 'x' in nodes.columns and 'y' in nodes.columns
+        if not has_coords:
+             logging.warning("Missing x/y columns in nodes; skipping conflict filtering.")
+             return candidate
+             
+        for amenity, node_ids in candidate.placements.items():
+            valid_nodes = []
+            for nid in node_ids:
+                nid = str(nid)
+                if nid in nodes.index:
+                    valid_nodes.append({
+                        "id": nid,
+                        "x": float(nodes.loc[nid, "x"]),
+                        "y": float(nodes.loc[nid, "y"])
+                    })
+            
+            accepted = []
+            for node in valid_nodes:
+                conflict = False
+                for acc in accepted:
+                    dist = math.sqrt((node["x"] - acc["x"])**2 + (node["y"] - acc["y"])**2)
+                    if dist < min_spacing:
+                        conflict = True
+                        break
+                if not conflict:
+                    accepted.append(node)
+                    
+            placements[amenity] = tuple(sorted(n["id"] for n in accepted))
+            
+        return Candidate(placements=placements, template_id=candidate.template_id)
+
     def persist_best(self, generation: int, candidate: Candidate, metrics: Dict[str, object]) -> None:
+        # Filter conflicts before saving
+        cleaned_candidate = self.filter_conflicts(candidate)
+        
+        # Update metrics to reflect count changes
+        # We don't recompute fitness/penalties here, just the counts
+        count_metrics = metrics.copy()
+        if "placements" in count_metrics:
+            new_placements = {k: len(v) for k, v in cleaned_candidate.placements.items()}
+            count_metrics["placements"] = new_placements
+        
         path = self.analysis_dir / "best_candidate.json"
         payload = {
             "generation": generation,
-            "candidate": candidate.signature,
-            "template": candidate.template_id,
-            "metrics": metrics,
+            "candidate": cleaned_candidate.signature,
+            "template": cleaned_candidate.template_id,
+            "metrics": count_metrics,
         }
         path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 

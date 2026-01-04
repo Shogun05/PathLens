@@ -1,307 +1,286 @@
 [
   {
-    "candidate": "bus_station:11412109104|hospital:12686348987,2146206128,7383827853,7383997869,7466947845,9605401088|park:7383997868|pharmacy:2247838125,9605401058|school:2248172229,7331215077,7616113529|supermarket:12686348972,3034669866",
+    "candidate": "bus_station:7208384033,7482957150|park:7383997866|pharmacy:6143098258|school:|supermarket:12686262445,2396285164,3034670049,9976821047",
     "metrics": {
       "fitness": 0.0,
       "distance_gain": 0.0,
-      "travel_penalty": 22.30812416666667,
-      "diversity_penalty": 21.530359584436066,
+      "travel_penalty": 18.434476562500002,
+      "diversity_penalty": 569.1682096549109,
       "proximity_penalty": 0.0,
       "placements": {
-        "supermarket": 2,
-        "pharmacy": 2,
         "park": 1,
-        "hospital": 6,
-        "bus_station": 1,
-        "school": 3
+        "bus_station": 2,
+        "supermarket": 4,
+        "pharmacy": 1
       },
       "best_distances": {
-        "supermarket": 5223.017000000001,
-        "pharmacy": 4324.054,
-        "park": 4234.107,
-        "hospital": 4306.731000000001,
-        "bus_station": 6251.866000000002,
-        "school": 2065.4050000000007
+        "park": 4320.309,
+        "bus_station": 6485.822000000003,
+        "supermarket": 4807.396999999997,
+        "pharmacy": 4410.753999999999
       },
       "amenity_scores": {
+        "park": 0.0,
+        "bus_station": 0.0,
         "supermarket": 0.0,
-        "pharmacy": 0.0,
-        "park": 0.0,
-        "hospital": 0.0,
-        "bus_station": 0.0,
-        "school": 0.0
+        "pharmacy": 0.0
       }
     }
   },
   {
-    "candidate": "bus_station:7482957134|hospital:|park:10035832558,10094480914,10293847337,12686348983,12738317797,13057568253,13116199669,4029957205,7279291001,7383997868,7462094581,7616136975,9186471995|pharmacy:3034669696|school:11412099965,7616113557|supermarket:",
+    "candidate": "bus_station:|hospital:2248079880|park:10864066906|pharmacy:2146206407|school:10293847415,10293847435,2248172232,7208384011|supermarket:",
     "metrics": {
       "fitness": 0.0,
       "distance_gain": 0.0,
-      "travel_penalty": 21.259708088235293,
-      "diversity_penalty": 40.05943191672049,
+      "travel_penalty": 23.078837500000002,
+      "diversity_penalty": 0.0,
       "proximity_penalty": 0.0,
       "placements": {
-        "pharmacy": 1,
-        "park": 13,
-        "bus_station": 1,
-        "school": 2
-      },
-      "best_distances": {
-        "pharmacy": 4343.323999999999,
-        "park": 1361.374,
-        "bus_station": 8608.154000000004,
-        "school": 2249.2140000000004
-      },
-      "amenity_scores": {
-        "pharmacy": 0.0,
-        "park": 0.0,
-        "bus_station": 0.0,
-        "school": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:11184891428|hospital:7384110693|park:10035832558,10094480914,12738300816,12738317797,13057568253,1414325928,4029957205,5329111463,7265924679,7377821394,7384110696|pharmacy:10181924588,10206957258,12260393126,12686262451,12738316921,13295961105,2146206387,2146206407,3034669675,3034669726,3034669835,7279290953,7383997877,7384110691,7402050720,9605401059,9605401098|school:11412099965|supermarket:7279291154,7383827876,7451032924",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 20.952854779411773,
-      "diversity_penalty": 186.5723265166115,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 3,
-        "pharmacy": 17,
-        "park": 11,
+        "park": 1,
         "hospital": 1,
-        "bus_station": 1,
-        "school": 1
-      },
-      "best_distances": {
-        "supermarket": 5719.269999999999,
-        "pharmacy": 4014.0509999999995,
-        "park": 1361.374,
-        "hospital": 4932.482000000001,
-        "bus_station": 8310.535000000003,
-        "school": 3193.4689999999987
-      },
-      "amenity_scores": {
-        "supermarket": 0.0,
-        "pharmacy": 0.0,
-        "park": 0.0,
-        "hospital": 0.0,
-        "bus_station": 0.0,
-        "school": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:|hospital:|park:10035832543,10094480914,12686348983,12738300816,12738317797,13057568253,13116199669,7265924679,7279291001,7377821394,7384110696,7462094581,7616136975|pharmacy:|school:7331215121,7396718547|supermarket:12738316918,12738351267,2224646221,3034669889,3034669986,7298266837,9605401026,9605401082",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 22.335736956521743,
-      "diversity_penalty": 76.06951866567289,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 8,
-        "park": 13,
-        "school": 2
-      },
-      "best_distances": {
-        "supermarket": 3297.915,
-        "park": 1361.374,
-        "school": 2042.9219999999998
-      },
-      "amenity_scores": {
-        "supermarket": 0.0,
-        "park": 0.0,
-        "school": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:420078997,7482957221|hospital:12686262442,2146206128,2248079885,2250084211,3034669837|park:|pharmacy:10181924588,10206957258,12260393126,12738316921,2247838125,2248079844,7279291138,9605401058,9605401059|school:11411801237,11432074469,13057568253,2146206169,2248079767,2248079846,2248079855,2248079877,2248172229,3034693652,3818748083,420078999,7298266857|supermarket:10208740948,2224646243,3034669986,3034670040,7279291154,9605401082",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 23.070891428571432,
-      "diversity_penalty": 112.9945861722081,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 6,
-        "pharmacy": 9,
-        "hospital": 5,
-        "bus_station": 2,
-        "school": 13
-      },
-      "best_distances": {
-        "supermarket": 3460.8320000000003,
-        "pharmacy": 4014.0509999999995,
-        "hospital": 4306.731000000001,
-        "bus_station": 6459.353000000002,
-        "school": 2687.6530000000002
-      },
-      "amenity_scores": {
-        "supermarket": 0.0,
-        "pharmacy": 0.0,
-        "hospital": 0.0,
-        "bus_station": 0.0,
-        "school": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:10095028665,355839931,7089243677,9186472002|hospital:|park:12686348983,4029957205,4948727360,5329111461|pharmacy:|school:10039003848,11411896081,11412099965,12260393126,2248079855,2248079877,2248079917,2248079925,3818748083,3881296516,4948727360,7428873776,7616113557,7616136964,951469715|supermarket:12157495756,12686348972,12738351267,1557129286,2224646221,3034669686,3034669691,7279261768,7279291154,7383997875,9605401026,9605401082",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 22.254633823529417,
-      "diversity_penalty": 164.6205360254053,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 12,
-        "park": 4,
-        "bus_station": 4,
-        "school": 15
-      },
-      "best_distances": {
-        "supermarket": 3297.915,
-        "park": 1491.338,
-        "bus_station": 4201.6219999999985,
-        "school": 1944.725
-      },
-      "amenity_scores": {
-        "supermarket": 0.0,
-        "park": 0.0,
-        "bus_station": 0.0,
-        "school": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:|hospital:12157495770,12686348986,12686348987,12738270729,2248172072,7384110714,7384756363,7484505083|park:1414325928|pharmacy:7279261769,9605401098|school:11411896081,11432074477,11854273015,7331215077,7616113557|supermarket:1118407993,11946864945,12157495756,12157495774,12768091257,13260780851,2224646212,2224646218,3034669941,3034693652,6143098258,7383997875,9605401029,9605401075",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 22.378711250000002,
-      "diversity_penalty": 157.82447518986922,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 14,
-        "pharmacy": 2,
-        "park": 1,
-        "hospital": 8,
-        "school": 5
-      },
-      "best_distances": {
-        "supermarket": 3257.987,
-        "pharmacy": 5084.280000000002,
-        "park": 3938.167999999999,
-        "hospital": 3448.013,
-        "school": 2249.2140000000004
-      },
-      "amenity_scores": {
-        "supermarket": 0.0,
-        "pharmacy": 0.0,
-        "park": 0.0,
-        "hospital": 0.0,
-        "school": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:10094964490,10095028665,10206651837,10216399585,10805316330,11184891428,11403024197,11409061198,12435547104,13236433336,420078997,420078998,6749078131,6749129039,7089243677,7089247227,7089247237,7090527679,7090538998,7090558246,7090776366,7175175799,7462009629,9186472002,9620224903,9784623498|hospital:10208744226,2248172072,3034669698,7383997869|park:12738270728,5329111463,7484505025|pharmacy:2247838125,3034669842|school:|supermarket:12686348972,3034669669,3034669672,3034669686,3034669866,7279291154,7279291156,7383997875",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 19.95341337209302,
-      "diversity_penalty": 525.0168948176761,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 8,
-        "pharmacy": 2,
-        "park": 3,
-        "hospital": 4,
-        "bus_station": 26
-      },
-      "best_distances": {
-        "supermarket": 5223.017000000001,
-        "pharmacy": 4295.271000000001,
-        "park": 1654.7619999999997,
-        "hospital": 4578.029,
-        "bus_station": 4201.6219999999985
-      },
-      "amenity_scores": {
-        "supermarket": 0.0,
-        "pharmacy": 0.0,
-        "park": 0.0,
-        "hospital": 0.0,
-        "bus_station": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:420078999,7090556043|hospital:2248079880,7279291155,9605401065|park:10035832558,10094480914,10293847337,12686348983,12686348986,12738317797,13057568253,13116199669,13236433341,4029957205,7279291001,7383997868,7462094581,7462094584,9186471995,9953920291|pharmacy:10171100134,10206957258,10211194786,11431559323,12260393126,3034669696,7279261769,7298266857,7383997859,7384110691,7384110714,9612274733|school:7616113557|supermarket:3034669986,9605401082",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 22.720932986111112,
-      "diversity_penalty": 143.2360638998477,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 2,
-        "pharmacy": 12,
-        "park": 16,
-        "hospital": 3,
-        "bus_station": 2,
-        "school": 1
-      },
-      "best_distances": {
-        "supermarket": 5226.401999999998,
-        "pharmacy": 4232.9439999999995,
-        "park": 1361.374,
-        "hospital": 4530.179,
-        "bus_station": 6593.427000000001,
-        "school": 2249.2140000000004
-      },
-      "amenity_scores": {
-        "supermarket": 0.0,
-        "pharmacy": 0.0,
-        "park": 0.0,
-        "hospital": 0.0,
-        "bus_station": 0.0,
-        "school": 0.0
-      }
-    }
-  },
-  {
-    "candidate": "bus_station:7482957134|hospital:|park:7616136975|pharmacy:9605401098|school:2248079806,2248079855|supermarket:12157495771,12157495774,12686348972,3034669669,6143098258,7383827880,7383997875,9781258153",
-    "metrics": {
-      "fitness": 0.0,
-      "distance_gain": 0.0,
-      "travel_penalty": 19.939141346153846,
-      "diversity_penalty": 47.03123983306717,
-      "proximity_penalty": 0.0,
-      "placements": {
-        "supermarket": 8,
         "pharmacy": 1,
+        "school": 4
+      },
+      "best_distances": {
+        "park": 2214.581,
+        "hospital": 4530.179,
+        "pharmacy": 4106.492999999999,
+        "school": 2111.094
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "hospital": 0.0,
+        "pharmacy": 0.0,
+        "school": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "bus_station:|hospital:10206957266,12686262443,12686262451,12686348962,12738300816,1414325925,1942843996,2250057681,2250057683,7279291143,7384110716,7451032924,7467062446|park:5329111463|pharmacy:3034669686|school:10287783893|supermarket:12738300813,12738316925,3034669845,3034669974",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 20.707772500000004,
+      "diversity_penalty": 13097.287161028995,
+      "proximity_penalty": 0.0,
+      "placements": {
         "park": 1,
-        "bus_station": 1,
+        "supermarket": 4,
+        "hospital": 13,
+        "pharmacy": 1,
+        "school": 1
+      },
+      "best_distances": {
+        "park": 1654.7619999999997,
+        "supermarket": 5058.205999999998,
+        "hospital": 4292.416000000001,
+        "pharmacy": 4377.591999999999,
+        "school": 2114.7569999999996
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "supermarket": 0.0,
+        "hospital": 0.0,
+        "pharmacy": 0.0,
+        "school": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "hospital:12686262443,12686262451,12686348962,12738316920,1414325925,1942843996,2248079876,2248079898,2248079902,2250057681,2250057981,2250057984,3034669682,3034669860,951469949,9605401068,9605401098,9976821045|park:7466952556|school:10839092681,2250670121,4029960024,420079002,7396718551,9953920241|supermarket:7279290953",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 21.52796538461539,
+      "diversity_penalty": 15585.804122996013,
+      "proximity_penalty": 0.0,
+      "placements": {
+        "park": 1,
+        "supermarket": 1,
+        "hospital": 18,
+        "school": 6
+      },
+      "best_distances": {
+        "park": 3093.8060000000005,
+        "supermarket": 6361.178999999999,
+        "hospital": 4111.876,
+        "school": 2225.0090000000005
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "supermarket": 0.0,
+        "hospital": 0.0,
+        "school": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "bus_station:10035832539,7208384033|hospital:|park:7383997865|pharmacy:|supermarket:3034669845",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 18.37483125,
+      "diversity_penalty": 0.0,
+      "proximity_penalty": 0.0,
+      "placements": {
+        "park": 1,
+        "bus_station": 2,
+        "supermarket": 1
+      },
+      "best_distances": {
+        "park": 4281.281,
+        "bus_station": 4442.671999999999,
+        "supermarket": 5385.078000000001
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "bus_station": 0.0,
+        "supermarket": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "bus_station:10206695055,10216349113,7265924679|hospital:10206957266,12686262443,12686262451,12686348962,1414325925,1942843996,2250057681,2250057683,7279291143,7384110716,7451032924,7466947831,7467062446|park:10089395851|pharmacy:3034669671|supermarket:2396285164",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 21.546900657894742,
+      "diversity_penalty": 13018.067377649098,
+      "proximity_penalty": 0.0,
+      "placements": {
+        "park": 1,
+        "bus_station": 3,
+        "supermarket": 1,
+        "hospital": 13,
+        "pharmacy": 1
+      },
+      "best_distances": {
+        "park": 2327.794,
+        "bus_station": 5076.546,
+        "supermarket": 5615.277,
+        "hospital": 4292.416000000001,
+        "pharmacy": 4494.749999999999
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "bus_station": 0.0,
+        "supermarket": 0.0,
+        "hospital": 0.0,
+        "pharmacy": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "bus_station:10035832527,10206695055,7208384033|hospital:2250057981,9605401098|park:10035832542,10089395851,12686348963,12686348965,7383997859|pharmacy:9605401050|school:2248079954,7462094584|supermarket:12686262439,7279290962,7384756363",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 20.314503125,
+      "diversity_penalty": 2073.1516883323193,
+      "proximity_penalty": 0.0,
+      "placements": {
+        "park": 5,
+        "bus_station": 3,
+        "supermarket": 3,
+        "hospital": 2,
+        "pharmacy": 1,
         "school": 2
       },
       "best_distances": {
-        "supermarket": 3399.856,
-        "pharmacy": 5084.280000000002,
-        "park": 2093.569,
-        "bus_station": 8608.154000000004,
-        "school": 3664.3000000000006
+        "park": 1688.561,
+        "bus_station": 4588.388999999999,
+        "supermarket": 5508.167,
+        "hospital": 4281.323,
+        "pharmacy": 4416.774,
+        "school": 3242.1109999999994
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "bus_station": 0.0,
+        "supermarket": 0.0,
+        "hospital": 0.0,
+        "pharmacy": 0.0,
+        "school": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "bus_station:|hospital:2248079826,2248079913,7384110716|park:12686348965,7462094578|pharmacy:10206957264|school:|supermarket:12738309167,7279290962",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 22.890107812500002,
+      "diversity_penalty": 653.9688673004865,
+      "proximity_penalty": 0.0,
+      "placements": {
+        "park": 2,
+        "supermarket": 2,
+        "hospital": 3,
+        "pharmacy": 1
+      },
+      "best_distances": {
+        "park": 3217.2890000000007,
+        "supermarket": 6503.184999999999,
+        "hospital": 4339.445,
+        "pharmacy": 4200.701999999999
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "supermarket": 0.0,
+        "hospital": 0.0,
+        "pharmacy": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "bus_station:|hospital:12686262451|park:7383827876,7383997866|pharmacy:3034669686,6143098258,7383997877|supermarket:10208740948,12738300813,2396285164,3034670049",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 18.80400375,
+      "diversity_penalty": 1613.92436881036,
+      "proximity_penalty": 0.0,
+      "placements": {
+        "park": 2,
+        "supermarket": 4,
+        "hospital": 1,
+        "pharmacy": 3
+      },
+      "best_distances": {
+        "park": 3819.704999999999,
+        "supermarket": 4807.396999999997,
+        "hospital": 4716.474000000001,
+        "pharmacy": 4377.591999999999
+      },
+      "amenity_scores": {
+        "park": 0.0,
+        "supermarket": 0.0,
+        "hospital": 0.0,
+        "pharmacy": 0.0
+      }
+    }
+  },
+  {
+    "candidate": "hospital:|park:|pharmacy:10171100125,11411801234|school:7396718553,7462094572|supermarket:12738300813",
+    "metrics": {
+      "fitness": 0.0,
+      "distance_gain": 0.0,
+      "travel_penalty": 19.475047500000002,
+      "diversity_penalty": 0.0,
+      "proximity_penalty": 0.0,
+      "placements": {
+        "supermarket": 1,
+        "pharmacy": 2,
+        "school": 2
+      },
+      "best_distances": {
+        "supermarket": 6110.780999999998,
+        "pharmacy": 4220.139999999999,
+        "school": 3219.0420000000013
       },
       "amenity_scores": {
         "supermarket": 0.0,
         "pharmacy": 0.0,
-        "park": 0.0,
-        "bus_station": 0.0,
         "school": 0.0
       }
     }
