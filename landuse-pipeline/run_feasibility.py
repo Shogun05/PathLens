@@ -12,6 +12,7 @@ Usage:
 import json
 import sys
 import time
+import logging
 from pathlib import Path
 from datetime import datetime
 
@@ -24,6 +25,16 @@ import geemap
 from google.oauth2 import service_account
 
 
+# ================= LOGGING CONFIGURATION =================
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
+
+
 # ================= CONFIGURATION =================
 
 # landuse-pipeline/ is at project root, so parent is BASE_DIR
@@ -33,7 +44,7 @@ SERVICE_ACCOUNT_JSON = Path(__file__).resolve().parent / "landuse-service-accoun
 
 # Input files
 BEST_CANDIDATE_PATH = BASE_DIR / "data" / "optimization" / "runs" / "best_candidate.json"
-NODES_CSV_PATH = BASE_DIR / "data" / "analysis" / "optimized_nodes_with_scores.csv"
+NODES_PARQUET_PATH = BASE_DIR / "data" / "analysis" / "nodes_with_scores.parquet"
 
 # Output directory
 OUTPUT_DIR = BASE_DIR / "data" / "landuse"
@@ -57,9 +68,9 @@ BUFFER_METERS = 200
 class AmenityPlacementBuilder:
     """Builds GEE candidate points from GA results"""
     
-    def __init__(self, best_candidate_path, nodes_csv_path):
+    def __init__(self, best_candidate_path, nodes_parquet_path):
         self.best_candidate_path = best_candidate_path
-        self.nodes_csv_path = nodes_csv_path
+        self.nodes_parquet_path = nodes_parquet_path
     
     def parse_best_candidate(self) -> dict:
         """Return dict: amenity -> list[node_ids] from best_candidate.json."""
@@ -81,9 +92,9 @@ class AmenityPlacementBuilder:
     
     def create_geojson(self, amenity: str) -> Path:
         """Create GeoJSON file for specific amenity"""
-        print(f"\n{'='*60}")
-        print(f"STEP 1: Creating GeoJSON for {amenity.upper()}")
-        print(f"{'='*60}")
+        logger.info("="*60)
+        logger.info(f"STEP 1: Creating GeoJSON for {amenity.upper()}")
+        logger.info("="*60)
         
         # Parse GA output
         amenity_map = self.parse_best_candidate()
@@ -94,45 +105,38 @@ class AmenityPlacementBuilder:
             )
         candidate_ids = set(amenity_map[amenity])
         
-        # Load node table
-        df = pd.read_csv(self.nodes_csv_path, low_memory=False)
+        # Load node table from parquet - reset index to make osmid a column
+        df = pd.read_parquet(self.nodes_parquet_path).reset_index()
         
-        id_col = "osmid"
+        # Verify osmid column exists
+        if 'osmid' not in df.columns:
+            raise ValueError(f"'osmid' column not found. Available columns: {list(df.columns)}")
         
         # Filter nodes
-        df_sub = df[df[id_col].isin(candidate_ids)].copy()
+        df_sub = df[df['osmid'].isin(candidate_ids)].copy()
         if df_sub.empty:
             raise RuntimeError(f"No nodes found for amenity '{amenity}'")
         
-        # Build GeoDataFrame from geometry column using approach from reproject_nodes.py
-        df_sub["node_id"] = df_sub[id_col].astype("int64")
+        # Build GeoDataFrame from lon/lat coordinates
+        df_sub["node_id"] = df_sub['osmid'].astype("int64")
         df_sub["amenity"] = amenity
         
-        # Parse geometry from WKT string - handle both 'geometry' and 'wkt' columns
-        if "geometry" in df_sub.columns:
-            geometry_series = gpd.GeoSeries.from_wkt(df_sub["geometry"])
-        elif "wkt" in df_sub.columns:
-            geometry_series = gpd.GeoSeries.from_wkt(df_sub["wkt"])
-        else:
-            raise ValueError("No geometry column found (expected 'geometry' or 'wkt')")
+        # Create Point geometries from lon/lat columns
+        # The parquet file has lon/lat in WGS84 (EPSG:4326)
+        geometry = [Point(xy) for xy in zip(df_sub['lon'], df_sub['lat'])]
         
-        # Create GeoDataFrame with proper CRS handling
-        # OSM data is typically in EPSG:4326, but if x/y are in projected coords, may need different CRS
+        # Create GeoDataFrame with WGS84 CRS
         gdf = gpd.GeoDataFrame(
             df_sub[["node_id", "amenity"]],
-            geometry=geometry_series,
-            crs="EPSG:4326"  # OSM standard CRS
+            geometry=geometry,
+            crs="EPSG:4326"
         )
-        
-        # Ensure data is in WGS84 for GEE
-        if gdf.crs.to_epsg() != 4326:
-            gdf = gdf.to_crs(epsg=4326)
         
         # Save GeoJSON
         out_path = OUTPUT_DIR / f"node_candidates_{amenity}.geojson"
         gdf.to_file(out_path, driver="GeoJSON")
         
-        print(f"✓ Created {len(gdf)} candidate nodes → {out_path.name}")
+        logger.info(f"Created {len(gdf)} candidate nodes -> {out_path.name}")
         return out_path
 
 
@@ -150,7 +154,7 @@ class GEEUploader:
         if not SERVICE_ACCOUNT_JSON.exists():
             raise FileNotFoundError(
                 f"Service account JSON not found: {SERVICE_ACCOUNT_JSON}\n"
-                "Download it from IAM → Service Accounts → KEYS → ADD KEY → JSON"
+                "Download it from IAM -> Service Accounts -> KEYS -> ADD KEY -> JSON"
             )
         
         credentials = service_account.Credentials.from_service_account_file(
@@ -161,16 +165,16 @@ class GEEUploader:
     
     def upload_geojson(self, geojson_path: Path, amenity: str) -> str:
         """Upload GeoJSON to GEE and return asset ID"""
-        print(f"\n{'='*60}")
-        print(f"STEP 2: Uploading {amenity.upper()} to GEE")
-        print(f"{'='*60}")
+        logger.info("="*60)
+        logger.info(f"STEP 2: Uploading {amenity.upper()} to GEE")
+        logger.info("="*60)
         
         asset_id = f'projects/{self.project_id}/assets/{amenity}_nodes'
         
         # Delete existing asset if it exists to prevent overwrite errors
         try:
             ee.data.getAsset(asset_id)
-            print(f"✓ Deleting existing asset: {asset_id}")
+            logger.info(f"Deleting existing asset: {asset_id}")
             ee.data.deleteAsset(asset_id)
             time.sleep(2)  # Brief pause to ensure deletion completes
         except ee.EEException:
@@ -179,7 +183,7 @@ class GEEUploader:
         
         # Read GeoJSON
         gdf = gpd.read_file(geojson_path)
-        print(f"✓ Loaded {len(gdf)} nodes from {geojson_path.name}")
+        logger.info(f"Loaded {len(gdf)} nodes from {geojson_path.name}")
         
         # Convert to Earth Engine FeatureCollection
         features = []
@@ -206,7 +210,7 @@ class GEEUploader:
         fc = ee.FeatureCollection(features)
         
         # Export to asset
-        print(f"✓ Starting upload to {asset_id}...")
+        logger.info(f"Starting upload to {asset_id}...")
         task = ee.batch.Export.table.toAsset(
             collection=fc,
             description=f'{amenity}_nodes_upload',
@@ -215,14 +219,17 @@ class GEEUploader:
         task.start()
         
         # Wait for completion
-        print("✓ Waiting for upload to complete...", end="", flush=True)
+        logger.info("Waiting for upload to complete...")
+        wait_count = 0
         while task.status()['state'] in ['READY', 'RUNNING']:
-            print(".", end="", flush=True)
+            wait_count += 1
+            if wait_count % 6 == 0:  # Log every 30 seconds
+                logger.info(f"Still waiting... ({wait_count * 5}s elapsed)")
             time.sleep(5)
         
         status = task.status()
         if status['state'] == 'COMPLETED':
-            print(" ✓ COMPLETED")
+            logger.info("Upload COMPLETED")
             return asset_id
         else:
             raise RuntimeError(f"Upload failed: {status}")
@@ -245,7 +252,7 @@ class LandUseAnalyzer:
         if not SERVICE_ACCOUNT_JSON.exists():
             raise FileNotFoundError(
                 f"Service account JSON not found: {SERVICE_ACCOUNT_JSON}\n"
-                "Download it from IAM → Service Accounts → KEYS → ADD KEY → JSON"
+                "Download it from IAM -> Service Accounts -> KEYS -> ADD KEY -> JSON"
             )
         
         credentials = service_account.Credentials.from_service_account_file(
@@ -345,15 +352,15 @@ class LandUseAnalyzer:
     
     def analyze_amenity(self, amenity: str, asset_id: str):
         """Run GEE analysis and return results"""
-        print(f"\n{'='*60}")
-        print(f"STEP 3: Running GEE Analysis for {amenity.upper()}")
-        print(f"{'='*60}")
+        logger.info("="*60)
+        logger.info(f"STEP 3: Running GEE Analysis for {amenity.upper()}")
+        logger.info("="*60)
         
         nodes = ee.FeatureCollection(asset_id)
         node_count = nodes.size().getInfo()
-        print(f"✓ Loaded {node_count} nodes from GEE")
+        logger.info(f"Loaded {node_count} nodes from GEE")
         
-        print(f"✓ Processing nodes with {self.BUFFER_METERS}m buffer...")
+        logger.info(f"Processing nodes with {self.BUFFER_METERS}m buffer...")
         results = nodes.map(self.process_node)
         
         # Create feasibility table
@@ -379,12 +386,12 @@ class LandUseAnalyzer:
         feasible_count = feasibility.filter(ee.Filter.eq('feasible', 1)).size().getInfo()
         placement_count = placements.size().getInfo()
         
-        print(f"\n{'='*60}")
-        print(f"ANALYSIS RESULTS:")
-        print(f"  Total nodes: {node_count}")
-        print(f"  Feasible nodes: {feasible_count}")
-        print(f"  Nodes with placements: {placement_count}")
-        print(f"{'='*60}")
+        logger.info("="*60)
+        logger.info("ANALYSIS RESULTS:")
+        logger.info(f"  Total nodes: {node_count}")
+        logger.info(f"  Feasible nodes: {feasible_count}")
+        logger.info(f"  Nodes with placements: {placement_count}")
+        logger.info("="*60)
         
         return {
             'feasibility': feasibility,
@@ -404,24 +411,24 @@ class GEEDownloader:
     
     def download_to_local(self, feasibility_fc, placements_fc, amenity: str, output_dir: Path):
         """Download feasibility CSV and placements GeoJSON to local directory"""
-        print(f"\n{'='*60}")
-        print(f"STEP 4: Downloading Results for {amenity.upper()}")
-        print(f"{'='*60}")
+        logger.info("="*60)
+        logger.info(f"STEP 4: Downloading Results for {amenity.upper()}")
+        logger.info("="*60)
         
         # Download feasibility as CSV
         feas_output = output_dir / f"landuse_feasibility_{amenity}.csv"
-        print(f"✓ Downloading feasibility data...", end="", flush=True)
+        logger.info("Downloading feasibility data...")
         
         # Get data as list of features
         feas_data = feasibility_fc.getInfo()['features']
         feas_rows = [f['properties'] for f in feas_data]
         feas_df = pd.DataFrame(feas_rows)
         feas_df.to_csv(feas_output, index=False)
-        print(f" → {feas_output.name}")
+        logger.info(f"Saved -> {feas_output.name}")
         
         # Download placements as GeoJSON
         place_output = output_dir / f"landuse_placements_{amenity}.geojson"
-        print(f"✓ Downloading placement polygons...", end="", flush=True)
+        logger.info("Downloading placement polygons...")
         
         # Check if placements collection is empty to avoid geemap error
         placement_count = placements_fc.size().getInfo()
@@ -434,10 +441,10 @@ class GEEDownloader:
                 crs="EPSG:4326"
             )
             empty_gdf.to_file(place_output, driver="GeoJSON")
-            print(f" → {place_output.name} (empty - no placements found)")
+            logger.info(f"Saved -> {place_output.name} (empty - no placements found)")
         else:
             geemap.ee_export_geojson(placements_fc, filename=str(place_output))
-            print(f" → {place_output.name}")
+            logger.info(f"Saved -> {place_output.name}")
         
         return feas_output, place_output
 
@@ -447,23 +454,23 @@ class GEEDownloader:
 class FeasibilityFilter:
     """Filter and merge feasibility results with node attributes"""
     
-    def __init__(self, nodes_csv_path):
-        self.nodes_csv_path = nodes_csv_path
+    def __init__(self, nodes_parquet_path):
+        self.nodes_parquet_path = nodes_parquet_path
     
     def filter_and_merge(self, amenity: str, feas_csv: Path, placements_geojson: Path, output_dir: Path):
         """Filter feasible nodes and merge with node attributes"""
-        print(f"\n{'='*60}")
-        print(f"STEP 5: Filtering Feasible Nodes for {amenity.upper()}")
-        print(f"{'='*60}")
+        logger.info("="*60)
+        logger.info(f"STEP 5: Filtering Feasible Nodes for {amenity.upper()}")
+        logger.info("="*60)
         
-        # Load data
-        nodes = pd.read_csv(self.nodes_csv_path, low_memory=False)
+        # Load data - reset index to make osmid a column
+        nodes = pd.read_parquet(self.nodes_parquet_path).reset_index()
         feas = pd.read_csv(feas_csv)
         placements = gpd.read_file(placements_geojson)
         
-        print(f"✓ Loaded {len(nodes)} nodes from CSV")
-        print(f"✓ Loaded {len(feas)} feasibility records")
-        print(f"✓ Loaded {len(placements)} placement polygons")
+        logger.info(f"Loaded {len(nodes)} nodes from parquet")
+        logger.info(f"Loaded {len(feas)} feasibility records")
+        logger.info(f"Loaded {len(placements)} placement polygons")
         
         # Filter feasibility to this amenity
         feas_amen = feas[feas["amenity"] == amenity].copy()
@@ -472,12 +479,12 @@ class FeasibilityFilter:
             feas_amen["feasible"] = feas_amen["feasible"].astype(bool)
         
         feasible_only = feas_amen[feas_amen["feasible"]]
-        print(f"✓ Found {len(feasible_only)} feasible nodes")
+        logger.info(f"Found {len(feasible_only)} feasible nodes")
         
         # Handle case with no feasible nodes
         if len(feasible_only) == 0:
-            print(f"\n⚠ No feasible nodes found for {amenity.upper()}")
-            print(f"  Skipping merge and creating empty output files...")
+            logger.warning(f"No feasible nodes found for {amenity.upper()}")
+            logger.info("Skipping merge and creating empty output files...")
             
             # Save empty outputs
             out_feas_nodes = output_dir / f"gee_feasible_nodes_{amenity}.csv"
@@ -492,7 +499,7 @@ class FeasibilityFilter:
             
             # Placements already saved as empty in download step
             
-            print(f"✓ Saved empty outputs")
+            logger.info("Saved empty outputs")
             return out_feas_nodes, out_merged, out_placements
         
         # Merge with node table
@@ -527,19 +534,19 @@ class FeasibilityFilter:
         merged.to_csv(out_merged, index=False)
         placements_clean.to_file(out_placements, driver="GeoJSON")
         
-        print(f"\n✓ Saved feasible nodes → {out_feas_nodes.name}")
-        print(f"✓ Saved merged data → {out_merged.name}")
-        print(f"✓ Saved placements → {out_placements.name}")
+        logger.info(f"Saved feasible nodes -> {out_feas_nodes.name}")
+        logger.info(f"Saved merged data -> {out_merged.name}")
+        logger.info(f"Saved placements -> {out_placements.name}")
         
         # Show sample
-        print(f"\nTop 5 feasible nodes:")
+        logger.info("Top 5 feasible nodes:")
         cols_show = ['osmid', 'free_area_m2', 'min_area_req', 'feasible']
         if 'walkability' in merged.columns:
             cols_show.append('walkability')
         if 'accessibility_score' in merged.columns:
             cols_show.append('accessibility_score')
         cols_show = [c for c in cols_show if c in merged.columns]
-        print(merged[cols_show].head().to_string(index=False))
+        logger.info("\n" + merged[cols_show].head().to_string(index=False))
         
         return out_feas_nodes, out_merged, out_placements
 
@@ -550,19 +557,19 @@ class LandUsePipeline:
     """Complete land-use feasibility pipeline orchestrator"""
     
     def __init__(self):
-        self.placement_builder = AmenityPlacementBuilder(BEST_CANDIDATE_PATH, NODES_CSV_PATH)
+        self.placement_builder = AmenityPlacementBuilder(BEST_CANDIDATE_PATH, NODES_PARQUET_PATH)
         self.gee_uploader = GEEUploader(PROJECT_ID)
         self.analyzer = LandUseAnalyzer(PROJECT_ID)
         self.downloader = GEEDownloader()
-        self.filter = FeasibilityFilter(NODES_CSV_PATH)
+        self.filter = FeasibilityFilter(NODES_PARQUET_PATH)
     
     def process_amenity(self, amenity: str):
         """Run complete pipeline for a single amenity"""
         start_time = time.time()
         
-        print(f"\n{'#'*60}")
-        print(f"# LAND-USE FEASIBILITY PIPELINE: {amenity.upper()}")
-        print(f"{'#'*60}")
+        logger.info("#"*60)
+        logger.info(f"# LAND-USE FEASIBILITY PIPELINE: {amenity.upper()}")
+        logger.info("#"*60)
         
         try:
             # Step 1: Create GeoJSON
@@ -586,25 +593,25 @@ class LandUsePipeline:
             self.filter.filter_and_merge(amenity, feas_csv, place_geojson, OUTPUT_DIR)
             
             elapsed = time.time() - start_time
-            print(f"\n{'='*60}")
-            print(f"✓ PIPELINE COMPLETED for {amenity.upper()} in {elapsed:.1f}s")
-            print(f"{'='*60}\n")
+            logger.info("="*60)
+            logger.info(f"PIPELINE COMPLETED for {amenity.upper()} in {elapsed:.1f}s")
+            logger.info("="*60)
             
             return True
             
         except Exception as e:
-            print(f"\n✗ ERROR processing {amenity}: {e}")
+            logger.error(f"ERROR processing {amenity}: {e}")
             import traceback
-            traceback.print_exc()
+            logger.error(traceback.format_exc())
             return False
     
     def process_all_amenities(self):
         """Run pipeline for all amenities"""
         amenities = list(MIN_AREA.keys())
         
-        print(f"\n{'#'*60}")
-        print(f"# LAND-USE BATCH PIPELINE: {len(amenities)} AMENITIES")
-        print(f"{'#'*60}")
+        logger.info("#"*60)
+        logger.info(f"# LAND-USE BATCH PIPELINE: {len(amenities)} AMENITIES")
+        logger.info("#"*60)
         
         results = {}
         for amenity in amenities:
@@ -612,12 +619,12 @@ class LandUsePipeline:
             results[amenity] = success
         
         # Summary
-        print(f"\n{'='*60}")
-        print("BATCH PIPELINE SUMMARY")
-        print(f"{'='*60}")
+        logger.info("="*60)
+        logger.info("BATCH PIPELINE SUMMARY")
+        logger.info("="*60)
         for amenity, success in results.items():
-            status = "✓ SUCCESS" if success else "✗ FAILED"
-            print(f"  {amenity:15} | {status}")
+            status = "SUCCESS" if success else "FAILED"
+            logger.info(f"  {amenity:15} | {status}")
         
         return results
 
@@ -626,10 +633,10 @@ class LandUsePipeline:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage:")
-        print("  python run_feasibility.py <amenity>     # Process single amenity")
-        print("  python run_feasibility.py --all         # Process all amenities")
-        print("\nAvailable amenities:", list(MIN_AREA.keys()))
+        logger.info("Usage:")
+        logger.info("  python run_feasibility.py <amenity>     # Process single amenity")
+        logger.info("  python run_feasibility.py --all         # Process all amenities")
+        logger.info(f"\nAvailable amenities: {list(MIN_AREA.keys())}")
         sys.exit(1)
     
     pipeline = LandUsePipeline()
@@ -639,8 +646,8 @@ def main():
     else:
         amenity = sys.argv[1]
         if amenity not in MIN_AREA:
-            print(f"Error: Unknown amenity '{amenity}'")
-            print(f"Available: {list(MIN_AREA.keys())}")
+            logger.error(f"Unknown amenity '{amenity}'")
+            logger.info(f"Available: {list(MIN_AREA.keys())}")
             sys.exit(1)
         pipeline.process_amenity(amenity)
 
