@@ -29,6 +29,18 @@ import pandas as pd
 import yaml
 import networkx as nx
 
+# Import landuse feasibility integration (optional, lazy-loaded)
+try:
+    import sys
+    landuse_pipeline_path = Path(__file__).resolve().parent.parent / "landuse-pipeline"
+    if str(landuse_pipeline_path) not in sys.path:
+        sys.path.insert(0, str(landuse_pipeline_path))
+    from run_feasibility import LanduseFeasibilityIntegration
+    _HAS_LANDUSE = True
+except ImportError:
+    LanduseFeasibilityIntegration = None  # type: ignore
+    _HAS_LANDUSE = False
+
 # Try to import tqdm for nicer progress bars; gracefully fallback if not present.
 try:
     from tqdm import tqdm
@@ -468,6 +480,8 @@ class HybridGA:
         config: HybridGAConfig,
         precompute_hook: PrecomputeHook,
         evaluate_hook: EvaluateHook,
+        enable_landuse_filter: bool = False,
+        nodes_parquet_path: Optional[Path] = None,
     ) -> None:
         self.context = context
         self.config = config
@@ -478,6 +492,16 @@ class HybridGA:
         self.operator_credits: MutableMapping[str, int] = {"crossover": 0, "mutation": 0, "local_search": 0}
         self.analysis_dir = config.analysis_dir
         self.analysis_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Initialize landuse feasibility filter if enabled
+        self.landuse_filter = None
+        if enable_landuse_filter:
+            if _HAS_LANDUSE and LanduseFeasibilityIntegration is not None:
+                logging.info("Initializing landuse feasibility filter...")
+                self.landuse_filter = LanduseFeasibilityIntegration(nodes_parquet_path)
+                logging.info("Landuse feasibility filter initialized successfully.")
+            else:
+                logging.warning("Landuse filtering requested but LanduseFeasibilityIntegration not available.")
 
     # ------------------------------------------------------------------
     # Population seeding
@@ -1072,6 +1096,26 @@ class HybridGA:
         # Filter conflicts before saving
         cleaned_candidate = self.filter_conflicts(candidate)
         
+        # Apply landuse feasibility filtering if enabled
+        if self.landuse_filter is not None:
+            logging.info("Applying landuse feasibility filtering to best candidate...")
+            try:
+                # Convert placements to dict format expected by filter
+                placements_dict = dict(cleaned_candidate.placements)
+                
+                # Run landuse feasibility check via GEE
+                filtered_placements = self.landuse_filter.filter_candidate_placements(placements_dict)
+                
+                # Create new candidate with filtered placements
+                cleaned_candidate = Candidate(
+                    placements={k: tuple(v) for k, v in filtered_placements.items()},
+                    template_id=cleaned_candidate.template_id
+                )
+                logging.info("Landuse feasibility filtering applied successfully.")
+            except Exception as e:
+                logging.error("Landuse feasibility filtering failed: %s", str(e).encode('ascii', 'replace').decode('ascii'))
+                logging.warning("Proceeding with unfiltered candidate.")
+        
         # Update metrics to reflect count changes
         # We don't recompute fitness/penalties here, just the counts
         count_metrics = metrics.copy()
@@ -1100,8 +1144,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--nodes-scores", type=Path, default=project_root / "data" / "analysis" / "nodes_with_scores.parquet")
     parser.add_argument("--high-travel", type=Path, default=project_root / "optimization-pipeline" / "high_travel_time_nodes.csv")
     parser.add_argument("--config", type=Path, default=project_root / "../config.yaml")
-    parser.add_argument("--population", type=int, default=75)
-    parser.add_argument("--generations", type=int, default=75)
+    parser.add_argument("--population", type=int, default=50)
+    parser.add_argument("--generations", type=int, default=25)
     parser.add_argument("--crossover", type=float, default=0.75)
     parser.add_argument("--mutation", type=float, default=0.2)
     parser.add_argument("--elitism", type=int, default=4)
@@ -1126,6 +1170,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         default=False,
         help="Disable progress bars (useful on non-interactive terminals).",
+    )
+    parser.add_argument(
+        "--enable-landuse-filter",
+        action="store_true",
+        default=True,
+        help="Enable landuse feasibility filtering before saving best candidate. Requires GEE credentials.",
     )
     return parser.parse_args()
 
@@ -1221,7 +1271,14 @@ def main() -> None:
     precompute_hook = load_callable(args.precompute_hook) or default_precompute_effects
     evaluate_hook = load_callable(args.evaluate_hook) or default_evaluate_candidate
 
-    ga = HybridGA(context=context, config=config, precompute_hook=precompute_hook, evaluate_hook=evaluate_hook)
+    ga = HybridGA(
+        context=context,
+        config=config,
+        precompute_hook=precompute_hook,
+        evaluate_hook=evaluate_hook,
+        enable_landuse_filter=args.enable_landuse_filter,
+        nodes_parquet_path=nodes_path,
+    )
     result = ga.run()
     logging.info("Best candidate: %s", result["best_candidate"])
 

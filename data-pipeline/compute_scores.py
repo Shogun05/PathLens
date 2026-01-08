@@ -111,6 +111,50 @@ def load_inputs(graph_path: Path, poi_mapping_path: Path):
         nodes = nodes_result
     print(f"Extracted {len(nodes)} nodes as GeoDataFrame")
     sys.stdout.flush()
+    # Add lon/lat columns for compatibility with landuse feasibility pipeline
+    # Handle both WGS84 (EPSG:4326) and projected CRS (e.g., UTM)
+    if 'lon' not in nodes.columns or 'lat' not in nodes.columns:
+        # Check if x/y values are in projected CRS (UTM) by checking magnitude
+        # Valid lat/lon values: lat in [-90, 90], lon in [-180, 180]
+        # UTM values are typically in hundreds of thousands (meters)
+        x_sample = nodes['x'].iloc[0] if 'x' in nodes.columns else nodes.geometry.x.iloc[0]
+        y_sample = nodes['y'].iloc[0] if 'y' in nodes.columns else nodes.geometry.y.iloc[0]
+        is_projected = abs(x_sample) > 180 or abs(y_sample) > 180
+        
+        if is_projected:
+            # Coordinates are in projected CRS (e.g., UTM) - need to convert to WGS84
+            # Determine the source CRS
+            if nodes.crs is not None:
+                source_crs = nodes.crs
+            else:
+                # Try to get CRS from graph attribute
+                graph_crs = G.graph.get('crs')
+                if graph_crs:
+                    source_crs = graph_crs
+                else:
+                    # Default to UTM zone 43N for Bangalore area
+                    source_crs = "EPSG:32643"
+                    print(f"Warning: No CRS found, assuming {source_crs} for Bangalore")
+                    sys.stdout.flush()
+                nodes = nodes.set_crs(source_crs, allow_override=True)
+            
+            # Convert to WGS84
+            nodes_wgs84 = nodes.to_crs(epsg=4326)
+            nodes['lon'] = nodes_wgs84.geometry.x
+            nodes['lat'] = nodes_wgs84.geometry.y
+            print(f"Converted coordinates from {source_crs} to WGS84 (lat/lon)")
+            print(f"Sample: x={x_sample:.2f}, y={y_sample:.2f} -> lon={nodes['lon'].iloc[0]:.6f}, lat={nodes['lat'].iloc[0]:.6f}")
+            sys.stdout.flush()
+        elif 'x' in nodes.columns and 'y' in nodes.columns:
+            # Already in geographic CRS, x=lon, y=lat
+            nodes['lon'] = nodes['x']
+            nodes['lat'] = nodes['y']
+            print(f"Using x/y as lon/lat (already in WGS84)")
+            sys.stdout.flush()
+        else:
+            # Extract from geometry
+            nodes['lon'] = nodes.geometry.x
+            nodes['lat'] = nodes.geometry.y
     mapping = pd.read_parquet(poi_mapping_path)
     print(f"Loaded POI mapping: {len(mapping)} POIs")
     sys.stdout.flush()

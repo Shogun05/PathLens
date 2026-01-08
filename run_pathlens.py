@@ -2,17 +2,15 @@
 """
 PathLens Master Orchestrator
 
-Coordinates all three pipelines:
+Coordinates two pipelines:
 1. data-pipeline: OSM data collection and graph processing
-2. optimization-pipeline: GA+MILP amenity placement optimization
-3. landuse-pipeline: GEE feasibility analysis
+2. optimization-pipeline: GA+MILP amenity placement optimization (includes landuse feasibility)
 
 Usage:
     python run_pathlens.py --pipeline all                    # Run full workflow
     python run_pathlens.py --pipeline data                   # Data collection only
     python run_pathlens.py --pipeline optimization           # Optimization only
-    python run_pathlens.py --pipeline landuse hospital       # GEE analysis for hospital
-    python run_pathlens.py --skip-data --skip-optimization   # Run landuse only
+    python run_pathlens.py --skip-data                       # Run optimization only
 """
 
 import argparse
@@ -108,11 +106,10 @@ Examples:
   # Individual pipelines
   python run_pathlens.py --pipeline data
   python run_pathlens.py --pipeline optimization
-  python run_pathlens.py --pipeline landuse hospital
   
   # Skip specific pipelines
   python run_pathlens.py --skip-data
-  python run_pathlens.py --skip-optimization --skip-landuse
+  python run_pathlens.py --skip-optimization
   
   # Pass custom config
   python run_pathlens.py --config custom_config.yaml
@@ -121,15 +118,13 @@ Examples:
     
     # Pipeline selection
     parser.add_argument('--pipeline', 
-                       choices=['all', 'data', 'optimization', 'landuse'],
+                       choices=['all', 'data', 'optimization'],
                        default='all',
                        help='Which pipeline(s) to run')
     parser.add_argument('--skip-data', action='store_true',
                        help='Skip data collection pipeline')
     parser.add_argument('--skip-optimization', action='store_true',
                        help='Skip optimization pipeline')
-    parser.add_argument('--skip-landuse', action='store_true',
-                       help='Skip landuse feasibility pipeline')
     
     # Shared arguments
     parser.add_argument('--config', type=Path, default=None,
@@ -149,10 +144,6 @@ Examples:
     parser.add_argument('--ga-generations', type=int, default=None,
                        help='GA generation count')
     
-    # Landuse pipeline arguments
-    parser.add_argument('amenity', nargs='?', default=None,
-                       help='Amenity type for landuse analysis (hospital, school, etc.)')
-    
     args = parser.parse_args()
     
     # Setup paths
@@ -169,20 +160,17 @@ Examples:
     # Determine which pipelines to run
     run_data = args.pipeline in ['all', 'data'] and not args.skip_data
     run_optimization = args.pipeline in ['all', 'optimization'] and not args.skip_optimization
-    run_landuse = args.pipeline in ['all', 'landuse'] and not args.skip_landuse
 
     progress_path = project_root / 'data' / 'optimization' / 'runs' / 'progress.json'
     stage_percents = {
         'initializing': 5,
         'data': 30,
-        'optimization': 80,
-        'landuse': 95,
+        'optimization': 90,
         'finalizing': 100
     }
     pipeline_states: Dict[str, str] = {
         'data': 'pending' if run_data else 'skipped',
-        'optimization': 'pending' if run_optimization else 'skipped',
-        'landuse': 'pending' if run_landuse else 'skipped'
+        'optimization': 'pending' if run_optimization else 'skipped'
     }
 
     def write_progress(
@@ -302,42 +290,7 @@ Examples:
             percent=stage_percents['optimization']
         )
     
-    # Pipeline 3: Landuse Feasibility
-    if run_landuse:
-        if args.pipeline == 'landuse' and not args.amenity:
-            logger.error("Landuse pipeline requires --amenity argument")
-            sys.exit(1)
-        pipeline_states['landuse'] = 'running'
-        write_progress(
-            stage='landuse',
-            overall_status='running',
-            message='Running landuse feasibility pipeline',
-            percent=stage_percents['landuse']
-        )
-        
-        landuse_script = project_root / 'landuse-pipeline' / 'run_feasibility.py'
-        landuse_args = []
-        if args.amenity:
-            landuse_args.append(args.amenity)
-        elif args.pipeline == 'all':
-            landuse_args.append('--all')
-        
-        results['landuse'] = run_pipeline('landuse-feasibility', landuse_script, landuse_args, logger)
-        pipeline_states['landuse'] = 'completed' if results['landuse'] else 'failed'
-        write_progress(
-            stage='landuse',
-            overall_status='running',
-            message='Landuse pipeline completed' if results.get('landuse') else 'Landuse pipeline failed',
-            percent=stage_percents['landuse']
-        )
-    else:
-        logger.info("Skipping landuse feasibility pipeline")
-        write_progress(
-            stage='landuse',
-            overall_status='running',
-            message='Landuse pipeline skipped (not requested)',
-            percent=stage_percents['landuse']
-        )
+
     
     # Save run summary
     summary = {

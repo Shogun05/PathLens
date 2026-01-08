@@ -57,7 +57,8 @@ MIN_AREA = {
     'park': 500,
     'pharmacy': 100,
     'supermarket': 600,
-    'bus_station': 400
+    'bus_station': 400,
+    'bank': 150
 }
 
 BUFFER_METERS = 200
@@ -627,6 +628,187 @@ class LandUsePipeline:
             logger.info(f"  {amenity:15} | {status}")
         
         return results
+
+
+# ================= INTEGRATION FOR HYBRID GA =================
+
+class LanduseFeasibilityIntegration:
+    """
+    Integration class for filtering candidate placements from hybrid_ga.py
+    based on landuse feasibility using Google Earth Engine.
+    
+    Usage from hybrid_ga.py:
+        from landuse_pipeline.run_feasibility import LanduseFeasibilityIntegration
+        
+        integrator = LanduseFeasibilityIntegration(nodes_parquet_path)
+        filtered_placements = integrator.filter_candidate_placements(placements_dict)
+    """
+    
+    def __init__(self, nodes_parquet_path: Path = None):
+        """Initialize the integration with paths to required data."""
+        self.nodes_parquet_path = nodes_parquet_path or NODES_PARQUET_PATH
+        self.project_id = PROJECT_ID
+        self.min_area = MIN_AREA
+        self.buffer_meters = BUFFER_METERS
+        self._ee_initialized = False
+        self._nodes_df = None
+        
+    def _ensure_ee_initialized(self):
+        """Lazy initialization of Earth Engine."""
+        if self._ee_initialized:
+            return
+            
+        if not SERVICE_ACCOUNT_JSON.exists():
+            raise FileNotFoundError(
+                f"Service account JSON not found: {SERVICE_ACCOUNT_JSON}\n"
+                "Download it from IAM -> Service Accounts -> KEYS -> ADD KEY -> JSON"
+            )
+        
+        credentials = service_account.Credentials.from_service_account_file(
+            str(SERVICE_ACCOUNT_JSON),
+            scopes=['https://www.googleapis.com/auth/earthengine']
+        )
+        ee.Initialize(credentials=credentials, project=self.project_id)
+        self._ee_initialized = True
+        
+        # Load ESA WorldCover data
+        self.worldCover = ee.ImageCollection('ESA/WorldCover/v200').first().select('Map')
+        self.freeMask = (self.worldCover.eq(30)
+                         .Or(self.worldCover.eq(40))
+                         .Or(self.worldCover.eq(60)))
+        self.pixelArea = ee.Image.pixelArea()
+        
+    def _load_nodes_df(self):
+        """Load nodes dataframe lazily."""
+        if self._nodes_df is None:
+            self._nodes_df = pd.read_parquet(self.nodes_parquet_path).reset_index()
+        return self._nodes_df
+    
+    def _process_node_feasibility(self, feature):
+        """Process a single node to determine feasibility."""
+        f = ee.Feature(feature)
+        amenity = ee.String(f.get('amenity'))
+        
+        bufferGeom = f.geometry().buffer(self.buffer_meters, 1)
+        freeInBuffer = self.freeMask.clip(bufferGeom)
+        
+        areaDict = (self.pixelArea
+                    .updateMask(freeInBuffer)
+                    .reduceRegion(
+                        reducer=ee.Reducer.sum(),
+                        geometry=bufferGeom,
+                        scale=10,
+                        maxPixels=1e9
+                    ))
+        
+        freeAreaM2 = ee.Number(areaDict.get('area')).round()
+        minReq = ee.Number(ee.Dictionary(self.min_area).get(amenity))
+        feasible = freeAreaM2.gte(minReq)
+        
+        return f.set({
+            'free_area_m2': freeAreaM2,
+            'min_area_req': minReq,
+            'feasible': feasible
+        })
+    
+    def filter_candidate_placements(self, placements: dict) -> dict:
+        """
+        Filter candidate placements based on landuse feasibility.
+        
+        Args:
+            placements: Dict mapping amenity type to tuple/list of node IDs
+                       Example: {'hospital': ('123', '456'), 'school': ('789',)}
+        
+        Returns:
+            Dict with same structure but only containing feasible node IDs
+        """
+        logger.info("=" * 60)
+        logger.info("LANDUSE FEASIBILITY INTEGRATION")
+        logger.info("=" * 60)
+        
+        start_time = time.time()
+        
+        # Initialize GEE
+        self._ensure_ee_initialized()
+        
+        # Load nodes data
+        nodes_df = self._load_nodes_df()
+        
+        filtered_placements = {}
+        
+        for amenity, node_ids in placements.items():
+            if not node_ids:
+                filtered_placements[amenity] = tuple()
+                continue
+                
+            # Check if amenity has min area requirement
+            if amenity not in self.min_area:
+                logger.warning(f"No min area requirement for {amenity}, keeping all nodes")
+                filtered_placements[amenity] = tuple(node_ids)
+                continue
+            
+            logger.info(f"Processing {amenity}: {len(node_ids)} candidate nodes")
+            
+            try:
+                feasible_ids = self._check_amenity_feasibility(amenity, node_ids, nodes_df)
+                filtered_placements[amenity] = tuple(sorted(feasible_ids))
+                
+                removed_count = len(node_ids) - len(feasible_ids)
+                if removed_count > 0:
+                    logger.info(f"  {amenity}: Removed {removed_count} infeasible nodes, kept {len(feasible_ids)}")
+                else:
+                    logger.info(f"  {amenity}: All {len(feasible_ids)} nodes are feasible")
+                    
+            except Exception as e:
+                logger.error(f"Error checking feasibility for {amenity}: {e}")
+                # On error, keep all nodes rather than losing data
+                filtered_placements[amenity] = tuple(node_ids)
+        
+        elapsed = time.time() - start_time
+        logger.info("=" * 60)
+        logger.info(f"LANDUSE FILTERING COMPLETE in {elapsed:.1f}s")
+        logger.info("=" * 60)
+        
+        return filtered_placements
+    
+    def _check_amenity_feasibility(self, amenity: str, node_ids: tuple, nodes_df: pd.DataFrame) -> list:
+        """Check feasibility for a single amenity type and return feasible node IDs."""
+        # Convert node IDs to integers for matching
+        node_ids_int = [int(nid) for nid in node_ids]
+        
+        # Get node coordinates
+        df_sub = nodes_df[nodes_df['osmid'].isin(node_ids_int)].copy()
+        
+        if df_sub.empty:
+            logger.warning(f"No nodes found in parquet for {amenity}")
+            return []
+        
+        # Build GEE FeatureCollection directly (no file I/O)
+        features = []
+        for _, row in df_sub.iterrows():
+            point = ee.Geometry.Point([float(row['lon']), float(row['lat'])])
+            feature = ee.Feature(point, {
+                'node_id': int(row['osmid']),
+                'amenity': amenity
+            })
+            features.append(feature)
+        
+        fc = ee.FeatureCollection(features)
+        
+        # Run feasibility analysis
+        results = fc.map(self._process_node_feasibility)
+        
+        # Get feasible node IDs
+        feasible_fc = results.filter(ee.Filter.eq('feasible', 1))
+        feasible_data = feasible_fc.getInfo()
+        
+        feasible_ids = []
+        for f in feasible_data.get('features', []):
+            node_id = f['properties'].get('node_id')
+            if node_id is not None:
+                feasible_ids.append(str(node_id))
+        
+        return feasible_ids
 
 
 # ================= ENTRY POINT =================
