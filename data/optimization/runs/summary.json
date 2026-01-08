@@ -1,10 +1,10 @@
 {
-  "best_candidate": "bus_station:10035779087,10035779098,10035779104,10035832552,10035832565,10035832573,10063075626,10063075629,10094964485,10095028664,10103226300,10173255726,10181924587,10181962059,10206695058,10805316332,11409061198,11409110373,11412130674,2247955433,3881296519,4029957287,420078997,6749078131,6749129040,6749764295,6753376859,7089243648,7090556079,7090777417,7146503618,7413982742,7428873761,7452889836,7482957241,7483009778,9188733547,9188733548,9620224888,9784623499|hospital:10196274112,12686348965,12686348982,12738300814,12738351266,12768091257,12768091259,1414325928,1942843580,2248079802,2248079806,2248172150,2419051637,3034669668,3034669669,3034669860,3034669866,7279291156,7383997859,7383997860,7384110696,7384110714,7397142239,7451032924,9805550176|park:10035779098,10062966621,10094964492,10206790746,10207162470,10805316332,11294837803,11432074477,12686262443,12738300811,12768091259,2248172229,2250057681,3818748069,7279291013,7331199049,7331215137,7377821398,7383827874,7383827876,7383997841,7462101885,7465515110,7616136966,9186472002|pharmacy:11381108849,11411896071,11411896073,11932127247,12738270728,12738300817,12738316925,12768091261,2146206387,2146206390,2247838141,2248079802,2248079871,2248172150,3034669701,4948727366,7279291013,7279291138,7279291153,7298266857,7383827843,7402050709,7451382879,7463750615,9778491243|school:10062966621,10062966623,10287783902,10805316331,11411801234,11432069563,11432069568,2146206151,2146206153,2146206154,2146206172,2146206185,2146206202,2248079762,2248079798,2248079846,2248079857,2248079866,2250670130,7208384032,7265924679,7331199043,7331215022,7377821404,7413982748,7425452599,7456061751,7616113576,7616136933,7616136966|supermarket:10063134553,10063679724,10685130175,11422215595,12157495772,12686348985,12686348986,2224646199,2224646205,2224646264,2396285171,2419063863,3034669687,3034669842,3034669882,7279261768,7279290950,7279291001,7279291132,7279291143,7383997841,7383997857,7383997868,7451032924,9605401050,9605401075,9605401081,9605401082,9605401090,9781258148",
+  "best_candidate": "bank:30258,44245,44283,49322,49337,49365,49461,49466,50085,52320,53795,56521,56534,56574,68431,70198,71186,72677,76886,76888|bus_station:17450,24231,24232,35714,35727,35729,35739,35750,35757,36315,36404,45147,45149,50143,59423,62105,62117,62300,62341,63599,63600,63601,63743,68724,68725,69447,69569,69574,69581,70153,70521,70930,71696,71987,73108,73120,73137,73144,75760,9085|hospital:23703,27730,44245,49316,49363,49396,49467,49477,50074,50129,50140,52178,52840,56497,56511,56527,56545,56556,56558,56574,70521,71180,73815,73830,76871|park:18787,22521,51482,56567,56585,56592,56594,56616,56667,65142,68471,70196,70738,70789,70796,70872,71184,72167,73706,73818,74247,74544,74551,75174,76266|pharmacy:23672,23723,38657,38688,38701,38730,38744,38749,43276,43279,45696,49371,49394,49397,49432,49531,49558,50072,50131,60094,63018,70227,71168,74117,74165|school:45471,45483,45492,45495,45510,45561,45601,49325,49328,49398,49491,50071,50083,50115,50120,52249,53016,54508,61077,69447,69572,69582,69943,70722,70723,71078,71205,75418,7758,9032|supermarket:23664,37909,49380,49389,49408,49420,49429,49431,49467,50110,50114,50122,52840,53018,56507,56523,56525,56547,56556,56572,56591,56598,56608,56673,70195,70198,70204,70793,70796,76765",
   "best_metrics": {
     "fitness": 0.0,
     "distance_gain": 0.0,
-    "travel_penalty": 21.62718931818182,
-    "diversity_penalty": 253517.97017019245,
+    "travel_penalty": 95.39004391322861,
+    "diversity_penalty": 224942.7946330209,
     "proximity_penalty": 0.0,
     "placements": {
       "school": 30,
@@ -12,15 +12,17 @@
       "pharmacy": 25,
       "supermarket": 30,
       "bus_station": 40,
-      "park": 25
+      "park": 25,
+      "bank": 20
     },
     "best_distances": {
-      "school": 1818.0040000000001,
-      "hospital": 4339.111999999999,
-      "pharmacy": 3929.167999999999,
-      "supermarket": 3263.754999999999,
-      "bus_station": 3650.802000000001,
-      "park": 1509.4569999999999
+      "school": 2074.7690119345516,
+      "hospital": 3835.6766267522817,
+      "pharmacy": 4068.1070526519943,
+      "supermarket": 4334.660331002883,
+      "bus_station": 6676.444983142413,
+      "park": 1300.8778567903648,
+      "bank": 4071.344095326331
     },
     "amenity_scores": {
       "school": 0.0,
@@ -28,7 +30,8 @@
       "pharmacy": 0.0,
       "supermarket": 0.0,
       "bus_station": 0.0,
-      "park": 0.0
+      "park": 0.0,
+      "bank": 0.0
     }
   },
   "history": [
@@ -45,8 +48,8 @@
       "generation": 2,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 26,
-        "mutation": 84,
+        "crossover": 21,
+        "mutation": 83,
         "local_search": 0
       }
     },
@@ -54,8 +57,8 @@
       "generation": 3,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 59,
-        "mutation": 167,
+        "crossover": 41,
+        "mutation": 148,
         "local_search": 0
       }
     },
@@ -63,8 +66,8 @@
       "generation": 4,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 87,
-        "mutation": 238,
+        "crossover": 60,
+        "mutation": 214,
         "local_search": 0
       }
     },
@@ -72,8 +75,8 @@
       "generation": 5,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 115,
-        "mutation": 331,
+        "crossover": 80,
+        "mutation": 267,
         "local_search": 0
       }
     },
@@ -81,8 +84,8 @@
       "generation": 6,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 141,
-        "mutation": 417,
+        "crossover": 101,
+        "mutation": 331,
         "local_search": 0
       }
     },
@@ -90,8 +93,8 @@
       "generation": 7,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 169,
-        "mutation": 490,
+        "crossover": 118,
+        "mutation": 390,
         "local_search": 0
       }
     },
@@ -99,8 +102,8 @@
       "generation": 8,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 198,
-        "mutation": 583,
+        "crossover": 136,
+        "mutation": 447,
         "local_search": 0
       }
     },
@@ -108,8 +111,8 @@
       "generation": 9,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 225,
-        "mutation": 667,
+        "crossover": 154,
+        "mutation": 509,
         "local_search": 0
       }
     },
@@ -117,8 +120,8 @@
       "generation": 10,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 255,
-        "mutation": 755,
+        "crossover": 171,
+        "mutation": 565,
         "local_search": 0
       }
     },
@@ -126,8 +129,8 @@
       "generation": 11,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 277,
-        "mutation": 842,
+        "crossover": 189,
+        "mutation": 634,
         "local_search": 0
       }
     },
@@ -135,8 +138,8 @@
       "generation": 12,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 304,
-        "mutation": 924,
+        "crossover": 208,
+        "mutation": 705,
         "local_search": 0
       }
     },
@@ -144,8 +147,8 @@
       "generation": 13,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 336,
-        "mutation": 992,
+        "crossover": 226,
+        "mutation": 759,
         "local_search": 0
       }
     },
@@ -153,8 +156,8 @@
       "generation": 14,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 367,
-        "mutation": 1090,
+        "crossover": 240,
+        "mutation": 820,
         "local_search": 0
       }
     },
@@ -162,8 +165,8 @@
       "generation": 15,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 393,
-        "mutation": 1189,
+        "crossover": 254,
+        "mutation": 889,
         "local_search": 0
       }
     },
@@ -171,8 +174,8 @@
       "generation": 16,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 421,
-        "mutation": 1277,
+        "crossover": 272,
+        "mutation": 959,
         "local_search": 0
       }
     },
@@ -180,8 +183,8 @@
       "generation": 17,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 452,
-        "mutation": 1357,
+        "crossover": 290,
+        "mutation": 1027,
         "local_search": 0
       }
     },
@@ -189,8 +192,8 @@
       "generation": 18,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 475,
-        "mutation": 1444,
+        "crossover": 309,
+        "mutation": 1080,
         "local_search": 0
       }
     },
@@ -198,8 +201,8 @@
       "generation": 19,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 501,
-        "mutation": 1519,
+        "crossover": 326,
+        "mutation": 1137,
         "local_search": 0
       }
     },
@@ -207,8 +210,8 @@
       "generation": 20,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 528,
-        "mutation": 1601,
+        "crossover": 348,
+        "mutation": 1206,
         "local_search": 0
       }
     },
@@ -216,8 +219,8 @@
       "generation": 21,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 556,
-        "mutation": 1686,
+        "crossover": 361,
+        "mutation": 1262,
         "local_search": 0
       }
     },
@@ -225,8 +228,8 @@
       "generation": 22,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 581,
-        "mutation": 1768,
+        "crossover": 375,
+        "mutation": 1329,
         "local_search": 0
       }
     },
@@ -234,8 +237,8 @@
       "generation": 23,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 612,
-        "mutation": 1852,
+        "crossover": 394,
+        "mutation": 1382,
         "local_search": 0
       }
     },
@@ -243,8 +246,8 @@
       "generation": 24,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 642,
-        "mutation": 1933,
+        "crossover": 410,
+        "mutation": 1447,
         "local_search": 0
       }
     },
@@ -252,465 +255,15 @@
       "generation": 25,
       "best_fitness": 0.0,
       "operator_credits": {
-        "crossover": 669,
-        "mutation": 2018,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 26,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 698,
-        "mutation": 2093,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 27,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 724,
-        "mutation": 2162,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 28,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 747,
-        "mutation": 2242,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 29,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 775,
-        "mutation": 2339,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 30,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 801,
-        "mutation": 2430,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 31,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 832,
-        "mutation": 2519,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 32,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 851,
-        "mutation": 2593,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 33,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 875,
-        "mutation": 2687,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 34,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 903,
-        "mutation": 2762,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 35,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 933,
-        "mutation": 2846,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 36,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 959,
-        "mutation": 2927,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 37,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 986,
-        "mutation": 3015,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 38,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1013,
-        "mutation": 3107,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 39,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1040,
-        "mutation": 3196,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 40,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1067,
-        "mutation": 3274,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 41,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1097,
-        "mutation": 3352,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 42,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1124,
-        "mutation": 3436,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 43,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1148,
-        "mutation": 3516,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 44,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1175,
-        "mutation": 3601,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 45,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1203,
-        "mutation": 3683,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 46,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1229,
-        "mutation": 3766,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 47,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1256,
-        "mutation": 3858,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 48,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1283,
-        "mutation": 3943,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 49,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1313,
-        "mutation": 4037,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 50,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1343,
-        "mutation": 4121,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 51,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1372,
-        "mutation": 4194,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 52,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1395,
-        "mutation": 4273,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 53,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1419,
-        "mutation": 4351,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 54,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1442,
-        "mutation": 4426,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 55,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1468,
-        "mutation": 4500,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 56,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1498,
-        "mutation": 4586,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 57,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1522,
-        "mutation": 4671,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 58,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1546,
-        "mutation": 4746,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 59,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1572,
-        "mutation": 4826,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 60,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1601,
-        "mutation": 4922,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 61,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1630,
-        "mutation": 5003,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 62,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1655,
-        "mutation": 5084,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 63,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1679,
-        "mutation": 5164,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 64,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1707,
-        "mutation": 5245,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 65,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1733,
-        "mutation": 5335,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 66,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1756,
-        "mutation": 5407,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 67,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1784,
-        "mutation": 5485,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 68,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1817,
-        "mutation": 5556,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 69,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1842,
-        "mutation": 5643,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 70,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1867,
-        "mutation": 5717,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 71,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1893,
-        "mutation": 5793,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 72,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1920,
-        "mutation": 5870,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 73,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1951,
-        "mutation": 5948,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 74,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1975,
-        "mutation": 6037,
-        "local_search": 0
-      }
-    },
-    {
-      "generation": 75,
-      "best_fitness": 0.0,
-      "operator_credits": {
-        "crossover": 1998,
-        "mutation": 6122,
+        "crossover": 428,
+        "mutation": 1510,
         "local_search": 0
       }
     }
   ],
   "operator_credits": {
-    "crossover": 2028,
-    "mutation": 6204,
+    "crossover": 446,
+    "mutation": 1588,
     "local_search": 0
   }
 }

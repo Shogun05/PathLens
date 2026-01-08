@@ -3,16 +3,16 @@
   "stage": "finalizing",
   "message": "All requested pipelines completed successfully",
   "percent": 100,
-  "timestamp": "2026-01-04T15:00:35.747740Z",
+  "timestamp": "2026-01-08T15:39:42.010664Z",
   "pipelines": {
-    "data": "skipped",
-    "optimization": "completed",
-    "landuse": "skipped"
+    "data": "completed",
+    "optimization": "completed"
   },
   "details": {
     "results": {
+      "data": true,
       "optimization": true
     },
-    "summary_file": "/home/shogun/Documents/PathLens/data/logs/run_summary_20260104_203035.json"
+    "summary_file": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\data\\logs\\run_summary_20260108_210942.json"
   }
 }
