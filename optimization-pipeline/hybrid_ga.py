@@ -379,19 +379,17 @@ def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, objec
         min_distance = float(numeric_distances.min())
         best_distances[amenity] = min_distance
         
-        # NEW EXPONENTIAL DECAY FORMULA (matches compute_scores.py)
-        # Score improvement: baseline accessibility - optimized accessibility
-        baseline_distance = baselines.get(amenity, float(numeric_distances.median()))
-        if baseline_distance <= 0 or not math.isfinite(baseline_distance):
-            baseline_distance = 1.0
+        # SIMPLIFIED GAIN: Reward placing at underserved locations (far from existing)
+        # Nodes placed at >= 1200m from existing amenities get full credit
+        gain_per_node = 0.0
+        for dist in numeric_distances:
+            if dist >= 1200:
+                gain_per_node += 1.0  # Full credit
+            else:
+                gain_per_node += (dist / 1200.0) * 0.5  # Partial credit
         
-        # Accessibility contribution: 100 * exp(-distance / 2000)
-        baseline_accessibility = 100.0 * math.exp(-baseline_distance / DECAY_CONSTANT)
-        optimized_accessibility = 100.0 * math.exp(-min_distance / DECAY_CONSTANT)
-        
-        # Weighted improvement (normalized by total weight like in compute_scores.py)
-        improvement = (optimized_accessibility - baseline_accessibility) * (weight / total_weight)
-        score = max(improvement, 0.0)
+        # Scale by weight and apply a reasonable multiplier
+        score = gain_per_node * (weight / total_weight) * 10.0
         
         amenity_scores[amenity] = score
         total_gain += score
@@ -418,12 +416,11 @@ def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, objec
             node_str = str(node)
             if node_str in nodes.index:
                 existing_dist = pd.to_numeric(nodes.loc[node_str, column], errors='coerce')
-                if pd.notna(existing_dist) and existing_dist < 1200:
-                    # Harsh penalty for placing within coverage threshold of existing amenity
-                    # Penalty scales: 100% penalty at 0m, 0% penalty at 1200m
-                    ratio = existing_dist / 1200.0
-                    penalty = (1.0 - ratio) ** 2  # Exponential penalty
-                    proximity_penalty += penalty * 2.0  # Strong penalty weight
+                if pd.notna(existing_dist) and existing_dist < 600:
+                    # Only penalize VERY close placements
+                    ratio = existing_dist / 600.0
+                    penalty = (1.0 - ratio) ** 2
+                    proximity_penalty += penalty * 0.5  # Mild penalty
     
     # Add Euclidean-based diversity penalty for new placements (FAST - no network ops)
     for amenity, node_ids in candidate.placements.items():
@@ -447,13 +444,12 @@ def default_evaluate_candidate(candidate: Candidate, effects: Mapping[str, objec
                 x2, y2 = coords[j]
                 dist_meters = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
                 
-                # Strong penalty if new placements are too close to each other
-                # Target: minimum 1200m spacing between new amenities of same type (match user rule)
-                min_spacing = 1200.0
+                # Mild penalty if new placements are very close together
+                min_spacing = 800.0
                 if dist_meters < min_spacing:
                     ratio = dist_meters / min_spacing
-                    penalty = (1.0 - ratio) ** 2  # Quadratic penalty
-                    diversity_penalty += penalty * 1000.0  # STRONG penalty weight (was 5.0)
+                    penalty = (1.0 - ratio) ** 2
+                    diversity_penalty += penalty * 2.0  # Reduced from 1000.0
 
     fitness = total_gain - 0.0005 * travel_penalty - diversity_penalty - proximity_penalty
     fitness = max(fitness, 0.0)
