@@ -90,3 +90,24 @@ hybrid_milp:
   # Caching
   enable_caching: true
   cache_dir: "cache/milp_refinement"
+
+# PNMLR (Personalized Neuro Mixed Logit Regression) Configuration
+pnmlr:
+  enabled: true  # Toggle PNMLR hooks for optimization
+  
+  # Model paths (relative to project root)
+  models_dir: "models"
+  
+  # Training settings (for train_pnmlr.py)
+  training:
+    n_profiles: 20           # Number of synthetic user profiles
+    epochs: 100              # Training epochs
+    batch_size: 256          # Batch size
+    learning_rate: 0.001     # Learning rate
+    hidden_dims: [64, 32]    # MLP hidden layer dimensions
+    decay_constant: 2000.0   # Distance decay for utility computation
+    seed: 42                 # Random seed
+  
+  # Evaluation settings
+  blend_weight: 1.0  # 0=100% default, 1=100% PNMLR (currently unused, pure PNMLR)
+

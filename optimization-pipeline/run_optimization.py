@@ -82,6 +82,30 @@ def check_hybrid_milp_enabled(config_path: Path) -> bool:
         return False
 
 
+def check_pnmlr_enabled(config_path: Path, project_root: Path) -> tuple[bool, bool]:
+    """
+    Check if PNMLR is enabled in config and if model exists.
+    
+    Returns:
+        Tuple of (enabled_in_config, model_exists)
+    """
+    enabled = False
+    model_exists = False
+    try:
+        with open(config_path, 'r') as f:
+            config = yaml.safe_load(f)
+        pnmlr_cfg = config.get('pnmlr', {})
+        enabled = pnmlr_cfg.get('enabled', False)
+        
+        if enabled:
+            models_dir = pnmlr_cfg.get('models_dir', 'models')
+            model_path = project_root / models_dir / "pnmlr_model.pkl"
+            model_exists = model_path.exists()
+    except Exception:
+        pass
+    return enabled, model_exists
+
+
 def run_step(description: str, command: List[str], logger) -> None:
     """Execute a subprocess while echoing context to stdout."""
     logger.info("=" * 80)
@@ -201,6 +225,18 @@ Examples:
         logger.info("Hybrid GA-MILP enabled in config.yaml")
     else:
         logger.info("Hybrid GA-MILP disabled (pure GA mode)")
+    
+    # Check PNMLR status
+    pnmlr_enabled, pnmlr_model_exists = check_pnmlr_enabled(config_path, project_root)
+    
+    if pnmlr_enabled:
+        if pnmlr_model_exists:
+            logger.info("PNMLR enabled - using personalized utility evaluation")
+        else:
+            logger.warning("PNMLR enabled but model not found! Run train_pnmlr.py first.")
+            logger.warning("Falling back to default distance-based evaluation.")
+    else:
+        logger.info("PNMLR disabled (using distance-based evaluation)")
 
     python_exe = str(args.python)
     nodes_scores = analysis_dir / "nodes_with_scores.parquet"

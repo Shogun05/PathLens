@@ -1264,8 +1264,27 @@ def main() -> None:
 
     analyse_distances(high_travel_nodes, context)
 
-    precompute_hook = load_callable(args.precompute_hook) or default_precompute_effects
-    evaluate_hook = load_callable(args.evaluate_hook) or default_evaluate_candidate
+    # Check for PNMLR hooks from config
+    precompute_hook = None
+    evaluate_hook = None
+    
+    if isinstance(cfg_yaml, dict):
+        pnmlr_cfg = cfg_yaml.get("pnmlr", {})
+        if isinstance(pnmlr_cfg, dict) and pnmlr_cfg.get("enabled", False):
+            logging.info("PNMLR hooks enabled from config")
+            try:
+                from pnmlr_hooks import pnmlr_precompute_hook, pnmlr_evaluate_hook
+                precompute_hook = pnmlr_precompute_hook
+                evaluate_hook = pnmlr_evaluate_hook
+                logging.info("PNMLR hooks loaded successfully")
+            except ImportError as e:
+                logging.warning("Failed to import PNMLR hooks: %s. Using default evaluation.", e)
+    
+    # Fall back to CLI args or defaults
+    if precompute_hook is None:
+        precompute_hook = load_callable(args.precompute_hook) or default_precompute_effects
+    if evaluate_hook is None:
+        evaluate_hook = load_callable(args.evaluate_hook) or default_evaluate_candidate
 
     ga = HybridGA(
         context=context,
