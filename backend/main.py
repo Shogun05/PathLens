@@ -134,17 +134,34 @@ async def get_nodes(
     offset: Optional[int] = Query(0, ge=0, description="Offset for pagination"),
     bbox: Optional[str] = Query(None, description="Bounding box: west,south,east,north")
 ):
-    filename = "baseline_nodes_with_scores.csv" if type == "baseline" else "optimized_nodes_with_scores.csv"
-    filepath = os.path.join(DATA_DIR, filename)
+    # Prefer parquet files (faster, more reliable) over CSV
+    parquet_filename = "baseline_nodes_with_scores.parquet" if type == "baseline" else "optimized_nodes_with_scores.parquet"
+    csv_filename = "baseline_nodes_with_scores.csv" if type == "baseline" else "optimized_nodes_with_scores.csv"
+    
+    parquet_path = os.path.join(DATA_DIR, parquet_filename)
+    csv_path = os.path.join(DATA_DIR, csv_filename)
+    
+    # Use parquet if available, fall back to CSV
+    if os.path.exists(parquet_path):
+        filepath = parquet_path
+        use_parquet = True
+    else:
+        filepath = csv_path
+        use_parquet = False
     
     if not os.path.exists(filepath):
         logger.warning(f"File not found: {filepath}")
         if type == "optimized":
             return []
-        raise HTTPException(status_code=404, detail=f"Data file not found: {filename}")
+        raise HTTPException(status_code=404, detail=f"Data file not found: {parquet_filename if use_parquet else csv_filename}")
     
     try:
-        df = pd.read_csv(filepath)
+        if use_parquet:
+            df = pd.read_parquet(filepath)
+            logger.info(f"Loaded {len(df)} rows from parquet: {parquet_filename}")
+        else:
+            df = pd.read_csv(filepath)
+            logger.info(f"Loaded {len(df)} rows from CSV: {csv_filename}")
         # Replace NaN with None for JSON compatibility
         df = df.replace({np.nan: None})
         
@@ -168,10 +185,13 @@ async def get_nodes(
             df = df.iloc[:limit]
         
         nodes = []
-        for _, row in df.iterrows():
+        for idx, row in df.iterrows():
             # Ensure required fields are present
             if pd.isna(row.get('lon')) or pd.isna(row.get('lat')):
                 continue
+            
+            # Get osmid from column or index
+            osmid = row.get('osmid') if 'osmid' in row else str(idx)
             
             # For optimized type, use optimized_ prefixed columns if available
             if type == "optimized":
@@ -186,7 +206,7 @@ async def get_nodes(
                 travel_time = row.get('travel_time_min')
                 
             node = Node(
-                osmid=str(row['osmid']),
+                osmid=str(osmid),
                 x=float(row['lon']),
                 y=float(row['lat']),
                 accessibility_score=accessibility,

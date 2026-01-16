@@ -1,0 +1,91 @@
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/logs/pathlens_master_20260116_205051.log
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - Config: /home/shogun/Documents/PathLens/config.yaml
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - ================================================================================
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - PIPELINE: DATA-COLLECTION
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - ================================================================================
+2026-01-16 20:50:51,344 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python -u /home/shogun/Documents/PathLens/data-pipeline/run_pipeline.py --place Bangalore, India
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] [OK] POIs already converted: /home/shogun/Documents/PathLens/data/raw/osm/pois.parquet
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection]   (Use --force to re-convert)
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] [OK] Using cached street network data from /home/shogun/Documents/PathLens/data/raw/osm/graph.graphml
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] [OK] Using cached processed graph: /home/shogun/Documents/PathLens/data/processed/graph.graphml
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] [OK] Using cached POI mapping: /home/shogun/Documents/PathLens/data/processed/poi_node_mapping.parquet
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection]   (Use --force to re-process)
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] [OK] Using cached walkability scores: /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] [OK] Using cached H3 aggregates: /home/shogun/Documents/PathLens/data/analysis/h3_agg.parquet
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection]   (Use --force to re-compute)
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] ============================================================
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] [COMPLETE] PathLens pipeline completed successfully!
+2026-01-16 20:50:51,372 - PathLensMaster - INFO - [data-collection] ============================================================
+2026-01-16 20:50:51,373 - PathLensMaster - INFO - [data-collection] [RESULTS]
+2026-01-16 20:50:51,373 - PathLensMaster - INFO - [data-collection]   - Processed graph: /home/shogun/Documents/PathLens/data/processed/graph.graphml
+2026-01-16 20:50:51,373 - PathLensMaster - INFO - [data-collection]   - Node scores: /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.csv
+2026-01-16 20:50:51,373 - PathLensMaster - INFO - [data-collection]   - H3 aggregates: /home/shogun/Documents/PathLens/data/analysis/h3_agg.csv
+2026-01-16 20:50:51,373 - PathLensMaster - INFO - [data-collection]   - Metrics summary: /home/shogun/Documents/PathLens/data/analysis/metrics_summary.json
+2026-01-16 20:50:51,379 - PathLensMaster - INFO - data-collection completed successfully
+2026-01-16 20:50:51,379 - PathLensMaster - INFO - ================================================================================
+2026-01-16 20:50:51,379 - PathLensMaster - INFO - PIPELINE: OPTIMIZATION
+2026-01-16 20:50:51,379 - PathLensMaster - INFO - ================================================================================
+2026-01-16 20:50:51,379 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python -u /home/shogun/Documents/PathLens/optimization-pipeline/run_optimization.py --ga-config /home/shogun/Documents/PathLens/config.yaml
+2026-01-16 20:50:51,427 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,427 - __main__ - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/optimization/runs/logs/optimization_run_20260116_205051.log
+2026-01-16 20:50:51,427 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,427 - __main__ - INFO - PathLens Optimization Workflow
+2026-01-16 20:50:51,427 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,427 - __main__ - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-16 20:50:51,430 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,430 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2026-01-16 20:50:51,433 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,433 - __main__ - INFO - PNMLR enabled - using personalized utility evaluation
+2026-01-16 20:50:51,433 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,433 - __main__ - INFO - ================================================================================
+2026-01-16 20:50:51,433 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,433 - __main__ - INFO - > Extract high travel time nodes
+2026-01-16 20:50:51,433 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,433 - __main__ - INFO - ================================================================================
+2026-01-16 20:50:51,433 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:51,433 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/list_optimizable_nodes.py --input /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --output /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv
+2026-01-16 20:50:52,245 - PathLensMaster - INFO - [optimization] Filtered 58943 nodes above 15.00 minutes; wrote 58943 rows to /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv
+2026-01-16 20:50:52,317 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,316 - __main__ - INFO - Extract high travel time nodes completed successfully
+2026-01-16 20:50:52,317 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,317 - __main__ - INFO - Auto-detected 12 worker threads (75% of 16 cores)
+2026-01-16 20:50:52,317 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,317 - __main__ - INFO - ================================================================================
+2026-01-16 20:50:52,317 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,317 - __main__ - INFO - > Run hybrid genetic algorithm with MILP refinement
+2026-01-16 20:50:52,317 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,317 - __main__ - INFO - ================================================================================
+2026-01-16 20:50:52,317 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,317 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/hybrid_ga.py --nodes-scores /home/shogun/Documents/PathLens/data/analysis/nodes_with_scores.parquet --high-travel /home/shogun/Documents/PathLens/data/optimization/runs/high_travel_time_nodes.csv --analysis-dir /home/shogun/Documents/PathLens/data/optimization/runs --config /home/shogun/Documents/PathLens/config.yaml --workers 12
+2026-01-16 20:50:52,928 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,928 [INFO] Loaded configuration from /home/shogun/Documents/PathLens/config.yaml
+2026-01-16 20:50:52,987 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:52,987 [INFO] Filtered 49251 nodes for school (too close to existing, < 1200m)
+2026-01-16 20:50:53,032 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,032 [INFO] Amenity school pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-16 20:50:53,060 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,059 [INFO] Filtered 45911 nodes for hospital (too close to existing, < 1200m)
+2026-01-16 20:50:53,122 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,122 [INFO] Amenity hospital pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-16 20:50:53,147 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,147 [INFO] Filtered 33465 nodes for pharmacy (too close to existing, < 1200m)
+2026-01-16 20:50:53,270 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,270 [INFO] Amenity pharmacy pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-16 20:50:53,296 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,296 [INFO] Filtered 39615 nodes for supermarket (too close to existing, < 1200m)
+2026-01-16 20:50:53,409 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,408 [INFO] Amenity supermarket pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-16 20:50:53,464 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,463 [INFO] Filtered 8669 nodes for bus_station (too close to existing, < 1200m)
+2026-01-16 20:50:53,799 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,799 [INFO] Amenity bus_station pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-16 20:50:53,846 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,846 [INFO] Filtered 50234 nodes for park (too close to existing, < 1200m)
+2026-01-16 20:50:53,892 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,892 [INFO] Amenity park pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-16 20:50:53,946 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:53,946 [INFO] Filtered 43176 nodes for bank (too close to existing, < 1200m)
+2026-01-16 20:50:54,054 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,054 [INFO] Amenity bank pool prepared with 500 candidates (filtered for min 1200m from existing).
+2026-01-16 20:50:54,058 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,057 [INFO] Loading graph for diversity penalty computation...
+2026-01-16 20:50:54,059 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,059 [WARNING] Failed to load graph: syntax error: line 1, column 0 (diversity penalty disabled)
+2026-01-16 20:50:54,059 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,059 [INFO] Analysing amenity distances for 58943 high-travel nodes.
+2026-01-16 20:50:54,128 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,128 [INFO] Amenity school               | mean distance 751.15 m | available 58943
+2026-01-16 20:50:54,130 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,130 [INFO] Amenity hospital             | mean distance 853.22 m | available 58943
+2026-01-16 20:50:54,133 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,133 [INFO] Amenity pharmacy             | mean distance 1291.82 m | available 58943
+2026-01-16 20:50:54,135 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,135 [INFO] Amenity supermarket          | mean distance 1089.76 m | available 58943
+2026-01-16 20:50:54,140 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,140 [INFO] Amenity bus_station          | mean distance 2729.36 m | available 58943
+2026-01-16 20:50:54,147 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,147 [INFO] Amenity park                 | mean distance 726.30 m | available 58943
+2026-01-16 20:50:54,152 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,152 [INFO] Amenity bank                 | mean distance 957.46 m | available 58943
+2026-01-16 20:50:54,157 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,157 [INFO] PNMLR hooks enabled from config
+2026-01-16 20:50:54,160 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,160 [INFO] PNMLR hooks loaded successfully
+2026-01-16 20:50:54,160 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,160 [WARNING] Landuse filtering requested but LanduseFeasibilityIntegration not available.
+2026-01-16 20:50:54,160 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,160 [INFO] Starting hybrid GA: population=50, generations=25
+2026-01-16 20:50:54,166 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,165 [INFO] Loaded PNMLR model from /home/shogun/Documents/PathLens/models/pnmlr_model.pkl
+2026-01-16 20:50:54,166 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,166 [INFO] Loaded PNMLR model from /home/shogun/Documents/PathLens/models
+2026-01-16 20:50:54,166 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,166 [INFO]   - 20 user profiles
+2026-01-16 20:50:54,166 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,166 [INFO]   - 7 amenity types
+2026-01-16 20:50:54,166 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,166 [INFO] Running PNMLR precompute for 77018 nodes.
+2026-01-16 20:50:54,201 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:54,200 [INFO] Extracted 12 features for 77018 nodes
+2026-01-16 20:50:55,962 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:55,962 [INFO] PNMLR utilities computed: range=[0.5816, 0.7199], mean=0.6556
+2026-01-16 20:50:55,988 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:55,988 [INFO] Using 12 worker threads for candidate evaluation.
+2026-01-16 20:50:55,990 - PathLensMaster - INFO - [optimization] 2026-01-16 20:50:55,989 [INFO] Seeded population with 5 greedy templates.
+2026-01-16 20:50:56,025 - PathLensMaster - INFO - [optimization] Generations:   0%|          | 0/25 [00:00<?, ?gen/s]2026-01-16 20:50:56,025 [INFO] Evaluating generation 1/25
+2026-01-16 20:50:56,695 - PathLensMaster - INFO - [optimization] Gen 1 eval:   0%|          | 0/50 [00:00<?, ?it/s][A
+2026-01-16 20:50:56,828 - PathLensMaster - INFO - [optimization] Gen 1 eval:   2%|▏         | 1/50 [00:00<00:32,  1.49it/s][A
+2026-01-16 20:50:57,136 - PathLensMaster - INFO - [optimization] Gen 1 eval:  58%|█████▊    | 29/50 [00:00<00:00, 47.72it/s][A
+2026-01-16 20:50:57,205 - PathLensMaster - INFO - [optimization] Gen 1 eval:  84%|████████▍ | 42/50 [00:01<00:00, 45.38it/s][A
+2026-01-16 20:50:57,205 - PathLensMaster - INFO - [optimization]                                                            [A
+2026-01-16 20:52:34,124 - PathLensMaster - INFO - [optimization] Gen 1 local_search:   0%|          | 0/5 [00:00<?, ?it/s][A

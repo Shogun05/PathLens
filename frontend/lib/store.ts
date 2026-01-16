@@ -67,6 +67,9 @@ interface PathLensState {
   optimizedScore: number;
   currentScore: number;
 
+  // Map container for report generation
+  mapContainer: HTMLDivElement | null;
+
   // Actions
   setLocation: (location: string) => void;
   setCustomBounds: (bounds: { north: number; south: number; east: number; west: number; } | null) => void;
@@ -88,6 +91,7 @@ interface PathLensState {
   setBaselineScore: (score: number) => void;
   setOptimizedScore: (score: number) => void;
   setCurrentScore: (score: number) => void;
+  setMapContainer: (container: HTMLDivElement | null) => void;
   reset: () => void;
 }
 
@@ -112,6 +116,7 @@ export const usePathLensStore = create<PathLensState>((set) => ({
   optimizedScore: 0,
   currentScore: 0,
   demoMode: false,
+  mapContainer: null,
 
   // Actions
   setLocation: (location) => set({ location }),
@@ -147,6 +152,7 @@ export const usePathLensStore = create<PathLensState>((set) => ({
   setBaselineScore: (baselineScore) => set({ baselineScore }),
   setOptimizedScore: (optimizedScore) => set({ optimizedScore }),
   setCurrentScore: (currentScore) => set({ currentScore }),
+  setMapContainer: (mapContainer) => set({ mapContainer }),
   reset: () =>
     set({
       baselineNodes: [],

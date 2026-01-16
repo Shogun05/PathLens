@@ -1,18 +1,11 @@
 {
-  "status": "completed",
-  "stage": "finalizing",
-  "message": "All requested pipelines completed successfully",
-  "percent": 100,
-  "timestamp": "2026-01-08T15:39:42.010664Z",
+  "status": "running",
+  "stage": "optimization",
+  "message": "Running optimization pipeline",
+  "percent": 90,
+  "timestamp": "2026-01-16T18:09:01.016560Z",
   "pipelines": {
     "data": "completed",
-    "optimization": "completed"
-  },
-  "details": {
-    "results": {
-      "data": true,
-      "optimization": true
-    },
-    "summary_file": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\data\\logs\\run_summary_20260108_210942.json"
+    "optimization": "running"
   }
 }

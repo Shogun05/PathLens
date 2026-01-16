@@ -43,6 +43,7 @@ interface MapComponentProps {
   zoom?: number;
   className?: string;
   onMapReady?: (map: L.Map) => void;
+  onContainerReady?: (container: HTMLDivElement) => void;
   drawingMode?: boolean;
   onBoundsDrawn?: (bounds: L.LatLngBounds) => void;
   enableClustering?: boolean;
@@ -58,6 +59,7 @@ export default function MapComponent({
   zoom = 12,
   className,
   onMapReady,
+  onContainerReady,
   drawingMode = false,
   onBoundsDrawn,
   enableClustering = true,
@@ -305,8 +307,20 @@ export default function MapComponent({
     startLatLngRef.current = null;
   };
 
+  // Ref for the entire wrapper (for screenshots)
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const onContainerReadyRef = useRef(onContainerReady);
+  onContainerReadyRef.current = onContainerReady;
+
+  // Expose wrapper for screenshot capture when map is ready (runs once when map initializes)
+  useEffect(() => {
+    if (mapInstance && wrapperRef.current && onContainerReadyRef.current) {
+      onContainerReadyRef.current(wrapperRef.current);
+    }
+  }, [mapInstance]); // Only depend on mapInstance
+
   return (
-    <div className="relative w-full h-full">
+    <div ref={wrapperRef} className="relative w-full h-full">
       <style jsx global>{`
         .leaflet-marker-transition {
           transition: stroke-opacity 0.5s ease-in-out, fill-opacity 0.5s ease-in-out, fill 0.5s ease-in-out;

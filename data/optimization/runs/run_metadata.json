@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-01-08T20:00:50.099630",
+  "timestamp": "2026-01-17T01:42:54.111573",
   "arguments": {
-    "python": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\venv\\Scripts\\python.exe",
-    "skip_candidates": false,
-    "skip_ga": false,
+    "python": "/home/shogun/Documents/PathLens/venv/bin/python",
+    "skip_candidates": true,
+    "skip_ga": true,
     "skip_map_refresh": false,
     "skip_pipeline": false,
     "candidate_threshold": null,
@@ -13,7 +13,7 @@
     "ga_workers": null,
     "ga_random_seed": null,
     "ga_local_search_budget": null,
-    "ga_config": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\config.yaml",
+    "ga_config": null,
     "map_skip_metrics": false,
     "pipeline_refresh_map": false,
     "pipeline_skip_map_metrics": false,
@@ -25,19 +25,19 @@
     "optimized_prefix": "optimized",
     "log_dir": null
   },
-  "python_executable": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\venv\\Scripts\\python.exe",
+  "python_executable": "/home/shogun/Documents/PathLens/venv/bin/python",
   "steps_executed": {
-    "candidates": true,
-    "ga": true,
+    "candidates": false,
+    "ga": false,
     "map_refresh": true,
     "pipeline": true
   }
 }{
-  "timestamp": "2026-01-08T20:00:50.099630",
+  "timestamp": "2026-01-17T01:42:54.111573",
   "arguments": {
-    "python": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\venv\\Scripts\\python.exe",
-    "skip_candidates": false,
-    "skip_ga": false,
+    "python": "/home/shogun/Documents/PathLens/venv/bin/python",
+    "skip_candidates": true,
+    "skip_ga": true,
     "skip_map_refresh": false,
     "skip_pipeline": false,
     "candidate_threshold": null,
@@ -47,7 +47,7 @@
     "ga_workers": null,
     "ga_random_seed": null,
     "ga_local_search_budget": null,
-    "ga_config": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\config.yaml",
+    "ga_config": null,
     "map_skip_metrics": false,
     "pipeline_refresh_map": false,
     "pipeline_skip_map_metrics": false,
@@ -59,10 +59,10 @@
     "optimized_prefix": "optimized",
     "log_dir": null
   },
-  "python_executable": "D:\\ENGG\\EL\\5th sem\\MAIN_EL\\PathLens\\venv\\Scripts\\python.exe",
+  "python_executable": "/home/shogun/Documents/PathLens/venv/bin/python",
   "steps_executed": {
-    "candidates": true,
-    "ga": true,
+    "candidates": false,
+    "ga": false,
     "map_refresh": true,
     "pipeline": true
   }

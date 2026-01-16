@@ -1,0 +1,17 @@
+2026-01-16 23:35:21,060 - __main__ - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/optimization/runs/logs/optimization_run_20260116_233521.log
+2026-01-16 23:35:21,060 - __main__ - INFO - PathLens Optimization Workflow
+2026-01-16 23:35:21,060 - __main__ - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-16 23:35:21,069 - __main__ - INFO - Hybrid GA-MILP enabled in config.yaml
+2026-01-16 23:35:21,074 - __main__ - INFO - PNMLR enabled - using personalized utility evaluation
+2026-01-16 23:35:21,074 - __main__ - INFO - Skipping candidate extraction (--skip-candidates)
+2026-01-16 23:35:21,074 - __main__ - INFO - Skipping hybrid GA (--skip-ga)
+2026-01-16 23:35:21,074 - __main__ - INFO - ================================================================================
+2026-01-16 23:35:21,074 - __main__ - INFO - > Generate combined POI GeoJSON and map
+2026-01-16 23:35:21,074 - __main__ - INFO - ================================================================================
+2026-01-16 23:35:21,074 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/generate_solution_map.py
+2026-01-16 23:36:13,665 - __main__ - INFO - Generate combined POI GeoJSON and map completed successfully
+2026-01-16 23:36:13,670 - __main__ - INFO - ================================================================================
+2026-01-16 23:36:13,670 - __main__ - INFO - > Run optimization pipeline orchestrator
+2026-01-16 23:36:13,670 - __main__ - INFO - ================================================================================
+2026-01-16 23:36:13,670 - __main__ - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/optimization-pipeline/run_optimized_pipeline.py --baseline-prefix baseline --optimized-prefix optimized --skip-map
+2026-01-16 23:36:17,300 - __main__ - ERROR - Step failed (Run optimization pipeline orchestrator) with exit code 1

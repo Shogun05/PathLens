@@ -24,13 +24,13 @@ export default function AnalysisLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const { 
-    baselineNodes, 
-    optimizedNodes, 
+  const {
+    baselineNodes,
+    optimizedNodes,
     suggestions,
     selectedSuggestionIds,
   } = usePathLensStore();
-  
+
   const [isMounted, setIsMounted] = useState(false);
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [enabledLayers, setEnabledLayers] = useState(new Set(['nodeScores']));
@@ -42,7 +42,7 @@ export default function AnalysisLayout({
 
   // Determine which data to show based on route
   const isOptimized = pathname?.includes('/optimized');
-  const displayNodes = isOptimized 
+  const displayNodes = isOptimized
     ? (showNodes ? optimizedNodes : [])
     : baselineNodes;
   const displaySuggestions = isOptimized ? suggestions : [];
@@ -64,11 +64,11 @@ export default function AnalysisLayout({
   return (
     <div className="flex h-screen flex-col bg-[#0f1c23]">
       <AnalysisHeader />
-      
+
       <div className="flex-1 relative overflow-hidden">
         {/* Persistent Map Layer */}
         <div className="absolute inset-0 z-0">
-          <MapComponent 
+          <MapComponent
             nodes={displayNodes}
             suggestions={displaySuggestions}
             selectedSuggestionIds={selectedSuggestionIds}
@@ -80,11 +80,14 @@ export default function AnalysisLayout({
             zoom={13}
             className="w-full h-full"
             onMapReady={(map) => setMapInstance(map)}
+            onContainerReady={(container) => {
+              usePathLensStore.getState().setMapContainer(container);
+            }}
           />
         </div>
 
         {/* Map Controls Overlay */}
-        <MapControls 
+        <MapControls
           className="absolute inset-0 z-5"
           onZoomIn={() => mapInstance?.zoomIn()}
           onZoomOut={() => mapInstance?.zoomOut()}

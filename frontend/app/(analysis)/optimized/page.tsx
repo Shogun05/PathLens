@@ -13,8 +13,9 @@ import { generateDemoNodes } from '@/lib/demo-data';
 import { MetricsCard } from '@/components/MetricsCard';
 import { NodeDistribution } from '@/components/NodeDistribution';
 import { CriticalNodes } from '@/components/CriticalNodes';
-import { ArrowLeft, RefreshCw, Check, Plus, School, Hospital, Bus, Trees, Map as MapIcon } from 'lucide-react';
+import { ArrowLeft, RefreshCw, Check, Plus, School, Hospital, Bus, Trees, Map as MapIcon, Download, Loader2 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { generateOptimizationReport, transformSuggestionsToAmenities } from '@/lib/report-generator';
 
 export default function OptimizedPage() {
   const router = useRouter();
@@ -32,10 +33,12 @@ export default function OptimizedPage() {
     optimizedScore,
     baselineScore,
     demoMode,
+    mapContainer,
   } = usePathLensStore();
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isExporting, setIsExporting] = useState(false);
 
   useEffect(() => {
     const loadData = async () => {
@@ -145,6 +148,28 @@ export default function OptimizedPage() {
     }
   };
 
+  const handleExportReport = async () => {
+    setIsExporting(true);
+    try {
+      const amenities = transformSuggestionsToAmenities(suggestions);
+
+      await generateOptimizationReport(mapContainer, {
+        location: location || 'Bangalore, India',
+        baselineScore,
+        optimizedScore,
+        amenities,
+        generatedAt: new Date(),
+      });
+
+      console.log('Report generated successfully');
+    } catch (error) {
+      console.error('Failed to generate report:', error);
+      setError('Failed to generate report. Please try again.');
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
   const scoreImprovement = optimizedScore - baselineScore;
 
   return (
@@ -179,14 +204,21 @@ export default function OptimizedPage() {
             <Button
               variant="outline"
               size="sm"
-              className="flex items-center gap-2 bg-[#8fd6ff]/10 hover:bg-[#8fd6ff]/20 text-[#8fd6ff] border-[#8fd6ff]/20"
-              onClick={() => {
-                // TODO: Implement export functionality
-                console.log('Export report');
-              }}
+              className="flex items-center gap-2 bg-[#8fd6ff]/10 hover:bg-[#8fd6ff]/20 text-[#8fd6ff] border-[#8fd6ff]/20 disabled:opacity-50"
+              onClick={handleExportReport}
+              disabled={isExporting || suggestions.length === 0}
             >
-              <span className="material-symbols-outlined text-[18px]">download</span>
-              <span className="text-sm font-bold">Export Report</span>
+              {isExporting ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  <span className="text-sm font-bold">Generating...</span>
+                </>
+              ) : (
+                <>
+                  <Download className="h-4 w-4" />
+                  <span className="text-sm font-bold">Export Report</span>
+                </>
+              )}
             </Button>
           </div>
         </div>
