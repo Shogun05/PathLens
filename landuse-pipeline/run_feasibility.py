@@ -679,9 +679,36 @@ class LanduseFeasibilityIntegration:
         self.pixelArea = ee.Image.pixelArea()
         
     def _load_nodes_df(self):
-        """Load nodes dataframe lazily."""
+        """
+        Load nodes dataframe lazily.
+        
+        Ensures the dataframe has the required columns: osmid, lat, lon
+        """
         if self._nodes_df is None:
-            self._nodes_df = pd.read_parquet(self.nodes_parquet_path).reset_index()
+            df = pd.read_parquet(self.nodes_parquet_path)
+            
+            # Ensure osmid is a column (not just the index)
+            if 'osmid' not in df.columns:
+                if df.index.name == 'osmid':
+                    # osmid is the index - reset it to make it a column
+                    df = df.reset_index()
+                else:
+                    raise ValueError(
+                        f"nodes parquet must have 'osmid' as either a column or index name. "
+                        f"Found index name: {df.index.name}, columns: {list(df.columns[:5])}"
+                    )
+            
+            # Verify required columns exist
+            required = ['osmid', 'lat', 'lon']
+            missing = [col for col in required if col not in df.columns]
+            if missing:
+                raise ValueError(
+                    f"nodes parquet missing required columns: {missing}. "
+                    f"Available columns: {list(df.columns)}"
+                )
+            
+            self._nodes_df = df
+        
         return self._nodes_df
     
     def _process_node_feasibility(self, feature):

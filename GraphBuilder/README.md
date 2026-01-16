@@ -1,8 +1,24 @@
-## Downloader setup
+## Satellite Graph Pipeline Setup
 
 1. Run `python downloader/main.py` once to bootstrap the configuration; this execution creates `preferences.json`.
 2. Open the generated `preferences.json` and change only the download directory so it matches the input-image path expected by `run_custom_inference.py`, leaving every other option untouched.
-3. On subsequent runs of `python downloader/main.py`, downloads automatically honor the saved preferences and write images to the configured directory.
+3. Create a virtual environment with Python 3.7 for the GraphBuilder inference:
+   ```bash
+   python3.7 -m venv venvg
+   .\venvg\Scripts\activate  # Windows
+   # source venvg/bin/activate  # Linux/Mac
+   pip install -r requirements.txt
+   deactivate
+   ```
+4. Run the complete satellite pipeline:
+   ```bash
+   python run_satellite_pipeline.py
+   ```
+   This will automatically:
+   - Download satellite images (prompts for bounding box)
+   - Run Sat2Graph inference in `venvg`
+   - Build OSM-compatible graph in main `venv`
+   - Output to `../data/raw/osm/`
 
 
 # Sat2Graph 
