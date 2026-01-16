@@ -2,6 +2,10 @@
 """
 Run Sat2Graph inference on custom satellite images.
 Processes images from sat_images/ folder and saves results to custom_outputs/
+
+Optimized version:
+- Reduced sliding window overlap (2x faster)
+- Parallel processing support for multiple images
 """
 
 import sys
@@ -11,6 +15,8 @@ from PIL import Image
 import tensorflow as tf
 import pickle
 from time import time
+import multiprocessing as mp
+from functools import partial
 
 # Add model directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'model'))
@@ -58,14 +64,16 @@ def run_inference(model, sat_img, output_prefix):
     # gt_seg remains at window size (not padded)
     gt_seg = np.zeros((1, image_size, image_size, 1))
     
-    # Sliding window inference
+    # Sliding window inference (OPTIMIZED: reduced overlap for 2x speed)
     t0 = time()
-    for x in range(0, 352*6-352, 176//2):
-        progress = int(x//88)
-        sys.stdout.write(f"\r  Progress: {'>' * progress}{'.' * (20-progress)}")
+    step_size = 176  # Changed from 176//2 (88) to 176 for no overlap
+    for x in range(0, 352*6-352, step_size):
+        progress = int(x//step_size)
+        total_steps = (352*6-352) // step_size
+        sys.stdout.write(f"\r  Progress: {'>' * progress}{'.' * (total_steps-progress)}")
         sys.stdout.flush()
         
-        for y in range(0, 352*6-352, 176//2):
+        for y in range(0, 352*6-352, step_size):
             alloutputs = model.Evaluate(
                 input_sat[:, x:x+image_size, y:y+image_size, :], 
                 gt_prob[:, x:x+image_size, y:y+image_size, :], 
@@ -99,23 +107,13 @@ def run_inference(model, sat_img, output_prefix):
     print(f"  Extracted {len(graph)} nodes\n")
     return graph
 
-def main():
-    # Setup paths
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_dir = os.path.join(script_dir, 'sat_images')
-    output_dir = os.path.join(script_dir, 'custom_outputs')
-    model_path = os.path.join(script_dir, 'data/20citiesModel/model')
-    
-    # Create output directory
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Get list of images
-    image_files = sorted([f for f in os.listdir(input_dir) if f.endswith('.png')])
-    print(f"Found {len(image_files)} images to process\n")
-    
-    # Initialize TensorFlow session and model
-    print("Loading model...")
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
+def process_image_batch(image_files, input_dir, output_dir, model_path, gpu_fraction=0.4):
+    """
+    Process a batch of images in a single TensorFlow session.
+    Used for parallel processing.
+    """
+    # Initialize TensorFlow session with reduced GPU memory for parallel execution
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_fraction)
     with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
         model = Sat2GraphModel(
             sess, 
@@ -128,9 +126,8 @@ def main():
         
         # Load pretrained weights
         model.saver.restore(sess, model_path)
-        print("Model loaded\n")
         
-        # Process each image
+        # Process each image in this batch
         for img_file in image_files:
             img_path = os.path.join(input_dir, img_file)
             img_name = os.path.splitext(img_file)[0]
@@ -141,6 +138,80 @@ def main():
             
             # Run inference
             graph = run_inference(model, sat_img, output_prefix)
+
+
+def main():
+    # Setup paths
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    input_dir = os.path.join(script_dir, 'downloader/sat_images')
+    output_dir = os.path.join(script_dir, 'custom_outputs')
+    model_path = os.path.join(script_dir, 'data/20citiesModel/model')
+    
+    # Create output directory
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Get list of images
+    image_files = sorted([f for f in os.listdir(input_dir) if f.endswith('.png')])
+    print(f"Found {len(image_files)} images to process\n")
+    
+    # Parallel processing configuration
+    num_parallel = 2  # Process 2 images in parallel
+    
+    if len(image_files) > 1 and num_parallel > 1:
+        print(f"Using parallel processing with {num_parallel} workers\n")
+        
+        # Split images into batches for parallel processing
+        batches = [image_files[i::num_parallel] for i in range(num_parallel)]
+        
+        # Filter out empty batches
+        batches = [b for b in batches if b]
+        
+        # Calculate GPU memory fraction per process
+        gpu_fraction = 0.8 / len(batches)
+        
+        # Create partial function with fixed arguments
+        process_func = partial(
+            process_image_batch,
+            input_dir=input_dir,
+            output_dir=output_dir,
+            model_path=model_path,
+            gpu_fraction=gpu_fraction
+        )
+        
+        # Process batches in parallel
+        print("Starting parallel processing...")
+        with mp.Pool(processes=len(batches)) as pool:
+            pool.map(process_func, batches)
+    else:
+        # Sequential processing (original behavior)
+        print("Processing images sequentially...\n")
+        print("Loading model...")
+        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
+        with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
+            model = Sat2GraphModel(
+                sess, 
+                image_size=352, 
+                resnet_step=8, 
+                batchsize=1, 
+                channel=12, 
+                mode='test'
+            )
+            
+            # Load pretrained weights
+            model.saver.restore(sess, model_path)
+            print("Model loaded\n")
+            
+            # Process each image
+            for img_file in image_files:
+                img_path = os.path.join(input_dir, img_file)
+                img_name = os.path.splitext(img_file)[0]
+                output_prefix = os.path.join(output_dir, img_name)
+                
+                # Load image
+                sat_img = load_image(img_path)
+                
+                # Run inference
+                graph = run_inference(model, sat_img, output_prefix)
     
     print(f"\nAll done! Results saved to {output_dir}/")
 

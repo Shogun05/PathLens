@@ -21,7 +21,7 @@ default_prefs = {
     "channels": 3,
     "zoom": 17,
     "target_resolution_mpp": 0.5,
-    "dir": os.path.join(file_dir, "tiles"),
+    "dir": os.path.join(file_dir, "sat_images"),
     "headers": {
         "user-agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
