@@ -21,6 +21,10 @@ import osmnx as ox
 import yaml
 from tqdm import tqdm
 
+# Import CityDataManager for multi-city support
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from city_paths import CityDataManager
+
 
 ox.settings.use_cache = True
 
@@ -546,25 +550,144 @@ def clean_for_parquet(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     return df
 
 
+def compute_stratified_metrics(
+    nodes: gpd.GeoDataFrame,
+    underserved_percentile: float = 20.0,
+    gap_threshold_minutes: float = 15.0,
+) -> Dict:
+    """
+    Compute stratified metrics to better capture optimization impact.
+    
+    Args:
+        nodes: GeoDataFrame with accessibility_score and travel_time_min columns
+        underserved_percentile: Percentile to define "underserved" stratum (default: bottom 20%)
+        gap_threshold_minutes: Travel time threshold defining "underserved" (default: 15 min)
+    
+    Returns:
+        Dict with citywide, underserved, gap_closure, and distribution metrics
+    """
+    # Citywide metrics (existing behavior)
+    citywide = {
+        "accessibility_mean": safe_numeric(nodes["accessibility_score"].mean()),
+        "travel_time_min_mean": safe_numeric(nodes["travel_time_min"].mean()),
+        "walkability_mean": safe_numeric(nodes["walkability"].mean()),
+        "node_count": int(len(nodes)),
+    }
+    
+    # Identify underserved stratum (bottom X% by accessibility)
+    accessibility_threshold = nodes["accessibility_score"].quantile(underserved_percentile / 100.0)
+    underserved_mask = nodes["accessibility_score"] <= accessibility_threshold
+    underserved_nodes = nodes[underserved_mask]
+    well_served_nodes = nodes[~underserved_mask]
+    
+    underserved = {
+        "accessibility_mean": safe_numeric(underserved_nodes["accessibility_score"].mean()),
+        "travel_time_min_mean": safe_numeric(underserved_nodes["travel_time_min"].mean()),
+        "walkability_mean": safe_numeric(underserved_nodes["walkability"].mean()),
+        "node_count": int(len(underserved_nodes)),
+        "percentile_threshold": underserved_percentile,
+        "accessibility_threshold": safe_numeric(accessibility_threshold),
+    }
+    
+    well_served = {
+        "accessibility_mean": safe_numeric(well_served_nodes["accessibility_score"].mean()),
+        "travel_time_min_mean": safe_numeric(well_served_nodes["travel_time_min"].mean()),
+        "walkability_mean": safe_numeric(well_served_nodes["walkability"].mean()),
+        "node_count": int(len(well_served_nodes)),
+    }
+    
+    # Gap closure metrics (nodes above travel time threshold)
+    nodes_above_threshold = (nodes["travel_time_min"] > gap_threshold_minutes).sum()
+    total_nodes = len(nodes)
+    pct_above_threshold = 100.0 * nodes_above_threshold / max(total_nodes, 1)
+    
+    gap_closure = {
+        "threshold_minutes": gap_threshold_minutes,
+        "nodes_above_threshold": int(nodes_above_threshold),
+        "pct_above_threshold": safe_numeric(pct_above_threshold),
+        "total_nodes": int(total_nodes),
+    }
+    
+    # Distribution metrics (percentiles)
+    travel_time = nodes["travel_time_min"].replace([np.inf, -np.inf], np.nan).dropna()
+    accessibility = nodes["accessibility_score"].replace([np.inf, -np.inf], np.nan).dropna()
+    
+    distribution = {
+        "travel_time_p50": safe_numeric(travel_time.quantile(0.50)) if len(travel_time) > 0 else 0.0,
+        "travel_time_p90": safe_numeric(travel_time.quantile(0.90)) if len(travel_time) > 0 else 0.0,
+        "travel_time_p95": safe_numeric(travel_time.quantile(0.95)) if len(travel_time) > 0 else 0.0,
+        "travel_time_max": safe_numeric(travel_time.max()) if len(travel_time) > 0 else 0.0,
+        "accessibility_p10": safe_numeric(accessibility.quantile(0.10)) if len(accessibility) > 0 else 0.0,
+        "accessibility_p50": safe_numeric(accessibility.quantile(0.50)) if len(accessibility) > 0 else 0.0,
+    }
+    
+    return {
+        "citywide": citywide,
+        "underserved": underserved,
+        "well_served": well_served,
+        "gap_closure": gap_closure,
+        "distribution": distribution,
+    }
+
+
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--graph-path", required=True)
-    p.add_argument("--poi-mapping", required=True)
-    p.add_argument("--pois-path", required=False)
-    p.add_argument("--out-dir", default="./data/analysis")
+    p.add_argument("--city", default=None, help="City name for path resolution (e.g., 'bangalore', 'mumbai')")
+    p.add_argument("--graph-path", required=False, help="Path to graph.graphml (auto-resolved if --city is provided)")
+    p.add_argument("--poi-mapping", required=False, help="Path to POI mapping (auto-resolved if --city is provided)")
+    p.add_argument("--pois-path", required=False, help="Path to POIs GeoJSON/Parquet (auto-resolved if --city is provided)")
+    p.add_argument("--out-dir", default=None, help="Output directory (default: auto-resolved from city or './data/analysis')")
     p.add_argument("--h3-res", type=int, default=None)
-    p.add_argument("--config", default="/config.yaml")
+    p.add_argument("--config", default=None, help="Config file path (auto-resolved if --city is provided)")
     p.add_argument("--force", action="store_true", help="Force recompute all cached steps")
     p.add_argument("--output-prefix", default="", help="Prefix applied to output filenames for scenario separation")
     args = p.parse_args()
+    
+    # Initialize CityDataManager if city is specified
+    project_root = Path(__file__).parent.parent
+    cdm = None
+    if args.city:
+        cdm = CityDataManager(args.city, project_root=project_root)
+        print(f"Using city-specific paths for: {cdm.city}")
+        sys.stdout.flush()
+        
+        # Auto-resolve paths from CityDataManager
+        if not args.graph_path:
+            args.graph_path = str(cdm.processed_graph)
+        if not args.poi_mapping:
+            args.poi_mapping = str(cdm.poi_mapping)
+        if not args.pois_path:
+            # Try parquet first, fallback to geojson
+            if cdm.raw_pois.with_suffix('.parquet').exists():
+                args.pois_path = str(cdm.raw_pois.with_suffix('.parquet'))
+            else:
+                args.pois_path = str(cdm.raw_pois)
+        if not args.out_dir:
+            args.out_dir = str(cdm.baseline_dir)
+        if not args.config:
+            args.config = str(cdm.config)
+    else:
+        # Legacy mode: require explicit paths
+        if not args.graph_path or not args.poi_mapping:
+            print("ERROR: Either --city or both --graph-path and --poi-mapping must be provided")
+            sys.exit(1)
+        if not args.out_dir:
+            args.out_dir = "./data/analysis"
+        if not args.config:
+            args.config = "/config.yaml"
 
     # Resolve config path relative to script location if not absolute
     project_root = Path(__file__).parent.parent
-    config_path = Path(args.config)
-    if not config_path.is_absolute():
-        config_path = project_root / args.config.lstrip("../")
     
-    config = load_config(config_path)
+    # Use cdm.load_config() when available for proper base+city config merging
+    if args.city:
+        config = cdm.load_config()
+    else:
+        config_path = Path(args.config)
+        if not config_path.is_absolute():
+            config_path = project_root / args.config.lstrip("../")
+        config = load_config(config_path)
+        
     h3_resolution = args.h3_res or config.get("h3", {}).get("resolution", 8)
     walking_speed = config.get("walking_speed_kmph", 4.8)
     amenity_weights = config.get("amenity_weights", {})
@@ -715,21 +838,24 @@ def main():
     # nodes["walkability"] = normalize_series(nodes["walkability"]) * 99 + 1
     
     circuity_value = compute_circuity_sample(G, nodes, sample_k=circuity_sample_k)
-    travel_time_min_mean = safe_numeric(nodes["travel_time_min"].mean(), fallback)
-    travel_time_score_mean = safe_numeric(nodes["travel_time_score"].mean(), 0.0)
+    
+    # Compute stratified metrics for better impact analysis
+    stratified = compute_stratified_metrics(
+        nodes,
+        underserved_percentile=config.get("stratified_metrics", {}).get("underserved_percentile", 20.0),
+        gap_threshold_minutes=config.get("stratified_metrics", {}).get("gap_threshold_minutes", 15.0),
+    )
+    
+    # Merge equity into scores
+    stratified["equity"] = float(nodes["equity_score"].mean()) if "equity_score" in nodes else None
+
     summary = {
         "network": {
             "circuity_sample_ratio": float(circuity_value) if circuity_value == circuity_value else None,
             "intersection_density_global": float(nodes["intersection_density_global"].mean()),
             "link_node_ratio_global": float(nodes["link_node_ratio_global"].mean()),
         },
-        "scores": {
-            "accessibility_mean": float(nodes["accessibility_score"].mean()),
-            "walkability_mean": float(nodes["walkability"].mean()),
-            "equity_mean": float(nodes["equity_score"].mean()),
-            "travel_time_min_mean": travel_time_min_mean,
-            "travel_time_score_mean": travel_time_score_mean,
-        },
+        "scores": stratified,  # New nested structure with citywide, underserved, gap_closure, distribution, equity
     }
 
     prefix = args.output_prefix.strip()

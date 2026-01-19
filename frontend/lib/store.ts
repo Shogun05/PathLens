@@ -19,10 +19,11 @@ export interface Suggestion {
   geometry: {
     type: string;
     coordinates: [number, number];
-  };
+  } | null;
   properties: {
-    id: string;
-    amenity_type: string;
+    // Frontend naming
+    id?: string;
+    amenity_type?: string;
     expected_impact?: number;
     affected_nodes?: number;
     land_availability?: 'feasible' | 'limited' | 'unavailable';
@@ -31,6 +32,16 @@ export interface Suggestion {
     description?: string;
     impact_score?: number;
     cost_estimate?: string | number;
+    // Backend naming (from optimization POIs)
+    osmid?: string;
+    amenity?: string;
+    travel_time_min?: number;
+    distance_m?: number;
+    source?: string;
+    optimization_mode?: string;
+    mode_name?: string;
+    lon?: number;
+    lat?: number;
   };
 }
 
@@ -143,7 +154,11 @@ export const usePathLensStore = create<PathLensState>((set) => ({
     }),
   selectAllSuggestions: () =>
     set((state) => {
-      const allIds = new Set(state.suggestions.map(s => s.properties.id));
+      const allIds = new Set(
+        state.suggestions
+          .map(s => s.properties.id || s.properties.osmid)
+          .filter((id): id is string => id !== undefined)
+      );
       return { selectedSuggestionIds: allIds };
     }),
   setIsOptimizing: (isOptimizing) => set({ isOptimizing }),

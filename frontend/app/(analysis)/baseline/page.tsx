@@ -57,8 +57,11 @@ export default function BaselinePage() {
             console.log(`Loaded ${nodes.length} baseline nodes`);
             setBaselineNodes(nodes);
 
-            // Use pre-computed city-wide average from metrics API (all 182k nodes)
-            const metricsScore = metrics?.scores?.accessibility_mean;
+            // Use pre-computed city-wide average from metrics API (all nodes)
+            // API returns: scores.citywide.accessibility_mean (stratified) or scores.accessibility (flat)
+            const metricsScore = metrics?.scores?.citywide?.accessibility_mean
+              || metrics?.scores?.accessibility
+              || metrics?.scores?.accessibility_mean;
             if (metricsScore && metricsScore > 0) {
               setBaselineScore(metricsScore);
               console.log(`City-wide accessibility: ${metricsScore.toFixed(2)}`);

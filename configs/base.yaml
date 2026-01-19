@@ -1,0 +1,101 @@
+amenity_distance_cutoff_m: null
+amenity_weights:
+  bank: 1.8
+  bus_station: 1.5
+  hospital: 2.5
+  park: 1.2
+  pharmacy: 2.0
+  school: 1.5
+  supermarket: 2.5
+centrality:
+  compute_betweenness: true
+  compute_closeness: false
+  enabled: true
+  sample_k: 150
+  seed: 42
+circuity_sample_k: 120
+composite_weights:
+  alpha: 0.05
+  beta: 0.8
+  delta: 0.1
+  gamma: 0.05
+equity_thresholds:
+  bank: 800
+  bus_station: 800
+  hospital: 1500
+  park: 900
+  pharmacy: 800
+  school: 1000
+  supermarket: 1000
+h3:
+  resolution: 8
+hybrid_milp:
+  apply_every_n_generations: 1
+  apply_to_elite_only: true
+  cache_dir: cache/milp_refinement
+  enable_caching: true
+  enabled: true
+  max_amenities_to_relocate: 6
+  max_candidates_per_generation: 5
+  max_hexagons_to_optimize: 5
+  min_improvement_threshold: 0.01
+  selection_strategy: worst_hexagons
+  time_limit_seconds: 3.0
+milp:
+  amenity_budgets:
+    bank: 20
+    bus_station: 40
+    hospital: 25
+    park: 25
+    pharmacy: 25
+    school: 30
+    supermarket: 30
+  enable_equity: true
+  equity_min_coverage: 0.5
+  gap_tolerance: 0.01
+  max_candidates: null
+  time_limit_seconds: 300
+  use_population_weights: true
+network_type: walk
+place: Bangalore, India
+pnmlr:
+  blend_weight: 1.0
+  enabled: true
+  models_dir: models
+  training:
+    batch_size: 256
+    decay_constant: 2000.0
+    epochs: 100
+    hidden_dims:
+    - 64
+    - 32
+    learning_rate: 0.001
+    n_profiles: 20
+    seed: 42
+walking_speed_kmph: 4.8
+
+# Genetic Algorithm and Optimization Pipeline Parameters
+optimization:
+  ga_population: 100
+  ga_generations: 50
+  ga_workers: null
+  ga_random_seed: 42
+  ga_local_search_budget: 10
+  candidate_threshold: 15.0
+  candidate_limit: null
+  map_skip_metrics: false
+  pipeline_refresh_map: true
+  pipeline_skip_map_metrics: false
+  pipeline_force_graph: false
+  pipeline_force_scoring: false
+  pipeline_skip_scoring: false
+  baseline_prefix: "baseline"
+  optimized_prefix: "optimized"
+  skip_ga: false
+
+# Data Pipeline Parameters
+data:
+  skip_convert: false
+  skip_graph: false
+  skip_scoring: false
+  skip_viz: false

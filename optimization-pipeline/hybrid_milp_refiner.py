@@ -68,17 +68,19 @@ class HybridMILPRefiner:
     to improve it by solving a small MILP over a localized optimization window.
     """
     
-    def __init__(self, config: MILPRefinementConfig):
+    def __init__(self, config: MILPRefinementConfig, cdm: Optional[CityDataManager] = None):
         """
         Initialize refiner.
         
         Args:
             config: MILP refinement configuration
+            cdm: Optional CityDataManager for path resolution
         """
         if pulp is None:
             raise ImportError("PuLP required for MILP refinement. Install: pip install pulp")
         
         self.config = config
+        self.cdm = cdm
         self.stats = {
             'total_attempts': 0,
             'successful_solves': 0,
@@ -91,7 +93,11 @@ class HybridMILPRefiner:
         
         # Setup cache directory
         if self.config.enable_caching:
-            self.cache_dir = Path(self.config.cache_dir)
+            if self.cdm:
+                self.cache_dir = self.cdm.project_root / "data" / "cache" / "milp"
+            else:
+                self.cache_dir = Path(self.config.cache_dir)
+            
             self.cache_dir.mkdir(parents=True, exist_ok=True)
             logger.info(f"MILP refinement cache enabled: {self.cache_dir}")
         else:

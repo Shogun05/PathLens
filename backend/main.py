@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 from datetime import datetime
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import os
@@ -10,6 +11,11 @@ import subprocess
 import sys
 import json
 import logging
+import pyproj
+
+# Add project root to path for CityDataManager
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from city_paths import CityDataManager
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
@@ -65,6 +71,31 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data", "analysis")
 RUN_SCRIPT = os.path.join(BASE_DIR, "run_pathlens.py")
 STATUS_PATH = os.path.join(BASE_DIR, "data", "optimization", "runs", "progress.json")
+
+# Multi-mode optimization paths
+CITIES_DIR = os.path.join(BASE_DIR, "data", "cities")
+DEFAULT_CITY = "bangalore"
+OPTIMIZATION_MODES = {
+    "ga_only": "GA Only",
+    "ga_milp": "GA + MILP", 
+    "ga_milp_pnmlr": "GA + MILP + PNMLR"
+}
+
+# City name aliases (alternate names -> folder name)
+CITY_ALIASES = {
+    "bengaluru": "bangalore",
+    "bombay": "mumbai",
+    "new_mumbai": "navi_mumbai",
+}
+
+def normalize_city_name(city: str) -> str:
+    """Normalize city name and resolve aliases."""
+    normalized = city.lower().strip().replace(" ", "_")
+    return CITY_ALIASES.get(normalized, normalized)
+
+def get_mode_dir(city: str, mode: str) -> str:
+    """Get the directory path for a specific optimization mode."""
+    return os.path.join(CITIES_DIR, normalize_city_name(city), "optimized", mode)
 
 
 def write_optimization_status(
@@ -130,38 +161,73 @@ class RescoreRequest(BaseModel):
 @app.get("/api/nodes", response_model=List[Node])
 async def get_nodes(
     type: str = Query(..., pattern="^(baseline|optimized)$"),
-    limit: Optional[int] = Query(None, ge=1, le=10000, description="Max nodes to return"),
+    city: Optional[str] = Query(None, description="City name for city-specific data"),
+    mode: str = Query("ga_only", pattern="^(ga_only|ga_milp|ga_milp_pnmlr)$"),
+    limit: Optional[int] = Query(None, ge=1, le=100000, description="Max nodes to return"),
     offset: Optional[int] = Query(0, ge=0, description="Offset for pagination"),
     bbox: Optional[str] = Query(None, description="Bounding box: west,south,east,north")
 ):
-    # Prefer parquet files (faster, more reliable) over CSV
-    parquet_filename = "baseline_nodes_with_scores.parquet" if type == "baseline" else "optimized_nodes_with_scores.parquet"
-    csv_filename = "baseline_nodes_with_scores.csv" if type == "baseline" else "optimized_nodes_with_scores.csv"
+    # Use CityDataManager for path resolution
+    target_city = city if city else DEFAULT_CITY
+    cdm = CityDataManager(target_city, mode=mode)
     
-    parquet_path = os.path.join(DATA_DIR, parquet_filename)
-    csv_path = os.path.join(DATA_DIR, csv_filename)
+    if type == "baseline":
+        parquet_path = str(cdm.baseline_nodes)
+        csv_path = str(cdm.baseline_nodes_csv)
+    else:
+        parquet_path = str(cdm.optimized_nodes(mode))
+        csv_path = str(cdm.optimized_nodes_csv(mode))
+    
+    # Store paths as Path objects for checking existence
+    parquet_path_obj = Path(parquet_path)
+    csv_path_obj = Path(csv_path)
     
     # Use parquet if available, fall back to CSV
     if os.path.exists(parquet_path):
         filepath = parquet_path
         use_parquet = True
-    else:
+    elif os.path.exists(csv_path):
         filepath = csv_path
         use_parquet = False
-    
-    if not os.path.exists(filepath):
-        logger.warning(f"File not found: {filepath}")
+    else:
+        logger.warning(f"File not found: {parquet_path} or {csv_path}")
         if type == "optimized":
             return []
-        raise HTTPException(status_code=404, detail=f"Data file not found: {parquet_filename if use_parquet else csv_filename}")
+        raise HTTPException(status_code=404, detail=f"Data file not found for city={city}, type={type}")
     
     try:
         if use_parquet:
             df = pd.read_parquet(filepath)
-            logger.info(f"Loaded {len(df)} rows from parquet: {parquet_filename}")
+            logger.info(f"Loaded {len(df)} rows from parquet: {filepath}")
         else:
             df = pd.read_csv(filepath)
-            logger.info(f"Loaded {len(df)} rows from CSV: {csv_filename}")
+            logger.info(f"Loaded {len(df)} rows from CSV: {filepath}")
+        
+        # Check for missing coordinates and project from UTM if needed
+
+        if 'x' in df.columns and 'y' in df.columns:
+            # If lon/lat columns don't exist, create them
+            if 'lon' not in df.columns: df['lon'] = np.nan
+            if 'lat' not in df.columns: df['lat'] = np.nan
+            
+            # Identify missing coordinates
+            mask = df['lon'].isna() | df['lat'].isna()
+            missing_count = mask.sum()
+            
+            if missing_count > 0:
+                logger.info(f"Projecting {missing_count} missing coordinates from UTM 43N to WGS84")
+                try:
+                    # Initialize transformer (UTM 43N -> WGS84)
+                    transformer = pyproj.Transformer.from_crs("EPSG:32643", "EPSG:4326", always_xy=True)
+                    # Transform only missing rows
+                    xs = df.loc[mask, 'x'].values
+                    ys = df.loc[mask, 'y'].values
+                    lons, lats = transformer.transform(xs, ys)
+                    df.loc[mask, 'lon'] = lons
+                    df.loc[mask, 'lat'] = lats
+                except Exception as e:
+                    logger.error(f"Projection failed: {e}")
+
         # Replace NaN with None for JSON compatibility
         df = df.replace({np.nan: None})
         
@@ -227,9 +293,26 @@ async def get_nodes(
         raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
 
 @app.get("/api/h3-aggregations")
-async def get_h3_aggregations(type: str = Query(..., pattern="^(baseline|optimized)$")):
-    filename = "baseline_h3_agg.csv" if type == "baseline" else "optimized_h3_agg.csv"
-    filepath = os.path.join(DATA_DIR, filename)
+async def get_h3_aggregations(
+    type: str = Query(..., pattern="^(baseline|optimized)$"),
+    city: str = Query(DEFAULT_CITY),
+    mode: str = Query("ga_only", pattern="^(ga_only|ga_milp|ga_milp_pnmlr)$")
+):
+    """Return H3 aggregations for a city's baseline or optimized state."""
+    normalized_city = normalize_city_name(city)
+    
+    # Determine the correct path based on type
+    if type == "baseline":
+        filepath = os.path.join(CITIES_DIR, normalized_city, "baseline", "h3_agg.csv")
+    else:
+        mode_dir = os.path.join(CITIES_DIR, normalized_city, "optimized", mode)
+        filepath = os.path.join(mode_dir, "h3_agg.csv")
+    
+    # Fallback to legacy path for backwards compatibility
+    if not os.path.exists(filepath):
+        filename = "baseline_h3_agg.csv" if type == "baseline" else "optimized_h3_agg.csv"
+        filepath = os.path.join(DATA_DIR, filename)
+        logger.info(f"Using legacy path: {filepath}")
     
     if not os.path.exists(filepath):
         logger.warning(f"File not found: {filepath}")
@@ -239,28 +322,43 @@ async def get_h3_aggregations(type: str = Query(..., pattern="^(baseline|optimiz
         df = pd.read_csv(filepath)
         df = df.replace({np.nan: None})
         hexagons = df.to_dict('records')
-        logger.info(f"Returning {len(hexagons)} H3 hexagons for type {type}")
+        logger.info(f"Returning {len(hexagons)} H3 hexagons for city {city}, type {type}, mode {mode}")
         return {"hexagons": hexagons}
     except Exception as e:
         logger.error(f"Error processing H3 aggregations: {e}")
         raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
 
 @app.get("/api/metrics-summary")
-async def get_metrics_summary(type: str = Query(..., pattern="^(baseline|optimized)$")):
-    filename = "baseline_metrics_summary.json" if type == "baseline" else "optimized_metrics_summary.json"
-    filepath = os.path.join(DATA_DIR, filename)
+async def get_metrics_summary(
+    type: str = Query(..., pattern="^(baseline|optimized)$"),
+    city: str = Query(DEFAULT_CITY),
+    mode: str = Query("ga_only", pattern="^(ga_only|ga_milp|ga_milp_pnmlr)$")
+):
+    """Return metrics summary for a city's baseline or optimized state.
     
-    if not os.path.exists(filepath):
+    Uses CityDataManager for modular path resolution.
+    Normalizes response to ensure accessibility, walkability, travel_time, and equity are always present.
+    """
+    cdm = CityDataManager(city, mode=mode)
+    
+    # Resolve path using CDM
+    if type == "baseline":
+        filepath = cdm.baseline_metrics
+    else:
+        filepath = cdm.optimized_metrics(mode)
+    
+    if not filepath.exists():
         logger.warning(f"Metrics file not found: {filepath}")
-        # Return valid empty structure instead of empty object
+        # Return empty structure with default zero values
         return {
             "network": {},
             "scores": {
-                "accessibility_mean": 0,
-                "walkability_mean": 0,
-                "equity_mean": 0,
-                "travel_time_min_mean": 0,
-                "travel_time_score_mean": 0
+                "accessibility": 0,
+                "walkability": 0,
+                "travel_time_min": 0,
+                "equity": 0,
+                "citywide": {},
+                "distribution": {}
             }
         }
     
@@ -268,59 +366,67 @@ async def get_metrics_summary(type: str = Query(..., pattern="^(baseline|optimiz
         with open(filepath, 'r') as f:
             content = f.read().strip()
             if not content:
-                logger.error(f"Empty metrics file: {filepath}")
-                return {
-                    "network": {},
-                    "scores": {
-                        "accessibility_mean": 0,
-                        "walkability_mean": 0,
-                        "equity_mean": 0,
-                        "travel_time_min_mean": 0,
-                        "travel_time_score_mean": 0
-                    }
-                }
+                return {"network": {}, "scores": {"accessibility": 0, "walkability": 0, "equity": 0}}
             metrics = json.loads(content)
-        logger.info(f"Returning metrics summary for type {type}")
+            
+        # Normalize scores to ensure frontend compatibility
+        scores = metrics.get("scores", {})
+        
+        # If stratified (baseline), flatten core metrics to top level
+        if "citywide" in scores:
+            cw = scores["citywide"]
+            scores.setdefault("accessibility", cw.get("accessibility_mean", 0))
+            scores.setdefault("walkability", cw.get("walkability_mean", 0))
+            scores.setdefault("travel_time_min", cw.get("travel_time_min_mean", 0))
+        
+        # Ensure Equity is present (defaults to None/0 if missing in baseline)
+        if "equity" not in scores:
+             # Try to find equity in specific locations or default
+             scores["equity"] = scores.get("equity_score", None)
+
+        metrics["scores"] = scores
+            
+        logger.info(f"Returning metrics summary for {city} ({type}, {mode})")
         return metrics
-    except json.JSONDecodeError as e:
-        logger.error(f"Invalid JSON in metrics file {filepath}: {e}")
-        return {
-            "network": {},
-            "scores": {
-                "accessibility_mean": 0,
-                "walkability_mean": 0,
-                "equity_mean": 0,
-                "travel_time_min_mean": 0,
-                "travel_time_score_mean": 0
-            }
-        }
+
     except Exception as e:
         logger.error(f"Error reading metrics summary: {e}")
         raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
 
 @app.get("/api/pois")
-async def get_pois():
-    # Check for POI files in order of preference
-    # Note: combined_pois.geojson is no longer created by default (optimization removed it to save 75+ min)
-    poi_paths = [
-        os.path.join(BASE_DIR, "data", "raw", "osm", "pois.geojson"),  # Primary: full POI dataset
-        os.path.join(BASE_DIR, "data", "raw", "osm", "amenities.geojson"),  # Fallback
-    ]
+async def get_pois(city: str = Query(DEFAULT_CITY)):
+    """Return POIs for a specific city."""
+    target_city = city if city else DEFAULT_CITY
+    cdm = CityDataManager(target_city)
+    
+    # Check for POI files (Parquet first for speed)
+    raw_pois_parquet = cdm.raw_pois.with_suffix(".parquet")
     
     filepath = None
-    for path in poi_paths:
-        if os.path.exists(path):
-            filepath = path
-            logger.info(f"Using POI file: {filepath}")
-            break
+    if raw_pois_parquet.exists():
+        filepath = str(raw_pois_parquet)
+    elif cdm.raw_pois.exists():
+        filepath = str(cdm.raw_pois)
+    # Check legacy/global fallback if city-specific not found
+    elif os.path.exists(os.path.join(BASE_DIR, "data", "raw", "osm", "pois.geojson")):
+        filepath = os.path.join(BASE_DIR, "data", "raw", "osm", "pois.geojson")
+    
+    if filepath:
+        logger.info(f"Using POI file for {city}: {filepath}")
     
     if not filepath:
-        logger.error("No POI files found")
+        logger.error(f"No POI files found for city: {city}")
         return {"type": "FeatureCollection", "features": []}
     
     try:
-        with open(filepath, 'r') as f:
-            geojson = json.load(f)
+        # Handle parquet format
+        if filepath.endswith('.parquet'):
+            import geopandas as gpd
+            gdf = gpd.read_parquet(filepath)
+            geojson = json.loads(gdf.to_json())
+        else:
+            with open(filepath, 'r') as f:
+                geojson = json.load(f)
         
         # Transform properties to match frontend expectations
         features = geojson.get('features', [])
@@ -332,19 +438,26 @@ async def get_pois():
             if 'osmid' in props:
                 props['id'] = str(props['osmid'])
         
-        logger.info(f"Returning {len(features)} POIs")
+        logger.info(f"Returning {len(features)} POIs for city {city}")
         return geojson
     except Exception as e:
-        logger.error(f"Error reading POIs: {e}")
+        logger.error(f"Error reading POIs for {city}: {e}")
         raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
 
 @app.get("/api/suggestions")
-async def get_suggestions():
-    best_candidate_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "best_candidate.json")
-    combined_pois_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "combined_pois.geojson")
+async def get_suggestions(
+    city: str = Query(DEFAULT_CITY),
+    mode: str = Query("ga_milp_pnmlr", pattern="^(ga_only|ga_milp|ga_milp_pnmlr)$")
+):
+    """Return optimization suggestions for a specific city and mode."""
+    target_city = city if city else DEFAULT_CITY
+    cdm = CityDataManager(target_city, mode=mode)
     
-    if not os.path.exists(best_candidate_path) or not os.path.exists(combined_pois_path):
-        logger.warning("Optimization results not found")
+    best_candidate_path = cdm.best_candidate(mode)
+    optimized_pois_path = cdm.optimized_pois(mode)
+    
+    if not best_candidate_path.exists() or not optimized_pois_path.exists():
+        logger.warning(f"Optimization results not found for city {city}, mode {mode}")
         return {"type": "FeatureCollection", "features": []}
     
     try:
@@ -352,27 +465,26 @@ async def get_suggestions():
         with open(best_candidate_path, 'r') as f:
             best_candidate = json.load(f)
         
-        # Load POIs and filter for optimized ones
-        with open(combined_pois_path, 'r') as f:
+        # Load optimized POIs (small file with only new placements)
+        with open(optimized_pois_path, 'r') as f:
             pois = json.load(f)
         
-        # Filter for optimized POIs only
-        optimized_features = [
-            feature for feature in pois.get('features', [])
-            if feature.get('properties', {}).get('source') == 'optimized'
-        ]
+        # Get features (already filtered to optimized POIs only)
+        optimized_features = pois.get('features', [])
         
-        logger.info(f"Returning {len(optimized_features)} optimization suggestions")
+        logger.info(f"Returning {len(optimized_features)} optimization suggestions for {city}, mode {mode}")
         return {
             "type": "FeatureCollection",
             "features": optimized_features,
             "metadata": {
                 "generation": best_candidate.get('generation'),
-                "fitness": best_candidate.get('fitness')
+                "fitness": best_candidate.get('metrics', {}).get('fitness', best_candidate.get('fitness')),
+                "city": city,
+                "mode": mode
             }
         }
     except Exception as e:
-        logger.error(f"Error reading suggestions: {e}")
+        logger.error(f"Error reading suggestions for {city}, mode {mode}: {e}")
         raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
 
 @app.post("/api/optimize")
@@ -500,14 +612,33 @@ async def get_optimization_status():
         logger.error(f"Error reading optimization status: {e}")
         return {"status": "error", "error": str(e)}
 
-@app.get("/api/optimization/results")
-async def get_optimization_results():
-    """Get the best optimization results (GA+MILP hybrid)"""
-    best_candidate_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "best_candidate.json")
+@app.post("/api/optimization/reset")
+async def reset_optimization_status():
+    """Reset the optimization status to not_started. Useful for clearing stale state."""
+    progress_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "progress.json")
     
-    if not os.path.exists(best_candidate_path):
-        logger.warning("Best candidate not found")
-        raise HTTPException(status_code=404, detail="Optimization results not found")
+    try:
+        if os.path.exists(progress_path):
+            os.remove(progress_path)
+        logger.info("Optimization status reset")
+        return {"status": "success", "message": "Optimization status reset"}
+    except Exception as e:
+        logger.error(f"Error resetting optimization status: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/optimization/results")
+async def get_optimization_results(
+    city: str = Query(DEFAULT_CITY),
+    mode: str = Query("ga_milp_pnmlr", pattern="^(ga_only|ga_milp|ga_milp_pnmlr)$")
+):
+    """Get the best optimization results (GA+MILP hybrid) for a city and mode."""
+    target_city = city if city else DEFAULT_CITY
+    cdm = CityDataManager(target_city, mode=mode)
+    best_candidate_path = cdm.best_candidate(mode)
+    
+    if not best_candidate_path.exists():
+        logger.warning(f"Best candidate not found for {target_city}/{mode}")
+        raise HTTPException(status_code=404, detail=f"Optimization results not found for {target_city}/{mode}")
     
     try:
         with open(best_candidate_path, 'r') as f:
@@ -519,20 +650,27 @@ async def get_optimization_results():
             "metrics": best_candidate.get('metrics', {}),
             "placements": best_candidate.get('metrics', {}).get('placements', {}),
             "candidate": best_candidate.get('candidate'),
-            "template": best_candidate.get('template')
+            "template": best_candidate.get('template'),
+            "city": target_city,
+            "mode": mode
         }
     except Exception as e:
         logger.error(f"Error reading optimization results: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/optimization/pois")
-async def get_optimization_pois():
-    """Get optimized POIs as GeoJSON (149 KB file with only optimized placements)"""
-    optimized_pois_path = os.path.join(BASE_DIR, "data", "optimization", "runs", "optimized_pois.geojson")
+async def get_optimization_pois_legacy(
+    city: str = Query(DEFAULT_CITY),
+    mode: str = Query("ga_milp_pnmlr", pattern="^(ga_only|ga_milp|ga_milp_pnmlr)$")
+):
+    """Get optimized POIs as GeoJSON for a city and mode (legacy compatibility endpoint)."""
+    target_city = city if city else DEFAULT_CITY
+    cdm = CityDataManager(target_city, mode=mode)
+    optimized_pois_path = cdm.optimized_pois(mode)
     
-    if not os.path.exists(optimized_pois_path):
-        logger.warning("Optimized POIs not found")
-        raise HTTPException(status_code=404, detail="Optimized POIs not found")
+    if not optimized_pois_path.exists():
+        logger.warning(f"Optimized POIs not found for {target_city}/{mode}")
+        raise HTTPException(status_code=404, detail=f"Optimized POIs not found for {target_city}/{mode}")
     
     try:
         with open(optimized_pois_path, 'r') as f:
@@ -553,7 +691,7 @@ async def get_optimization_pois():
                 amenity_name = props['amenity'].replace('_', ' ').title()
                 props['description'] = f"Optimized {amenity_name} placement"
         
-        logger.info(f"Returning {len(features)} optimized POIs")
+        logger.info(f"Returning {len(features)} optimized POIs for {target_city}/{mode}")
         
         return geojson
     except Exception as e:
@@ -666,6 +804,212 @@ async def get_baseline_vs_optimized_comparison():
         logger.error(f"Error creating comparison: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+# ============================================================
+# CITY DATA STATUS ENDPOINT
+# ============================================================
+
+@app.get("/api/city-data-status")
+async def get_city_data_status(city: str = Query(...)):
+    """Check if a city has baseline and/or optimized data available."""
+    normalized_city = normalize_city_name(city)
+    city_dir = os.path.join(CITIES_DIR, normalized_city)
+    baseline_path = os.path.join(city_dir, "baseline", "metrics_summary.json")
+    
+    # Check for any optimized mode
+    optimized_modes = {}
+    for mode_id in OPTIMIZATION_MODES.keys():
+        mode_metrics = os.path.join(city_dir, "optimized", mode_id, "metrics_summary.json")
+        optimized_modes[mode_id] = os.path.exists(mode_metrics)
+    
+    return {
+        "city": normalized_city,
+        "has_baseline": os.path.exists(baseline_path),
+        "optimized_modes": optimized_modes,
+        "any_optimized": any(optimized_modes.values())
+    }
+
+# ============================================================
+# MULTI-MODE OPTIMIZATION ENDPOINTS
+# ============================================================
+
+@app.get("/api/modes")
+async def get_optimization_modes(city: str = Query(DEFAULT_CITY)):
+    """List available optimization modes for a city."""
+    modes = []
+    for mode_id, mode_name in OPTIMIZATION_MODES.items():
+        mode_dir = get_mode_dir(city, mode_id)
+        exists = os.path.exists(mode_dir)
+        has_data = exists and os.path.exists(os.path.join(mode_dir, "nodes_with_scores.parquet"))
+        modes.append({
+            "id": mode_id,
+            "name": mode_name,
+            "available": has_data,
+            "path": mode_dir if exists else None
+        })
+    return {"city": city, "modes": modes}
+
+@app.get("/api/modes/{mode}/nodes")
+async def get_mode_nodes(
+    mode: str,
+    city: str = Query(DEFAULT_CITY),
+    limit: Optional[int] = Query(5000, ge=1, le=100000),
+    offset: Optional[int] = Query(0, ge=0)
+):
+    """Get nodes with scores for a specific optimization mode."""
+    if mode not in OPTIMIZATION_MODES:
+        raise HTTPException(status_code=400, detail=f"Invalid mode. Must be one of: {list(OPTIMIZATION_MODES.keys())}")
+    
+    mode_dir = get_mode_dir(city, mode)
+    parquet_path = os.path.join(mode_dir, "nodes_with_scores.parquet")
+    
+    if not os.path.exists(parquet_path):
+        logger.warning(f"Mode data not found: {parquet_path}")
+        return []
+    
+    try:
+        df = pd.read_parquet(parquet_path)
+        df = df.replace({np.nan: None})
+        
+        # Apply pagination
+        total_count = len(df)
+        if offset:
+            df = df.iloc[offset:]
+        if limit:
+            df = df.iloc[:limit]
+        
+        nodes = []
+        for idx, row in df.iterrows():
+            if pd.isna(row.get('lon')) or pd.isna(row.get('lat')):
+                continue
+            
+            osmid = row.get('osmid') if 'osmid' in row else str(idx)
+            
+            node = {
+                "osmid": str(osmid),
+                "x": float(row['lon']),
+                "y": float(row['lat']),
+                "accessibility_score": row.get('optimized_accessibility_score', row.get('accessibility_score')),
+                "walkability_score": row.get('optimized_walkability', row.get('walkability')),
+                "travel_time_min": row.get('optimized_travel_time_min', row.get('travel_time_min')),
+            }
+            nodes.append(node)
+        
+        logger.info(f"Returning {len(nodes)}/{total_count} nodes for mode {mode}")
+        return nodes
+    except Exception as e:
+        logger.error(f"Error processing mode nodes: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/modes/{mode}/metrics")
+async def get_mode_metrics(mode: str, city: str = Query(DEFAULT_CITY)):
+    """Get metrics summary for a specific optimization mode."""
+    if mode not in OPTIMIZATION_MODES:
+        raise HTTPException(status_code=400, detail=f"Invalid mode. Must be one of: {list(OPTIMIZATION_MODES.keys())}")
+    
+    mode_dir = get_mode_dir(city, mode)
+    metrics_path = os.path.join(mode_dir, "metrics_summary.json")
+    
+    if not os.path.exists(metrics_path):
+        logger.warning(f"Metrics not found: {metrics_path}")
+        return {"network": {}, "scores": {}}
+    
+    try:
+        with open(metrics_path, 'r') as f:
+            metrics = json.load(f)
+        return metrics
+    except Exception as e:
+        logger.error(f"Error reading mode metrics: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/modes/{mode}/pois")
+async def get_mode_pois(mode: str, city: str = Query(DEFAULT_CITY)):
+    """Get optimized POIs for a specific mode."""
+    if mode not in OPTIMIZATION_MODES:
+        raise HTTPException(status_code=400, detail=f"Invalid mode. Must be one of: {list(OPTIMIZATION_MODES.keys())}")
+    
+    mode_dir = get_mode_dir(city, mode)
+    pois_path = os.path.join(mode_dir, "optimized_pois.geojson")
+    
+    if not os.path.exists(pois_path):
+        logger.warning(f"POIs not found: {pois_path}")
+        return {"type": "FeatureCollection", "features": []}
+    
+    try:
+        with open(pois_path, 'r') as f:
+            geojson = json.load(f)
+        
+        # Add mode info to properties
+        for feature in geojson.get('features', []):
+            feature['properties']['optimization_mode'] = mode
+            feature['properties']['mode_name'] = OPTIMIZATION_MODES[mode]
+        
+        return geojson
+    except Exception as e:
+        logger.error(f"Error reading mode POIs: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/modes/comparison")
+async def get_modes_comparison(city: str = Query(DEFAULT_CITY)):
+    """Compare metrics across all optimization modes."""
+    # Load baseline metrics
+    baseline_path = os.path.join(DATA_DIR, "baseline_metrics_summary.json")
+    baseline_metrics = {}
+    if os.path.exists(baseline_path):
+        with open(baseline_path, 'r') as f:
+            baseline_metrics = json.load(f)
+    
+    comparison = {
+        "city": city,
+        "baseline": baseline_metrics,
+        "modes": {}
+    }
+    
+    for mode_id in OPTIMIZATION_MODES.keys():
+        mode_dir = get_mode_dir(city, mode_id)
+        metrics_path = os.path.join(mode_dir, "metrics_summary.json")
+        
+        mode_data = {
+            "name": OPTIMIZATION_MODES[mode_id],
+            "available": False,
+            "metrics": {},
+            "improvements": {}
+        }
+        
+        if os.path.exists(metrics_path):
+            try:
+                with open(metrics_path, 'r') as f:
+                    mode_metrics = json.load(f)
+                mode_data["available"] = True
+                mode_data["metrics"] = mode_metrics
+                
+                # Calculate improvements vs baseline
+                baseline_scores = baseline_metrics.get("scores", {})
+                mode_scores = mode_metrics.get("scores", {})
+                
+                for key in ["accessibility_mean", "walkability_mean", "travel_time_min_mean"]:
+                    baseline_val = baseline_scores.get(key, 0)
+                    mode_val = mode_scores.get(key, 0)
+                    if baseline_val and mode_val:
+                        if key == "travel_time_min_mean":
+                            # Lower is better for travel time
+                            improvement = baseline_val - mode_val
+                            percent = (improvement / baseline_val * 100) if baseline_val else 0
+                        else:
+                            # Higher is better for accessibility/walkability
+                            improvement = mode_val - baseline_val
+                            percent = (improvement / baseline_val * 100) if baseline_val else 0
+                        mode_data["improvements"][key] = {
+                            "absolute": round(improvement, 2),
+                            "percent": round(percent, 2)
+                        }
+            except Exception as e:
+                logger.error(f"Error loading metrics for {mode_id}: {e}")
+        
+        comparison["modes"][mode_id] = mode_data
+    
+    return comparison
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+

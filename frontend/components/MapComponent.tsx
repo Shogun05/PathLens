@@ -26,11 +26,18 @@ interface MapNode {
 interface MapSuggestion {
   geometry: {
     coordinates: [number, number];
-  };
+  } | null;
   properties: {
-    id: string;
-    amenity_type: string;
+    // Frontend naming
+    id?: string;
+    amenity_type?: string;
     description?: string;
+    // Backend naming (from optimization POIs)
+    osmid?: string;
+    amenity?: string;
+    travel_time_min?: number;
+    optimization_mode?: string;
+    mode_name?: string;
   };
 }
 
@@ -186,16 +193,20 @@ export default function MapComponent({
     // Process Suggestions (always unclustered)
     console.log(`[MapComponent] Rendering ${suggestions.length} suggestions`);
     suggestions.forEach((suggestion) => {
+      if (!suggestion.geometry || !suggestion.geometry.coordinates) return;
       const [lng, lat] = suggestion.geometry.coordinates;
       if (!lat || !lng) return;
-      const id = `sugg-${suggestion.properties.id}`;
-      const isSelected = selectedSuggestionIds.has(suggestion.properties.id);
+      // Support both naming conventions: id/amenity_type (frontend) and osmid/amenity (backend)
+      const poiId = suggestion.properties.id || suggestion.properties.osmid || 'unknown';
+      const poiType = suggestion.properties.amenity_type || suggestion.properties.amenity || 'unknown';
+      const id = `sugg-${poiId}`;
+      const isSelected = selectedSuggestionIds.has(poiId);
 
       const tooltipContent = `
         <div class="text-xs">
           <strong>New Amenity</strong><br/>
-          <strong>Type:</strong> ${suggestion.properties.amenity_type || 'N/A'}<br/>
-          <strong>ID:</strong> ${suggestion.properties.id || 'N/A'}<br/>
+          <strong>Type:</strong> ${poiType}<br/>
+          <strong>ID:</strong> ${poiId}<br/>
           <strong>Status:</strong> ${isSelected ? 'Selected' : 'Not Selected'}
           ${suggestion.properties.description ? `<br/><em>${suggestion.properties.description}</em>` : ''}
         </div>
@@ -219,7 +230,7 @@ export default function MapComponent({
 
       if (onSuggestionClick) {
         marker.on('click', () => {
-          onSuggestionClick(suggestion.properties.id);
+          onSuggestionClick(poiId);
         });
       }
 
@@ -231,7 +242,7 @@ export default function MapComponent({
     if (nodes.length > 0 || suggestions.length > 0) {
       const points: L.LatLngTuple[] = [
         ...nodes.slice(0, 100).map(n => [n.y, n.x] as L.LatLngTuple), // Sample for performance
-        ...suggestions.map(s => [s.geometry.coordinates[1], s.geometry.coordinates[0]] as L.LatLngTuple)
+        ...suggestions.filter(s => s.geometry).map(s => [s.geometry!.coordinates[1], s.geometry!.coordinates[0]] as L.LatLngTuple)
       ];
 
       if (points.length > 0) {

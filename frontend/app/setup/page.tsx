@@ -95,7 +95,7 @@ export default function HomePage() {
     }
   }, []);
 
-  const fetchStatus = useCallback(async (): Promise<OptimizationStatus | null> => {
+  const fetchStatus = useCallback(async (autoRedirect: boolean = true): Promise<OptimizationStatus | null> => {
     try {
       const status = await pathLensAPI.getOptimizationStatus();
       if (!status || status.status === 'not_started') {
@@ -117,19 +117,23 @@ export default function HomePage() {
       }
 
       if (status.status === 'completed') {
-        stopPolling();
-        setProgress(100);
-        setIsRunning(false);
-        setIsOptimizing(false);
-        setStatusMessage(status.message || 'Optimization completed');
-        setTimeout(() => router.push('/baseline'), 1200);
+        if (autoRedirect) {
+          stopPolling();
+          setProgress(100);
+          setIsRunning(false);
+          setIsOptimizing(false);
+          setStatusMessage(status.message || 'Optimization completed');
+          setTimeout(() => router.push('/baseline'), 1200);
+        }
       } else if (['failed', 'error'].includes(status.status)) {
-        stopPolling();
-        setProgress(0);
-        setIsRunning(false);
-        setIsOptimizing(false);
-        setStatusMessage(status.message || 'Optimization failed');
-        alert(status.message || 'Optimization failed. Check backend logs.');
+        if (autoRedirect) {
+          stopPolling();
+          setProgress(0);
+          setIsRunning(false);
+          setIsOptimizing(false);
+          setStatusMessage(status.message || 'Optimization failed');
+          alert(status.message || 'Optimization failed. Check backend logs.');
+        }
       }
 
       return status;
@@ -141,17 +145,20 @@ export default function HomePage() {
 
   const startStatusPolling = useCallback(() => {
     stopPolling();
-    fetchStatus();
-    statusPoller.current = setInterval(fetchStatus, 5000);
+    fetchStatus(true); // Enable redirect during polling
+    statusPoller.current = setInterval(() => fetchStatus(true), 5000);
   }, [fetchStatus, stopPolling]);
 
   useEffect(() => {
     let cancelled = false;
     const resume = async () => {
-      const status = await fetchStatus();
+      // Pass false to disable auto-redirect on initial load
+      const status = await fetchStatus(false);
       if (cancelled || !status) {
         return;
       }
+      // Only resume polling if actively running (NOT completed)
+      // This prevents redirect from stale 'completed' status
       if (['queued', 'running'].includes(status.status)) {
         setIsRunning(true);
         setIsOptimizing(true);
@@ -159,6 +166,8 @@ export default function HomePage() {
           statusPoller.current = setInterval(fetchStatus, 5000);
         }
       }
+      // Note: We do NOT handle 'completed' here to avoid redirect on page load
+      // Redirect only happens in fetchStatus when a NEW optimization completes
     };
     resume();
     return () => {
@@ -233,6 +242,32 @@ export default function HomePage() {
       return;
     }
 
+    // Normalize city name for API lookup (e.g., "Chandigarh, India" -> "chandigarh")
+    const normalizedCity = location
+      .toLowerCase()
+      .split(',')[0]
+      .trim()
+      .replace(/\s+/g, '_');
+
+    try {
+      // Check if data already exists for this city
+      const dataStatus = await pathLensAPI.getCityDataStatus(normalizedCity);
+
+      if (dataStatus.has_baseline) {
+        // Data exists - skip pipeline and navigate directly
+        setStatusMessage('Data found! Redirecting to results...');
+        setOptimizationProgress('Data found for ' + normalizedCity);
+        // Store city name for other pages to use
+        sessionStorage.setItem('selectedCity', normalizedCity);
+        setTimeout(() => router.push('/baseline'), 500);
+        return;
+      }
+    } catch (error) {
+      // API call failed - proceed with optimization (backwards compatibility)
+      console.log('City data check failed, proceeding with optimization:', error);
+    }
+
+    // No existing data - run the full pipeline
     setIsRunning(true);
     setIsOptimizing(true);
     setProgress(5);
@@ -318,8 +353,8 @@ export default function HomePage() {
                   disabled={drawingMode}
                 />
               </div>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className={`w-full border-dashed text-gray-300 ${drawingMode ? 'bg-[#8fd6ff]/20 border-[#8fd6ff]' : ''}`}
                 onClick={handleDrawBoundingBox}
                 type="button"
@@ -413,20 +448,22 @@ export default function HomePage() {
           </div>
         </aside>
 
-        <main className="flex-1 relative bg-neutral-900">
-          <MapComponent 
-            nodes={[]}
-            center={[12.9716, 77.5946]}
-            zoom={12}
-            className="w-full h-full"
-            drawingMode={drawingMode}
-            onBoundsDrawn={handleBoundsDrawn}
-          />
-          
-          <div className={`absolute inset-0 bg-gradient-to-r from-[#0f1c23] via-[#0f1c23]/60 to-transparent pointer-events-none ${drawingMode ? 'opacity-50' : ''}`}></div>
+        <main className="flex-1 relative bg-neutral-900 z-0">
+          <div className="absolute inset-0 z-10">
+            <MapComponent
+              nodes={[]}
+              center={[12.9716, 77.5946]}
+              zoom={12}
+              className="w-full h-full"
+              drawingMode={drawingMode}
+              onBoundsDrawn={handleBoundsDrawn}
+            />
+          </div>
+
+          <div className={`absolute inset-0 z-20 bg-gradient-to-r from-[#0f1c23] via-[#0f1c23]/60 to-transparent pointer-events-none ${drawingMode ? 'opacity-50' : ''}`}></div>
 
           {showStatusPanel && (
-            <div className="absolute top-6 right-6 w-80 bg-[#1b2328]/95 backdrop-blur-md rounded-xl border border-white/10 z-20">
+            <div className="absolute top-6 right-6 w-80 bg-[#1b2328]/95 backdrop-blur-md rounded-xl border border-white/10 z-50 shadow-lg">
               <div className="px-4 py-3 border-b border-white/10 flex justify-between items-center">
                 <h4 className="text-sm font-semibold">System Status</h4>
                 <div className={`h-2 w-2 rounded-full ${statusDotClass}`}></div>
@@ -465,9 +502,9 @@ export default function HomePage() {
 function AmenityCard({ icon: Icon, label, checked, onCheckedChange, priority }: any) {
   return (
     <label className="cursor-pointer relative flex flex-col gap-3 rounded-xl border border-white/5 bg-[#1b2328] p-3 hover:border-[#8fd6ff]/50 transition-all">
-      <Checkbox 
-        checked={checked} 
-        onCheckedChange={onCheckedChange} 
+      <Checkbox
+        checked={checked}
+        onCheckedChange={onCheckedChange}
         className="absolute top-3 right-3"
         id={`amenity-${label}`}
       />

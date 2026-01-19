@@ -15,6 +15,10 @@ import osmnx as ox
 import pandas as pd
 from tqdm import tqdm
 
+# Import CityDataManager for multi-city support
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from city_paths import CityDataManager
+
 ox.settings.use_cache = True
 ox.settings.log_console = True
 
@@ -60,10 +64,24 @@ def load_inputs(graph_path: Path, pois_path: Path, optimized_pois_path: Path | N
     print(f"Loading baseline POIs from {pois_path}...")
     sys.stdout.flush()
     # Use appropriate reader based on file extension
+    # Check for parquet cache first
+    parquet_path = pois_path.with_suffix(".parquet")
     if pois_path.suffix.lower() == '.parquet':
         base_pois = gpd.read_parquet(pois_path)
+    elif parquet_path.exists():
+        print(f"Found cached POIs at {parquet_path}")
+        base_pois = gpd.read_parquet(parquet_path)
     else:
         base_pois = gpd.read_file(pois_path)
+        # Auto-cache to parquet for future runs
+        try:
+            print(f"Caching loaded POIs to {parquet_path} for future speed...")
+            # Normalize list columns to ensure parquet compatibility
+            base_pois_norm = normalize_list_columns(base_pois)
+            base_pois_norm.to_parquet(parquet_path)
+            print("Cache saved.")
+        except Exception as e:
+            print(f"Warning: Failed to save POI cache: {e}")
     print(f"Loaded {len(base_pois)} baseline POIs")
     sys.stdout.flush()
     base_pois = _prepare_pois_layer(base_pois, "existing")
@@ -129,10 +147,18 @@ def load_optional_layer(layer_path: str | Path | None, strict: bool = False):
         if strict:
             raise FileNotFoundError(f"Optional layer not found: {path_obj}")
         return None
-    layer = gpd.read_file(path_obj)
-    if layer.empty:
+    try:
+        # Use appropriate reader based on file extension
+        if path_obj.suffix.lower() == '.parquet':
+            layer = gpd.read_parquet(path_obj)
+        else:
+            layer = gpd.read_file(path_obj)
+        if layer.empty:
+            return None
+        return layer
+    except Exception as e:
+        print(f"[WARNING] Failed to load optional layer {path_obj}: {e}")
         return None
-    return layer
 
 
 def _coerce_bool(value):
@@ -457,19 +483,57 @@ def save_outputs(Gs, nodes, edges, mapping, out_dir: Path, output_prefix: str, m
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--graph-path", required=True)
-    p.add_argument("--pois-path", required=True)
-    p.add_argument("--buildings-path")
-    p.add_argument("--landuse-path")
+    p.add_argument("--city", default=None, help="City name for path resolution (e.g., 'bangalore', 'mumbai')")
+    p.add_argument("--graph-path", required=False, help="Path to raw graph.graphml (auto-resolved if --city provided)")
+    p.add_argument("--pois-path", required=False, help="Path to POIs (auto-resolved if --city provided)")
+    p.add_argument("--buildings-path", help="Optional buildings layer")
+    p.add_argument("--landuse-path", help="Optional landuse layer")
     p.add_argument("--optimized-pois-path", help="Additional POI layer (e.g., optimized amenities) to merge before mapping")
-    p.add_argument("--out-dir", default="../data/processed")
+    p.add_argument("--out-dir", default=None, help="Output directory (auto-resolved if --city provided)")
     p.add_argument("--output-prefix", default="", help="Prefix applied to output filenames for scenario separation")
     p.add_argument("--merged-pois-out", help="Optional path to write the combined POI GeoJSON for inspection")
     args = p.parse_args()
+    
+    # Initialize CityDataManager if city is specified
+    project_root = Path(__file__).parent.parent
+    if args.city:
+        cdm = CityDataManager(args.city, project_root=project_root)
+        print(f"Using city-specific paths for: {cdm.city}")
+        sys.stdout.flush()
+        
+        # Auto-resolve paths
+        if not args.graph_path:
+            args.graph_path = str(cdm.raw_graph)
+        if not args.pois_path:
+            # Prefer parquet over geojson
+            if cdm.raw_pois.with_suffix('.parquet').exists():
+                args.pois_path = str(cdm.raw_pois.with_suffix('.parquet'))
+            else:
+                args.pois_path = str(cdm.raw_pois)
+        if not args.out_dir:
+            args.out_dir = str(cdm.processed_dir)
+    else:
+        # Legacy mode: require explicit paths
+        if not args.graph_path or not args.pois_path:
+            print("ERROR: Either --city or both --graph-path and --pois-path must be provided")
+            sys.exit(1)
+        if not args.out_dir:
+            args.out_dir = "../data/processed"
     G, pois = load_inputs(Path(args.graph_path), Path(args.pois_path), Path(args.optimized_pois_path) if args.optimized_pois_path else None)
     graph_dir = Path(args.graph_path).resolve().parent
-    buildings_path = args.buildings_path or graph_dir / "buildings.geojson"
-    landuse_path = args.landuse_path or graph_dir / "landuse.geojson"
+    # Prefer Parquet over GeoJSON for optional layers
+    buildings_path = args.buildings_path
+    if not buildings_path:
+        if (graph_dir / "buildings.parquet").exists():
+            buildings_path = graph_dir / "buildings.parquet"
+        elif (graph_dir / "buildings.geojson").exists():
+            buildings_path = graph_dir / "buildings.geojson"
+    landuse_path = args.landuse_path
+    if not landuse_path:
+        if (graph_dir / "landuse.parquet").exists():
+            landuse_path = graph_dir / "landuse.parquet"
+        elif (graph_dir / "landuse.geojson").exists():
+            landuse_path = graph_dir / "landuse.geojson"
     buildings = load_optional_layer(buildings_path, strict=bool(args.buildings_path))
     landuse = load_optional_layer(landuse_path, strict=bool(args.landuse_path))
     Gs = simplify_and_annotate(G)

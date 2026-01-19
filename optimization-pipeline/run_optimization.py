@@ -1,28 +1,18 @@
-#!/usr/bin/env python3
-"""End-to-end runner for the PathLens optimization workflow.
-
-It executes the following sequence from the repository root:
- 1. ``optimization/list_optimizable_nodes.py`` to refresh high-travel nodes
- 2. ``optimization/hybrid_ga.py`` to search for improved amenity placements
-    (with optional MILP refinement if enabled in config)
- 3. ``optimization/generate_solution_map.py`` to export GeoJSON + HTML map
- 4. ``optimization/run_optimized_pipeline.py`` to rebuild prefixed graphs/scores
-
-Each step can be skipped or customised via CLI flags; see ``--help``.
-"""
-from __future__ import annotations
-
 import argparse
 import subprocess
 import sys
 import json
-import yaml
 from pathlib import Path
-from typing import List
 from datetime import datetime
+from typing import List
+
+# Import CityDataManager for multi-city support
+project_root = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(project_root))
+from city_paths import CityDataManager
 
 
-def setup_logging(log_dir: Path) -> None:
+def setup_logging(log_dir: Path):
     """Setup logging for the optimization run."""
     import logging
     
@@ -44,20 +34,13 @@ def setup_logging(log_dir: Path) -> None:
     return logger
 
 
-def save_run_metadata(output_dir: Path, args: argparse.Namespace) -> None:
+def save_run_metadata(output_dir: Path, args: argparse.Namespace, cfg: dict) -> None:
     """Save metadata about the optimization run."""
-    # Convert arguments to JSON-serializable format
-    args_dict = {}
-    for key, value in vars(args).items():
-        if isinstance(value, Path):
-            args_dict[key] = str(value)
-        else:
-            args_dict[key] = value
-    
     metadata = {
-        'timestamp': datetime.now().isoformat(),
-        'arguments': args_dict,
-        'python_executable': str(args.python),
+        'timestamp': datetime.utcnow().isoformat() + 'Z',
+        'city': args.city,
+        'mode': args.mode,
+        'effective_config': cfg,
         'steps_executed': {
             'candidates': not args.skip_candidates,
             'ga': not args.skip_ga,
@@ -69,41 +52,6 @@ def save_run_metadata(output_dir: Path, args: argparse.Namespace) -> None:
     metadata_file = output_dir / "run_metadata.json"
     with open(metadata_file, 'w') as f:
         json.dump(metadata, f, indent=2)
-        json.dump(metadata, f, indent=2)
-
-
-def check_hybrid_milp_enabled(config_path: Path) -> bool:
-    """Check if hybrid MILP is enabled in config."""
-    try:
-        with open(config_path, 'r') as f:
-            config = yaml.safe_load(f)
-        return config.get('hybrid_milp', {}).get('enabled', False)
-    except Exception:
-        return False
-
-
-def check_pnmlr_enabled(config_path: Path, project_root: Path) -> tuple[bool, bool]:
-    """
-    Check if PNMLR is enabled in config and if model exists.
-    
-    Returns:
-        Tuple of (enabled_in_config, model_exists)
-    """
-    enabled = False
-    model_exists = False
-    try:
-        with open(config_path, 'r') as f:
-            config = yaml.safe_load(f)
-        pnmlr_cfg = config.get('pnmlr', {})
-        enabled = pnmlr_cfg.get('enabled', False)
-        
-        if enabled:
-            models_dir = pnmlr_cfg.get('models_dir', 'models')
-            model_path = project_root / models_dir / "pnmlr_model.pkl"
-            model_exists = model_path.exists()
-    except Exception:
-        pass
-    return enabled, model_exists
 
 
 def run_step(description: str, command: List[str], logger) -> None:
@@ -123,247 +71,120 @@ def run_step(description: str, command: List[str], logger) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Run the PathLens optimization stack from the repository root.",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Full optimization with hybrid MILP (if enabled in config)
-  python run_optimization.py
-  
-  # Skip candidate generation (use existing high_travel_time_nodes.csv)
-  python run_optimization.py --skip-candidates
-  
-  # Custom GA parameters with hybrid MILP
-  python run_optimization.py --ga-population 100 --ga-generations 75
-  
-  # Resume after GA crash (skip completed steps)
-  python run_optimization.py --skip-candidates --skip-ga
-        """
+        description="Run the PathLens optimization stack using centralized configuration.",
+        formatter_class=argparse.RawDescriptionHelpFormatter
     )
     
-    parser.add_argument("--python", type=Path, default=Path(sys.executable), 
-                       help="Python interpreter used for all subprocesses")
-
-    # Step control
-    parser.add_argument("--skip-candidates", action="store_true", 
-                       help="Skip regenerating high-travel nodes (list_optimizable_nodes.py)")
-    parser.add_argument("--skip-ga", action="store_true", 
-                       help="Skip the hybrid GA search (hybrid_ga.py)")
-    parser.add_argument("--skip-map-refresh", action="store_true", 
-                       help="Skip refreshing the combined POI map (generate_solution_map.py)")
-    parser.add_argument("--skip-pipeline", action="store_true", 
-                       help="Skip the prefixed pipeline rebuild (run_optimized_pipeline.py)")
-
-    # Candidate extraction parameters
-    parser.add_argument("--candidate-threshold", type=float, default=None, 
-                       help="Override travel time threshold in minutes for optimisation candidates")
-    parser.add_argument("--candidate-limit", type=int, default=None, 
-                       help="Limit number of candidate rows written")
-
-    # GA parameters
-    parser.add_argument("--ga-population", type=int, default=None, 
-                       help="Population size override for hybrid GA")
-    parser.add_argument("--ga-generations", type=int, default=None, 
-                       help="Generation count override for hybrid GA")
-    parser.add_argument("--ga-workers", type=int, default=None, 
-                       help="Worker thread count override for hybrid GA")
-    parser.add_argument("--ga-random-seed", type=int, default=None, 
-                       help="Seed override for hybrid GA")
-    parser.add_argument("--ga-local-search-budget", type=int, default=None,
-                       help="Local search budget override (0 to disable local search)")
-    parser.add_argument("--ga-config", type=Path, default=None, 
-                       help="Alternate YAML config for hybrid GA")
-
-    # Map generation parameters
-    parser.add_argument("--map-skip-metrics", action="store_true", 
-                       help="Pass --skip-metrics to generate_solution_map.py")
-
-    # Pipeline parameters
-    parser.add_argument("--pipeline-refresh-map", action="store_true", 
-                       help="Allow run_optimized_pipeline.py to refresh the GA map step")
-    parser.add_argument("--pipeline-skip-map-metrics", action="store_true", 
-                       help="Pass --skip-map-metrics to run_optimized_pipeline.py")
-    parser.add_argument("--pipeline-force-graph", action="store_true", 
-                       help="Force graph rebuild in run_optimized_pipeline.py")
-    parser.add_argument("--pipeline-force-scoring", action="store_true", 
-                       help="Force scoring recomputation in run_optimized_pipeline.py")
-    parser.add_argument("--pipeline-skip-graph", action="store_true", 
-                       help="Skip graph rebuild in run_optimized_pipeline.py")
-    parser.add_argument("--pipeline-skip-scoring", action="store_true", 
-                       help="Skip scoring recomputation in run_optimized_pipeline.py")
-    parser.add_argument("--baseline-prefix", default="baseline", 
-                       help="Filename prefix for baseline artifacts")
-    parser.add_argument("--optimized-prefix", default="optimized", 
-                       help="Filename prefix for optimized artifacts")
+    # Core execution flags
+    parser.add_argument("--city", default="bangalore", help="City to process")
+    parser.add_argument("--mode", default="ga_only", choices=["ga_only", "ga_milp", "ga_milp_pnmlr"], help="Optimization mode")
+    parser.add_argument("--force", action="store_true", help="Force recomputation of all steps")
     
-    # Logging
-    parser.add_argument("--log-dir", type=Path, default=None,
-                       help="Directory for run logs (default: optimization/runs/logs)")
+    # Step control (overrides config)
+    parser.add_argument("--skip-candidates", action="store_true", help="Skip candidate generation")
+    parser.add_argument("--skip-ga", action="store_true", help="Skip optimization search")
+    parser.add_argument("--skip-map-refresh", action="store_true", help="Skip map generation")
+    parser.add_argument("--skip-pipeline", action="store_true", help="Skip final pipeline rebuild")
     
     args = parser.parse_args()
-
-    project_root = Path(__file__).resolve().parent.parent  # Go up from optimization-pipeline/ to root
-    optimization_dir = project_root / "optimization-pipeline"
-    runs_dir = project_root / "data" / "optimization" / "runs"
-    analysis_dir = project_root / "data" / "analysis"
+    
+    # Initialize CDM and load config
+    cdm = CityDataManager(args.city, project_root=project_root, mode=args.mode)
+    cfg = cdm.load_config()
+    
+    # Resolve directories
+    runs_dir = cdm.optimized_dir(args.mode)
+    analysis_dir = cdm.baseline_dir
+    optimization_dir = Path(__file__).parent
     
     # Setup logging
-    log_dir = args.log_dir or (runs_dir / "logs")
-    logger = setup_logging(log_dir)
+    logger = setup_logging(runs_dir / "logs")
+    logger.info(f"Starting PathLens Optimization: {args.city} ({args.mode})")
     
-    logger.info("PathLens Optimization Workflow")
-    logger.info(f"Project root: {project_root}")
+    # Save metadata
+    save_run_metadata(runs_dir, args, cfg)
     
-    # Save run metadata
-    save_run_metadata(runs_dir, args)
+    python_exe = sys.executable
+    nodes_scores = cdm.baseline_nodes
+    high_travel_csv = cdm.high_travel_nodes(args.mode)
     
-    # Check hybrid MILP status
-    config_path = args.ga_config or (project_root / "config.yaml")
-    hybrid_milp_enabled = check_hybrid_milp_enabled(config_path)
+    # Get settings from config
+    opt_cfg = cfg.get('optimization', {})
     
-    if hybrid_milp_enabled:
-        logger.info("Hybrid GA-MILP enabled in config.yaml")
-    else:
-        logger.info("Hybrid GA-MILP disabled (pure GA mode)")
-    
-    # Check PNMLR status
-    pnmlr_enabled, pnmlr_model_exists = check_pnmlr_enabled(config_path, project_root)
-    
-    if pnmlr_enabled:
-        if pnmlr_model_exists:
-            logger.info("PNMLR enabled - using personalized utility evaluation")
+    # Step 0: Train PNMLR model (if required and mode is ga_milp_pnmlr)
+    if args.mode == 'ga_milp_pnmlr':
+        pnmlr_cfg = cfg.get('pnmlr', {})
+        models_dir = Path(pnmlr_cfg.get('models_dir', 'models'))
+        if not models_dir.is_absolute():
+            models_dir = project_root / models_dir
+        model_path = models_dir / args.city / "pnmlr_model.pkl"
+        
+        should_train = args.force or not model_path.exists()
+        if should_train:
+            train_command = [
+                python_exe,
+                str(optimization_dir / "train_pnmlr.py"),
+                "--city", args.city
+            ]
+            run_step("Train PNMLR model", train_command, logger)
         else:
-            logger.warning("PNMLR enabled but model not found! Run train_pnmlr.py first.")
-            logger.warning("Falling back to default distance-based evaluation.")
-    else:
-        logger.info("PNMLR disabled (using distance-based evaluation)")
-
-    python_exe = str(args.python)
-    nodes_scores = analysis_dir / "nodes_with_scores.parquet"
-    high_travel_csv = runs_dir / "high_travel_time_nodes.csv"
+            logger.info("PNMLR model exists and force not requested. Skipping training.")
 
     # Step 1: Extract optimization candidates
-    if not args.skip_candidates:
-        candidate_command: List[str] = [
+    skip_candidates = args.skip_candidates or opt_cfg.get('skip_candidates', False)
+    if not skip_candidates:
+        candidate_command = [
             python_exe,
             str(optimization_dir / "list_optimizable_nodes.py"),
-            "--input",
-            str(nodes_scores),
-            "--output",
-            str(high_travel_csv),
+            "--city", args.city,
+            "--mode", args.mode
         ]
-        if args.candidate_threshold is not None:
-            candidate_command.extend(["--threshold", str(args.candidate_threshold)])
-        if args.candidate_limit is not None:
-            candidate_command.extend(["--limit", str(args.candidate_limit)])
-        
+        if args.force: candidate_command.append("--force")
         run_step("Extract high travel time nodes", candidate_command, logger)
-    else:
-        logger.info("Skipping candidate extraction (--skip-candidates)")
-        if not high_travel_csv.exists():
-            logger.warning(f"Candidate file not found: {high_travel_csv}")
-
-    # Step 2: Run hybrid GA (with optional MILP refinement)
-    if not args.skip_ga:
-        ga_command: List[str] = [
+    
+    # Step 2: Run hybrid GA
+    skip_ga = args.skip_ga or opt_cfg.get('skip_ga', False)
+    if not skip_ga:
+        ga_command = [
             python_exe,
             str(optimization_dir / "hybrid_ga.py"),
-            "--nodes-scores",
-            str(nodes_scores),
-            "--high-travel",
-            str(high_travel_csv),
-            "--analysis-dir",
-            str(runs_dir),
+            "--city", args.city,
+            "--mode", args.mode
         ]
-        if args.ga_config is not None:
-            ga_command.extend(["--config", str(args.ga_config)])
-        if args.ga_population is not None:
-            ga_command.extend(["--population", str(args.ga_population)])
-        if args.ga_generations is not None:
-            ga_command.extend(["--generations", str(args.ga_generations)])
-        if args.ga_workers is not None:
-            ga_command.extend(["--workers", str(args.ga_workers)])
-        if args.ga_random_seed is not None:
-            ga_command.extend(["--random-seed", str(args.ga_random_seed)])
-        if args.ga_local_search_budget is not None:
-            ga_command.extend(["--local-search-budget", str(args.ga_local_search_budget)])
-        
-        # Auto-add workers if not specified
-        if args.ga_workers is None:
-            import os
-            auto_workers = max(1, int(os.cpu_count() * 0.75)) if os.cpu_count() else 4
-            ga_command.extend(["--workers", str(auto_workers)])
-            logger.info(f"Auto-detected {auto_workers} worker threads (75% of {os.cpu_count()} cores)")
-        
-        step_desc = "Run hybrid genetic algorithm"
-        if hybrid_milp_enabled:
-            step_desc += " with MILP refinement"
-        
-        run_step(step_desc, ga_command, logger)
-    else:
-        logger.info("Skipping hybrid GA (--skip-ga)")
-        best_candidate = runs_dir / "best_candidate.json"
-        if not best_candidate.exists():
-            logger.warning(f"Best candidate file not found: {best_candidate}")
-
+        if args.force: ga_command.append("--force") 
+        # hybrid_ga.py does not accept --force (config driven)
+        if "--force" in ga_command:
+            ga_command.remove("--force")
+        run_step("Run hybrid genetic algorithm", ga_command, logger)
+    
     # Step 3: Generate solution visualization
-    if not args.skip_map_refresh:
-        map_command: List[str] = [
+    skip_map = args.skip_map_refresh or opt_cfg.get('skip_map_refresh', False)
+    if not skip_map:
+        map_command = [
             python_exe, 
-            str(optimization_dir / "generate_solution_map.py")
+            str(optimization_dir / "generate_solution_map.py"),
+            "--city", args.city,
+            "--mode", args.mode
         ]
-        if args.map_skip_metrics:
-            map_command.append("--skip-metrics")
-        
-        run_step("Generate combined POI GeoJSON and map", map_command, logger)
-    else:
-        logger.info("Skipping map refresh (--skip-map-refresh)")
-
-    # Step 4: Run comparative pipeline
-    orchestrator = optimization_dir / "run_optimized_pipeline.py"
-    if not orchestrator.exists():
-        logger.error(f"Expected orchestrator not found at {orchestrator}")
-        raise SystemExit(f"Expected orchestrator not found at {orchestrator}.")
-
-    if not args.skip_pipeline:
-        pipeline_command: List[str] = [
+        # generate_solution_map.py does not accept --force
+        run_step("Generate solution map", map_command, logger)
+    
+    # Step 4: Run comparative pipeline (prefixed graphs/scores)
+    skip_pipeline = args.skip_pipeline or opt_cfg.get('skip_pipeline', False)
+    if not skip_pipeline:
+        pipeline_command = [
             python_exe,
-            str(orchestrator),
-            "--baseline-prefix",
-            args.baseline_prefix,
-            "--optimized-prefix",
-            args.optimized_prefix,
+            str(optimization_dir / "run_optimized_pipeline.py"),
+            "--city", args.city,
+            "--mode", args.mode,
+            "--skip-baseline"  # Baseline already run by run_baseline_prep.py
         ]
-        if args.pipeline_refresh_map:
-            pipeline_command.append("--refresh-map")
-        else:
-            pipeline_command.append("--skip-map")
-        if args.pipeline_skip_map_metrics:
-            pipeline_command.append("--skip-map-metrics")
-        if args.pipeline_force_graph:
-            pipeline_command.append("--force-graph")
-        if args.pipeline_force_scoring:
-            pipeline_command.append("--force-scoring")
-        if args.pipeline_skip_graph:
-            pipeline_command.append("--skip-graph")
-        if args.pipeline_skip_scoring:
-            pipeline_command.append("--skip-scoring")
-        
-        run_step("Run optimization pipeline orchestrator", pipeline_command, logger)
-    else:
-        logger.info("Skipping prefixed pipeline rebuild (--skip-pipeline)")
+        if args.force: pipeline_command.append("--force")
+        run_step("Run full optimized pipeline rebuild", pipeline_command, logger)
 
     logger.info("=" * 80)
-    logger.info("Optimization workflow complete")
+    logger.info(f"Optimization workflow complete for {args.city}")
     logger.info(f"  Results: {runs_dir}")
-    logger.info(f"  Analysis: {analysis_dir}")
-    logger.info(f"  Logs: {log_dir}")
-    
-    if hybrid_milp_enabled:
-        milp_stats = runs_dir / "milp_refinement_stats.json"
-        if milp_stats.exists():
-            logger.info(f"  MILP stats: {milp_stats}")
-    
     logger.info("=" * 80)
 
 

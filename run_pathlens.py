@@ -1,26 +1,12 @@
-#!/usr/bin/env python3
-"""
-PathLens Master Orchestrator
-
-Coordinates two pipelines:
-1. data-pipeline: OSM data collection and graph processing
-2. optimization-pipeline: GA+MILP amenity placement optimization (includes landuse feasibility)
-
-Usage:
-    python run_pathlens.py --pipeline all                    # Run full workflow
-    python run_pathlens.py --pipeline data                   # Data collection only
-    python run_pathlens.py --pipeline optimization           # Optimization only
-    python run_pathlens.py --skip-data                       # Run optimization only
-"""
-
 import argparse
 import subprocess
 import sys
 import logging
 from pathlib import Path
 from datetime import datetime
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 import json
+from city_paths import CityDataManager
 
 
 def setup_logging(log_dir: Path) -> logging.Logger:
@@ -31,9 +17,8 @@ def setup_logging(log_dir: Path) -> logging.Logger:
 
     logger = logging.getLogger('PathLensMaster')
     logger.setLevel(logging.INFO)
-    logger.propagate = False  # avoid duplicate uvicorn/stdout logs
+    logger.propagate = False 
 
-    # Clear existing handlers so repeated runs still attach the latest file
     if logger.handlers:
         for handler in list(logger.handlers):
             logger.removeHandler(handler)
@@ -58,7 +43,6 @@ def run_pipeline(pipeline_name: str, script_path: Path, args: List[str], logger:
     logger.info(f"PIPELINE: {pipeline_name.upper()}")
     logger.info("=" * 80)
 
-    # Use -u flag for unbuffered output so print statements flow through immediately
     command = [sys.executable, '-u', str(script_path)] + args
     logger.info(f"Command: {' '.join(command)}")
 
@@ -68,17 +52,17 @@ def run_pipeline(pipeline_name: str, script_path: Path, args: List[str], logger:
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            bufsize=1,  # Line buffered
+            bufsize=1,
             universal_newlines=True
         ) as process:
-            assert process.stdout is not None  # for type checkers
+            assert process.stdout is not None
             for line in process.stdout:
                 stripped = line.rstrip()
-                if stripped:  # Only log non-empty lines
+                if stripped:
                     prefixed = f"[{pipeline_name}] {stripped}"
-                    print(prefixed)  # Print to console
-                    logger.info(prefixed)  # Log to file
-                elif line:  # Preserve empty lines for formatting
+                    print(prefixed)
+                    logger.info(prefixed)
+                elif line:
                     print(line, end='')
 
             returncode = process.wait()
@@ -100,66 +84,76 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Full workflow (all pipelines)
-  python run_pathlens.py --pipeline all
+  # Run by config name (loads configs/mumbai.yaml and merges with base.yaml)
+  python run_pathlens.py --config mumbai
   
-  # Individual pipelines
-  python run_pathlens.py --pipeline data
-  python run_pathlens.py --pipeline optimization
-  
-  # Skip specific pipelines
-  python run_pathlens.py --skip-data
-  python run_pathlens.py --skip-optimization
-  
-  # Pass custom config
-  python run_pathlens.py --config custom_config.yaml
+  # Run with explicit flags (overrides config settings)
+  python run_pathlens.py --city bangalore --mode ga_milp
         """
     )
     
+    # Config path/name
+    parser.add_argument('--config', type=str, default=None,
+                       help='Config name in configs/ (e.g., "mumbai") or direct YAML path')
+
     # Pipeline selection
     parser.add_argument('--pipeline', 
                        choices=['all', 'data', 'optimization'],
-                       default='all',
+                       default=None,
                        help='Which pipeline(s) to run')
-    parser.add_argument('--skip-data', action='store_true',
+    parser.add_argument('--skip-data', action='store_true', default=None,
                        help='Skip data collection pipeline')
-    parser.add_argument('--skip-optimization', action='store_true',
+    parser.add_argument('--skip-optimization', action='store_true', default=None,
                        help='Skip optimization pipeline')
     
     # Shared arguments
-    parser.add_argument('--config', type=Path, default=None,
-                       help='Custom config file (default: config.yaml)')
-    parser.add_argument('--force', action='store_true',
+    parser.add_argument('--force', action='store_true', default=None,
                        help='Force recomputation of all steps')
     parser.add_argument('--log-dir', type=Path, default=None,
                        help='Directory for logs (default: data/logs)')
-    
-    # Data pipeline arguments
-    parser.add_argument('--place', default='Bangalore, India',
-                       help='Place name for OSM data collection')
-    
-    # Optimization pipeline arguments
-    parser.add_argument('--ga-population', type=int, default=None,
-                       help='GA population size')
-    parser.add_argument('--ga-generations', type=int, default=None,
-                       help='GA generation count')
+    parser.add_argument('--city', default=None,
+                       help='City to process (overrides config)')
+    parser.add_argument('--mode', default='all',
+                        choices=['all', 'ga_only', 'ga_milp', 'ga_milp_pnmlr'],
+                        help='Optimization mode (overrides config)')
     
     args = parser.parse_args()
     
     # Setup paths
     project_root = Path(__file__).parent
-    log_dir = args.log_dir or (project_root / 'data' / 'logs')
-    config_path = args.config or (project_root / 'config.yaml')
+    
+    # Initialize CityDataManager
+    # If --config is used as a name, we use it as the city if --city is not provided
+    city_name = args.city or args.config or 'bangalore'
+    # Use 'ga_only' as safe default when mode is 'all' or unspecified
+    initial_mode = args.mode if args.mode and args.mode != 'all' else 'ga_only'
+    cdm = CityDataManager(city_name, project_root=project_root, mode=initial_mode)
+    
+    # Load and merge config
+    cfg = cdm.load_config()
+    
+    # Resolve actual values from merged config
+    project_cfg = cfg.get('project', {})
+    pipeline_cfg = cfg.get('pipeline', {})
+    
+    city = args.city or project_cfg.get('city', city_name)
+    mode = args.mode or project_cfg.get('mode', 'ga_only')
+    
+    requested_pipeline = args.pipeline or pipeline_cfg.get('pipeline', 'all')
+    skip_data = args.skip_data if args.skip_data is not None else pipeline_cfg.get('skip_data', False)
+    skip_optimization = args.skip_optimization if args.skip_optimization is not None else pipeline_cfg.get('skip_optimization', False)
+    force = args.force if args.force is not None else pipeline_cfg.get('force', False)
     
     # Setup logging
+    log_dir = args.log_dir or (project_root / 'data' / 'logs')
     logger = setup_logging(log_dir)
     logger.info("PathLens Master Orchestrator Starting")
     logger.info(f"Project root: {project_root}")
-    logger.info(f"Config: {config_path}")
+    logger.info(f"Active City: {city}, Mode: {mode}")
     
     # Determine which pipelines to run
-    run_data = args.pipeline in ['all', 'data'] and not args.skip_data
-    run_optimization = args.pipeline in ['all', 'optimization'] and not args.skip_optimization
+    run_data = requested_pipeline in ['all', 'data'] and not skip_data
+    run_optimization = requested_pipeline in ['all', 'optimization'] and not skip_optimization
 
     progress_path = project_root / 'data' / 'optimization' / 'runs' / 'progress.json'
     stage_percents = {
@@ -199,7 +193,7 @@ Examples:
         overall_status='running',
         message='Starting PathLens orchestrator',
         percent=stage_percents['initializing'],
-        extra={'requested_pipeline': args.pipeline}
+        extra={'requested_pipeline': requested_pipeline}
     )
     
     # Track results
@@ -216,10 +210,9 @@ Examples:
         )
 
         data_script = project_root / 'data-pipeline' / 'run_pipeline.py'
-        data_args = ['--place', args.place]
-        if args.force:
+        data_args = ['--city', city]
+        if force:
             data_args.append('--force')
-        # Note: run_pipeline.py uses hardcoded config.yaml path, doesn't accept --config arg
         
         results['data'] = run_pipeline('data-collection', data_script, data_args, logger)
 
@@ -260,16 +253,39 @@ Examples:
             percent=stage_percents['optimization']
         )
 
-        opt_script = project_root / 'optimization-pipeline' / 'run_optimization.py'
-        opt_args = []
-        if args.ga_population:
-            opt_args.extend(['--ga-population', str(args.ga_population)])
-        if args.ga_generations:
-            opt_args.extend(['--ga-generations', str(args.ga_generations)])
-        if config_path:
-            opt_args.extend(['--ga-config', str(config_path)])
+        modes_to_run = ['ga_only', 'ga_milp', 'ga_milp_pnmlr'] if mode == 'all' else [mode]
+        optimization_success = True
         
-        results['optimization'] = run_pipeline('optimization', opt_script, opt_args, logger)
+        # Step 2a: Run baseline preparation ONCE (before mode loop)
+        if len(modes_to_run) > 1:
+            logger.info("Running baseline preparation (one-time, shared by all modes)")
+            baseline_prep_script = project_root / 'optimization-pipeline' / 'run_baseline_prep.py'
+            baseline_args = ['--city', city]
+            if force:
+                baseline_args.append('--force')
+            
+            baseline_success = run_pipeline('baseline-preparation', baseline_prep_script, baseline_args, logger)
+            if not baseline_success:
+                logger.error("Baseline preparation failed. Stopping execution.")
+                optimization_success = False
+        
+        # Step 2b: Run mode-specific optimization for each mode
+        if optimization_success:
+            for current_mode in modes_to_run:
+                logger.info(f"Starting optimization run for mode: {current_mode}")
+                opt_script = project_root / 'optimization-pipeline' / 'run_optimization.py'
+                opt_args = ['--city', city, '--mode', current_mode]
+                if force:
+                    opt_args.append('--force')
+                
+                success = run_pipeline(f'optimization-{current_mode}', opt_script, opt_args, logger)
+                if not success:
+                    optimization_success = False
+                    logger.error(f"Optimization failed for mode {current_mode}")
+                    # We stop on failure to allow debugging, rather than continuing to next mode
+                    break
+        
+        results['optimization'] = optimization_success
 
         pipeline_states['optimization'] = 'completed' if results['optimization'] else 'failed'
         write_progress(
@@ -280,7 +296,7 @@ Examples:
         )
         
         if not results['optimization']:
-            logger.warning("Optimization pipeline failed. Continuing to landuse if requested.")
+            logger.warning("Optimization pipeline failed.")
     else:
         logger.info("Skipping optimization pipeline")
         write_progress(
@@ -290,15 +306,12 @@ Examples:
             percent=stage_percents['optimization']
         )
     
-
-    
     # Save run summary
     summary = {
         'timestamp': datetime.now().isoformat(),
         'pipelines_executed': list(results.keys()),
         'results': results,
-        'config': str(config_path),
-        'arguments': vars(args)
+        'effective_config': cfg
     }
     
     summary_file = log_dir / f"run_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"

@@ -1,0 +1,82 @@
+2026-01-19 04:43:41,910 - PathLensMaster - INFO - Logging initialized: /home/shogun/Documents/PathLens/data/logs/pathlens_master_20260119_044341.log
+2026-01-19 04:43:41,910 - PathLensMaster - INFO - PathLens Master Orchestrator Starting
+2026-01-19 04:43:41,910 - PathLensMaster - INFO - Project root: /home/shogun/Documents/PathLens
+2026-01-19 04:43:41,910 - PathLensMaster - INFO - Active City: mumbai, Mode: all
+2026-01-19 04:43:41,911 - PathLensMaster - INFO - ================================================================================
+2026-01-19 04:43:41,911 - PathLensMaster - INFO - PIPELINE: DATA-COLLECTION
+2026-01-19 04:43:41,911 - PathLensMaster - INFO - ================================================================================
+2026-01-19 04:43:41,911 - PathLensMaster - INFO - Command: /home/shogun/Documents/PathLens/venv/bin/python -u /home/shogun/Documents/PathLens/data-pipeline/run_pipeline.py --city mumbai
+
+[data-collection] [INFO] Skipping legacy amenity conversion (source files not found or not Bangalore). Relying on OSM download.
+2026-01-19 04:43:41,942 - PathLensMaster - INFO - [data-collection] [INFO] Skipping legacy amenity conversion (source files not found or not Bangalore). Relying on OSM download.
+
+[data-collection] ============================================================
+2026-01-19 04:43:41,942 - PathLensMaster - INFO - [data-collection] ============================================================
+[data-collection] [RUNNING] Downloading OSM network data
+2026-01-19 04:43:41,942 - PathLensMaster - INFO - [data-collection] [RUNNING] Downloading OSM network data
+[data-collection] ============================================================
+2026-01-19 04:43:41,942 - PathLensMaster - INFO - [data-collection] ============================================================
+[data-collection] Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py --place Mumbai, India --out-dir /home/shogun/Documents/PathLens/data/cities/mumbai/raw/osm
+2026-01-19 04:43:41,942 - PathLensMaster - INFO - [data-collection] Command: /home/shogun/Documents/PathLens/venv/bin/python /home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py --place Mumbai, India --out-dir /home/shogun/Documents/PathLens/data/cities/mumbai/raw/osm
+
+[data-collection] Output directory: /home/shogun/Documents/PathLens/data/cities/mumbai/raw/osm
+2026-01-19 04:43:42,955 - PathLensMaster - INFO - [data-collection] Output directory: /home/shogun/Documents/PathLens/data/cities/mumbai/raw/osm
+[data-collection] Place: Mumbai, India
+2026-01-19 04:43:42,955 - PathLensMaster - INFO - [data-collection] Place: Mumbai, India
+[data-collection] Fetching street network for Mumbai, India...
+2026-01-19 04:43:42,955 - PathLensMaster - INFO - [data-collection] Fetching street network for Mumbai, India...
+[data-collection] 2026-01-19 04:43:42 Pausing 1 second(s) before making HTTP GET request to 'nominatim.openstreetmap.org'
+2026-01-19 04:43:42,956 - PathLensMaster - INFO - [data-collection] 2026-01-19 04:43:42 Pausing 1 second(s) before making HTTP GET request to 'nominatim.openstreetmap.org'
+[data-collection] 2026-01-19 04:43:43 Get https://nominatim.openstreetmap.org/search?format=json&polygon_geojson=1&dedupe=0&limit=50&q=Mumbai%2C+India with timeout=180
+2026-01-19 04:43:43,956 - PathLensMaster - INFO - [data-collection] 2026-01-19 04:43:43 Get https://nominatim.openstreetmap.org/search?format=json&polygon_geojson=1&dedupe=0&limit=50&q=Mumbai%2C+India with timeout=180
+[data-collection] 2026-01-19 04:43:44 Downloaded 0.5kB from 'nominatim.openstreetmap.org' with status 200
+2026-01-19 04:43:44,832 - PathLensMaster - INFO - [data-collection] 2026-01-19 04:43:44 Downloaded 0.5kB from 'nominatim.openstreetmap.org' with status 200
+[data-collection] 2026-01-19 04:43:44 Saved response to cache file '/home/shogun/Documents/PathLens/data/cache/c81d086d319d580713a2f0957bfc2d8668639a41.json'
+2026-01-19 04:43:44,832 - PathLensMaster - INFO - [data-collection] 2026-01-19 04:43:44 Saved response to cache file '/home/shogun/Documents/PathLens/data/cache/c81d086d319d580713a2f0957bfc2d8668639a41.json'
+[data-collection] Traceback (most recent call last):
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection] Traceback (most recent call last):
+[data-collection]   File "/home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py", line 234, in <module>
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]   File "/home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py", line 234, in <module>
+[data-collection]     main()
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]     main()
+[data-collection]   File "/home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py", line 224, in main
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]   File "/home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py", line 224, in main
+[data-collection]     G, pois, buildings, landuse, transit = fetch_place(place, network_type=network_type)
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]     G, pois, buildings, landuse, transit = fetch_place(place, network_type=network_type)
+[data-collection]                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[data-collection]   File "/home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py", line 42, in fetch_place
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]   File "/home/shogun/Documents/PathLens/data-pipeline/collect_osm_data.py", line 42, in fetch_place
+[data-collection]     G = ox.graph_from_place(place, network_type=network_type)
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]     G = ox.graph_from_place(place, network_type=network_type)
+[data-collection]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/graph.py", line 381, in graph_from_place
+2026-01-19 04:43:44,834 - PathLensMaster - INFO - [data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/graph.py", line 381, in graph_from_place
+[data-collection]     gdf_place = geocoder.geocode_to_gdf(
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]     gdf_place = geocoder.geocode_to_gdf(
+[data-collection]                 ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]                 ^^^^^^^^^^^^^^^^^^^^^^^^
+[data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/geocoder.py", line 139, in geocode_to_gdf
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/geocoder.py", line 139, in geocode_to_gdf
+[data-collection]     gdf = pd.concat([gdf, _geocode_query_to_gdf(q, wr, by_osmid)])
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]     gdf = pd.concat([gdf, _geocode_query_to_gdf(q, wr, by_osmid)])
+[data-collection]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/geocoder.py", line 194, in _geocode_query_to_gdf
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/geocoder.py", line 194, in _geocode_query_to_gdf
+[data-collection]     result = _get_first_polygon(results, query)
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]     result = _get_first_polygon(results, query)
+[data-collection]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/geocoder.py", line 259, in _get_first_polygon
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]   File "/home/shogun/Documents/PathLens/venv/lib64/python3.11/site-packages/osmnx/geocoder.py", line 259, in _get_first_polygon
+[data-collection]     raise TypeError(msg)
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection]     raise TypeError(msg)
+[data-collection] TypeError: Nominatim could not geocode query 'Mumbai, India' to a geometry of type (Multi)Polygon
+2026-01-19 04:43:44,857 - PathLensMaster - INFO - [data-collection] TypeError: Nominatim could not geocode query 'Mumbai, India' to a geometry of type (Multi)Polygon
+
+[data-collection] [ERROR] Downloading OSM network data failed with exit code 1
+2026-01-19 04:43:45,224 - PathLensMaster - INFO - [data-collection] [ERROR] Downloading OSM network data failed with exit code 1
+2026-01-19 04:43:45,229 - PathLensMaster - ERROR - data-collection failed with exit code 1
+2026-01-19 04:43:45,229 - PathLensMaster - ERROR - Data pipeline failed. Stopping execution.

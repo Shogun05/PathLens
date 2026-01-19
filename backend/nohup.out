@@ -1,0 +1,172 @@
+INFO:     Started server process [483328]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:__main__:Returning metrics summary for type=baseline, city=mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:41766 - "GET /api/metrics-summary?type=baseline&city=mumbai HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:41780 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Loaded 77018 rows from parquet: /home/shogun/Documents/PathLens/data/cities/mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Returning 1/77018 nodes for type baseline
+INFO:     127.0.0.1:56348 - "GET /api/nodes?type=baseline&city=mumbai&limit=1 HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 1/4096 nodes for type baseline
+INFO:     127.0.0.1:56356 - "GET /api/nodes?type=baseline&city=navi_mumbai&limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41970 - "GET /api/optimization/status HTTP/1.1" 200 OK
+INFO:__main__:Loaded 77018 rows from parquet: /home/shogun/Documents/PathLens/data/cities/mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Returning 5/77018 nodes for type baseline
+INFO:     127.0.0.1:41972 - "GET /api/nodes?type=baseline&city=mumbai&limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45944 - "GET /api/city-data-status?city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:45944 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type baseline
+INFO:     127.0.0.1:45952 - "GET /api/nodes?type=baseline&city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:45956 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type baseline
+INFO:     127.0.0.1:45944 - "GET /api/nodes?type=baseline&city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:49880 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:45952 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58916 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58920 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:58916 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58920 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:58936 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:58952 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:58958 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58972 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:58936 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:58952 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:58916 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:58920 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:58972 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58936 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:58958 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:58952 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:58920 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58936 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58952 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:58920 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39196 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type baseline
+INFO:     127.0.0.1:39202 - "GET /api/nodes?type=baseline&city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type baseline
+INFO:     127.0.0.1:39196 - "GET /api/nodes?type=baseline&city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39214 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type baseline
+INFO:     127.0.0.1:39202 - "GET /api/nodes?type=baseline&city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39224 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type baseline
+INFO:     127.0.0.1:39196 - "GET /api/nodes?type=baseline&city=navi_mumbai HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39214 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39202 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39214 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39202 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:39214 - "GET /api/metrics-summary?type=baseline&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39196 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39214 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:39196 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:39214 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:39202 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39224 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:39198 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:39206 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:39224 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39202 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:39196 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:39214 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:39206 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39224 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Loaded 4096 rows from parquet: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/nodes_with_scores.parquet
+INFO:__main__:Projecting 1331 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 4096/4096 nodes for type optimized
+INFO:     127.0.0.1:39198 - "GET /api/nodes?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+WARNING:__main__:POIs not found: /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/pois.geojson
+INFO:     127.0.0.1:39202 - "GET /api/modes/ga_milp_pnmlr/pois?city=navi_mumbai HTTP/1.1" 200 OK
+WARNING:__main__:Best candidate not found
+INFO:     127.0.0.1:39214 - "GET /api/optimization/results HTTP/1.1" 404 Not Found
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39224 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39202 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_milp_pnmlr from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_milp_pnmlr/metrics_summary.json
+INFO:     127.0.0.1:39224 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_milp_pnmlr HTTP/1.1" 200 OK
+INFO:__main__:Loaded 22143 rows from parquet: /home/shogun/Documents/PathLens/data/cities/mumbai/baseline/nodes_with_scores.parquet
+INFO:__main__:Projecting 7118 missing coordinates from UTM 43N to WGS84
+INFO:__main__:Returning 3/22143 nodes for type baseline
+INFO:     127.0.0.1:35380 - "GET /api/nodes?type=baseline&city=mumbai&limit=3 HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=optimized, city=navi_mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/navi_mumbai/optimized/ga_only/metrics_summary.json
+INFO:     127.0.0.1:36702 - "GET /api/metrics-summary?type=optimized&city=navi_mumbai&mode=ga_only HTTP/1.1" 200 OK
+INFO:__main__:Returning metrics summary for type=baseline, city=mumbai, mode=ga_only from /home/shogun/Documents/PathLens/data/cities/mumbai/baseline/metrics_summary.json
+INFO:     127.0.0.1:36708 - "GET /api/metrics-summary?type=baseline&city=mumbai HTTP/1.1" 200 OK

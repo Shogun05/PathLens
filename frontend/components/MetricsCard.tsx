@@ -16,17 +16,41 @@ interface MetricsSummary {
     link_node_ratio_global: number;
   };
   scores: {
-    accessibility_mean: number;
-    walkability_mean: number;
-    equity_mean: number;
-    travel_time_min_mean: number;
-    travel_time_score_mean: number;
-  };
-  local_impact?: {
-    affected_node_count: number;
-    avg_reduction_min: number;
-    baseline_avg_min: number;
-    optimized_avg_min: number;
+    equity?: number;
+    citywide: {
+      accessibility_mean: number;
+      travel_time_min_mean: number;
+      walkability_mean: number;
+      node_count: number;
+    };
+    underserved: {
+      accessibility_mean: number;
+      travel_time_min_mean: number;
+      walkability_mean: number;
+      node_count: number;
+      percentile_threshold: number;
+      accessibility_threshold: number;
+    };
+    well_served: {
+      accessibility_mean: number;
+      travel_time_min_mean: number;
+      walkability_mean: number;
+      node_count: number;
+    };
+    gap_closure: {
+      threshold_minutes: number;
+      nodes_above_threshold: number;
+      pct_above_threshold: number;
+      total_nodes: number;
+    };
+    distribution: {
+      travel_time_p50: number;
+      travel_time_p90: number;
+      travel_time_p95: number;
+      travel_time_max: number;
+      accessibility_p10: number;
+      accessibility_p50: number;
+    };
   };
 }
 
@@ -187,10 +211,8 @@ export function MetricsCard({ type }: MetricsCardProps) {
       {/* Accessibility Scores */}
       <Card className="bg-[#1b2328] border-white/5 p-5">
         <div className="flex justify-between items-center mb-4">
-          <h4 className="text-sm font-bold text-white">Accessibility Scores</h4>
-          <button className="text-[#8fd6ff] text-xs hover:underline">
-            View details
-          </button>
+          <h4 className="text-sm font-bold text-white">Citywide Metrics</h4>
+          <span className="text-xs text-gray-500">{metrics.scores.citywide.node_count.toLocaleString()} nodes</span>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -210,46 +232,17 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.walkability_mean}, 100`}
+                  strokeDasharray={`${metrics.scores.citywide.walkability_mean}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {metrics.scores.walkability_mean.toFixed(1)}
+                  {metrics.scores.citywide.walkability_mean.toFixed(1)}
                 </span>
               </div>
             </div>
             <span className="text-xs text-gray-400">Walkability</span>
-          </div>
-
-          {/* Equity Gauge */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="relative size-20">
-              <svg className="size-full -rotate-90" viewBox="0 0 36 36">
-                <path
-                  className="text-[#27333a]"
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                />
-                <path
-                  className="text-red-500"
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.equity_mean}, 100`}
-                  strokeWidth="3"
-                />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-sm font-bold text-white">
-                  {metrics.scores.equity_mean.toFixed(1)}
-                </span>
-              </div>
-            </div>
-            <span className="text-xs text-gray-400">Equity</span>
           </div>
 
           {/* Travel Time Gauge */}
@@ -268,28 +261,18 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${Math.min((metrics.scores.travel_time_min_mean / 60) * 100, 100)}, 100`}
+                  strokeDasharray={`${Math.min((metrics.scores.citywide.travel_time_min_mean / 60) * 100, 100)}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center flex-col">
                 <span className="text-sm font-bold text-white">
-                  {metrics.scores.travel_time_min_mean.toFixed(1)}
+                  {metrics.scores.citywide.travel_time_min_mean.toFixed(1)}
                 </span>
                 <span className="text-[8px] text-gray-500">mins</span>
               </div>
             </div>
-            <span className="text-xs text-gray-400">Time</span>
-            {metrics.local_impact && metrics.local_impact.affected_node_count > 0 && (
-              <div className="flex flex-col items-center mt-1">
-                <span className="text-[10px] text-green-400 font-medium">
-                  -{metrics.local_impact.avg_reduction_min.toFixed(1)} min
-                </span>
-                <span className="text-[8px] text-gray-500">
-                  in {metrics.local_impact.affected_node_count} nodes
-                </span>
-              </div>
-            )}
+            <span className="text-xs text-gray-400">Avg Time</span>
           </div>
 
           {/* Accessibility Gauge */}
@@ -308,35 +291,114 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.accessibility_mean}, 100`}
+                  strokeDasharray={`${metrics.scores.citywide.accessibility_mean}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {metrics.scores.accessibility_mean.toFixed(2)}
+                  {metrics.scores.citywide.accessibility_mean.toFixed(1)}
                 </span>
               </div>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-xs text-gray-400">Access</span>
-              <span className="text-[10px] text-gray-500">/100</span>
-            </div>
+            <span className="text-xs text-gray-400">Access</span>
           </div>
-        </div>
 
-        {/* Score Interpretation Guide */}
-        <div className="col-span-2 lg:col-span-4 mt-2">
-          <div className="text-xs text-gray-500 p-2 bg-[#1b2328] rounded border border-white/5">
-            <span className="font-semibold text-gray-400">Score Guide:</span>{' '}
-            <span className="text-red-400">1-20 (Critical)</span> |{' '}
-            <span className="text-orange-400">20-40 (Poor)</span> |{' '}
-            <span className="text-yellow-400">40-60 (Fair)</span> |{' '}
-            <span className="text-green-400">60-80 (Good)</span> |{' '}
-            <span className="text-emerald-400">80-100 (Excellent)</span>
+          {/* Equity Gauge (NEW) */}
+          <div className="flex flex-col items-center gap-2">
+            <div className="relative size-20">
+              <svg className="size-full -rotate-90" viewBox="0 0 36 36">
+                <path
+                  className="text-[#27333a]"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                />
+                <path
+                  className="text-purple-500"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeDasharray={`${metrics.scores.equity ?? 0}, 100`}
+                  strokeWidth="3"
+                />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-sm font-bold text-white">
+                  {metrics.scores.equity ? metrics.scores.equity.toFixed(1) : 'N/A'}
+                </span>
+              </div>
+            </div>
+            <span className="text-xs text-gray-400">Equity</span>
           </div>
         </div>
       </Card>
+
+      {/* Underserved Areas - The KEY metric for optimization impact */}
+      <Card className="bg-[#1b2328] border-white/5 p-5">
+        <div className="flex justify-between items-center mb-4">
+          <h4 className="text-sm font-bold text-white">
+            Underserved Areas
+            <span className="text-xs text-gray-500 font-normal ml-2">
+              (Bottom {metrics.scores.underserved.percentile_threshold}%)
+            </span>
+          </h4>
+          <span className="text-xs text-red-400">{metrics.scores.underserved.node_count.toLocaleString()} nodes</span>
+        </div>
+
+        <div className="grid grid-cols-3 gap-4">
+          <div className="text-center">
+            <p className="text-2xl font-bold text-red-400">{metrics.scores.underserved.travel_time_min_mean.toFixed(1)}</p>
+            <p className="text-xs text-gray-500">Avg Travel (min)</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-orange-400">{metrics.scores.underserved.accessibility_mean.toFixed(1)}</p>
+            <p className="text-xs text-gray-500">Accessibility</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-yellow-400">{metrics.scores.underserved.walkability_mean.toFixed(1)}</p>
+            <p className="text-xs text-gray-500">Walkability</p>
+          </div>
+        </div>
+      </Card>
+
+      {/* Gap Closure & Distribution */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {/* Gap Closure */}
+        <Card className="bg-[#1b2328] border-white/5 p-4">
+          <h4 className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-3">Gap Closure</h4>
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-2xl font-bold text-white">{metrics.scores.gap_closure.pct_above_threshold.toFixed(1)}%</p>
+              <p className="text-xs text-gray-500">nodes &gt; {metrics.scores.gap_closure.threshold_minutes} min travel</p>
+            </div>
+            <div className="text-right">
+              <p className="text-lg font-semibold text-red-400">{metrics.scores.gap_closure.nodes_above_threshold.toLocaleString()}</p>
+              <p className="text-xs text-gray-500">of {metrics.scores.gap_closure.total_nodes.toLocaleString()}</p>
+            </div>
+          </div>
+        </Card>
+
+        {/* Distribution */}
+        <Card className="bg-[#1b2328] border-white/5 p-4">
+          <h4 className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-3">Travel Time Distribution</h4>
+          <div className="grid grid-cols-3 gap-2 text-center">
+            <div>
+              <p className="text-lg font-bold text-green-400">{metrics.scores.distribution.travel_time_p50.toFixed(1)}</p>
+              <p className="text-xs text-gray-500">P50</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-yellow-400">{metrics.scores.distribution.travel_time_p90.toFixed(1)}</p>
+              <p className="text-xs text-gray-500">P90</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-red-400">{metrics.scores.distribution.travel_time_p95.toFixed(1)}</p>
+              <p className="text-xs text-gray-500">P95</p>
+            </div>
+          </div>
+        </Card>
+      </div>
     </div>
   );
 }

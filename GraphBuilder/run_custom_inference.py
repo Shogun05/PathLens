@@ -140,11 +140,25 @@ def process_image_batch(image_files, input_dir, output_dir, model_path, gpu_frac
             graph = run_inference(model, sat_img, output_prefix)
 
 
-def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input-dir', type=str, default=None, help='Input directory containing images')
+    parser.add_argument('--output-dir', type=str, default=None, help='Output directory for results')
+    args = parser.parse_args()
+
     # Setup paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_dir = os.path.join(script_dir, 'downloader/sat_images')
-    output_dir = os.path.join(script_dir, 'custom_outputs')
+    
+    if args.input_dir:
+        input_dir = args.input_dir
+    else:
+        input_dir = os.path.join(script_dir, 'downloader/sat_images')
+        
+    if args.output_dir:
+        output_dir = args.output_dir
+    else:
+        output_dir = os.path.join(script_dir, 'custom_outputs')
+        
     model_path = os.path.join(script_dir, 'data/20citiesModel/model')
     
     # Create output directory

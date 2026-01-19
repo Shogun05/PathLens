@@ -1,0 +1,28 @@
+{
+  "min": 0.06360552430651571,
+  "max": 0.9992251568819962,
+  "feature_names": [
+    "dist_to_bank",
+    "dist_to_bus_station",
+    "dist_to_hospital",
+    "dist_to_park",
+    "dist_to_pharmacy",
+    "dist_to_school",
+    "dist_to_supermarket",
+    "x",
+    "y",
+    "degree",
+    "travel_time_min",
+    "accessibility_score"
+  ],
+  "amenity_types": [
+    "bank",
+    "bus_station",
+    "hospital",
+    "park",
+    "pharmacy",
+    "school",
+    "supermarket"
+  ],
+  "decay_constant": 2000.0
+}

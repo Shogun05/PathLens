@@ -18,6 +18,16 @@ const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ),
 });
 
+// City center coordinates
+const CITY_CENTERS: Record<string, [number, number]> = {
+  bangalore: [12.9716, 77.5946],
+  chandigarh: [30.7333, 76.7794],
+  mumbai: [19.076, 72.8777],
+  navi_mumbai: [19.033, 73.0297],
+  greater_mumbai: [19.076, 72.8777],
+  mumbai_city: [18.9387, 72.8353],
+};
+
 export default function AnalysisLayout({
   children,
 }: {
@@ -35,9 +45,13 @@ export default function AnalysisLayout({
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [enabledLayers, setEnabledLayers] = useState(new Set(['nodeScores']));
   const [showNodes, setShowNodes] = useState(true);
+  const [mapCenter, setMapCenter] = useState<[number, number]>([12.9716, 77.5946]);
 
   useEffect(() => {
     setIsMounted(true);
+    // Read city from sessionStorage and set map center
+    const selectedCity = sessionStorage.getItem('selectedCity') || 'bangalore';
+    setMapCenter(CITY_CENTERS[selectedCity] || CITY_CENTERS.bangalore);
   }, []);
 
   // Determine which data to show based on route
@@ -66,25 +80,27 @@ export default function AnalysisLayout({
       <AnalysisHeader />
 
       <div className="flex-1 relative overflow-hidden">
-        {/* Persistent Map Layer */}
-        <div className="absolute inset-0 z-0">
-          <MapComponent
-            nodes={displayNodes}
-            suggestions={displaySuggestions}
-            selectedSuggestionIds={selectedSuggestionIds}
-            onSuggestionClick={(id) => {
-              const toggleSuggestion = usePathLensStore.getState().toggleSuggestion;
-              toggleSuggestion(id);
-            }}
-            center={[12.9716, 77.5946]}
-            zoom={13}
-            className="w-full h-full"
-            onMapReady={(map) => setMapInstance(map)}
-            onContainerReady={(container) => {
-              usePathLensStore.getState().setMapContainer(container);
-            }}
-          />
-        </div>
+        {/* Persistent Map Layer - Hidden on /comparison since it has its own map */}
+        {!pathname?.includes('/comparison') && (
+          <div className="absolute inset-0 z-0">
+            <MapComponent
+              nodes={displayNodes}
+              suggestions={displaySuggestions}
+              selectedSuggestionIds={selectedSuggestionIds}
+              onSuggestionClick={(id) => {
+                const toggleSuggestion = usePathLensStore.getState().toggleSuggestion;
+                toggleSuggestion(id);
+              }}
+              center={mapCenter}
+              zoom={13}
+              className="w-full h-full"
+              onMapReady={(map) => setMapInstance(map)}
+              onContainerReady={(container) => {
+                usePathLensStore.getState().setMapContainer(container);
+              }}
+            />
+          </div>
+        )}
 
         {/* Map Controls Overlay */}
         <MapControls

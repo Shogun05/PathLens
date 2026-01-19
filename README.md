@@ -316,7 +316,7 @@ xdg-open optimization/runs/optimized_map.html
 
 ### Configuration
 
-Edit `config.yaml` to customize parameters:
+Edit `configs/base.yaml` to customize parameters:
 - Data sources and download options
 - Network analysis settings (e.g., distance thresholds)
 - Amenity scoring weights and cutoffs
@@ -354,7 +354,7 @@ python run_optimization.py --ga-iterations 10
 Common issues and solutions:
 
 - **MemoryError**: Reduce data size or number of nodes (use `--max-nodes` option)
-- **Timeouts**: Increase timeout settings in `config.yaml`
+- **Timeouts**: Increase timeout settings in `configs/base.yaml`
 - **Installation issues**: Ensure all system dependencies are met (e.g., GEOS, H3)
 
 See `docs/troubleshooting.md` for more details.

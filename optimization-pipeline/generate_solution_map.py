@@ -20,7 +20,10 @@ import importlib.util
 import json
 import logging
 import os
+import logging
+import os
 import sys
+import yaml
 from pathlib import Path
 from typing import Dict, List, Mapping, Optional, Sequence, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -44,6 +47,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from hybrid_ga import ensure_index_on_osmid
+from city_paths import CityDataManager
 
 try:  # pragma: no cover - optional dependency
     import osmnx as ox
@@ -164,8 +168,10 @@ def build_optimised_geodata(
             try:
                 lon = float(row.get("lon"))
                 lat = float(row.get("lat"))
+                if not (np.isfinite(lon) and np.isfinite(lat)):
+                    raise ValueError("Non-finite coordinates")
             except (TypeError, ValueError):
-                logging.warning("Node %s lacks valid coordinates; skipping.", key)
+                logging.warning("Node %s lacks valid coordinates (lon=%s, lat=%s); skipping.", key, row.get("lon"), row.get("lat"))
                 continue
             record = {
                 "amenity": amenity,
@@ -688,7 +694,7 @@ def compute_optimized_scores(
     existing_poi_mapping: pd.DataFrame,
     nodes_df: pd.DataFrame,
     graph_path: Optional[Path],
-    config_path: Optional[Path],
+    config: Dict[str, Any],
     nodes_output: Path,
     summary_output: Path,
 ) -> None:
@@ -704,8 +710,8 @@ def compute_optimized_scores(
     if graph_path is None:
         logging.info("No graph path provided; skipping optimized score computation.")
         return
-    if config_path is None:
-        logging.info("No configuration file provided; skipping optimized score computation.")
+    if not config:
+        logging.info("No configuration provided; skipping optimized score computation.")
         return
     if ox is None:
         logging.warning("osmnx is unavailable; cannot compute optimized scores.")
@@ -719,27 +725,18 @@ def compute_optimized_scores(
         logging.warning("No optimized placements detected; skipping optimized score computation.")
         return
 
-    try:
-        config = load_config(config_path)
-    except FileNotFoundError:
-        logging.warning("Configuration file %s not found; skipping optimized score computation.", config_path)
-        return
-    amenity_weights = config.get("amenity_weights", {})
-    if not amenity_weights:
-        logging.warning("Configuration lacks amenity_weights; skipping optimized score computation.")
-        return
-    walking_speed = float(config.get("walking_speed_kmph", 4.8))
-    composite_weights = config.get("composite_weights", {"alpha": 0.25, "beta": 0.4, "gamma": 0.2, "delta": 0.15})
-    amenity_cutoff = config.get("amenity_distance_cutoff_m")
-
-    # Keep only amenity types that both appear in placements and have configured weights
-    amenity_types = sorted([amenity for amenity in non_empty_placements.keys() if amenity in amenity_weights])
-    if not amenity_types:
-        logging.warning("No optimized amenities align with configured weights; skipping optimized score computation.")
-        return
-
+    amenity_types = list(non_empty_placements.keys())
     logging.info("Recomputing optimized accessibility metrics for %d amenity types.", len(amenity_types))
     logging.info("Loading graph from %s", graph_path)
+    # Use cdm for loading config if possible, or use the provided config
+    opt_cfg = config.get('optimization', {})
+    
+    amenity_weights = config.get("amenity_weights", {})
+    walking_speed = float(config.get("walking_speed_kmph", 4.8))
+    composite_weights = config.get("composite_weights", {"alpha": 0.05, "beta": 0.80, "gamma": 0.05, "delta": 0.10})
+    amenity_cutoff = config.get("amenity_distance_cutoff_m")
+    decay_constant = float(opt_cfg.get('decay_constant', 2000.0))
+    route_inefficiency = float(opt_cfg.get('route_inefficiency_factor', 2.3))
     G = ox.load_graphml(graph_path)
     logging.info("Converting graph to GeoDataFrame...")
     nodes_gdf_result = ox.graph_to_gdfs(G, nodes=True, edges=False)
@@ -768,8 +765,10 @@ def compute_optimized_scores(
         valid_indices.append(idx)
 
     if not mapping_records:
-        logging.warning("No optimized placements align with the graph; skipping optimized score computation.")
-        return
+        logging.warning("No optimized placements align with the graph. Generating empty optimized output.")
+        # Proceed with empty filtered_gdf to generate valid (but empty) output files
+        # This prevents downstream pipeline steps from crashing due to missing files
+        valid_indices = []
 
     filtered_gdf = optimized_gdf.loc[valid_indices].copy()
     for col in ("shop", "leisure"):
@@ -837,9 +836,9 @@ def compute_optimized_scores(
     logging.info("After reindex - distances.dist_to_hospital mean: %.2fm", distances['dist_to_hospital'].mean())
 
     logging.info("Computing accessibility scores for %d nodes...", len(nodes_aligned))
-    optimized_accessibility = compute_accessibility_score(distances, amenity_weights, decay_constant=2000.0)
+    optimized_accessibility = compute_accessibility_score(distances, amenity_weights, decay_constant=decay_constant)
     logging.info("Computing travel time metrics...")
-    optimized_travel_time = compute_travel_time_metrics(distances, amenity_weights, walking_speed, route_inefficiency_factor=2.3)
+    optimized_travel_time = compute_travel_time_metrics(distances, amenity_weights, walking_speed, route_inefficiency_factor=route_inefficiency)
     travel_time_clean = optimized_travel_time.replace([np.inf, -np.inf], np.nan)
     fallback = travel_time_clean.max()
     if pd.isna(fallback) or fallback <= 0:
@@ -881,14 +880,80 @@ def compute_optimized_scores(
     csv_output = nodes_output.with_suffix(".csv")
     nodes_result.to_csv(csv_output, index=True)
 
+    # Build stratified metrics matching compute_scores.py structure
+    # Create a temp df with standard column names for metric computation
+    nodes_for_metrics = pd.DataFrame({
+        "accessibility_score": optimized_accessibility.values,
+        "travel_time_min": travel_time_clean.fillna(fallback).values,
+        "walkability": optimized_walkability.values,
+    }, index=nodes_aligned.index)
+    
+    # Stratified metrics computation (matching compute_scores.py logic)
+    underserved_percentile = 20.0
+    gap_threshold_minutes = 15.0
+    
+    # Citywide metrics
+    citywide = {
+        "accessibility_mean": float(nodes_for_metrics["accessibility_score"].mean()),
+        "travel_time_min_mean": float(nodes_for_metrics["travel_time_min"].mean()),
+        "walkability_mean": float(nodes_for_metrics["walkability"].mean()),
+        "node_count": int(len(nodes_for_metrics)),
+    }
+    
+    # Underserved stratum (bottom 20% by accessibility)
+    accessibility_threshold = nodes_for_metrics["accessibility_score"].quantile(underserved_percentile / 100.0)
+    underserved_mask = nodes_for_metrics["accessibility_score"] <= accessibility_threshold
+    underserved_nodes = nodes_for_metrics[underserved_mask]
+    well_served_nodes = nodes_for_metrics[~underserved_mask]
+    
+    underserved = {
+        "accessibility_mean": float(underserved_nodes["accessibility_score"].mean()) if len(underserved_nodes) > 0 else 0.0,
+        "travel_time_min_mean": float(underserved_nodes["travel_time_min"].mean()) if len(underserved_nodes) > 0 else 0.0,
+        "walkability_mean": float(underserved_nodes["walkability"].mean()) if len(underserved_nodes) > 0 else 0.0,
+        "node_count": int(len(underserved_nodes)),
+        "percentile_threshold": underserved_percentile,
+        "accessibility_threshold": float(accessibility_threshold),
+    }
+    
+    well_served = {
+        "accessibility_mean": float(well_served_nodes["accessibility_score"].mean()) if len(well_served_nodes) > 0 else 0.0,
+        "travel_time_min_mean": float(well_served_nodes["travel_time_min"].mean()) if len(well_served_nodes) > 0 else 0.0,
+        "walkability_mean": float(well_served_nodes["walkability"].mean()) if len(well_served_nodes) > 0 else 0.0,
+        "node_count": int(len(well_served_nodes)),
+    }
+    
+    # Gap closure metrics
+    nodes_above_threshold = (nodes_for_metrics["travel_time_min"] > gap_threshold_minutes).sum()
+    total_nodes = len(nodes_for_metrics)
+    
+    gap_closure = {
+        "threshold_minutes": gap_threshold_minutes,
+        "nodes_above_threshold": int(nodes_above_threshold),
+        "pct_above_threshold": float(100.0 * nodes_above_threshold / max(total_nodes, 1)),
+        "total_nodes": int(total_nodes),
+    }
+    
+    # Distribution metrics
+    travel_time_series = nodes_for_metrics["travel_time_min"].replace([np.inf, -np.inf], np.nan).dropna()
+    accessibility_series = nodes_for_metrics["accessibility_score"].replace([np.inf, -np.inf], np.nan).dropna()
+    
+    distribution = {
+        "travel_time_p50": float(travel_time_series.quantile(0.50)) if len(travel_time_series) > 0 else 0.0,
+        "travel_time_p90": float(travel_time_series.quantile(0.90)) if len(travel_time_series) > 0 else 0.0,
+        "travel_time_p95": float(travel_time_series.quantile(0.95)) if len(travel_time_series) > 0 else 0.0,
+        "travel_time_max": float(travel_time_series.max()) if len(travel_time_series) > 0 else 0.0,
+        "accessibility_p10": float(accessibility_series.quantile(0.10)) if len(accessibility_series) > 0 else 0.0,
+        "accessibility_p50": float(accessibility_series.quantile(0.50)) if len(accessibility_series) > 0 else 0.0,
+    }
+    
     summary = {
         "network": {},
         "scores": {
-            "accessibility_mean": float(optimized_accessibility.replace([np.inf, -np.inf], np.nan).mean(skipna=True)),
-            "travel_time_min_mean": float(travel_time_clean.mean(skipna=True)),
-            "travel_time_score_mean": float(optimized_travel_score.mean(skipna=True)),
-            "walkability_mean": float(optimized_walkability.mean(skipna=True)),
-            "equity_mean": float(nodes_aligned.get("equity_score", pd.Series(0.0)).mean()),
+            "citywide": citywide,
+            "underserved": underserved,
+            "well_served": well_served,
+            "gap_closure": gap_closure,
+            "distribution": distribution,
         }
     }
 
@@ -903,158 +968,60 @@ def compute_optimized_scores(
 
 
 def parse_args() -> argparse.Namespace:
-    project_root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description="Create GeoJSON and map for the optimised GA solution.")
-    parser.add_argument(
-        "--best-candidate",
-        type=Path,
-        default=project_root / "data" / "optimization" / "runs" / "best_candidate.json",
-        help="Path to the best_candidate.json output from the GA run.",
-    )
-    parser.add_argument(
-        "--nodes",
-        type=Path,
-        default=project_root / "data" / "analysis" / "nodes_with_scores.parquet",
-        help="Path to the nodes parquet containing coordinates.",
-    )
-    parser.add_argument(
-        "--graph-path",
-        type=Path,
-        default=project_root / "data" / "processed" / "graph.graphml",
-        help="GraphML file used for recomputing accessibility scores.",
-    )
-    parser.add_argument(
-        "--existing-pois",
-        type=Path,
-        default=project_root / "data" / "raw" / "osm"/ "pois.geojson",
-        help="GeoJSON containing existing POIs to overlay.",
-    )
-    parser.add_argument(
-        "--poi-mapping",
-        type=Path,
-        default=project_root / "data" / "processed" / "poi_node_mapping.parquet",
-        help="Parquet file mapping existing POIs to graph nodes.",
-    )
-    parser.add_argument(
-        "--config",
-        type=Path,
-        default=project_root / "config.yaml",
-        help="Configuration file supplying amenity weights and scoring parameters.",
-    )
-    parser.add_argument(
-        "--output-geojson",
-        type=Path,
-        default=project_root / "data"/ "optimization" / "runs" / "poi_mapping.geojson",
-        help="Destination for the combined POI GeoJSON (legacy, not needed for pipeline).",
-    )
-    parser.add_argument(
-        "--optimized-pois-output",
-        type=Path,
-        default=project_root / "data" / "optimization" / "runs" / "optimized_pois.geojson",
-        help="Destination for optimized-only POIs (fast, small file).",
-    )
-    parser.add_argument(
-        "--output-map",
-        type=Path,
-        default=project_root / "data"/ "optimization" / "runs" / "optimized_map.html",
-        help="Destination for the interactive HTML map.",
-    )
-    parser.add_argument(
-        "--optimized-nodes-output",
-        type=Path,
-        default=project_root / "data" / "analysis" / "optimized_nodes_with_scores.parquet",
-        help="Path to write node-level optimized scores (parquet).",
-    )
-    parser.add_argument(
-        "--optimized-summary-output",
-        type=Path,
-        default=project_root / "data" / "analysis" / "optimized_metrics_summary.json",
-        help="Path to write optimized score summary (JSON).",
-    )
-    parser.add_argument(
-        "--skip-metrics",
-        action="store_true",
-        default=False,
-        help="Skip recomputing post-optimization metrics (fast: only map + GeoJSON).",
-    )
-    parser.add_argument(
-        "--skip-geojson",
-        action="store_true",
-        default=False,
-        help="Skip writing the large combined GeoJSON file (much faster, map generation only).",
-    )
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        default=False,
-        help="Force overwrite of existing combined GeoJSON.",
-    )
+    parser.add_argument("--city", default="bangalore", help="City to process")
+    parser.add_argument("--mode", default="ga_only", choices=["ga_only", "ga_milp", "ga_milp_pnmlr"], help="Optimization mode")
+    parser.add_argument("--force", action="store_true", help="Force overwrite")
+    parser.add_argument("--skip-metrics", action="store_true", help="Skip scoring")
+    parser.add_argument("--skip-geojson", action="store_true", help="Skip GeoJSON export")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+    
+    cdm = CityDataManager(args.city, project_root=PROJECT_ROOT, mode=args.mode)
+    cfg = cdm.load_config()
+    
+    # Resolve paths via CDM
+    best_candidate_path = cdm.best_candidate(args.mode)
+    nodes_path = cdm.baseline_nodes
+    graph_path = cdm.processed_graph
+    existing_pois_path = cdm.raw_pois
+    poi_mapping_path = cdm.poi_mapping
+    output_geojson_path = cdm.combined_pois(args.mode)
+    optimized_pois_output_path = cdm.optimized_pois(args.mode)
+    output_map_path = cdm.optimization_map(args.mode)
+    optimized_nodes_output_path = cdm.optimized_nodes(args.mode)
+    optimized_summary_output_path = cdm.optimized_metrics(args.mode)
 
-    placements, metrics = load_best_candidate(args.best_candidate)
+    placements, metrics = load_best_candidate(best_candidate_path)
     if not placements:
         logging.error("No placements extracted from best candidate; aborting map generation.")
         return
 
-    nodes_df = ensure_index_on_osmid(pd.read_parquet(args.nodes))
+    nodes_df = ensure_index_on_osmid(pd.read_parquet(nodes_path))
     optimized_gdf = build_optimised_geodata(placements, nodes_df, metrics)
 
-    # Export optimized POIs only (fast, ~13 POIs)
-    export_optimized_only_geojson(optimized_gdf, args.optimized_pois_output)
+    # Export optimized POIs only
+    export_optimized_only_geojson(optimized_gdf, optimized_pois_output_path)
     
-    existing_gdf = load_existing_pois(args.existing_pois)
+    existing_gdf = load_existing_pois(existing_pois_path)
     
-    # Skip massive combined GeoJSON export by default (saves 75+ minutes)
-    # Only create if explicitly requested with --force flag and not --skip-geojson
-    if args.skip_geojson:
-        logging.info("Skipping combined GeoJSON export (--skip-geojson)")
-        # Create combined in-memory for map centering only
-        components = []
-        if not existing_gdf.empty:
-            components.append(existing_gdf)
-        if not optimized_gdf.empty:
-            components.append(optimized_gdf)
-        combined_gdf = gpd.GeoDataFrame(pd.concat(components, ignore_index=True), crs="EPSG:4326") if components else gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
-    elif args.force:
-        # Only write combined GeoJSON if explicitly forced (legacy compatibility)
-        logging.info("Writing combined GeoJSON (--force flag enabled, 75+ min for large datasets)")
-        combined_gdf = export_combined_geojson(existing_gdf, optimized_gdf, args.output_geojson, skip_if_exists=False)
-    else:
-        # Default: skip combined GeoJSON write (optimized POIs already exported above)
-        logging.info("Skipping combined GeoJSON export (default behavior, saves 75+ min)")
-        logging.info("  Tip: Use --force to create combined poi_mapping.geojson if needed for legacy tools")
-        # Create combined in-memory for map centering
-        components = []
-        if not existing_gdf.empty:
-            components.append(existing_gdf)
-        if not optimized_gdf.empty:
-            components.append(optimized_gdf)
-        combined_gdf = gpd.GeoDataFrame(pd.concat(components, ignore_index=True), crs="EPSG:4326") if components else gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
-
-    # Use the combined GeoDataFrame for centering if export succeeded.
-    if not combined_gdf.empty:
-        existing_view = combined_gdf[combined_gdf["source"] == "existing"]
-        optimized_view = combined_gdf[combined_gdf["source"] == "optimized"]
-    else:
-        existing_view = existing_gdf
-        optimized_view = optimized_gdf
-
-    # Map generation commented out for performance
-    # build_map(existing_view, optimized_view, args.output_map, args.graph_path, placements)
-    # logging.info("Map generation skipped (commented out in code")
+    # Combined GeoDataFrame for centering
+    components = []
+    if not existing_gdf.empty:
+        components.append(existing_gdf)
+    if not optimized_gdf.empty:
+        components.append(optimized_gdf)
+    combined_gdf = gpd.GeoDataFrame(pd.concat(components, ignore_index=True), crs="EPSG:4326") if components else gpd.GeoDataFrame(columns=["source"], geometry=[], crs="EPSG:4326")
 
     if not args.skip_metrics:
         # Load existing POI mapping
-        if args.poi_mapping.exists():
-            logging.info("Loading existing POI mapping from %s", args.poi_mapping)
-            existing_poi_mapping = pd.read_parquet(args.poi_mapping)
+        if poi_mapping_path.exists():
+            existing_poi_mapping = pd.read_parquet(poi_mapping_path)
         else:
-            logging.warning("POI mapping file not found: %s. Using empty mapping.", args.poi_mapping)
             existing_poi_mapping = pd.DataFrame(columns=['poi_index', 'nearest_node', 'poi_id']).set_index('poi_index')
         
         compute_optimized_scores(
@@ -1063,13 +1030,11 @@ def main() -> None:
             existing_gdf,
             existing_poi_mapping,
             nodes_df,
-            args.graph_path,
-            args.config,
-            args.optimized_nodes_output,
-            args.optimized_summary_output,
+            graph_path,
+            cfg,
+            optimized_nodes_output_path,
+            optimized_summary_output_path,
         )
-    else:
-        logging.info("Skipping post-optimization metric recomputation (--skip-metrics).")
 
 
 if __name__ == "__main__":

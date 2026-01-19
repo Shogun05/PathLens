@@ -96,8 +96,11 @@ export default function OptimizedPage() {
             // Score is derived from nodes, but we can show optimization metadata
           }
 
-          // Use pre-computed city-wide average from metrics API (all 182k nodes)
-          const metricsScore = metrics?.scores?.accessibility_mean;
+          // Use pre-computed city-wide average from metrics API (all nodes)
+          // API returns: scores.citywide.accessibility_mean (stratified) or scores.accessibility (flat)
+          const metricsScore = metrics?.scores?.citywide?.accessibility_mean
+            || metrics?.scores?.accessibility
+            || metrics?.scores?.accessibility_mean;
           if (metricsScore && metricsScore > 0) {
             setOptimizedScore(metricsScore);
             console.log(`City-wide optimized accessibility: ${metricsScore.toFixed(2)}`);

@@ -1,110 +1,73 @@
 #!/usr/bin/env python3
 """
-Build GEE candidate points for a single amenity from:
-- best_candidate.json  (GA result)
-- optimized_nodes_with_scores.csv  (node attributes with lat/lon)
-
-Usage:
-    python build_gee_candidates.py hospital
-    python build_gee_candidates.py school
+Build GEE candidate points for a single amenity.
 """
-
 import json
 import sys
 from pathlib import Path
-
 import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
+import argparse
 
-
-# landuse-pipeline/ is at project root, so parent is BASE_DIR
-BASE_DIR = Path(__file__).resolve().parent.parent
-BEST_CANDIDATE_PATH = BASE_DIR / "data" / "optimization" / "runs" / "best_candidate.json"
-NODES_CSV_PATH = BASE_DIR / "data" / "analysis" / "optimized_nodes_with_scores.csv"
-
+# Add project root for CityDataManager
+project_root = Path(__file__).resolve().parent.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+from city_paths import CityDataManager
 
 def parse_best_candidate(path: Path) -> dict:
     """Return dict: amenity -> list[node_ids] from best_candidate.json."""
     with path.open("r", encoding="utf-8") as f:
         data = json.load(f)
-
     cand_str = data["candidate"]
     amenity_map = {}
-
-    # Example string:
-    # bus_station:10020025539,10991934818|hospital:10035832527,...
     for block in cand_str.split("|"):
-        if not block.strip():
-            continue
+        if not block.strip(): continue
         name, ids_str = block.split(":")
         node_ids = [int(x) for x in ids_str.split(",") if x]
         amenity_map[name.strip()] = node_ids
-
     return amenity_map
 
-
-def make_geojson_for_amenity(amenity: str):
+def make_geojson_for_amenity(cdm, amenity: str):
     # --- 1. Parse GA output ---
-    amenity_map = parse_best_candidate(BEST_CANDIDATE_PATH)
+    best_cand_path = cdm.best_candidate(cdm.mode)
+    amenity_map = parse_best_candidate(best_cand_path)
     if amenity not in amenity_map:
-        raise ValueError(
-            f"Amenity '{amenity}' not found in best_candidate.json. "
-            f"Available: {list(amenity_map.keys())}"
-        )
+        raise ValueError(f"Amenity '{amenity}' not found in {best_cand_path.name}")
     candidate_ids = set(amenity_map[amenity])
 
     # --- 2. Load node table ---
-    df = pd.read_csv(NODES_CSV_PATH)
-
-    # Ensure column names are correct for your file:
-    # osmid,y,x,street_count,lon,lat,...
-    id_col = "osmid"
-    lat_col = "lat"
-    lon_col = "lon"
-
-    missing = [c for c in (id_col, lat_col, lon_col) if c not in df.columns]
-    if missing:
-        raise ValueError(f"Missing expected columns in CSV: {missing}")
-
-    # Filter only nodes used by the optimizer for this amenity
-    df_sub = df[df[id_col].isin(candidate_ids)].copy()
-    if df_sub.empty:
-        raise RuntimeError(
-            f"No rows in CSV for amenity '{amenity}' and osmid in {len(candidate_ids)} GA nodes."
-        )
+    df = pd.read_parquet(cdm.baseline_nodes)
+    if df.index.name == 'osmid':
+        df = df.reset_index()
 
     # --- 3. Build GeoDataFrame ---
-    df_sub["node_id"] = df_sub[id_col].astype("int64")
-    df_sub["amenity"] = amenity
+    df_sub = df[df['osmid'].astype(int).isin(candidate_ids)].copy()
+    if df_sub.empty:
+        raise RuntimeError(f"No rows for '{amenity}' in GA nodes.")
 
-    geometry = [Point(xy) for xy in zip(df_sub[lon_col], df_sub[lat_col])]
-    gdf = gpd.GeoDataFrame(
-        df_sub[["node_id", "amenity"]],
-        geometry=geometry,
-        crs="EPSG:4326",
-    )
+    df_sub["node_id"] = df_sub['osmid'].astype("int64")
+    df_sub["amenity"] = amenity
+    geometry = [Point(xy) for xy in zip(df_sub['lon'], df_sub['lat'])]
+    gdf = gpd.GeoDataFrame(df_sub[["node_id", "amenity"]], geometry=geometry, crs="EPSG:4326")
 
     # --- 4. Save GeoJSON ---
-    output_dir = BASE_DIR / "data" / "landuse"
-    output_dir.mkdir(parents=True, exist_ok=True)
-    out_path = output_dir / f"node_candidates_{amenity}.geojson"
+    out_dir = cdm.landuse_dir
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / f"node_candidates_{amenity}.geojson"
     gdf.to_file(out_path, driver="GeoJSON")
-    print(
-        f"✅ Amenity '{amenity}': {len(gdf)} nodes "
-        f"→ {out_path.relative_to(BASE_DIR)}"
-    )
-
+    print(f"✅ Amenity '{amenity}': {len(gdf)} nodes → {out_path}")
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python build_gee_candidates.py <amenity>")
-        print("Example: python build_gee_candidates.py hospital")
-        sys.exit(1)
-
-    amenity = sys.argv[1]
-    make_geojson_for_amenity(amenity)
-
+    parser = argparse.ArgumentParser(description="Build GEE candidates")
+    parser.add_argument("--city", default="bangalore")
+    parser.add_argument("--mode", default="ga_only")
+    parser.add_argument("--amenity", required=True)
+    args = parser.parse_args()
+    
+    cdm = CityDataManager(args.city, project_root=project_root, mode=args.mode)
+    make_geojson_for_amenity(cdm, args.amenity)
 
 if __name__ == "__main__":
     main()

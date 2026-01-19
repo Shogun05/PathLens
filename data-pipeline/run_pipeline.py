@@ -1,15 +1,14 @@
-#!/usr/bin/env python3
-"""
-Complete PathLens pipeline for Bengaluru amenity data:
-1. Convert JSON amenities to GeoJSON
-2. Build street network graph
-3. Compute walkability scores
-4. Generate interactive visualization
-"""
 import argparse
 import subprocess
 import sys
+import os
 from pathlib import Path
+
+# Add project root to sys.path to import city_paths
+project_root = Path(__file__).resolve().parent.parent
+sys.path.append(str(project_root))
+
+from city_paths import CityDataManager
 
 
 def run_command(cmd, description):
@@ -20,7 +19,6 @@ def run_command(cmd, description):
     print(f"Command: {' '.join(cmd)}")
     print()
     
-    # Use Popen to stream output in real-time
     process = subprocess.Popen(
         cmd,
         stdout=subprocess.PIPE,
@@ -30,7 +28,6 @@ def run_command(cmd, description):
         universal_newlines=True
     )
     
-    # Stream output line by line
     for line in process.stdout:
         print(line, end='', flush=True)
     
@@ -44,171 +41,101 @@ def run_command(cmd, description):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run PathLens pipeline for Bengaluru")
-    parser.add_argument("--skip-convert", action="store_true", help="Skip amenity conversion step")
-    parser.add_argument("--skip-graph", action="store_true", help="Skip graph building step")
-    parser.add_argument("--skip-scoring", action="store_true", help="Skip scoring step")
-    parser.add_argument("--skip-viz", action="store_true", help="Skip visualization step")
-    parser.add_argument("--place", default="Bangalore, India", help="Place name for OSM data")
-    parser.add_argument("--force", action="store_true", help="Force recompute all steps (ignore cache)")
+    parser = argparse.ArgumentParser(description="Run PathLens data pipeline")
+    parser.add_argument("--city", default="bangalore", help="City to process")
+    parser.add_argument("--force", action="store_true", help="Force recompute all steps")
     args = parser.parse_args()
     
-    # If force flag is set, inform user
-    if args.force:
-        print("[WARNING] --force flag detected: All cached data will be ignored and recomputed")
-        print("   This may take a long time!\n")
+    cdm = CityDataManager(args.city, project_root=project_root)
+    cfg = cdm.load_config()
     
-    script_dir = Path(__file__).parent
-    project_dir = script_dir.parent  # data-pipeline is one level down from project root
-    pipeline_dir = script_dir  # We are in the pipeline directory
-    data_dir = project_dir / "data"
-    raw_dir = data_dir / "raw" / "osm"
-    processed_dir = data_dir / "processed"
-    analysis_dir = data_dir / "analysis"
+    # Get settings from config
+    data_cfg = cfg.get('data', {})
+    place = cfg.get('project', {}).get('place', 'Bangalore, India')
     
-    # Ensure directories exist
-    raw_dir.mkdir(parents=True, exist_ok=True)
-    processed_dir.mkdir(parents=True, exist_ok=True)
-    analysis_dir.mkdir(parents=True, exist_ok=True)
+    skip_convert = data_cfg.get('skip_convert', False)
+    skip_graph = data_cfg.get('skip_graph', False)
+    skip_scoring = data_cfg.get('skip_scoring', False)
+    skip_viz = data_cfg.get('skip_viz', False)
     
+    # Execution dir
+    pipeline_dir = Path(__file__).parent
     python_exe = sys.executable
     
-    # Step 1: Convert amenities to GeoJSON and Parquet
-    pois_path = raw_dir / "pois.parquet"
-    if not args.skip_convert:
-        if pois_path.exists() and not args.force:
-            print("\n[OK] POIs already converted:", pois_path)
-            print("  (Use --force to re-convert)")
+    # Step 1: Convert amenities (Legacy Bangalore support)
+    legacy_source_dir = project_root / "data" / "raw" / "bengaluru" / "bengaluru_amenities"
+    should_run_convert = (
+        not skip_convert 
+        and args.city == 'bangalore' 
+        and legacy_source_dir.exists() 
+        and any(legacy_source_dir.glob("*.json"))
+    )
+    
+    if should_run_convert:
+        if cdm.raw_pois.with_suffix('.parquet').exists() and not args.force:
+            print(f"\n[OK] POIs already converted: {cdm.raw_pois.with_suffix('.parquet')}")
         else:
-            if args.force and pois_path.exists():
-                print("\n[FORCE] Re-converting POIs...")
             run_command(
-                [python_exe, str(pipeline_dir / "convert_amenities.py")],
-                "Converting amenities to GeoJSON"
+                [python_exe, str(pipeline_dir / "convert_amenities.py"), "--city", args.city],
+                "Converting amenities to GeoJSON (Legacy source)"
             )
+    elif not skip_convert:
+        print("\n[INFO] Skipping legacy amenity conversion (source files not found or not Bangalore). Relying on OSM download.")
     
-    # Check if we need to download network data
-    graph_path = raw_dir / "graph.graphml"
-    buildings_path = raw_dir / "buildings.geojson"
-    
-    # Check what data already exists
-    has_graph = graph_path.exists()
-    has_buildings = buildings_path.exists()
-    
-    if (not has_graph or args.force) and not args.skip_graph:
-        if args.force and has_graph:
-            print("\n[FORCE] Re-downloading street network...")
-        print("\n" + "=" * 60)
-        print("[DOWNLOAD] Downloading street network data from OpenStreetMap...")
-        print("[INFO] This may take 5-10 minutes for large cities...")
-        print("=" * 60)
+    # Step 2: Download network data
+    if (not cdm.raw_graph.exists() or args.force) and not skip_graph:
         run_command(
             [
                 python_exe,
                 str(pipeline_dir / "collect_osm_data.py"),
-                "--place", args.place,
-                "--out-dir", str(raw_dir)
+                "--place", place,
+                "--out-dir", str(cdm.raw_dir)
             ],
             "Downloading OSM network data"
         )
-    elif has_graph and not args.force:
-        print("\n[OK] Using cached street network data from", graph_path)
-        if has_buildings:
-            print("[OK] Using cached buildings data from", buildings_path)
     
-    # Step 2: Build graph and map POIs to nodes
-    processed_graph = processed_dir / "graph.graphml"
-    poi_mapping = processed_dir / "poi_node_mapping.parquet"
-    
-    if not args.skip_graph:
-        if processed_graph.exists() and poi_mapping.exists() and not args.force:
-            print("\n[OK] Using cached processed graph:", processed_graph)
-            print("[OK] Using cached POI mapping:", poi_mapping)
-            print("  (Use --force to re-process)")
+    # Step 3: Build graph
+    if not skip_graph:
+        if cdm.processed_graph.exists() and cdm.poi_mapping.exists() and not args.force:
+            print(f"\n[OK] Using cached processed graph: {cdm.processed_graph}")
         else:
-            if args.force and processed_graph.exists():
-                print("\n[FORCE] Re-processing graph...")
-            # Build command with only files that exist
             cmd = [
                 python_exe,
                 str(pipeline_dir / "build_graph.py"),
-                "--graph-path", str(raw_dir / "graph.graphml"),
-                "--pois-path", str(raw_dir / "pois.parquet"),
-                "--out-dir", str(processed_dir)
+                "--graph-path", str(cdm.raw_graph),
+                "--pois-path", str(cdm.raw_pois.with_suffix('.parquet')),
+                "--out-dir", str(cdm.processed_dir)
             ]
             
-            # Add optional layers only if they exist
-            buildings_file = raw_dir / "buildings.geojson"
-            landuse_file = raw_dir / "landuse.geojson"
-            
-            if buildings_file.exists():
-                cmd.extend(["--buildings-path", str(buildings_file)])
-                print(f"  Using buildings data: {buildings_file}")
-            
-            if landuse_file.exists():
-                cmd.extend(["--landuse-path", str(landuse_file)])
-                print(f"  Using landuse data: {landuse_file}")
+            if cdm.raw_buildings.exists():
+                cmd.extend(["--buildings-path", str(cdm.raw_buildings)])
+            if cdm.raw_landuse.exists():
+                cmd.extend(["--landuse-path", str(cdm.raw_landuse)])
             
             run_command(cmd, "Building graph and mapping POIs")
     
-    # Step 3: Compute walkability scores
-    nodes_scores = analysis_dir / "nodes_with_scores.parquet"
-    h3_agg = analysis_dir / "h3_agg.parquet"
-    metrics_summary = analysis_dir / "metrics_summary.json"
-    
-    if not args.skip_scoring:
-        if nodes_scores.exists() and h3_agg.exists() and metrics_summary.exists() and not args.force:
-            print("\n[OK] Using cached walkability scores:", nodes_scores)
-            print("[OK] Using cached H3 aggregates:", h3_agg)
-            print("  (Use --force to re-compute)")
+    # Step 4: Compute scores
+    if not skip_scoring:
+        if cdm.baseline_nodes.exists() and cdm.baseline_metrics.exists() and not args.force:
+            print(f"\n[OK] Using cached walkability scores: {cdm.baseline_nodes}")
         else:
-            if args.force and nodes_scores.exists():
-                print("\n[FORCE] Re-computing scores...")
             run_command(
                 [
                     python_exe,
                     str(pipeline_dir / "compute_scores.py"),
-                    "--graph-path", str(processed_dir / "graph.graphml"),
-                    "--poi-mapping", str(processed_dir / "poi_node_mapping.parquet"),
-                    "--pois-path", str(raw_dir / "pois.parquet"),
-                    "--out-dir", str(analysis_dir),
-                    "--config", str(project_dir / "config.yaml")
+                    "--city", args.city,
+                    "--graph-path", str(cdm.processed_graph),
+                    "--poi-mapping", str(cdm.poi_mapping),
+                    "--pois-path", str(cdm.raw_pois.with_suffix('.parquet')),
+                    "--out-dir", str(cdm.baseline_dir),
+                    "--config", str(cdm.config)
                 ],
                 "Computing walkability scores"
             )
     
-    # Step 4: Generate visualization
-    # map_output = script_dir / "interactive_map.html"
-    
-    # if not args.skip_viz:
-    #     if map_output.exists() and not args.force:
-    #         print("\n[OK] Map already exists:", map_output)
-    #         print("  (Use --force to re-generate)")
-    #     else:
-    #         if args.force and map_output.exists():
-    #             print("\n[FORCE] Re-generating map...")
-    #         run_command(
-    #             [
-    #                 python_exe,
-    #                 str(pipeline_dir / "visualize.py"),
-    #                 "--graph-path", str(processed_dir / "graph.graphml"),
-    #                 "--pois-path", str(raw_dir / "pois.geojson"),
-    #                 "--nodes-path", str(analysis_dir / "nodes_with_scores.parquet"),
-    #                 "--mapping-path", str(processed_dir / "poi_node_mapping.parquet"),
-    #                 "--out", str(map_output)
-    #             ],
-    #             "Generating interactive map"
-    #         )
-    
     print("\n" + "=" * 60)
-    print("[COMPLETE] PathLens pipeline completed successfully!")
+    print(f"[COMPLETE] PathLens pipeline for {args.city} completed successfully!")
     print("=" * 60)
-    print(f"[RESULTS]")
-    print(f"  - Processed graph: {processed_dir / 'graph.graphml'}")
-    print(f"  - Node scores: {analysis_dir / 'nodes_with_scores.csv'}")
-    print(f"  - H3 aggregates: {analysis_dir / 'h3_agg.csv'}")
-    # print(f"  - Interactive map: {script_dir / 'interactive_map.html'}")
-    print(f"  - Metrics summary: {analysis_dir / 'metrics_summary.json'}")
 
 
 if __name__ == "__main__":

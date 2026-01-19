@@ -19,12 +19,6 @@ GraphBuilder/downloader/sat_images
 GraphBuilder/custom_outputs
 GraphBuilder/downloader/metadata.json
 
-# Large files (>100MB) ignored due to GitHub limits (no LFS)
-data/cities/bangalore/raw/osm/graph.graphml
-data/cities/bangalore/raw/osm/pois.geojson
-data/cities/bangalore/processed/graph.graphml
-data/cities/bangalore/processed/baseline_graph.graphml
-data/cities/bangalore/processed/optimized_graph.graphml
-app/api/data/bengaluru/graph.graphml
-data/20citiesModel/model.data*
-GraphBuilder/data/20citiesModel/model.data*
+# Exclude all data, as requested by user
+data/
+GraphBuilder/data/

@@ -39,27 +39,7 @@ logger = logging.getLogger(__name__)
 
 # landuse-pipeline/ is at project root, so parent is BASE_DIR
 BASE_DIR = Path(__file__).resolve().parent.parent
-PROJECT_ID = 'tidecon-9913b'
 SERVICE_ACCOUNT_JSON = Path(__file__).resolve().parent / "landuse-service-account.json"
-
-# Input files
-BEST_CANDIDATE_PATH = BASE_DIR / "data" / "optimization" / "runs" / "best_candidate.json"
-NODES_PARQUET_PATH = BASE_DIR / "data" / "analysis" / "nodes_with_scores.parquet"
-
-# Output directory
-OUTPUT_DIR = BASE_DIR / "data" / "landuse"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-# Minimum required free-land area per amenity type (m²)
-MIN_AREA = {
-    'hospital': 1000,
-    'school': 800,
-    'park': 500,
-    'pharmacy': 100,
-    'supermarket': 600,
-    'bus_station': 400,
-    'bank': 150
-}
 
 BUFFER_METERS = 200
 
@@ -91,7 +71,7 @@ class AmenityPlacementBuilder:
         
         return amenity_map
     
-    def create_geojson(self, amenity: str) -> Path:
+    def create_geojson(self, amenity: str, output_dir: Path) -> Path:
         """Create GeoJSON file for specific amenity"""
         logger.info("="*60)
         logger.info(f"STEP 1: Creating GeoJSON for {amenity.upper()}")
@@ -123,7 +103,6 @@ class AmenityPlacementBuilder:
         df_sub["amenity"] = amenity
         
         # Create Point geometries from lon/lat columns
-        # The parquet file has lon/lat in WGS84 (EPSG:4326)
         geometry = [Point(xy) for xy in zip(df_sub['lon'], df_sub['lat'])]
         
         # Create GeoDataFrame with WGS84 CRS
@@ -134,7 +113,7 @@ class AmenityPlacementBuilder:
         )
         
         # Save GeoJSON
-        out_path = OUTPUT_DIR / f"node_candidates_{amenity}.geojson"
+        out_path = output_dir / f"node_candidates_{amenity}.geojson"
         gdf.to_file(out_path, driver="GeoJSON")
         
         logger.info(f"Created {len(gdf)} candidate nodes -> {out_path.name}")
@@ -241,10 +220,10 @@ class GEEUploader:
 class LandUseAnalyzer:
     """Run land-use feasibility analysis on GEE"""
     
-    def __init__(self, project_id):
+    def __init__(self, project_id, min_area=None, buffer_meters=200):
         self.project_id = project_id
-        self.MIN_AREA = MIN_AREA
-        self.BUFFER_METERS = BUFFER_METERS
+        self.MIN_AREA = min_area
+        self.BUFFER_METERS = buffer_meters
         self._initialize_ee()
         self._load_earth_engine_data()
     
@@ -557,12 +536,26 @@ class FeasibilityFilter:
 class LandUsePipeline:
     """Complete land-use feasibility pipeline orchestrator"""
     
-    def __init__(self):
-        self.placement_builder = AmenityPlacementBuilder(BEST_CANDIDATE_PATH, NODES_PARQUET_PATH)
-        self.gee_uploader = GEEUploader(PROJECT_ID)
-        self.analyzer = LandUseAnalyzer(PROJECT_ID)
+    def __init__(self, cdm: CityDataManager, config: dict):
+        self.cdm = cdm
+        self.config = config
+        
+        # Resolve settings from config
+        self.project_id = config.get('landuse', {}).get('project_id', 'tidecon-9913b')
+        self.min_area = config.get('landuse', {}).get('min_area', {
+            'hospital': 1000, 'school': 800, 'park': 500, 'pharmacy': 100, 
+            'supermarket': 600, 'bus_station': 400, 'bank': 150
+        })
+        self.buffer_meters = config.get('landuse', {}).get('buffer_meters', 200)
+        
+        self.output_dir = cdm.landuse_dir
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        
+        self.placement_builder = AmenityPlacementBuilder(cdm.best_candidate(cdm.mode), cdm.baseline_nodes)
+        self.gee_uploader = GEEUploader(self.project_id)
+        self.analyzer = LandUseAnalyzer(self.project_id, min_area=self.min_area, buffer_meters=self.buffer_meters)
         self.downloader = GEEDownloader()
-        self.filter = FeasibilityFilter(NODES_PARQUET_PATH)
+        self.filter = FeasibilityFilter(cdm.baseline_nodes)
     
     def process_amenity(self, amenity: str):
         """Run complete pipeline for a single amenity"""
@@ -574,7 +567,7 @@ class LandUsePipeline:
         
         try:
             # Step 1: Create GeoJSON
-            geojson_path = self.placement_builder.create_geojson(amenity)
+            geojson_path = self.placement_builder.create_geojson(amenity, self.output_dir)
             
             # Step 2: Upload to GEE
             asset_id = self.gee_uploader.upload_geojson(geojson_path, amenity)
@@ -587,11 +580,11 @@ class LandUsePipeline:
                 results['feasibility'],
                 results['placements'],
                 amenity,
-                OUTPUT_DIR
+                self.output_dir
             )
             
             # Step 5: Filter and merge
-            self.filter.filter_and_merge(amenity, feas_csv, place_geojson, OUTPUT_DIR)
+            self.filter.filter_and_merge(amenity, feas_csv, place_geojson, self.output_dir)
             
             elapsed = time.time() - start_time
             logger.info("="*60)
@@ -608,7 +601,7 @@ class LandUsePipeline:
     
     def process_all_amenities(self):
         """Run pipeline for all amenities"""
-        amenities = list(MIN_AREA.keys())
+        amenities = list(self.min_area.keys())
         
         logger.info("#"*60)
         logger.info(f"# LAND-USE BATCH PIPELINE: {len(amenities)} AMENITIES")
@@ -635,21 +628,22 @@ class LandUsePipeline:
 class LanduseFeasibilityIntegration:
     """
     Integration class for filtering candidate placements from hybrid_ga.py
-    based on landuse feasibility using Google Earth Engine.
-    
-    Usage from hybrid_ga.py:
-        from landuse_pipeline.run_feasibility import LanduseFeasibilityIntegration
-        
-        integrator = LanduseFeasibilityIntegration(nodes_parquet_path)
-        filtered_placements = integrator.filter_candidate_placements(placements_dict)
     """
     
-    def __init__(self, nodes_parquet_path: Path = None):
-        """Initialize the integration with paths to required data."""
-        self.nodes_parquet_path = nodes_parquet_path or NODES_PARQUET_PATH
-        self.project_id = PROJECT_ID
-        self.min_area = MIN_AREA
-        self.buffer_meters = BUFFER_METERS
+    def __init__(self, cdm: CityDataManager, config: dict):
+        """Initialize the integration with CityDataManager and config."""
+        self.cdm = cdm
+        self.config = config
+        self.nodes_parquet_path = cdm.baseline_nodes
+        
+        landuse_cfg = config.get('landuse', {})
+        self.project_id = landuse_cfg.get('project_id', 'tidecon-9913b')
+        self.min_area = landuse_cfg.get('min_area', {
+            'hospital': 1000, 'school': 800, 'park': 500, 'pharmacy': 100, 
+            'supermarket': 600, 'bus_station': 400, 'bank': 150
+        })
+        self.buffer_meters = landuse_cfg.get('buffer_meters', 200)
+        
         self._ee_initialized = False
         self._nodes_df = None
         
