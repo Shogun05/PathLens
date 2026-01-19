@@ -74,7 +74,7 @@ export function MetricsCard({ type }: MetricsCardProps) {
     loadMetrics();
   }, [type]);
 
-  if (loading || !metrics) {
+  if (loading || !metrics || !metrics.scores || !metrics.scores.citywide) {
     return (
       <Card className="bg-[#1b2328] border-white/10 p-4">
         <div className="animate-pulse space-y-3">
@@ -84,6 +84,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
       </Card>
     );
   }
+
+  // Safe access helpers
+  const citywide = metrics.scores.citywide || {};
+  const underserved = metrics.scores.underserved || {};
+  const gapClosure = metrics.scores.gap_closure || {};
+  const distribution = metrics.scores.distribution || {};
+  const network = metrics.network || {};
 
   const getTrendIcon = (
     value: number,
@@ -125,9 +132,9 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
-                {metrics.network.circuity_sample_ratio?.toFixed(2) ?? 'N/A'}
+                {network.circuity_sample_ratio?.toFixed(2) ?? 'N/A'}
               </span>
-              {metrics.network.circuity_sample_ratio && getStatusBadge(metrics.network.circuity_sample_ratio, 1.1, 1.5)}
+              {network.circuity_sample_ratio && getStatusBadge(network.circuity_sample_ratio, 1.1, 1.5)}
             </div>
           </div>
           <div className="size-10 rounded-lg bg-red-500/10 flex items-center justify-center text-red-400">
@@ -155,7 +162,7 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
-                {metrics.network.intersection_density_global ? Math.round(metrics.network.intersection_density_global) : 'N/A'}
+                {network.intersection_density_global ? Math.round(network.intersection_density_global) : 'N/A'}
               </span>
               <span className="text-sm text-gray-400 font-normal">/km²</span>
             </div>
@@ -185,9 +192,9 @@ export function MetricsCard({ type }: MetricsCardProps) {
             </p>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-white">
-                {metrics.network.link_node_ratio_global?.toFixed(2) ?? 'N/A'}
+                {network.link_node_ratio_global?.toFixed(2) ?? 'N/A'}
               </span>
-              {metrics.network.link_node_ratio_global && getStatusBadge(metrics.network.link_node_ratio_global, 2.0, 3.0)}
+              {network.link_node_ratio_global && getStatusBadge(network.link_node_ratio_global, 2.0, 3.0)}
             </div>
           </div>
           <div className="size-10 rounded-lg bg-yellow-500/10 flex items-center justify-center text-yellow-400">
@@ -212,7 +219,7 @@ export function MetricsCard({ type }: MetricsCardProps) {
       <Card className="bg-[#1b2328] border-white/5 p-5">
         <div className="flex justify-between items-center mb-4">
           <h4 className="text-sm font-bold text-white">Citywide Metrics</h4>
-          <span className="text-xs text-gray-500">{metrics.scores.citywide.node_count.toLocaleString()} nodes</span>
+          <span className="text-xs text-gray-500">{(citywide.node_count || 0).toLocaleString()} nodes</span>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -232,13 +239,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.citywide.walkability_mean}, 100`}
+                  strokeDasharray={`${citywide.walkability_mean || 0}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {metrics.scores.citywide.walkability_mean.toFixed(1)}
+                  {(citywide.walkability_mean || 0).toFixed(1)}
                 </span>
               </div>
             </div>
@@ -261,13 +268,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${Math.min((metrics.scores.citywide.travel_time_min_mean / 60) * 100, 100)}, 100`}
+                  strokeDasharray={`${Math.min(((citywide.travel_time_min_mean || 0) / 60) * 100, 100)}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center flex-col">
                 <span className="text-sm font-bold text-white">
-                  {metrics.scores.citywide.travel_time_min_mean.toFixed(1)}
+                  {(citywide.travel_time_min_mean || 0).toFixed(1)}
                 </span>
                 <span className="text-[8px] text-gray-500">mins</span>
               </div>
@@ -291,13 +298,13 @@ export function MetricsCard({ type }: MetricsCardProps) {
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
                   stroke="currentColor"
-                  strokeDasharray={`${metrics.scores.citywide.accessibility_mean}, 100`}
+                  strokeDasharray={`${citywide.accessibility_mean || 0}, 100`}
                   strokeWidth="3"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
-                  {metrics.scores.citywide.accessibility_mean.toFixed(1)}
+                  {(citywide.accessibility_mean || 0).toFixed(1)}
                 </span>
               </div>
             </div>
@@ -341,23 +348,23 @@ export function MetricsCard({ type }: MetricsCardProps) {
           <h4 className="text-sm font-bold text-white">
             Underserved Areas
             <span className="text-xs text-gray-500 font-normal ml-2">
-              (Bottom {metrics.scores.underserved.percentile_threshold}%)
+              (Bottom {underserved.percentile_threshold || 20}%)
             </span>
           </h4>
-          <span className="text-xs text-red-400">{metrics.scores.underserved.node_count.toLocaleString()} nodes</span>
+          <span className="text-xs text-red-400">{(underserved.node_count || 0).toLocaleString()} nodes</span>
         </div>
 
         <div className="grid grid-cols-3 gap-4">
           <div className="text-center">
-            <p className="text-2xl font-bold text-red-400">{metrics.scores.underserved.travel_time_min_mean.toFixed(1)}</p>
+            <p className="text-2xl font-bold text-red-400">{(underserved.travel_time_min_mean || 0).toFixed(1)}</p>
             <p className="text-xs text-gray-500">Avg Travel (min)</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold text-orange-400">{metrics.scores.underserved.accessibility_mean.toFixed(1)}</p>
+            <p className="text-2xl font-bold text-orange-400">{(underserved.accessibility_mean || 0).toFixed(1)}</p>
             <p className="text-xs text-gray-500">Accessibility</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold text-yellow-400">{metrics.scores.underserved.walkability_mean.toFixed(1)}</p>
+            <p className="text-2xl font-bold text-yellow-400">{(underserved.walkability_mean || 0).toFixed(1)}</p>
             <p className="text-xs text-gray-500">Walkability</p>
           </div>
         </div>
@@ -370,12 +377,12 @@ export function MetricsCard({ type }: MetricsCardProps) {
           <h4 className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-3">Gap Closure</h4>
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-2xl font-bold text-white">{metrics.scores.gap_closure.pct_above_threshold.toFixed(1)}%</p>
-              <p className="text-xs text-gray-500">nodes &gt; {metrics.scores.gap_closure.threshold_minutes} min travel</p>
+              <p className="text-2xl font-bold text-white">{(gapClosure.pct_above_threshold || 0).toFixed(1)}%</p>
+              <p className="text-xs text-gray-500">nodes &gt; {gapClosure.threshold_minutes || 15} min travel</p>
             </div>
             <div className="text-right">
-              <p className="text-lg font-semibold text-red-400">{metrics.scores.gap_closure.nodes_above_threshold.toLocaleString()}</p>
-              <p className="text-xs text-gray-500">of {metrics.scores.gap_closure.total_nodes.toLocaleString()}</p>
+              <p className="text-lg font-semibold text-red-400">{(gapClosure.nodes_above_threshold || 0).toLocaleString()}</p>
+              <p className="text-xs text-gray-500">of {(gapClosure.total_nodes || 0).toLocaleString()}</p>
             </div>
           </div>
         </Card>
@@ -385,15 +392,15 @@ export function MetricsCard({ type }: MetricsCardProps) {
           <h4 className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-3">Travel Time Distribution</h4>
           <div className="grid grid-cols-3 gap-2 text-center">
             <div>
-              <p className="text-lg font-bold text-green-400">{metrics.scores.distribution.travel_time_p50.toFixed(1)}</p>
+              <p className="text-lg font-bold text-green-400">{(distribution.travel_time_p50 || 0).toFixed(1)}</p>
               <p className="text-xs text-gray-500">P50</p>
             </div>
             <div>
-              <p className="text-lg font-bold text-yellow-400">{metrics.scores.distribution.travel_time_p90.toFixed(1)}</p>
+              <p className="text-lg font-bold text-yellow-400">{(distribution.travel_time_p90 || 0).toFixed(1)}</p>
               <p className="text-xs text-gray-500">P90</p>
             </div>
             <div>
-              <p className="text-lg font-bold text-red-400">{metrics.scores.distribution.travel_time_p95.toFixed(1)}</p>
+              <p className="text-lg font-bold text-red-400">{(distribution.travel_time_p95 || 0).toFixed(1)}</p>
               <p className="text-xs text-gray-500">P95</p>
             </div>
           </div>

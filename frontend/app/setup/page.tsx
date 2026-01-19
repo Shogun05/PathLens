@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Button } from '@/components/ui/button';
@@ -8,56 +8,9 @@ import { Input } from '@/components/ui/input';
 import { Slider } from '@/components/ui/slider';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { usePathLensStore } from '@/lib/store';
-import { pathLensAPI, OptimizationStatus } from '@/lib/api';
-import { School, Hospital, Bus, Trees, Search, Square, Sparkles, CheckCircle, Loader2, Circle, AlertTriangle } from 'lucide-react';
-
-type PipelineStep = {
-  stage: string;
-  label: string;
-  detail: string;
-  skipDetail?: string;
-};
-
-const STAGE_PERCENTS: Record<string, number> = {
-  initializing: 5,
-  data: 30,
-  optimization: 80,
-  landuse: 95,
-  finalizing: 100,
-};
-
-const PIPELINE_STEPS: PipelineStep[] = [
-  {
-    stage: 'initializing',
-    label: 'Initialization',
-    detail: 'Preparing orchestrator and shared context',
-  },
-  {
-    stage: 'data',
-    label: 'Data Pipeline',
-    detail: 'Collecting network graph & scoring nodes',
-    skipDetail: 'Skipped for optimization-only run',
-  },
-  {
-    stage: 'optimization',
-    label: 'Optimization Engine',
-    detail: 'Running GA + MILP hybrid search',
-  },
-  {
-    stage: 'landuse',
-    label: 'Land Validation',
-    detail: 'Validating feasible parcels via GEE',
-    skipDetail: 'Skipped for optimization-only run',
-  },
-  {
-    stage: 'finalizing',
-    label: 'Finalizing Outputs',
-    detail: 'Publishing dashboards & summary artifacts',
-  },
-];
+import { School, Hospital, Bus, Trees, Search, Square, Sparkles, Loader2 } from 'lucide-react';
 
 const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ssr: false,
@@ -68,230 +21,18 @@ const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ),
 });
 
-export default function HomePage() {
+export default function SetupPage() {
   const router = useRouter();
   const {
     location, customBounds, budget, maxAmenities, addSchools, addHospitals, addParks, addBusStations,
     setLocation, setCustomBounds, setBudget, setMaxAmenities, setAddSchools, setAddHospitals, setAddParks, setAddBusStations,
-    setIsOptimizing, setOptimizationProgress,
   } = usePathLensStore();
 
-  const [isRunning, setIsRunning] = useState(false);
-  const [progress, setProgress] = useState(0);
   const [drawingMode, setDrawingMode] = useState(false);
-  const [statusData, setStatusData] = useState<OptimizationStatus | null>(null);
-  const [statusMessage, setStatusMessage] = useState('');
-  const statusPoller = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const inferPercent = useCallback((stage?: string) => {
-    if (!stage) return 0;
-    return STAGE_PERCENTS[stage] ?? 0;
-  }, []);
-
-  const stopPolling = useCallback(() => {
-    if (statusPoller.current) {
-      clearInterval(statusPoller.current);
-      statusPoller.current = null;
-    }
-  }, []);
-
-  const fetchStatus = useCallback(async (autoRedirect: boolean = true): Promise<OptimizationStatus | null> => {
-    try {
-      const status = await pathLensAPI.getOptimizationStatus();
-      if (!status || status.status === 'not_started') {
-        return status ?? null;
-      }
-
-      setStatusData(status);
-
-      if (status.message) {
-        setStatusMessage(status.message);
-        setOptimizationProgress(status.message);
-      }
-
-      if (status.stage) {
-        const nextPercent = typeof status.percent === 'number'
-          ? status.percent
-          : inferPercent(status.stage);
-        setProgress((prev) => Math.max(prev, nextPercent));
-      }
-
-      if (status.status === 'completed') {
-        if (autoRedirect) {
-          stopPolling();
-          setProgress(100);
-          setIsRunning(false);
-          setIsOptimizing(false);
-          setStatusMessage(status.message || 'Optimization completed');
-          setTimeout(() => router.push('/baseline'), 1200);
-        }
-      } else if (['failed', 'error'].includes(status.status)) {
-        if (autoRedirect) {
-          stopPolling();
-          setProgress(0);
-          setIsRunning(false);
-          setIsOptimizing(false);
-          setStatusMessage(status.message || 'Optimization failed');
-          alert(status.message || 'Optimization failed. Check backend logs.');
-        }
-      }
-
-      return status;
-    } catch (error) {
-      console.error('Failed to fetch optimization status', error);
-      return null;
-    }
-  }, [inferPercent, router, setIsOptimizing, setOptimizationProgress, stopPolling]);
-
-  const startStatusPolling = useCallback(() => {
-    stopPolling();
-    fetchStatus(true); // Enable redirect during polling
-    statusPoller.current = setInterval(() => fetchStatus(true), 5000);
-  }, [fetchStatus, stopPolling]);
-
-  useEffect(() => {
-    let cancelled = false;
-    const resume = async () => {
-      // Pass false to disable auto-redirect on initial load
-      const status = await fetchStatus(false);
-      if (cancelled || !status) {
-        return;
-      }
-      // Only resume polling if actively running (NOT completed)
-      // This prevents redirect from stale 'completed' status
-      if (['queued', 'running'].includes(status.status)) {
-        setIsRunning(true);
-        setIsOptimizing(true);
-        if (!statusPoller.current) {
-          statusPoller.current = setInterval(fetchStatus, 5000);
-        }
-      }
-      // Note: We do NOT handle 'completed' here to avoid redirect on page load
-      // Redirect only happens in fetchStatus when a NEW optimization completes
-    };
-    resume();
-    return () => {
-      cancelled = true;
-      stopPolling();
-    };
-  }, [fetchStatus, setIsOptimizing, stopPolling]);
-
-  type StepVisualState = 'pending' | 'active' | 'done' | 'skipped' | 'failed';
-
-  const getStepState = (stage: string): StepVisualState => {
-    const pipelineState = statusData?.pipelines?.[stage];
-    if (pipelineState === 'skipped') return 'skipped';
-    if (pipelineState === 'failed') return 'failed';
-    if (pipelineState === 'completed') return 'done';
-    if (pipelineState === 'running') return 'active';
-
-    const currentStage = statusData?.stage;
-    if (currentStage === stage) return 'active';
-
-    const activeIndex = currentStage
-      ? PIPELINE_STEPS.findIndex((step) => step.stage === currentStage)
-      : (isRunning ? 0 : -1);
-    const stepIndex = PIPELINE_STEPS.findIndex((step) => step.stage === stage);
-
-    if (activeIndex === -1) return 'pending';
-    if (stepIndex < activeIndex) return 'done';
-    if (stepIndex === activeIndex) return 'active';
-    return 'pending';
-  };
-
-  const getStepDetail = (step: PipelineStep) => {
-    const pipelineState = statusData?.pipelines?.[step.stage];
-    if (pipelineState === 'skipped' && step.skipDetail) {
-      return step.skipDetail;
-    }
-    if (statusData?.stage === step.stage && statusMessage) {
-      return statusMessage;
-    }
-    return step.detail;
-  };
-
-  const renderStepIcon = (state: StepVisualState) => {
-    switch (state) {
-      case 'done':
-        return <CheckCircle className="h-5 w-5 text-green-400" />;
-      case 'active':
-        return <Loader2 className="h-5 w-5 text-[#8fd6ff] animate-spin" />;
-      case 'failed':
-        return <AlertTriangle className="h-5 w-5 text-red-400" />;
-      case 'skipped':
-        return <Circle className="h-5 w-5 text-gray-500 opacity-60" />;
-      default:
-        return <Circle className="h-5 w-5 text-gray-500" />;
-    }
-  };
-
-  const showStatusPanel = isRunning || ['queued', 'running'].includes(statusData?.status ?? '');
-  const statusDotClass = (() => {
-    if (['failed', 'error'].includes(statusData?.status ?? '')) {
-      return 'bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.45)]';
-    }
-    if (statusData?.status === 'completed') {
-      return 'bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.45)]';
-    }
-    return 'bg-[#8fd6ff] shadow-[0_0_8px_rgba(143,214,255,0.45)]';
-  })();
-
-  const handleOptimize = async () => {
-    if (!location && !customBounds) {
-      alert('Please enter a location or draw a custom bounding box');
-      return;
-    }
-
-    // Normalize city name for API lookup (e.g., "Chandigarh, India" -> "chandigarh")
-    const normalizedCity = location
-      .toLowerCase()
-      .split(',')[0]
-      .trim()
-      .replace(/\s+/g, '_');
-
-    try {
-      // Check if data already exists for this city
-      const dataStatus = await pathLensAPI.getCityDataStatus(normalizedCity);
-
-      if (dataStatus.has_baseline) {
-        // Data exists - skip pipeline and navigate directly
-        setStatusMessage('Data found! Redirecting to results...');
-        setOptimizationProgress('Data found for ' + normalizedCity);
-        // Store city name for other pages to use
-        sessionStorage.setItem('selectedCity', normalizedCity);
-        setTimeout(() => router.push('/baseline'), 500);
-        return;
-      }
-    } catch (error) {
-      // API call failed - proceed with optimization (backwards compatibility)
-      console.log('City data check failed, proceeding with optimization:', error);
-    }
-
-    // No existing data - run the full pipeline
-    setIsRunning(true);
-    setIsOptimizing(true);
-    setProgress(5);
-    setStatusData(null);
-    setStatusMessage('Queuing optimization run...');
-    setOptimizationProgress('Queuing optimization run...');
-
-    try {
-      await pathLensAPI.optimize({
-        location,
-        budget,
-        max_amenities: maxAmenities,
-        add_schools: addSchools,
-        add_hospitals: addHospitals,
-        add_parks: addParks,
-      });
-      startStatusPolling();
-    } catch (error) {
-      console.error('Optimization failed:', error);
-      alert('Optimization failed. Please try again.');
-      stopPolling();
-      setIsRunning(false);
-      setIsOptimizing(false);
-    }
+  const handleOptimize = () => {
+    // Navigate directly to baseline
+    router.push('/baseline');
   };
 
   const handleDrawBoundingBox = () => {
@@ -326,7 +67,7 @@ export default function HomePage() {
           <h2 className="text-lg font-bold">PathLens</h2>
         </div>
         <div className="flex gap-3 items-center">
-          <Button variant="ghost" className="text-gray-400 hover:text-white">Documentation</Button>
+          <Button variant="ghost" className="text-gray-400 hover:text-white" onClick={() => router.push('/')}>Home</Button>
           <div className="h-9 w-[1px] bg-white/10 mx-1"></div>
           <div className="flex items-center gap-3">
             <div className="size-8 rounded-full bg-gradient-to-tr from-blue-500 to-purple-600"></div>
@@ -439,11 +180,11 @@ export default function HomePage() {
           <div className="p-6 border-t border-white/10 bg-[#101518]/90">
             <Button
               onClick={handleOptimize}
-              disabled={isRunning || (!location && !customBounds)}
-              className="w-full h-12 bg-[#8fd6ff] hover:bg-[#b0e2ff] text-[#101518] font-bold shadow-[0_0_20px_rgba(143,214,255,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full h-12 bg-[#8fd6ff] hover:bg-[#b0e2ff] text-[#101518] font-bold shadow-[0_0_20px_rgba(143,214,255,0.3)]"
               type="button"
             >
-              {isRunning ? <><Loader2 className="mr-2 h-5 w-5 animate-spin" />Running...</> : <><Sparkles className="mr-2 h-5 w-5" />Run City Optimization</>}
+              <Sparkles className="mr-2 h-5 w-5" />
+              Run Optimization
             </Button>
           </div>
         </aside>
@@ -461,38 +202,6 @@ export default function HomePage() {
           </div>
 
           <div className={`absolute inset-0 z-20 bg-gradient-to-r from-[#0f1c23] via-[#0f1c23]/60 to-transparent pointer-events-none ${drawingMode ? 'opacity-50' : ''}`}></div>
-
-          {showStatusPanel && (
-            <div className="absolute top-6 right-6 w-80 bg-[#1b2328]/95 backdrop-blur-md rounded-xl border border-white/10 z-50 shadow-lg">
-              <div className="px-4 py-3 border-b border-white/10 flex justify-between items-center">
-                <h4 className="text-sm font-semibold">System Status</h4>
-                <div className={`h-2 w-2 rounded-full ${statusDotClass}`}></div>
-              </div>
-              <div className="p-4 space-y-4">
-                <div>
-                  <Progress value={Math.min(progress, 100)} className="h-2" />
-                  <p className="text-xs text-[#8fd6ff] mt-2">
-                    {statusMessage || 'Waiting for orchestrator updates...'}
-                  </p>
-                </div>
-                {PIPELINE_STEPS.map((step) => {
-                  const stepState = getStepState(step.stage);
-                  const detail = getStepDetail(step);
-                  return (
-                    <div key={step.stage} className="flex items-start gap-3">
-                      <div className="mt-0.5">
-                        {renderStepIcon(stepState)}
-                      </div>
-                      <div className="flex-1">
-                        <p className="text-xs font-medium">{step.label}</p>
-                        <p className="text-[11px] text-gray-400 mt-1">{detail}</p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </main>
       </div>
     </div>

@@ -38,6 +38,9 @@ export default function OptimizedPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [isExporting, setIsExporting] = useState(false);
+  const [baselineMetrics, setBaselineMetrics] = useState<any>(null);
+  const [optimizedMetrics, setOptimizedMetrics] = useState<any>(null);
+  const [optimizationResults, setOptimizationResults] = useState<any>(null);
 
   useEffect(() => {
     const loadData = async () => {
@@ -62,7 +65,7 @@ export default function OptimizedPage() {
         } else {
           // Load metrics, nodes, suggestions, and baseline metrics in parallel
           console.log(`Loading optimized data for ${selectedCity}...`);
-          const [metrics, nodes, suggsCollection, optimizationResults, baselineResults] = await Promise.all([
+          const [metrics, nodes, suggsCollection, optResults, baselineResults] = await Promise.all([
             pathLensAPI.getMetricsSummary('optimized', selectedCity).catch(err => {
               console.warn('Failed to load metrics:', err);
               return { scores: { accessibility_mean: 0 } };
@@ -90,11 +93,9 @@ export default function OptimizedPage() {
             setSuggestions([]);
           }
 
-          // Use optimization results for score if available
-          if (optimizationResults?.metrics) {
-            console.log('Optimization metrics:', optimizationResults.metrics);
-            // Score is derived from nodes, but we can show optimization metadata
-          }
+          // Store full metrics for PDF report
+          setOptimizedMetrics(metrics);
+          setOptimizationResults(optResults);
 
           // Use pre-computed city-wide average from metrics API (all nodes)
           const metricsScore = metrics?.scores?.citywide?.accessibility_mean
@@ -115,11 +116,12 @@ export default function OptimizedPage() {
             }
           }
 
-          // Also set baseline score from fetched baseline metrics
-          const baselineMetrics = baselineResults?.scores;
-          const baselineVal = baselineMetrics?.citywide?.accessibility_mean
-            || baselineMetrics?.accessibility
-            || baselineMetrics?.accessibility_mean;
+          // Also set baseline score and metrics from fetched baseline metrics
+          setBaselineMetrics(baselineResults);
+          const baselineScores = baselineResults?.scores;
+          const baselineVal = baselineScores?.citywide?.accessibility_mean
+            || baselineScores?.accessibility
+            || baselineScores?.accessibility_mean;
             
           if (baselineVal && baselineVal > 0) {
             setBaselineScore(baselineVal);
@@ -138,7 +140,6 @@ export default function OptimizedPage() {
     };
 
     loadData();
-    loadData();
   }, [demoMode, selectedCity]); // Re-run when demoMode or selectedCity changes
 
   // Removed rescoring simulation as requested - using static city-wide scores instead
@@ -156,19 +157,26 @@ export default function OptimizedPage() {
   const handleExportReport = async () => {
     setIsExporting(true);
     try {
-      const amenities = transformSuggestionsToAmenities(suggestions);
-      
-      // Debug: Check if mapContainer is available
-      console.log('Map container for PDF:', mapContainer);
-      console.log('Map container dimensions:', mapContainer?.offsetWidth, 'x', mapContainer?.offsetHeight);
+      // Filter and transform suggestions with proper type handling
+      const validSuggestions = suggestions.filter(s => s.geometry?.coordinates);
+      const amenities = transformSuggestionsToAmenities(validSuggestions as any);
 
       const cityNameFormatted = selectedCity.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      await generateOptimizationReport(mapContainer, {
+      await generateOptimizationReport(null, {
         location: location || `${cityNameFormatted}, India`,
         baselineScore,
         optimizedScore,
         amenities,
         generatedAt: new Date(),
+        baselineMetrics: baselineMetrics,
+        optimizedMetrics: optimizedMetrics,
+        optimizationMode: 'GA + MILP + PNMLR',
+        optimizationResults: optimizationResults ? {
+          generation: optimizationResults.generation,
+          fitness: optimizationResults.fitness || optimizationResults.metrics?.fitness,
+          placements: optimizationResults.placements || optimizationResults.metrics?.placements,
+          amenityUtilities: optimizationResults.metrics?.amenity_utilities,
+        } : undefined,
       });
 
       console.log('Report generated successfully');

@@ -1,5 +1,4 @@
 import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
 
 export interface AmenityPlacement {
     type: string;
@@ -8,12 +7,65 @@ export interface AmenityPlacement {
     description?: string;
 }
 
+export interface MetricsData {
+    network?: {
+        circuity_sample_ratio?: number;
+        intersection_density_global?: number;
+        link_node_ratio_global?: number;
+    };
+    scores?: {
+        citywide?: {
+            accessibility_mean?: number;
+            travel_time_min_mean?: number;
+            walkability_mean?: number;
+            node_count?: number;
+        };
+        underserved?: {
+            accessibility_mean?: number;
+            travel_time_min_mean?: number;
+            walkability_mean?: number;
+            node_count?: number;
+            percentile_threshold?: number;
+        };
+        well_served?: {
+            accessibility_mean?: number;
+            travel_time_min_mean?: number;
+            walkability_mean?: number;
+            node_count?: number;
+        };
+        gap_closure?: {
+            threshold_minutes?: number;
+            nodes_above_threshold?: number;
+            pct_above_threshold?: number;
+            total_nodes?: number;
+        };
+        distribution?: {
+            travel_time_p50?: number;
+            travel_time_p90?: number;
+            travel_time_p95?: number;
+            travel_time_max?: number;
+            accessibility_p10?: number;
+            accessibility_p50?: number;
+        };
+        equity?: number;
+    };
+}
+
 export interface ReportData {
     location: string;
     baselineScore: number;
     optimizedScore: number;
     amenities: AmenityPlacement[];
     generatedAt: Date;
+    baselineMetrics?: MetricsData;
+    optimizedMetrics?: MetricsData;
+    optimizationMode?: string;
+    optimizationResults?: {
+        generation?: number;
+        fitness?: number;
+        placements?: Record<string, number>;
+        amenityUtilities?: Record<string, number>;
+    };
 }
 
 // Color palette matching PathLens branding
@@ -26,6 +78,9 @@ const COLORS = {
     border: '#e0e0e0',
     headerBg: '#1b2328',
     rowAlt: '#f8fafc',
+    success: '#10b981',
+    warning: '#f59e0b',
+    danger: '#ef4444',
 };
 
 // Amenity type colors for visual distinction
@@ -59,21 +114,70 @@ export async function generateOptimizationReport(
 
     let yPos = margin;
 
-    // === PAGE 1: Header & Map ===
+    // === PAGE 1: Executive Summary ===
+    yPos = drawHeader(pdf, data, pageWidth, margin);
 
+    // === Key Metrics Overview ===
+    yPos = drawExecutiveSummary(pdf, data, margin, contentWidth, yPos);
+
+    // === Score Comparison ===
+    yPos = drawScoreComparison(pdf, data, margin, contentWidth, yPos);
+
+    // Footer for page 1
+    drawPageFooter(pdf, pageWidth, pageHeight);
+
+    // === PAGE 2: Detailed Amenity Table ===
+    pdf.addPage();
+    yPos = margin;
+
+    // Table header
+    pdf.setFillColor(27, 35, 40);
+    pdf.rect(0, 0, pageWidth, 25, 'F');
+    pdf.setTextColor(143, 214, 255);
+    pdf.setFontSize(16);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('Proposed Amenity Placements', margin, 16);
+    yPos = 35;
+
+    // Draw amenity table
+    yPos = drawAmenityTable(pdf, data, margin, contentWidth, yPos, pageWidth, pageHeight);
+
+    // Footer on last page
+    drawPageFooter(pdf, pageWidth, pageHeight);
+
+    // Save the PDF
+    const filename = `pathlens-report-${data.location?.toLowerCase().replace(/[^a-z0-9]/g, '-') || 'optimization'}-${data.generatedAt.toISOString().slice(0, 10)}.pdf`;
+    pdf.save(filename);
+}
+
+// Add footer to each page
+function drawPageFooter(pdf: jsPDF, pageWidth: number, pageHeight: number): void {
+    pdf.setFontSize(8);
+    pdf.setTextColor(150, 150, 150);
+    pdf.text('©PathLens', pageWidth / 2, pageHeight - 8, { align: 'center' });
+}
+
+function drawHeader(pdf: jsPDF, data: ReportData, pageWidth: number, margin: number): number {
     // Header background
-    pdf.setFillColor(27, 35, 40); // #1b2328
-    pdf.rect(0, 0, pageWidth, 45, 'F');
+    pdf.setFillColor(27, 35, 40);
+    pdf.rect(0, 0, pageWidth, 50, 'F');
 
     // Logo/Title
-    pdf.setTextColor(143, 214, 255); // #8fd6ff
-    pdf.setFontSize(24);
+    pdf.setTextColor(143, 214, 255);
+    pdf.setFontSize(28);
     pdf.setFont('helvetica', 'bold');
-    pdf.text('PATHLENS', margin, 20);
+    pdf.text('PATHLENS', margin, 22);
 
-    pdf.setFontSize(14);
+    pdf.setFontSize(12);
     pdf.setTextColor(255, 255, 255);
-    pdf.text('Optimization Report', margin, 30);
+    pdf.text('Urban Accessibility Optimization Report', margin, 32);
+
+    // Optimization mode badge
+    if (data.optimizationMode) {
+        pdf.setFontSize(9);
+        pdf.setTextColor(16, 185, 129);
+        pdf.text(`Mode: ${data.optimizationMode}`, margin, 42);
+    }
 
     // Metadata on right side
     pdf.setFontSize(10);
@@ -83,192 +187,125 @@ export async function generateOptimizationReport(
         month: 'long',
         day: 'numeric',
     });
-    pdf.text(dateStr, pageWidth - margin, 20, { align: 'right' });
-    pdf.text(data.location || 'Urban Analysis', pageWidth - margin, 28, { align: 'right' });
+    pdf.text(dateStr, pageWidth - margin, 22, { align: 'right' });
+    pdf.text(data.location || 'Urban Analysis', pageWidth - margin, 32, { align: 'right' });
 
-    yPos = 55;
+    return 60;
+}
 
-    // === Map Section ===
-    console.log('[PDF] Map container received:', mapContainer ? 'yes' : 'null');
-    if (mapContainer) {
-        console.log('[PDF] Map container dimensions:', mapContainer.offsetWidth, 'x', mapContainer.offsetHeight);
-        try {
-            pdf.setFontSize(12);
-            pdf.setTextColor(51, 51, 51);
-            pdf.setFont('helvetica', 'bold');
-            pdf.text('Optimized Amenity Placements', margin, yPos);
-            yPos += 8;
-
-            console.log('[PDF] Starting html2canvas capture...');
-            // Capture the map with improved options for Leaflet tiles
-            // Note: html2canvas may struggle with external tile images due to CORS
-            const canvas = await html2canvas(mapContainer, {
-                useCORS: true,
-                allowTaint: true, // Allow tainted canvas (may produce blank tiles but prevents errors)
-                scale: 2, // Higher scale for better quality
-                logging: false, // Disable logging in production
-                backgroundColor: '#1a1a2e',
-                foreignObjectRendering: false, // Must be false for cross-origin images
-                removeContainer: false, // Keep container for proper rendering
-                imageTimeout: 30000, // Longer timeout for tiles to load
-                proxy: undefined, // No proxy - rely on CORS headers from tile server
-                windowWidth: mapContainer.scrollWidth || 800,
-                windowHeight: mapContainer.scrollHeight || 600,
-                onclone: (clonedDoc) => {
-                    // Hide all leaflet controls in the cloned document
-                    const controls = clonedDoc.querySelectorAll('.leaflet-control, .leaflet-control-container');
-                    controls.forEach((ctrl) => {
-                        (ctrl as HTMLElement).style.display = 'none';
-                    });
-                    // Force visibility for the map container and tiles
-                    const mapPane = clonedDoc.querySelector('.leaflet-pane');
-                    if (mapPane) {
-                        (mapPane as HTMLElement).style.visibility = 'visible';
-                        (mapPane as HTMLElement).style.opacity = '1';
-                    }
-                    
-                    // Remove unsupported CSS color functions (lab, oklch, oklab, lch)
-                    // html2canvas doesn't support CSS Color Level 4 functions
-                    
-                    // First, remove stylesheets that might contain problematic colors
-                    const styleSheets = clonedDoc.querySelectorAll('style');
-                    styleSheets.forEach((styleEl) => {
-                        const css = styleEl.textContent || '';
-                        if (css.includes('lab(') || css.includes('oklch(') || css.includes('oklab(') || css.includes('lch(')) {
-                            // Replace problematic color functions with fallback
-                            styleEl.textContent = css
-                                .replace(/lab\([^)]+\)/g, '#888888')
-                                .replace(/oklch\([^)]+\)/g, '#888888')
-                                .replace(/oklab\([^)]+\)/g, '#888888')
-                                .replace(/lch\([^)]+\)/g, '#888888');
-                        }
-                    });
-                    
-                    // Then check inline styles
-                    const allElements = clonedDoc.querySelectorAll('*');
-                    allElements.forEach((el) => {
-                        const htmlEl = el as HTMLElement;
-                        const style = htmlEl.style;
-                        // Reset any potentially problematic color properties to safe fallbacks
-                        const propsToCheck = ['color', 'backgroundColor', 'borderColor', 'outlineColor', 'fill', 'stroke'];
-                        propsToCheck.forEach(prop => {
-                            const value = style.getPropertyValue(prop);
-                            if (value && (value.includes('lab(') || value.includes('oklch(') || value.includes('oklab(') || value.includes('lch('))) {
-                                // Replace with a safe gray color
-                                style.setProperty(prop, '#888888', 'important');
-                            }
-                        });
-                    });
-                    
-                    console.log('[PDF] Cloned document sanitized for html2canvas');
-                },
-            });
-
-            console.log('[PDF] Canvas captured:', canvas.width, 'x', canvas.height);
-            if (canvas.width > 0 && canvas.height > 0) {
-                const imgData = canvas.toDataURL('image/png');
-                console.log('[PDF] Image data length:', imgData.length);
-                const imgWidth = contentWidth;
-                const imgHeight = (canvas.height / canvas.width) * imgWidth;
-                const maxImgHeight = 100; // Limit map height
-
-                const finalHeight = Math.min(imgHeight, maxImgHeight);
-
-                // Add border around map
-                pdf.setDrawColor(200, 200, 200);
-                pdf.setLineWidth(0.5);
-                pdf.rect(margin - 1, yPos - 1, contentWidth + 2, finalHeight + 2);
-
-                pdf.addImage(imgData, 'PNG', margin, yPos, imgWidth, finalHeight);
-                yPos += finalHeight + 10;
-                console.log('[PDF] Map image added successfully');
-            } else {
-                throw new Error('Canvas has no dimensions');
-            }
-        } catch (error) {
-            console.error('[PDF] Failed to capture map:', error);
-            // Draw a placeholder box with message
-            pdf.setFillColor(240, 240, 240);
-            pdf.setDrawColor(200, 200, 200);
-            pdf.roundedRect(margin, yPos, contentWidth, 50, 3, 3, 'FD');
-            pdf.setFontSize(10);
-            pdf.setTextColor(100, 100, 100);
-            pdf.text('Map preview not available', pageWidth / 2, yPos + 25, { align: 'center' });
-            pdf.setFontSize(8);
-            pdf.text('(View map in the application)', pageWidth / 2, yPos + 33, { align: 'center' });
-            yPos += 60;
-        }
-    } else {
-        // No map container - draw placeholder
-        pdf.setFillColor(240, 240, 240);
-        pdf.setDrawColor(200, 200, 200);
-        pdf.roundedRect(margin, yPos, contentWidth, 50, 3, 3, 'FD');
-        pdf.setFontSize(10);
-        pdf.setTextColor(100, 100, 100);
-        pdf.text('Map preview not available', pageWidth / 2, yPos + 25, { align: 'center' });
-        yPos += 60;
-    }
-
-    // === Summary Statistics ===
-    pdf.setFontSize(12);
+function drawExecutiveSummary(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number): number {
+    pdf.setFontSize(14);
     pdf.setTextColor(51, 51, 51);
     pdf.setFont('helvetica', 'bold');
-    pdf.text('Summary Statistics', margin, yPos);
+    pdf.text('Executive Summary', margin, yPos);
     yPos += 8;
+
+    const improvement = data.optimizedScore - data.baselineScore;
+    const improvementPct = data.baselineScore > 0 ? ((improvement / data.baselineScore) * 100) : 0;
 
     // Summary box
     pdf.setFillColor(248, 250, 252);
     pdf.setDrawColor(200, 200, 200);
-    pdf.roundedRect(margin, yPos, contentWidth, 35, 3, 3, 'FD');
-
-    const improvement = data.optimizedScore - data.baselineScore;
-    const improvementPct = data.baselineScore > 0
-        ? ((improvement / data.baselineScore) * 100).toFixed(1)
-        : '0.0';
+    pdf.roundedRect(margin, yPos, contentWidth, 45, 3, 3, 'FD');
 
     pdf.setFontSize(10);
     pdf.setFont('helvetica', 'normal');
-    pdf.setTextColor(100, 100, 100);
+    pdf.setTextColor(80, 80, 80);
 
-    const col1X = margin + 10;
-    const col2X = margin + contentWidth / 2;
+    const summaryText = `This optimization analysis for ${data.location || 'the selected area'} evaluated ${data.amenities.length} potential amenity placements across ${Object.keys(AMENITY_COLORS).length} categories. The proposed interventions are projected to improve the citywide accessibility score from ${data.baselineScore.toFixed(1)} to ${data.optimizedScore.toFixed(1)}, representing a ${improvementPct.toFixed(1)}% improvement.`;
 
-    yPos += 10;
-    pdf.text('Baseline Score:', col1X, yPos);
+    const lines = pdf.splitTextToSize(summaryText, contentWidth - 10);
+    pdf.text(lines, margin + 5, yPos + 8);
+
+    // Key stats row
+    yPos += 25;
+    const statsY = yPos + 10;
+
+    // Stat 1: Total Placements
     pdf.setFont('helvetica', 'bold');
     pdf.setTextColor(51, 51, 51);
-    pdf.text(data.baselineScore.toFixed(1), col1X + 40, yPos);
-
-    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(18);
+    pdf.text(data.amenities.length.toString(), margin + 25, statsY, { align: 'center' });
+    pdf.setFontSize(8);
     pdf.setTextColor(100, 100, 100);
-    pdf.text('Optimized Score:', col2X, yPos);
-    pdf.setFont('helvetica', 'bold');
-    pdf.setTextColor(16, 185, 129); // green
-    pdf.text(data.optimizedScore.toFixed(1), col2X + 45, yPos);
-
-    yPos += 10;
     pdf.setFont('helvetica', 'normal');
-    pdf.setTextColor(100, 100, 100);
-    pdf.text('Improvement:', col1X, yPos);
+    pdf.text('Total Placements', margin + 25, statsY + 6, { align: 'center' });
+
+    // Stat 2: Improvement
     pdf.setFont('helvetica', 'bold');
     pdf.setTextColor(16, 185, 129);
-    pdf.text(`+${improvement.toFixed(1)} (+${improvementPct}%)`, col1X + 40, yPos);
-
-    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(18);
+    pdf.text(`+${improvementPct.toFixed(1)}%`, margin + contentWidth / 2, statsY, { align: 'center' });
+    pdf.setFontSize(8);
     pdf.setTextColor(100, 100, 100);
-    pdf.text('Total Amenities:', col2X, yPos);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('Score Improvement', margin + contentWidth / 2, statsY + 6, { align: 'center' });
+
+    // Stat 3: Categories
+    const categories = new Set(data.amenities.map(a => a.type.toLowerCase())).size;
     pdf.setFont('helvetica', 'bold');
     pdf.setTextColor(51, 51, 51);
-    pdf.text(data.amenities.length.toString(), col2X + 45, yPos);
+    pdf.setFontSize(18);
+    pdf.text(categories.toString(), margin + contentWidth - 25, statsY, { align: 'center' });
+    pdf.setFontSize(8);
+    pdf.setTextColor(100, 100, 100);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('Amenity Types', margin + contentWidth - 25, statsY + 6, { align: 'center' });
 
-    yPos += 20;
+    return yPos + 35;
+}
 
-    // === Amenity Breakdown by Type ===
-    const amenitiesByType = data.amenities.reduce((acc, a) => {
-        const type = a.type.toLowerCase();
-        acc[type] = (acc[type] || 0) + 1;
-        return acc;
-    }, {} as Record<string, number>);
+function drawScoreComparison(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number): number {
+    pdf.setFontSize(12);
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('Accessibility Score Comparison', margin, yPos);
+    yPos += 8;
+
+    const boxHeight = 35;
+    const gap = 10; // Small gap between boxes
+    const boxWidth = (contentWidth - gap) / 2;
+
+    // Baseline box
+    pdf.setFillColor(255, 245, 245);
+    pdf.setDrawColor(239, 68, 68);
+    pdf.setLineWidth(0.5);
+    pdf.roundedRect(margin, yPos, boxWidth, boxHeight, 3, 3, 'FD');
+
+    pdf.setFontSize(9);
+    pdf.setTextColor(100, 100, 100);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('BASELINE', margin + boxWidth / 2, yPos + 10, { align: 'center' });
+
+    pdf.setFontSize(20);
+    pdf.setTextColor(239, 68, 68);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text(`${data.baselineScore.toFixed(1)}/100`, margin + boxWidth / 2, yPos + 25, { align: 'center' });
+
+    // Optimized box
+    const optX = margin + boxWidth + gap;
+    pdf.setFillColor(240, 253, 244);
+    pdf.setDrawColor(16, 185, 129);
+    pdf.roundedRect(optX, yPos, boxWidth, boxHeight, 3, 3, 'FD');
+
+    pdf.setFontSize(9);
+    pdf.setTextColor(100, 100, 100);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('OPTIMIZED', optX + boxWidth / 2, yPos + 10, { align: 'center' });
+
+    pdf.setFontSize(20);
+    pdf.setTextColor(16, 185, 129);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text(`${data.optimizedScore.toFixed(1)}/100`, optX + boxWidth / 2, yPos + 25, { align: 'center' });
+
+    return yPos + boxHeight + 10;
+}
+
+function drawAmenityDistribution(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number, pageHeight: number): number {
+    if (yPos > pageHeight - 80) {
+        pdf.addPage();
+        yPos = 20;
+    }
 
     pdf.setFontSize(12);
     pdf.setTextColor(51, 51, 51);
@@ -276,56 +313,234 @@ export async function generateOptimizationReport(
     pdf.text('Amenity Distribution', margin, yPos);
     yPos += 8;
 
-    pdf.setFontSize(9);
-    pdf.setFont('helvetica', 'normal');
+    // Count amenities by type
+    const amenitiesByType = data.amenities.reduce((acc, a) => {
+        const type = a.type.toLowerCase();
+        acc[type] = (acc[type] || 0) + 1;
+        return acc;
+    }, {} as Record<string, number>);
 
     const typeEntries = Object.entries(amenitiesByType).sort((a, b) => b[1] - a[1]);
-    const colWidth = contentWidth / 4;
+    const maxCount = Math.max(...typeEntries.map(([, count]) => count));
 
-    typeEntries.forEach((entry, i) => {
-        const [type, count] = entry;
-        const col = i % 4;
-        const row = Math.floor(i / 4);
-        const x = margin + col * colWidth;
-        const y = yPos + row * 6;
+    // Draw horizontal bar chart
+    const barHeight = 8;
+    const labelWidth = 35;
+    const barMaxWidth = contentWidth - labelWidth - 25;
 
+    typeEntries.forEach(([type, count], index) => {
+        const rowY = yPos + index * (barHeight + 4);
+        const barWidth = (count / maxCount) * barMaxWidth;
         const color = AMENITY_COLORS[type] || '#666666';
+
+        // Label
+        pdf.setFontSize(8);
+        pdf.setFont('helvetica', 'normal');
+        pdf.setTextColor(51, 51, 51);
+        const displayName = type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        pdf.text(displayName, margin, rowY + 5.5);
+
+        // Bar
         pdf.setFillColor(
             parseInt(color.slice(1, 3), 16),
             parseInt(color.slice(3, 5), 16),
             parseInt(color.slice(5, 7), 16)
         );
-        pdf.circle(x + 2, y - 1.5, 1.5, 'F');
+        pdf.roundedRect(margin + labelWidth, rowY, barWidth, barHeight, 1, 1, 'F');
 
-        pdf.setTextColor(51, 51, 51);
-        const displayName = type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-        pdf.text(`${displayName}: ${count}`, x + 6, y);
+        // Count
+        pdf.setFontSize(8);
+        pdf.setFont('helvetica', 'bold');
+        pdf.text(count.toString(), margin + labelWidth + barWidth + 3, rowY + 5.5);
     });
 
-    yPos += Math.ceil(typeEntries.length / 4) * 6 + 10;
+    return yPos + typeEntries.length * (barHeight + 4) + 10;
+}
 
-    // === PAGE 2+: Detailed Amenity Table ===
-    pdf.addPage();
-    yPos = margin;
+function drawNetworkAnalysis(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number): number {
+    pdf.setFontSize(12);
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('Network Characteristics', margin, yPos);
+    yPos += 8;
+
+    const network = data.optimizedMetrics?.network || {};
+
+    pdf.setFillColor(248, 250, 252);
+    pdf.setDrawColor(200, 200, 200);
+    pdf.roundedRect(margin, yPos, contentWidth, 30, 3, 3, 'FD');
+
+    const col1 = margin + 10;
+    const col2 = margin + contentWidth / 3 + 5;
+    const col3 = margin + (2 * contentWidth) / 3;
+
+    pdf.setFontSize(9);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(100, 100, 100);
+    pdf.text('Circuity Ratio', col1, yPos + 10);
+    pdf.text('Intersection Density', col2, yPos + 10);
+    pdf.text('Link-Node Ratio', col3, yPos + 10);
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFontSize(12);
+    pdf.text((network.circuity_sample_ratio || 0).toFixed(2), col1, yPos + 22);
+    pdf.text((network.intersection_density_global || 0).toFixed(1), col2, yPos + 22);
+    pdf.text((network.link_node_ratio_global || 0).toFixed(2), col3, yPos + 22);
+
+    return yPos + 40;
+}
+
+function drawTravelTimeAnalysis(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number): number {
+    pdf.setFontSize(12);
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('Travel Time Distribution', margin, yPos);
+    yPos += 8;
+
+    const dist = data.optimizedMetrics?.scores?.distribution || {};
+    const citywide = data.optimizedMetrics?.scores?.citywide || {};
+
+    pdf.setFillColor(248, 250, 252);
+    pdf.setDrawColor(200, 200, 200);
+    pdf.roundedRect(margin, yPos, contentWidth, 40, 3, 3, 'FD');
+
+    // Row 1
+    const cols = [margin + 10, margin + contentWidth / 4, margin + contentWidth / 2, margin + (3 * contentWidth) / 4];
+
+    pdf.setFontSize(8);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(100, 100, 100);
+    pdf.text('Median (P50)', cols[0], yPos + 10);
+    pdf.text('90th Percentile', cols[1], yPos + 10);
+    pdf.text('95th Percentile', cols[2], yPos + 10);
+    pdf.text('Maximum', cols[3], yPos + 10);
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFontSize(11);
+    pdf.text(`${(dist.travel_time_p50 || 0).toFixed(1)} min`, cols[0], yPos + 20);
+    pdf.text(`${(dist.travel_time_p90 || 0).toFixed(1)} min`, cols[1], yPos + 20);
+    pdf.text(`${(dist.travel_time_p95 || 0).toFixed(1)} min`, cols[2], yPos + 20);
+    pdf.text(`${(dist.travel_time_max || 0).toFixed(1)} min`, cols[3], yPos + 20);
+
+    // Row 2
+    pdf.setFontSize(8);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(100, 100, 100);
+    pdf.text('Mean Travel Time', cols[0], yPos + 32);
+    pdf.text('Mean Walkability', cols[2], yPos + 32);
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFontSize(10);
+    pdf.text(`${(citywide.travel_time_min_mean || 0).toFixed(1)} min`, cols[0] + 40, yPos + 32);
+    pdf.text(`${(citywide.walkability_mean || 0).toFixed(1)}/100`, cols[2] + 40, yPos + 32);
+
+    return yPos + 50;
+}
+
+function drawEquityAnalysis(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number): number {
+    pdf.setFontSize(12);
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('Equity Analysis', margin, yPos);
+    yPos += 8;
+
+    const scores = data.optimizedMetrics?.scores || {};
+    const underserved = scores.underserved || {};
+    const wellServed = scores.well_served || {};
+    const equity = scores.equity || 0;
+
+    pdf.setFillColor(248, 250, 252);
+    pdf.setDrawColor(200, 200, 200);
+    pdf.roundedRect(margin, yPos, contentWidth, 50, 3, 3, 'FD');
+
+    // Equity score
+    pdf.setFontSize(9);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(100, 100, 100);
+    pdf.text('Equity Score', margin + 25, yPos + 10, { align: 'center' });
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setFontSize(20);
+    pdf.setTextColor(equity > 80 ? 16 : equity > 60 ? 245 : 239, equity > 80 ? 185 : equity > 60 ? 158 : 68, equity > 80 ? 129 : equity > 60 ? 11 : 68);
+    pdf.text(`${equity.toFixed(0)}%`, margin + 25, yPos + 28, { align: 'center' });
+
+    // Underserved stats
+    const colU = margin + contentWidth / 3;
+    pdf.setFontSize(8);
+    pdf.setFont('helvetica', 'bold');
+    pdf.setTextColor(239, 68, 68);
+    pdf.text('UNDERSERVED AREAS', colU, yPos + 10);
+
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(80, 80, 80);
+    pdf.text(`Nodes: ${(underserved.node_count || 0).toLocaleString()}`, colU, yPos + 20);
+    pdf.text(`Accessibility: ${(underserved.accessibility_mean || 0).toFixed(1)}`, colU, yPos + 28);
+    pdf.text(`Travel Time: ${(underserved.travel_time_min_mean || 0).toFixed(1)} min`, colU, yPos + 36);
+
+    // Well-served stats
+    const colW = margin + (2 * contentWidth) / 3;
+    pdf.setFontSize(8);
+    pdf.setFont('helvetica', 'bold');
+    pdf.setTextColor(16, 185, 129);
+    pdf.text('WELL-SERVED AREAS', colW, yPos + 10);
+
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(80, 80, 80);
+    pdf.text(`Nodes: ${(wellServed.node_count || 0).toLocaleString()}`, colW, yPos + 20);
+    pdf.text(`Accessibility: ${(wellServed.accessibility_mean || 0).toFixed(1)}`, colW, yPos + 28);
+    pdf.text(`Travel Time: ${(wellServed.travel_time_min_mean || 0).toFixed(1)} min`, colW, yPos + 36);
+
+    return yPos + 60;
+}
+
+function drawGapClosureAnalysis(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number, pageHeight: number): number {
+    if (yPos > pageHeight - 60) {
+        pdf.addPage();
+        yPos = 20;
+    }
+
+    const gapClosure = data.optimizedMetrics?.scores?.gap_closure || {};
+
+    pdf.setFontSize(12);
+    pdf.setTextColor(51, 51, 51);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('Gap Closure Analysis', margin, yPos);
+    yPos += 8;
+
+    pdf.setFillColor(248, 250, 252);
+    pdf.setDrawColor(200, 200, 200);
+    pdf.roundedRect(margin, yPos, contentWidth, 35, 3, 3, 'FD');
+
+    const threshold = gapClosure.threshold_minutes || 15;
+    const nodesAbove = gapClosure.nodes_above_threshold || 0;
+    const totalNodes = gapClosure.total_nodes || 0;
+    const pctAbove = gapClosure.pct_above_threshold || 0;
+
+    pdf.setFontSize(9);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(100, 100, 100);
+    pdf.text(`Travel Time Threshold: ${threshold} minutes`, margin + 10, yPos + 12);
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setTextColor(239, 68, 68);
+    pdf.setFontSize(16);
+    pdf.text(`${pctAbove.toFixed(1)}%`, margin + contentWidth / 2, yPos + 20, { align: 'center' });
+
+    pdf.setFontSize(9);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setTextColor(80, 80, 80);
+    pdf.text(`of nodes (${nodesAbove.toLocaleString()} / ${totalNodes.toLocaleString()}) exceed threshold`, margin + contentWidth / 2, yPos + 28, { align: 'center' });
+
+    return yPos + 45;
+}
+
+function drawAmenityTable(pdf: jsPDF, data: ReportData, margin: number, contentWidth: number, yPos: number, pageWidth: number, pageHeight: number): number {
+    const colWidths = { type: 50, lat: 55, lon: 55 };
 
     // Table header
-    pdf.setFillColor(27, 35, 40);
-    pdf.rect(0, 0, pageWidth, 25, 'F');
-
-    pdf.setTextColor(143, 214, 255);
-    pdf.setFontSize(16);
-    pdf.setFont('helvetica', 'bold');
-    pdf.text('Proposed Amenity Placements', margin, 16);
-
-    yPos = 35;
-
-    // Table column headers (Node ID removed per user request)
-    const colWidths = {
-        type: 50,
-        lat: 55,
-        lon: 55,
-    };
-
     pdf.setFillColor(240, 240, 240);
     pdf.rect(margin, yPos, contentWidth, 8, 'F');
 
@@ -343,21 +558,24 @@ export async function generateOptimizationReport(
     yPos += 10;
     pdf.setFont('helvetica', 'normal');
 
-    // Sort amenities by type for better grouping
+    // Sort amenities by type
     const sortedAmenities = [...data.amenities].sort((a, b) =>
         a.type.localeCompare(b.type) || a.latitude - b.latitude
     );
 
     sortedAmenities.forEach((amenity, index) => {
-        // Check if we need a new page
         if (yPos > pageHeight - 20) {
+            // Add footer to current page before creating new page
+            pdf.setFontSize(8);
+            pdf.setTextColor(150, 150, 150);
+            pdf.text('©PathLens', pageWidth / 2, pageHeight - 8, { align: 'center' });
+            
             pdf.addPage();
             yPos = margin;
 
-            // Repeat table header
+            // Repeat header
             pdf.setFillColor(240, 240, 240);
             pdf.rect(margin, yPos, contentWidth, 8, 'F');
-
             pdf.setFontSize(9);
             pdf.setTextColor(80, 80, 80);
             pdf.setFont('helvetica', 'bold');
@@ -373,7 +591,7 @@ export async function generateOptimizationReport(
             pdf.setFont('helvetica', 'normal');
         }
 
-        // Alternating row colors
+        // Alternating rows
         if (index % 2 === 1) {
             pdf.setFillColor(248, 250, 252);
             pdf.rect(margin, yPos - 3, contentWidth, 7, 'F');
@@ -384,7 +602,7 @@ export async function generateOptimizationReport(
 
         let rowX = margin + 3;
 
-        // Type with color indicator
+        // Type with color
         const typeColor = AMENITY_COLORS[amenity.type.toLowerCase()] || '#666666';
         pdf.setFillColor(
             parseInt(typeColor.slice(1, 3), 16),
@@ -397,7 +615,6 @@ export async function generateOptimizationReport(
         pdf.text(displayType, rowX + 5, yPos + 2);
         rowX += colWidths.type;
 
-        pdf.setFont('helvetica', 'normal');
         pdf.text(amenity.latitude.toFixed(6), rowX, yPos + 2);
         rowX += colWidths.lat;
 
@@ -406,22 +623,24 @@ export async function generateOptimizationReport(
         yPos += 7;
     });
 
-    // Footer on last page
-    yPos = pageHeight - 10;
+    return yPos;
+}
+
+function drawFooter(pdf: jsPDF, data: ReportData, pageWidth: number, pageHeight: number): void {
+    const dateStr = data.generatedAt.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+
     pdf.setFontSize(8);
     pdf.setTextColor(150, 150, 150);
     pdf.text(
-        `Generated by PathLens • ${dateStr}`,
+        `Generated by PathLens • ${dateStr} • ${data.location}`,
         pageWidth / 2,
-        yPos,
+        pageHeight - 10,
         { align: 'center' }
     );
-
-    // Save the PDF
-    const filename = `pathlens-report-${data.location?.toLowerCase().replace(/[^a-z0-9]/g, '-') || 'optimization'}-${data.generatedAt.toISOString().slice(0, 10)
-        }.pdf`;
-
-    pdf.save(filename);
 }
 
 /**
