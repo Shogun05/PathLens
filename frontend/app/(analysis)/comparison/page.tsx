@@ -4,19 +4,25 @@ import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { usePathLensStore } from '@/lib/store';
 import { pathLensAPI } from '@/lib/api';
 import MapComponent from '@/components/MapComponent';
 import { ArrowLeft, TrendingUp, TrendingDown, Minus, Layers, BarChart3, MapPin, ChevronDown } from 'lucide-react';
+
+interface MetricsScore {
+    citywide?: {
+        accessibility_mean?: number;
+        walkability_mean?: number;
+        travel_time_min_mean?: number;
+    };
+    // Add other sections if needed later
+}
 
 interface ModeData {
     name: string;
     available: boolean;
     metrics: {
-        scores?: {
-            accessibility_mean?: number;
-            walkability_mean?: number;
-            travel_time_min_mean?: number;
-        };
+        scores?: MetricsScore;
     };
     improvements: {
         [key: string]: {
@@ -29,11 +35,7 @@ interface ModeData {
 interface ComparisonData {
     city: string;
     baseline: {
-        scores?: {
-            accessibility_mean?: number;
-            walkability_mean?: number;
-            travel_time_min_mean?: number;
-        };
+        scores?: MetricsScore;
     };
     modes: {
         [modeId: string]: ModeData;
@@ -64,7 +66,6 @@ const MODE_ORDER = ['ga_only', 'ga_milp', 'ga_milp_pnmlr'];
 
 const CITIES = [
     { id: 'bangalore', name: 'Bengaluru', center: [12.9716, 77.5946] as [number, number] },
-    { id: 'mumbai', name: 'Mumbai', center: [19.076, 72.8777] as [number, number] },
     { id: 'navi_mumbai', name: 'Navi Mumbai', center: [19.033, 73.0297] as [number, number] },
     { id: 'chandigarh', name: 'Chandigarh', center: [30.7333, 76.7794] as [number, number] },
 ];
@@ -76,15 +77,10 @@ export default function ComparisonPage() {
     const [comparison, setComparison] = useState<ComparisonData | null>(null);
     const [selectedModes, setSelectedModes] = useState<Set<string>>(new Set());
     const [allPois, setAllPois] = useState<{ [modeId: string]: POIFeature[] }>({});
-    // Read initial city from sessionStorage, default to bangalore
-    const [selectedCity, setSelectedCity] = useState(() => {
-        if (typeof window !== 'undefined') {
-            return sessionStorage.getItem('selectedCity') || 'bangalore';
-        }
-        return 'bangalore';
-    });
-    const [cityDropdownOpen, setCityDropdownOpen] = useState(false);
-
+    const { selectedCity, setSelectedCity } = usePathLensStore();
+    // Use selectedCity directly from store
+    
+    // Fallback if needed but store should have it
     const currentCity = CITIES.find(c => c.id === selectedCity) || CITIES[0];
 
     useEffect(() => {
@@ -215,32 +211,9 @@ export default function ComparisonPage() {
 
                     <div className="flex items-center gap-3">
                         {/* City Selector */}
-                        <div className="relative">
-                            <button
-                                onClick={() => setCityDropdownOpen(!cityDropdownOpen)}
-                                className="flex items-center gap-2 px-3 py-2 rounded-lg bg-[#1b2328] border border-white/10 text-white text-sm hover:border-white/20 transition-colors"
-                            >
-                                <MapPin className="h-4 w-4 text-[#8fd6ff]" />
-                                {currentCity.name}
-                                <ChevronDown className={`h-4 w-4 transition-transform ${cityDropdownOpen ? 'rotate-180' : ''}`} />
-                            </button>
-                            {cityDropdownOpen && (
-                                <div className="absolute top-full mt-1 right-0 bg-[#1b2328] border border-white/10 rounded-lg shadow-xl z-50 min-w-[160px]">
-                                    {CITIES.map(city => (
-                                        <button
-                                            key={city.id}
-                                            onClick={() => {
-                                                setSelectedCity(city.id);
-                                                setCityDropdownOpen(false);
-                                            }}
-                                            className={`w-full text-left px-4 py-2 text-sm hover:bg-white/5 transition-colors ${city.id === selectedCity ? 'text-[#8fd6ff]' : 'text-gray-300'
-                                                } first:rounded-t-lg last:rounded-b-lg`}
-                                        >
-                                            {city.name}
-                                        </button>
-                                    ))}
-                                </div>
-                            )}
+                        <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-[#1b2328] border border-white/10 text-white text-sm">
+                            <MapPin className="h-4 w-4 text-[#8fd6ff]" />
+                            {currentCity.name}
                         </div>
 
                         <div className="flex items-center bg-[#1b2328] rounded-lg p-1 border border-white/10">
@@ -326,14 +299,14 @@ export default function ComparisonPage() {
                                     <div className="grid grid-cols-2 gap-4">
                                         <div>
                                             <div className="text-xl font-bold text-white">
-                                                {mode.metrics?.scores?.accessibility_mean?.toFixed(1) || '—'}
+                                                {mode.metrics?.scores?.citywide?.accessibility_mean?.toFixed(2) || '—'}
                                             </div>
                                             <div className="text-xs text-gray-500">Accessibility</div>
                                         </div>
                                         <div>
                                             <div className="flex items-center gap-2">
                                                 <span className="text-xl font-bold text-white">
-                                                    {mode.metrics?.scores?.travel_time_min_mean?.toFixed(1) || '—'}
+                                                    {mode.metrics?.scores?.citywide?.travel_time_min_mean?.toFixed(2) || '—'}
                                                 </span>
                                                 {renderImprovementBadge(mode.improvements.travel_time_min_mean, true)}
                                             </div>

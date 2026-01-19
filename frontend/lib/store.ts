@@ -61,6 +61,7 @@ interface PathLensState {
   addParks: boolean;
   addBusStations: boolean;
   demoMode: boolean;
+  selectedCity: string;
 
   // Data
   baselineNodes: Node[];
@@ -90,7 +91,9 @@ interface PathLensState {
   setAddHospitals: (add: boolean) => void;
   setAddParks: (add: boolean) => void;
   setAddBusStations: (add: boolean) => void;
+  setAddBusStations: (add: boolean) => void;
   setDemoMode: (demoMode: boolean) => void;
+  setSelectedCity: (city: string) => void;
   setBaselineNodes: (nodes: Node[]) => void;
   setOptimizedNodes: (nodes: Node[]) => void;
   setSuggestions: (suggestions: Suggestion[]) => void;
@@ -109,6 +112,7 @@ interface PathLensState {
 export const usePathLensStore = create<PathLensState>((set) => ({
   // Initial state
   location: '',
+  selectedCity: typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') || 'bangalore' : 'bangalore',
   customBounds: null,
   budget: 50000000,
   maxAmenities: 10,
@@ -139,6 +143,12 @@ export const usePathLensStore = create<PathLensState>((set) => ({
   setAddParks: (addParks) => set({ addParks }),
   setAddBusStations: (addBusStations) => set({ addBusStations }),
   setDemoMode: (demoMode) => set({ demoMode }),
+  setSelectedCity: (selectedCity) => {
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('selectedCity', selectedCity);
+    }
+    set({ selectedCity });
+  },
   setBaselineNodes: (baselineNodes) => set({ baselineNodes }),
   setOptimizedNodes: (optimizedNodes) => set({ optimizedNodes }),
   setSuggestions: (suggestions) => set({ suggestions }),
@@ -170,6 +180,7 @@ export const usePathLensStore = create<PathLensState>((set) => ({
   setMapContainer: (mapContainer) => set({ mapContainer }),
   reset: () =>
     set({
+      // Preserve selectedCity and location config
       baselineNodes: [],
       optimizedNodes: [],
       suggestions: [],

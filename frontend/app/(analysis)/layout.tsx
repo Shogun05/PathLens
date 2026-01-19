@@ -39,39 +39,36 @@ export default function AnalysisLayout({
     optimizedNodes,
     suggestions,
     selectedSuggestionIds,
+    selectedCity,
   } = usePathLensStore();
 
   const [isMounted, setIsMounted] = useState(false);
   const [mapInstance, setMapInstance] = useState<any>(null);
-  const [enabledLayers, setEnabledLayers] = useState(new Set(['nodeScores']));
   const [showNodes, setShowNodes] = useState(true);
   const [mapCenter, setMapCenter] = useState<[number, number]>([12.9716, 77.5946]);
 
   useEffect(() => {
     setIsMounted(true);
-    // Read city from sessionStorage and set map center
-    const selectedCity = sessionStorage.getItem('selectedCity') || 'bangalore';
     setMapCenter(CITY_CENTERS[selectedCity] || CITY_CENTERS.bangalore);
-  }, []);
+  }, [selectedCity]);
 
   // Determine which data to show based on route
   const isOptimized = pathname?.includes('/optimized');
+  // Force showNodes to true for optimized view (nodes always visible)
   const displayNodes = isOptimized
-    ? (showNodes ? optimizedNodes : [])
+    ? optimizedNodes
     : baselineNodes;
-  const displaySuggestions = isOptimized ? suggestions : [];
+  
+  // Filter suggestions to only show those that are "selected" (visible)
+  // Strictly only show on optimized page
+  const displaySuggestions = (isOptimized && !pathname?.includes('/baseline'))
+    ? suggestions.filter(s => {
+        const id = s.properties.id || s.properties.osmid;
+        return id && selectedSuggestionIds.has(id);
+      })
+    : [];
 
-  const handleLayerToggle = (layer: string, enabled: boolean) => {
-    setEnabledLayers(prev => {
-      const next = new Set(prev);
-      if (enabled) {
-        next.add(layer);
-      } else {
-        next.delete(layer);
-      }
-      return next;
-    });
-  };
+  // handleLayerToggle removed - layer control functionality removed from UI
 
   if (!isMounted) return null;
 
@@ -103,15 +100,11 @@ export default function AnalysisLayout({
         )}
 
         {/* Map Controls Overlay */}
+        {/* Map Controls Overlay */}
         <MapControls
           className="absolute inset-0 z-5"
           onZoomIn={() => mapInstance?.zoomIn()}
           onZoomOut={() => mapInstance?.zoomOut()}
-          onLayerToggle={handleLayerToggle}
-          enabledLayers={enabledLayers}
-          showNodesToggle={isOptimized}
-          showNodes={showNodes}
-          onNodesToggle={setShowNodes}
         />
 
         {/* Page Content Overlay */}

@@ -3,7 +3,6 @@ import html2canvas from 'html2canvas';
 
 export interface AmenityPlacement {
     type: string;
-    nodeId: string;
     latitude: number;
     longitude: number;
     description?: string;
@@ -90,7 +89,9 @@ export async function generateOptimizationReport(
     yPos = 55;
 
     // === Map Section ===
+    console.log('[PDF] Map container received:', mapContainer ? 'yes' : 'null');
     if (mapContainer) {
+        console.log('[PDF] Map container dimensions:', mapContainer.offsetWidth, 'x', mapContainer.offsetHeight);
         try {
             pdf.setFontSize(12);
             pdf.setTextColor(51, 51, 51);
@@ -98,27 +99,75 @@ export async function generateOptimizationReport(
             pdf.text('Optimized Amenity Placements', margin, yPos);
             yPos += 8;
 
-            // Capture the map with improved options
+            console.log('[PDF] Starting html2canvas capture...');
+            // Capture the map with improved options for Leaflet tiles
+            // Note: html2canvas may struggle with external tile images due to CORS
             const canvas = await html2canvas(mapContainer, {
                 useCORS: true,
-                allowTaint: true,
-                scale: 1.5, // Reduced scale for performance
-                logging: true, // Enable for debugging
+                allowTaint: true, // Allow tainted canvas (may produce blank tiles but prevents errors)
+                scale: 2, // Higher scale for better quality
+                logging: false, // Disable logging in production
                 backgroundColor: '#1a1a2e',
-                foreignObjectRendering: false, // Disable for better tile capture
-                removeContainer: true,
-                imageTimeout: 15000, // Wait for tiles to load
+                foreignObjectRendering: false, // Must be false for cross-origin images
+                removeContainer: false, // Keep container for proper rendering
+                imageTimeout: 30000, // Longer timeout for tiles to load
+                proxy: undefined, // No proxy - rely on CORS headers from tile server
+                windowWidth: mapContainer.scrollWidth || 800,
+                windowHeight: mapContainer.scrollHeight || 600,
                 onclone: (clonedDoc) => {
-                    // Ensure leaflet controls are visible in clone
-                    const controls = clonedDoc.querySelectorAll('.leaflet-control');
+                    // Hide all leaflet controls in the cloned document
+                    const controls = clonedDoc.querySelectorAll('.leaflet-control, .leaflet-control-container');
                     controls.forEach((ctrl) => {
                         (ctrl as HTMLElement).style.display = 'none';
                     });
+                    // Force visibility for the map container and tiles
+                    const mapPane = clonedDoc.querySelector('.leaflet-pane');
+                    if (mapPane) {
+                        (mapPane as HTMLElement).style.visibility = 'visible';
+                        (mapPane as HTMLElement).style.opacity = '1';
+                    }
+                    
+                    // Remove unsupported CSS color functions (lab, oklch, oklab, lch)
+                    // html2canvas doesn't support CSS Color Level 4 functions
+                    
+                    // First, remove stylesheets that might contain problematic colors
+                    const styleSheets = clonedDoc.querySelectorAll('style');
+                    styleSheets.forEach((styleEl) => {
+                        const css = styleEl.textContent || '';
+                        if (css.includes('lab(') || css.includes('oklch(') || css.includes('oklab(') || css.includes('lch(')) {
+                            // Replace problematic color functions with fallback
+                            styleEl.textContent = css
+                                .replace(/lab\([^)]+\)/g, '#888888')
+                                .replace(/oklch\([^)]+\)/g, '#888888')
+                                .replace(/oklab\([^)]+\)/g, '#888888')
+                                .replace(/lch\([^)]+\)/g, '#888888');
+                        }
+                    });
+                    
+                    // Then check inline styles
+                    const allElements = clonedDoc.querySelectorAll('*');
+                    allElements.forEach((el) => {
+                        const htmlEl = el as HTMLElement;
+                        const style = htmlEl.style;
+                        // Reset any potentially problematic color properties to safe fallbacks
+                        const propsToCheck = ['color', 'backgroundColor', 'borderColor', 'outlineColor', 'fill', 'stroke'];
+                        propsToCheck.forEach(prop => {
+                            const value = style.getPropertyValue(prop);
+                            if (value && (value.includes('lab(') || value.includes('oklch(') || value.includes('oklab(') || value.includes('lch('))) {
+                                // Replace with a safe gray color
+                                style.setProperty(prop, '#888888', 'important');
+                            }
+                        });
+                    });
+                    
+                    console.log('[PDF] Cloned document sanitized for html2canvas');
                 },
             });
 
+            console.log('[PDF] Canvas captured:', canvas.width, 'x', canvas.height);
             if (canvas.width > 0 && canvas.height > 0) {
                 const imgData = canvas.toDataURL('image/png');
+                console.log('[PDF] Image data length:', imgData.length);
                 const imgWidth = contentWidth;
                 const imgHeight = (canvas.height / canvas.width) * imgWidth;
                 const maxImgHeight = 100; // Limit map height
@@ -132,11 +181,12 @@ export async function generateOptimizationReport(
 
                 pdf.addImage(imgData, 'PNG', margin, yPos, imgWidth, finalHeight);
                 yPos += finalHeight + 10;
+                console.log('[PDF] Map image added successfully');
             } else {
                 throw new Error('Canvas has no dimensions');
             }
         } catch (error) {
-            console.error('Failed to capture map:', error);
+            console.error('[PDF] Failed to capture map:', error);
             // Draw a placeholder box with message
             pdf.setFillColor(240, 240, 240);
             pdf.setDrawColor(200, 200, 200);
@@ -269,12 +319,11 @@ export async function generateOptimizationReport(
 
     yPos = 35;
 
-    // Table column headers
+    // Table column headers (Node ID removed per user request)
     const colWidths = {
-        type: 40,
-        nodeId: 35,
-        lat: 45,
-        lon: 45,
+        type: 50,
+        lat: 55,
+        lon: 55,
     };
 
     pdf.setFillColor(240, 240, 240);
@@ -287,8 +336,6 @@ export async function generateOptimizationReport(
     let xPos = margin + 3;
     pdf.text('Type', xPos, yPos + 5.5);
     xPos += colWidths.type;
-    pdf.text('Node ID', xPos, yPos + 5.5);
-    xPos += colWidths.nodeId;
     pdf.text('Latitude', xPos, yPos + 5.5);
     xPos += colWidths.lat;
     pdf.text('Longitude', xPos, yPos + 5.5);
@@ -298,7 +345,7 @@ export async function generateOptimizationReport(
 
     // Sort amenities by type for better grouping
     const sortedAmenities = [...data.amenities].sort((a, b) =>
-        a.type.localeCompare(b.type) || a.nodeId.localeCompare(b.nodeId)
+        a.type.localeCompare(b.type) || a.latitude - b.latitude
     );
 
     sortedAmenities.forEach((amenity, index) => {
@@ -318,8 +365,6 @@ export async function generateOptimizationReport(
             let hxPos = margin + 3;
             pdf.text('Type', hxPos, yPos + 5.5);
             hxPos += colWidths.type;
-            pdf.text('Node ID', hxPos, yPos + 5.5);
-            hxPos += colWidths.nodeId;
             pdf.text('Latitude', hxPos, yPos + 5.5);
             hxPos += colWidths.lat;
             pdf.text('Longitude', hxPos, yPos + 5.5);
@@ -353,9 +398,6 @@ export async function generateOptimizationReport(
         rowX += colWidths.type;
 
         pdf.setFont('helvetica', 'normal');
-        pdf.text(amenity.nodeId, rowX, yPos + 2);
-        rowX += colWidths.nodeId;
-
         pdf.text(amenity.latitude.toFixed(6), rowX, yPos + 2);
         rowX += colWidths.lat;
 
@@ -401,7 +443,6 @@ export function transformSuggestionsToAmenities(
         .filter(s => s.geometry?.coordinates && s.properties)
         .map(s => ({
             type: s.properties?.amenity_type || s.properties?.amenity || 'unknown',
-            nodeId: s.properties?.id || 'N/A',
             longitude: s.geometry!.coordinates![0],
             latitude: s.geometry!.coordinates![1],
         }));

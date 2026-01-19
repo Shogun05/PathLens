@@ -907,10 +907,16 @@ async def get_mode_metrics(mode: str, city: str = Query(DEFAULT_CITY)):
         raise HTTPException(status_code=400, detail=f"Invalid mode. Must be one of: {list(OPTIMIZATION_MODES.keys())}")
     
     mode_dir = get_mode_dir(city, mode)
-    metrics_path = os.path.join(mode_dir, "metrics_summary.json")
+    # Prefer mode-prefixed file first (has correct/updated metrics)
+    prefixed_path = os.path.join(mode_dir, f"{mode}_metrics_summary.json")
+    generic_path = os.path.join(mode_dir, "metrics_summary.json")
     
-    if not os.path.exists(metrics_path):
-        logger.warning(f"Metrics not found: {metrics_path}")
+    if os.path.exists(prefixed_path):
+        metrics_path = prefixed_path
+    elif os.path.exists(generic_path):
+        metrics_path = generic_path
+    else:
+        logger.warning(f"Metrics not found: {prefixed_path} or {generic_path}")
         return {"network": {}, "scores": {}}
     
     try:
@@ -952,12 +958,21 @@ async def get_mode_pois(mode: str, city: str = Query(DEFAULT_CITY)):
 async def get_modes_comparison(city: str = Query(DEFAULT_CITY)):
     """Compare metrics across all optimization modes."""
     # Load baseline metrics
-    baseline_path = os.path.join(DATA_DIR, "baseline_metrics_summary.json")
+    normalized_city = normalize_city_name(city)
+    city_dir = os.path.join(CITIES_DIR, normalized_city)
+    baseline_path = os.path.join(city_dir, "baseline", "baseline_metrics_summary.json")
+    
     baseline_metrics = {}
     if os.path.exists(baseline_path):
         with open(baseline_path, 'r') as f:
             baseline_metrics = json.load(f)
-    
+    else:
+        # Fallback to standard name if specific one doesn't exist
+        fallback_path = os.path.join(city_dir, "baseline", "metrics_summary.json")
+        if os.path.exists(fallback_path):
+             with open(fallback_path, 'r') as f:
+                baseline_metrics = json.load(f)
+
     comparison = {
         "city": city,
         "baseline": baseline_metrics,
@@ -966,8 +981,17 @@ async def get_modes_comparison(city: str = Query(DEFAULT_CITY)):
     
     for mode_id in OPTIMIZATION_MODES.keys():
         mode_dir = get_mode_dir(city, mode_id)
-        metrics_path = os.path.join(mode_dir, "metrics_summary.json")
+        # Prefer mode-prefixed file first (has correct/updated metrics)
+        prefixed_path = os.path.join(mode_dir, f"{mode_id}_metrics_summary.json")
+        generic_path = os.path.join(mode_dir, "metrics_summary.json")
         
+        if os.path.exists(prefixed_path):
+            metrics_path = prefixed_path
+        elif os.path.exists(generic_path):
+            metrics_path = generic_path
+        else:
+            metrics_path = None
+
         mode_data = {
             "name": OPTIMIZATION_MODES[mode_id],
             "available": False,
@@ -975,7 +999,7 @@ async def get_modes_comparison(city: str = Query(DEFAULT_CITY)):
             "improvements": {}
         }
         
-        if os.path.exists(metrics_path):
+        if metrics_path and os.path.exists(metrics_path):
             try:
                 with open(metrics_path, 'r') as f:
                     mode_metrics = json.load(f)
@@ -983,13 +1007,16 @@ async def get_modes_comparison(city: str = Query(DEFAULT_CITY)):
                 mode_data["metrics"] = mode_metrics
                 
                 # Calculate improvements vs baseline
-                baseline_scores = baseline_metrics.get("scores", {})
-                mode_scores = mode_metrics.get("scores", {})
+                # Access "citywide" key where the actual mean scores are stored
+                baseline_scores = baseline_metrics.get("scores", {}).get("citywide", {})
+                mode_scores = mode_metrics.get("scores", {}).get("citywide", {})
                 
                 for key in ["accessibility_mean", "walkability_mean", "travel_time_min_mean"]:
-                    baseline_val = baseline_scores.get(key, 0)
-                    mode_val = mode_scores.get(key, 0)
-                    if baseline_val and mode_val:
+                    # Handle both potentially missing keys and None values
+                    baseline_val = baseline_scores.get(key)
+                    mode_val = mode_scores.get(key)
+                    
+                    if baseline_val is not None and mode_val is not None:
                         if key == "travel_time_min_mean":
                             # Lower is better for travel time
                             improvement = baseline_val - mode_val

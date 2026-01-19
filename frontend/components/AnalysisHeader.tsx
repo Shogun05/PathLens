@@ -3,9 +3,25 @@
 import { usePathLensStore } from '@/lib/store';
 import { Switch } from '@/components/ui/switch';
 import { Badge } from '@/components/ui/badge';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 
 export default function AnalysisHeader() {
-  const { demoMode, setDemoMode } = usePathLensStore();
+  const { demoMode, setDemoMode, selectedCity, setSelectedCity, reset } = usePathLensStore();
+
+  const handleCityChange = (value: string) => {
+    if (value !== selectedCity) {
+      reset(); // Clear existing data when switching cities
+      setSelectedCity(value);
+      // Optional: Force reload to ensure clean state if needed, though react state should handle it
+      window.location.reload(); 
+    }
+  };
 
   return (
     <header className="flex items-center justify-between border-b border-white/10 bg-[#101518] px-6 py-3 pointer-events-auto z-20 relative">
@@ -16,6 +32,20 @@ export default function AnalysisHeader() {
         <h2 className="text-lg font-bold text-white">PathLens</h2>
       </div>
       <div className="flex items-center gap-6">
+        {/* City Selection Dropdown */}
+        <div className="w-[180px]">
+          <Select value={selectedCity} onValueChange={handleCityChange}>
+            <SelectTrigger className="w-full bg-white/5 border-white/10 text-white h-9">
+              <SelectValue placeholder="Select City" />
+            </SelectTrigger>
+            <SelectContent className="bg-[#1b2328] border-white/10 text-white">
+              <SelectItem value="bangalore">Bengaluru</SelectItem>
+              <SelectItem value="chandigarh">Chandigarh</SelectItem>
+              <SelectItem value="navi_mumbai">Navi Mumbai</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
         <div className="flex items-center gap-3 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
           <span className="text-sm font-medium text-gray-300">Demo Mode</span>
           <Switch 
@@ -23,20 +53,6 @@ export default function AnalysisHeader() {
             onCheckedChange={setDemoMode}
             className="data-[state=checked]:bg-[#8fd6ff]"
           />
-        </div>
-
-        <nav className="hidden md:flex items-center gap-6">
-          <a className="text-white text-sm font-medium border-b-2 border-[#8fd6ff] pb-1">Dashboard</a>
-          <a className="text-gray-400 hover:text-white text-sm font-medium transition-colors">Projects</a>
-          <a className="text-gray-400 hover:text-white text-sm font-medium transition-colors">Analysis</a>
-          <a className="text-gray-400 hover:text-white text-sm font-medium transition-colors">Settings</a>
-        </nav>
-        <div className="flex items-center gap-4 pl-6 border-l border-white/10">
-          <button className="relative">
-            <span className="material-symbols-outlined text-gray-400 hover:text-white">notifications</span>
-            <span className="absolute top-0 right-0 size-2 bg-red-500 rounded-full"></span>
-          </button>
-          <div className="size-8 rounded-full bg-gradient-to-tr from-blue-500 to-purple-600"></div>
         </div>
       </div>
     </header>

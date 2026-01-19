@@ -24,6 +24,14 @@ import ee
 import geemap
 from google.oauth2 import service_account
 
+# Add project root to path for CityDataManager
+import sys
+from pathlib import Path as _Path
+_project_root = _Path(__file__).resolve().parent.parent
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+from city_paths import CityDataManager
+
 
 # ================= LOGGING CONFIGURATION =================
 
@@ -804,9 +812,22 @@ class LanduseFeasibilityIntegration:
             logger.warning(f"No nodes found in parquet for {amenity}")
             return []
         
+        # Filter out rows with NaN coordinates - this prevents GEE JSON errors
+        valid_coords_mask = df_sub['lon'].notna() & df_sub['lat'].notna()
+        valid_coords_mask &= np.isfinite(df_sub['lon']) & np.isfinite(df_sub['lat'])
+        df_valid = df_sub[valid_coords_mask].copy()
+        
+        skipped_count = len(df_sub) - len(df_valid)
+        if skipped_count > 0:
+            logger.warning(f"Skipping {skipped_count} nodes with invalid coordinates for {amenity}")
+        
+        if df_valid.empty:
+            logger.warning(f"No valid coordinates found for {amenity}, returning all node IDs as fallback")
+            return [str(nid) for nid in node_ids]
+        
         # Build GEE FeatureCollection directly (no file I/O)
         features = []
-        for _, row in df_sub.iterrows():
+        for _, row in df_valid.iterrows():
             point = ee.Geometry.Point([float(row['lon']), float(row['lat'])])
             feature = ee.Feature(point, {
                 'node_id': int(row['osmid']),

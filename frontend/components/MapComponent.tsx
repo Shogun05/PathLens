@@ -206,19 +206,18 @@ export default function MapComponent({
         <div class="text-xs">
           <strong>New Amenity</strong><br/>
           <strong>Type:</strong> ${poiType}<br/>
-          <strong>ID:</strong> ${poiId}<br/>
-          <strong>Status:</strong> ${isSelected ? 'Selected' : 'Not Selected'}
+          <strong>ID:</strong> ${poiId}
           ${suggestion.properties.description ? `<br/><em>${suggestion.properties.description}</em>` : ''}
         </div>
       `;
 
       const marker = L.circleMarker([lat, lng], {
-        radius: isSelected ? 10 : 8,
-        fillColor: isSelected ? '#10b981' : '#8fd6ff',
+        radius: 8,
+        fillColor: '#10b981',
         color: '#fff',
-        weight: isSelected ? 3 : 2,
+        weight: 2,
         opacity: 1,
-        fillOpacity: isSelected ? 0.9 : 0.8,
+        fillOpacity: 0.8,
       });
 
       marker.bindTooltip(tooltipContent, {

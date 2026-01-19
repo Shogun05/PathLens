@@ -447,7 +447,8 @@ class HybridGA:
         precompute_hook: PrecomputeHook,
         evaluate_hook: EvaluateHook,
         enable_landuse_filter: bool = False,
-        nodes_parquet_path: Optional[Path] = None,
+        cdm: Optional[Any] = None,
+        raw_config: Optional[Dict[str, Any]] = None,
     ) -> None:
         self.context = context
         self.config = config
@@ -461,12 +462,12 @@ class HybridGA:
         
         self.landuse_filter = None
         if enable_landuse_filter:
-            if _HAS_LANDUSE and LanduseFeasibilityIntegration is not None:
+            if _HAS_LANDUSE and LanduseFeasibilityIntegration is not None and cdm is not None and raw_config is not None:
                 logging.info("Initializing landuse feasibility filter...")
-                self.landuse_filter = LanduseFeasibilityIntegration(nodes_parquet_path)
+                self.landuse_filter = LanduseFeasibilityIntegration(cdm, raw_config)
                 logging.info("Landuse feasibility filter initialized.")
             else:
-                logging.warning("Landuse filtering requested but not available.")
+                logging.warning("Landuse filtering requested but not available (missing cdm or config).")
 
     def seed_population(self) -> List[Candidate]:
         population: List[Candidate] = []
@@ -894,7 +895,8 @@ def main() -> None:
         precompute_hook=precompute_hook,
         evaluate_hook=evaluate_hook,
         enable_landuse_filter=enable_landuse,
-        nodes_parquet_path=nodes_path,
+        cdm=cdm,
+        raw_config=cfg,
     )
     result = ga.run()
     logging.info("Best candidate: %s", result["best_candidate"])
