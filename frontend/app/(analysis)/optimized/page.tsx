@@ -12,7 +12,6 @@ import { pathLensAPI } from '@/lib/api';
 import { generateDemoNodes } from '@/lib/demo-data';
 import { MetricsCard } from '@/components/MetricsCard';
 import { NodeDistribution } from '@/components/NodeDistribution';
-import { CriticalNodes } from '@/components/CriticalNodes';
 import { ArrowLeft, RefreshCw, Check, Plus, School, Hospital, Bus, Trees, Map as MapIcon, Download, Loader2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { generateOptimizationReport, transformSuggestionsToAmenities } from '@/lib/report-generator';
@@ -28,6 +27,7 @@ export default function OptimizedPage() {
     setSuggestions,
     setOptimizedScore,
     optimizedScore,
+    setExistingPois,
     baselineScore, // Ensure baselineScore is available from store
     setBaselineScore,
     demoMode,
@@ -65,7 +65,7 @@ export default function OptimizedPage() {
         } else {
           // Load metrics, nodes, suggestions, and baseline metrics in parallel
           console.log(`Loading optimized data for ${selectedCity}...`);
-          const [metrics, nodes, suggsCollection, optResults, baselineResults] = await Promise.all([
+          const [metrics, nodes, suggsCollection, optResults, baselineResults, pois] = await Promise.all([
             pathLensAPI.getMetricsSummary('optimized', selectedCity).catch(err => {
               console.warn('Failed to load metrics:', err);
               return { scores: { accessibility_mean: 0 } };
@@ -74,11 +74,20 @@ export default function OptimizedPage() {
             pathLensAPI.getOptimizationPois(selectedCity).catch(() => ({ features: [] })), // Use optimized POIs endpoint
             pathLensAPI.getOptimizationResults(selectedCity).catch(() => null),
             pathLensAPI.getMetricsSummary('baseline', selectedCity).catch(() => null), // Fetch baseline metrics too
+            pathLensAPI.getPois(selectedCity).catch(err => {
+              console.warn('Failed to load POIs:', err);
+              return { features: [] };
+            })
           ]);
 
-          console.log(`Loaded ${nodes?.length || 0} optimized nodes`);
           if (nodes && nodes.length > 0) setOptimizedNodes(nodes);
           else setOptimizedNodes([]);
+
+
+
+          if (pois?.features) {
+            setExistingPois(pois.features);
+          }
 
           // Handle GeoJSON FeatureCollection from optimization POIs
           const suggestionsList = suggsCollection?.features || [];
@@ -101,7 +110,7 @@ export default function OptimizedPage() {
           const metricsScore = metrics?.scores?.citywide?.accessibility_mean
             || metrics?.scores?.accessibility
             || metrics?.scores?.accessibility_mean;
-          
+
           if (metricsScore && metricsScore > 0) {
             setOptimizedScore(metricsScore);
             console.log(`City-wide optimized accessibility: ${metricsScore.toFixed(2)}`);
@@ -122,13 +131,13 @@ export default function OptimizedPage() {
           const baselineVal = baselineScores?.citywide?.accessibility_mean
             || baselineScores?.accessibility
             || baselineScores?.accessibility_mean;
-            
+
           if (baselineVal && baselineVal > 0) {
             setBaselineScore(baselineVal);
             console.log(`Baseline accessibility: ${baselineVal.toFixed(2)}`);
           } else {
-             // If baseline metrics failed, try to use a fallback or keep previous 0
-             console.warn('Baseline metrics unavailable for PDF report');
+            // If baseline metrics failed, try to use a fallback or keep previous 0
+            console.warn('Baseline metrics unavailable for PDF report');
           }
         }
       } catch (error) {
@@ -293,13 +302,6 @@ export default function OptimizedPage() {
             {!demoMode && (
               <>
                 <NodeDistribution nodes={optimizedNodes} />
-                <CriticalNodes
-                  nodes={optimizedNodes}
-                  onLocateNode={(node) => {
-                    console.log('Locate node:', node);
-                    // TODO: Pan map to node location
-                  }}
-                />
               </>
             )}
           </div>

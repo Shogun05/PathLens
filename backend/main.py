@@ -263,41 +263,52 @@ async def get_nodes(
         if limit:
             df = df.iloc[:limit]
         
-        nodes = []
-        for idx, row in df.iterrows():
-            # Ensure required fields are present
-            if pd.isna(row.get('lon')) or pd.isna(row.get('lat')):
-                continue
+        
+        # Optimize serialization: Vectorized conversion to dict list
+        # This avoids the slow iterrows loop
+        
+        # Rename output columns to match Node model
+        # accessibility_score logic was: optimized_... if type==optimized else ...
+        if type == "optimized":
+            df['accessibility_score'] = df['optimized_accessibility_score'].fillna(df['accessibility_score'])
+            df['walkability_score'] = df['optimized_walkability'].fillna(df['walkability'])
+            df['equity_score'] = df['optimized_equity_score'].fillna(df['equity_score'])
+            df['travel_time_min'] = df['optimized_travel_time_min'].fillna(df['travel_time_min'])
+        else:
+            df['walkability_score'] = df['walkability']
             
-            # Get osmid from column or index
-            osmid = row.get('osmid') if 'osmid' in row else str(idx)
-            
-            # For optimized type, use optimized_ prefixed columns if available
-            if type == "optimized":
-                accessibility = row.get('optimized_accessibility_score', row.get('accessibility_score'))
-                walkability = row.get('optimized_walkability', row.get('walkability'))
-                equity = row.get('optimized_equity_score', row.get('equity_score'))
-                travel_time = row.get('optimized_travel_time_min', row.get('travel_time_min'))
-            else:
-                accessibility = row.get('accessibility_score')
-                walkability = row.get('walkability')
-                equity = row.get('equity_score')
-                travel_time = row.get('travel_time_min')
-                
-            node = Node(
-                osmid=str(osmid),
-                x=float(row['lon']),
-                y=float(row['lat']),
-                accessibility_score=accessibility,
-                walkability_score=walkability,
-                equity_score=equity,
-                travel_time_min=travel_time,
-                betweenness_centrality=row.get('betweenness_centrality'),
-                dist_to_school=row.get('dist_to_school'),
-                dist_to_hospital=row.get('dist_to_hospital'),
-                dist_to_park=row.get('dist_to_park')
-            )
-            nodes.append(node)
+        # Ensure osmid string
+        df['osmid'] = df['osmid'].astype(str) if 'osmid' in df.columns else df.index.astype(str)
+        
+        # Select and rename columns for output
+        # Node model fields: osmid, x, y, accessibility_score, walkability_score, equity_score, 
+        # travel_time_min, betweenness_centrality, dist_to_school, dist_to_hospital, dist_to_park
+        
+        needed_cols = {
+            'osmid': 'osmid',
+            'lon': 'x',
+            'lat': 'y',
+            'accessibility_score': 'accessibility_score',
+            'walkability_score': 'walkability_score',
+            'equity_score': 'equity_score',
+            'travel_time_min': 'travel_time_min',
+            'betweenness_centrality': 'betweenness_centrality',
+            'dist_to_school': 'dist_to_school',
+            'dist_to_hospital': 'dist_to_hospital',
+            'dist_to_park': 'dist_to_park'
+        }
+        
+        # Only keep cols that exist in df
+        final_cols = {k: v for k, v in needed_cols.items() if k in df.columns}
+        
+        # Filter and rename
+        out_df = df[list(final_cols.keys())].rename(columns=final_cols)
+        
+        # Replace NaN/None with null for JSON (pandas uses NaN, passing to fastAPI might need None or handle NaNs)
+        out_df = out_df.replace({np.nan: None})
+        
+        # Convert to list of dicts directly
+        nodes = out_df.to_dict(orient='records')
         
         logger.info(f"Returning {len(nodes)}/{total_count} nodes for type {type}")
         return nodes
@@ -412,50 +423,31 @@ async def get_pois(city: str = Query(DEFAULT_CITY)):
     target_city = city if city else DEFAULT_CITY
     cdm = CityDataManager(target_city)
     
-    # Check for POI files (Parquet first for speed)
-    raw_pois_parquet = cdm.raw_pois.with_suffix(".parquet")
+    # Define path for processed JSON
+    processed_pois_path = cdm.raw_pois.parent.parent.parent / "graph" / "processed_pois.json"
     
-    filepath = None
-    if raw_pois_parquet.exists():
-        filepath = str(raw_pois_parquet)
-    elif cdm.raw_pois.exists():
-        filepath = str(cdm.raw_pois)
-    # Check legacy/global fallback if city-specific not found
-    elif os.path.exists(os.path.join(BASE_DIR, "data", "raw", "osm", "pois.geojson")):
-        filepath = os.path.join(BASE_DIR, "data", "raw", "osm", "pois.geojson")
+    filepath = str(processed_pois_path)
     
-    if filepath:
-        logger.info(f"Using POI file for {city}: {filepath}")
-    
-    if not filepath:
-        logger.error(f"No POI files found for city: {city}")
+    # Check if processed file exists
+    if not os.path.exists(filepath):
+        logger.error(f"Processed POIs not found for {target_city} at {filepath}")
         return {"type": "FeatureCollection", "features": []}
+
+    # Get file size for logging
+    file_size = os.path.getsize(filepath)
+    size_str = f"{file_size / 1024 / 1024:.2f} MB"
     
-    try:
-        # Handle parquet format
-        if filepath.endswith('.parquet'):
-            import geopandas as gpd
-            gdf = gpd.read_parquet(filepath)
-            geojson = json.loads(gdf.to_json())
-        else:
-            with open(filepath, 'r') as f:
-                geojson = json.load(f)
+    logger.info(f"Serving processed POI file for {city}: {filepath} ({size_str})")
+    
+    # Use FileResponse for zero-copy streaming
+    from fastapi.responses import FileResponse
+    from starlette.background import BackgroundTask
+    
+    def log_completion():
+        logger.info(f"Completed serving POIs for {city}")
         
-        # Transform properties to match frontend expectations
-        features = geojson.get('features', [])
-        for feature in features:
-            props = feature.get('properties', {})
-            # Add amenity_type and id fields that frontend expects
-            if 'amenity' in props:
-                props['amenity_type'] = props['amenity']
-            if 'osmid' in props:
-                props['id'] = str(props['osmid'])
-        
-        logger.info(f"Returning {len(features)} POIs for city {city}")
-        return geojson
-    except Exception as e:
-        logger.error(f"Error reading POIs for {city}: {e}")
-        raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
+    return FileResponse(filepath, media_type="application/json", background=BackgroundTask(log_completion))
+
 
 @app.get("/api/suggestions")
 async def get_suggestions(

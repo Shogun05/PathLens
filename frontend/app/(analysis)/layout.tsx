@@ -38,6 +38,7 @@ export default function AnalysisLayout({
     baselineNodes,
     optimizedNodes,
     suggestions,
+    existingPois,
     selectedSuggestionIds,
     selectedCity,
   } = usePathLensStore();
@@ -58,14 +59,14 @@ export default function AnalysisLayout({
   const displayNodes = isOptimized
     ? optimizedNodes
     : baselineNodes;
-  
+
   // Filter suggestions to only show those that are "selected" (visible)
   // Strictly only show on optimized page
   const displaySuggestions = (isOptimized && !pathname?.includes('/baseline'))
     ? suggestions.filter(s => {
-        const id = s.properties.id || s.properties.osmid;
-        return id && selectedSuggestionIds.has(id);
-      })
+      const id = s.properties.id || s.properties.osmid;
+      return id && selectedSuggestionIds.has(id);
+    })
     : [];
 
   // handleLayerToggle removed - layer control functionality removed from UI
@@ -81,7 +82,8 @@ export default function AnalysisLayout({
         {!pathname?.includes('/comparison') && (
           <div className="absolute inset-0 z-0">
             <MapComponent
-              nodes={displayNodes}
+              nodes={[]} // Hide nodes
+              existingPois={existingPois}
               suggestions={displaySuggestions}
               selectedSuggestionIds={selectedSuggestionIds}
               onSuggestionClick={(id) => {

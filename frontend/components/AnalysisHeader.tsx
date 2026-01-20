@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathLensStore } from '@/lib/store';
-import { Switch } from '@/components/ui/switch';
+
 import { Badge } from '@/components/ui/badge';
 import {
   Select,
@@ -12,14 +12,14 @@ import {
 } from '@/components/ui/select';
 
 export default function AnalysisHeader() {
-  const { demoMode, setDemoMode, selectedCity, setSelectedCity, reset } = usePathLensStore();
+  const { selectedCity, setSelectedCity, reset } = usePathLensStore();
 
   const handleCityChange = (value: string) => {
     if (value !== selectedCity) {
       reset(); // Clear existing data when switching cities
       setSelectedCity(value);
       // Optional: Force reload to ensure clean state if needed, though react state should handle it
-      window.location.reload(); 
+      window.location.reload();
     }
   };
 
@@ -42,18 +42,13 @@ export default function AnalysisHeader() {
               <SelectItem value="bangalore">Bengaluru</SelectItem>
               <SelectItem value="chandigarh">Chandigarh</SelectItem>
               <SelectItem value="navi_mumbai">Navi Mumbai</SelectItem>
+              <SelectItem value="kolkata">Kolkata</SelectItem>
+              <SelectItem value="chennai">Chennai</SelectItem>
             </SelectContent>
           </Select>
         </div>
 
-        <div className="flex items-center gap-3 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
-          <span className="text-sm font-medium text-gray-300">Demo Mode</span>
-          <Switch 
-            checked={demoMode}
-            onCheckedChange={setDemoMode}
-            className="data-[state=checked]:bg-[#8fd6ff]"
-          />
-        </div>
+
       </div>
     </header>
   );

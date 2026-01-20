@@ -66,6 +66,7 @@ interface PathLensState {
   // Data
   baselineNodes: Node[];
   optimizedNodes: Node[];
+  existingPois: Suggestion[]; // Re-using Suggestion type as it fits Feature structure
   suggestions: Suggestion[];
   selectedSuggestionIds: Set<string>;
 
@@ -95,6 +96,7 @@ interface PathLensState {
   setSelectedCity: (city: string) => void;
   setBaselineNodes: (nodes: Node[]) => void;
   setOptimizedNodes: (nodes: Node[]) => void;
+  setExistingPois: (pois: Suggestion[]) => void;
   setSuggestions: (suggestions: Suggestion[]) => void;
   toggleSuggestion: (id: string) => void;
   selectAllSuggestions: () => void;
@@ -121,6 +123,7 @@ export const usePathLensStore = create<PathLensState>((set) => ({
   addBusStations: false,
   baselineNodes: [],
   optimizedNodes: [],
+  existingPois: [],
   suggestions: [],
   selectedSuggestionIds: new Set(),
   isOptimizing: false,
@@ -150,6 +153,7 @@ export const usePathLensStore = create<PathLensState>((set) => ({
   },
   setBaselineNodes: (baselineNodes) => set({ baselineNodes }),
   setOptimizedNodes: (optimizedNodes) => set({ optimizedNodes }),
+  setExistingPois: (existingPois) => set({ existingPois }),
   setSuggestions: (suggestions) => set({ suggestions }),
   toggleSuggestion: (id) =>
     set((state) => {
@@ -182,6 +186,7 @@ export const usePathLensStore = create<PathLensState>((set) => ({
       // Preserve selectedCity and location config
       baselineNodes: [],
       optimizedNodes: [],
+      existingPois: [],
       suggestions: [],
       selectedSuggestionIds: new Set(),
       isOptimizing: false,

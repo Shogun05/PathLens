@@ -142,6 +142,12 @@ export const pathLensAPI = {
     return response.data;
   },
 
+  getPois: async (city?: string) => {
+    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bengaluru';
+    const response = await api.get(`/api/pois?city=${selectedCity}`);
+    return response.data;
+  },
+
   getOptimizationResults: async (city?: string, mode?: string) => {
     // Use provided city, or check sessionStorage, or fall back to bangalore
     const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bengaluru';

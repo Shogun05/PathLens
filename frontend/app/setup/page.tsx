@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Button } from '@/components/ui/button';
@@ -10,7 +10,42 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { usePathLensStore } from '@/lib/store';
-import { School, Hospital, Bus, Trees, Search, Square, Sparkles, Loader2 } from 'lucide-react';
+import { School, Hospital, Bus, Trees, Search, Square, Sparkles, Loader2, CheckCircle, AlertTriangle, Circle } from 'lucide-react';
+import { pathLensAPI } from '@/lib/api';
+
+interface OptimizationStatus {
+  status: string;
+  stage?: string;
+  message?: string;
+  percent?: number;
+  pipelines?: Record<string, string>;
+}
+
+const STAGE_PERCENTS: Record<string, number> = {
+  initializing: 5,
+  data_collection: 20,
+  graph_processing: 40,
+  scoring: 60,
+  optimization: 80,
+  landuse: 90,
+  completed: 100,
+};
+
+interface PipelineStep {
+  stage: string;
+  label: string;
+  detail: string;
+  skipDetail?: string;
+}
+
+const PIPELINE_STEPS: PipelineStep[] = [
+  { stage: 'initializing', label: 'Initializing', detail: 'Preparing environment...' },
+  { stage: 'data_collection', label: 'Data Collection', detail: 'Fetching OSM data...' },
+  { stage: 'graph_processing', label: 'Graph Processing', detail: 'Building network...' },
+  { stage: 'scoring', label: 'Baseline Scoring', detail: 'Calculating metrics...' },
+  { stage: 'optimization', label: 'Optimization', detail: 'Running genetic algorithm...' },
+  { stage: 'landuse', label: 'Land Use Analysis', detail: 'Checking feasibility...' },
+];
 
 const MapComponent = dynamic(() => import('@/components/MapComponent'), {
   ssr: false,
@@ -32,6 +67,8 @@ export default function SetupPage() {
   const [drawingMode, setDrawingMode] = useState(false);
   const [statusData, setStatusData] = useState<OptimizationStatus | null>(null);
   const [statusMessage, setStatusMessage] = useState('');
+  const [isRunning, setIsRunning] = useState(false);
+  const [progress, setProgress] = useState(0);
   const statusPoller = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const inferPercent = useCallback((stage?: string) => {

@@ -44,6 +44,7 @@ interface MapSuggestion {
 interface MapComponentProps {
   nodes?: MapNode[];
   suggestions?: MapSuggestion[];
+  existingPois?: MapSuggestion[]; // Added prop for existing amenities
   selectedSuggestionIds?: Set<string>;
   onSuggestionClick?: (id: string) => void;
   center?: [number, number];
@@ -60,6 +61,7 @@ interface MapComponentProps {
 export default function MapComponent({
   nodes = [],
   suggestions = [],
+  existingPois = [],
   selectedSuggestionIds = new Set(),
   onSuggestionClick,
   center = [12.9716, 77.5946], // Bangalore default
@@ -76,6 +78,7 @@ export default function MapComponent({
   const rectangleRef = useRef<L.Rectangle | null>(null);
   const markersRef = useRef<Map<string, L.CircleMarker>>(new Map());
   const markerClusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
+  const chunkTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
 
   useEffect(() => {
@@ -190,7 +193,87 @@ export default function MapComponent({
       markers.forEach(marker => marker.addTo(map));
     }
 
-    // Process Suggestions (always unclustered)
+    // Process Existing POIs (Blue)
+    // Process Existing POIs (Blue) - with Manual Chunking
+    console.log(`[MapComponent] Processing ${existingPois.length} existing POIs`);
+
+    // Clear any pending timeouts from previous effect runs
+    if (chunkTimeoutRef.current) {
+      clearTimeout(chunkTimeoutRef.current);
+      chunkTimeoutRef.current = null;
+    }
+
+    // Chunked loading configuration
+    const CHUNK_SIZE = 500;
+    const CHUNK_DELAY = 50;
+
+    const processPoiChunk = (startIndex: number) => {
+      // Check if map or component unmounted/changed
+      if (!mapInstance || mapInstance !== map || markersRef.current !== currentMarkers) return;
+
+      const endIndex = Math.min(startIndex + CHUNK_SIZE, existingPois.length);
+      const chunk = existingPois.slice(startIndex, endIndex);
+
+      chunk.forEach((poi) => {
+        if (!poi.geometry || !poi.geometry.coordinates) return;
+
+        // Use coordinates as [lng, lat] for GeoJSON
+        const coordinates = poi.geometry.coordinates;
+        const lng = coordinates[0];
+        const lat = coordinates[1];
+
+        if (!lat || !lng) return;
+
+        const poiId = poi.properties.id || poi.properties.osmid || 'unknown';
+        const poiType = poi.properties.amenity_type || poi.properties.amenity || 'unknown';
+        const id = `exist-${poiId}`;
+
+        const tooltipContent = `
+          <div class="text-xs">
+            <strong>Existing Amenity</strong><br/>
+            <strong>Type:</strong> ${poiType}<br/>
+            <strong>ID:</strong> ${poiId}
+          </div>
+        `;
+
+        const marker = L.circleMarker([lat, lng], {
+          radius: 6,
+          fillColor: '#3b82f6', // Blue for existing
+          color: '#fff',
+          weight: 1.5,
+          opacity: 0.9,
+          fillOpacity: 0.7,
+        });
+
+        marker.bindTooltip(tooltipContent, {
+          permanent: false,
+          direction: 'top',
+          offset: [0, -5],
+          className: 'custom-tooltip'
+        });
+
+        // Safety check before adding to map
+        if (map.getPane('markerPane')) {
+          marker.addTo(map);
+          currentMarkers.set(id, marker);
+        }
+      });
+
+      // Schedule next chunk if needed
+      if (endIndex < existingPois.length) {
+        chunkTimeoutRef.current = setTimeout(() => processPoiChunk(endIndex), CHUNK_DELAY);
+      } else {
+        console.log(`[MapComponent] Finished rendering ${existingPois.length} POIs`);
+      }
+    };
+
+    // Start processing chunks
+    if (existingPois.length > 0) {
+      // Use setTimeout to allow initial render/other tasks to clear
+      chunkTimeoutRef.current = setTimeout(() => processPoiChunk(0), 0);
+    }
+
+    // Process Suggestions (Green) - always unclustered
     console.log(`[MapComponent] Rendering ${suggestions.length} suggestions`);
     suggestions.forEach((suggestion) => {
       if (!suggestion.geometry || !suggestion.geometry.coordinates) return;
@@ -213,7 +296,7 @@ export default function MapComponent({
 
       const marker = L.circleMarker([lat, lng], {
         radius: 8,
-        fillColor: '#10b981',
+        fillColor: '#10b981', // Green for new
         color: '#fff',
         weight: 2,
         opacity: 1,
@@ -238,19 +321,48 @@ export default function MapComponent({
     });
 
     // Fit bounds on initial load
-    if (nodes.length > 0 || suggestions.length > 0) {
-      const points: L.LatLngTuple[] = [
-        ...nodes.slice(0, 100).map(n => [n.y, n.x] as L.LatLngTuple), // Sample for performance
-        ...suggestions.filter(s => s.geometry).map(s => [s.geometry!.coordinates[1], s.geometry!.coordinates[0]] as L.LatLngTuple)
-      ];
+    if (nodes.length > 0 || suggestions.length > 0 || existingPois.length > 0) {
+      // Collect points from all sources
+      const points: L.LatLngTuple[] = [];
+
+      // Sample nodes
+      if (nodes.length > 0) {
+        points.push(...nodes.slice(0, 50).map(n => [n.y, n.x] as L.LatLngTuple));
+      }
+
+      // All existing POIs (Filtered carefully)
+      if (existingPois.length > 0) {
+        const poiPoints = existingPois
+          .filter(p => p.geometry && p.geometry.coordinates && p.geometry.coordinates.length >= 2 && p.geometry.coordinates[0] !== undefined && p.geometry.coordinates[1] !== undefined)
+          .map(p => [p.geometry!.coordinates[1], p.geometry!.coordinates[0]] as L.LatLngTuple);
+        points.push(...poiPoints);
+      }
+
+      // All suggestions
+      if (suggestions.length > 0) {
+        points.push(...suggestions.filter(s => s.geometry && s.geometry.coordinates && s.geometry.coordinates.length >= 2).map(s => [s.geometry!.coordinates[1], s.geometry!.coordinates[0]] as L.LatLngTuple));
+      }
 
       if (points.length > 0) {
-        const bounds = L.latLngBounds(points);
-        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 14 });
+        try {
+          const bounds = L.latLngBounds(points);
+          if (bounds.isValid()) {
+            map.fitBounds(bounds, { padding: [50, 50], maxZoom: 14 });
+          }
+        } catch (err) {
+          console.warn('Failed to fit bounds:', err);
+        }
       }
     }
 
-  }, [mapInstance, nodes, suggestions, enableClustering, maxMarkersBeforeClustering, selectedSuggestionIds, onSuggestionClick]);
+    // Cleanup function for this effect
+    return () => {
+      if (chunkTimeoutRef.current) {
+        clearTimeout(chunkTimeoutRef.current);
+      }
+    }
+
+  }, [mapInstance, nodes, suggestions, existingPois, enableClustering, maxMarkersBeforeClustering, selectedSuggestionIds, onSuggestionClick]);
 
   const startLatLngRef = useRef<L.LatLng | null>(null);
 

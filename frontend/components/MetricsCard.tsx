@@ -370,23 +370,8 @@ export function MetricsCard({ type }: MetricsCardProps) {
         </div>
       </Card>
 
-      {/* Gap Closure & Distribution */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {/* Gap Closure */}
-        <Card className="bg-[#1b2328] border-white/5 p-4">
-          <h4 className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-3">Gap Closure</h4>
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-2xl font-bold text-white">{(gapClosure.pct_above_threshold || 0).toFixed(1)}%</p>
-              <p className="text-xs text-gray-500">nodes &gt; {gapClosure.threshold_minutes || 15} min travel</p>
-            </div>
-            <div className="text-right">
-              <p className="text-lg font-semibold text-red-400">{(gapClosure.nodes_above_threshold || 0).toLocaleString()}</p>
-              <p className="text-xs text-gray-500">of {(gapClosure.total_nodes || 0).toLocaleString()}</p>
-            </div>
-          </div>
-        </Card>
-
+      {/* Distribution */}
+      <div className="grid grid-cols-1 gap-3">
         {/* Distribution */}
         <Card className="bg-[#1b2328] border-white/5 p-4">
           <h4 className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-3">Travel Time Distribution</h4>

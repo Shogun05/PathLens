@@ -13,7 +13,6 @@ import { ArrowRight, TrendingUp, Users, MapPin, Activity } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { MetricsCard } from '@/components/MetricsCard';
 import { NodeDistribution } from '@/components/NodeDistribution';
-import { CriticalNodes } from '@/components/CriticalNodes';
 
 export default function BaselinePage() {
   const router = useRouter();
@@ -23,6 +22,7 @@ export default function BaselinePage() {
     setBaselineNodes,
     setBaselineScore,
     baselineScore,
+    setExistingPois,
     demoMode,
   } = usePathLensStore();
 
@@ -45,13 +45,23 @@ export default function BaselinePage() {
         } else {
           // Load both metrics and nodes in parallel
           console.log(`Loading baseline data (full city)...`);
-          const [metrics, nodes] = await Promise.all([
+          // Load metrics, nodes, and POIs
+          console.log(`Loading baseline data (full city)...`);
+          const [metrics, nodes, pois] = await Promise.all([
             pathLensAPI.getMetricsSummary('baseline').catch(err => {
               console.warn('Failed to load metrics:', err);
               return { scores: { accessibility_mean: 0 } };
             }),
-            pathLensAPI.getNodes({ type: 'baseline' }) // Fetch all nodes
+            pathLensAPI.getNodes({ type: 'baseline' }), // Fetch all nodes
+            pathLensAPI.getPois().catch(err => {
+              console.warn('Failed to load POIs:', err);
+              return { features: [] };
+            })
           ]);
+
+          if (pois?.features) {
+            setExistingPois(pois.features);
+          }
 
           if (nodes && nodes.length > 0) {
             console.log(`Loaded ${nodes.length} baseline nodes`);
@@ -184,13 +194,6 @@ export default function BaselinePage() {
             {!demoMode && (
               <div className="grid grid-cols-1 gap-4">
                 <NodeDistribution nodes={baselineNodes} />
-                <CriticalNodes
-                  nodes={baselineNodes}
-                  onLocateNode={(node) => {
-                    console.log('Locate node:', node);
-                    // TODO: Pan map to node location
-                  }}
-                />
               </div>
             )}
 
@@ -238,12 +241,7 @@ export default function BaselinePage() {
                 Key Findings
               </h3>
               <div className="space-y-3 text-sm text-gray-300">
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Critical Nodes</span>
-                  <span className="text-white font-mono">
-                    {baselineNodes.filter(n => (n.accessibility_score ?? 0) < 30).length} nodes
-                  </span>
-                </div>
+
                 <div className="flex justify-between">
                   <span className="text-gray-400">Avg School Distance</span>
                   <span className="text-white font-mono">
