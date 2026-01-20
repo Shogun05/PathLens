@@ -88,6 +88,15 @@ CITY_ALIASES = {
     "new_mumbai": "navi_mumbai",
 }
 
+# City bounding boxes for filtering outliers (west, south, east, north)
+CITY_BOUNDS = {
+    "bangalore": (77.35, 12.75, 77.85, 13.20),
+    "chennai": (80.00, 12.80, 80.40, 13.30),
+    "kolkata": (88.20, 22.40, 88.55, 22.70),
+    "chandigarh": (76.68, 30.65, 76.88, 30.82),
+    "navi_mumbai": (72.95, 18.90, 73.15, 19.15),
+}
+
 def normalize_city_name(city: str) -> str:
     """Normalize city name and resolve aliases."""
     normalized = city.lower().strip().replace(" ", "_")
@@ -418,9 +427,12 @@ async def get_metrics_summary(
         raise HTTPException(status_code=500, detail=f"Error reading data: {str(e)}")
 
 @app.get("/api/pois")
-async def get_pois(city: str = Query(DEFAULT_CITY)):
-    """Return POIs for a specific city."""
-    target_city = city if city else DEFAULT_CITY
+async def get_pois(
+    city: str = Query(DEFAULT_CITY),
+    limit: Optional[int] = Query(5000, ge=1, le=50000, description="Maximum POIs to return")
+):
+    """Return POIs for a specific city, filtered by city bounding box."""
+    target_city = normalize_city_name(city) if city else DEFAULT_CITY
     cdm = CityDataManager(target_city)
     
     # Define path for processed JSON
@@ -433,20 +445,44 @@ async def get_pois(city: str = Query(DEFAULT_CITY)):
         logger.error(f"Processed POIs not found for {target_city} at {filepath}")
         return {"type": "FeatureCollection", "features": []}
 
-    # Get file size for logging
-    file_size = os.path.getsize(filepath)
-    size_str = f"{file_size / 1024 / 1024:.2f} MB"
-    
-    logger.info(f"Serving processed POI file for {city}: {filepath} ({size_str})")
-    
-    # Use FileResponse for zero-copy streaming
-    from fastapi.responses import FileResponse
-    from starlette.background import BackgroundTask
-    
-    def log_completion():
-        logger.info(f"Completed serving POIs for {city}")
+    try:
+        # Load and filter POIs by bounding box
+        with open(filepath, 'r') as f:
+            geojson = json.load(f)
         
-    return FileResponse(filepath, media_type="application/json", background=BackgroundTask(log_completion))
+        features = geojson.get("features", [])
+        original_count = len(features)
+        
+        # Get city bounding box for filtering outliers
+        bbox = CITY_BOUNDS.get(target_city)
+        
+        if bbox:
+            west, south, east, north = bbox
+            filtered_features = []
+            for feature in features:
+                geom = feature.get("geometry")
+                if not geom or not geom.get("coordinates"):
+                    continue
+                coords = geom["coordinates"]
+                lon, lat = coords[0], coords[1]
+                # Filter by bounding box
+                if west <= lon <= east and south <= lat <= north:
+                    filtered_features.append(feature)
+            
+            features = filtered_features
+            logger.info(f"Filtered {original_count} POIs to {len(features)} within bbox for {target_city}")
+        
+        # Apply limit for performance
+        if limit and len(features) > limit:
+            features = features[:limit]
+            logger.info(f"Limited POIs to {limit} for {target_city}")
+        
+        logger.info(f"Returning {len(features)} POIs for {target_city}")
+        return {"type": "FeatureCollection", "features": features}
+        
+    except Exception as e:
+        logger.error(f"Error loading POIs for {target_city}: {e}")
+        return {"type": "FeatureCollection", "features": []}
 
 
 @app.get("/api/suggestions")

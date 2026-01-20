@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
-import { usePathLensStore } from '@/lib/store';
-import { pathLensAPI } from '@/lib/api';
-import { generateDemoNodes } from '@/lib/demo-data';
-import { ArrowRight, TrendingUp, Users, MapPin, Activity } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { MetricsCard } from '@/components/MetricsCard';
-import { NodeDistribution } from '@/components/NodeDistribution';
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import { usePathLensStore } from "@/lib/store";
+import { pathLensAPI } from "@/lib/api";
+import { generateDemoNodes } from "@/lib/demo-data";
+import { ArrowRight, TrendingUp, Users, MapPin, Activity } from "lucide-react";
+import { motion } from "framer-motion";
+import { MetricsCard } from "@/components/MetricsCard";
+import { NodeDistribution } from "@/components/NodeDistribution";
 
 export default function BaselinePage() {
   const router = useRouter();
@@ -40,7 +40,11 @@ export default function BaselinePage() {
           // Use demo data
           const demoNodes = generateDemoNodes([12.9716, 77.5946], 50);
           setBaselineNodes(demoNodes);
-          const avgScore = demoNodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / demoNodes.length;
+          const avgScore =
+            demoNodes.reduce(
+              (sum, n) => sum + (n.accessibility_score || 0),
+              0,
+            ) / demoNodes.length;
           setBaselineScore(avgScore);
         } else {
           // Load both metrics and nodes in parallel
@@ -48,15 +52,18 @@ export default function BaselinePage() {
           // Load metrics, nodes, and POIs
           console.log(`Loading baseline data (full city)...`);
           const [metrics, nodes, pois] = await Promise.all([
-            pathLensAPI.getMetricsSummary('baseline').catch(err => {
-              console.warn('Failed to load metrics:', err);
+            pathLensAPI.getMetricsSummary("baseline").catch((err) => {
+              console.warn("Failed to load metrics:", err);
               return { scores: { accessibility_mean: 0 } };
             }),
-            pathLensAPI.getNodes({ type: 'baseline' }), // Fetch all nodes
-            pathLensAPI.getPois().catch(err => {
-              console.warn('Failed to load POIs:', err);
+            pathLensAPI.getNodes({ type: "baseline" }).catch((err) => {
+              console.warn("Failed to load nodes:", err);
+              return [];
+            }), // Fetch all nodes
+            pathLensAPI.getPois().catch((err) => {
+              console.warn("Failed to load POIs:", err);
               return { features: [] };
-            })
+            }),
           ]);
 
           if (pois?.features) {
@@ -69,17 +76,26 @@ export default function BaselinePage() {
 
             // Use pre-computed city-wide average from metrics API (all nodes)
             // API returns: scores.citywide.accessibility_mean (stratified) or scores.accessibility (flat)
-            const metricsScore = metrics?.scores?.citywide?.accessibility_mean
-              || metrics?.scores?.accessibility
-              || metrics?.scores?.accessibility_mean;
+            const metricsScore =
+              metrics?.scores?.citywide?.accessibility_mean ||
+              metrics?.scores?.accessibility ||
+              metrics?.scores?.accessibility_mean;
             if (metricsScore && metricsScore > 0) {
               setBaselineScore(metricsScore);
-              console.log(`City-wide accessibility: ${metricsScore.toFixed(2)}`);
+              console.log(
+                `City-wide accessibility: ${metricsScore.toFixed(2)}`,
+              );
             } else {
               // Fallback: calculate from loaded nodes if metrics unavailable
-              const avgScore = nodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / nodes.length;
+              const avgScore =
+                nodes.reduce(
+                  (sum, n) => sum + (n.accessibility_score || 0),
+                  0,
+                ) / nodes.length;
               setBaselineScore(avgScore);
-              console.log(`Calculated accessibility from ${nodes.length} sampled nodes: ${avgScore.toFixed(2)}`);
+              console.log(
+                `Calculated accessibility from ${nodes.length} sampled nodes: ${avgScore.toFixed(2)}`,
+              );
             }
           } else {
             // Clear nodes if no data returned
@@ -88,8 +104,8 @@ export default function BaselinePage() {
           }
         }
       } catch (error) {
-        console.error('Failed to load baseline data:', error);
-        setError('Failed to load baseline data. Please refresh the page.');
+        console.error("Failed to load baseline data:", error);
+        setError("Failed to load baseline data. Please refresh the page.");
       } finally {
         setLoading(false);
       }
@@ -99,15 +115,23 @@ export default function BaselinePage() {
   }, [demoMode]); // Re-run when demoMode changes
 
   const handleProceedToOptimization = () => {
-    router.push('/optimized');
+    router.push("/optimized");
   };
 
   // Calculate stats
   const totalNodes = baselineNodes.length || 1;
-  const avgAccessibility = baselineNodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / totalNodes || 0;
-  const avgWalkability = baselineNodes.reduce((sum, n) => sum + (n.walkability_score || 0), 0) / totalNodes || 0;
-  const avgEquity = baselineNodes.reduce((sum, n) => sum + (n.equity_score || 0), 0) / totalNodes || 0;
-  const avgTravelTime = baselineNodes.reduce((sum, n) => sum + (n.travel_time_min || 0), 0) / totalNodes || 0;
+  const avgAccessibility =
+    baselineNodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) /
+      totalNodes || 0;
+  const avgWalkability =
+    baselineNodes.reduce((sum, n) => sum + (n.walkability_score || 0), 0) /
+      totalNodes || 0;
+  const avgEquity =
+    baselineNodes.reduce((sum, n) => sum + (n.equity_score || 0), 0) /
+      totalNodes || 0;
+  const avgTravelTime =
+    baselineNodes.reduce((sum, n) => sum + (n.travel_time_min || 0), 0) /
+      totalNodes || 0;
 
   return (
     <div className="flex h-full flex-col pointer-events-none">
@@ -120,7 +144,9 @@ export default function BaselinePage() {
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <a className="hover:text-[#8fd6ff]">Projects</a>
               <span>/</span>
-              <a className="hover:text-[#8fd6ff]">{location || 'City Analysis'}</a>
+              <a className="hover:text-[#8fd6ff]">
+                {location || "City Analysis"}
+              </a>
               <span>/</span>
               <span className="text-white font-medium">Baseline Analysis</span>
             </div>
@@ -133,7 +159,7 @@ export default function BaselinePage() {
               </button>
               <button
                 className="px-3 py-1.5 rounded text-xs font-medium text-gray-400 hover:text-white"
-                onClick={() => router.push('/comparison')}
+                onClick={() => router.push("/comparison")}
               >
                 Split View
               </button>
@@ -144,10 +170,12 @@ export default function BaselinePage() {
               className="flex items-center gap-2 bg-[#8fd6ff]/10 hover:bg-[#8fd6ff]/20 text-[#8fd6ff] border-[#8fd6ff]/20"
               onClick={() => {
                 // TODO: Implement export functionality
-                console.log('Export report');
+                console.log("Export report");
               }}
             >
-              <span className="material-symbols-outlined text-[18px]">download</span>
+              <span className="material-symbols-outlined text-[18px]">
+                download
+              </span>
               <span className="text-sm font-bold">Export Report</span>
             </Button>
           </div>
@@ -166,14 +194,21 @@ export default function BaselinePage() {
         >
           <div className="p-6 border-b border-white/10">
             <div className="flex items-center justify-between mb-4">
-              <h1 className="text-2xl font-bold text-white">Baseline Analysis</h1>
-              <Badge variant="outline" className="border-red-500/50 text-red-400 bg-red-500/10">
+              <h1 className="text-2xl font-bold text-white">
+                Baseline Analysis
+              </h1>
+              <Badge
+                variant="outline"
+                className="border-red-500/50 text-red-400 bg-red-500/10"
+              >
                 Current State
               </Badge>
             </div>
 
             <div className="flex items-end gap-2 mb-2">
-              <span className="text-4xl font-bold text-white">{baselineScore.toFixed(1)}</span>
+              <span className="text-4xl font-bold text-white">
+                {baselineScore.toFixed(1)}
+              </span>
               <span className="text-sm text-gray-400 mb-1">/ 100</span>
             </div>
             <p className="text-sm text-gray-400">Overall Accessibility Score</p>
@@ -237,21 +272,34 @@ export default function BaselinePage() {
             {/* Key Findings */}
             <Card className="bg-[#1b2328] border-white/5 p-4">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="material-symbols-outlined text-yellow-500 text-sm">lightbulb</span>
+                <span className="material-symbols-outlined text-yellow-500 text-sm">
+                  lightbulb
+                </span>
                 Key Findings
               </h3>
               <div className="space-y-3 text-sm text-gray-300">
-
                 <div className="flex justify-between">
                   <span className="text-gray-400">Avg School Distance</span>
                   <span className="text-white font-mono">
-                    {(baselineNodes.reduce((sum, n) => sum + (n.dist_to_school || 0), 0) / totalNodes).toFixed(0)}m
+                    {(
+                      baselineNodes.reduce(
+                        (sum, n) => sum + (n.dist_to_school || 0),
+                        0,
+                      ) / totalNodes
+                    ).toFixed(0)}
+                    m
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-400">Avg Park Distance</span>
                   <span className="text-white font-mono">
-                    {(baselineNodes.reduce((sum, n) => sum + (n.dist_to_park || 0), 0) / totalNodes).toFixed(0)}m
+                    {(
+                      baselineNodes.reduce(
+                        (sum, n) => sum + (n.dist_to_park || 0),
+                        0,
+                      ) / totalNodes
+                    ).toFixed(0)}
+                    m
                   </span>
                 </div>
               </div>
@@ -272,7 +320,7 @@ export default function BaselinePage() {
   );
 }
 
-function MetricItem({ icon, label, value, max, unit = '', color }: any) {
+function MetricItem({ icon, label, value, max, unit = "", color }: any) {
   const percentage = (parseFloat(value) / max) * 100;
 
   return (
@@ -283,12 +331,13 @@ function MetricItem({ icon, label, value, max, unit = '', color }: any) {
           <span className="text-sm text-gray-400">{label}</span>
         </div>
         <span className={`text-lg font-bold ${color}`}>
-          {value}{unit ? ` ${unit}` : '/100'}
+          {value}
+          {unit ? ` ${unit}` : "/100"}
         </span>
       </div>
       <div className="w-full h-2 bg-[#27333a] rounded-full overflow-hidden">
         <div
-          className={`h-full ${color.replace('text-', 'bg-')} transition-all`}
+          className={`h-full ${color.replace("text-", "bg-")} transition-all`}
           style={{ width: `${percentage}%` }}
         />
       </div>

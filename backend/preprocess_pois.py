@@ -150,11 +150,11 @@ def preprocess_city_pois(city_name: str, raw_parquet_path: str, output_path: str
         return False
 
 if __name__ == "__main__":
-    # Test run for Bangalore
+    # Test run for navi_mumbai
     base_dir = Path(__file__).parent.parent
-    city = "bengaluru"  # normalized name
-    raw_path = base_dir / "data" / "cities" / "bangalore" / "raw" / "osm" / "pois.parquet"
-    out_path = base_dir / "data" / "cities" / "bangalore" / "graph" / "processed_pois.json"
+    city = "navi_mumbai"  # normalized name
+    raw_path = base_dir / "data" / "cities" / "navi_mumbai" / "raw" / "osm" / "pois.parquet"
+    out_path = base_dir / "data" / "cities" / "navi_mumbai" / "graph" / "processed_pois.json"
     
     # Ensure graph dir exists
     os.makedirs(out_path.parent, exist_ok=True)

@@ -1,20 +1,35 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Switch } from '@/components/ui/switch';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { usePathLensStore, Suggestion } from '@/lib/store';
-import { pathLensAPI } from '@/lib/api';
-import { generateDemoNodes } from '@/lib/demo-data';
-import { MetricsCard } from '@/components/MetricsCard';
-import { NodeDistribution } from '@/components/NodeDistribution';
-import { ArrowLeft, RefreshCw, Check, Plus, School, Hospital, Bus, Trees, Map as MapIcon, Download, Loader2 } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { generateOptimizationReport, transformSuggestionsToAmenities } from '@/lib/report-generator';
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Switch } from "@/components/ui/switch";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { usePathLensStore, Suggestion } from "@/lib/store";
+import { pathLensAPI } from "@/lib/api";
+import { generateDemoNodes } from "@/lib/demo-data";
+import { MetricsCard } from "@/components/MetricsCard";
+import { NodeDistribution } from "@/components/NodeDistribution";
+import {
+  ArrowLeft,
+  RefreshCw,
+  Check,
+  Plus,
+  School,
+  Hospital,
+  Bus,
+  Trees,
+  Map as MapIcon,
+  Download,
+  Loader2,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import {
+  generateOptimizationReport,
+  transformSuggestionsToAmenities,
+} from "@/lib/report-generator";
 
 export default function OptimizedPage() {
   const router = useRouter();
@@ -50,13 +65,19 @@ export default function OptimizedPage() {
 
         if (demoMode) {
           // Use demo data
-          const demoNodes = generateDemoNodes([12.9716, 77.5946], 50).map(n => ({
-            ...n,
-            score: Math.min(100, (n.score || 0) + 15)
-          }));
+          const demoNodes = generateDemoNodes([12.9716, 77.5946], 50).map(
+            (n) => ({
+              ...n,
+              score: Math.min(100, (n.score || 0) + 15),
+            }),
+          );
           setOptimizedNodes(demoNodes);
 
-          const avgScore = demoNodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / demoNodes.length;
+          const avgScore =
+            demoNodes.reduce(
+              (sum, n) => sum + (n.accessibility_score || 0),
+              0,
+            ) / demoNodes.length;
           setOptimizedScore(avgScore);
 
           // Add some demo suggestions if needed, or clear them
@@ -65,25 +86,41 @@ export default function OptimizedPage() {
         } else {
           // Load metrics, nodes, suggestions, and baseline metrics in parallel
           console.log(`Loading optimized data for ${selectedCity}...`);
-          const [metrics, nodes, suggsCollection, optResults, baselineResults, pois] = await Promise.all([
-            pathLensAPI.getMetricsSummary('optimized', selectedCity).catch(err => {
-              console.warn('Failed to load metrics:', err);
-              return { scores: { accessibility_mean: 0 } };
-            }),
-            pathLensAPI.getNodes({ type: 'optimized', city: selectedCity }),
-            pathLensAPI.getOptimizationPois(selectedCity).catch(() => ({ features: [] })), // Use optimized POIs endpoint
+          const [
+            metrics,
+            nodes,
+            suggsCollection,
+            optResults,
+            baselineResults,
+            pois,
+          ] = await Promise.all([
+            pathLensAPI
+              .getMetricsSummary("optimized", selectedCity)
+              .catch((err) => {
+                console.warn("Failed to load metrics:", err);
+                return { scores: { accessibility_mean: 0 } };
+              }),
+            pathLensAPI
+              .getNodes({ type: "optimized", city: selectedCity })
+              .catch((err) => {
+                console.warn("Failed to load nodes:", err);
+                return [];
+              }),
+            pathLensAPI
+              .getOptimizationPois(selectedCity)
+              .catch(() => ({ features: [] })), // Use optimized POIs endpoint
             pathLensAPI.getOptimizationResults(selectedCity).catch(() => null),
-            pathLensAPI.getMetricsSummary('baseline', selectedCity).catch(() => null), // Fetch baseline metrics too
-            pathLensAPI.getPois(selectedCity).catch(err => {
-              console.warn('Failed to load POIs:', err);
+            pathLensAPI
+              .getMetricsSummary("baseline", selectedCity)
+              .catch(() => null), // Fetch baseline metrics too
+            pathLensAPI.getPois(selectedCity).catch((err) => {
+              console.warn("Failed to load POIs:", err);
               return { features: [] };
-            })
+            }),
           ]);
 
           if (nodes && nodes.length > 0) setOptimizedNodes(nodes);
           else setOptimizedNodes([]);
-
-
 
           if (pois?.features) {
             setExistingPois(pois.features);
@@ -93,10 +130,13 @@ export default function OptimizedPage() {
           const suggestionsList = suggsCollection?.features || [];
 
           if (suggestionsList && suggestionsList.length > 0) {
-            console.log(`Loaded ${suggestionsList.length} optimization suggestions`);
+            console.log(
+              `Loaded ${suggestionsList.length} optimization suggestions`,
+            );
             setSuggestions(suggestionsList);
             // Select all suggestions by default
-            const selectAllSuggestions = usePathLensStore.getState().selectAllSuggestions;
+            const selectAllSuggestions =
+              usePathLensStore.getState().selectAllSuggestions;
             selectAllSuggestions();
           } else {
             setSuggestions([]);
@@ -107,19 +147,28 @@ export default function OptimizedPage() {
           setOptimizationResults(optResults);
 
           // Use pre-computed city-wide average from metrics API (all nodes)
-          const metricsScore = metrics?.scores?.citywide?.accessibility_mean
-            || metrics?.scores?.accessibility
-            || metrics?.scores?.accessibility_mean;
+          const metricsScore =
+            metrics?.scores?.citywide?.accessibility_mean ||
+            metrics?.scores?.accessibility ||
+            metrics?.scores?.accessibility_mean;
 
           if (metricsScore && metricsScore > 0) {
             setOptimizedScore(metricsScore);
-            console.log(`City-wide optimized accessibility: ${metricsScore.toFixed(2)}`);
+            console.log(
+              `City-wide optimized accessibility: ${metricsScore.toFixed(2)}`,
+            );
           } else {
             // Fallback: calculate from loaded nodes if metrics unavailable
             if (nodes && nodes.length > 0) {
-              const avgScore = nodes.reduce((sum, n) => sum + (n.accessibility_score || 0), 0) / nodes.length;
+              const avgScore =
+                nodes.reduce(
+                  (sum, n) => sum + (n.accessibility_score || 0),
+                  0,
+                ) / nodes.length;
               setOptimizedScore(avgScore);
-              console.log(`Calculated accessibility from ${nodes.length} sampled nodes: ${avgScore.toFixed(2)}`);
+              console.log(
+                `Calculated accessibility from ${nodes.length} sampled nodes: ${avgScore.toFixed(2)}`,
+              );
             } else {
               setOptimizedScore(0);
             }
@@ -128,21 +177,22 @@ export default function OptimizedPage() {
           // Also set baseline score and metrics from fetched baseline metrics
           setBaselineMetrics(baselineResults);
           const baselineScores = baselineResults?.scores;
-          const baselineVal = baselineScores?.citywide?.accessibility_mean
-            || baselineScores?.accessibility
-            || baselineScores?.accessibility_mean;
+          const baselineVal =
+            baselineScores?.citywide?.accessibility_mean ||
+            baselineScores?.accessibility ||
+            baselineScores?.accessibility_mean;
 
           if (baselineVal && baselineVal > 0) {
             setBaselineScore(baselineVal);
             console.log(`Baseline accessibility: ${baselineVal.toFixed(2)}`);
           } else {
             // If baseline metrics failed, try to use a fallback or keep previous 0
-            console.warn('Baseline metrics unavailable for PDF report');
+            console.warn("Baseline metrics unavailable for PDF report");
           }
         }
       } catch (error) {
-        console.error('Failed to load optimized data:', error);
-        setError('Failed to load optimized data. Please refresh the page.');
+        console.error("Failed to load optimized data:", error);
+        setError("Failed to load optimized data. Please refresh the page.");
       } finally {
         setLoading(false);
       }
@@ -155,11 +205,16 @@ export default function OptimizedPage() {
 
   const getAmenityIcon = (type: string) => {
     switch (type?.toLowerCase()) {
-      case 'school': return School;
-      case 'hospital': return Hospital;
-      case 'park': return Trees;
-      case 'bus': return Bus;
-      default: return MapIcon;
+      case "school":
+        return School;
+      case "hospital":
+        return Hospital;
+      case "park":
+        return Trees;
+      case "bus":
+        return Bus;
+      default:
+        return MapIcon;
     }
   };
 
@@ -167,10 +222,17 @@ export default function OptimizedPage() {
     setIsExporting(true);
     try {
       // Filter and transform suggestions with proper type handling
-      const validSuggestions = suggestions.filter(s => s.geometry?.coordinates);
-      const amenities = transformSuggestionsToAmenities(validSuggestions as any);
+      const validSuggestions = suggestions.filter(
+        (s) => s.geometry?.coordinates,
+      );
+      const amenities = transformSuggestionsToAmenities(
+        validSuggestions as any,
+      );
 
-      const cityNameFormatted = selectedCity.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      const cityNameFormatted = selectedCity
+        .split("_")
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(" ");
       await generateOptimizationReport(null, {
         location: location || `${cityNameFormatted}, India`,
         baselineScore,
@@ -179,19 +241,25 @@ export default function OptimizedPage() {
         generatedAt: new Date(),
         baselineMetrics: baselineMetrics,
         optimizedMetrics: optimizedMetrics,
-        optimizationMode: 'GA + MILP + PNMLR',
-        optimizationResults: optimizationResults ? {
-          generation: optimizationResults.generation,
-          fitness: optimizationResults.fitness || optimizationResults.metrics?.fitness,
-          placements: optimizationResults.placements || optimizationResults.metrics?.placements,
-          amenityUtilities: optimizationResults.metrics?.amenity_utilities,
-        } : undefined,
+        optimizationMode: "GA + MILP + PNMLR",
+        optimizationResults: optimizationResults
+          ? {
+              generation: optimizationResults.generation,
+              fitness:
+                optimizationResults.fitness ||
+                optimizationResults.metrics?.fitness,
+              placements:
+                optimizationResults.placements ||
+                optimizationResults.metrics?.placements,
+              amenityUtilities: optimizationResults.metrics?.amenity_utilities,
+            }
+          : undefined,
       });
 
-      console.log('Report generated successfully');
+      console.log("Report generated successfully");
     } catch (error) {
-      console.error('Failed to generate report:', error);
-      setError('Failed to generate report. Please try again.');
+      console.error("Failed to generate report:", error);
+      setError("Failed to generate report. Please try again.");
     } finally {
       setIsExporting(false);
     }
@@ -210,7 +278,9 @@ export default function OptimizedPage() {
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <a className="hover:text-[#8fd6ff]">Projects</a>
               <span>/</span>
-              <a className="hover:text-[#8fd6ff]">{location || 'City Analysis'}</a>
+              <a className="hover:text-[#8fd6ff]">
+                {location || "City Analysis"}
+              </a>
               <span>/</span>
               <span className="text-white font-medium">Optimization</span>
             </div>
@@ -223,7 +293,7 @@ export default function OptimizedPage() {
               </button>
               <button
                 className="px-3 py-1.5 rounded text-xs font-medium text-gray-400 hover:text-white"
-                onClick={() => router.push('/comparison')}
+                onClick={() => router.push("/comparison")}
               >
                 Split View
               </button>
@@ -266,7 +336,7 @@ export default function OptimizedPage() {
                 variant="ghost"
                 size="icon"
                 className="h-8 w-8 -ml-2 text-gray-400 hover:text-white"
-                onClick={() => router.push('/baseline')}
+                onClick={() => router.push("/baseline")}
               >
                 <ArrowLeft className="h-4 w-4" />
               </Button>
@@ -275,14 +345,18 @@ export default function OptimizedPage() {
 
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-end gap-2">
-                <span className="text-4xl font-bold text-[#8fd6ff]">{optimizedScore.toFixed(1)}</span>
+                <span className="text-4xl font-bold text-[#8fd6ff]">
+                  {optimizedScore.toFixed(1)}
+                </span>
                 <span className="text-sm text-gray-400 mb-1">/ 100</span>
               </div>
               <Badge className="bg-green-500/20 text-green-400 border-green-500/50">
                 +{scoreImprovement.toFixed(1)} Improvement
               </Badge>
             </div>
-            <p className="text-sm text-gray-400">Projected Accessibility Score</p>
+            <p className="text-sm text-gray-400">
+              Projected Accessibility Score
+            </p>
 
             {/* Error message display */}
             {error && (

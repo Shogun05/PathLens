@@ -1,6 +1,6 @@
 'use client';
 
-import { Layers, MapPin, Plus, Minus } from 'lucide-react';
+import { Layers, MapPin, Plus, Minus, CircleDot } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -24,12 +24,9 @@ export function MapControls({
 
   return (
     <div className={`pointer-events-none ${className}`}>
-      <div className="absolute inset-0">
-        {/* Search bar removed - was not functional */}
-
-        {/* Top Right: Layer Controls & Zoom */}
+      <div className="absolute inset-0 z-[100]">
+        {/* Top Right: Zoom Controls */}
         <div className="absolute top-4 right-4 flex flex-col gap-2 items-end pointer-events-auto">
-          {/* Zoom Controls */}
           <Card className="bg-[#1b2328]/90 backdrop-blur-xl border-white/10 p-1 flex flex-col gap-1">
             <Button
               variant="ghost"
@@ -52,7 +49,7 @@ export function MapControls({
           </Card>
         </div>
 
-        {/* Bottom Left: Toggle Chips */}
+        {/* Bottom Left: Legend */}
         <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end pointer-events-none">
           <div className="pointer-events-auto flex flex-wrap gap-2 max-w-[70%]" style={{ marginLeft: showBaselineToggle ? '420px' : '0' }}>
             {/* Baseline Amenities Toggle (only on /optimized) */}
@@ -73,8 +70,6 @@ export function MapControls({
                 }`}>Existing Amenities</span>
               </button>
             )}
-
-            {/* Nodes Toggle removed - nodes are now always visible */}
           </div>
 
           {/* Legend */}
@@ -89,8 +84,6 @@ export function MapControls({
             </div>
           </div>
         </div>
-
-        {/* Layer menu removed - was not functional */}
       </div>
     </div>
   );

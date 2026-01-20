@@ -46,6 +46,7 @@ export default function AnalysisLayout({
   const [isMounted, setIsMounted] = useState(false);
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [showNodes, setShowNodes] = useState(true);
+  const [showPois, setShowPois] = useState(true);
   const [mapCenter, setMapCenter] = useState<[number, number]>([12.9716, 77.5946]);
 
   useEffect(() => {
@@ -69,21 +70,25 @@ export default function AnalysisLayout({
     })
     : [];
 
-  // handleLayerToggle removed - layer control functionality removed from UI
-
   if (!isMounted) return null;
 
   return (
     <div className="flex h-screen flex-col bg-[#0f1c23]">
-      <AnalysisHeader />
+      {/* Header with Layer Toggles */}
+      <AnalysisHeader
+        showNodes={showNodes}
+        showPois={showPois}
+        onNodesToggle={setShowNodes}
+        onPoisToggle={setShowPois}
+      />
 
       <div className="flex-1 relative overflow-hidden">
         {/* Persistent Map Layer - Hidden on /comparison since it has its own map */}
         {!pathname?.includes('/comparison') && (
           <div className="absolute inset-0 z-0">
             <MapComponent
-              nodes={[]} // Hide nodes
-              existingPois={existingPois}
+              nodes={showNodes ? displayNodes : []}
+              existingPois={showPois ? existingPois : []}
               suggestions={displaySuggestions}
               selectedSuggestionIds={selectedSuggestionIds}
               onSuggestionClick={(id) => {
@@ -101,8 +106,7 @@ export default function AnalysisLayout({
           </div>
         )}
 
-        {/* Map Controls Overlay */}
-        {/* Map Controls Overlay */}
+        {/* Map Controls Overlay - Just zoom controls now */}
         <MapControls
           className="absolute inset-0 z-5"
           onZoomIn={() => mapInstance?.zoomIn()}

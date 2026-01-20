@@ -1,8 +1,8 @@
 'use client';
 
 import { usePathLensStore } from '@/lib/store';
+import { CircleDot, MapPin } from 'lucide-react';
 
-import { Badge } from '@/components/ui/badge';
 import {
   Select,
   SelectContent,
@@ -11,7 +11,19 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 
-export default function AnalysisHeader() {
+interface AnalysisHeaderProps {
+  showNodes?: boolean;
+  showPois?: boolean;
+  onNodesToggle?: (enabled: boolean) => void;
+  onPoisToggle?: (enabled: boolean) => void;
+}
+
+export default function AnalysisHeader({
+  showNodes = true,
+  showPois = true,
+  onNodesToggle,
+  onPoisToggle,
+}: AnalysisHeaderProps) {
   const { selectedCity, setSelectedCity, reset } = usePathLensStore();
 
   const handleCityChange = (value: string) => {
@@ -48,7 +60,40 @@ export default function AnalysisHeader() {
           </Select>
         </div>
 
-
+        {/* Layer Toggle Buttons - Horizontal */}
+        {(onNodesToggle || onPoisToggle) && (
+          <div className="flex items-center gap-2 bg-white/5 rounded-lg px-2 py-1 border border-white/10">
+            <span className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold mr-1">Layers</span>
+            {onNodesToggle && (
+              <button
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-medium transition-colors ${
+                  showNodes
+                    ? 'bg-[#8fd6ff]/20 text-[#8fd6ff]'
+                    : 'text-gray-400 hover:bg-white/5'
+                }`}
+                onClick={() => onNodesToggle(!showNodes)}
+                title="Toggle Nodes visibility"
+              >
+                <CircleDot className="h-3 w-3" />
+                Nodes
+              </button>
+            )}
+            {onPoisToggle && (
+              <button
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-medium transition-colors ${
+                  showPois
+                    ? 'bg-blue-500/20 text-blue-400'
+                    : 'text-gray-400 hover:bg-white/5'
+                }`}
+                onClick={() => onPoisToggle(!showPois)}
+                title="Toggle POIs visibility"
+              >
+                <MapPin className="h-3 w-3" />
+                POIs
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </header>
   );
