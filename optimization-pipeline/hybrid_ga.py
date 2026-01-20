@@ -43,9 +43,12 @@ try:
         sys.path.insert(0, str(landuse_pipeline_path))
     from run_feasibility import LanduseFeasibilityIntegration
     _HAS_LANDUSE = True
-except ImportError:
+except Exception as _landuse_import_error:
     LanduseFeasibilityIntegration = None  # type: ignore
     _HAS_LANDUSE = False
+    # Log the actual error for debugging
+    import logging as _temp_logging
+    _temp_logging.debug(f"Landuse integration not available: {_landuse_import_error}")
 
 # Try to import tqdm for nicer progress bars; gracefully fallback if not present.
 try:
@@ -467,7 +470,17 @@ class HybridGA:
                 self.landuse_filter = LanduseFeasibilityIntegration(cdm, raw_config)
                 logging.info("Landuse feasibility filter initialized.")
             else:
-                logging.warning("Landuse filtering requested but not available (missing cdm or config).")
+                # Detailed debug message about what's missing
+                reasons = []
+                if not _HAS_LANDUSE:
+                    reasons.append("landuse module import failed")
+                if LanduseFeasibilityIntegration is None:
+                    reasons.append("LanduseFeasibilityIntegration is None")
+                if cdm is None:
+                    reasons.append("cdm is None")
+                if raw_config is None:
+                    reasons.append("raw_config is None")
+                logging.warning("Landuse filtering requested but not available (%s).", ", ".join(reasons) if reasons else "unknown")
 
     def seed_population(self) -> List[Candidate]:
         population: List[Candidate] = []
@@ -614,24 +627,56 @@ class HybridGA:
         best_candidate = candidate
         best_metrics = base_metrics
         best_fitness = float(base_metrics.get("fitness", float("-inf")))
+        
         for _ in range(self.config.local_search_budget):
             improved = False
             for amenity, pool in self.context.amenity_pools.items():
                 current_nodes = set(best_candidate.placements.get(amenity, ()))
-                for node in pool[:50]:
-                    if node in current_nodes:
-                        continue
-                    trial_nodes = tuple(sorted(current_nodes | {node}))
-                    trial_placements = dict(best_candidate.placements)
-                    trial_placements[amenity] = trial_nodes
-                    trial_candidate = Candidate(placements=trial_placements, template_id=best_candidate.template_id)
-                    trial_metrics = self.evaluate(trial_candidate)
-                    trial_fitness = float(trial_metrics.get("fitness", float("-inf")))
-                    if trial_fitness > best_fitness:
-                        best_candidate, best_metrics, best_fitness = trial_candidate, trial_metrics, trial_fitness
-                        improved = True
-                        self.operator_credits["local_search"] += 1
-                        break
+                
+                # Parallel evaluation when workers > 1: evaluate ALL neighbors and pick BEST
+                if self.config.workers > 1:
+                    # Build all neighbor candidates first
+                    neighbors = []
+                    for node in pool[:50]:  # Limit to top 50 for performance
+                        if node in current_nodes:
+                            continue
+                        trial_nodes = tuple(sorted(current_nodes | {node}))
+                        trial_placements = dict(best_candidate.placements)
+                        trial_placements[amenity] = trial_nodes
+                        trial_candidate = Candidate(placements=trial_placements, template_id=best_candidate.template_id)
+                        neighbors.append(trial_candidate)
+                    
+                    # Evaluate all neighbors in parallel and pick the best
+                    if neighbors:
+                        with ThreadPoolExecutor(max_workers=min(4, self.config.workers)) as executor:
+                            futures = {executor.submit(self.evaluate, cand): cand for cand in neighbors}
+                            for future in as_completed(futures):
+                                trial_candidate = futures[future]
+                                trial_metrics = future.result()
+                                trial_fitness = float(trial_metrics.get("fitness", float("-inf")))
+                                if trial_fitness > best_fitness:
+                                    best_candidate = trial_candidate
+                                    best_metrics = trial_metrics
+                                    best_fitness = trial_fitness
+                                    improved = True
+                                    self.operator_credits["local_search"] += 1
+                else:
+                    # Sequential evaluation for single worker - early termination on first improvement
+                    for node in pool[:50]:
+                        if node in current_nodes:
+                            continue
+                        trial_nodes = tuple(sorted(current_nodes | {node}))
+                        trial_placements = dict(best_candidate.placements)
+                        trial_placements[amenity] = trial_nodes
+                        trial_candidate = Candidate(placements=trial_placements, template_id=best_candidate.template_id)
+                        trial_metrics = self.evaluate(trial_candidate)
+                        trial_fitness = float(trial_metrics.get("fitness", float("-inf")))
+                        if trial_fitness > best_fitness:
+                            best_candidate, best_metrics, best_fitness = trial_candidate, trial_metrics, trial_fitness
+                            improved = True
+                            self.operator_credits["local_search"] += 1
+                            break  # Early termination in sequential mode
+                
                 if improved:
                     break
             if not improved:

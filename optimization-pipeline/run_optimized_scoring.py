@@ -257,12 +257,11 @@ def main():
         }
     }
 
-    # Save outputs
-    prefix = f"{args.mode}_" if args.mode else ""
+    # Save outputs (no prefix to match CDM path expectations: cdm.optimized_nodes())
     nodes_clean = clean_for_parquet(nodes)
-    nodes_clean.to_parquet(out_dir / f"{prefix}nodes_with_scores.parquet")
-    agg.to_parquet(out_dir / f"{prefix}h3_agg.parquet")
-    with (out_dir / f"{prefix}metrics_summary.json").open("w") as f:
+    nodes_clean.to_parquet(out_dir / "nodes_with_scores.parquet")
+    agg.to_parquet(out_dir / "h3_agg.parquet")
+    with (out_dir / "metrics_summary.json").open("w") as f:
         json.dump(summary, f, indent=2)
     
     print(f"Scoring complete. Results in {out_dir}")

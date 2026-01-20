@@ -215,10 +215,23 @@ async def get_nodes(
             missing_count = mask.sum()
             
             if missing_count > 0:
-                logger.info(f"Projecting {missing_count} missing coordinates from UTM 43N to WGS84")
+                # Dynamic UTM zone selection
+                # Bangalore, Mumbai, Navi Mumbai, Chandigarh -> Zone 43N (EPSG:32643)
+                # Chennai -> Zone 44N (EPSG:32644)
+                # Kolkata -> Zone 45N (EPSG:32645)
+                
+                normalized_city = normalize_city_name(target_city)
+                source_epsg = "EPSG:32643"  # Default
+                
+                if normalized_city == "chennai":
+                    source_epsg = "EPSG:32644"
+                elif normalized_city == "kolkata":
+                    source_epsg = "EPSG:32645"
+                
+                logger.info(f"Projecting {missing_count} missing coordinates from {source_epsg} to WGS84 for {target_city}")
                 try:
-                    # Initialize transformer (UTM 43N -> WGS84)
-                    transformer = pyproj.Transformer.from_crs("EPSG:32643", "EPSG:4326", always_xy=True)
+                    # Initialize transformer (UTM -> WGS84)
+                    transformer = pyproj.Transformer.from_crs(source_epsg, "EPSG:4326", always_xy=True)
                     # Transform only missing rows
                     xs = df.loc[mask, 'x'].values
                     ys = df.loc[mask, 'y'].values

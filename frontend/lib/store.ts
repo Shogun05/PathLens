@@ -91,7 +91,6 @@ interface PathLensState {
   setAddHospitals: (add: boolean) => void;
   setAddParks: (add: boolean) => void;
   setAddBusStations: (add: boolean) => void;
-  setAddBusStations: (add: boolean) => void;
   setDemoMode: (demoMode: boolean) => void;
   setSelectedCity: (city: string) => void;
   setBaselineNodes: (nodes: Node[]) => void;
@@ -112,7 +111,7 @@ interface PathLensState {
 export const usePathLensStore = create<PathLensState>((set) => ({
   // Initial state
   location: '',
-  selectedCity: typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') || 'bangalore' : 'bangalore',
+  selectedCity: typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') || 'bengaluru' : 'bengaluru',
   customBounds: null,
   budget: 50000000,
   maxAmenities: 10,

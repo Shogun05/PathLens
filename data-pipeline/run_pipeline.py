@@ -51,7 +51,22 @@ def main():
     
     # Get settings from config
     data_cfg = cfg.get('data', {})
-    place = cfg.get('project', {}).get('place', 'Bangalore, India')
+    
+    # Generate place name from city (capitalize properly for OSM geocoding)
+    # Config can override with project.place if needed for special cases
+    city_to_place = {
+        'bangalore': 'Bangalore, Karnataka, India',
+        'mumbai': 'Mumbai, Maharashtra, India', 
+        'navi_mumbai': 'Navi Mumbai, Maharashtra, India',
+        'chandigarh': 'Chandigarh, India',
+        'chennai': 'Chennai, Tamil Nadu, India',
+        'delhi': 'Delhi, India',
+        'hyderabad': 'Hyderabad, Telangana, India',
+        'kolkata': 'Kolkata, West Bengal, India',
+        'pune': 'Pune, Maharashtra, India',
+    }
+    default_place = city_to_place.get(cdm.city, f"{cdm.city.replace('_', ' ').title()}, India")
+    place = cfg.get('project', {}).get('place', default_place)
     
     skip_convert = data_cfg.get('skip_convert', False)
     skip_graph = data_cfg.get('skip_graph', False)

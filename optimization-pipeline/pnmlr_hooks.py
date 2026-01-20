@@ -92,7 +92,7 @@ def pnmlr_precompute_hook(context: 'GAContext') -> Mapping[str, object]:
     }
 
 def pnmlr_evaluate_hook(candidate: 'Candidate', effects: Mapping[str, object], context: 'GAContext') -> Dict[str, object]:
-    """Evaluate hook using PNMLR utility scores."""
+    """Evaluate hook using PNMLR utility scores with full penalty calculations."""
     import math
     if not effects.get("pnmlr_enabled", False):
         from hybrid_ga import default_evaluate_candidate
@@ -101,24 +101,80 @@ def pnmlr_evaluate_hook(candidate: 'Candidate', effects: Mapping[str, object], c
     utility_map = effects["pnmlr_utilities"]
     nodes = effects["nodes"]
     
+    # Compute total utility gain from placements
     total_u = 0.0
     amenity_u = {}
+    placements = {}
     for amenity, node_ids in candidate.placements.items():
         w = context.amenity_weights.get(amenity, 1.0)
         u = sum(utility_map.get(str(nid), 0) for nid in node_ids) * w
         amenity_u[amenity] = u
         total_u += u
+        placements[amenity] = len(node_ids)
     
-    # Simple proxies for penalties as in original
-    div_penalty = 0.0 # simplified for speed in this refactor view
-    prox_penalty = 0.0
+    # Diversity penalty: penalize same-type amenities placed too close together
+    diversity_penalty = 0.0
+    for amenity, node_ids in candidate.placements.items():
+        if len(node_ids) <= 1:
+            continue
+        
+        # Get coordinates for all placed nodes of this amenity type
+        coords = []
+        for node_id in node_ids:
+            node_str = str(node_id)
+            if node_str in nodes.index and 'x' in nodes.columns and 'y' in nodes.columns:
+                x = nodes.loc[node_str, 'x']
+                y = nodes.loc[node_str, 'y']
+                if pd.notna(x) and pd.notna(y):
+                    coords.append((float(x), float(y)))
+        
+        # Pairwise distance check - penalize if closer than min_spacing
+        min_spacing = 800.0
+        for i in range(len(coords)):
+            for j in range(i + 1, len(coords)):
+                x1, y1 = coords[i]
+                x2, y2 = coords[j]
+                dist = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+                
+                if dist < min_spacing:
+                    ratio = dist / min_spacing
+                    diversity_penalty += (1.0 - ratio) ** 2 * 2.0
     
-    fitness = total_u - div_penalty - prox_penalty
+    # Proximity penalty: penalize placing too close to existing amenities
+    proximity_penalty = 0.0
+    for amenity, node_ids in candidate.placements.items():
+        col = context.distance_columns.get(amenity)
+        if not col or col not in nodes.columns:
+            continue
+        
+        for node_id in node_ids:
+            node_str = str(node_id)
+            if node_str in nodes.index:
+                existing_dist = pd.to_numeric(nodes.loc[node_str, col], errors='coerce')
+                if pd.notna(existing_dist) and existing_dist < 600:
+                    ratio = existing_dist / 600.0
+                    proximity_penalty += (1.0 - ratio) ** 2 * 0.5
+    
+    # Travel time penalty (mild)
+    travel_penalty = 0.0
+    if 'travel_time_min' in nodes.columns:
+        placed_indices = [str(node) for ids in candidate.placements.values() for node in ids]
+        placed_nodes = nodes.loc[nodes.index.isin(placed_indices)]
+        if not placed_nodes.empty:
+            travel_penalty = float(placed_nodes['travel_time_min'].mean())
+    
+    # Final fitness: utility - penalties
+    fitness = total_u - diversity_penalty - proximity_penalty - 0.0005 * travel_penalty
+    fitness = max(fitness, 0.0)
+    
     return {
-        "fitness": max(fitness, 0.0),
+        "fitness": fitness,
         "pnmlr_utility": total_u,
         "amenity_utilities": amenity_u,
-        "placements": {a: len(n) for a, n in candidate.placements.items()},
+        "diversity_penalty": diversity_penalty,
+        "proximity_penalty": proximity_penalty,
+        "travel_penalty": travel_penalty,
+        "placements": placements,
     }
 
 def create_pnmlr_hooks(cdm: Optional[CityDataManager] = None) -> tuple:

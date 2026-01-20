@@ -164,9 +164,9 @@ def main() -> None:
             python_exe, 
             str(optimization_dir / "generate_solution_map.py"),
             "--city", args.city,
-            "--mode", args.mode
+            "--mode", args.mode,
+            "--skip-metrics"  # Skip scoring here - run_optimized_scoring.py handles it correctly
         ]
-        # generate_solution_map.py does not accept --force
         run_step("Generate solution map", map_command, logger)
     
     # Step 4: Run comparative pipeline (prefixed graphs/scores)

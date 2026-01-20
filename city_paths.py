@@ -252,9 +252,8 @@ class CityDataManager:
         return self.optimized_dir(mode) / "h3_agg.csv"
     
     def optimized_metrics(self, mode: Optional[str] = None) -> Path:
-        """Optimized metrics summary (JSON). Uses mode-prefixed filename if mode is specified."""
-        m = mode or self.mode or "ga_only"
-        return self.optimized_dir(mode) / f"{m}_metrics_summary.json"
+        """Optimized metrics summary (JSON)."""
+        return self.optimized_dir(mode) / "metrics_summary.json"
     
     def optimized_pois(self, mode: Optional[str] = None) -> Path:
         """Optimized POIs GeoJSON."""

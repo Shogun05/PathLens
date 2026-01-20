@@ -78,7 +78,7 @@ export const pathLensAPI = {
     }
 
     // Auto-include city from sessionStorage if not provided
-    const city = params.city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null);
+    const city = params.city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bengaluru';
     // Default optimization mode depends on city data availability
     // Bangalore: ga_milp_pnmlr (has +0.8 delta)
     // Navi Mumbai / Mumbai: ga_only (verified working)
@@ -102,7 +102,7 @@ export const pathLensAPI = {
 
   getSuggestions: async (city?: string, mode?: string): Promise<{ type: string; features: Suggestion[] }> => {
     // Use provided city, or check sessionStorage, or fall back to default
-    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bangalore';
+    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bengaluru';
 
     // Default mode based on city
     let defaultMode = 'ga_milp_pnmlr';
@@ -117,7 +117,7 @@ export const pathLensAPI = {
 
   getMetricsSummary: async (type: 'baseline' | 'optimized', city?: string, mode?: string) => {
     // Use provided city, or check sessionStorage, or fall back to default
-    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bangalore';
+    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bengaluru';
 
     // Default optimization mode depends on city data availability
     let defaultMode = 'ga_milp_pnmlr';
@@ -144,7 +144,7 @@ export const pathLensAPI = {
 
   getOptimizationResults: async (city?: string, mode?: string) => {
     // Use provided city, or check sessionStorage, or fall back to bangalore
-    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bangalore';
+    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bengaluru';
 
     // Default mode based on city
     let defaultMode = 'ga_milp_pnmlr';
@@ -159,7 +159,7 @@ export const pathLensAPI = {
 
   getOptimizationPois: async (city?: string, mode?: string) => {
     // Use provided city, or check sessionStorage, or fall back to bangalore
-    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bangalore';
+    const selectedCity = city || (typeof window !== 'undefined' ? sessionStorage.getItem('selectedCity') : null) || 'bengaluru';
 
     // Default mode based on city
     let defaultMode = 'ga_milp_pnmlr';
@@ -195,27 +195,27 @@ export const pathLensAPI = {
   },
 
   // Multi-mode optimization endpoints
-  getModes: async (city: string = 'bangalore') => {
+  getModes: async (city: string = 'bengaluru') => {
     const response = await api.get(`/api/modes?city=${city}`);
     return response.data;
   },
 
-  getModeNodes: async (mode: string, city: string = 'bangalore', limit: number = 5000) => {
+  getModeNodes: async (mode: string, city: string = 'bengaluru', limit: number = 5000) => {
     const response = await api.get(`/api/modes/${mode}/nodes?city=${city}&limit=${limit}`);
     return response.data;
   },
 
-  getModeMetrics: async (mode: string, city: string = 'bangalore') => {
+  getModeMetrics: async (mode: string, city: string = 'bengaluru') => {
     const response = await api.get(`/api/modes/${mode}/metrics?city=${city}`);
     return response.data;
   },
 
-  getModePois: async (mode: string, city: string = 'bangalore') => {
+  getModePois: async (mode: string, city: string = 'bengaluru') => {
     const response = await api.get(`/api/modes/${mode}/pois?city=${city}`);
     return response.data;
   },
 
-  getModesComparison: async (city: string = 'bangalore') => {
+  getModesComparison: async (city: string = 'bengaluru') => {
     const response = await api.get(`/api/modes/comparison?city=${city}`);
     return response.data;
   },

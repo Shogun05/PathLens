@@ -136,9 +136,21 @@ def load_inputs(graph_path: Path, poi_mapping_path: Path):
                 if graph_crs:
                     source_crs = graph_crs
                 else:
-                    # Default to UTM zone 43N for Bangalore area
-                    source_crs = "EPSG:32643"
-                    print(f"Warning: No CRS found, assuming {source_crs} for Bangalore")
+                    # Dynamic UTM zone selection based on city
+                    # We need to infer city from path or arguments if possible, or fallback
+                    # Since this function doesn't easily access 'city' arg, we try to guess from file path
+                    # or default to 43N (Bangalore)
+                    
+                    source_crs = "EPSG:32643"  # Default (Bangalore, Mumbai, etc.)
+                    
+                    # Try to deduce city from graph_path text
+                    path_str = str(graph_path).lower()
+                    if "chennai" in path_str:
+                        source_crs = "EPSG:32644"
+                    elif "kolkata" in path_str:
+                        source_crs = "EPSG:32645"
+                        
+                    print(f"Warning: No CRS found, assuming {source_crs} based on path")
                     sys.stdout.flush()
                 nodes = nodes.set_crs(source_crs, allow_override=True)
             
