@@ -214,6 +214,13 @@ export default function SetupPage() {
   };
 
   const showStatusPanel = isRunning || ['queued', 'running'].includes(statusData?.status ?? '');
+  const [gaOnly, setGaOnly] = useState(true);
+  const [gaMilp, setGaMilp] = useState(true);
+  const [gaMilpPnmlr, setGaMilpPnmlr] = useState(true);
+  const [landUse, setLandUse] = useState(true);
+  const [centrality, setCentrality] = useState(true);
+  const [equity, setEquity] = useState(true);
+
   const statusDotClass = (() => {
     if (['failed', 'error'].includes(statusData?.status ?? '')) {
       return 'bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.45)]';
@@ -362,69 +369,81 @@ export default function SetupPage() {
 
             <div className="border-t border-white/10" />
 
+            {/* Configuration Settings - Main editable section */}
             <section className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Constraints</h3>
-                <Badge variant="outline" className="bg-[#8fd6ff]/10 text-[#8fd6ff] border-[#8fd6ff]/20">Step 2/3</Badge>
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[#8fd6ff]">tune</span>
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Configuration</h3>
               </div>
-              <div className="bg-[#1b2328] p-4 rounded-xl border border-white/5">
-                <div className="flex justify-between items-end mb-4">
-                  <span className="text-sm font-medium text-gray-300">Total Budget</span>
-                  <span className="text-xl font-bold text-[#8fd6ff] font-mono">
-                    ₹{(budget / 10000000).toFixed(1)} Cr
-                  </span>
+              
+              {/* Optimization Modes */}
+              <div className="bg-[#1b2328] p-4 rounded-xl border border-white/5 space-y-3">
+                <div className="text-xs text-gray-400 uppercase tracking-wider mb-2">Optimization Modes</div>
+                <div className="space-y-2">
+                  <label className="flex items-center gap-3 cursor-pointer">
+                    <Checkbox checked={gaOnly} onCheckedChange={(checked) => setGaOnly(!!checked)} className="border-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">GA Only</span>
+                    <span className="text-xs text-gray-500 ml-auto">Genetic Algorithm</span>
+                  </label>
+                  <label className="flex items-center gap-3 cursor-pointer">
+                    <Checkbox checked={gaMilp} onCheckedChange={(checked) => setGaMilp(!!checked)} className="border-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">GA + MILP</span>
+                    <span className="text-xs text-gray-500 ml-auto">With local refinement</span>
+                  </label>
+                  <label className="flex items-center gap-3 cursor-pointer">
+                    <Checkbox checked={gaMilpPnmlr} onCheckedChange={(checked) => setGaMilpPnmlr(!!checked)} className="border-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">GA + MILP + PNMLR</span>
+                    <span className="text-xs text-gray-500 ml-auto">Personalized scoring</span>
+                  </label>
                 </div>
-                <Slider
-                  value={[budget / 1000000]}
-                  onValueChange={(val) => setBudget(val[0] * 1000000)}
-                  min={10}
-                  max={500}
-                  step={10}
-                  className="mb-2"
-                />
-                <div className="flex justify-between text-xs text-gray-500 font-mono">
-                  <span>₹1 Cr</span>
-                  <span>₹50 Cr</span>
+              </div>
+
+              {/* Pipeline Options */}
+              <div className="bg-[#1b2328] p-4 rounded-xl border border-white/5 space-y-3">
+                <div className="text-xs text-gray-400 uppercase tracking-wider mb-2">Pipeline Options</div>
+                <div className="space-y-2">
+                  <label className="flex items-center gap-3 cursor-pointer">
+                    <Checkbox checked={landUse} onCheckedChange={(checked) => setLandUse(!!checked)} className="border-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">Enable Land-Use Validation</span>
+                  </label>
+                  <label className="flex items-center gap-3 cursor-pointer">
+                    <Checkbox checked={centrality} onCheckedChange={(checked) => setCentrality(!!checked)} className="border-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">Compute Centrality Metrics</span>
+                  </label>
+                  <label className="flex items-center gap-3 cursor-pointer">
+                    <Checkbox checked={equity} onCheckedChange={(checked) => setEquity(!!checked)} className="border-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">Enable Equity Constraints</span>
+                  </label>
+                </div>
+              </div>
+
+              {/* Amenities */}
+              <div className="bg-[#1b2328] p-4 rounded-xl border border-white/5 space-y-3">
+                <div className="text-xs text-gray-400 uppercase tracking-wider mb-2">Amenity Types</div>
+                <div className="grid grid-cols-2 gap-2">
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <Checkbox checked={addSchools} onCheckedChange={setAddSchools} />
+                    <School className="h-4 w-4 text-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">Schools</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <Checkbox checked={addHospitals} onCheckedChange={setAddHospitals} />
+                    <Hospital className="h-4 w-4 text-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">Hospitals</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <Checkbox checked={addParks} onCheckedChange={setAddParks} />
+                    <Trees className="h-4 w-4 text-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">Parks</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <Checkbox checked={addBusStations} onCheckedChange={setAddBusStations} />
+                    <Bus className="h-4 w-4 text-[#8fd6ff]" />
+                    <span className="text-sm text-gray-300">Bus Stations</span>
+                  </label>
                 </div>
               </div>
             </section>
-
-            <div className="border-t border-white/10" />
-
-            <section className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Priority Amenities</h3>
-                <Badge variant="outline" className="bg-[#8fd6ff]/10 text-[#8fd6ff] border-[#8fd6ff]/20">Step 3/3</Badge>
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <AmenityCard icon={School} label="Schools" checked={addSchools} onCheckedChange={setAddSchools} priority={3} />
-                <AmenityCard icon={Hospital} label="Hospitals" checked={addHospitals} onCheckedChange={setAddHospitals} priority={2} />
-                <AmenityCard icon={Bus} label="Bus Stn" checked={addBusStations} onCheckedChange={setAddBusStations} priority={1} />
-                <AmenityCard icon={Trees} label="Parks" checked={addParks} onCheckedChange={setAddParks} priority={0} />
-              </div>
-            </section>
-
-            <div className="border-t border-white/10" />
-
-            <Accordion type="single" collapsible className="rounded-lg border border-white/5 bg-[#1b2328]">
-              <AccordionItem value="advanced" className="border-none">
-                <AccordionTrigger className="px-4 py-3">
-                  <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#8fd6ff]">tune</span>
-                    <span>Advanced Config</span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-4 space-y-4 border-t border-white/5">
-                  <div>
-                    <div className="flex justify-between mb-2 text-sm">
-                      <span className="text-gray-400">Max New Amenities</span>
-                      <span className="font-mono">{maxAmenities}</span>
-                    </div>
-                    <Slider value={[maxAmenities]} onValueChange={(val) => setMaxAmenities(val[0])} min={5} max={50} step={5} />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
           </div>
 
           <div className="p-6 border-t border-white/10 bg-[#101518]/90">
